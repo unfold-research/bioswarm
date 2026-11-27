@@ -1,0 +1,62 @@
+{
+  "study": "i2-interference",
+  "configHash": "31cc9388d1959967a9c332fe91a9465b9c7dd6e6d24a3d2f66a2945517218015",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "k1": {
+      "effect": 6,
+      "verdictRecovered": 6,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "k3": {
+      "effect": 6,
+      "verdictRecovered": 6,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "k6": {
+      "effect": 6,
+      "verdictRecovered": 6,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "k12": {
+      "effect": 5,
+      "verdictRecovered": 6,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    }
+  },
+  "effectByK": [
+    6,
+    6,
+    6,
+    5
+  ],
+  "wrongFiringsByK": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "test": "not supported",
+  "finishedAt": "2026-11-11T06:14:33.228Z"
+}

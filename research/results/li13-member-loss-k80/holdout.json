@@ -1,0 +1,39 @@
+{
+  "routed": {
+    "solvedInRun": 4,
+    "passHoldout": 0,
+    "failing": [
+      "k80s12802 D:M37.labelWord>M39.gradeSku",
+      "k80s12803 D:M52.markSeed>M49.packSlug",
+      "k80s12804 D:M11.tallyRef>M72.scoreCode",
+      "k80s12807 D:M71.tallySlug>M35.brandAlias"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 1,
+    "failing": [
+      "k80s12800 D:M9.shapeToken>M34.tuneRef",
+      "k80s12800 D:M66.stampCode>M31.weighHint",
+      "k80s12801 D:M62.stampLabel>M59.mintToken",
+      "k80s12801 D:M70.gradeWord>M28.foldSeed",
+      "k80s12802 D:M61.probeName>M53.tallySlug",
+      "k80s12802 D:M2.rankHandle>M54.brandNote",
+      "k80s12803 D:M52.markSeed>M49.packSlug",
+      "k80s12804 D:M11.tallyRef>M72.scoreCode",
+      "k80s12805 D:M34.tuneCode>M1.labelRef",
+      "k80s12807 D:M23.gradeName>M26.gradeWord",
+      "k80s12807 D:M71.tallySlug>M35.brandAlias"
+    ]
+  }
+}

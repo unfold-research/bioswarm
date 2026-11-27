@@ -1,0 +1,22 @@
+{
+  "configHash": "80d6a6d35aeff0dc561ca861fb8c2b637afbe7b8188d97d4a417a5e3384ad524",
+  "finishedAt": "2026-11-17T18:45:39.594Z",
+  "arms": {
+    "routed": {
+      "solved": 8,
+      "of": 8
+    },
+    "manager": {
+      "solved": 7,
+      "of": 8
+    },
+    "chat": {
+      "solved": 0,
+      "of": 8
+    },
+    "solo": {
+      "solved": 6,
+      "of": 8
+    }
+  }
+}

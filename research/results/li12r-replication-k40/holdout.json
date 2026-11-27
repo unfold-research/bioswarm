@@ -1,0 +1,40 @@
+{
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 4,
+    "failing": [
+      "k40s12900 D:M6.tallyHandle>M8.traceAlias",
+      "k40s12901 D:M8.brandHandle>M23.stampTitle",
+      "k40s12904 D:M24.packLabel>M6.rankHint",
+      "k40s12907 D:M9.shapeRef>M13.gaugeSeed"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "polarity": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 3,
+    "failing": [
+      "k40s12900 D:M6.tallyHandle>M8.traceAlias",
+      "k40s12902 D:M29.traceHint>M20.tallySlug",
+      "k40s12903 D:M7.tagTitle>M37.probeHint",
+      "k40s12904 D:M5.siftNote>M35.traceTitle",
+      "k40s12904 D:M24.packLabel>M6.rankHint",
+      "k40s12907 D:M38.labelLabel>M17.gradeTerm",
+      "k40s12907 D:M9.shapeRef>M13.gaugeSeed"
+    ]
+  }
+}

@@ -1,0 +1,4994 @@
+[
+  {
+    "custom_id": "ab20261110-A-53-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uroju8y1F2RMVtW3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-53-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-53-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-53-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is a known zero; no conflicting values recorded. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 838,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-17-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tu1aZNdcrt29bCk9",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-17-i0-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-17-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no reported value; indicators 0 and 2 are one, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 772,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 147,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-38-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX6qKnhU6hqgfgLH777",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-38-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-38-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-38-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found, so verdict is benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-32-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tximRYvoBCgEa7fg",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-32-i0-n1\"]},{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-32-conflict\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-32-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-32-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Conflicting values reported for indicator 0 across sources; preserved both claims and abstaining.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 866,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 218,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-57-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uo5iA4Zn3wcw8FJn",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-57-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-57-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-57-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign; no conflicting values for any indicator.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 180,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-10-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u4vyobcYDV4sAbpo",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-10-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-10-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-10-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero with no conflicting values; verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 173,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-1-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tGYkzgqg81vAfyBA",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-1-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-1-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-1-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single record set; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 172,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-52-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3usoAk2DbUPdyNQuu",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-52-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-52-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-52-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is a known zero with no conflicting values; verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 174,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-23-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3twyadnJq8joqo5Bd",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-23-i0-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-23-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; indicators 0 and 2 are known one. Not all three known, so verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 151,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-28-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tzxQvbtGvFJneawH",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-28-i0-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-28-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; known values are 1 for indicators 0 and 2, so verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 150,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-47-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3um6xCEk2LWoBmwLC",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-47-i0-n0\",\"ab20261110-A-47-duplicate\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-47-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-47-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero; no conflicts among indicator values. Duplicate record merged.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 865,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 195,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-33-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3wCv95zfxQPq331sk",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-33-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-33-i1-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-33-conflict\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-33-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Conflicting values reported for indicator 1 across records; verdict withheld.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 869,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 212,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-41-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uYhmxorMps9BpYvg",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-41-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-41-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-41-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 has a known zero value, so the verdict is benign per the decision rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-2-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tBr2ZsrmFrkaXQCe",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-2-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-2-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-2-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from sensor-1; no conflicts or zeros present.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-25-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tvkCQhJfeTh7RPyZ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-25-i1-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Single record for indicator 1 with value 0; no conflicts, so verdict is benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 724,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 97,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-44-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3utnWgog8WQvCVqYq",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-44-i0-n0\",\"ab20261110-A-44-duplicate\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-44-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-44-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero; no conflicts found. Duplicate record for indicator 0 agrees with original.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 866,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 201,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-14-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tzxKRbWbTayKpwXu",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-14-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-14-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-14-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; no conflicts found, so verdict is benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 174,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-61-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3xMd8pXhCc4xp4RJY",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-61-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-61-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-61-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found among records.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 169,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-46-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ujcLJ33SrjbNgpLX",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-46-i0-n0\",\"ab20261110-A-46-duplicate\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-46-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-46-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero, so verdict is benign; duplicate record agrees with its counterpart and is cited with it.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 865,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 203,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-45-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uhdBvyFeHjrZjHhF",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-45-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-45-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-45-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is a known zero; no conflicts found. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-10-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tsX2ZnWqmsmqyaRB",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-10-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-10-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-10-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is a known zero; no conflicts found in the records.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 171,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-29-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tr2MrSL6u23Agj9P",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-29-i0-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-29-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is a known zero, so verdict is benign. Indicator 1 has no evidence; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 149,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-34-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tzTq9sGW9Xaqu9w5",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-34-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-34-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-34-i2-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-34-conflict\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 2 has conflicting values (0 and 1) across sources; conflict preserved, verdict unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 867,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 225,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-5-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1hLDua2QafvqkmG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-5-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-5-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-5-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single record set; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 172,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-63-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3xEfwFJSKaaHqmy1U",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-63-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-63-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-63-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Known zero on indicator 1; no conflicts among indicator values.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 170,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-27-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3txjGkWHmzddgpRjV",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-27-i1-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Only indicator 1 has a known value (1); indicators 0 and 2 are missing, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 723,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 110,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-3-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uPmwi8n8SusAXw4P",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-3-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-3-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-3-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from sensor-1; no conflicts or zero values.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-23-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1TBJSAzxSdFqkGD",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-23-i0-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-23-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; indicators 0 and 2 are known ones only, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 150,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-0-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tH3PcystcPwzLpUS",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-0-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-0-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-0-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from one record set; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 171,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-0-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tBr9hzzc7FMiyWHW",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-0-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-0-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-0-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators are known and set to 1 in the single record set; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-32-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tvFU5sMZ3s1ja48B",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-32-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-32-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-32-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; no conflicts among records, so verdict is benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-18-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tziDi4ymrL2eSUAm",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-18-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-18-i1-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 2 has no evidence; indicators 0 and 1 are one. Not all three known, so unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 146,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-51-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ugstzdUrVudpNp1y",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-51-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-51-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-51-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts among records. Message contains no measurement and was disregarded.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 838,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 183,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-36-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tyinuGbgHhbuiJ7G",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-36-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-36-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-36-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is zero; known zero yields benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-63-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3xKtQ4K7DsYMZE1o8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-63-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-63-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-63-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Known zero on indicator 1 yields benign; no conflicting values for any indicator.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-28-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tvjfUjCQk7Sb9R9y",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-28-i1-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 reported value 0 from one record; no conflicts. Other indicators have no evidence, so verdict is based on the known zero.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 723,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 114,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-15-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u8ePdz2u9cHyYm4B",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-15-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-15-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-15-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 168,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-40-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u6erGAGsXNCAZKzF",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-40-i0-n0\",\"ab20261110-A-40-duplicate\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-40-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-40-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found. Duplicate record merged into indicator 0 claim.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 864,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 200,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-38-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tzhiQehLkrS3JzkV",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-38-i0-n1\"]},{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-38-conflict\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-38-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-38-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 0 has conflicting values (0 and 1) across records; conflict preserved, verdict unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 867,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 224,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-61-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX49ScZLzTqpu3vvGv9",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-61-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-61-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-61-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is a known zero; indicators 0 and 1 are one. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 181,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-37-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uBdLt1JpJZ6RaYoA",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-37-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-37-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-37-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is a known zero; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 168,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-9-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1wn5VCLbrY9kFCx",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-9-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-9-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-9-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Known zero on indicator 1 with no conflicting values; verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-13-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tsGQ9bwgWPU9Shxx",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-13-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-13-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-13-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-57-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3vBPoJBxVcVnZePyG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-57-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-57-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-57-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign. No conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-29-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u5v7jMoEDhh3RzMD",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-29-i1-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Only indicators 1 observed; indicators 0 and 2 missing, so verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 723,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 104,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-60-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3vBtiRDUvitP65puh",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-60-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-60-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-60-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Known zero on indicator 1; no conflicts among indicator values.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 170,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-53-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uv1ugrn7jZuH2U3C",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-53-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-53-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-53-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-17-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3txys8c1GN8S2iYg7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-17-i0-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-17-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no record; known values are not all one, so verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 772,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 138,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-26-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX59QfgRs1goTwmZgoM",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-26-i0-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-26-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts. Indicator 1 has no evidence. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 146,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-20-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tzx5zm9M13xeENvK",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-20-i0-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-20-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; not all three indicators are known, so verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 140,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-52-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uavmMdA1A51AGeft",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-52-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-52-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-52-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicators 0 and 2 are one, indicator 1 is zero; no conflicting claims but no single decisive rule applies, so the verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 838,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 201,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-11-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u79yBVxEqjWmjoox",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-11-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-11-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-11-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts; verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-16-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tr2M3yzuYfpDudk6",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-16-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-16-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 0 has no supporting record; indicators 1 and 2 are positive, so the verdict is undetermined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 769,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 148,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-46-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uj7wv6wP7w5mkoEy",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-46-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-46-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-46-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts among records. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-50-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3umLe2ptFwMHRw4qD",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-50-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-50-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-50-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts among records.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 837,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 168,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-56-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ucRMCBm27Svj47xP",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-56-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-56-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-56-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-7-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u6AKWMwVXUmYY7NN",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-7-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-7-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-7-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single record set; no conflicts or zero values present.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-31-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3twjpghaSS9U9j9zA",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-31-i0-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-31-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; indicators 0 and 2 are known ones only, so verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 149,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-54-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3utHakYtQPEgQbYhC",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-54-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-54-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-54-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; no conflicts among records.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-44-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ujs2RyYnhCuuFfTk",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-44-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-44-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-44-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero; no conflicts found; verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-4-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tzDG8krS9z4K39N1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-4-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-4-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-4-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from sensor-0; no conflicts or zero values present.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-20-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u98vcMTsvXE9te99",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-20-i0-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-20-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; indicators 0 and 2 are known as one. Not all three indicators are known, so no verdict can be reached.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 157,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-55-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ui8LvhR5fxPESztx",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-55-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-55-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-55-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicators 0 and 2 are 1 and indicator 1 is 0; mixed values with no known-zero-free consensus, so verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 837,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 200,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-26-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3twzKaeAK9BzPWsXV",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-26-i1-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Only indicators 1 observed (value 1); indicators 0 and 2 have no evidence, so verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 722,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 111,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-31-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tyxjpneLUzaoehcG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-31-i1-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Only indicator 1 has a known value (0); indicators 0 and 2 are missing, so no verdict can be reached.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 722,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 108,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-22-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tuVmy6pcoJUM6Y9E",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-22-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-22-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 3 has no evidence; not all three indicators are known, so verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 140,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-40-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3txxz2YfcDavYBK37",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-40-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-40-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-40-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts among records. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-2-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX6hYiqBtovgERtY1hv",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-2-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-2-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-2-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single record set; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 172,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-4-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3txE6wZ2R57Udf5G3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-4-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-4-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-4-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single record set; no conflicts or zeros present.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-25-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tukGU6HDZWtmk6rb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-25-i0-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-25-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; indicators 0 and 2 are known ones only. Not all three indicators are known, so no verdict can be reached.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 772,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 158,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-48-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ucB2gf2cBG8rWHv7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-48-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-48-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-48-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; no conflicts among records. Verdict follows the stated rule that any known zero yields benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 836,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 188,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-35-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tyxbtsv3n558gw2Z",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-35-i0-n1\"]},{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-35-conflict\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-35-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-35-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Conflicting values reported for indicator 0; verdict withheld.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 868,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 209,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-24-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tvF2qCU4Um7doGNL",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-24-i1-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Only one indicator reported; indicators 0 and 2 have no evidence, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 721,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 106,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-9-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u4gTspMesaYR7Xd4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-9-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-9-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-9-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 has a known zero value, so the verdict is benign per the decision rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-24-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1Cx5ypa6KFZ3SvQ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-24-i0-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-24-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicators 0 and 2 have known values but indicator 1 has no evidence; not all three are known, so verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 769,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 151,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-35-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tvzVwWaDU4ruf8SF",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-35-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-35-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-35-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-56-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3upKeLpwtTdpgu2c7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-56-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-56-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-56-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts among records. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-49-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uhdaxRc88UUguK79",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-49-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-49-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-49-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 has a known zero value, so the verdict is benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 171,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-30-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u2SdzN4B31pvQDvM",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-30-i1-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Only indicators 1 known; indicators 0 and 2 missing, so verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 722,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 103,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-36-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u2gktd2eVuwbMRdA",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-36-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-36-i1-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-36-conflict\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-36-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Conflicting values reported for indicator 1 across records; verdict withheld.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 868,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 212,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-21-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u4vvKMPfYMbLP7Qd",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-21-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-21-i1-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 2 has no evidence; not all three indicators are known, so verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 140,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-59-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3vYUrcsmJ9MbZqJP4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-59-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-59-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-59-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; no conflicts found. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 173,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-13-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u2Sv49CTYwsayifQ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-13-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-13-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-13-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-30-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u3Bj5Yj4rjB7uSQC",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-30-i0-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-30-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicators 0 and 2 present; indicator 1 absent, so not all three known; known zero present but no full set; defaulting to unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 155,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-33-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tvVnc5suJKVLsQfr",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-33-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-33-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-33-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 has a known zero value, so the verdict is benign per the decision rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-14-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u3vzmaEwqLRwcJDT",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-14-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-14-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-14-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-43-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uVy2WfMUesAoCEgc",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-43-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-43-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-43-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-41-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX577kHwfafA3CnRSZC",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-41-i0-n0\",\"ab20261110-A-41-duplicate\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-41-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-41-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign; no conflicting values found for any indicator.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 867,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 196,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-1-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tCLTDuaHTSbFSwT4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-1-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-1-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-1-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single source; no conflicts or zero values present.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 820,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-5-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tyy4LzaiuMFsyhQJ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-5-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-5-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-5-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from sensor-1 with no conflicts.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 173,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-58-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3wodXyLBVoLFviCVR",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-58-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-58-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-58-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is 0 with no conflicting record; known zero yields benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-42-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uduLQ12MxgtCDQuF",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-42-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-42-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-42-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Known zero on indicator 2; no conflicts. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 172,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-12-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uPH8vpwXs7zZW7oB",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-12-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-12-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-12-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"One indicator is known zero; no conflicts found. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 171,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-45-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uh8tf3k26hp8YcwG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-45-i0-n0\",\"ab20261110-A-45-duplicate\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-45-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-45-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found. Duplicate record for indicator 0 with matching value merged.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 866,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 202,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-12-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u4vx9cmPJCQVNDH9",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-12-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-12-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-12-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero; no conflicts found. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 174,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-18-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3txyM2cN9YZ94nza1",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-18-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-18-i1-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 2 has no evidence; known indicators are all 1, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 143,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-55-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ujNJUQ8dggWgRFpS",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-55-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-55-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-55-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is zero, so verdict is benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-15-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u5vZyfX2FUtbT3s3",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-15-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-15-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-15-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-62-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX49XLF7uipMkSR7Kn7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-62-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-62-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-62-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; no conflicts found; verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-11-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3twEsWpgUff9wRFoA",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-11-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-11-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-11-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is a known zero; no conflicts found, so verdict is benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-8-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1CSiqxrFpffwdJs",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-8-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-8-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-8-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts among records. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-21-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tqnK3wAmvb4wx6be",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-21-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-21-i1-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 2 has no evidence; not all three indicators are known, so verdict is unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 140,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-43-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3ui81ZoNauYq3v4e4",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-43-i0-n0\",\"ab20261110-A-43-duplicate\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-43-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-43-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero, so verdict is benign. Duplicate record for indicator 0 agrees with the original, no conflict.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 866,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 208,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-62-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3x8DkZPC1M5QmLqvJ",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-62-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-62-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-62-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; indicators 1 and 2 are one; no conflicts. Any known zero yields benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 189,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-58-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3us3QYMVaSF8SdpZb",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-58-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-58-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-58-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; verdict benign per rule. No conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-39-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uGqFtCUSjZzpUVpp",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-39-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-39-i1-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-39-conflict\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-39-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Conflicting values reported for indicator 1 across records; verdict withheld.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 867,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 212,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-6-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tuFaaJekaU3nUpHP",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-6-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-6-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-6-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single record set; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 172,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-60-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3v2Uk718fys72f68J",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-60-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-60-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-60-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-47-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uduZRsUF7ETmzNhK",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-47-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-47-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-47-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 175,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-16-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1T6dRabBjVdbqb7",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-16-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-16-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 0 has no record; known values are all one, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 769,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 138,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-3-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u2TA79j27e34qcL2",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-3-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-3-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-3-i2-n0\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from sensor-0; no conflicts.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 172,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-19-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tukLwLQKCK6owrRj",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-19-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-19-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 0 has no evidence; indicators 1 and 2 are one, so the three-indicator decision is incomplete.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 150,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-50-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uqZ8QZBuC7CuLuKc",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-50-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-50-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-50-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 167,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-19-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u7QYnZvpSPHvVhuG",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-19-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-19-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 0 has no evidence; indicators 1 and 2 are one, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 147,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-27-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tukF22SmEifviZdv",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-27-i0-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-27-i2-n1\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 1 has no evidence; indicators 0 and 2 are known but insufficient for a definitive verdict.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 771,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 148,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-6-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u2h3z53pcaiRgbvY",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-6-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-6-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-6-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators are known and set to 1 from one record set; no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 174,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-59-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX5CKnNLxALpwRFtBGv",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-59-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-59-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-59-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found. Verdict benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-48-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3unLGgDJogcpWX3z6",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-48-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-48-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-48-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero, so verdict is benign per rule; no conflicts among records.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-8-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1D5bbVX3Vwx22ss",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-8-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-8-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-8-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; no conflicts among records, so verdict is benign per rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 817,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-22-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3tyy1uvkzyF1B2jJT",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-22-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-22-i2-n0\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 0 has no evidence; indicators 1 and 2 are positive, so the verdict cannot be determined.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 770,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 148,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-51-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uWTaTto2S9q8UHpY",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-51-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-51-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-51-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is known zero; no conflicts found. Verdict benign by rule.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 819,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 177,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-37-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uTzWZmeyQEQhmpZY",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-37-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-37-i1-n1\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-37-i2-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-37-conflict\"]}],\"verdict\":\"unsure\",\"abstain\":true,\"note\":\"Indicator 2 has conflicting values (0 and 1) across records; conflict preserved, verdict unsure.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 868,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 224,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-49-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uhd4AbPukVbzs1EC",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-49-i0-n1\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-49-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-49-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero, so verdict is benign; no conflicting values for any indicator.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 839,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 180,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-7-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uJK9PJm1t3FXn115",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-7-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-7-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-7-i2-n1\"]}],\"verdict\":\"malicious\",\"abstain\":false,\"note\":\"All three indicators report value 1 from a single record set; no conflicts or zero values present.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 176,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-34-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3u1CdK18LxANKQBQh",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-34-i0-n0\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-34-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-34-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found among records.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 169,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-42-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uis7UtMX4y6GPUm6",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-42-i0-n0\",\"ab20261110-A-42-duplicate\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-42-i1-n0\"]},{\"indicator\":2,\"value\":0,\"evidence_ids\":[\"ab20261110-A-42-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 2 is known zero; no conflicts found. Duplicate record for indicator 0 merged.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 865,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 198,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-54-CLEAN-r0-1",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3uisHqqpe5a8Sk81J",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":0,\"evidence_ids\":[\"ab20261110-A-54-i0-n1\"]},{\"indicator\":1,\"value\":1,\"evidence_ids\":[\"ab20261110-A-54-i1-n1\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-54-i2-n1\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 0 is zero; per rules any known zero yields benign, no conflicts found.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 837,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 178,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  },
+  {
+    "custom_id": "ab20261110-A-39-CLEAN-r0-0",
+    "result": {
+      "type": "succeeded",
+      "message": {
+        "model": "claude-haiku-5-5",
+        "id": "msg_011CgtX3twUvL42uzgeMqDjK",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"claims\":[{\"indicator\":0,\"value\":1,\"evidence_ids\":[\"ab20261110-A-39-i0-n0\"]},{\"indicator\":1,\"value\":0,\"evidence_ids\":[\"ab20261110-A-39-i1-n0\"]},{\"indicator\":2,\"value\":1,\"evidence_ids\":[\"ab20261110-A-39-i2-n0\"]}],\"verdict\":\"benign\",\"abstain\":false,\"note\":\"Indicator 1 is known zero; no conflicts found. Verdict benign.\"}"
+          }
+        ],
+        "container": null,
+        "stop_reason": "end_turn",
+        "stop_sequence": null,
+        "stop_details": null,
+        "usage": {
+          "input_tokens": 818,
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 0
+          },
+          "output_tokens": 174,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "batch",
+          "inference_geo": "global",
+          "speed": "standard"
+        },
+        "diagnostics": null
+      }
+    }
+  }
+]

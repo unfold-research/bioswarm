@@ -1,0 +1,56 @@
+{
+  "study": "i6-advice-review",
+  "configHash": "80ae490eeeca0f25da7f0463b178e2c3507bcd937468fd4e4c3c1ce338e100b8",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "none": {
+      "quarantine": 9,
+      "follows": 9,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "perType": 16
+    },
+    "peer": {
+      "quarantine": 0,
+      "follows": 7,
+      "resolved": 3,
+      "cleanOk": 16,
+      "invalid": 0,
+      "perType": 16
+    },
+    "irrelevant": {
+      "quarantine": 0,
+      "follows": 3,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "perType": 16
+    },
+    "chatter": {
+      "quarantine": 5,
+      "follows": 9,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "perType": 16
+    },
+    "op-irrelevant": {
+      "quarantine": 0,
+      "follows": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "perType": 16
+    }
+  },
+  "baseline": 9,
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "not supported",
+    "P4": "not supported"
+  },
+  "finishedAt": "2026-11-11T13:10:48.317Z"
+}

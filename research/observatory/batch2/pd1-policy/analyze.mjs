@@ -1,0 +1,28 @@
+// PD1 analysis. Every plan is a policy; a policy is scored by simulation on 1,000 test fields of its domain. Compared, on
+// the same cells: the plan of each model, the fit by simulation on the same examples, the ring rule carried over, and
+// the best policy of the family (chosen on 1,000 other fields). The unit is the planning cell.
+// Usage: node observatory/batch2/pd1-policy/analyze.mjs   -> results/batch2-pd1-policy/summary.json
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import * as P from './protocol.mjs';
+import { bootDiff, verdictOf, mulberry32 } from '../littask.mjs';
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..'), read = (s) => JSON.parse(fs.readFileSync(path.join(ROOT, `results/batch2-${s}/summary.json`), 'utf8')), usd = (s) => fs.readFileSync(path.join(ROOT, `results/batch2-${s}/ledger.jsonl`), 'utf8').split('\n').filter(Boolean).reduce((n, l) => n + JSON.parse(l).usageCostUsd, 0);
+const test = Object.fromEntries(P.DOMAINS.map((d) => [d, P.testFields(d)])), dev = Object.fromEntries(P.DOMAINS.map((d) => [d, P.testFields(d, 1000, 410001)]));
+const table = Object.fromEntries(P.DOMAINS.map((d) => [d, Object.fromEntries(P.POLICIES.map((p) => [P.keyOf(p), P.accuracy(p, test[d])]))])), acc = (p, d) => table[d][P.keyOf(p)];
+const best = Object.fromEntries(P.DOMAINS.map((d) => [d, P.POLICIES.map((p) => [p, P.accuracy(p, dev[d])]).sort((a, b) => b[1] - a[1])[0][0]])), SWEEP = { follow: 'none', follow_limit: 1, probe: 'in_order' };
+const plans = { haiku: read('pd1-plan-haiku').perCell, sonnet: read('pd1-plan-sonnet').perCell }, planOf = (m, c) => { const x = plans[m].find((y) => y.domain === c.domain && y.k === c.k && y.rep === c.rep); return x.valid ? x.policy : SWEEP; }; // an invalid plan is scored as the default sweep
+const rows = P.CELLS.filter((c) => c.k).map((c) => { const d = c.domain, f = P.fit(P.examplesOf(c)), r = { ...c, fit: acc(f, d), fitKey: P.keyOf(f), ring: acc(P.RING_RULE, d), best: acc(best[d], d) }; for (const m of ['haiku', 'sonnet']) { const p = planOf(m, c); r[m] = acc(p, d); r[`${m}Key`] = P.keyOf(p); r[`${m}Follow`] = p.follow === d ? 1 : 0; r[`${m}Probe`] = p.probe === `spread_${d}` ? 1 : 0; } r.fitFollow = f.follow === d ? 1 : 0; return r; });
+const zero = Object.fromEntries(['haiku', 'sonnet'].map((m) => [m, P.CELLS.filter((c) => !c.k).map((c) => { const p = planOf(m, c); return { rep: c.rep, key: P.keyOf(p), mean: P.DOMAINS.reduce((n, d) => n + acc(p, d), 0) / 4, byDomain: Object.fromEntries(P.DOMAINS.map((d) => [d, acc(p, d)])) }; })]));
+const mean = (a, f) => a.reduce((n, x) => n + f(x), 0) / a.length, sel = (k, off) => rows.filter((r) => r.k === k && (!off || r.domain !== 'ring'));
+function unpaired(a, b, seed, draws = 4000) { const rnd = mulberry32(seed), d = [], pick = (x) => x[Math.floor(rnd() * x.length)]; for (let i = 0; i < draws; i++) { let s = 0, t = 0; for (let j = 0; j < a.length; j++) s += pick(a); for (let j = 0; j < b.length; j++) t += pick(b); d.push(s / a.length - t / b.length); } d.sort((x, y) => x - y); return { diff: mean(a, (x) => x) - mean(b, (x) => x), ci95: [d[Math.floor(0.025 * draws)], d[Math.floor(0.975 * draws)]] }; }
+const cells = {}; for (const k of [1, 4]) for (const d of P.DOMAINS) { const r = rows.filter((x) => x.k === k && x.domain === d); cells[`${d}-k${k}`] = { sonnet: mean(r, (x) => x.sonnet), haiku: mean(r, (x) => x.haiku), fit: mean(r, (x) => x.fit), ring: r[0].ring, best: r[0].best, bestKey: P.keyOf(best[d]), sonnetRightFollow: mean(r, (x) => x.sonnetFollow), sonnetRightProbe: mean(r, (x) => x.sonnetProbe), haikuRightFollow: mean(r, (x) => x.haikuFollow), haikuRightProbe: mean(r, (x) => x.haikuProbe), fitRightFollow: mean(r, (x) => x.fitFollow) }; }
+const overall = {}; for (const k of [1, 4]) overall[`k${k}`] = Object.fromEntries(['sonnet', 'haiku', 'fit', 'ring', 'best'].map((a) => [a, mean(sel(k), (x) => x[a])]));
+overall.k0 = { sonnet: mean(zero.sonnet, (x) => x.mean), haiku: mean(zero.haiku, (x) => x.mean), sweep: P.DOMAINS.reduce((n, d) => n + acc(SWEEP, d), 0) / 4 };
+const diffs = {}; let seed = 20261401;
+for (const m of ['sonnet', 'haiku']) { diffs[`${m}K4MinusRing_offRing`] = bootDiff(sel(4, true), m, 'ring', seed++); diffs[`bestMinus${m}K4`] = bootDiff(sel(4), 'best', m, seed++); for (const k of [1, 4]) diffs[`${m}MinusFit_k${k}`] = bootDiff(sel(k), m, 'fit', seed++); diffs[`${m}K4MinusK0`] = unpaired(sel(4).map((x) => x[m]), zero[m].map((x) => x.mean), seed++); }
+for (const k of [1, 4]) diffs[`sonnetMinusHaiku_k${k}`] = bootDiff(sel(k), 'sonnet', 'haiku', seed++);
+const tests = {}; for (const m of ['sonnet', 'haiku']) { const s = m === 'sonnet' ? '' : 'haiku'; tests[`P1${s}`] = verdictOf(diffs[`${m}K4MinusRing_offRing`]); tests[`P2${s}`] = diffs[`best${'Minus'}${m}K4`].ci95[1] < 0.10 ? 'supported' : 'not supported'; tests[`P3k1${s}`] = verdictOf(diffs[`${m}MinusFit_k1`]); tests[`P3k4${s}`] = verdictOf(diffs[`${m}MinusFit_k4`]); tests[`P4${s}`] = verdictOf(diffs[`${m}K4MinusK0`]); }
+tests.P5k1 = verdictOf(diffs.sonnetMinusHaiku_k1); tests.P5k4 = verdictOf(diffs.sonnetMinusHaiku_k4);
+const out = { cells, overall, zero, diffs, tests, invalid: { haiku: plans.haiku.filter((x) => !x.valid).length, sonnet: plans.sonnet.filter((x) => !x.valid).length }, usd: { haiku: usd('pd1-plan-haiku'), sonnet: usd('pd1-plan-sonnet') }, rows };
+fs.mkdirSync(path.join(ROOT, 'results/batch2-pd1-policy'), { recursive: true }); fs.writeFileSync(path.join(ROOT, 'results/batch2-pd1-policy/summary.json'), JSON.stringify(out, null, 2) + '\n'); const { rows: _r, ...show } = out; console.log(JSON.stringify(show, null, 1));

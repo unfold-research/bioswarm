@@ -1,0 +1,17 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "market-s37808.json",
+      "bytes": 9701295,
+      "sha256": "7e039b710879cf9101e0d2a70629cfc327c698f83bc3a0167766d4edd1139b14",
+      "gz": 281011
+    },
+    {
+      "path": "market-s37810.json",
+      "bytes": 12523544,
+      "sha256": "f1722057ba3366d1c8791715484a51261b5394049b331282399a4f8042f2dd3e",
+      "gz": 2916893
+    }
+  ]
+}

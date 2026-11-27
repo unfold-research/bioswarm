@@ -1,0 +1,294 @@
+{
+ "arms": {
+  "react": {
+   "episodes": 50,
+   "reward": -1659.4,
+   "reward_median": -1485.0,
+   "green_fail": 875.5,
+   "green_fail_blue": 1.4,
+   "green_fail_red": 874.1,
+   "red_impact": 23.1,
+   "red_hosts_max": 42.9,
+   "red_root_hosts_max": 20.6,
+   "messages_sent": 0,
+   "message_delay": {},
+   "actions_per_episode": {
+    "Restore": 134.1,
+    "Analyse": 0.0,
+    "DeployDecoy": 0.0,
+    "BlockTrafficZone": 0.0,
+    "AllowTrafficZone": 0.0
+   }
+  },
+  "react-msg": {
+   "episodes": 50,
+   "reward": -2183.3,
+   "reward_median": -2057.0,
+   "green_fail": 975.7,
+   "green_fail_blue": 2,
+   "green_fail_red": 973.7,
+   "red_impact": 31.3,
+   "red_hosts_max": 47.6,
+   "red_root_hosts_max": 26.2,
+   "messages_sent": 131.2,
+   "message_delay": {
+    "1": 26208
+   },
+   "actions_per_episode": {
+    "Restore": 131.2,
+    "Analyse": 456.5,
+    "DeployDecoy": 0.0,
+    "BlockTrafficZone": 0.0,
+    "AllowTrafficZone": 0.0
+   }
+  },
+  "react-decoy": {
+   "episodes": 50,
+   "reward": -1556.5,
+   "reward_median": -1382.0,
+   "green_fail": 814.1,
+   "green_fail_blue": 1.0,
+   "green_fail_red": 813.1,
+   "red_impact": 22.3,
+   "red_hosts_max": 42.2,
+   "red_root_hosts_max": 19.8,
+   "messages_sent": 0,
+   "message_delay": {},
+   "actions_per_episode": {
+    "Restore": 132.5,
+    "Analyse": 0.0,
+    "DeployDecoy": 49.1,
+    "BlockTrafficZone": 0.0,
+    "AllowTrafficZone": 0.0
+   }
+  },
+  "react-block": {
+   "episodes": 50,
+   "reward": -1912.5,
+   "reward_median": -1802.0,
+   "green_fail": 1024.0,
+   "green_fail_blue": 90.2,
+   "green_fail_red": 933.8,
+   "red_impact": 22.3,
+   "red_hosts_max": 42.3,
+   "red_root_hosts_max": 21.1,
+   "messages_sent": 0,
+   "message_delay": {},
+   "actions_per_episode": {
+    "Restore": 135.6,
+    "Analyse": 0.0,
+    "DeployDecoy": 0.0,
+    "BlockTrafficZone": 32.0,
+    "AllowTrafficZone": 4.0
+   }
+  },
+  "alarm-decay": {
+   "episodes": 50,
+   "reward": -1869.9,
+   "reward_median": -1859.0,
+   "green_fail": 889.0,
+   "green_fail_blue": 1.6,
+   "green_fail_red": 887.4,
+   "red_impact": 23.9,
+   "red_hosts_max": 42.6,
+   "red_root_hosts_max": 21.6,
+   "messages_sent": 133.6,
+   "message_delay": {
+    "1": 26676
+   },
+   "actions_per_episode": {
+    "Restore": 133.6,
+    "Analyse": 0.0,
+    "DeployDecoy": 47.1,
+    "BlockTrafficZone": 0.0,
+    "AllowTrafficZone": 0.0
+   }
+  },
+  "plasticity": {
+   "episodes": 50,
+   "reward": -2458.1,
+   "reward_median": -2387.0,
+   "green_fail": 1473.5,
+   "green_fail_blue": 333,
+   "green_fail_red": 1140.5,
+   "red_impact": 24.2,
+   "red_hosts_max": 42.7,
+   "red_root_hosts_max": 21.3,
+   "messages_sent": 134.8,
+   "message_delay": {
+    "1": 26928
+   },
+   "actions_per_episode": {
+    "Restore": 134.8,
+    "Analyse": 0.0,
+    "DeployDecoy": 0.0,
+    "BlockTrafficZone": 29.5,
+    "AllowTrafficZone": 29.2
+   }
+  },
+  "disinfect": {
+   "episodes": 50,
+   "reward": -1442.1,
+   "reward_median": -1293.0,
+   "green_fail": 755.7,
+   "green_fail_blue": 3.4,
+   "green_fail_red": 752.3,
+   "red_impact": 20,
+   "red_hosts_max": 40.7,
+   "red_root_hosts_max": 19.3,
+   "messages_sent": 0,
+   "message_delay": {},
+   "actions_per_episode": {
+    "Restore": 224.7,
+    "Analyse": 0.0,
+    "DeployDecoy": 0.0,
+    "BlockTrafficZone": 0.0,
+    "AllowTrafficZone": 0.0
+   }
+  },
+  "fever": {
+   "episodes": 50,
+   "reward": -1875.0,
+   "reward_median": -1764.0,
+   "green_fail": 949.4,
+   "green_fail_blue": 1.6,
+   "green_fail_red": 947.9,
+   "red_impact": 24.1,
+   "red_hosts_max": 42.6,
+   "red_root_hosts_max": 21.6,
+   "messages_sent": 134.9,
+   "message_delay": {
+    "1": 26944
+   },
+   "actions_per_episode": {
+    "Restore": 134.9,
+    "Analyse": 0.0,
+    "DeployDecoy": 51.8,
+    "BlockTrafficZone": 0.0,
+    "AllowTrafficZone": 0.0
+   }
+  }
+ },
+ "screen": {
+  "alarm-decay": {
+   "P1_vs_react": {
+    "seeds": 50,
+    "better": 15,
+    "worse": 35,
+    "ties": 0,
+    "p_one_sided": 0.998699
+   },
+   "P1": false,
+   "P2_red_impact": {
+    "arm": 23.9,
+    "react": 23.1,
+    "limit": 25.41
+   },
+   "P2": true,
+   "P3_vs_control": {
+    "seeds": 50,
+    "better": 18,
+    "worse": 32,
+    "ties": 0,
+    "p_one_sided": 0.98358,
+    "control": "react-decoy"
+   },
+   "P3": false,
+   "screen": "fail"
+  },
+  "plasticity": {
+   "P1_vs_react": {
+    "seeds": 50,
+    "better": 11,
+    "worse": 39,
+    "ties": 0,
+    "p_one_sided": 0.999988
+   },
+   "P1": false,
+   "P2_red_impact": {
+    "arm": 24.2,
+    "react": 23.1,
+    "limit": 25.41
+   },
+   "P2": true,
+   "P3_vs_control": {
+    "seeds": 50,
+    "better": 14,
+    "worse": 36,
+    "ties": 0,
+    "p_one_sided": 0.999532,
+    "control": "react-block"
+   },
+   "P3": false,
+   "screen": "fail"
+  },
+  "disinfect": {
+   "P1_vs_react": {
+    "seeds": 50,
+    "better": 27,
+    "worse": 23,
+    "ties": 0,
+    "p_one_sided": 0.335906
+   },
+   "P1": false,
+   "P2_red_impact": {
+    "arm": 20,
+    "react": 23.1,
+    "limit": 25.41
+   },
+   "P2": true,
+   "P3_vs_control": null,
+   "P3": true,
+   "screen": "fail"
+  },
+  "fever": {
+   "P1_vs_react": {
+    "seeds": 50,
+    "better": 23,
+    "worse": 27,
+    "ties": 0,
+    "p_one_sided": 0.760056
+   },
+   "P1": false,
+   "P2_red_impact": {
+    "arm": 24.1,
+    "react": 23.1,
+    "limit": 25.41
+   },
+   "P2": true,
+   "P3_vs_control": {
+    "seeds": 50,
+    "better": 21,
+    "worse": 29,
+    "ties": 0,
+    "p_one_sided": 0.898681,
+    "control": "react-decoy"
+   },
+   "P3": false,
+   "screen": "fail"
+  }
+ },
+ "descriptive_paired": {
+  "react-msg_vs_react": {
+   "seeds": 50,
+   "better": 13,
+   "worse": 37,
+   "ties": 0,
+   "p_one_sided": 0.999847
+  },
+  "react-decoy_vs_react": {
+   "seeds": 50,
+   "better": 28,
+   "worse": 22,
+   "ties": 0,
+   "p_one_sided": 0.239944
+  },
+  "react-block_vs_react": {
+   "seeds": 50,
+   "better": 14,
+   "worse": 35,
+   "ties": 1,
+   "p_one_sided": 0.999299
+  }
+ }
+}

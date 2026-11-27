@@ -1,0 +1,3 @@
+[submodule "packages/connector-pi"]
+	path = packages/connector-pi
+	url = https://github.com/unfold-research/bioswarm-plugin.git

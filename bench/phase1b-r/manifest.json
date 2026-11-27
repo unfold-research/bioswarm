@@ -1,0 +1,707 @@
+{
+ "protocol": "results/phase1b-r/PREREG.md",
+ "case": "v2r",
+ "design": "results/phase1b/CASO-V2.md",
+ "seeds": {
+  "5011": {
+   "role": "sample",
+   "inputs": {
+    "mka_orders.csv": "be5578c02281369ed0fb5b27c0d45e27190bdc61d05aefd3b9221c6a72ddddbc",
+    "mkb_orders.csv": "d53cff38db73e196d3972044e050fd8bb578f5c81a40b663da20637e3692185d",
+    "mkc_orders.txt": "2f9fee66c4581239ff5fb6564ab985e804dd883cf518a8e6c38dcb003f574715",
+    "catalog.csv": "bff5569060343a801a859f57cac02cb9a4d571367005ee52d64bae3fc1bacbd0",
+    "migration.csv": "9be97f41c9e156ec24ce2eed590d399e7c676acf0829c22f9d50c7330d4e906d",
+    "contracts.md": "8e631e7004bb54dfacc06d10acc732334931b7854d32311d3c1bb61030eeee0d",
+    "vendas.notes.md": "cec0b3692382b8f26c224bcccc675f933bb770da5b6264fbd35a8429de4b49ea",
+    "returns.csv": "bc64de257ae35e6caf1095ff30e0a130d2cf8d3aa8f5b81215679f2f647d37c9",
+    "chargebacks.csv": "791fd17e2b30b969feeef90cf31bab3b62f84a681cbabf7f2e385510376665b4",
+    "creditos.notes.md": "65ff3c947613b6bc210fecce01888a7568685cc6dcf46b0f32ce2117f72bbe74",
+    "acq1_settlements.csv": "b590f3a1c87147c6906322d4c44bb3bbcc9a9e24b490223da6b814b60e2eb01a",
+    "acq2_settlements.txt": "3c1e67b00ba7746f7d1490c00e5e965d8f70bfa7c907671b53224b6cbea287eb",
+    "deposits.csv": "2ec56525dd267ad122398f5b200a57d239570615fc1a5017f06fd66ed16f72c5",
+    "acquirers.md": "2ace6551ffb6ad3ec82d6e814cdfd61241c74531ed7375511f4ad45a3584c0bc",
+    "repasses.notes.md": "2e43906a978f692f36a5764db5c02ef5d6088e98332b47584513de349bdb7558"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "returns",
+     "place": "returns.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "vendas.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "settlements",
+     "place": "settlements.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "creditos.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "commissions",
+     "place": "commissions.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "fees",
+     "place": "fees.mjs",
+     "class": "own",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "deposits",
+     "place": "deposits.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "creditos.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "catalog",
+     "place": "catalog.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "tiers",
+     "place": "tiers.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "batches",
+     "place": "batches.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 5,
+    "directed": 5
+   }
+  },
+  "5023": {
+   "role": "sample",
+   "inputs": {
+    "mka_orders.csv": "3d1362e7a29593417e1920d9fc8b30ce926a1c259bb3dcb0a20cb2aadf025668",
+    "mkb_orders.csv": "ee272139f98ccbdd113e389cf93c852e3c12279b15b596979aeb05b7d06d98ce",
+    "mkc_orders.txt": "c792d01e2531889c6d585ac6f06b019507b53c12e6e07b434537720015982a26",
+    "catalog.csv": "bff5569060343a801a859f57cac02cb9a4d571367005ee52d64bae3fc1bacbd0",
+    "migration.csv": "08f188c7e97be23e22201a5fac12739bcc964191036876a3addd6288482bb15d",
+    "contracts.md": "90690fb4d9b75c4eada26a26b33021284ec4349d79671181536a074ceaf62f6c",
+    "vendas.notes.md": "5a4fd410ce8e0a80aaa47eb671c65866196798ca99baaaedd05008bcaecdf6ca",
+    "returns.csv": "da420693624412380401baf81850da5d3031d320c69282e26729128a196e78c6",
+    "chargebacks.csv": "0ae38b0523920f304363680e8eebe7254de8d6e5900125f91bdc6ffda28950a0",
+    "creditos.notes.md": "65ff3c947613b6bc210fecce01888a7568685cc6dcf46b0f32ce2117f72bbe74",
+    "acq1_settlements.csv": "671a5876cb8d53b6b8ad4875c4f202ab5111f783661478496037ae2815fe72d2",
+    "acq2_settlements.txt": "180cd68f2518a41ac7f4ee084442a73b35af5300a0cca9a037fd1306e7bca608",
+    "deposits.csv": "136bbeec0db3d464a4bca061fe97ca003d31a18179d08d4c5c1d949ff5f133b2",
+    "acquirers.md": "dcef92098844d9842fa972f76ef2300927cf8c65059b4f6da86b1fc91d5ca0f7",
+    "repasses.notes.md": "a622313f60b8ce6099c198047e8d17bf1e52bb690f0b71b1ebf9c96f78e810bf"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "returns",
+     "place": "returns.mjs",
+     "class": "own",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "settlements",
+     "place": "settlements.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "creditos.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "commissions",
+     "place": "commissions.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "fees",
+     "place": "fees.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "vendas.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "deposits",
+     "place": "deposits.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "creditos.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "catalog",
+     "place": "catalog.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "tiers",
+     "place": "tiers.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "batches",
+     "place": "batches.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 5,
+    "directed": 5
+   }
+  },
+  "5039": {
+   "role": "sample",
+   "inputs": {
+    "mka_orders.csv": "656e697c26b2d5c76869021d386283e722965b3475b597db7fc0d820d7874ed5",
+    "mkb_orders.csv": "4191be8a6592c533fcf4776486320d3f0100f7324aa59c12784250a6f99740c8",
+    "mkc_orders.txt": "042829708e599c3b8e99c40aee1ae2110179016c486b48d57733946ec261145a",
+    "catalog.csv": "bff5569060343a801a859f57cac02cb9a4d571367005ee52d64bae3fc1bacbd0",
+    "migration.csv": "b19aa06af6d301f77e995303fd1fdb9b269f8c550039789d136c2a378b49dd8e",
+    "contracts.md": "b215dd261ca4ddae677a056b195a48ebab7baa6b4dec459e3054a8c4ce3dfea9",
+    "vendas.notes.md": "7c2c0c70b23e8a50c3762e7b5d686361125ddce903e3ff7085fb59a0b1e76392",
+    "returns.csv": "d560c40a1959f20942675c9f6377cff32ffc69bfb6a7ac1df3012f0c9a551749",
+    "chargebacks.csv": "8faa831380e3bc13140af1c940b4d37aed9ae54d5413a789157d0ba37533ce35",
+    "creditos.notes.md": "0c7dd975237558ab0ac5884e1d2fbe564328903efb7b96a010aaf7e7a68a5d1e",
+    "acq1_settlements.csv": "0e09494805840cb76ed4788c4710f5b30d4bb18f7ca8272fc10ad7614bb8724b",
+    "acq2_settlements.txt": "b4ec50e2b22fbeda806f4f766a45855ab6a5bdc4c7af1f7c143efd381e2d790d",
+    "deposits.csv": "e48a704da1b16a582980132f348238f71f0f022faa075921194de4980edb1ab9",
+    "acquirers.md": "6e4ee8e8f12f208447b1afca19d08370e324312bf4c5acd4c042f242efda0222",
+    "repasses.notes.md": "636ae81cbd7b3f8f84144431ad784decabcfbfdb25589aecd24861ad31a8d017"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "returns",
+     "place": "returns.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "vendas.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "settlements",
+     "place": "settlements.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "creditos.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "commissions",
+     "place": "commissions.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "fees",
+     "place": "fees.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "vendas.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "deposits",
+     "place": "deposits.mjs",
+     "class": "own",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "catalog",
+     "place": "catalog.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "tiers",
+     "place": "tiers.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "batches",
+     "place": "batches.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 5,
+    "directed": 5
+   }
+  },
+  "5051": {
+   "role": "sample",
+   "inputs": {
+    "mka_orders.csv": "79a5067be32a68e2eebef0a0fdbbc7a99608a19756009d252e5782b7e88b4608",
+    "mkb_orders.csv": "c22a22d76d75b5e8fd5459ca8bc2b17f1c1891faa0fd1f65f9515ab57e5b8aa3",
+    "mkc_orders.txt": "b575974abac7c22e4babfbf17fdd7e57fdc5fa7d02272b9e797d7c316312b88a",
+    "catalog.csv": "bff5569060343a801a859f57cac02cb9a4d571367005ee52d64bae3fc1bacbd0",
+    "migration.csv": "d54f0d6dfbe069da22ee95aedb739bffe0fe06107447507f863a4d0d0a0e3ef5",
+    "contracts.md": "d1b67b7052716e2444dd666e9c17dd68d99082c5aeb47fbcd98802fd9eca3a2d",
+    "vendas.notes.md": "cec0b3692382b8f26c224bcccc675f933bb770da5b6264fbd35a8429de4b49ea",
+    "returns.csv": "afe3774acc2b48c4300e74cc39cbaecd0a47245b97b22bedff796e68195ca826",
+    "chargebacks.csv": "3de4d85ef3dcff618aab4a37150c642e3439d0afddff8c4fefb2e65b058a3166",
+    "creditos.notes.md": "65ff3c947613b6bc210fecce01888a7568685cc6dcf46b0f32ce2117f72bbe74",
+    "acq1_settlements.csv": "9112935fb09e1e8bea220eed86ada9a21e9faed87b14e323372a1423dad97375",
+    "acq2_settlements.txt": "5d4dfe2738f29d51d2a0f5f5236aa56ab131084412d436471ddf90b9ac7a2950",
+    "deposits.csv": "8ec6e93988d09a600477f1996058e8d32fcadd0e324b62f744fe31e296750eed",
+    "acquirers.md": "f52357c5bbdcb2e0803f5e01371a287c7302b5f045f629945f17effdda9b0293",
+    "repasses.notes.md": "a622313f60b8ce6099c198047e8d17bf1e52bb690f0b71b1ebf9c96f78e810bf"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "returns",
+     "place": "returns.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "vendas.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "settlements",
+     "place": "settlements.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "creditos.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "commissions",
+     "place": "commissions.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "repasses.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "fees",
+     "place": "fees.mjs",
+     "class": "own",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "deposits",
+     "place": "deposits.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "creditos.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "catalog",
+     "place": "catalog.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "tiers",
+     "place": "tiers.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "batches",
+     "place": "batches.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 5,
+    "directed": 5
+   }
+  }
+ }
+}

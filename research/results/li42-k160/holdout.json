@@ -1,0 +1,52 @@
+{
+  "stigwait": {
+    "solvedInRun": 11,
+    "passHoldout": 8,
+    "failing": [
+      "k160s42402 S:M21.encodeLedger~M104.decodeLedger",
+      "k160s42403 S:M102.encodeCourse~M12.decodeCourse",
+      "k160s42408 S:M67.encodeReport~M42.decodeReport"
+    ],
+    "perCase": {
+      "k160s42400": 0,
+      "k160s42401": 2,
+      "k160s42402": 1,
+      "k160s42403": 1,
+      "k160s42404": 0,
+      "k160s42405": 0,
+      "k160s42406": 0,
+      "k160s42407": 0,
+      "k160s42408": 1,
+      "k160s42409": 0,
+      "k160s42410": 0,
+      "k160s42411": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 12,
+    "passHoldout": 5,
+    "failing": [
+      "k160s42400 D:M55.tracePath>M120.splitRange",
+      "k160s42401 S:M34.encodePanel~M23.decodePanel",
+      "k160s42402 D:M67.stashPath>M120.carveStamp",
+      "k160s42403 D:M136.gradeField>M60.gleanField",
+      "k160s42405 S:M55.encodeFrame~M16.decodeFrame",
+      "k160s42408 D:M137.gleanField>M64.gleanPoint",
+      "k160s42409 D:M64.parseTerm>M56.parseScope"
+    ],
+    "perCase": {
+      "k160s42400": 1,
+      "k160s42401": 1,
+      "k160s42402": 1,
+      "k160s42403": 1,
+      "k160s42404": 0,
+      "k160s42405": 1,
+      "k160s42406": 0,
+      "k160s42407": 0,
+      "k160s42408": 1,
+      "k160s42409": 1,
+      "k160s42410": 0,
+      "k160s42411": 0
+    }
+  }
+}

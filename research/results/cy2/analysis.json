@@ -1,0 +1,436 @@
+{
+  "study": "CY2",
+  "prereg": "tasks/CY2-PREREG.md",
+  "generatedBy": "observatory/cyber/cy2/analyze2.mjs",
+  "episodes": 240,
+  "expected": 240,
+  "missing": [],
+  "rule": "per red: sign test on paired seeds, ties dropped; passed if wins >= 21 of 30 (one-sided P(X>=21|30)=0.0214) and, for H1 and H2 only, the winner's mean red Impacts <= 1.1 x the loser's; supported under both reds, red-dependent under one, not supported under neither",
+  "reds": {
+    "fsm": "FiniteStateRedAgent",
+    "discovery": "DiscoveryFSRed"
+  },
+  "calls": {
+    "model": "claude-haiku-5-5",
+    "temperature": "1.0 (API default; amendment of 2026-11-20)",
+    "maxTokens": 200,
+    "thinking": false,
+    "validReply": "exact label after trimming leading and trailing whitespace"
+  },
+  "hypotheses": [
+    {
+      "id": "CY2-H1",
+      "title": "The doctrine helps an LLM team: llm-doctrine has a higher reward than llm-plain",
+      "a": "llm-doctrine",
+      "b": "llm-plain",
+      "verdict": "supported",
+      "perRed": [
+        {
+          "red": "fsm",
+          "a": "llm-doctrine",
+          "b": "llm-plain",
+          "pairs": 30,
+          "wins": 29,
+          "losses": 1,
+          "ties": 0,
+          "pOneSided": 0,
+          "threshold": 21,
+          "meanRedImpactA": 33.4,
+          "meanRedImpactB": 35.0667,
+          "guarded": true,
+          "guardOk": true,
+          "result": "passed"
+        },
+        {
+          "red": "discovery",
+          "a": "llm-doctrine",
+          "b": "llm-plain",
+          "pairs": 30,
+          "wins": 29,
+          "losses": 1,
+          "ties": 0,
+          "pOneSided": 0,
+          "threshold": 21,
+          "meanRedImpactA": 9.7,
+          "meanRedImpactB": 50.7,
+          "guarded": true,
+          "guardOk": true,
+          "result": "passed"
+        }
+      ]
+    },
+    {
+      "id": "CY2-H2",
+      "title": "The LLM adds something over the rule: llm-doctrine has a higher reward than code-cd10",
+      "a": "llm-doctrine",
+      "b": "code-cd10",
+      "verdict": "not supported",
+      "perRed": [
+        {
+          "red": "fsm",
+          "a": "llm-doctrine",
+          "b": "code-cd10",
+          "pairs": 30,
+          "wins": 0,
+          "losses": 30,
+          "ties": 0,
+          "pOneSided": 1,
+          "threshold": 21,
+          "meanRedImpactA": 33.4,
+          "meanRedImpactB": 17.6,
+          "guarded": true,
+          "guardOk": false,
+          "result": "not passed"
+        },
+        {
+          "red": "discovery",
+          "a": "llm-doctrine",
+          "b": "code-cd10",
+          "pairs": 30,
+          "wins": 11,
+          "losses": 19,
+          "ties": 0,
+          "pOneSided": 0.9506,
+          "threshold": 21,
+          "meanRedImpactA": 9.7,
+          "meanRedImpactB": 0.0333,
+          "guarded": true,
+          "guardOk": false,
+          "result": "not passed"
+        }
+      ]
+    },
+    {
+      "id": "CY2-H2p",
+      "title": "H2', the rule beats the LLM: code-cd10 has a higher reward than llm-doctrine",
+      "a": "code-cd10",
+      "b": "llm-doctrine",
+      "verdict": "red-dependent",
+      "perRed": [
+        {
+          "red": "fsm",
+          "a": "code-cd10",
+          "b": "llm-doctrine",
+          "pairs": 30,
+          "wins": 30,
+          "losses": 0,
+          "ties": 0,
+          "pOneSided": 0,
+          "threshold": 21,
+          "meanRedImpactA": 17.6,
+          "meanRedImpactB": 33.4,
+          "guarded": false,
+          "guardOk": null,
+          "result": "passed"
+        },
+        {
+          "red": "discovery",
+          "a": "code-cd10",
+          "b": "llm-doctrine",
+          "pairs": 30,
+          "wins": 19,
+          "losses": 11,
+          "ties": 0,
+          "pOneSided": 0.1002,
+          "threshold": 21,
+          "meanRedImpactA": 0.0333,
+          "meanRedImpactB": 9.7,
+          "guarded": false,
+          "guardOk": null,
+          "result": "not passed"
+        }
+      ]
+    }
+  ],
+  "arms": {
+    "fsm": {
+      "code-react": {
+        "arm": "code-react",
+        "red": "fsm",
+        "episodes": 30,
+        "reward": {
+          "mean": -1752.2,
+          "median": -1607.5,
+          "min": -2763,
+          "max": -781
+        },
+        "greenFail": 858.9,
+        "greenFailBlue": 1.9333,
+        "greenFailRed": 856.9667,
+        "redImpact": 21.3667,
+        "firstImpactStep": 61.4,
+        "noImpactEpisodes": 0,
+        "redHostsMax": 40.4667,
+        "redRootHostsMax": 19.8,
+        "actionsPerEpisode": {
+          "Sleep": 2361.3,
+          "Restore": 133.7
+        },
+        "cueSteps": 261.9667,
+        "calls": 0,
+        "invalid": 0,
+        "invalidShare": null,
+        "departuresFromCd10": null,
+        "tokensPerEpisode": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0
+        }
+      },
+      "code-cd10": {
+        "arm": "code-cd10",
+        "red": "fsm",
+        "episodes": 30,
+        "reward": {
+          "mean": -1407.2667,
+          "median": -1357,
+          "min": -2605,
+          "max": -685
+        },
+        "greenFail": 754.2333,
+        "greenFailBlue": 3.8333,
+        "greenFailRed": 750.4,
+        "redImpact": 17.6,
+        "firstImpactStep": 54.6667,
+        "noImpactEpisodes": 0,
+        "redHostsMax": 39.1667,
+        "redRootHostsMax": 18,
+        "actionsPerEpisode": {
+          "Sleep": 2286.1667,
+          "Restore": 208.8333
+        },
+        "cueSteps": 223.8667,
+        "calls": 0,
+        "invalid": 0,
+        "invalidShare": null,
+        "departuresFromCd10": null,
+        "tokensPerEpisode": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0
+        }
+      },
+      "llm-plain": {
+        "arm": "llm-plain",
+        "red": "fsm",
+        "episodes": 30,
+        "reward": {
+          "mean": -5659.2,
+          "median": -5782.5,
+          "min": -7769,
+          "max": -3387
+        },
+        "greenFail": 1847,
+        "greenFailBlue": 0.0333,
+        "greenFailRed": 1846.9667,
+        "redImpact": 35.0667,
+        "firstImpactStep": 59.3667,
+        "noImpactEpisodes": 0,
+        "redHostsMax": 64.8,
+        "redRootHostsMax": 47.3,
+        "actionsPerEpisode": {
+          "Sleep": 2278.4,
+          "Analyse": 160.0333,
+          "Monitor": 12.5333,
+          "Restore": 7.4333,
+          "Remove": 36.6
+        },
+        "cueSteps": 221.6333,
+        "calls": 221.6333,
+        "invalid": 0,
+        "invalidShare": 0,
+        "departuresFromCd10": 0.9734,
+        "tokensPerEpisode": {
+          "input": 230712.2333,
+          "output": 4636.1,
+          "cache_read": 812217,
+          "cache_write": 15477.2333
+        }
+      },
+      "llm-doctrine": {
+        "arm": "llm-doctrine",
+        "red": "fsm",
+        "episodes": 30,
+        "reward": {
+          "mean": -3093.2333,
+          "median": -3247,
+          "min": -4846,
+          "max": -1233
+        },
+        "greenFail": 1229.5,
+        "greenFailBlue": 0.6333,
+        "greenFailRed": 1228.8667,
+        "redImpact": 33.4,
+        "firstImpactStep": 57.3,
+        "noImpactEpisodes": 0,
+        "redHostsMax": 50.7333,
+        "redRootHostsMax": 30.6667,
+        "actionsPerEpisode": {
+          "Sleep": 2238.7333,
+          "Analyse": 120.6,
+          "Restore": 109.3,
+          "Monitor": 14.3333,
+          "Remove": 12.0333
+        },
+        "cueSteps": 263.3333,
+        "calls": 263.3333,
+        "invalid": 0,
+        "invalidShare": 0,
+        "departuresFromCd10": 0.6586,
+        "tokensPerEpisode": {
+          "input": 267498.3333,
+          "output": 5473.2,
+          "cache_read": 927221.6333,
+          "cache_write": 16055.3
+        }
+      }
+    },
+    "discovery": {
+      "code-react": {
+        "arm": "code-react",
+        "red": "discovery",
+        "episodes": 30,
+        "reward": {
+          "mean": -275.0667,
+          "median": -252,
+          "min": -580,
+          "max": -148
+        },
+        "greenFail": 267.2667,
+        "greenFailBlue": 0.0667,
+        "greenFailRed": 267.2,
+        "redImpact": 1.2667,
+        "firstImpactStep": 231.375,
+        "noImpactEpisodes": 22,
+        "redHostsMax": 45.1333,
+        "redRootHostsMax": 24.8333,
+        "actionsPerEpisode": {
+          "Sleep": 2329.1667,
+          "Restore": 165.8333
+        },
+        "cueSteps": 346.7333,
+        "calls": 0,
+        "invalid": 0,
+        "invalidShare": null,
+        "departuresFromCd10": null,
+        "tokensPerEpisode": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0
+        }
+      },
+      "code-cd10": {
+        "arm": "code-cd10",
+        "red": "discovery",
+        "episodes": 30,
+        "reward": {
+          "mean": -295.8667,
+          "median": -293.5,
+          "min": -398,
+          "max": -184
+        },
+        "greenFail": 249.6333,
+        "greenFailBlue": 0,
+        "greenFailRed": 249.6333,
+        "redImpact": 0.0333,
+        "firstImpactStep": 90,
+        "noImpactEpisodes": 29,
+        "redHostsMax": 38.4667,
+        "redRootHostsMax": 18.9667,
+        "actionsPerEpisode": {
+          "Sleep": 2262.5333,
+          "Restore": 232.4667
+        },
+        "cueSteps": 256.5,
+        "calls": 0,
+        "invalid": 0,
+        "invalidShare": null,
+        "departuresFromCd10": null,
+        "tokensPerEpisode": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0
+        }
+      },
+      "llm-plain": {
+        "arm": "llm-plain",
+        "red": "discovery",
+        "episodes": 30,
+        "reward": {
+          "mean": -2561.8333,
+          "median": -2545.5,
+          "min": -4999,
+          "max": -580
+        },
+        "greenFail": 669.5,
+        "greenFailBlue": 0,
+        "greenFailRed": 669.5,
+        "redImpact": 50.7,
+        "firstImpactStep": 167.7333,
+        "noImpactEpisodes": 0,
+        "redHostsMax": 68.9667,
+        "redRootHostsMax": 54.8,
+        "actionsPerEpisode": {
+          "Sleep": 2228.5333,
+          "Analyse": 195.2,
+          "Remove": 44.6,
+          "Restore": 11.9667,
+          "Monitor": 14.6333,
+          "BlockTrafficZone": 0.0667
+        },
+        "cueSteps": 271.8333,
+        "calls": 271.8333,
+        "invalid": 0,
+        "invalidShare": 0,
+        "departuresFromCd10": 0.9663,
+        "tokensPerEpisode": {
+          "input": 284837.5,
+          "output": 5736.3667,
+          "cache_read": 989568.9667,
+          "cache_write": 437.1
+        }
+      },
+      "llm-doctrine": {
+        "arm": "llm-doctrine",
+        "red": "discovery",
+        "episodes": 30,
+        "reward": {
+          "mean": -599.8333,
+          "median": -399.5,
+          "min": -1448,
+          "max": -137
+        },
+        "greenFail": 275.3667,
+        "greenFailBlue": 0.1,
+        "greenFailRed": 275.2667,
+        "redImpact": 9.7,
+        "firstImpactStep": 271.1429,
+        "noImpactEpisodes": 9,
+        "redHostsMax": 56.2333,
+        "redRootHostsMax": 37.5667,
+        "actionsPerEpisode": {
+          "Sleep": 2158.3333,
+          "Restore": 145.3,
+          "Analyse": 156.4333,
+          "Remove": 14.1333,
+          "Monitor": 20.8
+        },
+        "cueSteps": 344.9333,
+        "calls": 344.9333,
+        "invalid": 3,
+        "invalidShare": 0.0003,
+        "departuresFromCd10": 0.6741,
+        "tokensPerEpisode": {
+          "input": 350341.0333,
+          "output": 7200.6333,
+          "cache_read": 1192308.7667,
+          "cache_write": 0
+        }
+      }
+    }
+  }
+}

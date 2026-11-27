@@ -1,0 +1,19 @@
+{
+ "study": "GN-S3",
+ "kind": "script",
+ "prereg": "tasks/GN-S3-PREREG.md",
+ "out": "results/gn-s3",
+ "run": "observatory/cyber/gn-s3/drive.mjs",
+ "analyze": "observatory/cyber/gn-s3/analyze-gn-s3.mjs",
+ "episodes": "results/gn-s3/episodes",
+ "expected": 360,
+ "paid": false,
+ "image": "cage4:8c3c50c",
+ "arms": ["code-react", "code-cd10", "code-alarm", "code-scaled", "code-sentinel", "code-cd10-qa"],
+ "reds": ["fsm", "discovery"],
+ "seeds": [77001, 77030],
+ "workers": 3,
+ "review": ["observatory/cyber/gn-s3", "observatory/cyber/cy2", "observatory/cyber/cy1b", "results/cy1b", "catalog/genome"],
+ "bench": { "reportNote": "Code-only arms (no model calls). Verdicts for DEF-04 (code-scaled) and DEF-07 (code-sentinel) are co-signed by Cyber Research. If stage 0 found no Analyse channel, DEF-07 is 'no channel' and code-sentinel/code-cd10-qa did not run." },
+ "notes": "reds: fsm = FiniteStateRedAgent, discovery = DiscoveryFSRed. GN-S3 of GN-PLAN.md; free, no ledger."
+}

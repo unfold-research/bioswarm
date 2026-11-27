@@ -1,0 +1,24 @@
+{
+  "out": "li38-k160",
+  "k": 160,
+  "cases": 12,
+  "seed0": 38400,
+  "shape": {
+    "local": 2,
+    "directed": 320,
+    "symmetric": 80,
+    "tests": 16,
+    "shown": 3
+  },
+  "arms": [
+    "stigwait",
+    "manager"
+  ],
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 128000,
+  "rounds": 12,
+  "strictFeedback": true,
+  "managerSlack": true
+}

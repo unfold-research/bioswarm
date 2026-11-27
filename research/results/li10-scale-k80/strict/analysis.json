@@ -1,0 +1,292 @@
+{
+  "arms": {
+    "routed": {
+      "solved": 1,
+      "of": 8,
+      "finalTotal": {
+        "sum": 10,
+        "median": 1
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 10,
+        "symmetric": 0
+      },
+      "meanOut": 362390,
+      "calls": 1094,
+      "trunc": 0,
+      "messages": 1584,
+      "meanTrajectory": [
+        139.25,
+        35.13,
+        24,
+        4.88,
+        2.25,
+        1.38,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25,
+        1.25
+      ]
+    },
+    "manager": {
+      "solved": 5,
+      "of": 8,
+      "finalTotal": {
+        "sum": 13,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 4,
+        "symmetric": 9
+      },
+      "meanOut": 402584,
+      "calls": 1246,
+      "trunc": 14,
+      "messages": 0,
+      "meanTrajectory": [
+        139.25,
+        139.25,
+        129.13,
+        99.38,
+        85.38,
+        40.75,
+        33.88,
+        18.75,
+        16.38,
+        10.5,
+        9.38,
+        5,
+        5,
+        3.75,
+        3.5,
+        1.75,
+        1.75,
+        1.63
+      ]
+    },
+    "chat": {
+      "solved": 0,
+      "of": 8,
+      "finalTotal": {
+        "sum": 479,
+        "median": 60
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 4,
+        "symmetric": 475
+      },
+      "meanOut": 803400,
+      "calls": 4107,
+      "trunc": 1,
+      "messages": 3584,
+      "meanTrajectory": [
+        139.25,
+        91.13,
+        65,
+        61,
+        59.75,
+        59.75,
+        60,
+        59.88,
+        59.88,
+        59.88,
+        59.88,
+        59.88,
+        59.88,
+        59.88,
+        59.88,
+        59.88,
+        59.88,
+        59.88
+      ]
+    },
+    "solo": {
+      "solved": 6,
+      "of": 8,
+      "finalTotal": {
+        "sum": 600,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 320,
+        "directed": 160,
+        "symmetric": 120
+      },
+      "meanOut": 310911,
+      "calls": 41,
+      "trunc": 32,
+      "messages": 0,
+      "meanTrajectory": [
+        262.5,
+        225.25,
+        150.25,
+        118.5,
+        112.5,
+        112.5,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75
+      ]
+    }
+  },
+  "edgeTests": {
+    "routed_vs_chat_symmetric": {
+      "routedOnly": 475,
+      "chatOnly": 0,
+      "both": 4,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_chat_directed": {
+      "routedOnly": 1,
+      "chatOnly": 7,
+      "both": 628,
+      "neither": 3,
+      "p": 0.07031
+    },
+    "routed_vs_chat_all": {
+      "routedOnly": 476,
+      "chatOnly": 7,
+      "both": 632,
+      "neither": 3,
+      "p": 0
+    },
+    "routed_vs_manager_symmetric": {
+      "routedOnly": 9,
+      "managerOnly": 0,
+      "both": 470,
+      "neither": 0,
+      "p": 0.00391
+    },
+    "routed_vs_manager_directed": {
+      "routedOnly": 2,
+      "managerOnly": 8,
+      "both": 627,
+      "neither": 2,
+      "p": 0.10938
+    },
+    "routed_vs_manager_all": {
+      "routedOnly": 11,
+      "managerOnly": 8,
+      "both": 1097,
+      "neither": 2,
+      "p": 0.64761
+    },
+    "manager_vs_chat_symmetric": {
+      "managerOnly": 466,
+      "chatOnly": 0,
+      "both": 4,
+      "neither": 9,
+      "p": 0
+    },
+    "manager_vs_chat_directed": {
+      "managerOnly": 2,
+      "chatOnly": 2,
+      "both": 633,
+      "neither": 2,
+      "p": 1
+    },
+    "manager_vs_chat_all": {
+      "managerOnly": 468,
+      "chatOnly": 2,
+      "both": 637,
+      "neither": 11,
+      "p": 0
+    },
+    "routed_vs_solo_symmetric": {
+      "routedOnly": 120,
+      "soloOnly": 0,
+      "both": 359,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_solo_directed": {
+      "routedOnly": 158,
+      "soloOnly": 8,
+      "both": 471,
+      "neither": 2,
+      "p": 0
+    },
+    "routed_vs_solo_all": {
+      "routedOnly": 278,
+      "soloOnly": 8,
+      "both": 830,
+      "neither": 2,
+      "p": 0
+    }
+  },
+  "signTests": {
+    "routed_vs_chat": {
+      "lowerIn": 8,
+      "higherIn": 0,
+      "p": 0.00781
+    },
+    "routed_vs_manager": {
+      "lowerIn": 1,
+      "higherIn": 6,
+      "p": 0.125
+    },
+    "manager_vs_chat": {
+      "lowerIn": 8,
+      "higherIn": 0,
+      "p": 0.00781
+    },
+    "routed_vs_solo": {
+      "lowerIn": 2,
+      "higherIn": 5,
+      "p": 0.45313
+    },
+    "solo_vs_routed": {
+      "lowerIn": 5,
+      "higherIn": 2,
+      "p": 0.45313
+    },
+    "solo_vs_manager": {
+      "lowerIn": 3,
+      "higherIn": 2,
+      "p": 1
+    },
+    "solo_vs_chat": {
+      "lowerIn": 6,
+      "higherIn": 2,
+      "p": 0.28906
+    }
+  },
+  "oscillation": {
+    "routed": {
+      "bothSidesChanged": 436,
+      "stillFailingAfter": 22
+    },
+    "manager": {
+      "bothSidesChanged": 859,
+      "stillFailingAfter": 784
+    },
+    "chat": {
+      "bothSidesChanged": 3783,
+      "stillFailingAfter": 3775
+    }
+  },
+  "verdict": {
+    "H-LI21 one agent solves at least as many cases as the best swarm arm": "supported"
+  }
+}

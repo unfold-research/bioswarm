@@ -1,0 +1,79 @@
+{
+  "study": "m3-verifier-sonnet",
+  "configHash": "a83935e7f8618c54036a4181fbcf04d8b6fb4b894c9e92f346fdc601e8c9fdd7",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "grounded": {
+      "corrupted": 48,
+      "clean": 48,
+      "sensitivity": 1,
+      "sensitivityCi95": [
+        0.9258998692515198,
+        1
+      ],
+      "specificity": 1,
+      "specificityCi95": [
+        0.9258998692515198,
+        1
+      ],
+      "localised": 48,
+      "byError": {
+        "wrong-citation": {
+          "n": 12,
+          "caught": 12
+        },
+        "flipped-value": {
+          "n": 12,
+          "caught": 12
+        },
+        "dropped-finding": {
+          "n": 12,
+          "caught": 12
+        },
+        "invented-conflict": {
+          "n": 12,
+          "caught": 12
+        }
+      }
+    },
+    "blind": {
+      "corrupted": 48,
+      "clean": 48,
+      "sensitivity": 0.020833333333333332,
+      "sensitivityCi95": [
+        0.003687110936731193,
+        0.10899218103056246
+      ],
+      "specificity": 1,
+      "specificityCi95": [
+        0.9258998692515198,
+        1
+      ],
+      "localised": 1,
+      "byError": {
+        "wrong-citation": {
+          "n": 12,
+          "caught": 0
+        },
+        "flipped-value": {
+          "n": 12,
+          "caught": 0
+        },
+        "dropped-finding": {
+          "n": 12,
+          "caught": 0
+        },
+        "invented-conflict": {
+          "n": 12,
+          "caught": 1
+        }
+      }
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported"
+  },
+  "finishedAt": "2026-11-11T05:29:15.420Z"
+}

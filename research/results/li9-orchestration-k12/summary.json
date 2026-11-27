@@ -1,0 +1,18 @@
+{
+  "configHash": "af30a68a8e44033c8c77c469f4406476a400fe97ab14432b9756b5ab6f7c6322",
+  "finishedAt": "2026-11-17T14:48:15.223Z",
+  "arms": {
+    "routed": {
+      "solved": 10,
+      "of": 10
+    },
+    "chat": {
+      "solved": 0,
+      "of": 10
+    },
+    "manager": {
+      "solved": 10,
+      "of": 10
+    }
+  }
+}

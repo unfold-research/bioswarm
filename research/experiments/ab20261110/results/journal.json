@@ -1,0 +1,17 @@
+{
+  "probe": {
+    "status": "complete"
+  },
+  "A-r0": {
+    "hash": "4a9f090fd2ab81b29ba65554161185065f7648c9a6c420054710bfc80ff96f48",
+    "status": "complete",
+    "n": 128,
+    "batchId": "msgbatch_01Uvi7cdSMyNP2aT1W28Ks9m"
+  },
+  "A-r1": {
+    "hash": "d2564ea219d3f2bd0e30611c0bb5cd3374266140112ed7d0c6f0718c097f9697",
+    "status": "complete",
+    "n": 64,
+    "batchId": "msgbatch_0186yN4bKQDNjxedTCUwztMf"
+  }
+}

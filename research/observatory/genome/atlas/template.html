@@ -1,0 +1,365 @@
+<meta charset="utf-8">
+<title>Genoma dos Enxames</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field notebook — one sticky header with the seven-shard mark, tabbed views, the matrix as the specimen plate. */
+:root {
+  --bg: #F4F0E6; --panel: #FBF8F1; --ink: #15131C; --muted: #5E6660; --line: #DCD5C5;
+  --green: #387568; --sage: #78A99A; --p0: #E7EFEA; --p1: #B9D3C9; --p2: #78A99A; --p3: #387568;
+  --absent: #ECE6D8; --unknown: transparent; --contest: #C98A2E; --contest-bg: #F3E1C4;
+  --ok: #2F7A55; --warn: #A86A12; --bad: #A83B32;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121117; --panel: #1A1920; --ink: #ECE8DE; --muted: #9AA39D; --line: #2D2C34;
+  --green: #6FB5A3; --sage: #4E8576; --p0: #1D2A26; --p1: #2B4A41; --p2: #3E7466; --p3: #6FB5A3;
+  --absent: #24232A; --contest: #E0A84E; --contest-bg: #3A2D18; --ok: #6BC496; --warn: #E0A84E; --bad: #E07A70; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121117; --panel: #1A1920; --ink: #ECE8DE; --muted: #9AA39D; --line: #2D2C34;
+  --green: #6FB5A3; --sage: #4E8576; --p0: #1D2A26; --p1: #2B4A41; --p2: #3E7466; --p3: #6FB5A3;
+  --absent: #24232A; --contest: #E0A84E; --contest-bg: #3A2D18; --ok: #6BC496; --warn: #E0A84E; --bad: #E07A70; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg) }
+.wrap { max-width: 1280px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line) }
+header .wrap { display: flex; align-items: center; gap: 14px; padding-block: 12px; flex-wrap: wrap }
+.brand { display: flex; align-items: center; gap: 10px; margin-right: auto }
+.brand h1 { font: 650 22px/1.1 var(--display); margin: 0; letter-spacing: -.01em }
+.brand small { display: block; font: 500 11px var(--mono); color: var(--muted); letter-spacing: .06em; text-transform: uppercase }
+nav { display: flex; gap: 4px; flex-wrap: wrap }
+.back { font: 500 12px var(--body); text-transform: none; letter-spacing: 0; color: var(--green); text-decoration: underline; text-underline-offset: 3px; margin-left: 14px }
+.back:hover { color: var(--green) }
+nav a { font: 500 13px var(--body); color: var(--muted); text-decoration: none; padding: 6px 11px; border-radius: 999px }
+nav a[aria-current="page"] { background: var(--ink); color: var(--bg) }
+nav a:focus-visible, button:focus-visible, select:focus-visible, .cell:focus-visible { outline: 2px solid var(--green); outline-offset: 2px }
+main .wrap { padding-block: 22px 60px; display: grid; gap: 22px }
+h2 { font: 650 26px/1.15 var(--display); margin: 0; text-wrap: balance }
+h3 { font: 600 13px var(--body); margin: 0; letter-spacing: .05em; text-transform: uppercase; color: var(--muted) }
+p { margin: 0; max-width: 68ch }
+.lede { color: var(--muted); max-width: 72ch }
+.stats { display: flex; gap: 28px; flex-wrap: wrap; font-variant-numeric: tabular-nums }
+.stat b { display: block; font: 600 24px var(--display) }
+.stat span { font-size: 12px; color: var(--muted) }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden }
+.seg button { font: 500 12px var(--body); border: 0; background: transparent; color: var(--muted); padding: 6px 12px; cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--green); color: var(--bg) }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--muted); align-items: center }
+.sw { display: inline-block; width: 12px; height: 12px; border-radius: 2px; vertical-align: -2px; margin-right: 5px; border: 1px solid var(--line) }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 22px; align-items: start }
+@media (max-width: 980px) { .split { grid-template-columns: minmax(0, 1fr) } }
+.plate { overflow: auto; max-height: calc(100vh - 230px); border: 1px solid var(--line); background: var(--panel); border-radius: 6px }
+table.m { border-collapse: separate; border-spacing: 0; font-size: 12px }
+table.m th, table.m td { padding: 0 }
+table.m thead th.ax { font: 600 10px var(--mono); letter-spacing: .06em; color: var(--muted); text-align: left; padding: 8px 0 2px 4px; border-left: 1px solid var(--line) }
+table.m thead th { position: sticky; background: var(--panel); z-index: 2 }
+table.m thead tr:first-child th { top: 0 } table.m thead tr:nth-child(2) th { top: 26px }
+table.m thead th.sp { z-index: 3 }
+table.m thead th.tr { height: 58px; vertical-align: bottom; width: 18px; min-width: 18px }
+table.m thead th.tr div { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; font: 500 10px var(--mono); color: var(--ink); padding: 4px 0; cursor: pointer }
+table.m thead th.tr div:hover { color: var(--green) }
+table.m th.sp { position: sticky; left: 0; background: var(--panel); text-align: left; font-weight: 500; padding: 0 10px; white-space: nowrap; z-index: 1; border-right: 1px solid var(--line); max-width: 250px; overflow: hidden; text-overflow: ellipsis }
+table.m th.sp em { font-style: italic }
+table.m th.sp .nick { font-weight: 600 }
+table.m th.sp .lat { color: var(--muted); font-size: 11px }
+table.m th.tr.hl div { color: var(--green); font-weight: 600 }
+table.m tr.hl th.sp { color: var(--green) }
+td.hl { background: var(--p0) }
+table.m th.sp .tag { font: 500 9px var(--mono); color: var(--muted); margin-left: 6px; letter-spacing: .05em; text-transform: uppercase }
+table.m tr.gstart th, table.m tr.gstart td { border-top: 2px solid var(--line) }
+td.axs { border-left: 1px solid var(--line) }
+.cell { width: 18px; height: 18px; display: block; border: 0; padding: 0; cursor: pointer; background: transparent }
+.cell i { display: block; width: 14px; height: 14px; margin: 2px; border-radius: 2px }
+.cell.on i { box-shadow: 0 0 0 2px var(--ink), 0 0 0 4px var(--bg) }
+.c-P1 i { background: var(--p1) } .c-P2 i { background: var(--p2) } .c-P3 i { background: var(--p3) } .c-P0 i { background: var(--p0) }
+.c-A i { background: var(--absent) }
+.c-U i { background: transparent; border: 1px dashed var(--line); width: 12px; height: 12px; margin: 3px }
+.c-C i { background: repeating-linear-gradient(135deg, var(--contest-bg) 0 3px, var(--contest) 3px 4.5px) }
+.side > * { min-width: 0 }
+.side p, .side .vec, .ref { overflow-wrap: anywhere }
+.side { grid-template-columns: minmax(0, 1fr); position: sticky; top: 92px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 12px; max-height: calc(100vh - 110px); overflow: auto; min-width: 0 }
+@media (max-width: 980px) { .side { position: static; max-height: none } }
+.side .who { font: 600 18px/1.2 var(--display) }
+.side .meta { font: 12px var(--mono); color: var(--muted) }
+.coder { border-top: 1px solid var(--line); padding-top: 10px; display: grid; gap: 4px }
+.coder .h { display: flex; gap: 8px; align-items: baseline; font-size: 12px; color: var(--muted) }
+.pill { font: 600 10px var(--mono); letter-spacing: .05em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; background: var(--absent); color: var(--ink) }
+.pill { white-space: nowrap }
+.pill.P { background: var(--p2); color: #fff } .pill.A { background: var(--absent) } .pill.U { background: transparent; border: 1px dashed var(--line) } .pill.C { background: var(--contest); color: #1b1203 }
+.pill.verified { background: transparent; color: var(--ok); border: 1px solid var(--ok) }
+.pill.unverified { background: transparent; color: var(--bad); border: 1px solid var(--bad) }
+.pill.tested { background: transparent; color: var(--muted); border: 1px solid var(--line) }
+.ref { font-size: 12px; color: var(--muted) } .ref a { color: var(--green) }
+.empty { color: var(--muted); font-size: 13px }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px }
+.hyp { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px; display: grid; gap: 8px; align-content: start; align-self: start }
+.hyp .top { display: flex; justify-content: space-between; gap: 8px; align-items: center; font: 600 12px var(--mono) }
+.v-supported { color: var(--ok) } .v-refuted { color: var(--bad) } .v-untestable, .v-incomplete { color: var(--warn) }
+.hyp .num { font: 12px var(--mono); color: var(--muted); font-variant-numeric: tabular-nums }
+.hyp .why { font-size: 12px; color: var(--warn) }
+.bars { display: grid; gap: 4px }
+.bar { display: grid; grid-template-columns: minmax(0, 270px) minmax(0, 1fr) minmax(0, 280px); gap: 12px; align-items: start; font-size: 12px; padding-block: 5px; border-bottom: 1px solid var(--line) }
+.bar .lbl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.bar .tracks { display: grid; gap: 3px }
+.bar .row2 { display: grid; grid-template-columns: minmax(0, 1fr) 38px; gap: 8px; align-items: center }
+.bar .track { height: 6px; background: var(--absent); border-radius: 2px; overflow: hidden }
+.bar .track b { display: block; height: 100% }
+.bar .pct { font: 11px var(--mono); color: var(--muted); text-align: right; font-variant-numeric: tabular-nums }
+.bar .st { display: flex; gap: 4px; justify-content: flex-start; flex-wrap: wrap }
+@media (max-width: 640px) { .bar { grid-template-columns: minmax(0, 1fr); } .bar .st { justify-content: flex-start } }
+.axhead { font: 600 11px var(--mono); color: var(--muted); letter-spacing: .06em; text-transform: uppercase; margin-top: 10px }
+.picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px 14px }
+.picker label { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; cursor: pointer }
+.picker input { margin-top: 3px; accent-color: var(--green) }
+.result { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 12px; min-width: 0 }
+.near { display: grid; gap: 6px }
+.near div { display: grid; grid-template-columns: minmax(0, 1fr) 54px; gap: 10px; font-size: 13px; align-items: center }
+.near .j { font: 12px var(--mono); text-align: right; font-variant-numeric: tabular-nums }
+.flags { display: flex; flex-wrap: wrap; gap: 6px }
+.flag { white-space: nowrap; font: 500 11px var(--mono); padding: 3px 8px; border-radius: 4px; border: 1px solid var(--line) }
+.flag.untested { border-style: dashed } .flag.null-llm { color: var(--bad); border-color: var(--bad) } .flag.positive-eng { color: var(--ok); border-color: var(--ok) } .flag.sim-support { color: var(--warn); border-color: var(--warn) }
+.vec { font: 12px var(--mono); color: var(--muted) }
+.note { font-size: 12px; color: var(--muted); max-width: 80ch }
+.presets { display: flex; gap: 6px; flex-wrap: wrap }
+.presets button { font: 500 12px var(--body); border: 1px solid var(--line); background: var(--panel); color: var(--ink); padding: 5px 10px; border-radius: 999px; cursor: pointer }
+.presets button:hover { border-color: var(--green) }
+.presets button[aria-pressed="true"] { background: var(--green); border-color: var(--green); color: var(--bg) }
+.presets button.clear { border: 0; background: transparent; color: var(--muted); text-decoration: underline; text-underline-offset: 3px }
+.sim { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--panel) }
+table.g { border-collapse: collapse; font-size: 12px; font-variant-numeric: tabular-nums; width: 100%; table-layout: fixed; min-width: 860px }
+table.g col.c0 { width: 300px }
+.nw { white-space: nowrap }
+table.g th.aside, table.g td[data-aside] { border-left: 2px solid var(--line) }
+table.g td .codes { display: block; font: 10px var(--mono); color: var(--muted); white-space: normal; margin-top: 2px }
+table.g th, table.g td { padding: 6px 10px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap }
+table.g th:first-child, table.g td:first-child { text-align: left }
+table.g thead th { font: 600 11px var(--mono); color: var(--muted); letter-spacing: .04em; white-space: normal; vertical-align: bottom }
+table.g thead th .codes { display: block; font-weight: 400 }
+table.g td.best { font-weight: 700; color: var(--ink); box-shadow: inset 0 0 0 2px var(--green) }
+table.g td .hb { display: block; height: 3px; background: var(--p2); border-radius: 2px; margin-top: 3px }
+table.g tr.kind-archetype td:first-child { font-style: italic }
+table.g tr.sec td { font: 600 10px var(--mono); color: var(--muted); letter-spacing: .06em; text-transform: uppercase; background: var(--bg) }
+.arch { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; align-items: start }
+.arch > div { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 12px; display: grid; gap: 6px; align-content: start }
+.arch b { font: 600 15px var(--display) }
+.kv { display: grid; grid-template-columns: minmax(0, 10em) minmax(0, 1fr); gap: 3px 10px; font-size: 12px }
+.kv dt { color: var(--muted) } .kv dd { margin: 0; font-family: var(--mono) }
+@media (prefers-reduced-motion: no-preference) { .cell i { transition: box-shadow .12s } }
+</style>
+
+<header><div class="wrap">
+  <div class="brand">
+    <svg width="34" height="34" viewBox="-50 -50 100 100" aria-hidden="true" id="mark"></svg>
+    <div><h1>Genoma dos Enxames</h1><small>Unfold · G1–G2<a class="back" id="back" href="/" hidden>← Library</a></small></div>
+  </div>
+  <nav aria-label="Vistas">
+    <a href="#matriz">Matriz</a><a href="#tracos">Traços</a><a href="#compositor">Compositor</a><a href="#arquetipos">Arquétipos</a><a href="#hipoteses">Hipóteses</a>
+  </nav>
+</div></header>
+
+<main><div class="wrap" id="view"></div></main>
+
+<script>
+const DATA = /*DATA*/null/*END*/;
+const T = DATA.matrix.traits, S = DATA.matrix.species, AN = DATA.analysis;
+const TR = Object.fromEntries(T.traits.map(t => [t.id, t]));
+const AX = Object.fromEntries(T.axes.map(a => [a.id, a]));
+const SP = Object.fromEntries(S.map(s => [s.id, s]));
+const traitOrder = T.axes.flatMap(a => T.traits.map(t => t.id).filter(id => TR[id].axis === a.id));
+const spOrder = AN.speciesOrder || S.map(s => s.id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const fmt = (x, d = 2) => x == null ? '—' : Number(x).toFixed(d);
+const state = { realm: 'all', sel: null };
+try { const r = localStorage.getItem('g1-realm'); if (r) state.realm = r; } catch {}
+
+// seven-shard mark
+(() => { const g = document.getElementById('mark'); let h = '';
+  for (let i = 0; i < 7; i++) h += `<path transform="rotate(${i * 360 / 7})" d="M0,-14 L9,-44 L-6,-40 Z" fill="var(--green)"/>`;
+  g.innerHTML = h; })();
+
+function cls(c) { if (c.c === 'P') return 'c-P' + Math.max(1, Math.round(c.s)); return 'c-' + c.c; }
+const label = { P: 'presente', A: 'ausente', U: 'desconhecido', C: 'contestado' };
+const stLabel = { present: 'presente', variable: 'variável', absent: 'ausente', unknown: 'desconhecido', null: 'sem codificação' };
+const visible = () => spOrder.map(id => SP[id]).filter(s => state.realm === 'all' || s.realm === state.realm);
+
+function viewMatrix() {
+  const rows = visible(), g = AN.speciesGroups || {};
+  const counts = { P: 0, A: 0, U: 0, C: 0 }; rows.forEach(s => traitOrder.forEach(id => counts[s.cells[id].c]++));
+  const axes = T.axes.map(a => ({ a, n: traitOrder.filter(id => TR[id].axis === a.id).length }));
+  let head = '<tr><th class="sp"></th>' + axes.map(x => `<th class="ax" colspan="${x.n}">${x.a.id}</th>`).join('') + '</tr>';
+  const [selS, selT] = state.sel || [];
+  head += '<tr><th class="sp"></th>' + traitOrder.map(id => `<th class="tr${id === selT ? ' hl' : ''}"><div title="${esc(TR[id].name)}: ${esc(TR[id].definition)}" data-trait="${id}">${id}</div></th>`).join('') + '</tr>';
+  let prev = null;
+  const body = rows.map(s => { const gs = prev !== null && g[s.id] !== prev; prev = g[s.id];
+    const cl = [gs ? 'gstart' : '', s.id === selS ? 'hl' : ''].filter(Boolean).join(' ');
+    return `<tr${cl ? ` class="${cl}"` : ''}><th class="sp" title="${esc(s.name)} — ${esc(s.common)} (${s.realm})"><b class="nick">${esc(s.nick || s.name)}</b> <em class="lat">${esc(s.name.replace(/ \(.*\)$/, ''))}</em></th>` +
+      traitOrder.map((id, k) => { const c = s.cells[id]; const tdc = [k && TR[id].axis !== TR[traitOrder[k - 1]].axis ? 'axs' : '', (id === selT || s.id === selS) ? 'hl' : ''].filter(Boolean).join(' '); const first = tdc ? ` class="${tdc}"` : '';
+        const on = state.sel && state.sel[0] === s.id && state.sel[1] === id ? ' on' : '';
+        return `<td${first}><button class="cell ${cls(c)}${on}" data-s="${s.id}" data-t="${id}" aria-label="${esc(s.nick || s.name)}, ${esc(TR[id].name)}: ${label[c.c]}"><i></i></button></td>`; }).join('') + '</tr>'; }).join('');
+  return `
+  <section style="display:grid;gap:10px">
+    <h2>Quais traços cada enxame tem</h2>
+    <p class="lede">Dois codificadores independentes (Opus 5.5 e Sonnet 5.5); cor cheia só quando concordam.</p>
+  </section>
+  <div class="stats">
+    <div class="stat"><b>${rows.length}</b><span>sistemas visíveis</span></div>
+    <div class="stat"><b>${counts.P}</b><span>células presentes</span></div>
+    <div class="stat"><b>${counts.C}</b><span>contestadas</span></div>
+    <div class="stat"><b>${fmt(AN.reliability?.kappa)}</b><span>κ entre codificadores</span></div>
+  </div>
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Reino">${[['all', 'Todos'], ['seen', 'Seen'], ['unseen', 'Unseen']].map(([v, l]) => `<button data-realm="${v}" aria-pressed="${state.realm === v}">${l}</button>`).join('')}</div>
+    <div class="legend"><span><i class="sw" style="background:var(--p1)"></i><i class="sw" style="background:var(--p2)"></i><i class="sw" style="background:var(--p3)"></i>presente (força 1–3)</span>
+      <span><i class="sw" style="background:var(--absent)"></i>ausente</span><span><i class="sw" style="border-style:dashed;background:transparent"></i>desconhecido</span>
+      <span><i class="sw" style="background:repeating-linear-gradient(135deg,var(--contest-bg) 0 3px,var(--contest) 3px 4.5px)"></i>contestado</span></div>
+  </div>
+  <div class="split">
+    <div class="plate"><table class="m"><thead>${head}</thead><tbody>${body}</tbody></table></div>
+    <aside class="side" id="side" aria-live="polite">${sidePanel()}</aside>
+  </div>`;
+}
+
+function refLine(r) {
+  const doi = r.doi || r.foundDoi; const v = r.status === 'verified' ? '<span class="pill verified">verificada</span>' : r.status ? '<span class="pill unverified">não verificada</span>' : '';
+  return `<div class="ref">${esc(r.authors)} (${esc(r.year)}). ${esc(r.title)}. ${doi ? `<a href="https://doi.org/${esc(doi)}" target="_blank" rel="noopener">doi</a>` : ''} ${v}</div>`;
+}
+function sidePanel() {
+  if (!state.sel) return `<div class="empty">Clique numa célula para ver a evidência de cada codificador e as referências conferidas. Passe o mouse num código para ver o traço.</div>`;
+  const [sid, tid] = state.sel, s = SP[sid], t = TR[tid], c = s.cells[tid];
+  const coder = (k, st, ev) => { const refs = c.refs.filter(r => r.coder === k);
+    return `<div class="coder"><div class="h"><b>${k === 'A' ? 'Opus 5.5' : 'Sonnet 5.5'}</b><span>${stLabel[st]}</span></div><p>${esc(ev) || '<span class="empty">sem evidência</span>'}</p>${refs.map(refLine).join('')}</div>`; };
+  return `<div><div class="who">${esc(s.nick || s.name)}</div><div class="meta"><em>${esc(s.name)}</em> · ${esc(s.common)} · ${s.realm}</div>${s.nickWhy ? `<div class="note">${esc(s.nickWhy)}</div>` : ''}</div>
+    <div><div style="display:flex;gap:8px;align-items:center"><span class="pill ${c.c}">${label[c.c]}</span><b>${esc(t.id)} ${esc(t.name)}</b></div><p class="note" style="margin-top:6px">${esc(t.definition)}</p></div>
+    ${coder('A', c.a, c.ea)}${coder('B', c.b, c.eb)}
+    ${s.conditions ? `<div class="coder"><div class="h"><b>Condições</b><span>codificador A</span></div><dl class="kv">${T.conditions.map(c => `<dt>${esc(c.name)}</dt><dd>${esc(Array.isArray(s.conditions[c.id]) ? s.conditions[c.id].join(', ') : c.id === 'C-SIZE' ? '10^' + s.conditions[c.id] : s.conditions[c.id])}</dd>`).join('')}</dl></div>` : ''}`;
+}
+
+function flagChips(t) {
+  const st = Object.fromEntries((AN.backlog || []).map(b => [b.id, b.flags]));
+  return (st[t.id] || t.flags.map(f => ({ f, status: 'untested' }))).map(x => `<span class="flag ${x.status}" title="${x.status}">${esc(x.f)}</span>`).join('') || '<span class="note">sem flag</span>';
+}
+function viewTraits() {
+  const pv = AN.prevalence || {}, nSeen = S.filter(s => s.realm === 'seen').length, nUn = S.filter(s => s.realm === 'unseen').length;
+  return `<section style="display:grid;gap:10px"><h2>Quanto cada traço aparece na natureza</h2>
+    </section>
+    <div class="legend"><span><i class="sw" style="background:var(--p3)"></i>% dos ${nSeen} seen</span><span><i class="sw" style="background:var(--sage)"></i>% dos ${nUn} unseen</span>
+      <span class="flag untested">untested</span><span class="flag null-llm">null-llm</span><span class="flag positive-eng">positive-eng</span><span class="flag sim-support">sim-support</span></div>
+    ${T.axes.map(a => `<div class="axhead">${a.id} · ${esc(a.name)} — ${esc(a.question)}</div><div class="bars">${T.traits.filter(t => t.axis === a.id).map(t => { const p = pv[t.id] || {};
+      return `<div class="bar"><span class="lbl" title="${esc(t.definition)}">${t.id} ${esc(t.name)}</span><span class="tracks">${[[p.seenP || 0, nSeen, 'var(--p3)', 'seen'], [p.unseenP || 0, nUn, 'var(--sage)', 'unseen']].map(([x, n, col, l]) => `<span class="row2" aria-label="${l} ${x} de ${n}"><span class="track"><b style="width:${100 * x / n}%;background:${col}"></b></span><span class="pct">${Math.round(100 * x / n)}%</span></span>`).join('')}</span><span class="st">${flagChips(t)}</span></div>`; }).join('')}</div>`).join('')}`;
+}
+
+const PRESETS = {
+  'Formiga (trilha)': ['FLD-01', 'FLD-02', 'ACT-03', 'ACT-01', 'SIG-02'],
+  'Abelha (escolha)': ['DEC-03', 'SIG-03', 'DEC-01', 'DEC-02', 'SIG-05'],
+  'Vespa (defesa)': ['DEF-01', 'SIG-04', 'DEF-04', 'DEF-03', 'ACT-05'],
+  'Imune (neutrófilo)': ['SIG-02', 'ACT-03', 'ACT-05', 'REG-02', 'DEF-04'],
+};
+let picked = new Set(PRESETS['Formiga (trilha)']);
+function nearest() {
+  const out = S.map(s => { const P = new Set(traitOrder.filter(id => s.cells[id].c === 'P')); let i = 0; picked.forEach(x => P.has(x) && i++);
+    const u = new Set([...P, ...picked]).size; return { s, j: u ? i / u : 0, cover: picked.size ? i / picked.size : 0 }; });
+  return out.sort((a, b) => b.j - a.j).slice(0, 6);
+}
+function viewComposer() {
+  const near = nearest(); const prim = {}; const flags = new Map();
+  picked.forEach(id => { TR[id].primitives.forEach(p => prim[p] = (prim[p] || 0) + 1); });
+  const bl = Object.fromEntries((AN.backlog || []).map(b => [b.id, b.flags]));
+  picked.forEach(id => (bl[id] || TR[id].flags.map(f => ({ f, status: 'untested' }))).forEach(x => flags.set(x.f, x.status)));
+  const untested = [...flags.values()].filter(v => v === 'untested' || v === 'no-flag').length;
+  return `<section style="display:grid;gap:10px"><h2>Compor um enxame por traços</h2>
+    <p class="lede">Os traços escolhidos viram flags; ao lado, os sistemas naturais mais parecidos.</p></section>
+    <div class="presets">${Object.keys(PRESETS).map(k => `<button data-preset="${esc(k)}" aria-pressed="${PRESETS[k].length === picked.size && PRESETS[k].every(x => picked.has(x))}">${esc(k)}</button>`).join('')}${picked.size ? '<button class="clear" data-preset="">Limpar seleção</button>' : ''}</div>
+    <div class="split">
+      <div style="display:grid;gap:4px;min-width:0">${T.axes.map(a => `<div class="axhead">${a.id} · ${esc(a.name)}</div><div class="picker">${T.traits.filter(t => t.axis === a.id).map(t =>
+        `<label title="${esc(t.definition)}"><input type="checkbox" id="pick-${t.id}" data-pick="${t.id}" ${picked.has(t.id) ? 'checked' : ''}>${esc(t.name)}</label>`).join('')}</div>`).join('')}</div>
+      <aside class="result side">
+        <h3>Mais próximos na natureza</h3>
+        ${picked.size ? '' : '<p class="empty">Marque traços à esquerda ou escolha um arquétipo acima.</p>'}
+        <div class="near">${picked.size ? near.map(n => `<div><span><b>${esc(n.s.nick || n.s.name)}</b> <span class="note"><em>${esc(n.s.name)}</em></span></span><span class="j">${fmt(n.j)}</span></div>`).join('') : ''}</div>
+        ${picked.size ? `<h3>Flags ligadas (${flags.size})</h3><div class="flags">${[...flags].map(([f, st]) => `<span class="flag ${st}" title="${st}">${esc(f)}</span>`).join('') || '<span class="empty">nenhuma</span>'}</div>
+        <h3>Primitivas do P1</h3><div class="vec">${Object.entries(prim).map(([k, v]) => `${k} ×${v}`).join(' · ') || '—'}</div>` : ''}
+        ${flags.size ? `<p class="note">${untested} de ${flags.size} nunca testadas em agentes LLM.</p>` : ''}
+      </aside>
+    </div>`;
+}
+
+const HTEXT = {
+  'H-G01': 'O instrumento é usável: κ ≥ 0,6 entre codificadores e ≥ 80% dos DOIs citados resolvem para a obra citada.',
+  'H-G02': 'Decisão por quórum é mais frequente onde o problema inclui escolha de local.',
+  'H-G03': 'Imunidade social é mais frequente em grupos permanentes de parentesco alto ou clonal.',
+  'H-G04': 'Castas morfológicas e reserva inativa são mais frequentes em grupos de ≥ 1.000 membros.',
+  'H-G05': 'Líder ou hierarquia persistente é mais frequente em grupos pequenos de membros capazes.',
+  'H-G06': 'Entre sistemas com depósito estigmérgico, o decaimento é mais frequente onde o ambiente muda rápido.',
+  'H-G07': 'Os coletivos unseen se parecem mais com insetos sociais do que com vertebrados.',
+};
+const vlabel = { supported: 'sustentada', refuted: 'refutada', untestable: 'não testável', incomplete: 'incompleta' };
+function hnum(h, v) {
+  if (h === 'H-G01') return `κ = ${fmt(v.kappa)} · concordância ${fmt(v.agreeRate)} · DOIs verificados ${fmt(v.doiShare)}`;
+  if (h === 'H-G07') return `Jaccard unseen×insetos ${fmt(v.unseenInsects)} vs unseen×vertebrados ${fmt(v.unseenVertebrates)} · p = ${fmt(v.permutationP, 4)}`;
+  const one = (r, name) => `${name ? name + ': ' : ''}${fmt(r.rateIn)} no grupo vs ${fmt(r.rateOut)} fora (n=${r.n}) · p = ${fmt(r.p, 4)} · por táxon p̃ = ${fmt(r.sensitivityMedianP, 3)}`;
+  if (h === 'H-G04') return one(v['DOL-01'], 'castas') + '<br>' + one(v['ACT-04'], 'reserva') + (v['ACT-04'].noPower ? ' · nenhuma célula ausente' : '') + `<br>registrada como ${vlabel[v.verdict]} (exigia as duas)`;
+  return one(v) + (v.noPower ? ' · nenhuma célula ausente' + (v.verdict === 'refuted' ? ' · registrada como refutada' : '') : '');
+}
+const badge = (h, v) => !v ? ['—', ''] : h === 'H-G04' ? ['parcial', 'untestable'] : v.noPower ? ['sem poder', 'untestable'] : [vlabel[v.verdict] || '—', v.verdict];
+const noPower = v => !!v && (v.noPower || (v['ACT-04'] && v['ACT-04'].noPower));
+function viewHyp() {
+  const H = AN.hypotheses || {};
+  return `<section style="display:grid;gap:10px"><h2>O que o pré-registro previa</h2>
+    <p class="lede" title="tasks/G1-GENOME-PREREG.md · Fisher unilateral sobre células de consenso · p̃ = mediana com um sistema por grupo taxonômico">Escritas antes de qualquer requisição; Fisher unilateral sobre células de consenso.</p></section>
+    <div class="cards">${Object.keys(HTEXT).map(h => { const v = H[h]; return `<div class="hyp"><div class="top"><span>${h}</span><span class="v-${badge(h, v)[1]}">${badge(h, v)[0]}</span></div><p>${HTEXT[h]}</p><div class="num">${v ? hnum(h, v) : ''}</div></div>`; }).join('')}</div>
+    `;
+}
+
+const G2 = DATA.g2;
+const TASKN = { maintain: 'Manutenção', 'maintain-scattered': 'Manutenção dispersa', track: 'Rastreio', mass: 'Presa coletiva', pipeline: 'Pipeline' };
+const RN = { independent: 'independentes', schedule: 'agenda fixa', orchestrator: 'orquestrador', board: 'quadro com decaimento', colony: 'colônia', flock: 'bando', school: 'cardume', team: 'equipe', chemical: 'químico', 'task-hybrid': 'híbrido da tarefa', 'general-hybrid': 'híbrido geral' };
+const rn = k => k.endsWith('+def') ? (RN[k.slice(0, -4)] || k.slice(0, -4)) + ' + defesa' : RN[k] || k;
+state.threat = state.threat ?? '0';
+function viewArch() {
+  if (!G2) return '<p class="empty">Simulação ainda não rodou.</p>';
+  const tasks = ['maintain', 'track', 'mass', 'pipeline', 'maintain-scattered'];
+  const th = state.threat, T0 = G2.table;
+  const rows = [['Controles', ['independent', 'schedule', 'orchestrator', 'board']], ['Arquétipos', ['colony', 'flock', 'school', 'team', 'chemical']], ['Com defesa', ['orchestrator+def', 'board+def', 'colony+def', 'chemical+def']], ['Seleção de traços', ['task-hybrid', 'general-hybrid']]];
+  const sel = G2.selection, genEq = Object.keys(G2.archetypes).find(k => G2.archetypes[k].flags.slice().sort().join() === sel.general.flags.slice().sort().join());
+  const shown = rows.flatMap(r => r[1]).filter(n => !(n === 'general-hybrid' && genEq));
+  const top = t => Math.max(...shown.map(n => T0[`${t}|${th}`]?.[n]?.mean ?? -1));
+  const cell = (t, n) => { const v = T0[`${t}|${th}`]?.[n]; if (!v) return '<td>—</td>'; const b = v.mean >= top(t) - 0.005;
+    return `<td class="${b ? 'best' : ''}" title="±${v.half.toFixed(3)} · ações ${v.actions}" style="background:color-mix(in srgb, var(--p3) ${Math.round(Math.pow(v.mean, 1.3) * 70)}%, transparent)">${v.mean.toFixed(2)}</td>`; };
+  const label = n => { const a = G2.archetypes[n]; const tag = n === genEq ? ' <span class="pill">híbrido geral</span>' : '';
+    return `${rn(n)}${a ? ` <span class="note">${a.members.length} sistemas</span>` : ''}${tag}${a ? `<span class="codes">${a.flags.map(c => `<span class="nw">${c}</span>`).join(' · ')}${a.notCompiled.length ? ' — não simulado: ' + a.notCompiled.map(c => `<span class="nw">${c}</span>`).join(', ') : ''}</span>` : ''}`; };
+  const H = G2.hypotheses;
+  return `<section style="display:grid;gap:10px"><h2>Os arquétipos como enxames simulados</h2>
+    <p class="lede">Arquétipos compilados da matriz, rodando contra controles de engenharia em um mundo simulado. Média de 200 seeds; passe o mouse para o intervalo.</p></section>
+    <div class="controls"><div class="seg" role="group" aria-label="Ameaça">${[['0', 'Sem ameaça'], ['0.2', '20% comprometidos']].map(([v, l]) => `<button data-threat="${v}" aria-pressed="${th === v}">${l}</button>`).join('')}</div></div>
+    <div class="sim"><table class="g"><colgroup><col class="c0">${tasks.map(() => '<col>').join('')}</colgroup><thead><tr><th>Regime</th>${tasks.map(t => t === 'maintain-scattered' ? `<th class="aside" title="Fora das hipóteses e da seleção">${TASKN[t]}<span class="codes">exploratória</span></th>` : `<th>${TASKN[t]}</th>`).join('')}</tr></thead><tbody>
+      ${rows.map(([lab, ns]) => `<tr class="sec"><td colspan="${tasks.length + 1}">${lab}</td></tr>` + ns.filter(n => shown.includes(n)).map(n => `<tr class="kind-${G2.presets[n]?.kind || 'h'}"><td>${label(n)}</td>${tasks.map(t => cell(t, n).replace(t === 'maintain-scattered' ? '<td' : '\u0000', '<td data-aside="1"')).join('')}</tr>`).join('')).join('')}
+    </tbody></table></div>
+    <h3>Traços escolhidos por tarefa</h3>
+    <div class="arch">${['maintain', 'track', 'mass', 'pipeline'].map(t => { const x = sel.task[`${t}|${th}`]; return `<div><b>${TASKN[t]}</b><span class="note">base: ${rn(x.start)}</span><div class="flags">${x.flags.map(f => `<span class="flag" title="${esc(TR[f].name)}">${f}</span>`).join('') || '<span class="note">nenhuma</span>'}</div></div>`; }).join('')}
+      </div>
+    <h3>Hipóteses G2</h3>
+    <div class="cards">${Object.entries(G2.htext).map(([h, txt]) => `<div class="hyp"><div class="top"><span>${h}</span><span class="v-${H[h].verdict}">${vlabel[H[h].verdict]}</span></div><p>${txt}</p><div class="num">${esc(H[h].num || '')}</div></div>`).join('')}</div>`;
+}
+if (location.pathname.startsWith('/genome')) document.getElementById('back').hidden = false;
+const VIEWS = { matriz: viewMatrix, tracos: viewTraits, compositor: viewComposer, arquetipos: viewArch, hipoteses: viewHyp };
+function render() {
+  const v = VIEWS[location.hash.slice(1)] ? location.hash.slice(1) : 'matriz';
+  document.querySelectorAll('nav a').forEach(a => a.setAttribute('aria-current', a.getAttribute('href') === '#' + v ? 'page' : 'false'));
+  document.getElementById('view').innerHTML = VIEWS[v]();
+}
+document.addEventListener('click', e => {
+  const c = e.target.closest('.cell'); if (c) { const pl = document.querySelector('.plate'), sx = pl.scrollLeft, sy = pl.scrollTop; state.sel = [c.dataset.s, c.dataset.t]; render(); const np = document.querySelector('.plate'); np.scrollLeft = sx; np.scrollTop = sy; return; }
+  const th = e.target.closest('[data-threat]'); if (th) { state.threat = th.dataset.threat; render(); return; }
+  const r = e.target.closest('[data-realm]'); if (r) { state.realm = r.dataset.realm; if (state.sel && state.realm !== 'all' && SP[state.sel[0]].realm !== state.realm) state.sel = null; try { localStorage.setItem('g1-realm', state.realm); } catch {} render(); return; }
+  const tt = e.target.closest('[data-trait]'); if (tt) { const id = tt.dataset.trait, s = state.sel ? state.sel[0] : visible()[0].id; state.sel = [s, id]; render(); return; }
+  const p = e.target.closest('[data-preset]'); if (p) { picked = new Set(PRESETS[p.dataset.preset] || []); render(); return; }
+});
+document.addEventListener('change', e => { const k = e.target.dataset.pick; if (k) { e.target.checked ? picked.add(k) : picked.delete(k); render(); } });
+window.addEventListener('hashchange', render);
+render();
+</script>

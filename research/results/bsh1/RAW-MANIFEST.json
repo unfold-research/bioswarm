@@ -1,0 +1,65 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "accounting.json",
+      "bytes": 107,
+      "sha256": "0d1b60956be7680c8a206442479c459b9583497220fd5b0b27d5f35b108ba7c3",
+      "gz": 111
+    },
+    {
+      "path": "arms.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gz": 20
+    },
+    {
+      "path": "ledger.mjs",
+      "bytes": 1478,
+      "sha256": "e52daccc7d75eb7b2346a3c78f1a433a7fa72320fdf60db08607a7ba04b8ab0d",
+      "gz": 760
+    },
+    {
+      "path": "request-1.json",
+      "bytes": 2406,
+      "sha256": "40f30790932a49e80f3a897adcea3f9b339f99b60fe5acabe4fe86861067296b",
+      "gz": 1356
+    },
+    {
+      "path": "request-2.json",
+      "bytes": 2414,
+      "sha256": "759679a7e103e96de6f5b0a09e2011aacff5d066e3d1a2664b4dffd9c9853666",
+      "gz": 1351
+    },
+    {
+      "path": "response-1.sse",
+      "bytes": 2158,
+      "sha256": "821028195e6b6545334f3585e9e3f428297643fb4467a178171f3b8fdb4bba62",
+      "gz": 381
+    },
+    {
+      "path": "response-2.sse",
+      "bytes": 2161,
+      "sha256": "1eaff20f8f449da6b940c8e9535d995fec4604ea699d91f9b1eefdaeb066f60c",
+      "gz": 385
+    },
+    {
+      "path": "run_bsh1.py",
+      "bytes": 3788,
+      "sha256": "f9c8f54351673a2d85541cdb96bc8e197ac0865f87a4e8619f799da594f96ef3",
+      "gz": 1584
+    },
+    {
+      "path": "runner.log",
+      "bytes": 1212,
+      "sha256": "c410ccf88c3f55e50ba5a4cc2e05950b55e5f73340e84089c2fdbb66f0358d6f",
+      "gz": 637
+    },
+    {
+      "path": "transport.jsonl",
+      "bytes": 1511,
+      "sha256": "912fcdc6d4cbd97c0465aa49ca06cdc34930a21bcd0a501f3c7bf6f18b95058f",
+      "gz": 489
+    }
+  ]
+}

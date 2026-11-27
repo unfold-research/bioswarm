@@ -1,0 +1,1292 @@
+{
+ "id": "sim-clonal",
+ "version": "1.0.0",
+ "title": "Clonal expansion/contraction vs fixed N",
+ "seed": 20261107,
+ "hypothesis": {
+  "statement": "Scaling multiplicatively while an error signal persists and contracting after resolution gives recovery comparable to a large fixed pool with idle cost close to that of a minimal pool; a persistence filter contains the cost of false alarms, and per-incident-type memory speeds up secondary responses.",
+  "predictions": [
+   {
+    "id": "P1",
+    "text": "In the main scenario (false alarm f=0.01), clonal-g2-h1 is not dominated by any fixed N (1,2,4,8,16) in (idle cost, mean recovery time): for each fixed N, clonal is significantly better in at least one of the two metrics."
+   },
+   {
+    "id": "P2",
+    "text": "In the main scenario, clonal-g2-h1 has idle cost <= 2x that of fixed-1 and mean recovery time <= that of fixed-4."
+   },
+   {
+    "id": "P3",
+    "text": "In the noisy scenario (f=0.05), persistence h=3 reduces idle cost by >= 30% vs h=1, with an increase in recovery time <= 20%."
+   },
+   {
+    "id": "P4",
+    "text": "Per-type memory reduces mean recovery time vs no memory (disjoint 95% CIs) with an increase in total cost <= 10%, in the main scenario."
+   },
+   {
+    "id": "P5",
+    "text": "Slow contraction (c=0.8) increases idle cost vs c=0.5 without reducing recovery time by more than 5%, in the main scenario."
+   }
+  ]
+ },
+ "params": {
+  "seed": 20261107,
+  "T": 3000,
+  "runs": 1000,
+  "incident_rate": 0.0083,
+  "incident_types": [
+   {
+    "median_work": 20
+   },
+   {
+    "median_work": 40
+   },
+   {
+    "median_work": 80
+   },
+   {
+    "median_work": 120
+   },
+   {
+    "median_work": 200
+   }
+  ],
+  "work_sigma_log": 0.5,
+  "alpha": 0.8,
+  "detection_delay": 2,
+  "scenarios": {
+   "main": {
+    "false_alarm": 0.01
+   },
+   "noisy": {
+    "false_alarm": 0.05
+   }
+  },
+  "n_min": 1,
+  "n_max": 32,
+  "policies": {
+   "fixed-1": {
+    "kind": "fixed",
+    "N": 1
+   },
+   "fixed-2": {
+    "kind": "fixed",
+    "N": 2
+   },
+   "fixed-4": {
+    "kind": "fixed",
+    "N": 4
+   },
+   "fixed-8": {
+    "kind": "fixed",
+    "N": 8
+   },
+   "fixed-16": {
+    "kind": "fixed",
+    "N": 16
+   },
+   "clonal-g2-h1": {
+    "kind": "clonal",
+    "g": 2,
+    "h": 1,
+    "c": 0.5,
+    "memory": false
+   },
+   "clonal-g2-h3": {
+    "kind": "clonal",
+    "g": 2,
+    "h": 3,
+    "c": 0.5,
+    "memory": false
+   },
+   "clonal-g1.5-h1": {
+    "kind": "clonal",
+    "g": 1.5,
+    "h": 1,
+    "c": 0.5,
+    "memory": false
+   },
+   "clonal-g2-h1-mem": {
+    "kind": "clonal",
+    "g": 2,
+    "h": 1,
+    "c": 0.5,
+    "memory": true
+   },
+   "clonal-g2-h1-c0.8": {
+    "kind": "clonal",
+    "g": 2,
+    "h": 1,
+    "c": 0.8,
+    "memory": false
+   }
+  },
+  "rules": "clonal: if the signal has been on for >= h steps, n <- min(n_max, ceil(n*g)); if off, n <- max(n_min, floor(n*c)). Memory: on detecting an already-seen type, n <- max(n, previous_peak_n_of_the_type). FIFO work: throughput n^alpha goes to the oldest incident; any remainder passes to the next one.",
+  "idle_cost": "sum of n(t) over steps with no open incident (idle agent-steps)"
+ },
+ "results": {
+  "main": {
+   "summary": {
+    "fixed-1": {
+     "idle": {
+      "mean": 792.672,
+      "lo": 764.4799,
+      "hi": 820.8641,
+      "n": 1000
+     },
+     "total": {
+      "mean": 3000,
+      "lo": 3000,
+      "hi": 3000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 291.398,
+      "lo": 279.925,
+      "hi": 302.8711,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 541.302,
+      "lo": 523.7025,
+      "hi": 558.9015,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 3.566,
+      "lo": 3.3371,
+      "hi": 3.7949,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 1,
+      "lo": 1,
+      "hi": 1,
+      "n": 1000
+     },
+     "idle_per_step": 0.2642,
+     "total_per_step": 1
+    },
+    "fixed-2": {
+     "idle": {
+      "mean": 3137.398,
+      "lo": 3088.6513,
+      "hi": 3186.1447,
+      "n": 1000
+     },
+     "total": {
+      "mean": 6000,
+      "lo": 6000,
+      "hi": 6000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 105.2129,
+      "lo": 101.8577,
+      "hi": 108.5681,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 230.849,
+      "lo": 223.8269,
+      "hi": 237.8711,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.917,
+      "lo": 0.8375,
+      "hi": 0.9965,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 2,
+      "lo": 2,
+      "hi": 2,
+      "n": 1000
+     },
+     "idle_per_step": 1.0458,
+     "total_per_step": 2
+    },
+    "fixed-4": {
+     "idle": {
+      "mean": 8618.58,
+      "lo": 8559.5508,
+      "hi": 8677.6092,
+      "n": 1000
+     },
+     "total": {
+      "mean": 12000,
+      "lo": 12000,
+      "hi": 12000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 46.1249,
+      "lo": 45.1786,
+      "hi": 47.0712,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 108.399,
+      "lo": 105.5923,
+      "hi": 111.2057,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.357,
+      "lo": 0.3144,
+      "hi": 0.3996,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 4,
+      "lo": 4,
+      "hi": 4,
+      "n": 1000
+     },
+     "idle_per_step": 2.8729,
+     "total_per_step": 4
+    },
+    "fixed-8": {
+     "idle": {
+      "mean": 20045.352,
+      "lo": 19976.476,
+      "hi": 20114.228,
+      "n": 1000
+     },
+     "total": {
+      "mean": 24000,
+      "lo": 24000,
+      "hi": 24000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 23.5361,
+      "lo": 23.1597,
+      "hi": 23.9124,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 55.836,
+      "lo": 54.5728,
+      "hi": 57.0992,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.173,
+      "lo": 0.1453,
+      "hi": 0.2007,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 8,
+      "lo": 8,
+      "hi": 8,
+      "n": 1000
+     },
+     "idle_per_step": 6.6818,
+     "total_per_step": 8
+    },
+    "fixed-16": {
+     "idle": {
+      "mean": 43358.4,
+      "lo": 43278.1112,
+      "hi": 43438.6888,
+      "n": 1000
+     },
+     "total": {
+      "mean": 48000,
+      "lo": 48000,
+      "hi": 48000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 12.8635,
+      "lo": 12.6841,
+      "hi": 13.0429,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 30.084,
+      "lo": 29.4539,
+      "hi": 30.7141,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.098,
+      "lo": 0.0778,
+      "hi": 0.1182,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 16,
+      "lo": 16,
+      "hi": 16,
+      "n": 1000
+     },
+     "idle_per_step": 14.4528,
+     "total_per_step": 16
+    },
+    "clonal-g2-h1": {
+     "idle": {
+      "mean": 3304.415,
+      "lo": 3299.8984,
+      "hi": 3308.9316,
+      "n": 1000
+     },
+     "total": {
+      "mean": 8541.594,
+      "lo": 8449.0069,
+      "hi": 8634.1811,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 11.8428,
+      "lo": 11.7499,
+      "hi": 11.9357,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 21.221,
+      "lo": 20.9084,
+      "hi": 21.5336,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.092,
+      "lo": 0.0726,
+      "hi": 0.1114,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.1015,
+     "total_per_step": 2.8472
+    },
+    "clonal-g2-h3": {
+     "idle": {
+      "mean": 3208.357,
+      "lo": 3204.6308,
+      "hi": 3212.0832,
+      "n": 1000
+     },
+     "total": {
+      "mean": 8392.077,
+      "lo": 8300.4498,
+      "hi": 8483.7042,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 13.6242,
+      "lo": 13.5308,
+      "hi": 13.7175,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 23.031,
+      "lo": 22.7182,
+      "hi": 23.3438,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.095,
+      "lo": 0.0754,
+      "hi": 0.1146,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.0695,
+     "total_per_step": 2.7974
+    },
+    "clonal-g1.5-h1": {
+     "idle": {
+      "mean": 3204.151,
+      "lo": 3200.7353,
+      "hi": 3207.5667,
+      "n": 1000
+     },
+     "total": {
+      "mean": 8307.537,
+      "lo": 8216.1495,
+      "hi": 8398.9245,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 13.0795,
+      "lo": 12.985,
+      "hi": 13.1739,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 22.622,
+      "lo": 22.309,
+      "hi": 22.935,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.094,
+      "lo": 0.0745,
+      "hi": 0.1135,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.0681,
+     "total_per_step": 2.7692
+    },
+    "clonal-g2-h1-mem": {
+     "idle": {
+      "mean": 3400.693,
+      "lo": 3395.0374,
+      "hi": 3406.3486,
+      "n": 1000
+     },
+     "total": {
+      "mean": 8803.066,
+      "lo": 8707.6515,
+      "hi": 8898.4805,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 9.7554,
+      "lo": 9.6631,
+      "hi": 9.8477,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 19.244,
+      "lo": 18.9335,
+      "hi": 19.5545,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.072,
+      "lo": 0.0548,
+      "hi": 0.0892,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.1336,
+     "total_per_step": 2.9344
+    },
+    "clonal-g2-h1-c0.8": {
+     "idle": {
+      "mean": 4701.849,
+      "lo": 4680.2827,
+      "hi": 4723.4153,
+      "n": 1000
+     },
+     "total": {
+      "mean": 9942.428,
+      "lo": 9836.4168,
+      "hi": 10048.4392,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 11.7121,
+      "lo": 11.6188,
+      "hi": 11.8055,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 21.106,
+      "lo": 20.791,
+      "hi": 21.421,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.092,
+      "lo": 0.0726,
+      "hi": 0.1114,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.5673,
+     "total_per_step": 3.3141
+    }
+   },
+   "paired": {
+    "idle:h3-h1": {
+     "mean": -96.058,
+     "lo": -98.0615,
+     "hi": -94.0545,
+     "n": 1000
+    },
+    "rec:h3-h1": {
+     "mean": 1.7814,
+     "lo": 1.7746,
+     "hi": 1.7881,
+     "n": 1000
+    },
+    "rec:mem-nomem": {
+     "mean": -2.0874,
+     "lo": -2.0986,
+     "hi": -2.0762,
+     "n": 1000
+    },
+    "total:mem-nomem": {
+     "mean": 261.472,
+     "lo": 255.191,
+     "hi": 267.753,
+     "n": 1000
+    },
+    "idle:c0.8-c0.5": {
+     "mean": 1397.434,
+     "lo": 1379.6285,
+     "hi": 1415.2395,
+     "n": 1000
+    },
+    "rec:c0.8-c0.5": {
+     "mean": -0.1307,
+     "lo": -0.1374,
+     "hi": -0.1239,
+     "n": 1000
+    },
+    "idle:clonal-fixed1": {
+     "mean": 2511.743,
+     "lo": 2481.9942,
+     "hi": 2541.4918,
+     "n": 1000
+    },
+    "rec:clonal-fixed1": {
+     "mean": -279.5552,
+     "lo": -290.9741,
+     "hi": -268.1364,
+     "n": 1000
+    },
+    "idle:clonal-fixed2": {
+     "mean": 167.017,
+     "lo": 117.1082,
+     "hi": 216.9258,
+     "n": 1000
+    },
+    "rec:clonal-fixed2": {
+     "mean": -93.3701,
+     "lo": -96.6624,
+     "hi": -90.0778,
+     "n": 1000
+    },
+    "idle:clonal-fixed4": {
+     "mean": -5314.165,
+     "lo": -5374.2838,
+     "hi": -5254.0462,
+     "n": 1000
+    },
+    "rec:clonal-fixed4": {
+     "mean": -34.2821,
+     "lo": -35.1543,
+     "hi": -33.4099,
+     "n": 1000
+    },
+    "idle:clonal-fixed8": {
+     "mean": -16740.937,
+     "lo": -16810.8699,
+     "hi": -16671.0041,
+     "n": 1000
+    },
+    "rec:clonal-fixed8": {
+     "mean": -11.6933,
+     "lo": -11.9866,
+     "hi": -11.3999,
+     "n": 1000
+    },
+    "idle:clonal-fixed16": {
+     "mean": -40053.985,
+     "lo": -40135.3256,
+     "hi": -39972.6444,
+     "n": 1000
+    },
+    "rec:clonal-fixed16": {
+     "mean": -1.0207,
+     "lo": -1.112,
+     "hi": -0.9294,
+     "n": 1000
+    }
+   },
+   "pareto": [
+    {
+     "policy": "fixed-1",
+     "idle_cost": 792.672,
+     "mean_recovery": 291.398,
+     "total_cost": 3000
+    },
+    {
+     "policy": "fixed-2",
+     "idle_cost": 3137.398,
+     "mean_recovery": 105.2129,
+     "total_cost": 6000
+    },
+    {
+     "policy": "fixed-4",
+     "idle_cost": 8618.58,
+     "mean_recovery": 46.1249,
+     "total_cost": 12000
+    },
+    {
+     "policy": "fixed-8",
+     "idle_cost": 20045.352,
+     "mean_recovery": 23.5361,
+     "total_cost": 24000
+    },
+    {
+     "policy": "fixed-16",
+     "idle_cost": 43358.4,
+     "mean_recovery": 12.8635,
+     "total_cost": 48000
+    },
+    {
+     "policy": "clonal-g2-h1",
+     "idle_cost": 3304.415,
+     "mean_recovery": 11.8428,
+     "total_cost": 8541.594
+    },
+    {
+     "policy": "clonal-g2-h3",
+     "idle_cost": 3208.357,
+     "mean_recovery": 13.6242,
+     "total_cost": 8392.077
+    },
+    {
+     "policy": "clonal-g1.5-h1",
+     "idle_cost": 3204.151,
+     "mean_recovery": 13.0795,
+     "total_cost": 8307.537
+    },
+    {
+     "policy": "clonal-g2-h1-mem",
+     "idle_cost": 3400.693,
+     "mean_recovery": 9.7554,
+     "total_cost": 8803.066
+    },
+    {
+     "policy": "clonal-g2-h1-c0.8",
+     "idle_cost": 4701.849,
+     "mean_recovery": 11.7121,
+     "total_cost": 9942.428
+    }
+   ]
+  },
+  "noisy": {
+   "summary": {
+    "fixed-1": {
+     "idle": {
+      "mean": 792.672,
+      "lo": 764.4799,
+      "hi": 820.8641,
+      "n": 1000
+     },
+     "total": {
+      "mean": 3000,
+      "lo": 3000,
+      "hi": 3000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 291.398,
+      "lo": 279.925,
+      "hi": 302.8711,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 541.302,
+      "lo": 523.7025,
+      "hi": 558.9015,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 3.566,
+      "lo": 3.3371,
+      "hi": 3.7949,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 1,
+      "lo": 1,
+      "hi": 1,
+      "n": 1000
+     },
+     "idle_per_step": 0.2642,
+     "total_per_step": 1
+    },
+    "fixed-2": {
+     "idle": {
+      "mean": 3137.398,
+      "lo": 3088.6513,
+      "hi": 3186.1447,
+      "n": 1000
+     },
+     "total": {
+      "mean": 6000,
+      "lo": 6000,
+      "hi": 6000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 105.2129,
+      "lo": 101.8577,
+      "hi": 108.5681,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 230.849,
+      "lo": 223.8269,
+      "hi": 237.8711,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.917,
+      "lo": 0.8375,
+      "hi": 0.9965,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 2,
+      "lo": 2,
+      "hi": 2,
+      "n": 1000
+     },
+     "idle_per_step": 1.0458,
+     "total_per_step": 2
+    },
+    "fixed-4": {
+     "idle": {
+      "mean": 8618.58,
+      "lo": 8559.5508,
+      "hi": 8677.6092,
+      "n": 1000
+     },
+     "total": {
+      "mean": 12000,
+      "lo": 12000,
+      "hi": 12000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 46.1249,
+      "lo": 45.1786,
+      "hi": 47.0712,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 108.399,
+      "lo": 105.5923,
+      "hi": 111.2057,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.357,
+      "lo": 0.3144,
+      "hi": 0.3996,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 4,
+      "lo": 4,
+      "hi": 4,
+      "n": 1000
+     },
+     "idle_per_step": 2.8729,
+     "total_per_step": 4
+    },
+    "fixed-8": {
+     "idle": {
+      "mean": 20045.352,
+      "lo": 19976.476,
+      "hi": 20114.228,
+      "n": 1000
+     },
+     "total": {
+      "mean": 24000,
+      "lo": 24000,
+      "hi": 24000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 23.5361,
+      "lo": 23.1597,
+      "hi": 23.9124,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 55.836,
+      "lo": 54.5728,
+      "hi": 57.0992,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.173,
+      "lo": 0.1453,
+      "hi": 0.2007,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 8,
+      "lo": 8,
+      "hi": 8,
+      "n": 1000
+     },
+     "idle_per_step": 6.6818,
+     "total_per_step": 8
+    },
+    "fixed-16": {
+     "idle": {
+      "mean": 43358.4,
+      "lo": 43278.1112,
+      "hi": 43438.6888,
+      "n": 1000
+     },
+     "total": {
+      "mean": 48000,
+      "lo": 48000,
+      "hi": 48000,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 12.8635,
+      "lo": 12.6841,
+      "hi": 13.0429,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 30.084,
+      "lo": 29.4539,
+      "hi": 30.7141,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.098,
+      "lo": 0.0778,
+      "hi": 0.1182,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 16,
+      "lo": 16,
+      "hi": 16,
+      "n": 1000
+     },
+     "idle_per_step": 14.4528,
+     "total_per_step": 16
+    },
+    "clonal-g2-h1": {
+     "idle": {
+      "mean": 3538.603,
+      "lo": 3531.826,
+      "hi": 3545.38,
+      "n": 1000
+     },
+     "total": {
+      "mean": 8776.628,
+      "lo": 8682.7692,
+      "hi": 8870.4868,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 11.79,
+      "lo": 11.697,
+      "hi": 11.883,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 21.169,
+      "lo": 20.8557,
+      "hi": 21.4823,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.092,
+      "lo": 0.0726,
+      "hi": 0.1114,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.1795,
+     "total_per_step": 2.9255
+    },
+    "clonal-g2-h3": {
+     "idle": {
+      "mean": 3262.165,
+      "lo": 3257.4279,
+      "hi": 3266.9021,
+      "n": 1000
+     },
+     "total": {
+      "mean": 8447.613,
+      "lo": 8355.3759,
+      "hi": 8539.8501,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 13.5808,
+      "lo": 13.4874,
+      "hi": 13.6742,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 22.989,
+      "lo": 22.6761,
+      "hi": 23.3019,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.096,
+      "lo": 0.0763,
+      "hi": 0.1157,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.0874,
+     "total_per_step": 2.8159
+    },
+    "clonal-g1.5-h1": {
+     "idle": {
+      "mean": 3385.901,
+      "lo": 3381.038,
+      "hi": 3390.764,
+      "n": 1000
+     },
+     "total": {
+      "mean": 8490.072,
+      "lo": 8397.9585,
+      "hi": 8582.1855,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 13.0316,
+      "lo": 12.9371,
+      "hi": 13.1261,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 22.585,
+      "lo": 22.2717,
+      "hi": 22.8983,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.094,
+      "lo": 0.0745,
+      "hi": 0.1135,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.1286,
+     "total_per_step": 2.83
+    },
+    "clonal-g2-h1-mem": {
+     "idle": {
+      "mean": 3639.904,
+      "lo": 3631.8301,
+      "hi": 3647.9779,
+      "n": 1000
+     },
+     "total": {
+      "mean": 9041.328,
+      "lo": 8945.1289,
+      "hi": 9137.5271,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 9.7383,
+      "lo": 9.646,
+      "hi": 9.8306,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 19.214,
+      "lo": 18.9031,
+      "hi": 19.5249,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.072,
+      "lo": 0.0548,
+      "hi": 0.0892,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.2133,
+     "total_per_step": 3.0138
+    },
+    "clonal-g2-h1-c0.8": {
+     "idle": {
+      "mean": 5274.142,
+      "lo": 5245.4122,
+      "hi": 5302.8718,
+      "n": 1000
+     },
+     "total": {
+      "mean": 10516.978,
+      "lo": 10405.9332,
+      "hi": 10628.0228,
+      "n": 1000
+     },
+     "rec": {
+      "mean": 11.6337,
+      "lo": 11.5402,
+      "hi": 11.7272,
+      "n": 1000
+     },
+     "p95": {
+      "mean": 21.035,
+      "lo": 20.7193,
+      "hi": 21.3507,
+      "n": 1000
+     },
+     "unresolved": {
+      "mean": 0.092,
+      "lo": 0.0726,
+      "hi": 0.1114,
+      "n": 1000
+     },
+     "maxN": {
+      "mean": 32,
+      "lo": 32,
+      "hi": 32,
+      "n": 1000
+     },
+     "idle_per_step": 1.758,
+     "total_per_step": 3.5057
+    }
+   },
+   "paired": {
+    "idle:h3-h1": {
+     "mean": -276.438,
+     "lo": -280.5872,
+     "hi": -272.2888,
+     "n": 1000
+    },
+    "rec:h3-h1": {
+     "mean": 1.7908,
+     "lo": 1.784,
+     "hi": 1.7975,
+     "n": 1000
+    },
+    "rec:mem-nomem": {
+     "mean": -2.0517,
+     "lo": -2.0631,
+     "hi": -2.0403,
+     "n": 1000
+    },
+    "total:mem-nomem": {
+     "mean": 264.7,
+     "lo": 257.0643,
+     "hi": 272.3357,
+     "n": 1000
+    },
+    "idle:c0.8-c0.5": {
+     "mean": 1735.539,
+     "lo": 1712.2067,
+     "hi": 1758.8713,
+     "n": 1000
+    },
+    "rec:c0.8-c0.5": {
+     "mean": -0.1563,
+     "lo": -0.1639,
+     "hi": -0.1487,
+     "n": 1000
+    },
+    "idle:clonal-fixed1": {
+     "mean": 2745.931,
+     "lo": 2714.8242,
+     "hi": 2777.0378,
+     "n": 1000
+    },
+    "rec:clonal-fixed1": {
+     "mean": -279.608,
+     "lo": -291.0268,
+     "hi": -268.1893,
+     "n": 1000
+    },
+    "idle:clonal-fixed2": {
+     "mean": 401.205,
+     "lo": 349.9454,
+     "hi": 452.4646,
+     "n": 1000
+    },
+    "rec:clonal-fixed2": {
+     "mean": -93.4229,
+     "lo": -96.7152,
+     "hi": -90.1307,
+     "n": 1000
+    },
+    "idle:clonal-fixed4": {
+     "mean": -5079.977,
+     "lo": -5141.3967,
+     "hi": -5018.5573,
+     "n": 1000
+    },
+    "rec:clonal-fixed4": {
+     "mean": -34.3349,
+     "lo": -35.207,
+     "hi": -33.4628,
+     "n": 1000
+    },
+    "idle:clonal-fixed8": {
+     "mean": -16506.749,
+     "lo": -16577.9464,
+     "hi": -16435.5516,
+     "n": 1000
+    },
+    "rec:clonal-fixed8": {
+     "mean": -11.7461,
+     "lo": -12.0393,
+     "hi": -11.4528,
+     "n": 1000
+    },
+    "idle:clonal-fixed16": {
+     "mean": -39819.797,
+     "lo": -39902.387,
+     "hi": -39737.207,
+     "n": 1000
+    },
+    "rec:clonal-fixed16": {
+     "mean": -1.0735,
+     "lo": -1.1647,
+     "hi": -0.9823,
+     "n": 1000
+    }
+   },
+   "pareto": [
+    {
+     "policy": "fixed-1",
+     "idle_cost": 792.672,
+     "mean_recovery": 291.398,
+     "total_cost": 3000
+    },
+    {
+     "policy": "fixed-2",
+     "idle_cost": 3137.398,
+     "mean_recovery": 105.2129,
+     "total_cost": 6000
+    },
+    {
+     "policy": "fixed-4",
+     "idle_cost": 8618.58,
+     "mean_recovery": 46.1249,
+     "total_cost": 12000
+    },
+    {
+     "policy": "fixed-8",
+     "idle_cost": 20045.352,
+     "mean_recovery": 23.5361,
+     "total_cost": 24000
+    },
+    {
+     "policy": "fixed-16",
+     "idle_cost": 43358.4,
+     "mean_recovery": 12.8635,
+     "total_cost": 48000
+    },
+    {
+     "policy": "clonal-g2-h1",
+     "idle_cost": 3538.603,
+     "mean_recovery": 11.79,
+     "total_cost": 8776.628
+    },
+    {
+     "policy": "clonal-g2-h3",
+     "idle_cost": 3262.165,
+     "mean_recovery": 13.5808,
+     "total_cost": 8447.613
+    },
+    {
+     "policy": "clonal-g1.5-h1",
+     "idle_cost": 3385.901,
+     "mean_recovery": 13.0316,
+     "total_cost": 8490.072
+    },
+    {
+     "policy": "clonal-g2-h1-mem",
+     "idle_cost": 3639.904,
+     "mean_recovery": 9.7383,
+     "total_cost": 9041.328
+    },
+    {
+     "policy": "clonal-g2-h1-c0.8",
+     "idle_cost": 5274.142,
+     "mean_recovery": 11.6337,
+     "total_cost": 10516.978
+    }
+   ]
+  }
+ },
+ "tests": [
+  {
+   "id": "P1",
+   "verdict": "supported",
+   "detail": "vs fixed-1: Δidle 2512 [95% CI 2482–2541], Δrecovery -279.6 [95% CI -291.0–-268.1]; vs fixed-2: Δidle 167 [95% CI 117–217], Δrecovery -93.4 [95% CI -96.7–-90.1]; vs fixed-4: Δidle -5314 [95% CI -5374–-5254], Δrecovery -34.3 [95% CI -35.2–-33.4]; vs fixed-8: Δidle -16741 [95% CI -16811–-16671], Δrecovery -11.7 [95% CI -12.0–-11.4]; vs fixed-16: Δidle -40054 [95% CI -40135–-39973], Δrecovery -1.0 [95% CI -1.1–-0.9]"
+  },
+  {
+   "id": "P2",
+   "verdict": "not supported",
+   "detail": "clonal idle 3304 vs 2×fixed-1 1585; clonal recovery 11.8 vs fixed-4 46.1"
+  },
+  {
+   "id": "P3",
+   "verdict": "not supported",
+   "detail": "noisy: idle reduction with h=3 7.8%; recovery increase 15.2%"
+  },
+  {
+   "id": "P4",
+   "verdict": "supported",
+   "detail": "Δrecovery with memory -2.09 [95% CI -2.10–-2.08]; total cost increase 3.1%"
+  },
+  {
+   "id": "P5",
+   "verdict": "supported",
+   "detail": "Δidle c=0.8 1397 [95% CI 1380–1415]; recovery reduction 1.1%"
+  }
+ ],
+ "headline": [
+  "main fixed-1: idle 793 [95% CI 764–821] agent-steps, recovery 291.4 [95% CI 279.9–302.9] steps, total cost/step 1.00",
+  "main fixed-4: idle 8619 [95% CI 8560–8678] agent-steps, recovery 46.1 [95% CI 45.2–47.1] steps, total cost/step 4.00",
+  "main fixed-16: idle 43358 [95% CI 43278–43439] agent-steps, recovery 12.9 [95% CI 12.7–13.0] steps, total cost/step 16.00",
+  "main clonal-g2-h1: idle 3304 [95% CI 3300–3309] agent-steps, recovery 11.8 [95% CI 11.7–11.9] steps, total cost/step 2.85",
+  "main clonal-g2-h1-mem: idle 3401 [95% CI 3395–3406] agent-steps, recovery 9.8 [95% CI 9.7–9.8] steps, total cost/step 2.93",
+  "noisy clonal-g2-h1: idle 3539 [95% CI 3532–3545] agent-steps, recovery 11.8 [95% CI 11.7–11.9] steps, total cost/step 2.93",
+  "noisy clonal-g2-h3: idle 3262 [95% CI 3257–3267] agent-steps, recovery 13.6 [95% CI 13.5–13.7] steps, total cost/step 2.82"
+ ]
+}

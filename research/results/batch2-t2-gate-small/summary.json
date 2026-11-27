@@ -1,0 +1,150 @@
+{
+  "study": "t2-gate-small",
+  "configHash": "d74deac8bee4929e7f9fc96a3f437f232e08de9632f962ff77756a2f249f1139",
+  "status": "complete",
+  "wavesRun": 1,
+  "table": {
+    "I-01": {
+      "1": {
+        "n": 12,
+        "right": 12,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "2": {
+        "n": 12,
+        "right": 12,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "4": {
+        "n": 12,
+        "right": 12,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "8": {
+        "n": 12,
+        "right": 12,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "16": {
+        "n": 12,
+        "right": 12,
+        "truncated": 0,
+        "invalid": 0
+      }
+    },
+    "I-05": {
+      "1": {
+        "n": 12,
+        "right": 12,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "2": {
+        "n": 12,
+        "right": 9,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "4": {
+        "n": 12,
+        "right": 5,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "8": {
+        "n": 12,
+        "right": 3,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "16": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      }
+    },
+    "I-06": {
+      "1": {
+        "n": 12,
+        "right": 5,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "2": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "4": {
+        "n": 12,
+        "right": 2,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "8": {
+        "n": 12,
+        "right": 2,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "16": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      }
+    },
+    "III-22": {
+      "1": {
+        "n": 12,
+        "right": 9,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "2": {
+        "n": 12,
+        "right": 10,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "4": {
+        "n": 12,
+        "right": 3,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "8": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "16": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      }
+    }
+  },
+  "decision": {
+    "pooled": {
+      "1": 0.7916666666666666,
+      "2": 0.6458333333333334,
+      "4": 0.4583333333333333,
+      "8": 0.375,
+      "16": 0.2708333333333333
+    },
+    "small": null,
+    "middle": null,
+    "large": null,
+    "verdict": "not-at-ceiling: one agent of this kind is not at ceiling even on one shard; the single-agent arm is revised"
+  },
+  "finishedAt": "2026-11-12T07:34:36.275Z"
+}

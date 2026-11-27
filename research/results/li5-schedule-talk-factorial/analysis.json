@@ -1,0 +1,278 @@
+{
+  "arms": {
+    "sync": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 32,
+      "meanOut": 412027,
+      "meanLatency": 59416,
+      "trunc": 8,
+      "meanTrajectory": [
+        91.46,
+        66.13,
+        58.54,
+        49.25,
+        45.33,
+        41.67,
+        40,
+        37.38,
+        36
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 29.5,
+          "meanOut": 272201,
+          "meanLatency": 55385,
+          "meanCalls": 71.2
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 41.5,
+          "meanOut": 551854,
+          "meanLatency": 63447,
+          "meanCalls": 142.7
+        }
+      }
+    },
+    "inhibit": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 43,
+      "meanOut": 314469,
+      "meanLatency": 57443,
+      "trunc": 5,
+      "meanTrajectory": [
+        91.46,
+        58.83,
+        48.75,
+        46.75,
+        42.33,
+        39.38,
+        38.42,
+        37.92,
+        38.21
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 17,
+          "meanOut": 196749,
+          "meanLatency": 50511,
+          "meanCalls": 60.3
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 49,
+          "meanOut": 432189,
+          "meanLatency": 64374,
+          "meanCalls": 125.2
+        }
+      }
+    },
+    "chat": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 26,
+      "meanOut": 517877,
+      "meanLatency": 76109,
+      "trunc": 58,
+      "meanTrajectory": [
+        91.46,
+        59.08,
+        44.08,
+        40.33,
+        33.96,
+        31.58,
+        29.04,
+        27,
+        25.29
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 14.5,
+          "meanOut": 354779,
+          "meanLatency": 73458,
+          "meanCalls": 70.4
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 33,
+          "meanOut": 680974,
+          "meanLatency": 78760,
+          "meanCalls": 139.9
+        }
+      }
+    },
+    "chatinhibit": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 35.5,
+      "meanOut": 425871,
+      "meanLatency": 75077,
+      "trunc": 50,
+      "meanTrajectory": [
+        91.46,
+        56,
+        43.21,
+        38.83,
+        37.33,
+        34.58,
+        33.5,
+        35.13,
+        33.92
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 25,
+          "meanOut": 281417,
+          "meanLatency": 69378,
+          "meanCalls": 71
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 41.5,
+          "meanOut": 570325,
+          "meanLatency": 80776,
+          "meanCalls": 141.4
+        }
+      }
+    },
+    "ask": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 27,
+      "meanOut": 411536,
+      "meanLatency": 70155,
+      "trunc": 30,
+      "meanTrajectory": [
+        91.46,
+        57.17,
+        44.33,
+        38.33,
+        36.75,
+        35.54,
+        33.75,
+        32.67,
+        32.13
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 18.5,
+          "meanOut": 254847,
+          "meanLatency": 63259,
+          "meanCalls": 58.1
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 51.5,
+          "meanOut": 568224,
+          "meanLatency": 77050,
+          "meanCalls": 123.6
+        }
+      }
+    }
+  },
+  "paired": {
+    "inhibit_vs_sync": {
+      "inhibitOnly": 0,
+      "syncOnly": 0,
+      "both": 0,
+      "neither": 24,
+      "mcnemarP": 1,
+      "finalLowerIn": 11,
+      "finalHigherIn": 12
+    },
+    "inhibit_vs_random": {
+      "inhibitOnly": 0,
+      "randomOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    },
+    "inhibit_vs_central": {
+      "inhibitOnly": 0,
+      "centralOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    },
+    "patch_vs_central": {
+      "patchOnly": 0,
+      "centralOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    },
+    "patch_vs_inhibit": {
+      "patchOnly": 0,
+      "inhibitOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    }
+  },
+  "finals": {
+    "inhibit_vs_sync": {
+      "wins": 11,
+      "losses": 12,
+      "signP": 1
+    },
+    "inhibit_vs_chat": {
+      "wins": 5,
+      "losses": 19,
+      "signP": 0.006611
+    },
+    "chat_vs_sync": {
+      "wins": 20,
+      "losses": 3,
+      "signP": 0.000488
+    },
+    "chatinhibit_vs_chat": {
+      "wins": 4,
+      "losses": 20,
+      "signP": 0.001544
+    },
+    "chatinhibit_vs_inhibit": {
+      "wins": 14,
+      "losses": 9,
+      "signP": 0.404873
+    },
+    "ask_vs_chat": {
+      "wins": 9,
+      "losses": 14,
+      "signP": 0.404873
+    },
+    "ask_vs_inhibit": {
+      "wins": 17,
+      "losses": 7,
+      "signP": 0.063915
+    }
+  },
+  "verdict": {
+    "H-LI11": "supported",
+    "H-LI12": "refuted",
+    "H-LI13": "inconclusive (at or below in 10, tokens 0.79x)"
+  }
+}

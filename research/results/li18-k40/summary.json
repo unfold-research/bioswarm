@@ -1,0 +1,18 @@
+{
+  "configHash": "657c0732ccaba3a7cb1251804168828e89dd9ff4648af446d63a663135cadbca",
+  "finishedAt": "2026-11-18T01:35:47.066Z",
+  "arms": {
+    "stig": {
+      "solved": 8,
+      "of": 8
+    },
+    "manager": {
+      "solved": 8,
+      "of": 8
+    },
+    "routed": {
+      "solved": 8,
+      "of": 8
+    }
+  }
+}

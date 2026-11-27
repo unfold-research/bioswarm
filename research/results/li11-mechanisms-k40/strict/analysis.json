@@ -1,0 +1,293 @@
+{
+  "arms": {
+    "routed": {
+      "solved": 3,
+      "of": 8,
+      "finalTotal": {
+        "sum": 7,
+        "median": 1
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 7,
+        "symmetric": 0
+      },
+      "meanOut": 192083,
+      "calls": 588,
+      "trunc": 1,
+      "messages": 839,
+      "meanTrajectory": [
+        69.63,
+        19.63,
+        13.5,
+        4.63,
+        1.75,
+        1,
+        1,
+        1,
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.88
+      ]
+    },
+    "manager": {
+      "solved": 6,
+      "of": 8,
+      "finalTotal": {
+        "sum": 2,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 2,
+        "symmetric": 0
+      },
+      "meanOut": 163463,
+      "calls": 551,
+      "trunc": 1,
+      "messages": 0,
+      "meanTrajectory": [
+        69.63,
+        69.63,
+        26,
+        26,
+        11.63,
+        11.63,
+        3.13,
+        3.13,
+        1,
+        1,
+        0.38,
+        0.38,
+        0.38,
+        0.38,
+        0.25
+      ]
+    },
+    "threshold": {
+      "solved": 1,
+      "of": 8,
+      "finalTotal": {
+        "sum": 47,
+        "median": 6
+      },
+      "finalByKind": {
+        "local": 2,
+        "directed": 28,
+        "symmetric": 17
+      },
+      "meanOut": 262244,
+      "calls": 1040,
+      "trunc": 1,
+      "messages": 0,
+      "meanTrajectory": [
+        69.63,
+        38.38,
+        22.13,
+        15.25,
+        12.5,
+        10.13,
+        7.63,
+        5.75,
+        5.88,
+        5.88,
+        5.88,
+        5.88,
+        5.88,
+        5.88,
+        5.88
+      ]
+    },
+    "pheromone": {
+      "solved": 7,
+      "of": 8,
+      "finalTotal": {
+        "sum": 1,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 1,
+        "symmetric": 0
+      },
+      "meanOut": 89419,
+      "calls": 284,
+      "trunc": 1,
+      "messages": 0,
+      "meanTrajectory": [
+        69.63,
+        1.5,
+        0.25,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13,
+        0.13
+      ]
+    }
+  },
+  "edgeTests": {
+    "routed_vs_manager_symmetric": {
+      "routedOnly": 0,
+      "managerOnly": 0,
+      "both": 238,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_manager_directed": {
+      "routedOnly": 1,
+      "managerOnly": 6,
+      "both": 309,
+      "neither": 1,
+      "p": 0.125
+    },
+    "routed_vs_manager_all": {
+      "routedOnly": 1,
+      "managerOnly": 6,
+      "both": 547,
+      "neither": 1,
+      "p": 0.125
+    },
+    "threshold_vs_routed_symmetric": {
+      "thresholdOnly": 0,
+      "routedOnly": 17,
+      "both": 221,
+      "neither": 0,
+      "p": 2e-05
+    },
+    "threshold_vs_routed_directed": {
+      "thresholdOnly": 4,
+      "routedOnly": 25,
+      "both": 285,
+      "neither": 3,
+      "p": 0.0001
+    },
+    "threshold_vs_routed_all": {
+      "thresholdOnly": 4,
+      "routedOnly": 42,
+      "both": 506,
+      "neither": 3,
+      "p": 0
+    },
+    "pheromone_vs_routed_symmetric": {
+      "pheromoneOnly": 0,
+      "routedOnly": 0,
+      "both": 238,
+      "neither": 0,
+      "p": 1
+    },
+    "pheromone_vs_routed_directed": {
+      "pheromoneOnly": 6,
+      "routedOnly": 0,
+      "both": 310,
+      "neither": 1,
+      "p": 0.03125
+    },
+    "pheromone_vs_routed_all": {
+      "pheromoneOnly": 6,
+      "routedOnly": 0,
+      "both": 548,
+      "neither": 1,
+      "p": 0.03125
+    },
+    "threshold_vs_manager_symmetric": {
+      "thresholdOnly": 0,
+      "managerOnly": 17,
+      "both": 221,
+      "neither": 0,
+      "p": 2e-05
+    },
+    "threshold_vs_manager_directed": {
+      "thresholdOnly": 1,
+      "managerOnly": 27,
+      "both": 288,
+      "neither": 1,
+      "p": 0
+    },
+    "threshold_vs_manager_all": {
+      "thresholdOnly": 1,
+      "managerOnly": 44,
+      "both": 509,
+      "neither": 1,
+      "p": 0
+    },
+    "pheromone_vs_manager_symmetric": {
+      "pheromoneOnly": 0,
+      "managerOnly": 0,
+      "both": 238,
+      "neither": 0,
+      "p": 1
+    },
+    "pheromone_vs_manager_directed": {
+      "pheromoneOnly": 1,
+      "managerOnly": 0,
+      "both": 315,
+      "neither": 1,
+      "p": 1
+    },
+    "pheromone_vs_manager_all": {
+      "pheromoneOnly": 1,
+      "managerOnly": 0,
+      "both": 553,
+      "neither": 1,
+      "p": 1
+    }
+  },
+  "signTests": {
+    "routed_vs_manager": {
+      "lowerIn": 0,
+      "higherIn": 5,
+      "p": 0.0625
+    },
+    "threshold_vs_routed": {
+      "lowerIn": 1,
+      "higherIn": 7,
+      "p": 0.07031
+    },
+    "pheromone_vs_routed": {
+      "lowerIn": 5,
+      "higherIn": 0,
+      "p": 0.0625
+    },
+    "threshold_vs_manager": {
+      "lowerIn": 0,
+      "higherIn": 7,
+      "p": 0.01563
+    },
+    "pheromone_vs_manager": {
+      "lowerIn": 1,
+      "higherIn": 0,
+      "p": 1
+    }
+  },
+  "oscillation": {
+    "routed": {
+      "bothSidesChanged": 235,
+      "stillFailingAfter": 24
+    },
+    "manager": {
+      "bothSidesChanged": 327,
+      "stillFailingAfter": 285
+    },
+    "threshold": {
+      "bothSidesChanged": 460,
+      "stillFailingAfter": 281
+    },
+    "pheromone": {
+      "bothSidesChanged": 191,
+      "stillFailingAfter": 10
+    }
+  },
+  "verdict": {}
+}

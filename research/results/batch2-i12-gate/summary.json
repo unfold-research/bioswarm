@@ -1,0 +1,146 @@
+{
+  "study": "i12-gate",
+  "configHash": "0158a404b950e3f02125d904587b0bb9c2f7461f83af50c7c50d2eb8341d8546",
+  "status": "complete",
+  "wavesRun": 2,
+  "solo": {
+    "effect": 11,
+    "escalated": 0,
+    "wrongFirings": 0,
+    "newcomerOnlyCases": 0,
+    "newcomerKept": 0,
+    "agreeLabel": 5,
+    "invalid": 0
+  },
+  "sets": {
+    "rival-s0": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 11,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 0,
+      "newcomerKept": 0,
+      "agreeLabel": 5,
+      "invalid": 0,
+      "admitted": false
+    },
+    "rival-s1": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 11,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 0,
+      "newcomerKept": 0,
+      "agreeLabel": 6,
+      "invalid": 0,
+      "admitted": false
+    },
+    "rival-s2": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 11,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 0,
+      "newcomerKept": 0,
+      "agreeLabel": 6,
+      "invalid": 0,
+      "admitted": false
+    },
+    "broad-s0": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 12,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 8,
+      "newcomerKept": 2,
+      "agreeLabel": 5,
+      "invalid": 0,
+      "admitted": false
+    },
+    "broad-s1": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 13,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 8,
+      "newcomerKept": 2,
+      "agreeLabel": 4,
+      "invalid": 0,
+      "admitted": false
+    },
+    "broad-s2": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 13,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 8,
+      "newcomerKept": 1,
+      "agreeLabel": 6,
+      "invalid": 0,
+      "admitted": false
+    },
+    "narrow-s0": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 8,
+      "escalated": 6,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 3,
+      "newcomerKept": 1,
+      "agreeLabel": 6,
+      "invalid": 0,
+      "admitted": false
+    },
+    "narrow-s1": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 8,
+      "escalated": 6,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 3,
+      "newcomerKept": 0,
+      "agreeLabel": 8,
+      "invalid": 0,
+      "admitted": false
+    },
+    "narrow-s2": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "effect": 10,
+      "escalated": 4,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 3,
+      "newcomerKept": 0,
+      "agreeLabel": 6,
+      "invalid": 0,
+      "admitted": false
+    }
+  },
+  "admittedSets": 0,
+  "narrowAdmitted": 0,
+  "newcomerKeptAmongAdmitted": {
+    "kept": 0,
+    "of": 0
+  },
+  "tests": {
+    "P1": "inconclusive",
+    "P2": "inconclusive",
+    "P3": "inconclusive"
+  },
+  "finishedAt": "2026-11-11T14:17:36.972Z"
+}

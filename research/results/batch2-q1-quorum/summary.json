@@ -1,0 +1,338 @@
+{
+  "families": {
+    "search": {
+      "tasks": 300,
+      "table": [
+        {
+          "arm": "single",
+          "accuracy": 0.8466666666666667,
+          "agents": 1,
+          "tokens": 2638
+        },
+        {
+          "arm": "vote3",
+          "accuracy": 0.88,
+          "agents": 3,
+          "tokens": 7917
+        },
+        {
+          "arm": "vote5",
+          "accuracy": 0.88,
+          "agents": 5,
+          "tokens": 13196
+        },
+        {
+          "arm": "vote7",
+          "accuracy": 0.89,
+          "agents": 7,
+          "tokens": 18471
+        },
+        {
+          "arm": "quorum2",
+          "accuracy": 0.8766666666666667,
+          "agents": 2.1866666666666665,
+          "tokens": 5910
+        },
+        {
+          "arm": "quorum3",
+          "accuracy": 0.8833333333333333,
+          "agents": 3.4033333333333333,
+          "tokens": 9286
+        },
+        {
+          "arm": "w60",
+          "accuracy": 0.9233333333333333,
+          "agents": 1,
+          "tokens": 2703
+        },
+        {
+          "arm": "w150",
+          "accuracy": 0.96,
+          "agents": 1,
+          "tokens": 2802
+        }
+      ],
+      "byLevel": {
+        "24": {
+          "single": 0.99,
+          "vote3": 0.99,
+          "vote5": 0.98,
+          "vote7": 0.98,
+          "quorum2": 0.99,
+          "quorum3": 0.98,
+          "w60": 1,
+          "w150": 1
+        },
+        "48": {
+          "single": 0.84,
+          "vote3": 0.86,
+          "vote5": 0.87,
+          "vote7": 0.9,
+          "quorum2": 0.86,
+          "quorum3": 0.88,
+          "w60": 0.92,
+          "w150": 0.92
+        },
+        "96": {
+          "single": 0.71,
+          "vote3": 0.79,
+          "vote5": 0.79,
+          "vote7": 0.79,
+          "quorum2": 0.78,
+          "quorum3": 0.79,
+          "w60": 0.85,
+          "w150": 0.96
+        }
+      },
+      "samplesDisagree": 1.54,
+      "shareWithOneAnswer": 0.5933333333333334,
+      "diffs": {
+        "quorum3MinusVote7": {
+          "diff": -0.006666666666666667,
+          "ci95": [
+            -0.016666666666666666,
+            0
+          ]
+        },
+        "quorum3MinusQuorum2": {
+          "diff": 0.006666666666666667,
+          "ci95": [
+            -0.013333333333333334,
+            0.02666666666666667
+          ]
+        },
+        "w60MinusQuorum3": {
+          "diff": 0.04,
+          "ci95": [
+            0,
+            0.08
+          ]
+        },
+        "vote7MinusSingle": {
+          "diff": 0.043333333333333335,
+          "ci95": [
+            0.01,
+            0.07666666666666666
+          ]
+        },
+        "quorum2MinusSingle": {
+          "diff": 0.03,
+          "ci95": [
+            0,
+            0.06333333333333334
+          ]
+        },
+        "w60MinusVote7": {
+          "diff": 0.03333333333333333,
+          "ci95": [
+            -0.006666666666666667,
+            0.07333333333333333
+          ]
+        },
+        "w150MinusVote7": {
+          "diff": 0.07,
+          "ci95": [
+            0.03,
+            0.11333333333333333
+          ]
+        },
+        "w60TokensMinusQuorum3Tokens": {
+          "diff": -6582.986666666667,
+          "ci95": [
+            -7108.826666666667,
+            -6069.903333333334
+          ]
+        },
+        "w60TokensMinusQuorum2Tokens": {
+          "diff": -3207.4366666666665,
+          "ci95": [
+            -3469.653333333333,
+            -2960.3966666666665
+          ]
+        },
+        "w60MinusQuorum2": {
+          "diff": 0.04666666666666667,
+          "ci95": [
+            0.006666666666666667,
+            0.08666666666666667
+          ]
+        }
+      },
+      "tests": {
+        "Q1": "supported",
+        "Q2": "not supported",
+        "Q3": "not supported",
+        "Q4": "supported"
+      },
+      "invalid": 0,
+      "truncated": 0
+    },
+    "count": {
+      "tasks": 300,
+      "table": [
+        {
+          "arm": "single",
+          "accuracy": 0.7033333333333334,
+          "agents": 1,
+          "tokens": 2928
+        },
+        {
+          "arm": "vote3",
+          "accuracy": 0.74,
+          "agents": 3,
+          "tokens": 8786
+        },
+        {
+          "arm": "vote5",
+          "accuracy": 0.7366666666666667,
+          "agents": 5,
+          "tokens": 14642
+        },
+        {
+          "arm": "vote7",
+          "accuracy": 0.74,
+          "agents": 7,
+          "tokens": 20499
+        },
+        {
+          "arm": "quorum2",
+          "accuracy": 0.7466666666666667,
+          "agents": 2.16,
+          "tokens": 6422
+        },
+        {
+          "arm": "quorum3",
+          "accuracy": 0.7433333333333333,
+          "agents": 3.29,
+          "tokens": 9819
+        },
+        {
+          "arm": "w60",
+          "accuracy": 0.8266666666666667,
+          "agents": 1,
+          "tokens": 3045
+        },
+        {
+          "arm": "w150",
+          "accuracy": 0.9533333333333334,
+          "agents": 1,
+          "tokens": 3183
+        }
+      ],
+      "byLevel": {
+        "24": {
+          "single": 0.99,
+          "vote3": 1,
+          "vote5": 1,
+          "vote7": 1,
+          "quorum2": 1,
+          "quorum3": 1,
+          "w60": 1,
+          "w150": 1
+        },
+        "48": {
+          "single": 0.78,
+          "vote3": 0.82,
+          "vote5": 0.82,
+          "vote7": 0.83,
+          "quorum2": 0.82,
+          "quorum3": 0.82,
+          "w60": 0.95,
+          "w150": 0.98
+        },
+        "96": {
+          "single": 0.34,
+          "vote3": 0.4,
+          "vote5": 0.39,
+          "vote7": 0.39,
+          "quorum2": 0.42,
+          "quorum3": 0.41,
+          "w60": 0.53,
+          "w150": 0.88
+        }
+      },
+      "samplesDisagree": 1.3166666666666667,
+      "shareWithOneAnswer": 0.73,
+      "diffs": {
+        "quorum3MinusVote7": {
+          "diff": 0.0033333333333333335,
+          "ci95": [
+            -0.013333333333333334,
+            0.02
+          ]
+        },
+        "quorum3MinusQuorum2": {
+          "diff": -0.0033333333333333335,
+          "ci95": [
+            -0.02666666666666667,
+            0.016666666666666666
+          ]
+        },
+        "w60MinusQuorum3": {
+          "diff": 0.08333333333333333,
+          "ci95": [
+            0.04,
+            0.13
+          ]
+        },
+        "vote7MinusSingle": {
+          "diff": 0.03666666666666667,
+          "ci95": [
+            0.01,
+            0.06666666666666667
+          ]
+        },
+        "quorum2MinusSingle": {
+          "diff": 0.043333333333333335,
+          "ci95": [
+            0.013333333333333334,
+            0.07333333333333333
+          ]
+        },
+        "w60MinusVote7": {
+          "diff": 0.08666666666666667,
+          "ci95": [
+            0.043333333333333335,
+            0.13333333333333333
+          ]
+        },
+        "w150MinusVote7": {
+          "diff": 0.21333333333333335,
+          "ci95": [
+            0.16666666666666666,
+            0.26
+          ]
+        },
+        "w60TokensMinusQuorum3Tokens": {
+          "diff": -6774.263333333333,
+          "ci95": [
+            -7253.973333333333,
+            -6302.973333333333
+          ]
+        },
+        "w60TokensMinusQuorum2Tokens": {
+          "diff": -3377.2933333333335,
+          "ci95": [
+            -3621.3166666666666,
+            -3136.0033333333336
+          ]
+        },
+        "w60MinusQuorum2": {
+          "diff": 0.08,
+          "ci95": [
+            0.03666666666666667,
+            0.12333333333333334
+          ]
+        }
+      },
+      "tests": {
+        "Q1": "supported",
+        "Q2": "not supported",
+        "Q3": "supported",
+        "Q4": "supported"
+      },
+      "invalid": 0,
+      "truncated": 0
+    }
+  }
+}

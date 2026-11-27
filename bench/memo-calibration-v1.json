@@ -1,0 +1,131 @@
+{
+  "referencia": {
+    "grossCents": 125000,
+    "refundCents": 7500,
+    "paidCents": 115000,
+    "differenceCents": -2500,
+    "exceptions": 9
+  },
+  "cases": [
+    {
+      "uuid": "cd263b19-61de-49b7-883d-aaa43b4b87fa",
+      "case": "correto",
+      "memorando": "No fechamento anual, o bruto foi 125000 centavos, os créditos somaram 7500 centavos, o recebido foi 115000 centavos e a diferença foi -2500 centavos. Encontramos 9 pedidos com exceção. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para valores acima do esperado, conciliar o excedente com o pedido e verificar eventual depósito duplicado. Para os pagamentos abaixo do esperado, confrontar o repasse parcial com o valor devido e cobrar o saldo. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "89bdd6a5-a5a6-4830-be52-caff129299fc",
+      "case": "conversão correta",
+      "memorando": "No fechamento anual, o bruto foi R$ 1.250,00, os créditos somaram 7500 centavos, o recebido foi 115000 centavos e a diferença foi -2500 centavos. Encontramos 9 pedidos com exceção. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para valores acima do esperado, conciliar o excedente com o pedido e verificar eventual depósito duplicado. Para os pagamentos abaixo do esperado, confrontar o repasse parcial com o valor devido e cobrar o saldo. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "8df2b3bb-f865-4fb7-8198-d2f23cab2194",
+      "case": "associação trocada",
+      "memorando": "No fechamento anual, o bruto foi 7500 centavos, os créditos somaram 125000 centavos, o recebido foi 115000 centavos e a diferença foi -2500 centavos. Encontramos 9 pedidos com exceção. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para valores acima do esperado, conciliar o excedente com o pedido e verificar eventual depósito duplicado. Para os pagamentos abaixo do esperado, confrontar o repasse parcial com o valor devido e cobrar o saldo. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": false,
+        "refundCents": false,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "0df9ef97-41ef-4033-a5a2-909e27a88ac6",
+      "case": "sinal invertido",
+      "memorando": "No fechamento anual, o bruto foi 125000 centavos, os créditos somaram 7500 centavos, o recebido foi 115000 centavos e a diferença foi +2500 centavos. Encontramos 9 pedidos com exceção. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para valores acima do esperado, conciliar o excedente com o pedido e verificar eventual depósito duplicado. Para os pagamentos abaixo do esperado, confrontar o repasse parcial com o valor devido e cobrar o saldo. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": false,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "2e80a292-030c-4581-9eee-ecf14d2bdfbd",
+      "case": "número ausente",
+      "memorando": "No fechamento anual, o bruto foi 125000 centavos, os créditos somaram 7500 centavos, o recebido foi 115000 centavos e a diferença foi -2500 centavos. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para valores acima do esperado, conciliar o excedente com o pedido e verificar eventual depósito duplicado. Para os pagamentos abaixo do esperado, confrontar o repasse parcial com o valor devido e cobrar o saldo. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": false,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "81eb0e7b-27fe-4067-b8e9-c24121f517cc",
+      "case": "ação ausente",
+      "memorando": "No fechamento anual, o bruto foi 125000 centavos, os créditos somaram 7500 centavos, o recebido foi 115000 centavos e a diferença foi -2500 centavos. Encontramos 9 pedidos com exceção. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para os pagamentos abaixo do esperado, confrontar o repasse parcial com o valor devido e cobrar o saldo. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": false,
+        "under": true
+      }
+    },
+    {
+      "uuid": "f7b9d235-db3b-497e-ae2f-373437339682",
+      "case": "ação genérica",
+      "memorando": "No fechamento anual, o bruto foi 125000 centavos, os créditos somaram 7500 centavos, o recebido foi 115000 centavos e a diferença foi -2500 centavos. Encontramos 9 pedidos com exceção. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para valores acima do esperado, conciliar o excedente com o pedido e verificar eventual depósito duplicado. Para pagamentos abaixo do esperado, tomar as providências necessárias. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": false
+      }
+    },
+    {
+      "uuid": "bd7a741f-f270-4a3e-9684-ef4d20ac9882",
+      "case": "conversão errada",
+      "memorando": "No fechamento anual, o bruto foi 125000 centavos, os créditos somaram 7500 centavos, o recebido foi R$ 115,00 e a diferença foi -2500 centavos. Encontramos 9 pedidos com exceção. Para depósitos ausentes, localizar a liquidação do pedido e solicitar ao adquirente o comprovante do repasse. Para valores acima do esperado, conciliar o excedente com o pedido e verificar eventual depósito duplicado. Para os pagamentos abaixo do esperado, confrontar o repasse parcial com o valor devido e cobrar o saldo. Registro de fechamento: campo anual.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": false,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    }
+  ]
+}

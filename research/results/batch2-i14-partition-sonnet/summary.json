@@ -1,0 +1,247 @@
+{
+  "study": "i14-partition-sonnet",
+  "configHash": "9c668b6b5c604a9dbef8b0ff61a9932abf2a323451ab8382be5f8a24074513a3",
+  "status": "complete",
+  "wavesRun": 2,
+  "solo": {
+    "gate": {
+      "effect": 12,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 0,
+      "newcomerKept": 0,
+      "invalid": 0
+    },
+    "held": {
+      "effect": 13,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "newcomerOnlyCases": 0,
+      "newcomerKept": 0,
+      "invalid": 0
+    }
+  },
+  "sets": {
+    "rival-s0": {
+      "collides": true,
+      "resolution": "refuse-newcomer",
+      "followsTemplate": null,
+      "gate": {
+        "effect": 12,
+        "escalated": 0,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 0,
+        "newcomerKept": 0,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 13,
+        "escalated": 0,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 0,
+        "newcomerKept": 0,
+        "invalid": 0
+      },
+      "admitted": true,
+      "holds": true
+    },
+    "rival-s1": {
+      "collides": true,
+      "resolution": "refuse-newcomer",
+      "followsTemplate": null,
+      "gate": {
+        "effect": 12,
+        "escalated": 0,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 0,
+        "newcomerKept": 0,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 13,
+        "escalated": 0,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 0,
+        "newcomerKept": 0,
+        "invalid": 0
+      },
+      "admitted": true,
+      "holds": true
+    },
+    "rival-s2": {
+      "collides": true,
+      "resolution": "refuse-newcomer",
+      "followsTemplate": null,
+      "gate": {
+        "effect": 12,
+        "escalated": 0,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 0,
+        "newcomerKept": 0,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 13,
+        "escalated": 0,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 0,
+        "newcomerKept": 0,
+        "invalid": 0
+      },
+      "admitted": true,
+      "holds": true
+    },
+    "broad-s0": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "gate": {
+        "effect": 13,
+        "escalated": 1,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 8,
+        "newcomerKept": 1,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 15,
+        "escalated": 1,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 8,
+        "newcomerKept": 3,
+        "invalid": 0
+      },
+      "admitted": true,
+      "holds": true
+    },
+    "broad-s1": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "gate": {
+        "effect": 13,
+        "escalated": 2,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 8,
+        "newcomerKept": 1,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 15,
+        "escalated": 1,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 8,
+        "newcomerKept": 3,
+        "invalid": 0
+      },
+      "admitted": true,
+      "holds": true
+    },
+    "broad-s2": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "gate": {
+        "effect": 13,
+        "escalated": 1,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 8,
+        "newcomerKept": 1,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 15,
+        "escalated": 1,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 8,
+        "newcomerKept": 3,
+        "invalid": 0
+      },
+      "admitted": true,
+      "holds": true
+    },
+    "narrow-s0": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "gate": {
+        "effect": 6,
+        "escalated": 10,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 3,
+        "newcomerKept": 1,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 5,
+        "escalated": 9,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 3,
+        "newcomerKept": 2,
+        "invalid": 0
+      },
+      "admitted": false,
+      "holds": null
+    },
+    "narrow-s1": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "gate": {
+        "effect": 8,
+        "escalated": 5,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 3,
+        "newcomerKept": 1,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 8,
+        "escalated": 8,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 3,
+        "newcomerKept": 2,
+        "invalid": 0
+      },
+      "admitted": false,
+      "holds": null
+    },
+    "narrow-s2": {
+      "collides": true,
+      "resolution": "merge",
+      "followsTemplate": true,
+      "gate": {
+        "effect": 6,
+        "escalated": 9,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 3,
+        "newcomerKept": 1,
+        "invalid": 0
+      },
+      "held": {
+        "effect": 4,
+        "escalated": 11,
+        "wrongFirings": 0,
+        "newcomerOnlyCases": 3,
+        "newcomerKept": 1,
+        "invalid": 0
+      },
+      "admitted": false,
+      "holds": null
+    }
+  },
+  "admittedSets": 6,
+  "narrowAdmitted": 0,
+  "admittedThatFailHeldOut": 0,
+  "newcomerKeptAmongAdmitted": {
+    "kept": 12,
+    "of": 48
+  },
+  "tests": {
+    "P1": "not supported",
+    "P2": "not supported",
+    "P3": "supported",
+    "P4": "not supported"
+  },
+  "finishedAt": "2026-11-11T14:42:59.345Z"
+}

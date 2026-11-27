@@ -1,0 +1,79 @@
+{
+  "study": "m3-verifier",
+  "configHash": "694e3af6e90aac59bf5f19bf69925b7569836b7ca5b355f6d0eecea2a4d83e8a",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "grounded": {
+      "corrupted": 48,
+      "clean": 48,
+      "sensitivity": 1,
+      "sensitivityCi95": [
+        0.9258998692515198,
+        1
+      ],
+      "specificity": 1,
+      "specificityCi95": [
+        0.9258998692515198,
+        1
+      ],
+      "localised": 48,
+      "byError": {
+        "wrong-citation": {
+          "n": 12,
+          "caught": 12
+        },
+        "flipped-value": {
+          "n": 12,
+          "caught": 12
+        },
+        "dropped-finding": {
+          "n": 12,
+          "caught": 12
+        },
+        "invented-conflict": {
+          "n": 12,
+          "caught": 12
+        }
+      }
+    },
+    "blind": {
+      "corrupted": 48,
+      "clean": 48,
+      "sensitivity": 0.22916666666666666,
+      "sensitivityCi95": [
+        0.13307826208858892,
+        0.3653926420668379
+      ],
+      "specificity": 0.9375,
+      "specificityCi95": [
+        0.8316456183361519,
+        0.9785167672589278
+      ],
+      "localised": 6,
+      "byError": {
+        "wrong-citation": {
+          "n": 12,
+          "caught": 1
+        },
+        "flipped-value": {
+          "n": 12,
+          "caught": 1
+        },
+        "dropped-finding": {
+          "n": 12,
+          "caught": 5
+        },
+        "invented-conflict": {
+          "n": 12,
+          "caught": 4
+        }
+      }
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported"
+  },
+  "finishedAt": "2026-11-11T05:44:25.647Z"
+}

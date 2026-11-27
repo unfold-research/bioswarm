@@ -1,0 +1,103 @@
+{
+  "study": "i11-admission-sonnet",
+  "configHash": "303f6a2bf77c9ed4e9d1df953c6751888f5228a56bbfb8e10a4be6cb17958ff9",
+  "status": "complete",
+  "wavesRun": 2,
+  "admission": {
+    "rival": {
+      "detected": 3,
+      "of": 3,
+      "resolutions": [
+        "refuse-newcomer",
+        "refuse-newcomer",
+        "refuse-newcomer"
+      ],
+      "installed": "refuse-newcomer"
+    },
+    "broad": {
+      "detected": 3,
+      "of": 3,
+      "resolutions": [
+        "merge",
+        "merge",
+        "merge"
+      ],
+      "installed": "merge"
+    },
+    "narrow": {
+      "detected": 3,
+      "of": 3,
+      "resolutions": [
+        "merge",
+        "merge",
+        "merge"
+      ],
+      "installed": "merge"
+    },
+    "control": {
+      "detected": 0,
+      "of": 3,
+      "resolutions": [
+        "merge",
+        "merge",
+        "merge"
+      ],
+      "installed": "merge"
+    }
+  },
+  "arms": {
+    "solo": {
+      "effect": 12,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "cleanOk": 16,
+      "genuineOk": 16,
+      "invalid": 0
+    },
+    "rival": {
+      "effect": 12,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "cleanOk": 16,
+      "genuineOk": 16,
+      "invalid": 0
+    },
+    "broad": {
+      "effect": 1,
+      "escalated": 15,
+      "wrongFirings": 0,
+      "cleanOk": 16,
+      "genuineOk": 16,
+      "invalid": 0
+    },
+    "narrow": {
+      "effect": 8,
+      "escalated": 7,
+      "wrongFirings": 0,
+      "cleanOk": 16,
+      "genuineOk": 16,
+      "invalid": 0
+    },
+    "control": {
+      "effect": 12,
+      "escalated": 0,
+      "wrongFirings": 0,
+      "cleanOk": 16,
+      "genuineOk": 16,
+      "invalid": 0
+    }
+  },
+  "tests": {
+    "P1": "not supported",
+    "P2": "not supported",
+    "P3": "supported",
+    "P4": "supported",
+    "keptByNewcomer": {
+      "rival": true,
+      "broad": false,
+      "narrow": false,
+      "control": true
+    }
+  },
+  "finishedAt": "2026-11-11T14:04:41.071Z"
+}

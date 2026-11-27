@@ -1,0 +1,84 @@
+{
+  "commit": "e74127782ed1c42fff474249961f022c063d76f2",
+  "files": {
+    "I-01_M16.json": "26742bbc8f6cdc886581710346b46785d3ad9e0ed25d5163ed51c06f3a28b1b8",
+    "I-01_M4.json": "7046542e88c6df4709ff3681a94b83da743f810ca4b831b1f744650f7c2cc54c",
+    "I-01_M8.json": "4d30c5f4cffefdba0b54f5cc66ac096814a7a3bdf072a5d72d579cc051dc6058",
+    "I-05_M16.json": "ad8f58224b9be5579722508a4b75e00ec17c524ff45cf9b7c5dee833975c9834",
+    "I-05_M4.json": "f4a149e5cd726a0c0a6871d9abe05cc1d85f4eacdd6f041d923c60ed895bcf84",
+    "I-05_M8.json": "c60bba4d2180b551fc1b09dcd6c631e07e3964ed5bf03fe24f64eb269a2b042c",
+    "I-06_M16.json": "48448c265ea460f4b219d7a52900d921c696dd6345c168278c46576eaf4bc6cb",
+    "I-06_M4.json": "f9656c6cdd0fd44afe7481eff66ee781ab3951a882cefa1d301f164aac16a355",
+    "I-06_M8.json": "df5bb2eca6df5cd355cbe750365f6fb14c1cc63c822742ce5c5434ed3d9871d8",
+    "III-22_M16.json": "dbec1dc55738770eccb20579e0f2304a8561ad386ac69caab26d67c18c31c5b7",
+    "III-22_M4.json": "089513804715c8fec6dfdca74f71b7eec4437d29f9bcacd91512c40f0ea59c8b",
+    "III-22_M8.json": "d64d8cbeea21bf5430a4ea9e7fb4552b0ac3368c53201b64ed19ebd8924a353d"
+  },
+  "instances": 24,
+  "probe": {
+    "instancesPerCell": 200,
+    "maxModalShare": 0.2,
+    "modalShare": {
+      "I-01": {
+        "16": 0.145,
+        "4": 0.065,
+        "8": 0.1
+      },
+      "I-02": {
+        "16": 0.07,
+        "4": 0.12,
+        "8": 0.1
+      },
+      "I-05": {
+        "16": 0.06,
+        "4": 0.1,
+        "8": 0.085
+      },
+      "I-06": {
+        "16": 0.02,
+        "4": 0.015,
+        "8": 0.02
+      },
+      "I-08": {
+        "16": 0.14,
+        "4": 0.195,
+        "8": 0.15
+      },
+      "III-22": {
+        "16": 0.035,
+        "4": 0.03,
+        "8": 0.02
+      },
+      "III-23": {
+        "16": 0.27,
+        "4": 0.475,
+        "8": 0.31
+      },
+      "III-26": {
+        "16": 0.12,
+        "4": 0.25,
+        "8": 0.135
+      }
+    },
+    "passed": [
+      "I-01",
+      "I-02",
+      "I-05",
+      "I-06",
+      "I-08",
+      "III-22"
+    ]
+  },
+  "sizes": [
+    4,
+    8,
+    16
+  ],
+  "source": "jwyjohn/acl26-silo-bench",
+  "tasks": [
+    "I-01",
+    "I-05",
+    "I-06",
+    "III-22"
+  ]
+}

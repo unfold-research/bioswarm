@@ -1,0 +1,6 @@
+{ "id": "LI17", "prereg": "tasks/LI17-CLONAL-WAIT-PREREG.md", "base": { "model": "claude-haiku-5-5", "effort": null, "memberMax": 8000, "managerMax": 32000, "rounds": 8, "strictFeedback": true },
+  "sizes": [{ "k": 40, "seed0": 17400, "cases": 8, "cap": 6 }, { "k": 80, "seed0": 17800, "cases": 8, "cap": 12 }],
+  "arms": ["clonalwait", "stigwait", "manager"],
+  "hypotheses": [
+   { "id": "H-LI54", "primary": true, "a": "clonalwait", "b": "stigwait", "metric": "holdoutFailing", "title": "Clonal selection on top of waiting for the trace generalises better" },
+   { "id": "H-LI55", "a": "clonalwait", "b": "manager", "metric": "final", "title": "Clonal selection with waiting ends below a manager agent" } ] }

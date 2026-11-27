@@ -1,0 +1,89 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "arms.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gz": 20
+    },
+    {
+      "path": "close-recife.mjs",
+      "bytes": 983,
+      "sha256": "5489a3177d86869de5e64b918f6f45de4ca8c06e796c3262348b8367e5658d75",
+      "gz": 551
+    },
+    {
+      "path": "gateway-accounting.json",
+      "bytes": 171,
+      "sha256": "b1582a1ba9b13d6c9d44ad804348e571891a34c77eaba8203a529e29c5245c9d",
+      "gz": 105
+    },
+    {
+      "path": "recife-r1-budget.mjs",
+      "bytes": 1867,
+      "sha256": "ca3898b4d19428bcc133c88e0a86de64c0b60b1e17e316fe3284089c845c0f5e",
+      "gz": 932
+    },
+    {
+      "path": "recife-r1.py",
+      "bytes": 4958,
+      "sha256": "d368b69b388b467e968524d391091a1475857f0abd5f278ba063753747c0dfdf",
+      "gz": 1905
+    },
+    {
+      "path": "request-1.json",
+      "bytes": 2561,
+      "sha256": "0f23aeba82e9c66ac926ea4db95a21fb07b400419de2b1e338e7b9274c2d3240",
+      "gz": 1453
+    },
+    {
+      "path": "request-2.json",
+      "bytes": 2486,
+      "sha256": "d0f928d2b926230fd8732ccbca8114bf056a8abaa98d0d4a8da7300766802206",
+      "gz": 1408
+    },
+    {
+      "path": "request-3.json",
+      "bytes": 3729,
+      "sha256": "dc61125acf8c131c21084905912ba1a7b1444d90c5ed49b3963775ec62b7fb7b",
+      "gz": 1904
+    },
+    {
+      "path": "response-1.json",
+      "bytes": 1033,
+      "sha256": "8672a80b1d2c020ea0c3cc40f859010c6eb58ae77efea315dee18c4bf095a1d5",
+      "gz": 593
+    },
+    {
+      "path": "response-2.json",
+      "bytes": 867,
+      "sha256": "09e16c4d30c713abadb38965c277f15e4ec0886b966cfc07c727572e2a90941c",
+      "gz": 488
+    },
+    {
+      "path": "response-3.json",
+      "bytes": 640,
+      "sha256": "bce90a79edbe7956314af053d5034d39fe188b2f78bfe0c67f8fc3daa8e963f2",
+      "gz": 345
+    },
+    {
+      "path": "runner.log",
+      "bytes": 1097,
+      "sha256": "10a2385fdd6135900237517dca3264147d690ab4a1dc597b49778616426bfcec",
+      "gz": 570
+    },
+    {
+      "path": "summary.json",
+      "bytes": 207,
+      "sha256": "cb0e1972bd3620858ffa85c14936cedef1bab81ec8813b1104b46cdc22afbfce",
+      "gz": 124
+    },
+    {
+      "path": "transport.jsonl",
+      "bytes": 2229,
+      "sha256": "bfdd671ad0c813db8c25b321eab008a16b5bf10cca6fc7b5ad922f3a63cf7c50",
+      "gz": 575
+    }
+  ]
+}

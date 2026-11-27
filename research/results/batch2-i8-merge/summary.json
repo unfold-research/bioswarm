@@ -1,0 +1,66 @@
+{
+  "study": "i8-merge",
+  "configHash": "89c8abe6b6834dbe7829cfef56fe2f6967df559af4fecd62d60db2dfad2c097e",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "solo": {
+      "effect": 12,
+      "escalated": 0,
+      "branchCorrect": 6,
+      "casesOnZero": 6,
+      "escalatedOnZero": 0,
+      "effectOffZero": 6,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "rival": {
+      "effect": 6,
+      "escalated": 8,
+      "branchCorrect": 5,
+      "casesOnZero": 6,
+      "escalatedOnZero": 2,
+      "effectOffZero": 3,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "merged": {
+      "effect": 11,
+      "escalated": 0,
+      "branchCorrect": 6,
+      "casesOnZero": 6,
+      "escalatedOnZero": 0,
+      "effectOffZero": 6,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "refused": {
+      "effect": 12,
+      "escalated": 0,
+      "branchCorrect": 6,
+      "casesOnZero": 6,
+      "escalatedOnZero": 0,
+      "effectOffZero": 6,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "branch": {
+      "effect": 8,
+      "escalated": 6,
+      "branchCorrect": 14,
+      "casesOnZero": 6,
+      "escalatedOnZero": 6,
+      "effectOffZero": 8,
+      "wrongFirings": 0,
+      "invalid": 0
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported",
+    "P4": "supported",
+    "P5": "supported"
+  },
+  "finishedAt": "2026-11-11T13:25:27.902Z"
+}

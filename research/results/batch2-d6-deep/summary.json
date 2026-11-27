@@ -1,0 +1,170 @@
+{
+  "local": {
+    "table": [
+      {
+        "arm": "deep",
+        "study": "d6-deep-local",
+        "stable": 1,
+        "edited": 0.75,
+        "editedPartsReread": 2.2
+      },
+      {
+        "arm": "sweep",
+        "study": "r2b-sweep",
+        "stable": 1,
+        "edited": 0.48333333333333334,
+        "editedPartsReread": 1.4
+      },
+      {
+        "arm": "alarm",
+        "study": "r2b-alarm",
+        "stable": 1,
+        "edited": 0.7,
+        "editedPartsReread": 1.8333333333333333
+      },
+      {
+        "arm": "haikuRouter",
+        "study": "r2b-router",
+        "stable": 1,
+        "edited": 0.75,
+        "editedPartsReread": 2.1666666666666665
+      },
+      {
+        "arm": "sonnetRouter",
+        "study": "rd-local-sonnet-prior",
+        "stable": 1,
+        "edited": 0.9833333333333333,
+        "editedPartsReread": 2.683333333333333
+      },
+      {
+        "arm": "probeRule (simulated, exact readers)",
+        "stable": 1,
+        "edited": 1,
+        "editedPartsReread": 2.6
+      }
+    ],
+    "deep": {
+      "repeatsPerRun": 0.21666666666666667,
+      "recountsExact": 0.9,
+      "unusableNext": 0,
+      "truncated": 0
+    },
+    "diffs": {
+      "deepMinusSweep": {
+        "diff": 0.26666666666666666,
+        "ci95": [
+          0.11666666666666667,
+          0.4166666666666667
+        ]
+      },
+      "deepMinusHaikuRouter": {
+        "diff": 0,
+        "ci95": [
+          -0.15,
+          0.15
+        ]
+      },
+      "deepMinusAlarm": {
+        "diff": 0.05,
+        "ci95": [
+          -0.1,
+          0.2
+        ]
+      },
+      "deepMinusSonnetRouter": {
+        "diff": -0.23333333333333334,
+        "ci95": [
+          -0.35,
+          -0.11666666666666667
+        ]
+      }
+    }
+  },
+  "scatter": {
+    "table": [
+      {
+        "arm": "deep",
+        "study": "d6-deep-scatter",
+        "stable": 1,
+        "edited": 0.35,
+        "editedPartsReread": 1.2333333333333334
+      },
+      {
+        "arm": "sweep",
+        "study": "r3-scatter-sweep",
+        "stable": 1,
+        "edited": 0.4666666666666667,
+        "editedPartsReread": 1.4666666666666666
+      },
+      {
+        "arm": "alarm",
+        "study": "r3-scatter-alarm",
+        "stable": 1,
+        "edited": 0.2833333333333333,
+        "editedPartsReread": 1.1666666666666667
+      },
+      {
+        "arm": "haikuRouter",
+        "study": "r3-scatter-router",
+        "stable": 1,
+        "edited": 0.2,
+        "editedPartsReread": 1.1
+      },
+      {
+        "arm": "sonnetRouter",
+        "study": "rd-scatter-sonnet-prior",
+        "stable": 1,
+        "edited": 0.23333333333333334,
+        "editedPartsReread": 1.1166666666666667
+      },
+      {
+        "arm": "probeRule (simulated, exact readers)",
+        "stable": 1,
+        "edited": 0.26666666666666666,
+        "editedPartsReread": 1.1333333333333333
+      }
+    ],
+    "deep": {
+      "repeatsPerRun": 0.30833333333333335,
+      "recountsExact": 0.9111111111111111,
+      "unusableNext": 0,
+      "truncated": 0
+    },
+    "diffs": {
+      "deepMinusSweep": {
+        "diff": -0.11666666666666667,
+        "ci95": [
+          -0.26666666666666666,
+          0.03333333333333333
+        ]
+      },
+      "deepMinusHaikuRouter": {
+        "diff": 0.15,
+        "ci95": [
+          0,
+          0.3
+        ]
+      },
+      "deepMinusAlarm": {
+        "diff": 0.06666666666666667,
+        "ci95": [
+          -0.08333333333333333,
+          0.21666666666666667
+        ]
+      },
+      "deepMinusSonnetRouter": {
+        "diff": 0.11666666666666667,
+        "ci95": [
+          -0.05,
+          0.2833333333333333
+        ]
+      }
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P3": "supported",
+    "P4": "supported"
+  }
+}

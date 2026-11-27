@@ -1,0 +1,20 @@
+{
+  "routed": {
+    "solvedInRun": 10,
+    "passHoldout": 8,
+    "failing": [
+      "k12s9702 D:M5.tallySeed>M7.gradeNote",
+      "k12s9707 D:M2.labelName>M11.tallyCode"
+    ]
+  },
+  "chat": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "manager": {
+    "solvedInRun": 10,
+    "passHoldout": 10,
+    "failing": []
+  }
+}

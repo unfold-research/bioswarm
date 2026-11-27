@@ -1,0 +1,14 @@
+{
+  "study": "m6-verifier-sonnet",
+  "configHash": "e4e41211d8f768459bd68dcb24f3b23d296965d3bbc4ac7be3671724ba2575d7",
+  "status": "complete",
+  "wavesRun": 1,
+  "tasks": 90,
+  "correct": 87,
+  "byLevel": {
+    "12": 30,
+    "24": 30,
+    "48": 27
+  },
+  "finishedAt": "2026-11-11T13:25:27.709Z"
+}

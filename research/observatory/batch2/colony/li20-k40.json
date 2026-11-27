@@ -1,0 +1,6 @@
+{ "out": "li20-colony-wait-k40", "k": 40, "seed0": 20400, "cases": 8, "arms": ["market", "fieldwait"], "model": "openai-codex/gpt-6-luna",
+  "armSpecs": { "market": { "field": false }, "fieldwait": { "field": "wait" } },
+  "antLimits": { "cycle": 200, "pair": 60 },
+  "instructions": "Este é um estudo automático: ninguém vai responder perguntas. Não pergunte nada à pessoa; decida e conclua. Se uma formiga não responder, siga com o que você tem e termine quando os testes passarem.",
+  "colonyCommit": "d0c8830",
+  "shape": { "local": 2, "directed": 40, "symmetric": 30, "tests": 8, "shown": 3 }, "capMinutes": 45, "quietMs": 180000, "endpoints": "/srv/bench/endpoints.json", "perEndpoint": 2, "permission": "standard", "removeAfter": true }

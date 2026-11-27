@@ -1,0 +1,175 @@
+{
+  "study": "v1b-vote",
+  "configHash": "d924c1145aaee16bfac442df178b679cb52f6b99ca84dc867f4ac2e193ff6816",
+  "status": "complete",
+  "wavesRun": 1,
+  "byLevel": {
+    "2": {
+      "tasks": 16,
+      "work": 1,
+      "ident": {
+        "single": 1,
+        "vote": 1,
+        "icc": null
+      },
+      "present": {
+        "single": 1,
+        "vote": 1,
+        "icc": null
+      },
+      "strategy": {
+        "single": 1,
+        "vote": 1,
+        "icc": null
+      }
+    },
+    "3": {
+      "tasks": 16,
+      "work": 1,
+      "ident": {
+        "single": 0.9,
+        "vote": 0.9375,
+        "icc": 0.6527777777777777
+      },
+      "present": {
+        "single": 0.9625,
+        "vote": 1,
+        "icc": -0.038961038961042194
+      },
+      "strategy": {
+        "single": 0.75,
+        "vote": 0.8125,
+        "icc": 0.6666666666666667
+      }
+    },
+    "4": {
+      "tasks": 16,
+      "work": 1,
+      "ident": {
+        "single": 0.425,
+        "vote": 0.4375,
+        "icc": 0.8721227621483376
+      },
+      "present": {
+        "single": 0.45,
+        "vote": 0.4375,
+        "icc": 0.36868686868686873
+      },
+      "strategy": {
+        "single": 0.425,
+        "vote": 0.5,
+        "icc": 0.5907928388746803
+      }
+    },
+    "5": {
+      "tasks": 16,
+      "work": 1,
+      "ident": {
+        "single": 0.15,
+        "vote": 0.1875,
+        "icc": 0.5098039215686274
+      },
+      "present": {
+        "single": 0.2,
+        "vote": 0.3125,
+        "icc": 0.4140624999999999
+      },
+      "strategy": {
+        "single": 0.125,
+        "vote": 0.1875,
+        "icc": 0.48571428571428554
+      }
+    },
+    "6": {
+      "tasks": 16,
+      "work": 1,
+      "ident": {
+        "single": 0.2125,
+        "vote": 0.1875,
+        "icc": 0.8506069094304388
+      },
+      "present": {
+        "single": 0.175,
+        "vote": 0.25,
+        "icc": 0.6103896103896104
+      },
+      "strategy": {
+        "single": 0.1625,
+        "vote": 0.1875,
+        "icc": 0.6785304247990815
+      }
+    },
+    "8": {
+      "tasks": 16,
+      "work": 1,
+      "ident": {
+        "single": 0.0625,
+        "vote": 0.0625,
+        "icc": 1
+      },
+      "present": {
+        "single": 0.0875,
+        "vote": 0.0625,
+        "icc": 0.452054794520548
+      },
+      "strategy": {
+        "single": 0.0625,
+        "vote": 0.0625,
+        "icc": 1
+      }
+    }
+  },
+  "analysisLevels": [
+    3,
+    4,
+    6
+  ],
+  "pooled": {
+    "tasks": 48,
+    "work": 1,
+    "ident": {
+      "single": 0.5125,
+      "vote": 0.5208333333333334,
+      "meanIccWithinLevel": 0.7918358164521847
+    },
+    "present": {
+      "single": 0.5291666666666667,
+      "vote": 0.5625,
+      "meanIccWithinLevel": 0.3133718133718123
+    },
+    "strategy": {
+      "single": 0.44583333333333336,
+      "vote": 0.5,
+      "meanIccWithinLevel": 0.6453299767801428
+    }
+  },
+  "iccIdentMinusPresent": {
+    "ci95": [
+      0.16681359637334475,
+      0.6773935583075363
+    ],
+    "bootstraps": 2000
+  },
+  "iccIdentMinusStrategy": {
+    "ci95": [
+      -0.1333040140762312,
+      0.3521046989126948
+    ],
+    "bootstraps": 2000
+  },
+  "hardLevels": [
+    4,
+    5,
+    6,
+    8
+  ],
+  "truncated": 0,
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P2p": "supported",
+    "P3": "supported",
+    "P4": "supported"
+  },
+  "finishedAt": "2026-11-11T12:41:57.361Z"
+}

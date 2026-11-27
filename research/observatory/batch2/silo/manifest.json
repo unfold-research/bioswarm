@@ -1,0 +1,102 @@
+{
+  "commit": "e74127782ed1c42fff474249961f022c063d76f2",
+  "files": {
+    "I-02_M1024.json": "9bffc71bce4fcb6dce6a8a3e9ca04eb86e03b65b134239196263f66cf1aa277f",
+    "I-02_M16.json": "3d9a49c17977b8e4d1f397133b8227c8501b5bc48fe758b2d340200ce65b5464",
+    "I-02_M256.json": "f8fe6c51fd34bd9f70baeea08e59f47386251975a8f7031da7a59ea2544de44b",
+    "I-02_M64.json": "c5a6ac574edfd22c97fb379dd1ce49350e287c235e4314fed560aa107174026b",
+    "I-05_M1024.json": "f3e5d8a3a4e68132327cbce78347337fbb4c0c9b63abeef71ea5391ca1793436",
+    "I-05_M16.json": "740bfc29dc682dd0c858dd7782ce58a80ebf51613bf3a75ad03342508e7347c0",
+    "I-05_M256.json": "38bec660e71054d83abca6db35d0171c3e72f09edac6e6e4e05758b11ee4c67c",
+    "I-05_M64.json": "42b12020829ef81ccf387960b136b0585334b2e1f9d36ebafa7c2a9685d3c38e",
+    "I-06_M1024.json": "bb4050066e60137beeced0c93e94af47c1a3a0ef10d8f63ca73d1554298530b1",
+    "I-06_M16.json": "8e86a85bb05aa0c94bf275167daa7350b94ebeac70932db95c0312c8e228ebcc",
+    "I-06_M256.json": "dfcbe91c9c9f503d0ce41ef68f0ebd94033e0861d9ad077b9e2cd5ed037a7692",
+    "I-06_M64.json": "4985c5feba8fe6344e20c08b59b57f1ef25f0853b6ffa7b728593fd9d7668a68",
+    "III-22_M1024.json": "527a7efc397a71b676cc48d8afe39d43fd8dfe672bd25f68c0be8f707692c67c",
+    "III-22_M16.json": "10dbddb3f8467f09dcf4174765e735e190db7b6fab2df4328984c19fbb803311",
+    "III-22_M256.json": "8322e4c3cdb7a7cd6d139f76042e74f12668716c95713ae2328abac5dbad4b92",
+    "III-22_M64.json": "0a7a778d65a42751d2c0c3a65da62fd6f0ebf2b98d28fecb753cbf0f17ab5cbd",
+    "III-26_M1024.json": "ed4251f4128f489b60e76225566e9b615c368c2c788e43d64141be9ee4eeeff9",
+    "III-26_M16.json": "2c044e05501764c567df5131988afb59bb7fb4514b51fd274600916f14a90153",
+    "III-26_M256.json": "dab4afffdccc9d6086b6baed566e88ff58bc3e94e22bb23fc151ffa1df3abd14",
+    "III-26_M64.json": "886a206c58588d81d6eb9e9eb7974a0158094039601a0a23c72662b2653cbf9c"
+  },
+  "instances": 12,
+  "probe": {
+    "instancesPerCell": 200,
+    "maxModalShare": 0.2,
+    "modalShare": {
+      "I-01": {
+        "1024": 1.0,
+        "16": 0.145,
+        "256": 0.9,
+        "64": 0.455
+      },
+      "I-02": {
+        "1024": 0.025,
+        "16": 0.07,
+        "256": 0.035,
+        "64": 0.045
+      },
+      "I-05": {
+        "1024": 0.015,
+        "16": 0.06,
+        "256": 0.025,
+        "64": 0.035
+      },
+      "I-06": {
+        "1024": 0.02,
+        "16": 0.02,
+        "256": 0.02,
+        "64": 0.025
+      },
+      "I-08": {
+        "1024": 0.035,
+        "16": 0.14,
+        "256": 0.045,
+        "64": 0.06
+      },
+      "III-22": {
+        "1024": 0.185,
+        "16": 0.035,
+        "256": 0.1,
+        "64": 0.05
+      },
+      "III-23": {
+        "1024": 0.04,
+        "16": 0.27,
+        "256": 0.095,
+        "64": 0.15
+      },
+      "III-26": {
+        "1024": 0.03,
+        "16": 0.12,
+        "256": 0.04,
+        "64": 0.06
+      }
+    },
+    "passed": [
+      "I-02",
+      "I-05",
+      "I-06",
+      "I-08",
+      "III-22",
+      "III-26"
+    ]
+  },
+  "sizes": [
+    16,
+    64,
+    256,
+    1024
+  ],
+  "source": "jwyjohn/acl26-silo-bench",
+  "tasks": [
+    "I-02",
+    "I-05",
+    "I-06",
+    "III-22",
+    "III-26"
+  ]
+}

@@ -1,0 +1,32 @@
+name: Natural mechanism
+description: Propose a mechanism from a natural collective that could help teams of AI agents.
+labels: [nature]
+body:
+  - type: input
+    id: phenomenon
+    attributes:
+      label: Phenomenon
+      placeholder: "Army ants build living bridges sized to the traffic they carry"
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Papers or observations, with links.
+    validations:
+      required: true
+  - type: textarea
+    id: analogue
+    attributes:
+      label: Engineering analogue
+      description: What it would do in a team of AI agents, and which coordination problem it addresses.
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Evidence level today
+      options: [natural phenomenon, author-reported, observed implementation, hypothesis, local validation, gap]
+    validations:
+      required: true

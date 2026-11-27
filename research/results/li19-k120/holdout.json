@@ -1,0 +1,68 @@
+{
+  "stigwait": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k120s19200": 0,
+      "k120s19201": 0,
+      "k120s19202": 0,
+      "k120s19203": 0,
+      "k120s19204": 0,
+      "k120s19205": 0,
+      "k120s19206": 0,
+      "k120s19207": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": [],
+    "perCase": {
+      "k120s19200": 67,
+      "k120s19201": 27,
+      "k120s19202": 45,
+      "k120s19203": 88,
+      "k120s19204": 35,
+      "k120s19205": 43,
+      "k120s19206": 19,
+      "k120s19207": 126
+    }
+  },
+  "routed": {
+    "solvedInRun": 7,
+    "passHoldout": 2,
+    "failing": [
+      "k120s19201 D:M53.mintPath>M5.nudgeTitle",
+      "k120s19202 D:M101.forgeNode>M116.stampPoint",
+      "k120s19205 D:M6.foldSku>M108.weighSlug",
+      "k120s19206 D:M82.siftValue>M71.gleanFrame",
+      "k120s19207 D:M112.labelField>M107.stashRange"
+    ],
+    "perCase": {
+      "k120s19200": 2,
+      "k120s19201": 1,
+      "k120s19202": 1,
+      "k120s19203": 0,
+      "k120s19204": 0,
+      "k120s19205": 1,
+      "k120s19206": 1,
+      "k120s19207": 1
+    }
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k120s19200": 0,
+      "k120s19201": 0,
+      "k120s19202": 0,
+      "k120s19203": 0,
+      "k120s19204": 0,
+      "k120s19205": 0,
+      "k120s19206": 0,
+      "k120s19207": 0
+    }
+  }
+}

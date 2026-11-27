@@ -1,0 +1,8 @@
+{
+  "name": "pi-executor-spike",
+  "private": true,
+  "type": "module",
+  "description": "Spike: the Unfold app's task manager driven by a Pi agent session instead of the Codex app-server. No paid calls.",
+  "scripts": { "test": "node --test spike.test.mjs" },
+  "dependencies": { "@earendil-works/pi-coding-agent": "1.5.2", "typebox": "1.3.27" }
+}

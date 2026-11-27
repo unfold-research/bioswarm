@@ -1,0 +1,23 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "wave-0.results.jsonl",
+      "bytes": 1291657,
+      "sha256": "db5a3200b516b656a33f78748044c0017b57edb4ead5f2e17aaa29178ef83f80",
+      "gz": 831251
+    },
+    {
+      "path": "wave-1.results.jsonl",
+      "bytes": 2065514,
+      "sha256": "aab2292f00575f17e29858819d7774c47a4fca908a989bc65e197c6a07ed23f2",
+      "gz": 1422761
+    },
+    {
+      "path": "wave-2.results.jsonl",
+      "bytes": 1675317,
+      "sha256": "42070376e2f2d5a368d8f1c2633cc1cf6c61778d9a0613dac21b539b5743a09a",
+      "gz": 1148377
+    }
+  ]
+}

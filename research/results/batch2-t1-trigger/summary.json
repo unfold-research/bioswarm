@@ -1,0 +1,283 @@
+{
+  "rulesOn3000": {
+    "never": {
+      "stable": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 0
+      },
+      "local": {
+        "fields": 1000,
+        "correct": 0,
+        "recounts": 0
+      },
+      "scatter": {
+        "fields": 1000,
+        "correct": 0,
+        "recounts": 0
+      }
+    },
+    "always": {
+      "stable": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 12
+      },
+      "local": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 12
+      },
+      "scatter": {
+        "fields": 1000,
+        "correct": 0.384,
+        "recounts": 12
+      }
+    },
+    "thr4": {
+      "stable": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 4
+      },
+      "local": {
+        "fields": 1000,
+        "correct": 0.513,
+        "recounts": 8.104
+      },
+      "scatter": {
+        "fields": 1000,
+        "correct": 0.256,
+        "recounts": 7.4
+      }
+    },
+    "thr8": {
+      "stable": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 8
+      },
+      "local": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 12
+      },
+      "scatter": {
+        "fields": 1000,
+        "correct": 0.352,
+        "recounts": 10.764
+      }
+    },
+    "thr8flip": {
+      "stable": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 8
+      },
+      "local": {
+        "fields": 1000,
+        "correct": 1,
+        "recounts": 8.498
+      },
+      "scatter": {
+        "fields": 1000,
+        "correct": 0.352,
+        "recounts": 10.008
+      }
+    }
+  },
+  "rulesOnTheStudyFields": {
+    "never": {
+      "stable": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 0
+      },
+      "local": {
+        "fields": 30,
+        "correct": 0,
+        "recounts": 0
+      },
+      "scatter": {
+        "fields": 30,
+        "correct": 0,
+        "recounts": 0
+      }
+    },
+    "always": {
+      "stable": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 12
+      },
+      "local": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 12
+      },
+      "scatter": {
+        "fields": 30,
+        "correct": 0.4666666666666667,
+        "recounts": 12
+      }
+    },
+    "thr4": {
+      "stable": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 4
+      },
+      "local": {
+        "fields": 30,
+        "correct": 0.5333333333333333,
+        "recounts": 8.266666666666667
+      },
+      "scatter": {
+        "fields": 30,
+        "correct": 0.3333333333333333,
+        "recounts": 8.266666666666667
+      }
+    },
+    "thr8": {
+      "stable": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 8
+      },
+      "local": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 12
+      },
+      "scatter": {
+        "fields": 30,
+        "correct": 0.43333333333333335,
+        "recounts": 11.2
+      }
+    },
+    "thr8flip": {
+      "stable": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 8
+      },
+      "local": {
+        "fields": 30,
+        "correct": 1,
+        "recounts": 8.533333333333333
+      },
+      "scatter": {
+        "fields": 30,
+        "correct": 0.43333333333333335,
+        "recounts": 10.2
+      }
+    }
+  },
+  "central": {
+    "haiku": {
+      "byWorld": {
+        "stable": {
+          "fields": 30,
+          "correct": 1,
+          "recounts": 2.7333333333333334,
+          "decisions": 1.3666666666666667
+        },
+        "local": {
+          "fields": 30,
+          "correct": 0.4,
+          "recounts": 5,
+          "decisions": 2.433333333333333
+        },
+        "scatter": {
+          "fields": 30,
+          "correct": 0.3333333333333333,
+          "recounts": 7.466666666666667,
+          "decisions": 3.2666666666666666
+        }
+      },
+      "decisionCalls": 212,
+      "invalid": 0
+    },
+    "sonnet": {
+      "byWorld": {
+        "stable": {
+          "fields": 30,
+          "correct": 1,
+          "recounts": 3.466666666666667,
+          "decisions": 1.7333333333333334
+        },
+        "local": {
+          "fields": 30,
+          "correct": 0.5,
+          "recounts": 4.866666666666666,
+          "decisions": 2.433333333333333
+        },
+        "scatter": {
+          "fields": 30,
+          "correct": 0.3333333333333333,
+          "recounts": 7.2,
+          "decisions": 3.3333333333333335
+        }
+      },
+      "decisionCalls": 225,
+      "invalid": 0
+    }
+  },
+  "diffs": {
+    "sonnetMinusThr8flip_correct": {
+      "diff": -0.2,
+      "ci95": [
+        -0.28888888888888886,
+        -0.12222222222222222
+      ]
+    },
+    "sonnetMinusThr8flip_recounts": {
+      "diff": -3.7333333333333334,
+      "ci95": [
+        -4.311111111111111,
+        -3.1333333333333333
+      ]
+    },
+    "haikuMinusThr8flip_correct": {
+      "diff": -0.23333333333333334,
+      "ci95": [
+        -0.32222222222222224,
+        -0.14444444444444443
+      ]
+    },
+    "haikuMinusThr8flip_recounts": {
+      "diff": -3.8444444444444446,
+      "ci95": [
+        -4.622222222222222,
+        -3.022222222222222
+      ]
+    },
+    "sonnetMinusAlways_correct_edited": {
+      "diff": -0.31666666666666665,
+      "ci95": [
+        -0.43333333333333335,
+        -0.2
+      ]
+    },
+    "sonnetMinusOneRound_recounts_stable": {
+      "diff": 1.4666666666666666,
+      "ci95": [
+        1.1333333333333333,
+        1.7333333333333334
+      ]
+    },
+    "haikuMinusOneRound_recounts_stable": {
+      "diff": 0.7333333333333333,
+      "ci95": [
+        0.26666666666666666,
+        1.2
+      ]
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P1haiku": "supported",
+    "P2": "supported",
+    "P2haiku": "supported"
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "decision": {
+    "tasks": {
+      "I-01": {
+        "kind": "quiet",
+        "small": 16,
+        "large": null
+      },
+      "I-05": {
+        "kind": "falls",
+        "small": 4,
+        "large": 16
+      },
+      "I-06": {
+        "kind": "falls",
+        "small": 4,
+        "large": 8
+      },
+      "III-22": {
+        "kind": "quiet",
+        "small": 16,
+        "large": null
+      }
+    },
+    "falls": [
+      "I-05",
+      "I-06"
+    ],
+    "quiet": [
+      "I-01",
+      "III-22"
+    ],
+    "holds": [],
+    "never": [],
+    "verdict": "proceed"
+  },
+  "predictions": {
+    "P1": [
+      {
+        "M": 1,
+        "diff": 0.208,
+        "low": 0.104,
+        "high": 0.333,
+        "supported": true
+      },
+      {
+        "M": 2,
+        "diff": 0.271,
+        "low": 0.146,
+        "high": 0.417,
+        "supported": true
+      },
+      {
+        "M": 4,
+        "diff": 0.5,
+        "low": 0.354,
+        "high": 0.646,
+        "supported": true
+      },
+      {
+        "M": 8,
+        "diff": 0.458,
+        "low": 0.292,
+        "high": 0.625,
+        "supported": true
+      },
+      {
+        "M": 16,
+        "diff": 0.5,
+        "low": 0.354,
+        "high": 0.646,
+        "supported": true
+      }
+    ],
+    "P2": {
+      "xorOneShard": 12,
+      "holds": true
+    },
+    "P3": {
+      "at8": [
+        0,
+        11
+      ],
+      "at16": [
+        0,
+        11
+      ],
+      "holds": true
+    }
+  },
+  "bySize": [
+    {
+      "M": 1,
+      "right": 48,
+      "rightWithout": 38,
+      "n": 48,
+      "declaredEstimate": 0,
+      "outputTokens": 561,
+      "outputTokensWithout": 151
+    },
+    {
+      "M": 2,
+      "right": 44,
+      "rightWithout": 31,
+      "n": 48,
+      "declaredEstimate": 0,
+      "outputTokens": 881,
+      "outputTokensWithout": 271
+    },
+    {
+      "M": 4,
+      "right": 46,
+      "rightWithout": 22,
+      "n": 48,
+      "declaredEstimate": 0,
+      "outputTokens": 1496,
+      "outputTokensWithout": 482
+    },
+    {
+      "M": 8,
+      "right": 40,
+      "rightWithout": 18,
+      "n": 48,
+      "declaredEstimate": 0,
+      "outputTokens": 2879,
+      "outputTokensWithout": 737
+    },
+    {
+      "M": 16,
+      "right": 37,
+      "rightWithout": 13,
+      "n": 48,
+      "declaredEstimate": 0,
+      "outputTokens": 4944,
+      "outputTokensWithout": 886
+    }
+  ],
+  "cells": [
+    {
+      "task": "I-01",
+      "M": 1,
+      "right": 12,
+      "rightWithout": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 413,
+      "outputTokens": 156,
+      "outputTokensWithout": 93
+    },
+    {
+      "task": "I-01",
+      "M": 2,
+      "right": 12,
+      "rightWithout": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 474,
+      "outputTokens": 186,
+      "outputTokensWithout": 103
+    },
+    {
+      "task": "I-01",
+      "M": 4,
+      "right": 12,
+      "rightWithout": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 590,
+      "outputTokens": 179,
+      "outputTokensWithout": 76
+    },
+    {
+      "task": "I-01",
+      "M": 8,
+      "right": 12,
+      "rightWithout": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 821,
+      "outputTokens": 258,
+      "outputTokensWithout": 110
+    },
+    {
+      "task": "I-01",
+      "M": 16,
+      "right": 12,
+      "rightWithout": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 1283,
+      "outputTokens": 458,
+      "outputTokensWithout": 136
+    },
+    {
+      "task": "I-05",
+      "M": 1,
+      "right": 12,
+      "rightWithout": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 436,
+      "outputTokens": 375,
+      "outputTokensWithout": 218
+    },
+    {
+      "task": "I-05",
+      "M": 2,
+      "right": 9,
+      "rightWithout": 9,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0.3333333333333333,
+      "inputTokens": 504,
+      "outputTokens": 589,
+      "outputTokensWithout": 259
+    },
+    {
+      "task": "I-05",
+      "M": 4,
+      "right": 11,
+      "rightWithout": 5,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0.25,
+      "inputTokens": 640,
+      "outputTokens": 1076,
+      "outputTokensWithout": 595
+    },
+    {
+      "task": "I-05",
+      "M": 8,
+      "right": 10,
+      "rightWithout": 3,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0.8333333333333334,
+      "inputTokens": 912,
+      "outputTokens": 2052,
+      "outputTokensWithout": 1035
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "right": 6,
+      "rightWithout": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 1.0833333333333333,
+      "inputTokens": 1457,
+      "outputTokens": 4010,
+      "outputTokensWithout": 1338
+    },
+    {
+      "task": "I-06",
+      "M": 1,
+      "right": 12,
+      "rightWithout": 5,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 409,
+      "outputTokens": 1140,
+      "outputTokensWithout": 156
+    },
+    {
+      "task": "I-06",
+      "M": 2,
+      "right": 11,
+      "rightWithout": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0.3333333333333333,
+      "inputTokens": 457,
+      "outputTokens": 1483,
+      "outputTokensWithout": 334
+    },
+    {
+      "task": "I-06",
+      "M": 4,
+      "right": 11,
+      "rightWithout": 2,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0.16666666666666666,
+      "inputTokens": 553,
+      "outputTokens": 2594,
+      "outputTokensWithout": 571
+    },
+    {
+      "task": "I-06",
+      "M": 8,
+      "right": 6,
+      "rightWithout": 2,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 28.75,
+      "inputTokens": 745,
+      "outputTokens": 4547,
+      "outputTokensWithout": 1047
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "right": 8,
+      "rightWithout": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 36.583333333333336,
+      "inputTokens": 1129,
+      "outputTokens": 7561,
+      "outputTokensWithout": 1957
+    },
+    {
+      "task": "III-22",
+      "M": 1,
+      "right": 12,
+      "rightWithout": 9,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 482,
+      "outputTokens": 572,
+      "outputTokensWithout": 138
+    },
+    {
+      "task": "III-22",
+      "M": 2,
+      "right": 12,
+      "rightWithout": 10,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 540,
+      "outputTokens": 1267,
+      "outputTokensWithout": 387
+    },
+    {
+      "task": "III-22",
+      "M": 4,
+      "right": 12,
+      "rightWithout": 3,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 656,
+      "outputTokens": 2133,
+      "outputTokensWithout": 687
+    },
+    {
+      "task": "III-22",
+      "M": 8,
+      "right": 12,
+      "rightWithout": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 888,
+      "outputTokens": 4660,
+      "outputTokensWithout": 754
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "right": 11,
+      "rightWithout": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 8.333333333333334,
+      "inputTokens": 1352,
+      "outputTokens": 7746,
+      "outputTokensWithout": 113
+    }
+  ]
+}

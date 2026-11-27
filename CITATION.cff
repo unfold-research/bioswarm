@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+title: "BioSwarm: bio-inspired coordination for teams of AI agents, and the open research behind it"
+message: "If you use this research or software, please cite it as below, and name the study and the commit you used."
+type: software
+authors:
+  - name: "Unfold Research"
+    website: "https://unfold.host"
+repository-code: "https://github.com/unfold-research/bioswarm"
+url: "https://unfold.host/research/"
+abstract: >-
+  BioSwarm is the coordination engine of Colony and the open record of Unfold Research: preregistered studies of
+  whether mechanisms from natural collectives (stigmergy, lateral inhibition, requirement traces and others) coordinate
+  teams of AI agents better than a manager agent or a group chat, with hypotheses, reports, independent reviews and
+  failures. No advantage over a single agent or a manager agent is claimed.
+keywords:
+  - multi-agent systems
+  - AI agents
+  - swarm intelligence
+  - stigmergy
+  - bio-inspired coordination
+  - open research
+  - preregistration
+license: Apache-2.0
+date-released: "2026-11-27"

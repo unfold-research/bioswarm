@@ -1,0 +1,133 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 128209,
+      "calls": 677,
+      "trunc": 0,
+      "messages": 653,
+      "meanTrajectory": [
+        70.13,
+        46.13,
+        22.88,
+        7.63,
+        3.25,
+        1.38,
+        0.25,
+        0.13,
+        0
+      ]
+    },
+    "manager": {
+      "solved": 0,
+      "of": 8,
+      "finalTotal": {
+        "sum": 40,
+        "median": 4.5
+      },
+      "finalByKind": {
+        "local": 3,
+        "directed": 5,
+        "symmetric": 32
+      },
+      "meanOut": 151217,
+      "calls": 419,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        70.13,
+        70.13,
+        40.5,
+        34.5,
+        23.88,
+        14.5,
+        12.88,
+        7.75,
+        5
+      ]
+    },
+    "routed": {
+      "solved": 6,
+      "of": 8,
+      "finalTotal": {
+        "sum": 2,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 2,
+        "symmetric": 0
+      },
+      "meanOut": 180823,
+      "calls": 566,
+      "trunc": 0,
+      "messages": 791,
+      "meanTrajectory": [
+        70.13,
+        30.13,
+        14.63,
+        5.5,
+        2.38,
+        0.75,
+        0.25,
+        0.25,
+        0.25
+      ]
+    }
+  },
+  "edgeTests": {
+    "routed_vs_manager_symmetric": {
+      "routedOnly": 32,
+      "managerOnly": 0,
+      "both": 207,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_manager_directed": {
+      "routedOnly": 8,
+      "managerOnly": 2,
+      "both": 307,
+      "neither": 0,
+      "p": 0.10938
+    },
+    "routed_vs_manager_all": {
+      "routedOnly": 40,
+      "managerOnly": 2,
+      "both": 514,
+      "neither": 0,
+      "p": 0
+    }
+  },
+  "signTests": {
+    "routed_vs_manager": {
+      "lowerIn": 8,
+      "higherIn": 0,
+      "p": 0.00781
+    }
+  },
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 97,
+      "stillFailingAfter": 2
+    },
+    "manager": {
+      "bothSidesChanged": 189,
+      "stillFailingAfter": 176
+    },
+    "routed": {
+      "bothSidesChanged": 171,
+      "stillFailingAfter": 19
+    }
+  },
+  "verdict": {}
+}

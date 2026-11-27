@@ -1,0 +1,49 @@
+{
+  "id": "LI23",
+  "prereg": "tasks/LI23-LOSS-TIME-PREREG.md",
+  "base": {
+    "model": "claude-haiku-5-5",
+    "effort": null,
+    "memberMax": 8000,
+    "managerMax": 32000,
+    "rounds": 8,
+    "strictFeedback": true,
+    "lossRate": 0.2
+  },
+  "sizes": [
+    {
+      "k": 40,
+      "seed0": 23400,
+      "cases": 8,
+      "cap": 5
+    },
+    {
+      "k": 80,
+      "seed0": 23800,
+      "cases": 8,
+      "cap": 9
+    }
+  ],
+  "arms": [
+    "stigwait",
+    "manager",
+    "routed"
+  ],
+  "hypotheses": [
+    {
+      "id": "H-LI66",
+      "primary": true,
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "final",
+      "title": "Under member loss and an equal wave budget, waiting for the trace ends with fewer failing checks than a manager agent"
+    },
+    {
+      "id": "H-LI67",
+      "a": "stigwait",
+      "b": "routed",
+      "metric": "final",
+      "title": "Under member loss, waiting for the trace ends below the geometry router"
+    }
+  ]
+}

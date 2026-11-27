@@ -1,0 +1,3 @@
+{ "out": "li4-recruitment-tail", "domain": "colour", "model": "claude-haiku-5-5", "sizes": [120, 240], "perSize": 12, "seed0": 4000, "deg": 2.3, "regionSize": 15,
+  "memberMax": 12000, "centralMax": 32000, "effort": null, "rounds": 16, "patchCap": 40,
+  "arms": ["patch", "patch2", "central"] }

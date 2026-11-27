@@ -1,0 +1,21 @@
+// Checks for correctStudyCost (offline, on a temporary ledger). Run: node observatory/lab007-instrument-audit/correct.test.mjs
+import assert from 'node:assert/strict';
+import fs from 'node:fs'; import os from 'node:os'; import path from 'node:path';
+import { correctStudyCost } from './global-budget.mjs';
+const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ledger-correct-')), file = path.join(dir, 'global-budget.json');
+const base = { schema: 1, capUsd: 300, commitments: { 'li99-k80-wave-0-p0': { committedUsd: 1.5, status: 'complete' }, 'li99-k80-wave-1-p0': { committedUsd: 0.5, status: 'complete' }, other: { committedUsd: 10 } }, history: [] };
+fs.writeFileSync(file, JSON.stringify(base));
+const args = { file, study: 'li99-k80', oldUsd: 2, newUsd: 2.75, reason: 'long-band price recomputed from raw results', approval: 'owner, test fixture approval' };
+const r = await correctStudyCost(args);
+assert.equal(r.isNew, true); assert.equal(r.deltaUsd, 0.75); assert.equal(r.committedUsd, 12.75);
+const l = JSON.parse(fs.readFileSync(file, 'utf8')), c = l.commitments['correction-li99-k80'];
+assert.equal(c.oldUsd, 2); assert.equal(c.newUsd, 2.75); assert.equal(c.kind, 'cost-correction'); assert.ok(c.reason && c.approval);
+assert.equal(l.commitments['li99-k80-wave-0-p0'].committedUsd, 1.5, 'wave entries are kept as recorded');
+assert.equal(l.history.at(-1).event, 'cost-corrected'); assert.equal(l.capUsd, 300, 'the cap is never touched');
+assert.equal((await correctStudyCost(args)).isNew, false, 'the same correction again changes nothing');
+await assert.rejects(correctStudyCost({ ...args, newUsd: 3 }), /different correction/);
+await assert.rejects(correctStudyCost({ ...args, study: 'li98-k80' }), /does not match/);
+await assert.rejects(correctStudyCost({ ...args, study: 'li97', approval: '' }), /approval/);
+await assert.rejects(correctStudyCost({ ...args, study: 'li97', reason: 'x' }), /reason/);
+fs.rmSync(dir, { recursive: true });
+console.log('ledger corrections: ok');

@@ -1,0 +1,65 @@
+{
+  "stigwait": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k80s19800": 0,
+      "k80s19801": 0,
+      "k80s19802": 0,
+      "k80s19803": 0,
+      "k80s19804": 0,
+      "k80s19805": 0,
+      "k80s19806": 0,
+      "k80s19807": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": [],
+    "perCase": {
+      "k80s19800": 12,
+      "k80s19801": 85,
+      "k80s19802": 11,
+      "k80s19803": 33,
+      "k80s19804": 23,
+      "k80s19805": 33,
+      "k80s19806": 27,
+      "k80s19807": 54
+    }
+  },
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 6,
+    "failing": [
+      "k80s19801 D:M47.labelField>M49.mintField",
+      "k80s19804 D:M41.forgeNode>M62.rankSpan"
+    ],
+    "perCase": {
+      "k80s19800": 0,
+      "k80s19801": 1,
+      "k80s19802": 0,
+      "k80s19803": 0,
+      "k80s19804": 1,
+      "k80s19805": 0,
+      "k80s19806": 0,
+      "k80s19807": 0
+    }
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k80s19800": 0,
+      "k80s19801": 0,
+      "k80s19802": 0,
+      "k80s19803": 0,
+      "k80s19804": 0,
+      "k80s19805": 0,
+      "k80s19806": 0,
+      "k80s19807": 0
+    }
+  }
+}

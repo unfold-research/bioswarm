@@ -1,0 +1,26 @@
+{
+  "study": "t2-map-board-k2",
+  "configHash": "d64dbe5a938382cb9304786676a80a43e2c6073a685ad0fea60658b579a497dc",
+  "status": "complete",
+  "wavesRun": 3,
+  "regime": "board",
+  "k": 2,
+  "runs": 72,
+  "table": {
+    "III-22": {
+      "4": {
+        "n": 24,
+        "right": 23
+      },
+      "8": {
+        "n": 24,
+        "right": 23
+      },
+      "16": {
+        "n": 24,
+        "right": 20
+      }
+    }
+  },
+  "finishedAt": "2026-11-12T08:16:51.133Z"
+}

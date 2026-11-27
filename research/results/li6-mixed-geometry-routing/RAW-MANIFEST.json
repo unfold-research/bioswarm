@@ -1,0 +1,83 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "state.json",
+      "bytes": 798231,
+      "sha256": "7e538c7409512f7fbffed15fcc1f75f55603a20f334ccc3f6791451d0538e230",
+      "gz": 115812
+    },
+    {
+      "path": "wave-0.requests.jsonl",
+      "bytes": 990425,
+      "sha256": "877a61b22863c083d42caccf2bcedbc260557263472caad44cad0c49ef54625e",
+      "gz": 85407
+    },
+    {
+      "path": "wave-0.results.jsonl",
+      "bytes": 1154967,
+      "sha256": "207eab4fc94bf601f2fa82ab6e591eb59c3628dc8312f7e47899f132f7a2837e",
+      "gz": 729463
+    },
+    {
+      "path": "wave-1.requests.jsonl",
+      "bytes": 5857666,
+      "sha256": "e3227cea42522a04e505035452d83daeed436141d1139094064ef6c28fb67c1a",
+      "gz": 659682
+    },
+    {
+      "path": "wave-1.results.jsonl",
+      "bytes": 27952211,
+      "sha256": "bf5d32a293dc9e77149afa6679ab040bcb8a063af65bb78aad3fab61ec09117f",
+      "gz": 20466751
+    },
+    {
+      "path": "wave-2.requests.jsonl",
+      "bytes": 5878877,
+      "sha256": "2f2641334dfe9e3e9dc47f16a599b91bf5f3fd634ff11536c13bbe28017fec90",
+      "gz": 719223
+    },
+    {
+      "path": "wave-2.results.jsonl",
+      "bytes": 27826104,
+      "sha256": "b12607cc8c832f2f035606649e8ebea22f8b00041c162d8eb02beee5ef972980",
+      "gz": 20380230
+    },
+    {
+      "path": "wave-3.requests.jsonl",
+      "bytes": 5733553,
+      "sha256": "b55b2149e46e5b6c0d1ce542dcfe502dc17dd7c0e9176d415b83675c7c82ea94",
+      "gz": 708269
+    },
+    {
+      "path": "wave-3.results.jsonl",
+      "bytes": 25572183,
+      "sha256": "7520f76f084293492652a8c9c93916d0d805b0b529cb545bdc91232097937521",
+      "gz": 18665909
+    },
+    {
+      "path": "wave-4.requests.jsonl",
+      "bytes": 5678251,
+      "sha256": "8e38657c79b83b4c21fc5af7016d89618571245f785b38b3036757c1c965004b",
+      "gz": 707540
+    },
+    {
+      "path": "wave-4.results.jsonl",
+      "bytes": 23699396,
+      "sha256": "1d8f9651d9ce70ccecd1d083554cafbf00de4d9900221e7d155936fe128b31c1",
+      "gz": 17244531
+    },
+    {
+      "path": "wave-5.requests.jsonl",
+      "bytes": 5649642,
+      "sha256": "9856cd2ce199e7552839ce6ce22272f1174fb94730b4b4947dea62204a1aa98e",
+      "gz": 702645
+    },
+    {
+      "path": "wave-5.results.jsonl",
+      "bytes": 22181227,
+      "sha256": "19336d0116e8781112319dc88bb6e4197a8d3ec3db7596f6f5826c44f2c762e3",
+      "gz": 16082705
+    }
+  ]
+}

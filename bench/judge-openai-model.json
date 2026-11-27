@@ -1,0 +1,9 @@
+{
+  "providers": {
+    "openai": {
+      "models": [
+        { "id": "gpt-6-luna", "name": "GPT-6 Luna", "api": "openai-responses", "reasoning": true, "input": ["text"] }
+      ]
+    }
+  }
+}

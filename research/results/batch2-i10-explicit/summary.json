@@ -1,0 +1,59 @@
+{
+  "study": "i10-explicit",
+  "configHash": "2f7050caa54e6085f75eecbeff5cffa42979ab0acf863958f97b551bfcb188db",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "none": {
+      "quarantine": 8,
+      "effect": 8,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "implicit-stale": {
+      "quarantine": 0,
+      "effect": 0,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "explicit": {
+      "quarantine": 16,
+      "effect": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "explicit-stale": {
+      "quarantine": 16,
+      "effect": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "explicit-other": {
+      "quarantine": 16,
+      "effect": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "explicit-last": {
+      "quarantine": 16,
+      "effect": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported",
+    "P4": "supported",
+    "P5": "supported",
+    "P6": "supported"
+  },
+  "finishedAt": "2026-11-11T13:41:54.457Z"
+}

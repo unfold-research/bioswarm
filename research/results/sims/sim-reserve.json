@@ -1,0 +1,296 @@
+{
+ "id": "sim-reserve",
+ "version": "1.0.0",
+ "title": "Idle reserve of agents under bursts and failures",
+ "seed": 20261107,
+ "hypothesis": {
+  "statement": "Near saturation the waiting time of a task queue is strongly nonlinear in the number of agents, so a small idle reserve cuts latency under bursts and failures far more than it costs; at low utilization the same reserve buys almost nothing.",
+  "predictions": [
+   {
+    "id": "P1",
+    "text": "Steady load 3.6 (service rate 1 per agent): the simulated mean wait for c = 4, 5 and 6 is within 10% of the Erlang C value (about 1.97, 0.29 and 0.08)."
+   },
+   {
+    "id": "P2",
+    "text": "Bursts (load 4.5 during 20% of the time, 3.6 otherwise): one reserve agent (c = 5) cuts the p95 wait of c = 4 by at least 60%, and two (c = 6) by at least 85%."
+   },
+   {
+    "id": "P3",
+    "text": "Low utilization (load 1.8, c = 4, utilization 0.45): the mean-wait reduction from one reserve agent is less than 5% of the reduction obtained at load 3.6 (utilization 0.9)."
+   },
+   {
+    "id": "P4",
+    "text": "Stuck agents (each fails at rate 0.002 and recovers after a mean of 20, load 3.6): the p95 wait of c = 4 is at least 2x its value without failures, and one reserve agent brings it below the no-failure c = 4 value."
+   }
+  ]
+ },
+ "params": {
+  "seed": 20261107,
+  "mu": 1,
+  "runs": 100,
+  "T": 20000,
+  "warmup": 1000,
+  "agents": [
+   4,
+   5,
+   6
+  ],
+  "scenarios": {
+   "steady": {
+    "load": 3.6
+   },
+   "low": {
+    "load": 1.8
+   },
+   "bursts": {
+    "load": 3.6,
+    "burst_load": 4.5,
+    "burst_mean": 50,
+    "calm_mean": 200
+   },
+   "failures": {
+    "load": 3.6,
+    "fail_rate": 0.002,
+    "repair_mean": 20
+   }
+  },
+  "rules": "Continuous-time Markov chain simulated event by event: Poisson arrivals, exponential service (rate mu per busy agent), FIFO. Bursts: the arrival rate alternates between calm and burst periods with exponential durations. Failures: each working agent fails at fail_rate and returns after an exponential repair time; a task whose agent fails goes back to the head of the queue. Wait = time from arrival to first start of service; tasks arriving during warm-up are discarded."
+ },
+ "results": {
+  "steady": {
+   "4": {
+    "mean": {
+     "mean": 1.97771,
+     "lo": 1.94292,
+     "hi": 2.01249,
+     "n": 100
+    },
+    "p95": {
+     "mean": 6.92624,
+     "lo": 6.78406,
+     "hi": 7.06842,
+     "n": 100
+    },
+    "left_at_end": 7.97,
+    "erlang_c": 1.96938
+   },
+   "5": {
+    "mean": {
+     "mean": 0.29066,
+     "lo": 0.28819,
+     "hi": 0.29313,
+     "n": 100
+    },
+    "p95": {
+     "mean": 1.49073,
+     "lo": 1.47913,
+     "hi": 1.50233,
+     "n": 100
+    },
+    "left_at_end": 1.3,
+    "erlang_c": 0.29314
+   },
+   "6": {
+    "mean": {
+     "mean": 0.08188,
+     "lo": 0.081,
+     "hi": 0.08276,
+     "n": 100
+    },
+    "p95": {
+     "mean": 0.57003,
+     "lo": 0.5649,
+     "hi": 0.57516,
+     "n": 100
+    },
+    "left_at_end": 0.21,
+    "erlang_c": 0.0819
+   }
+  },
+  "low": {
+   "4": {
+    "mean": {
+     "mean": 0.05814,
+     "lo": 0.05752,
+     "hi": 0.05876,
+     "n": 100
+    },
+    "p95": {
+     "mean": 0.42707,
+     "lo": 0.42247,
+     "hi": 0.43166,
+     "n": 100
+    },
+    "left_at_end": 0.09,
+    "erlang_c": 0.05842
+   },
+   "5": {
+    "mean": {
+     "mean": 0.01231,
+     "lo": 0.01208,
+     "hi": 0.01253,
+     "n": 100
+    },
+    "p95": {
+     "mean": 0,
+     "lo": 0,
+     "hi": 0,
+     "n": 100
+    },
+    "left_at_end": 0.01,
+    "erlang_c": 0.01266
+   },
+   "6": {
+    "mean": {
+     "mean": 0.00267,
+     "lo": 0.0026,
+     "hi": 0.00274,
+     "n": 100
+    },
+    "p95": {
+     "mean": 0,
+     "lo": 0,
+     "hi": 0,
+     "n": 100
+    },
+    "left_at_end": 0,
+    "erlang_c": 0.00265
+   }
+  },
+  "bursts": {
+   "4": {
+    "mean": {
+     "mean": 8.49493,
+     "lo": 8.03004,
+     "hi": 8.95982,
+     "n": 100
+    },
+    "p95": {
+     "mean": 32.50127,
+     "lo": 30.44139,
+     "hi": 34.56114,
+     "n": 100
+    },
+    "left_at_end": 35.82,
+    "erlang_c": null
+   },
+   "5": {
+    "mean": {
+     "mean": 0.52507,
+     "lo": 0.51451,
+     "hi": 0.53564,
+     "n": 100
+    },
+    "p95": {
+     "mean": 2.51869,
+     "lo": 2.4672,
+     "hi": 2.57018,
+     "n": 100
+    },
+    "left_at_end": 2.15,
+    "erlang_c": null
+   },
+   "6": {
+    "mean": {
+     "mean": 0.12704,
+     "lo": 0.12517,
+     "hi": 0.12891,
+     "n": 100
+    },
+    "p95": {
+     "mean": 0.81328,
+     "lo": 0.80349,
+     "hi": 0.82306,
+     "n": 100
+    },
+    "left_at_end": 0.68,
+    "erlang_c": null
+   }
+  },
+  "failures": {
+   "4": {
+    "mean": {
+     "mean": 6.10147,
+     "lo": 5.82797,
+     "hi": 6.37496,
+     "n": 100
+    },
+    "p95": {
+     "mean": 23.7567,
+     "lo": 22.38309,
+     "hi": 25.13032,
+     "n": 100
+    },
+    "left_at_end": 22.56,
+    "erlang_c": null
+   },
+   "5": {
+    "mean": {
+     "mean": 0.56476,
+     "lo": 0.55164,
+     "hi": 0.57789,
+     "n": 100
+    },
+    "p95": {
+     "mean": 2.70082,
+     "lo": 2.64256,
+     "hi": 2.75908,
+     "n": 100
+    },
+    "left_at_end": 1.95,
+    "erlang_c": null
+   },
+   "6": {
+    "mean": {
+     "mean": 0.14145,
+     "lo": 0.13884,
+     "hi": 0.14407,
+     "n": 100
+    },
+    "p95": {
+     "mean": 0.86827,
+     "lo": 0.85628,
+     "hi": 0.88026,
+     "n": 100
+    },
+    "left_at_end": 0.33,
+    "erlang_c": null
+   }
+  }
+ },
+ "tests": [
+  {
+   "id": "P1",
+   "verdict": "supported",
+   "detail": "c=4: 1.978 [95% CI 1.943–2.012] vs Erlang C 1.969; c=5: 0.291 [95% CI 0.288–0.293] vs Erlang C 0.293; c=6: 0.082 [95% CI 0.081–0.083] vs Erlang C 0.082"
+  },
+  {
+   "id": "P2",
+   "verdict": "supported",
+   "detail": "p95 wait c=4 32.50, c=5 2.52 (-92.3%), c=6 0.81 (-97.5%)"
+  },
+  {
+   "id": "P3",
+   "verdict": "supported",
+   "detail": "mean-wait reduction from +1 agent: 0.0458 at utilization 0.45 vs 1.687 at 0.9 (2.72%)"
+  },
+  {
+   "id": "P4",
+   "verdict": "supported",
+   "detail": "p95 wait c=4 no failures 6.93; with failures c=4 23.76, c=5 2.70"
+  }
+ ],
+ "headline": [
+  "steady c=4: mean wait 1.978 [95% CI 1.943–2.012], p95 wait 6.93 [95% CI 6.78–7.07], Erlang C 1.969",
+  "steady c=5: mean wait 0.291 [95% CI 0.288–0.293], p95 wait 1.49 [95% CI 1.48–1.50], Erlang C 0.293",
+  "steady c=6: mean wait 0.082 [95% CI 0.081–0.083], p95 wait 0.57 [95% CI 0.56–0.58], Erlang C 0.082",
+  "bursts c=4: mean wait 8.495 [95% CI 8.030–8.960], p95 wait 32.50 [95% CI 30.44–34.56]",
+  "bursts c=5: mean wait 0.525 [95% CI 0.515–0.536], p95 wait 2.52 [95% CI 2.47–2.57]",
+  "bursts c=6: mean wait 0.127 [95% CI 0.125–0.129], p95 wait 0.81 [95% CI 0.80–0.82]",
+  "low c=4: mean wait 0.058 [95% CI 0.058–0.059], p95 wait 0.43 [95% CI 0.42–0.43]",
+  "low c=5: mean wait 0.012 [95% CI 0.012–0.013], p95 wait 0.00 [95% CI 0.00–0.00]",
+  "failures c=4: mean wait 6.101 [95% CI 5.828–6.375], p95 wait 23.76 [95% CI 22.38–25.13]",
+  "failures c=5: mean wait 0.565 [95% CI 0.552–0.578], p95 wait 2.70 [95% CI 2.64–2.76]",
+  "failures c=6: mean wait 0.141 [95% CI 0.139–0.144], p95 wait 0.87 [95% CI 0.86–0.88]"
+ ]
+}

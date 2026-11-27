@@ -1,0 +1,299 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "measurement.tar.gz",
+      "bytes": 6420,
+      "sha256": "defa6aef3ccdf7f1721690bd768c2d68d48e2b78a2add3af0d8003f2220c4328",
+      "gz": 6443
+    },
+    {
+      "path": "s101a-manager.tar.gz",
+      "bytes": 3841,
+      "sha256": "6e2ef7f94eaf751ac7f08a0149a9a0ae1991036895e960c3e2c6927bee3ae866",
+      "gz": 3864
+    },
+    {
+      "path": "s101a-unfold.tar.gz",
+      "bytes": 3417,
+      "sha256": "d4259223bd3ff1b37129f539f90f497600e23fcae20241cd83a987639e4608c0",
+      "gz": 3440
+    },
+    {
+      "path": "s101p-manager.tar.gz",
+      "bytes": 3461,
+      "sha256": "3133fba09bdde6c170f6d44e977664c24113e203d87a96ec214ca65b6c0fed62",
+      "gz": 3484
+    },
+    {
+      "path": "s101p-unfold.tar.gz",
+      "bytes": 3414,
+      "sha256": "7bbb81be11b9933f007744a65f74b2d5beb77e25cf08076d24cb8d6a60cc03f1",
+      "gz": 3437
+    },
+    {
+      "path": "s102a-manager.tar.gz",
+      "bytes": 3807,
+      "sha256": "a0d3df603efd0cdcb9c7dc535f1cb833efa243d6b82b74171546b02e5dd94ffe",
+      "gz": 3830
+    },
+    {
+      "path": "s102a-unfold.tar.gz",
+      "bytes": 3399,
+      "sha256": "cb90d2825dc2b766c18f106da08564e06ed43ac5dddf6aeeb1d4e3c28f7e6327",
+      "gz": 3422
+    },
+    {
+      "path": "s102p-manager.tar.gz",
+      "bytes": 3435,
+      "sha256": "5b1e1633f56e28d8743474deb84b828808b738f29bb1bfb93fa4bdaabffc7744",
+      "gz": 3458
+    },
+    {
+      "path": "s102p-unfold.tar.gz",
+      "bytes": 2963,
+      "sha256": "8f42648223d1477f3318c1f24ab0678a77d7287fd7fc2f56c2f5f7c1245e4b11",
+      "gz": 2986
+    },
+    {
+      "path": "s103a-manager.tar.gz",
+      "bytes": 3824,
+      "sha256": "c89a1371f5909b41d9a1b92507c29d4096ef678b62a67e75ccbf7fe3649673b6",
+      "gz": 3847
+    },
+    {
+      "path": "s103a-unfold.tar.gz",
+      "bytes": 3397,
+      "sha256": "d02576b04077d3d1321999cb0baa5ee74709e4de5a12be58b0bbb3f1fcee4d7f",
+      "gz": 3420
+    },
+    {
+      "path": "s103p-manager.tar.gz",
+      "bytes": 3536,
+      "sha256": "4f7a47224e877460dc91b1a13a2048666b6745d7c6d6a65fe3d53498f19fa101",
+      "gz": 3559
+    },
+    {
+      "path": "s103p-unfold.tar.gz",
+      "bytes": 2947,
+      "sha256": "a7ae376af1a77052413b56598cff55c08d5b9e05da20812263a2f3a042089ff0",
+      "gz": 2970
+    },
+    {
+      "path": "s104a-manager.tar.gz",
+      "bytes": 4201,
+      "sha256": "49ea938dfa38fa45e89ddae4682e3da62d8ddeef781a899f9aadcafc882f7840",
+      "gz": 4206
+    },
+    {
+      "path": "s104a-unfold.tar.gz",
+      "bytes": 3405,
+      "sha256": "ad55c9e31468da28d2eb225fd8fa20dada8825f2a515f740e90d42fa6502a971",
+      "gz": 3428
+    },
+    {
+      "path": "s104p-manager.tar.gz",
+      "bytes": 3489,
+      "sha256": "063d00fee6c010eabc32d82b2eeb4c0877e9c5a08a2a0f822b7a07e0fc44476b",
+      "gz": 3512
+    },
+    {
+      "path": "s104p-unfold.tar.gz",
+      "bytes": 3024,
+      "sha256": "bad755319ba364691a04a7eb06b6cf27ea021ce7775d5e22c97130ee93df7a6d",
+      "gz": 3047
+    },
+    {
+      "path": "s105a-manager.tar.gz",
+      "bytes": 3909,
+      "sha256": "8791ab009707c6ebdb806f1b8cdb462a144293d7a3c0800058e47a0d5f047484",
+      "gz": 3932
+    },
+    {
+      "path": "s105a-unfold.tar.gz",
+      "bytes": 3411,
+      "sha256": "f898fc01945f35f58f1314dc044aacff5308599b208facc513235b6ef354921b",
+      "gz": 3434
+    },
+    {
+      "path": "s105p-manager.tar.gz",
+      "bytes": 3556,
+      "sha256": "d46adb5935e9408ad00f59493ff03a9644c375e1446bc5d2df08ab55ed98cd0d",
+      "gz": 3579
+    },
+    {
+      "path": "s105p-unfold.tar.gz",
+      "bytes": 3024,
+      "sha256": "181927e8986d26d90a9f60fb6dd6f798a3335d53b5ce1be010b90c8a57afcbb5",
+      "gz": 3047
+    },
+    {
+      "path": "s106a-manager.tar.gz",
+      "bytes": 3822,
+      "sha256": "9c353cbc246f210c484d83a7b467ad12ca87477f104618962b01a8df74d0abaf",
+      "gz": 3845
+    },
+    {
+      "path": "s106a-unfold.tar.gz",
+      "bytes": 3414,
+      "sha256": "7d3a33b6313f282e0788d2d8c89dc2495701df54093a8b23fd4e5ca7bbf0bcc8",
+      "gz": 3437
+    },
+    {
+      "path": "s106p-manager.tar.gz",
+      "bytes": 3475,
+      "sha256": "695f361bf75874c3a2455a47f6e75b39a06b4006d79f9cad351eb35eda6f9e87",
+      "gz": 3498
+    },
+    {
+      "path": "s106p-unfold.tar.gz",
+      "bytes": 2937,
+      "sha256": "64d8a020c4f6e4f12154931c07609ad45a7b818ba70c4b862b14248b39fd1037",
+      "gz": 2960
+    },
+    {
+      "path": "s107a-manager.tar.gz",
+      "bytes": 3882,
+      "sha256": "98a5273f2b52b561223ec6805234385693a34fe4a31af3575f858727686678f5",
+      "gz": 3905
+    },
+    {
+      "path": "s107a-unfold.tar.gz",
+      "bytes": 3438,
+      "sha256": "2f2c8cbaf86fcc42f665ead80acb6a1fcf9f222766140b7b187b47c8b8963434",
+      "gz": 3461
+    },
+    {
+      "path": "s107p-manager.tar.gz",
+      "bytes": 3466,
+      "sha256": "2eada7cae7560b3b53e196b2a9ec10269fa5ad704b1dae2afb7ed94c46ad941a",
+      "gz": 3489
+    },
+    {
+      "path": "s107p-unfold.tar.gz",
+      "bytes": 3024,
+      "sha256": "755fd652b0ed115753817cf317e08c5827bca3a9d3702c7f37c6d28030234802",
+      "gz": 3047
+    },
+    {
+      "path": "s108a-manager.tar.gz",
+      "bytes": 3918,
+      "sha256": "1402321ff083c58315dd3b37762e7007d1fa8c7d581aa5d9599f92c631d1c029",
+      "gz": 3941
+    },
+    {
+      "path": "s108a-unfold.tar.gz",
+      "bytes": 3386,
+      "sha256": "e7cedc70a4dcbf47eae68b1ac8871cb8ee9ca10f96ac6d082a8fe256c9a2a75d",
+      "gz": 3409
+    },
+    {
+      "path": "s108p-manager.tar.gz",
+      "bytes": 3435,
+      "sha256": "efba8b9ee5ded4a20dbbed6f0505bde7ae893d1e22542b929b6dbd33efff1482",
+      "gz": 3458
+    },
+    {
+      "path": "s108p-unfold.tar.gz",
+      "bytes": 2924,
+      "sha256": "4e6230c36d9952914818113abbef0bdae616666975b21d6abf8379f5738fef42",
+      "gz": 2947
+    },
+    {
+      "path": "s109a-manager.tar.gz",
+      "bytes": 3840,
+      "sha256": "f58ce4452747a9cf9976d2846ab07344e24b0fcf4213f3a52b40aa9b3f2dc15a",
+      "gz": 3863
+    },
+    {
+      "path": "s109a-unfold.tar.gz",
+      "bytes": 3798,
+      "sha256": "becb83540d93350b3857a8fed06c3fd3a2aa63150b131b0503bf163d952a4ad0",
+      "gz": 3821
+    },
+    {
+      "path": "s109p-manager.tar.gz",
+      "bytes": 3467,
+      "sha256": "849a801573dce4f0b6a336881537c377ce4a0bce7cfeb514d54a5873a9e73fd1",
+      "gz": 3490
+    },
+    {
+      "path": "s109p-unfold.tar.gz",
+      "bytes": 3020,
+      "sha256": "9d82ac8a036250473dce07ee8f56dcf1aa1ad089d01eae291ce0ad6c581a5f32",
+      "gz": 3043
+    },
+    {
+      "path": "s110a-manager.tar.gz",
+      "bytes": 3841,
+      "sha256": "eb3e6266c8fe9c5ef023083c54ee6f86c5cfaf520cfb928bf633555d41029250",
+      "gz": 3864
+    },
+    {
+      "path": "s110a-unfold.tar.gz",
+      "bytes": 3424,
+      "sha256": "617d3926693d5a04fa6eb76b852feae3af6326c5f42ec2442c610801ccaa98a4",
+      "gz": 3447
+    },
+    {
+      "path": "s110p-manager.tar.gz",
+      "bytes": 3559,
+      "sha256": "1ec955a914b6438644c1e266fa202c8bb8b67394a0e5d8889cc6cc979dea3258",
+      "gz": 3582
+    },
+    {
+      "path": "s110p-unfold.tar.gz",
+      "bytes": 3030,
+      "sha256": "fabe46c388a11c1ca55e806437f37169467d5f8ccc686f9e5a3efb7d03174fae",
+      "gz": 3053
+    },
+    {
+      "path": "s111a-manager.tar.gz",
+      "bytes": 3864,
+      "sha256": "091d09d9a33be404e94aff00d9dc793c1dd810d91ad9259e6437eb96e6cc7bf1",
+      "gz": 3887
+    },
+    {
+      "path": "s111a-unfold.tar.gz",
+      "bytes": 3383,
+      "sha256": "e1c9d0ef1b70aea5c9d048f95684dd1baaf8640054635bb4e8187073de7111f2",
+      "gz": 3406
+    },
+    {
+      "path": "s111p-manager.tar.gz",
+      "bytes": 3441,
+      "sha256": "071b4a70151f035453e99d8d6c99ef89e15ac1d71f75b73a8aca14f730b333ab",
+      "gz": 3464
+    },
+    {
+      "path": "s111p-unfold.tar.gz",
+      "bytes": 2950,
+      "sha256": "cea9bfefeaeed40c3c153951e434476d35dfbc0fdb3ecd90470f4ddbb843ed32",
+      "gz": 2973
+    },
+    {
+      "path": "s112a-manager.tar.gz",
+      "bytes": 3928,
+      "sha256": "ade25b9bcc972ac8a7eefebadb1e6dddf73b0a0c055472536f6fb22ab0b023d4",
+      "gz": 3951
+    },
+    {
+      "path": "s112a-unfold.tar.gz",
+      "bytes": 3393,
+      "sha256": "df44868e52661ebddb2af68e5aeb4b1073676461e3973e446c63f4c8db754a0a",
+      "gz": 3416
+    },
+    {
+      "path": "s112p-manager.tar.gz",
+      "bytes": 3531,
+      "sha256": "02a4f7f22bdc28badd3fcadfd7df36700f0e5aed4c16781991abbc2f78dbc034",
+      "gz": 3554
+    },
+    {
+      "path": "s112p-unfold.tar.gz",
+      "bytes": 2939,
+      "sha256": "dabebc638885c44055386431aaf9d7b2d13e8829ef91ee1067be0f68a151e969",
+      "gz": 2962
+    }
+  ]
+}

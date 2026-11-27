@@ -1,0 +1,52 @@
+{
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 6,
+    "failing": [
+      "k40s18401 D:M7.brandToken>M26.stampHandle",
+      "k40s18406 D:M1.foldTerm>M8.gradeWord"
+    ],
+    "perCase": {
+      "k40s18400": 0,
+      "k40s18401": 1,
+      "k40s18402": 0,
+      "k40s18403": 0,
+      "k40s18404": 0,
+      "k40s18405": 0,
+      "k40s18406": 1,
+      "k40s18407": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s18400": 0,
+      "k40s18401": 0,
+      "k40s18402": 0,
+      "k40s18403": 0,
+      "k40s18404": 0,
+      "k40s18405": 0,
+      "k40s18406": 0,
+      "k40s18407": 0
+    }
+  },
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 7,
+    "failing": [
+      "k40s18401 D:M7.brandToken>M26.stampHandle"
+    ],
+    "perCase": {
+      "k40s18400": 0,
+      "k40s18401": 1,
+      "k40s18402": 0,
+      "k40s18403": 0,
+      "k40s18404": 0,
+      "k40s18405": 0,
+      "k40s18406": 0,
+      "k40s18407": 0
+    }
+  }
+}

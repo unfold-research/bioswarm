@@ -1,0 +1,17 @@
+{
+  "routed": {
+    "solvedInRun": 10,
+    "passHoldout": 10,
+    "failing": []
+  },
+  "chat": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "manager": {
+    "solvedInRun": 10,
+    "passHoldout": 10,
+    "failing": []
+  }
+}

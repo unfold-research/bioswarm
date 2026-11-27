@@ -1,0 +1,81 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 457264,
+      "calls": 2323,
+      "trunc": 0,
+      "messages": 2546,
+      "meanTrajectory": [
+        240.38,
+        159.63,
+        31.25,
+        0.88,
+        0.13,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "manager": {
+      "solved": 4,
+      "of": 8,
+      "finalTotal": {
+        "sum": 5,
+        "median": 0.5
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 5
+      },
+      "meanOut": 551557,
+      "calls": 1863,
+      "trunc": 2,
+      "messages": 0,
+      "meanTrajectory": [
+        240.38,
+        240.38,
+        121,
+        100.38,
+        42.75,
+        36.88,
+        14.13,
+        11.5,
+        5.5,
+        4.5,
+        1.63,
+        1.5,
+        0.63
+      ]
+    }
+  },
+  "edgeTests": {},
+  "signTests": {},
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 208,
+      "stillFailingAfter": 3
+    },
+    "manager": {
+      "bothSidesChanged": 841,
+      "stillFailingAfter": 816
+    }
+  },
+  "verdict": {}
+}

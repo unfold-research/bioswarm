@@ -1,0 +1,122 @@
+{
+  "study": "GN1",
+  "kind": "script",
+  "prereg": "tasks/GN1-MEMORY-PREREG.md",
+  "out": "results/gn1",
+  "run": "observatory/batch2/rc/drive-gn1.mjs",
+  "analyze": "observatory/batch2/rc/analyze-gn1.mjs",
+  "episodes": "results/gn1/runs",
+  "expected": 63,
+  "paid": true,
+  "capRule": "Follow-ups 2 and 3, 2026-11-23: each wave is sent as Message Batches (parts) cut in request order, each reserving at most min(partMaxUsd, studyCapUsd - committed), where committed = spend so far (pilot included) with unreconciled parts at their full reservation; so a part goes out only if committed + its full reservation <= studyCapUsd, and parts shrink near the cap down to a single request. When not even one request fits: wait for parts in flight to reconcile; with nothing in flight the driver stops with exit 4 (final) and writes the numbers to results/gn1/cap-stop.json and stderr (gn1-batch.mjs).",
+  "model": "claude-haiku-5-5",
+  "k": 80,
+  "shape": {
+    "local": 2,
+    "directed": 160,
+    "symmetric": 53,
+    "tests": 16,
+    "shown": 3
+  },
+  "f": 0.5,
+  "protocol": "stigwait",
+  "rounds": 12,
+  "strictFeedback": true,
+  "memberMax": 8000,
+  "notesMax": 8000,
+  "notesTokens": 300,
+  "effort": null,
+  "arms": [
+    "none",
+    "notebook",
+    "library"
+  ],
+  "sequences": {
+    "cases": 3,
+    "related": [
+      51000,
+      51001,
+      51002,
+      51003,
+      51004,
+      51005
+    ],
+    "control": [
+      51100,
+      51101,
+      51102
+    ]
+  },
+  "pilot": {
+    "seed": 50990,
+    "cases": 2,
+    "note": "1 related sequence, cases 1 and 2, all arms; excluded from analysis; counts against studyCapUsd"
+  },
+  "stage0": {
+    "gate": 0.2,
+    "libraryGate": 0.2,
+    "note": "free, no model. notebook share < gate: GN1 stops before any spend (exit 3), published as 'premise not met by this family generator', f unchanged. library share < libraryGate: library arm dropped and GN1-H2 not run, recorded before the pilot (plan.libraryDropped)."
+  },
+  "plan": {
+    "libraryDropped": false,
+    "sample": "5-related",
+    "note": "Filled by a commit to main that also records the choice on tasks/GN1-MEMORY-PREREG.md. The driver stops (exit 3, final) when a decision it computed is not recorded here yet, so nothing is spent on an unrecorded choice."
+  },
+  "hypotheses": [
+    {
+      "id": "H-G23",
+      "label": "GN1-H1",
+      "primary": true,
+      "a": "notebook",
+      "b": "none",
+      "metric": "firstPassFailing",
+      "title": "notebook against none on failing checks after the first act wave (strict), cases 2 and 3 of related sequences"
+    },
+    {
+      "id": "H-G24",
+      "label": "GN1-H2",
+      "a": "library",
+      "b": "none",
+      "metric": "firstPassFailing",
+      "title": "library against none on firstPassFailing"
+    },
+    {
+      "id": "H-G25",
+      "label": "GN1-H3",
+      "a": "notebook",
+      "b": "none",
+      "metric": "wavesToSolve",
+      "title": "notebook against none on waves until zero failing checks (unsolved is worst)"
+    },
+    {
+      "id": "H-G26",
+      "label": "GN1-H4",
+      "a": "notebook",
+      "b": "none",
+      "metric": "tokens",
+      "title": "notebook against none on output tokens per case, including the note-writing request that fed it"
+    },
+    {
+      "id": "H-G27",
+      "label": "GN1-H5",
+      "a": "notebook",
+      "b": "none",
+      "metric": "holdoutFailing",
+      "noHarm": true,
+      "title": "no harm, tested in the direction 'none better', two outcomes only: refuted if none has fewer checks failing on fresh inputs in more units with one-sided p < 0.05, otherwise inconclusive (read as 'not refuted (no harm detected)'); never supported; a significant notebook gain is descriptive only"
+    }
+  ],
+  "guard": {
+    "maxFirstPassRise": 0.1,
+    "maxWavesRise": 1
+  },
+  "review": [
+    "observatory/batch2/rc",
+    "observatory/batch2/gn1"
+  ],
+  "bench": {
+    "reportNote": "Three statements are mandatory (Genome Research, 2026-11-22 and 2026-11-23). (1) The prereg's cost estimate ([US$ redacted] to 8.6) is above the [US$ redacted] trigger, so the run will probably use 2 control sequences: if the cost rule cut the study to 2 control sequences, the control guard had only 4 units, and the report must say that the guard became weak. (2) With 12 units the primary holds only with 10 or more wins (10/12 gives one-sided p = 0.019, 9/12 gives p = 0.073); the report must say that 9 to 3 is not an effect. (3) Implementation choices fixed before the data, 2026-11-23 (the report lists them under this heading): (a) a member's note-writing request lists at most the last 40 failing checks it saw during the case, the same in every arm, and the number left out is recorded per member; (b) the note-writing request after case 2 shows the member the case-1 notes of its arm in the same block as its other requests (notebook: its own notes; library: the lines about its module, cut at 300 tokens); (c) the cost rule compares the study's projection without the pilot with [US$ redacted] and also cuts back (2 control sequences, then 5 related) while that projection exceeds [US$ redacted] minus the pilot's actual spend, because the [US$ redacted] cap includes the pilot (no extra margin); the projection and the choice are in results/gn1/plan.json, written with a timestamp before the first study wave; (d) the study cap against full reservations: each batch (part of a wave) reserves at most min([US$ redacted] [US$ redacted] minus committed), committed being the spend so far with the pilot and unreconciled batches at their full reservation, down to a single request; when not even one request fits with nothing in flight the study stops with a final exit (results/gn1/cap-stop.json), so no unit is dropped silently. All three are also in analysis.json (requiredStatements). Hypotheses: registry ids H-G23 to H-G27 = GN1-H1 to GN1-H5. GN1-H5 (H-G27, no harm) has two outcomes only: refuted, or inconclusive, which the report reads as 'not refuted (no harm detected)'; it is never recorded as supported, and if notebook had significantly fewer hold-out failures the report states it as a descriptive observation only (analysis.json h5NotebookBetterDescriptive and the GN1-H5 sentence in requiredStatements)."
+  },
+  "benchNote": "Enabled by Genome Research after the B3 adjustments of 2026-11-23. The bench queues GN1 when this spec lands on main: stage 0 (free, count_tokens), then the paid pilot unless stage 0 stops it. Decisions the driver computes (library drop after stage 0, sample after the pilot) stop it with exit 3 until they are recorded on the preregistration page and in plan; then the study's bench state is reset and it resumes from the files already there.",
+  "notes": "Build B3 (code only). Runner observatory/batch2/rc/run-gn1.mjs, families family.mjs, notes notes.mjs, stage 0 gn1-oracle.mjs, analysis analyze-gn1.mjs; family fingerprints family.test.mjs, checks gn1.test.mjs."
+}

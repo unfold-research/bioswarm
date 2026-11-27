@@ -1,0 +1,26 @@
+{
+  "out": "li13-li14-pilot",
+  "model": "claude-haiku-5-5",
+  "k": 5,
+  "cases": 1,
+  "seed0": 13900,
+  "shape": {
+    "local": 2,
+    "directed": 5,
+    "symmetric": 4,
+    "tests": 8,
+    "shown": 3
+  },
+  "memberMax": 8000,
+  "managerMax": 16000,
+  "effort": null,
+  "rounds": 3,
+  "strictFeedback": true,
+  "lossRate": 0.2,
+  "clones": 3,
+  "arms": [
+    "manager",
+    "stig",
+    "clonal"
+  ]
+}

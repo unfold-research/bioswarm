@@ -1,0 +1,30 @@
+{
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 3,
+    "failing": [
+      "k40s10400 D:M28.packSlug>M25.scoreWord",
+      "k40s10402 D:M7.rankSlug>M40.traceSlug",
+      "k40s10402 D:M20.markTerm>M32.brandToken",
+      "k40s10403 D:M20.scanKey>M36.traceCode",
+      "k40s10406 D:M25.brandRef>M29.scanSku",
+      "k40s10406 D:M19.brandName>M35.foldKey",
+      "k40s10407 D:M1.foldSlug>M6.foldHandle"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "chat": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "solo": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  }
+}

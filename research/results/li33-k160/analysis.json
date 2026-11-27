@@ -1,0 +1,207 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 12,
+      "of": 12,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 448591,
+      "calls": 3445,
+      "trunc": 0,
+      "messages": 3817,
+      "meanTrajectory": [
+        240.75,
+        160.33,
+        28.25,
+        0.83,
+        0.17,
+        0.17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "polarity": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 350,
+        "median": 27
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 331,
+        "symmetric": 19
+      },
+      "meanOut": 798469,
+      "calls": 3505,
+      "trunc": 28,
+      "messages": 0,
+      "meanTrajectory": [
+        240.75,
+        55.08,
+        49.17,
+        39.67,
+        35.67,
+        32.92,
+        29.17,
+        29.17,
+        29.17,
+        29.17,
+        29.17,
+        29.17,
+        29.17
+      ]
+    },
+    "oracle": {
+      "solved": 12,
+      "of": 12,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 315332,
+      "calls": 1508,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        240.75,
+        2.92,
+        0.33,
+        0.08,
+        0.08,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "manager": {
+      "solved": 11,
+      "of": 12,
+      "finalTotal": {
+        "sum": 3,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 3
+      },
+      "meanOut": 537955,
+      "calls": 2719,
+      "trunc": 1,
+      "messages": 0,
+      "meanTrajectory": [
+        240.75,
+        240.75,
+        90,
+        76.08,
+        33.08,
+        29.5,
+        13.58,
+        12,
+        5.5,
+        4.75,
+        1.5,
+        1.33,
+        0.25
+      ]
+    }
+  },
+  "edgeTests": {
+    "oracle_vs_manager_symmetric": {
+      "oracleOnly": 3,
+      "managerOnly": 0,
+      "both": 946,
+      "neither": 0,
+      "p": 0.25
+    },
+    "oracle_vs_manager_directed": {
+      "oracleOnly": 0,
+      "managerOnly": 0,
+      "both": 1909,
+      "neither": 0,
+      "p": 1
+    },
+    "oracle_vs_manager_all": {
+      "oracleOnly": 3,
+      "managerOnly": 0,
+      "both": 2855,
+      "neither": 0,
+      "p": 0.25
+    },
+    "polarity_vs_manager_symmetric": {
+      "polarityOnly": 3,
+      "managerOnly": 19,
+      "both": 927,
+      "neither": 0,
+      "p": 0.00086
+    },
+    "polarity_vs_manager_directed": {
+      "polarityOnly": 0,
+      "managerOnly": 331,
+      "both": 1578,
+      "neither": 0,
+      "p": 0
+    },
+    "polarity_vs_manager_all": {
+      "polarityOnly": 3,
+      "managerOnly": 350,
+      "both": 2505,
+      "neither": 0,
+      "p": 0
+    }
+  },
+  "signTests": {
+    "oracle_vs_manager": {
+      "lowerIn": 1,
+      "higherIn": 0,
+      "p": 1
+    },
+    "polarity_vs_manager": {
+      "lowerIn": 0,
+      "higherIn": 12,
+      "p": 0.00049
+    }
+  },
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 318,
+      "stillFailingAfter": 7
+    },
+    "polarity": {
+      "bothSidesChanged": 830,
+      "stillFailingAfter": 33
+    },
+    "oracle": {
+      "bothSidesChanged": 715,
+      "stillFailingAfter": 12
+    },
+    "manager": {
+      "bothSidesChanged": 1281,
+      "stillFailingAfter": 1223
+    }
+  },
+  "verdict": {}
+}

@@ -1,0 +1,18 @@
+{
+  "configHash": "ea25a1fd444406e1ba42a61892012863160de79b2c25e64c4abf8c4ea5703dba",
+  "finishedAt": "2026-11-17T23:11:24.933Z",
+  "arms": {
+    "stig": {
+      "solved": 8,
+      "of": 8
+    },
+    "clonal": {
+      "solved": 8,
+      "of": 8
+    },
+    "manager": {
+      "solved": 4,
+      "of": 8
+    }
+  }
+}

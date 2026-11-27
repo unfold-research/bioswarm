@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "promptCommit": "d45298e7f0b455a1e3e48624fa29e7f559db5c40",
+  "instrumentCommit": "0a57298e77b98d061f89621862af2ff9e677a5a9",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "validMemos": 8,
+  "correctItems": 64,
+  "totalItems": 64,
+  "http429": 0,
+  "attempts": 8,
+  "passed": true,
+  "receiptHashes": [
+    "d56c2c3134c0bcb389ddaaed45cb1457013eb56e8a528fa3a4ec70f454308f6c",
+    "cb28017f6b707e8ed012745a281eeb4b7379cf4cec02172e168ca4f3fc4d4251",
+    "3a185258bbc0178cd9f9a030bfdaab303d85fac16b9ef2996b16bdbf34ee57cd",
+    "b28d78b39899f7deb974d130ffa3dd34074b21e331643c7b95adf08e8765c90f",
+    "358741f25432241273527189979bf2ad74b76e18e6be2b20b4b9776d8e736d03",
+    "315f4c70650595dad55ff991696c18e4be8faeee86ddc5a31bfa27fca7c36b4f",
+    "6bd2ad6dd7f0b1daa4bc57313b37ef8ca8cd415fd26f222a116535e6fc04dfdf",
+    "fdfee43219436aab0cbeb427ec6d27fad178c56673f8edc438b0781c5f034be4"
+  ]
+}

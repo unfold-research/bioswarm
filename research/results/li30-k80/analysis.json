@@ -1,0 +1,117 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 12,
+      "of": 12,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 367387,
+      "calls": 2156,
+      "trunc": 0,
+      "messages": 3820,
+      "meanTrajectory": [
+        239.33,
+        159.33,
+        29.33,
+        1.33,
+        0.33,
+        0.08,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "stigwait_both": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 956,
+        "median": 80
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 956
+      },
+      "meanOut": 723818,
+      "calls": 5262,
+      "trunc": 0,
+      "messages": 3820,
+      "meanTrajectory": [
+        239.33,
+        238.58,
+        81.83,
+        79.67,
+        79.67,
+        79.67,
+        79.67,
+        79.67,
+        79.67,
+        79.67,
+        79.67,
+        79.67,
+        79.67
+      ]
+    },
+    "manager": {
+      "solved": 4,
+      "of": 12,
+      "finalTotal": {
+        "sum": 48,
+        "median": 2
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 48
+      },
+      "meanOut": 457038,
+      "calls": 2322,
+      "trunc": 1,
+      "messages": 0,
+      "meanTrajectory": [
+        239.33,
+        239.33,
+        126.25,
+        126.25,
+        59.5,
+        59.5,
+        26.17,
+        26.17,
+        12.25,
+        12.25,
+        6.83,
+        6.83,
+        4
+      ]
+    }
+  },
+  "edgeTests": {},
+  "signTests": {},
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 475,
+      "stillFailingAfter": 6
+    },
+    "stigwait_both": {
+      "bothSidesChanged": 5737,
+      "stillFailingAfter": 5736
+    },
+    "manager": {
+      "bothSidesChanged": 1623,
+      "stillFailingAfter": 1496
+    }
+  },
+  "verdict": {}
+}

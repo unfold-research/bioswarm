@@ -1,0 +1,97 @@
+{
+  "collections": 60,
+  "table": [
+    {
+      "regime": "sweep",
+      "stable": 1,
+      "edited": 0.48333333333333334,
+      "atLeastTwoEditedReread": 0.48333333333333334,
+      "editedPartsReread": 1.4,
+      "distinctPartsReread": 6,
+      "alarmsStable": 0,
+      "alarmsEdited": 1.4,
+      "readsExact": 0.9902777777777778,
+      "readCalls": 1440,
+      "assignCalls": 0,
+      "unusableAssignments": 0
+    },
+    {
+      "regime": "random",
+      "stable": 1,
+      "edited": 0.48333333333333334,
+      "atLeastTwoEditedReread": 0.48333333333333334,
+      "editedPartsReread": 1.4833333333333334,
+      "distinctPartsReread": 5.633333333333334,
+      "alarmsStable": 0,
+      "alarmsEdited": 1.5666666666666667,
+      "readsExact": 0.9875,
+      "readCalls": 1440,
+      "assignCalls": 0,
+      "unusableAssignments": 0
+    },
+    {
+      "regime": "alarm",
+      "stable": 1,
+      "edited": 0.7,
+      "atLeastTwoEditedReread": 0.7,
+      "editedPartsReread": 1.8333333333333333,
+      "distinctPartsReread": 5.558333333333334,
+      "alarmsStable": 0,
+      "alarmsEdited": 2.15,
+      "readsExact": 0.9847222222222223,
+      "readCalls": 1440,
+      "assignCalls": 0,
+      "unusableAssignments": 0
+    },
+    {
+      "regime": "router",
+      "stable": 1,
+      "edited": 0.75,
+      "atLeastTwoEditedReread": 0.75,
+      "editedPartsReread": 2.1666666666666665,
+      "distinctPartsReread": 5.75,
+      "alarmsStable": 0,
+      "alarmsEdited": 2.1666666666666665,
+      "readsExact": 0.9881944444444445,
+      "readCalls": 1440,
+      "assignCalls": 300,
+      "unusableAssignments": 0
+    }
+  ],
+  "edited": {
+    "alarmMinusSweep": {
+      "diff": 0.21666666666666667,
+      "ci95": [
+        0.05,
+        0.38333333333333336
+      ]
+    },
+    "alarmMinusRandom": {
+      "diff": 0.21666666666666667,
+      "ci95": [
+        0.05,
+        0.38333333333333336
+      ]
+    },
+    "routerMinusAlarm": {
+      "diff": 0.05,
+      "ci95": [
+        -0.1,
+        0.2
+      ]
+    },
+    "routerMinusSweep": {
+      "diff": 0.26666666666666666,
+      "ci95": [
+        0.1,
+        0.4166666666666667
+      ]
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "not supported",
+    "P4": "supported"
+  }
+}

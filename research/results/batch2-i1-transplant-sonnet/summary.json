@@ -1,0 +1,205 @@
+{
+  "study": "i1-transplant-sonnet",
+  "byFamily": {
+    "triage": {
+      "none": {
+        "effect": 0,
+        "verdictRecovered": 0,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "native": {
+        "effect": 8,
+        "verdictRecovered": 8,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "peer": {
+        "effect": 0,
+        "verdictRecovered": 0,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "deliberate": {
+        "effect": 8,
+        "verdictRecovered": 8,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      }
+    },
+    "research": {
+      "none": {
+        "effect": 0,
+        "verdictRecovered": 0,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "native": {
+        "effect": 8,
+        "verdictRecovered": 8,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "transplant": {
+        "effect": 7,
+        "verdictRecovered": 7,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "peer": {
+        "effect": 0,
+        "verdictRecovered": 0,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "deliberate": {
+        "effect": 8,
+        "verdictRecovered": 8,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      }
+    },
+    "review": {
+      "none": {
+        "effect": 3,
+        "verdictRecovered": 3,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "native": {
+        "effect": 8,
+        "verdictRecovered": 8,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "transplant": {
+        "effect": 8,
+        "verdictRecovered": 8,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "peer": {
+        "effect": 0,
+        "verdictRecovered": 0,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      },
+      "deliberate": {
+        "effect": 8,
+        "verdictRecovered": 8,
+        "wrongFirings": 0,
+        "cleanOk": 8,
+        "genuineOk": 8,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 8
+      }
+    }
+  },
+  "meanOutputTokens": {
+    "triage": {
+      "native": 202,
+      "none": 206,
+      "deliberate": 317,
+      "peer": 232
+    },
+    "research": {
+      "transplant": 208,
+      "none": 202,
+      "deliberate": 314,
+      "native": 200,
+      "peer": 227
+    },
+    "review": {
+      "native": 202,
+      "transplant": 196,
+      "none": 198,
+      "peer": 222,
+      "deliberate": 292
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported",
+    "P4": "not supported",
+    "transplantKept": {
+      "research": 0.875,
+      "review": 1
+    },
+    "tokens": {
+      "triage": {
+        "native": 202,
+        "none": 206,
+        "deliberate": 317,
+        "peer": 232
+      },
+      "research": {
+        "transplant": 208,
+        "none": 202,
+        "deliberate": 314,
+        "native": 200,
+        "peer": 227
+      },
+      "review": {
+        "native": 202,
+        "transplant": 196,
+        "none": 198,
+        "peer": 222,
+        "deliberate": 292
+      }
+    }
+  }
+}

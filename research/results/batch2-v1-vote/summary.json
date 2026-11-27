@@ -1,0 +1,130 @@
+{
+  "study": "v1-vote",
+  "overall": {
+    "ident": {
+      "tasks": 48,
+      "single": 0.07916666666666666,
+      "vote": 0.08333333333333333,
+      "voteIfIndependent": 0.004391121562439724,
+      "icc": 0.7427959037866159
+    },
+    "diverse": {
+      "tasks": 48,
+      "single": 0.09583333333333334,
+      "vote": 0.08333333333333333,
+      "voteIfIndependent": 0.007584663620937016,
+      "icc": 0.6874373872971349
+    }
+  },
+  "byLevel": {
+    "2": {
+      "ident": {
+        "tasks": 8,
+        "single": 0.3,
+        "vote": 0.375,
+        "voteIfIndependent": 0.16307999999999992,
+        "icc": 0.7023809523809523
+      },
+      "diverse": {
+        "tasks": 8,
+        "single": 0.325,
+        "vote": 0.375,
+        "voteIfIndependent": 0.19768708984375,
+        "icc": 0.7720797720797722
+      }
+    },
+    "3": {
+      "ident": {
+        "tasks": 8,
+        "single": 0.125,
+        "vote": 0.125,
+        "voteIfIndependent": 0.01605224609375,
+        "icc": 1
+      },
+      "diverse": {
+        "tasks": 8,
+        "single": 0.15,
+        "vote": 0.125,
+        "voteIfIndependent": 0.026611875,
+        "icc": 0.803921568627451
+      }
+    },
+    "4": {
+      "ident": {
+        "tasks": 8,
+        "single": 0,
+        "vote": 0,
+        "voteIfIndependent": 0,
+        "icc": null
+      },
+      "diverse": {
+        "tasks": 8,
+        "single": 0.075,
+        "vote": 0,
+        "voteIfIndependent": 0.0037583789062499992,
+        "icc": 0.09909909909909931
+      }
+    },
+    "5": {
+      "ident": {
+        "tasks": 8,
+        "single": 0.025,
+        "vote": 0,
+        "voteIfIndependent": 0.00015044921875000006,
+        "icc": -0.025641025641025772
+      },
+      "diverse": {
+        "tasks": 8,
+        "single": 0.025,
+        "vote": 0,
+        "voteIfIndependent": 0.00015044921875000006,
+        "icc": -0.025641025641025772
+      }
+    },
+    "6": {
+      "ident": {
+        "tasks": 8,
+        "single": 0,
+        "vote": 0,
+        "voteIfIndependent": 0,
+        "icc": null
+      },
+      "diverse": {
+        "tasks": 8,
+        "single": 0,
+        "vote": 0,
+        "voteIfIndependent": 0,
+        "icc": null
+      }
+    },
+    "8": {
+      "ident": {
+        "tasks": 8,
+        "single": 0.025,
+        "vote": 0,
+        "voteIfIndependent": 0.00015044921875000006,
+        "icc": -0.025641025641025772
+      },
+      "diverse": {
+        "tasks": 8,
+        "single": 0,
+        "vote": 0,
+        "voteIfIndependent": 0,
+        "icc": null
+      }
+    }
+  },
+  "hardLevels": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    8
+  ],
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P3": "not supported"
+  }
+}

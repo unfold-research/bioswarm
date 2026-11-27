@@ -1,0 +1,39 @@
+{
+  "configHash": "4e3b644cc5eca27aaad4d5f0c92d8dc4ff1ac87d5ab1828a83cbb50286507cce",
+  "finishedAt": "2026-11-24T04:18:17.438Z",
+  "arms": {
+    "stigwait": {
+      "solved": 11,
+      "of": 12
+    },
+    "manager": {
+      "solved": 12,
+      "of": 12
+    }
+  },
+  "provider": "openai-litellm",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "models": {
+    "gpt-6-luna": 10124
+  },
+  "efforts": {
+    "medium": 10124
+  },
+  "transports": {
+    "flex": 10124
+  },
+  "transport": {
+    "mode": "flex",
+    "since": 0,
+    "plan": "2026-11-23T15:14:44.780Z",
+    "history": [
+      {
+        "mode": "flex",
+        "wave": 0,
+        "at": "2026-11-23T22:25:46.306Z",
+        "reason": "transport plan"
+      }
+    ]
+  }
+}

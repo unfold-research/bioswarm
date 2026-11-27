@@ -1,0 +1,387 @@
+{
+  "arms": {
+    "sync": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 35.5,
+      "meanOut": 432743,
+      "meanLatency": 62685,
+      "trunc": 4,
+      "meanTrajectory": [
+        91.38,
+        68.13,
+        57.54,
+        51.79,
+        49.04,
+        46.92,
+        43.38,
+        43.88,
+        38.13
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 22,
+          "meanOut": 280663,
+          "meanLatency": 59534,
+          "meanCalls": 70.9
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 48.5,
+          "meanOut": 584824,
+          "meanLatency": 65837,
+          "meanCalls": 143.1
+        }
+      }
+    },
+    "inhibit": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 38,
+      "meanOut": 325262,
+      "meanLatency": 59513,
+      "trunc": 5,
+      "meanTrajectory": [
+        91.38,
+        62.83,
+        51.42,
+        46.29,
+        45.63,
+        43.71,
+        39.58,
+        36.63,
+        39.13
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 26.5,
+          "meanOut": 212916,
+          "meanLatency": 54108,
+          "meanCalls": 61.8
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 49,
+          "meanOut": 437609,
+          "meanLatency": 64918,
+          "meanCalls": 126.6
+        }
+      }
+    },
+    "random": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 46.5,
+      "meanOut": 226159,
+      "meanLatency": 54915,
+      "trunc": 0,
+      "meanTrajectory": [
+        91.38,
+        71.71,
+        61.08,
+        56.96,
+        51.67,
+        47.29,
+        47.08,
+        48.29,
+        46.33
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 27.5,
+          "meanOut": 147927,
+          "meanLatency": 49567,
+          "meanCalls": 40.1
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 68,
+          "meanOut": 304392,
+          "meanLatency": 60263,
+          "meanCalls": 78.9
+        }
+      }
+    },
+    "chat": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 24.5,
+      "meanOut": 546299,
+      "meanLatency": 79582,
+      "trunc": 64,
+      "meanTrajectory": [
+        91.38,
+        60.96,
+        46.92,
+        38.17,
+        32.08,
+        29.88,
+        27.08,
+        25.38,
+        26.71
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 17.5,
+          "meanOut": 357999,
+          "meanLatency": 73640,
+          "meanCalls": 70
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 34,
+          "meanOut": 734599,
+          "meanLatency": 85523,
+          "meanCalls": 141.4
+        }
+      }
+    },
+    "patch": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 90.5,
+      "meanOut": 43946,
+      "meanLatency": 34433,
+      "trunc": 4,
+      "meanTrajectory": [
+        91.38,
+        96,
+        94.38,
+        92.75,
+        91.67,
+        91.25,
+        91.38,
+        90.54,
+        89.79
+      ],
+      "bySize": {
+        "96": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 62.5,
+          "meanOut": 44596,
+          "meanLatency": 38515,
+          "meanCalls": 16
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 126,
+          "meanOut": 43296,
+          "meanLatency": 30351,
+          "meanCalls": 24
+        }
+      }
+    },
+    "central": {
+      "solved": 4,
+      "of": 24,
+      "medianFinal": 98,
+      "meanOut": 73847,
+      "meanLatency": 64334,
+      "trunc": 31,
+      "meanTrajectory": [
+        91.38,
+        86.25,
+        87.54,
+        82,
+        80.67,
+        83.46,
+        86.17,
+        86.17,
+        86.17
+      ],
+      "bySize": {
+        "96": {
+          "solved": 4,
+          "of": 12,
+          "medianFinal": 44,
+          "meanOut": 120546,
+          "meanLatency": 114464,
+          "meanCalls": 14.3
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 120,
+          "meanOut": 27148,
+          "meanLatency": 14203,
+          "meanCalls": 24
+        }
+      }
+    },
+    "solo": {
+      "solved": 6,
+      "of": 24,
+      "medianFinal": 131,
+      "meanOut": 55544,
+      "meanLatency": 55544,
+      "trunc": 24,
+      "meanTrajectory": [
+        139.17,
+        136.67,
+        126.92,
+        122.04,
+        117,
+        116.67,
+        116.63,
+        116.33,
+        111.5
+      ],
+      "bySize": {
+        "96": {
+          "solved": 6,
+          "of": 12,
+          "medianFinal": 1,
+          "meanOut": 96433,
+          "meanLatency": 96433,
+          "meanCalls": 6.6
+        },
+        "192": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 192,
+          "meanOut": 14654,
+          "meanLatency": 14654,
+          "meanCalls": 9
+        }
+      }
+    }
+  },
+  "paired": {
+    "inhibit_vs_sync": {
+      "inhibitOnly": 0,
+      "syncOnly": 0,
+      "both": 0,
+      "neither": 24,
+      "mcnemarP": 1,
+      "finalLowerIn": 10,
+      "finalHigherIn": 13
+    },
+    "inhibit_vs_random": {
+      "inhibitOnly": 0,
+      "randomOnly": 0,
+      "both": 0,
+      "neither": 24,
+      "mcnemarP": 1,
+      "finalLowerIn": 14,
+      "finalHigherIn": 9
+    },
+    "inhibit_vs_central": {
+      "inhibitOnly": 0,
+      "centralOnly": 4,
+      "both": 0,
+      "neither": 20,
+      "mcnemarP": 0.125,
+      "finalLowerIn": 19,
+      "finalHigherIn": 5
+    },
+    "patch_vs_central": {
+      "patchOnly": 0,
+      "centralOnly": 4,
+      "both": 0,
+      "neither": 20,
+      "mcnemarP": 0.125,
+      "finalLowerIn": 11,
+      "finalHigherIn": 13
+    },
+    "patch_vs_inhibit": {
+      "patchOnly": 0,
+      "inhibitOnly": 0,
+      "both": 0,
+      "neither": 24,
+      "mcnemarP": 1,
+      "finalLowerIn": 1,
+      "finalHigherIn": 23
+    }
+  },
+  "finals": {
+    "inhibit_vs_sync": {
+      "wins": 10,
+      "losses": 13,
+      "signP": 0.677639
+    },
+    "inhibit_vs_random": {
+      "wins": 14,
+      "losses": 9,
+      "signP": 0.404873
+    },
+    "random_vs_sync": {
+      "wins": 6,
+      "losses": 17,
+      "signP": 0.03469
+    },
+    "inhibit_vs_chat": {
+      "wins": 3,
+      "losses": 21,
+      "signP": 0.000277
+    },
+    "chat_vs_sync": {
+      "wins": 18,
+      "losses": 6,
+      "signP": 0.022656
+    },
+    "patch_vs_inhibit": {
+      "wins": 1,
+      "losses": 23,
+      "signP": 3e-06
+    },
+    "patch_vs_central": {
+      "wins": 11,
+      "losses": 13,
+      "signP": 0.83882
+    },
+    "solo_vs_central": {
+      "wins": 5,
+      "losses": 16,
+      "signP": 0.026604
+    },
+    "sync_vs_central_at_192": {
+      "wins": 12,
+      "losses": 0,
+      "signP": 0.000488
+    },
+    "inhibit_vs_central_at_192": {
+      "wins": 12,
+      "losses": 0,
+      "signP": 0.000488
+    },
+    "random_vs_central_at_192": {
+      "wins": 12,
+      "losses": 0,
+      "signP": 0.000488
+    },
+    "chat_vs_central_at_192": {
+      "wins": 12,
+      "losses": 0,
+      "signP": 0.000488
+    },
+    "patch_vs_central_at_192": {
+      "wins": 8,
+      "losses": 4,
+      "signP": 0.387695
+    },
+    "solo_vs_central_at_192": {
+      "wins": 0,
+      "losses": 11,
+      "signP": 0.000977
+    }
+  },
+  "verdict": {
+    "H-LI5": "supported on the registered rule, degenerate (0 solved in both)",
+    "H-LI6": "refuted",
+    "H-LI7": "refuted"
+  }
+}

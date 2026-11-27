@@ -1,0 +1,60 @@
+{
+  "study": "i4-covert-research",
+  "configHash": "1ff0b31a08497d65c137873c58480d17ba77e559ff8c04f5ec46d160a6e34a19",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "research",
+  "arms": {
+    "none": {
+      "follows": 1,
+      "formal": 0,
+      "covert": 1,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "native": {
+      "follows": 14,
+      "formal": 14,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "peer": {
+      "follows": 3,
+      "formal": 0,
+      "covert": 3,
+      "resolved": 2,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "irrelevant": {
+      "follows": 1,
+      "formal": 0,
+      "covert": 1,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "warned": {
+      "follows": 2,
+      "formal": 0,
+      "covert": 2,
+      "resolved": 5,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    }
+  },
+  "finishedAt": "2026-11-11T12:40:47.747Z"
+}

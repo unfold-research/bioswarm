@@ -1,0 +1,25 @@
+{
+  "out": "li8-haiku-capacity-k5",
+  "model": "claude-haiku-5-5",
+  "k": 5,
+  "cases": 10,
+  "seed0": 8500,
+  "shape": {
+    "local": 2,
+    "directed": 5,
+    "symmetric": 4,
+    "tests": 8,
+    "shown": 3
+  },
+  "memberMax": 8000,
+  "soloMax": 32000,
+  "effort": null,
+  "rounds": 6,
+  "arms": [
+    "sync",
+    "inhibit",
+    "chat",
+    "routed",
+    "solo"
+  ]
+}

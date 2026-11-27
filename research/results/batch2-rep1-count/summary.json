@@ -1,0 +1,95 @@
+{
+  "study": "rep1-count",
+  "configHash": "148db4948408c5ecb5676c2b5c95f8275f1e2884d7b7ea8e198d19dc4c4248e7",
+  "status": "complete",
+  "wavesRun": 2,
+  "family": "count",
+  "tasks": 300,
+  "overall": {
+    "direct": 0.5533333333333333,
+    "directVote3": 0.5466666666666666,
+    "single": 0.6566666666666666,
+    "vote3": 0.6666666666666666,
+    "verify3": 0.6933333333333334,
+    "w60": 0.84,
+    "w150": 0.9333333333333333
+  },
+  "byLevel": {
+    "24": {
+      "direct": 0.83,
+      "directVote3": 0.83,
+      "single": 0.98,
+      "vote3": 1,
+      "verify3": 1,
+      "w60": 1,
+      "w150": 1
+    },
+    "48": {
+      "direct": 0.49,
+      "directVote3": 0.49,
+      "single": 0.68,
+      "vote3": 0.7,
+      "verify3": 0.79,
+      "w60": 0.99,
+      "w150": 0.98
+    },
+    "96": {
+      "direct": 0.34,
+      "directVote3": 0.32,
+      "single": 0.31,
+      "vote3": 0.3,
+      "verify3": 0.29,
+      "w60": 0.53,
+      "w150": 0.82
+    }
+  },
+  "samplesDiffer": {
+    "direct": 0.03,
+    "working": 0.20333333333333334
+  },
+  "diffs": {
+    "vote3MinusSingle": {
+      "diff": 0.01,
+      "ci95": [
+        -0.013333333333333334,
+        0.03333333333333333
+      ]
+    },
+    "verify3MinusVote3": {
+      "diff": 0.02666666666666667,
+      "ci95": [
+        0.0033333333333333335,
+        0.05333333333333334
+      ]
+    },
+    "w150MinusVerify3": {
+      "diff": 0.24,
+      "ci95": [
+        0.19,
+        0.29
+      ]
+    },
+    "w60MinusSingle": {
+      "diff": 0.18333333333333332,
+      "ci95": [
+        0.14,
+        0.23
+      ]
+    }
+  },
+  "verifier": {
+    "correctAnswers": 197,
+    "accepted": 178,
+    "wrongAnswers": 103,
+    "rejected": 93
+  },
+  "truncated": 0,
+  "tests": {
+    "R1": "supported",
+    "R2": "supported",
+    "R3": "supported",
+    "R4": "not supported",
+    "R5": "supported"
+  },
+  "finishedAt": "2026-11-11T23:47:00.701Z"
+}

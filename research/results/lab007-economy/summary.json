@@ -1,0 +1,26 @@
+{
+  "heldoutPaired": [],
+  "generated": "2026-11-09T20:31:27.360Z",
+  "status": "integrity-or-api-stop",
+  "configHash": "3e7270eaf3022cf05b424b4ba694abbd8c82865b7ba576a186e403f773e1678f",
+  "chosenLevel": 1,
+  "calibrationGate": null,
+  "completedTrajectoryScores": 0,
+  "requestsAccounted": 480,
+  "usage": {
+    "input": 158232,
+    "output": 39890,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "aggregate": {},
+  "error": "Invalid/truncated/failed response; stop integrity gate without paid repair",
+  "limits": [
+    "Synthetic calibration/feasibility pilot, not full LAB-007 or external benchmark replication.",
+    "No claim of equivalence, superiority or social-immunity advantage.",
+    "Incomplete results cannot be interpreted as safe behaviour.",
+    "Seed is the independent cluster; repeated agents/rounds are not independent trials.",
+    "Provider model alias recorded; exact underlying snapshot not guaranteed.",
+    "Costs use reported tokens and verified list rates, not an invoice."
+  ]
+}

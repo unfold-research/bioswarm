@@ -1,0 +1,151 @@
+{
+  "study": "t2-gate",
+  "configHash": "ef7e269527ba2cee15ec46281bd6471697334e84ac02f2ade815977aca0f5108",
+  "status": "complete",
+  "wavesRun": 1,
+  "table": {
+    "I-02": {
+      "16": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "64": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "256": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "1024": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      }
+    },
+    "I-05": {
+      "16": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "64": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "256": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "1024": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      }
+    },
+    "I-06": {
+      "16": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "64": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "256": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "1024": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      }
+    },
+    "III-22": {
+      "16": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "64": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "256": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "1024": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      }
+    },
+    "III-26": {
+      "16": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "64": {
+        "n": 12,
+        "right": 1,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "256": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      },
+      "1024": {
+        "n": 12,
+        "right": 0,
+        "truncated": 0,
+        "invalid": 0
+      }
+    }
+  },
+  "decision": {
+    "pooled": {
+      "16": 0.05,
+      "64": 0.03333333333333333,
+      "256": 0,
+      "1024": 0.016666666666666666
+    },
+    "small": null,
+    "middle": null,
+    "large": null,
+    "verdict": "not-at-ceiling: the instrument is revised, T2 does not proceed"
+  },
+  "finishedAt": "2026-11-12T07:25:56.586Z"
+}

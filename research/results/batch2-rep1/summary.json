@@ -1,0 +1,209 @@
+{
+  "families": {
+    "search": {
+      "tasks": 300,
+      "overall": {
+        "direct": 0.21333333333333335,
+        "directVote3": 0.20666666666666667,
+        "single": 0.8233333333333334,
+        "vote3": 0.8466666666666667,
+        "verify3": 0.89,
+        "w60": 0.9233333333333333,
+        "w150": 0.9566666666666667
+      },
+      "byLevel": {
+        "24": {
+          "direct": 0.41,
+          "directVote3": 0.41,
+          "single": 0.97,
+          "vote3": 0.98,
+          "verify3": 0.98,
+          "w60": 1,
+          "w150": 0.99
+        },
+        "48": {
+          "direct": 0.16,
+          "directVote3": 0.15,
+          "single": 0.85,
+          "vote3": 0.85,
+          "verify3": 0.91,
+          "w60": 0.93,
+          "w150": 0.97
+        },
+        "96": {
+          "direct": 0.07,
+          "directVote3": 0.06,
+          "single": 0.65,
+          "vote3": 0.71,
+          "verify3": 0.78,
+          "w60": 0.84,
+          "w150": 0.91
+        }
+      },
+      "diffs": {
+        "vote3MinusSingle": {
+          "diff": 0.023333333333333334,
+          "ci95": [
+            -0.01,
+            0.056666666666666664
+          ]
+        },
+        "verify3MinusVote3": {
+          "diff": 0.043333333333333335,
+          "ci95": [
+            0.02,
+            0.07
+          ]
+        },
+        "w150MinusVerify3": {
+          "diff": 0.06666666666666667,
+          "ci95": [
+            0.03,
+            0.10333333333333333
+          ]
+        },
+        "w60MinusSingle": {
+          "diff": 0.1,
+          "ci95": [
+            0.05333333333333334,
+            0.14666666666666667
+          ]
+        }
+      },
+      "samplesDiffer": {
+        "direct": 0.22,
+        "working": 0.23666666666666666
+      },
+      "verifier": {
+        "correctAnswers": 247,
+        "accepted": 245,
+        "wrongAnswers": 53,
+        "rejected": 45
+      },
+      "tests": {
+        "R1": "supported",
+        "R2": "supported",
+        "R3": "supported",
+        "R4": "not supported",
+        "R5": "supported"
+      }
+    },
+    "count": {
+      "tasks": 300,
+      "overall": {
+        "direct": 0.5533333333333333,
+        "directVote3": 0.5466666666666666,
+        "single": 0.6566666666666666,
+        "vote3": 0.6666666666666666,
+        "verify3": 0.6933333333333334,
+        "w60": 0.84,
+        "w150": 0.9333333333333333
+      },
+      "byLevel": {
+        "24": {
+          "direct": 0.83,
+          "directVote3": 0.83,
+          "single": 0.98,
+          "vote3": 1,
+          "verify3": 1,
+          "w60": 1,
+          "w150": 1
+        },
+        "48": {
+          "direct": 0.49,
+          "directVote3": 0.49,
+          "single": 0.68,
+          "vote3": 0.7,
+          "verify3": 0.79,
+          "w60": 0.99,
+          "w150": 0.98
+        },
+        "96": {
+          "direct": 0.34,
+          "directVote3": 0.32,
+          "single": 0.31,
+          "vote3": 0.3,
+          "verify3": 0.29,
+          "w60": 0.53,
+          "w150": 0.82
+        }
+      },
+      "diffs": {
+        "vote3MinusSingle": {
+          "diff": 0.01,
+          "ci95": [
+            -0.013333333333333334,
+            0.03333333333333333
+          ]
+        },
+        "verify3MinusVote3": {
+          "diff": 0.02666666666666667,
+          "ci95": [
+            0.0033333333333333335,
+            0.05333333333333334
+          ]
+        },
+        "w150MinusVerify3": {
+          "diff": 0.24,
+          "ci95": [
+            0.19,
+            0.29
+          ]
+        },
+        "w60MinusSingle": {
+          "diff": 0.18333333333333332,
+          "ci95": [
+            0.14,
+            0.23
+          ]
+        }
+      },
+      "samplesDiffer": {
+        "direct": 0.03,
+        "working": 0.20333333333333334
+      },
+      "verifier": {
+        "correctAnswers": 197,
+        "accepted": 178,
+        "wrongAnswers": 103,
+        "rejected": 93
+      },
+      "tests": {
+        "R1": "supported",
+        "R2": "supported",
+        "R3": "supported",
+        "R4": "not supported",
+        "R5": "supported"
+      }
+    }
+  },
+  "plannedSearch": {
+    "collections": 60,
+    "sonnetWithPrior": {
+      "stable": 1,
+      "edited": 1,
+      "editedPartsReread": 2.6166666666666667,
+      "unusableAssignments": 0
+    },
+    "simulatedWithExactReaders": {
+      "sweep": 0.5,
+      "alarm": 0.7,
+      "probe": 1
+    },
+    "sonnetMinusSweep": {
+      "diff": 0.5,
+      "ci95": [
+        0.38333333333333336,
+        0.6333333333333333
+      ]
+    },
+    "sonnetMinusAlarm": {
+      "diff": 0.3,
+      "ci95": [
+        0.18333333333333332,
+        0.4166666666666667
+      ]
+    },
+    "test": "supported"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "ledger.jsonl.gz",
+      "bytes": 3486378,
+      "sha256": "fd98dfdb737574b792d61528fdd32f9c15c8cd6287283d3eeb6e9cf888ee01e6",
+      "gz": 3485138
+    }
+  ]
+}

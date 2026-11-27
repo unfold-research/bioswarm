@@ -1,0 +1,15 @@
+{
+  "study": "v7-hard-sonnet",
+  "configHash": "ef10268b08a9ff6f6228cdf818db03ceaf0525789d90e3a0e4524325fae0e9bd",
+  "status": "complete",
+  "wavesRun": 1,
+  "tasks": 90,
+  "correct": 81,
+  "byLevel": {
+    "96": 30,
+    "144": 26,
+    "168": 25
+  },
+  "truncated": 0,
+  "finishedAt": "2026-11-11T14:39:51.030Z"
+}

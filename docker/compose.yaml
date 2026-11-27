@@ -1,0 +1,77 @@
+name: bioswarm-phase1
+services:
+  control:
+    build:
+      context: ${CONTROL_CONTEXT:-../../bioswarm-control}
+    init: true
+    restart: unless-stopped
+    cpus: 0.25
+    mem_limit: 192m
+    pids_limit: 96
+    security_opt:
+      - no-new-privileges:true
+    entrypoint: ["/bin/sh", "-ec"]
+    command:
+      - |
+        export BIOSWARM_KEYS="bench:$$(cat /run/secrets/control_key)"
+        exec node src/server.js
+    volumes:
+      - ${CONTROL_DATA:?Set CONTROL_DATA}:/data
+    secrets: [control_key]
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:8787/health').then(async r=>{if(!r.ok||!(await r.json()).ok) process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 4s
+      retries: 4
+    networks: [control_net]
+  openbot:
+    image: ghcr.io/nightly-labs/openbot:${OPENBOT_VERSION:-0.78.0}
+    restart: unless-stopped
+    depends_on:
+      control:
+        condition: service_healthy
+    cpus: 1.5
+    mem_limit: 4g
+    pids_limit: 768
+    shm_size: 1g
+    stop_grace_period: 60s
+    security_opt:
+      - seccomp=${OPENBOT_SECCOMP:?Set OPENBOT_SECCOMP}
+      - no-new-privileges:true
+    secrets: [control_key]
+    entrypoint: ["/usr/bin/tini", "--", "/bin/sh", "-ec"]
+    command:
+      - |
+        export BIOSWARM_API_KEY="$$(cat /run/secrets/control_key)"
+        exec /opt/OpenBot/app/resources/hosting/openbot-container
+    environment:
+      BIOSWARM_API_URL: http://control:8787
+    volumes:
+      - openbot-data:/data
+      - ../bench/pi-budget:/opt/phase1-budget:ro
+      - ${CONNECTOR_ROOT:?Set CONNECTOR_ROOT}/packages/connector-pi:/opt/bioswarm/packages/connector-pi:ro
+      - ${CONNECTOR_ROOT:?Set CONNECTOR_ROOT}/node_modules:/opt/bioswarm/node_modules:ro
+    networks: [control_net, egress]
+  runner:
+    profiles: [tools]
+    image: node:22-bookworm-slim
+    user: "1000:1000"
+    network_mode: service:openbot
+    volumes:
+      - openbot-data:/data
+      - ../bench:/bench:ro
+      - ${CONNECTOR_ROOT:?Set CONNECTOR_ROOT}/packages/connector-pi:/opt/bioswarm/packages/connector-pi:ro
+      - ${BENCH_RESULTS:-./measurements}:/results
+    secrets: [control_key]
+    entrypoint: ["node", "/bench/run.mjs"]
+    cpus: 0.25
+    mem_limit: 384m
+networks:
+  control_net:
+    internal: true
+  egress: {}
+volumes:
+  openbot-data: {}
+secrets:
+  control_key:
+    file: ${CONTROL_KEY_FILE:?Set CONTROL_KEY_FILE}

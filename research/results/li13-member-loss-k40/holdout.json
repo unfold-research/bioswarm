@@ -1,0 +1,42 @@
+{
+  "routed": {
+    "solvedInRun": 7,
+    "passHoldout": 2,
+    "failing": [
+      "k40s12401 D:M32.tallyTitle>M1.weighRef",
+      "k40s12402 D:M15.packSku>M18.rankTitle",
+      "k40s12402 D:M30.tuneHint>M4.tuneName",
+      "k40s12403 D:M25.labelSeed>M28.tallyName",
+      "k40s12406 D:M15.foldTitle>M36.gaugeToken",
+      "k40s12407 D:M22.scanNote>M7.tallySku"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 7,
+    "passHoldout": 6,
+    "failing": [
+      "k40s12405 D:M11.scanAlias>M14.tuneNote"
+    ]
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 1,
+    "failing": [
+      "k40s12400 D:M20.packTerm>M33.tuneLabel",
+      "k40s12401 D:M25.gradeSeed>M28.tallySeed",
+      "k40s12401 D:M32.tallyTitle>M1.weighRef",
+      "k40s12401 D:M8.tuneAlias>M9.scoreTitle",
+      "k40s12402 D:M30.tuneHint>M4.tuneName",
+      "k40s12403 D:M37.packCode>M23.gaugeCode",
+      "k40s12405 D:M5.stampLabel>M10.weighSeed",
+      "k40s12405 D:M11.scanAlias>M14.tuneNote",
+      "k40s12406 D:M23.rankSlug>M26.gaugeCode",
+      "k40s12407 D:M22.scanNote>M7.tallySku"
+    ]
+  }
+}

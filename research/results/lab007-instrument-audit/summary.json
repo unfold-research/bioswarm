@@ -1,0 +1,406 @@
+{
+  "configHash": "068e9d7d7bbe8b77f78145c33a005c5321af8e67b540718101d1db75734dbc24",
+  "gate": "instrument-insufficient",
+  "runs": 72,
+  "totalResponses": 432,
+  "groups": {
+    "LOCAL": {
+      "trajectories": 24,
+      "responses": 144,
+      "valid": 144,
+      "correct": 72,
+      "unsure": 72,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 144
+    },
+    "FULL": {
+      "trajectories": 24,
+      "responses": 144,
+      "valid": 144,
+      "correct": 144,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 129,
+      "localExpected": 0
+    },
+    "RING": {
+      "trajectories": 24,
+      "responses": 144,
+      "valid": 144,
+      "correct": 115,
+      "unsure": 29,
+      "wrong": 0,
+      "completeEvidence": 59,
+      "localExpected": 0
+    }
+  },
+  "byTruthVector": {
+    "LOCAL/v0": {
+      "truth": [
+        0,
+        0,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v0": {
+      "truth": [
+        0,
+        0,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 18,
+      "localExpected": 0
+    },
+    "RING/v0": {
+      "truth": [
+        0,
+        0,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 8,
+      "localExpected": 0
+    },
+    "LOCAL/v1": {
+      "truth": [
+        1,
+        0,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 12,
+      "unsure": 6,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v1": {
+      "truth": [
+        1,
+        0,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 6,
+      "localExpected": 0
+    },
+    "RING/v1": {
+      "truth": [
+        1,
+        0,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 7,
+      "localExpected": 0
+    },
+    "LOCAL/v2": {
+      "truth": [
+        0,
+        1,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 12,
+      "unsure": 6,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v2": {
+      "truth": [
+        0,
+        1,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 17,
+      "localExpected": 0
+    },
+    "RING/v2": {
+      "truth": [
+        0,
+        1,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 13,
+      "unsure": 5,
+      "wrong": 0,
+      "completeEvidence": 3,
+      "localExpected": 0
+    },
+    "LOCAL/v3": {
+      "truth": [
+        1,
+        1,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 6,
+      "unsure": 12,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v3": {
+      "truth": [
+        1,
+        1,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 17,
+      "localExpected": 0
+    },
+    "RING/v3": {
+      "truth": [
+        1,
+        1,
+        0
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 15,
+      "unsure": 3,
+      "wrong": 0,
+      "completeEvidence": 7,
+      "localExpected": 0
+    },
+    "LOCAL/v4": {
+      "truth": [
+        0,
+        0,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 12,
+      "unsure": 6,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v4": {
+      "truth": [
+        0,
+        0,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 18,
+      "localExpected": 0
+    },
+    "RING/v4": {
+      "truth": [
+        0,
+        0,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 17,
+      "unsure": 1,
+      "wrong": 0,
+      "completeEvidence": 12,
+      "localExpected": 0
+    },
+    "LOCAL/v5": {
+      "truth": [
+        1,
+        0,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 6,
+      "unsure": 12,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v5": {
+      "truth": [
+        1,
+        0,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 18,
+      "localExpected": 0
+    },
+    "RING/v5": {
+      "truth": [
+        1,
+        0,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 16,
+      "unsure": 2,
+      "wrong": 0,
+      "completeEvidence": 9,
+      "localExpected": 0
+    },
+    "LOCAL/v6": {
+      "truth": [
+        0,
+        1,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 6,
+      "unsure": 12,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v6": {
+      "truth": [
+        0,
+        1,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 17,
+      "localExpected": 0
+    },
+    "RING/v6": {
+      "truth": [
+        0,
+        1,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 14,
+      "unsure": 4,
+      "wrong": 0,
+      "completeEvidence": 4,
+      "localExpected": 0
+    },
+    "LOCAL/v7": {
+      "truth": [
+        1,
+        1,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 0,
+      "unsure": 18,
+      "wrong": 0,
+      "completeEvidence": 0,
+      "localExpected": 18
+    },
+    "FULL/v7": {
+      "truth": [
+        1,
+        1,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 18,
+      "unsure": 0,
+      "wrong": 0,
+      "completeEvidence": 18,
+      "localExpected": 0
+    },
+    "RING/v7": {
+      "truth": [
+        1,
+        1,
+        1
+      ],
+      "trajectories": 3,
+      "responses": 18,
+      "valid": 18,
+      "correct": 4,
+      "unsure": 14,
+      "wrong": 0,
+      "completeEvidence": 9,
+      "localExpected": 0
+    }
+  },
+  "limits": [
+    "Eight truth vectors repeated three times are exhaustive instrumentation checks, not 24 diverse independent tasks.",
+    "No poison, authority attack, defence comparison, held-out set, or production context was used.",
+    "Haiku model alias does not guarantee immutable model weights; cost is a list-price estimate.",
+    "Passing this screen validates only the synthetic evidence/scoring channel; it does not satisfy or rewrite the original poison-efficacy gate."
+  ]
+}

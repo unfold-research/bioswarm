@@ -1,0 +1,5 @@
+# Readings from the PDFs (2026-11-12)
+
+Ten papers the P1 paper is positioned against, read from the PDF and not from summaries, with a page reference for each number. Written by three reading agents; the decisive statements were then checked by eye on the page (Pressure Fields Table 4 p.28; ScaleMAS weights p.4 and Table 2 p.9; Gao et al. Table 7 p.15; Fan et al. Eq. 1 p.4; CooperBench Fig. 4 p.7). The first line of each file says which pages were read: SwarmWorld (2608.26081) and MusicSwarm (2509.11973) were read in part. The PDFs are not stored in the repository.
+
+Corrections to earlier notes: the conversation baseline of Pressure Fields is 11.1%, not 12.6%; CooperBench's abstract ("30% lower") does not match its own appendix (41% lost); `lit-scaling-agent-systems.md` repeats the authors' description of the 45% interaction as their most robust result, while Tables 14 and 15 of the paper give robust p = 0.105 and Holm p = 0.084, and the paper states its budget matching in two ways (iterations, p.12; reasoning tokens, p.14).

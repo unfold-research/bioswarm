@@ -1,0 +1,56 @@
+{
+  "study": "i13-branch",
+  "configHash": "85dd4d3d89e65128b24e6f1fba8903de406aeeaa1ccfc1dadbd72d13cbf8a27a",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "solo": {
+      "onZero": {
+        "n": 12,
+        "quarantined": 11,
+        "escalated": 0
+      },
+      "offZero": {
+        "n": 20,
+        "quarantined": 12,
+        "escalated": 0
+      },
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "branchA": {
+      "onZero": {
+        "n": 12,
+        "quarantined": 0,
+        "escalated": 12
+      },
+      "offZero": {
+        "n": 20,
+        "quarantined": 19,
+        "escalated": 0
+      },
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "branchB": {
+      "onZero": {
+        "n": 12,
+        "quarantined": 11,
+        "escalated": 0
+      },
+      "offZero": {
+        "n": 20,
+        "quarantined": 0,
+        "escalated": 20
+      },
+      "wrongFirings": 0,
+      "invalid": 0
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported"
+  },
+  "finishedAt": "2026-11-11T14:24:38.496Z"
+}

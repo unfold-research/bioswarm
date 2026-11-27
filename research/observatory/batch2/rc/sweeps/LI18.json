@@ -1,0 +1,6 @@
+{ "id": "LI18", "prereg": "tasks/LI18-STRONGER-TESTS-PREREG.md", "base": { "model": "claude-haiku-5-5", "effort": null, "memberMax": 8000, "managerMax": 32000, "rounds": 8, "strictFeedback": true },
+  "sizes": [{ "k": 40, "seed0": 18400, "cases": 8, "cap": 6, "tests": 16 }, { "k": 80, "seed0": 18800, "cases": 8, "cap": 12, "tests": 16 }],
+  "arms": ["stig", "manager", "routed"],
+  "hypotheses": [
+   { "id": "H-LI56", "primary": true, "a": "manager", "b": "stig", "metric": "holdoutFailing", "title": "With 16 test inputs per check the manager still generalises better than agent traces" },
+   { "id": "H-LI57", "a": "manager", "b": "routed", "metric": "holdoutFailing", "title": "With 16 test inputs per check the manager still generalises better than the router" } ] }

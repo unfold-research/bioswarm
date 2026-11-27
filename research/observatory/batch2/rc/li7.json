@@ -1,0 +1,25 @@
+{
+  "out": "li7-real-code-geometry",
+  "model": "claude-sonnet-5-5",
+  "k": 5,
+  "cases": 12,
+  "seed0": 7000,
+  "shape": {
+    "local": 2,
+    "directed": 5,
+    "symmetric": 4,
+    "tests": 6,
+    "shown": 3
+  },
+  "memberMax": 3500,
+  "soloMax": 16000,
+  "effort": "low",
+  "rounds": 5,
+  "arms": [
+    "sync",
+    "inhibit",
+    "chat",
+    "routed",
+    "solo"
+  ]
+}

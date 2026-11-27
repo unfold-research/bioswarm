@@ -1,0 +1,22 @@
+{
+  "configHash": "6ae38548297cccc83b2dfba9c8fd943ee635bb0a624741fed262b54954812a3f",
+  "finishedAt": "2026-11-17T18:43:23.812Z",
+  "arms": {
+    "routed": {
+      "solved": 8,
+      "of": 8
+    },
+    "manager": {
+      "solved": 8,
+      "of": 8
+    },
+    "threshold": {
+      "solved": 1,
+      "of": 8
+    },
+    "pheromone": {
+      "solved": 8,
+      "of": 8
+    }
+  }
+}

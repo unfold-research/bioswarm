@@ -1,0 +1,2 @@
+{ "out": "li15-colony-k24", "k": 24, "seed0": 15000, "cases": 6, "arms": ["market", "field"], "model": "openai-codex/gpt-6-luna",
+  "shape": { "local": 2, "directed": 24, "symmetric": 18, "tests": 8, "shown": 3 }, "capMinutes": 60, "quietMs": 180000, "parallel": 2, "permission": "standard", "removeAfter": true }

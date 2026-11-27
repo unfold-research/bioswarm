@@ -1,0 +1,61 @@
+{
+ "id": "LI34",
+ "prereg": "tasks/LI34-MANAGER-FAIR-RERUN-PREREG.md",
+ "base": {
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 96000,
+  "rounds": 6,
+  "strictFeedback": true,
+  "managerSlack": true
+ },
+ "sizes": [
+  {
+   "k": 80,
+   "seed0": 34800,
+   "cases": 12,
+   "cap": 12,
+   "directed": 160,
+   "symmetric": 80,
+   "tests": 16
+  },
+  {
+   "k": 120,
+   "seed0": 34200,
+   "cases": 12,
+   "cap": 16,
+   "directed": 240,
+   "symmetric": 80,
+   "tests": 16
+  }
+ ],
+ "arms": [
+  "stigwait",
+  "manager"
+ ],
+ "hypotheses": [
+  {
+   "id": "H-LI102",
+   "primary": true,
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "final",
+   "title": "With a manager that keeps default effort, a 96,000-token plan budget and room to re-plan, waiting for the trace still ends with fewer failing checks"
+  },
+  {
+   "id": "H-LI103",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "holdoutFailing",
+   "title": "Against that manager, waiting for the trace leaves fewer checks failing on fresh inputs"
+  },
+  {
+   "id": "H-LI104",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "tokens",
+   "title": "Against that manager, waiting for the trace uses fewer tokens per case"
+  }
+ ]
+}

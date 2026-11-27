@@ -1,0 +1,703 @@
+{
+  "predictions": {
+    "P1": {
+      "k": 4,
+      "n": 48,
+      "diff": -0.229,
+      "low": -0.438,
+      "high": -0.042,
+      "verdict": "refuted"
+    },
+    "P2": [
+      {
+        "k": 2,
+        "n": 144,
+        "diff": -0.035,
+        "low": -0.069,
+        "high": 0,
+        "verdict": "supported"
+      },
+      {
+        "k": 4,
+        "n": 96,
+        "diff": -0.01,
+        "low": -0.042,
+        "high": 0.021,
+        "verdict": "supported"
+      },
+      {
+        "k": 8,
+        "n": 48,
+        "diff": -0.125,
+        "low": -0.25,
+        "high": -0.021,
+        "verdict": "supported"
+      }
+    ],
+    "P3": {
+      "k": 2,
+      "n": 96,
+      "diff": -0.052,
+      "low": -0.135,
+      "high": 0.021,
+      "verdict": "supported"
+    },
+    "P4": [
+      {
+        "k": 2,
+        "ratios": [
+          {
+            "task": "I-01",
+            "M": 4,
+            "ratio": 2.85
+          },
+          {
+            "task": "I-01",
+            "M": 8,
+            "ratio": 2.21
+          },
+          {
+            "task": "I-01",
+            "M": 16,
+            "ratio": 1.78
+          },
+          {
+            "task": "III-22",
+            "M": 4,
+            "ratio": 6.93
+          },
+          {
+            "task": "III-22",
+            "M": 8,
+            "ratio": 4.37
+          },
+          {
+            "task": "III-22",
+            "M": 16,
+            "ratio": 3.69
+          }
+        ],
+        "verdict": "supported"
+      },
+      {
+        "k": 4,
+        "ratios": [
+          {
+            "task": "I-01",
+            "M": 8,
+            "ratio": 3.32
+          },
+          {
+            "task": "I-01",
+            "M": 16,
+            "ratio": 2.44
+          },
+          {
+            "task": "III-22",
+            "M": 8,
+            "ratio": 7.52
+          },
+          {
+            "task": "III-22",
+            "M": 16,
+            "ratio": 6.27
+          }
+        ],
+        "verdict": "supported"
+      },
+      {
+        "k": 8,
+        "ratios": [
+          {
+            "task": "I-01",
+            "M": 16,
+            "ratio": 3.89
+          },
+          {
+            "task": "III-22",
+            "M": 16,
+            "ratio": 12.72
+          }
+        ],
+        "verdict": "supported"
+      }
+    ]
+  },
+  "map": [
+    {
+      "task": "I-01",
+      "M": 4,
+      "solo": 1,
+      "bestK": 2,
+      "bestShare": 1,
+      "gain": 0,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 2.85
+    },
+    {
+      "task": "I-01",
+      "M": 8,
+      "solo": 1,
+      "bestK": 2,
+      "bestShare": 1,
+      "gain": 0,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 2.21
+    },
+    {
+      "task": "I-01",
+      "M": 16,
+      "solo": 1,
+      "bestK": 2,
+      "bestShare": 1,
+      "gain": 0,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 1.78
+    },
+    {
+      "task": "I-05",
+      "M": 4,
+      "solo": 0.875,
+      "bestK": 2,
+      "bestShare": 0.833,
+      "gain": -0.042,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 1.77
+    },
+    {
+      "task": "I-05",
+      "M": 8,
+      "solo": 0.792,
+      "bestK": 2,
+      "bestShare": 0.708,
+      "gain": -0.084,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 1.45
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "solo": 0.708,
+      "bestK": 2,
+      "bestShare": 0.625,
+      "gain": -0.083,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 1.25
+    },
+    {
+      "task": "I-06",
+      "M": 4,
+      "solo": 0.875,
+      "bestK": 2,
+      "bestShare": 0.75,
+      "gain": -0.125,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 1.66
+    },
+    {
+      "task": "I-06",
+      "M": 8,
+      "solo": 0.625,
+      "bestK": 4,
+      "bestShare": 0.75,
+      "gain": 0.125,
+      "kind": "quiet",
+      "nearLine": true,
+      "tokenRatioBest": 1.77
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "solo": 0.583,
+      "bestK": 2,
+      "bestShare": 0.458,
+      "gain": -0.125,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 1.18
+    },
+    {
+      "task": "III-22",
+      "M": 4,
+      "solo": 1,
+      "bestK": 2,
+      "bestShare": 0.958,
+      "gain": -0.042,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 6.93
+    },
+    {
+      "task": "III-22",
+      "M": 8,
+      "solo": 1,
+      "bestK": 4,
+      "bestShare": 1,
+      "gain": 0,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 7.52
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "solo": 0.958,
+      "bestK": 4,
+      "bestShare": 0.958,
+      "gain": 0,
+      "kind": "quiet",
+      "nearLine": false,
+      "tokenRatioBest": 6.27
+    }
+  ],
+  "cells": [
+    {
+      "task": "I-01",
+      "M": 4,
+      "k": 1,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 768,
+      "input": 588,
+      "output": 180,
+      "agentsRight": null
+    },
+    {
+      "task": "I-01",
+      "M": 4,
+      "k": 2,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 2186,
+      "input": 1541,
+      "output": 645,
+      "agentsRight": 1
+    },
+    {
+      "task": "I-01",
+      "M": 8,
+      "k": 1,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 1082,
+      "input": 819,
+      "output": 262,
+      "agentsRight": null
+    },
+    {
+      "task": "I-01",
+      "M": 8,
+      "k": 2,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 2390,
+      "input": 1765,
+      "output": 624,
+      "agentsRight": 1
+    },
+    {
+      "task": "I-01",
+      "M": 8,
+      "k": 4,
+      "n": 24,
+      "right": 23,
+      "share": 0.958,
+      "tokens": 3597,
+      "input": 2665,
+      "output": 932,
+      "agentsRight": 0.958
+    },
+    {
+      "task": "I-01",
+      "M": 16,
+      "k": 1,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 1723,
+      "input": 1282,
+      "output": 441,
+      "agentsRight": null
+    },
+    {
+      "task": "I-01",
+      "M": 16,
+      "k": 2,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 3067,
+      "input": 2242,
+      "output": 825,
+      "agentsRight": 1
+    },
+    {
+      "task": "I-01",
+      "M": 16,
+      "k": 4,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 4208,
+      "input": 3129,
+      "output": 1080,
+      "agentsRight": 1
+    },
+    {
+      "task": "I-01",
+      "M": 16,
+      "k": 8,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 6696,
+      "input": 4927,
+      "output": 1769,
+      "agentsRight": 1
+    },
+    {
+      "task": "I-05",
+      "M": 4,
+      "k": 1,
+      "n": 24,
+      "right": 21,
+      "share": 0.875,
+      "tokens": 1715,
+      "input": 640,
+      "output": 1075,
+      "agentsRight": null
+    },
+    {
+      "task": "I-05",
+      "M": 4,
+      "k": 2,
+      "n": 24,
+      "right": 20,
+      "share": 0.833,
+      "tokens": 3027,
+      "input": 1611,
+      "output": 1416,
+      "agentsRight": 0.833
+    },
+    {
+      "task": "I-05",
+      "M": 8,
+      "k": 1,
+      "n": 24,
+      "right": 19,
+      "share": 0.792,
+      "tokens": 3008,
+      "input": 912,
+      "output": 2095,
+      "agentsRight": null
+    },
+    {
+      "task": "I-05",
+      "M": 8,
+      "k": 2,
+      "n": 24,
+      "right": 17,
+      "share": 0.708,
+      "tokens": 4372,
+      "input": 1887,
+      "output": 2485,
+      "agentsRight": 0.708
+    },
+    {
+      "task": "I-05",
+      "M": 8,
+      "k": 4,
+      "n": 24,
+      "right": 17,
+      "share": 0.708,
+      "tokens": 5422,
+      "input": 2808,
+      "output": 2614,
+      "agentsRight": 0.708
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "k": 1,
+      "n": 24,
+      "right": 17,
+      "share": 0.708,
+      "tokens": 5400,
+      "input": 1456,
+      "output": 3944,
+      "agentsRight": null
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "k": 2,
+      "n": 24,
+      "right": 15,
+      "share": 0.625,
+      "tokens": 6737,
+      "input": 2419,
+      "output": 4318,
+      "agentsRight": 0.625
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "k": 4,
+      "n": 24,
+      "right": 10,
+      "share": 0.417,
+      "tokens": 7966,
+      "input": 3383,
+      "output": 4584,
+      "agentsRight": 0.417
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "k": 8,
+      "n": 24,
+      "right": 14,
+      "share": 0.583,
+      "tokens": 10251,
+      "input": 5230,
+      "output": 5022,
+      "agentsRight": 0.583
+    },
+    {
+      "task": "I-06",
+      "M": 4,
+      "k": 1,
+      "n": 24,
+      "right": 21,
+      "share": 0.875,
+      "tokens": 2926,
+      "input": 553,
+      "output": 2373,
+      "agentsRight": null
+    },
+    {
+      "task": "I-06",
+      "M": 4,
+      "k": 2,
+      "n": 24,
+      "right": 18,
+      "share": 0.75,
+      "tokens": 4866,
+      "input": 1532,
+      "output": 3334,
+      "agentsRight": 0.75
+    },
+    {
+      "task": "I-06",
+      "M": 8,
+      "k": 1,
+      "n": 24,
+      "right": 15,
+      "share": 0.625,
+      "tokens": 5071,
+      "input": 745,
+      "output": 4326,
+      "agentsRight": null
+    },
+    {
+      "task": "I-06",
+      "M": 8,
+      "k": 2,
+      "n": 24,
+      "right": 13,
+      "share": 0.542,
+      "tokens": 7051,
+      "input": 1707,
+      "output": 5345,
+      "agentsRight": 0.542
+    },
+    {
+      "task": "I-06",
+      "M": 8,
+      "k": 4,
+      "n": 24,
+      "right": 18,
+      "share": 0.75,
+      "tokens": 8951,
+      "input": 2656,
+      "output": 6295,
+      "agentsRight": 0.75
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "k": 1,
+      "n": 24,
+      "right": 14,
+      "share": 0.583,
+      "tokens": 9481,
+      "input": 1129,
+      "output": 8352,
+      "agentsRight": null
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "k": 2,
+      "n": 24,
+      "right": 11,
+      "share": 0.458,
+      "tokens": 11167,
+      "input": 2083,
+      "output": 9083,
+      "agentsRight": 0.458
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "k": 4,
+      "n": 24,
+      "right": 10,
+      "share": 0.417,
+      "tokens": 13520,
+      "input": 3040,
+      "output": 10480,
+      "agentsRight": 0.417
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "k": 8,
+      "n": 24,
+      "right": 8,
+      "share": 0.333,
+      "tokens": 16958,
+      "input": 4886,
+      "output": 12071,
+      "agentsRight": 0.333
+    },
+    {
+      "task": "III-22",
+      "M": 4,
+      "k": 1,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 2744,
+      "input": 656,
+      "output": 2088,
+      "agentsRight": null
+    },
+    {
+      "task": "III-22",
+      "M": 4,
+      "k": 2,
+      "n": 24,
+      "right": 23,
+      "share": 0.958,
+      "tokens": 19019,
+      "input": 5521,
+      "output": 13498,
+      "agentsRight": 0.979
+    },
+    {
+      "task": "III-22",
+      "M": 8,
+      "k": 1,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 5488,
+      "input": 888,
+      "output": 4600,
+      "agentsRight": null
+    },
+    {
+      "task": "III-22",
+      "M": 8,
+      "k": 2,
+      "n": 24,
+      "right": 23,
+      "share": 0.958,
+      "tokens": 23980,
+      "input": 6464,
+      "output": 17516,
+      "agentsRight": 0.979
+    },
+    {
+      "task": "III-22",
+      "M": 8,
+      "k": 4,
+      "n": 24,
+      "right": 24,
+      "share": 1,
+      "tokens": 41272,
+      "input": 15748,
+      "output": 25524,
+      "agentsRight": 1
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "k": 1,
+      "n": 24,
+      "right": 23,
+      "share": 0.958,
+      "tokens": 9355,
+      "input": 1352,
+      "output": 8002,
+      "agentsRight": null
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "k": 2,
+      "n": 24,
+      "right": 20,
+      "share": 0.833,
+      "tokens": 34549,
+      "input": 7976,
+      "output": 26573,
+      "agentsRight": 0.896
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "k": 4,
+      "n": 24,
+      "right": 23,
+      "share": 0.958,
+      "tokens": 58649,
+      "input": 18752,
+      "output": 39898,
+      "agentsRight": 0.927
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "k": 8,
+      "n": 24,
+      "right": 17,
+      "share": 0.708,
+      "tokens": 119021,
+      "input": 50059,
+      "output": 68962,
+      "agentsRight": 0.734
+    }
+  ],
+  "retest": {
+    "n": 144,
+    "sameOutcome": 122,
+    "rightHere": 123,
+    "rightInGate": 123
+  },
+  "cutReplies": 0,
+  "invalidReplies": 0,
+  "calls": 3888
+}

@@ -1,0 +1,94 @@
+{
+  "configHash": "3102310225108cf57f3c9dd39eab5b1327c48ff03747ab505f86f1824753dd15",
+  "finishedAt": "2026-11-23T22:25:39.807Z",
+  "arms": {
+    "stigwait": {
+      "solved": 1,
+      "of": 1
+    },
+    "manager": {
+      "solved": 1,
+      "of": 1
+    }
+  },
+  "provider": "openai-litellm",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "models": {
+    "gpt-6-luna": 819
+  },
+  "efforts": {
+    "medium": 819
+  },
+  "transports": {
+    "batch": 145,
+    "flex": 674
+  },
+  "transport": {
+    "mode": "flex",
+    "since": 0,
+    "switchedAt": "2026-11-23T15:14:44.780Z",
+    "switchedWave": 1,
+    "switchReason": "LI42 Amendment 1 (Research Leader and owner, PR #185 b4e647f): speed, not a batch failure; wave 0 finishes on batch, every later pilot wave and the whole study use synchronous flex",
+    "history": [
+      {
+        "mode": "batch",
+        "wave": 0,
+        "at": "2026-11-23T12:49:53Z",
+        "reason": "pilot start (restored record: the original transport.json was lost in the worktree incident)"
+      },
+      {
+        "mode": "flex",
+        "wave": 1,
+        "at": "2026-11-23T15:14:44.780Z",
+        "reason": "LI42 Amendment 1"
+      },
+      {
+        "mode": "flex",
+        "wave": 0,
+        "part": 0,
+        "scope": "remainder",
+        "requests": 15,
+        "custom_ids": [
+          "start-k160s42390-m22",
+          "start-k160s42390-m28",
+          "start-k160s42390-m33",
+          "start-k160s42390-m48",
+          "start-k160s42390-m51",
+          "start-k160s42390-m59",
+          "start-k160s42390-m68",
+          "start-k160s42390-m87",
+          "start-k160s42390-m106",
+          "start-k160s42390-m113",
+          "start-k160s42390-m118",
+          "start-k160s42390-m120",
+          "start-k160s42390-m128",
+          "start-k160s42390-m144",
+          "start-k160s42390-m151"
+        ],
+        "at": "2026-11-23T19:12:17.128Z",
+        "reason": "LI42 Amendment 3: batch batch_bGl0ZWxsbTpiYXRjaF82YjA0MzY3NDUxNDA4MTkwOWRhODgwMmRkMWY3OWRmOTttb2RlbCxncHQtNi1sdW5h ended cancelled with 145 of 160 delivered; 15 HTTP 500 inside the batch are batch failures per request, resent on flex with the same body (LI42 Amendment 3 (PR #192, f0de21a))"
+      },
+      {
+        "mode": "flex",
+        "wave": 1,
+        "at": "2026-11-23T20:07:38.371Z",
+        "route": "http://10.10.0.2:4000",
+        "reason": "network route switch after 8x HTTP 524 on manager-k160s42390-w1-plan via the public endpoint (Cloudflare limit); same LiteLLM, key, model, flex"
+      },
+      {
+        "mode": "flex",
+        "wave": 1,
+        "part": 0,
+        "scope": "remainder",
+        "requests": 1,
+        "custom_ids": [
+          "manager-k160s42390-w1-plan"
+        ],
+        "at": "2026-11-23T21:27:39.414Z",
+        "reason": "LI42 Amendment 3 resend after the route switch (PR #196, #197): 1 request(s) of part 1.0 have a transport-class error as their last outcome (manager-k160s42390-w1-plan HTTP 524); resent on flex with the same body; the 136 delivered are kept"
+      }
+    ],
+    "route": "http://10.10.0.2:4000"
+  }
+}

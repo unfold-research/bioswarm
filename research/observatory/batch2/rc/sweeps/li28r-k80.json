@@ -1,0 +1,26 @@
+{
+  "out": "li28r-k80",
+  "k": 80,
+  "cases": 12,
+  "seed0": 28900,
+  "shape": {
+    "local": 2,
+    "directed": 160,
+    "symmetric": 80,
+    "tests": 16,
+    "shown": 3
+  },
+  "arms": [
+    "stigwait",
+    "chat",
+    "threshold",
+    "inhibit",
+    "sync"
+  ],
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 48000,
+  "rounds": 6,
+  "strictFeedback": true
+}

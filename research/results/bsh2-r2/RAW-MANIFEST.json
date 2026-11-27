@@ -1,0 +1,221 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "arms.jsonl",
+      "bytes": 1069,
+      "sha256": "761c15ec5bc93cb9462f97bb26ccdf0358bf4038103941dd6a92f1018eff3060",
+      "gz": 404
+    },
+    {
+      "path": "close-recife.mjs",
+      "bytes": 993,
+      "sha256": "56f4f0316f963929872eed74da3851be2968a870edcf1f23076dd7c2a3f4fa19",
+      "gz": 554
+    },
+    {
+      "path": "gateway-accounting.json",
+      "bytes": 900,
+      "sha256": "a0c82efbf31c0fd1ff95076a65284034c86b715efb88f4be6c0946d1a915a67d",
+      "gz": 214
+    },
+    {
+      "path": "recife-r2-budget.mjs",
+      "bytes": 1867,
+      "sha256": "c17f8017cece4f8ef9c97c1e9ee7e0c9cd2772272c9365778edb0311165669d0",
+      "gz": 932
+    },
+    {
+      "path": "recife-r2.py",
+      "bytes": 5250,
+      "sha256": "d06599199493a02695bb157b718d0c64ee8b303b86070067f3218e4d2b6ca19c",
+      "gz": 1983
+    },
+    {
+      "path": "reprice-recife.mjs",
+      "bytes": 1334,
+      "sha256": "0d269ca9f9ef975a816ec9b69a5d232dcc9b7b282e367d05929877161bd52c6b",
+      "gz": 650
+    },
+    {
+      "path": "request-1.json",
+      "bytes": 2561,
+      "sha256": "5ba3c0f7fc784772e3ba8a46a637b62e097a0d001ffd98a0f11cb2d5d2eaabd5",
+      "gz": 1456
+    },
+    {
+      "path": "request-10.json",
+      "bytes": 4257,
+      "sha256": "8047683e8013a6d400f9203b6b3e927c1860ec2d71b9864a54d080f64a206598",
+      "gz": 1950
+    },
+    {
+      "path": "request-11.json",
+      "bytes": 2485,
+      "sha256": "1027a46074405069d7292a8de7e4e1cebd86ecd46de4a1a035e74bf040b2bae0",
+      "gz": 1408
+    },
+    {
+      "path": "request-12.json",
+      "bytes": 3469,
+      "sha256": "57ebe8c89dcc38844f76c888172bec43f804b9195e789bf05a15c3b2103ffe37",
+      "gz": 1763
+    },
+    {
+      "path": "request-13.json",
+      "bytes": 3953,
+      "sha256": "c73db37fc8e9adca68a4d64aecfa4829e1f229522e4e4c5c7e91886c305d356d",
+      "gz": 1896
+    },
+    {
+      "path": "request-2.json",
+      "bytes": 2486,
+      "sha256": "1eea3eedb1e10976e9bb75d332e7d20d9868fd5e2830367e8b562efaed46da92",
+      "gz": 1409
+    },
+    {
+      "path": "request-3.json",
+      "bytes": 3593,
+      "sha256": "71dd9cd20503febb487abcb278a0764fca927ef2588bd627bce48600b2bcc826",
+      "gz": 1859
+    },
+    {
+      "path": "request-4.json",
+      "bytes": 3944,
+      "sha256": "0b1d2f3158ee65941073d68112485ca750b6025840cdc9bcc30fca4cad1b2a48",
+      "gz": 1947
+    },
+    {
+      "path": "request-5.json",
+      "bytes": 2485,
+      "sha256": "d9b02ec01316b278a8383faaac5c50803a41743b837703ee190043ea6bb56624",
+      "gz": 1409
+    },
+    {
+      "path": "request-6.json",
+      "bytes": 3614,
+      "sha256": "623ea27fe3f348fac721d767a2e23b5013c0fe69d70eac1e5233f72ecb41d1ef",
+      "gz": 1867
+    },
+    {
+      "path": "request-7.json",
+      "bytes": 2561,
+      "sha256": "0659f1437610f92ced6906198bad476517160cda8d7ce152a4451f34b917afd2",
+      "gz": 1454
+    },
+    {
+      "path": "request-8.json",
+      "bytes": 2486,
+      "sha256": "6d2616f50be4cb0fdb6c33c630a28dc49153db725db4527b29da553b9f9425ed",
+      "gz": 1408
+    },
+    {
+      "path": "request-9.json",
+      "bytes": 3405,
+      "sha256": "ae026e4657da98f40f250ce6479719f22999112d3ef63214c74e61a924535792",
+      "gz": 1738
+    },
+    {
+      "path": "response-1.json",
+      "bytes": 1036,
+      "sha256": "474076029a9a3a02a057730c5a2a60a0fe112ef04a5de551f217e856c53958cb",
+      "gz": 563
+    },
+    {
+      "path": "response-10.json",
+      "bytes": 754,
+      "sha256": "19c56249c405fddaf5b8664261300b8671be230c6dcd07eda03c2fcc0024a128",
+      "gz": 407
+    },
+    {
+      "path": "response-11.json",
+      "bytes": 770,
+      "sha256": "cecc51d5ac7eb386357abe6f5745278a22a6320dc80b244b86e672b30116a73d",
+      "gz": 438
+    },
+    {
+      "path": "response-12.json",
+      "bytes": 1229,
+      "sha256": "e0f63b703c017988f4ff6bd28a511a45221ee063b2e948bbda63d64d850a48a7",
+      "gz": 571
+    },
+    {
+      "path": "response-13.json",
+      "bytes": 750,
+      "sha256": "9274b6f9f619ac10c7e8beab5b3766e3f9eb81e5b079787e8851d419fdb78ac7",
+      "gz": 402
+    },
+    {
+      "path": "response-2.json",
+      "bytes": 855,
+      "sha256": "58a21d204527c1f084d0890398c91eaac05f92cf1f579608ede3eca729174842",
+      "gz": 474
+    },
+    {
+      "path": "response-3.json",
+      "bytes": 752,
+      "sha256": "d979ccb4acd5acf6345651c5097e866961bf56acc15e40be581525cfd7b8ef13",
+      "gz": 444
+    },
+    {
+      "path": "response-4.json",
+      "bytes": 697,
+      "sha256": "d86f30f98702c7428858e167678869fac678641c0ba19b97c916895e327193ea",
+      "gz": 401
+    },
+    {
+      "path": "response-5.json",
+      "bytes": 806,
+      "sha256": "3d5c4e50fd4d42c51b4453893f5abf29b256600ca259e927561827c27490a0d5",
+      "gz": 461
+    },
+    {
+      "path": "response-6.json",
+      "bytes": 751,
+      "sha256": "df856edfc5396ce215952e606cf51897e9e691ff634b15c0e66e40e8fe3a3162",
+      "gz": 406
+    },
+    {
+      "path": "response-7.json",
+      "bytes": 1286,
+      "sha256": "92cd76726e7348a9f96ba0c25aa06568947337c0a22adbf9b7794e10cfba2e37",
+      "gz": 594
+    },
+    {
+      "path": "response-8.json",
+      "bytes": 816,
+      "sha256": "e8c3848c646aaa1a4d35e452543573303c32046277c7ce65aaa1d0aaa0ec82e4",
+      "gz": 452
+    },
+    {
+      "path": "response-9.json",
+      "bytes": 1588,
+      "sha256": "154239aea68f833a34bcac67149949f180d6791e71b4ede0a037c0ecd12bcb4e",
+      "gz": 593
+    },
+    {
+      "path": "runner.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gz": 20
+    },
+    {
+      "path": "summary.json",
+      "bytes": 1982,
+      "sha256": "41e4007f83c7186f4f1ae2d422a9564ff59ca4e7387bc754110770bd6a4ff360",
+      "gz": 508
+    },
+    {
+      "path": "transport.jsonl",
+      "bytes": 9438,
+      "sha256": "1053f7cf7fa6093f6e62d3e2382dd6bdb540b7f7679bf2c98088f303a0bbfe2b",
+      "gz": 1516
+    },
+    {
+      "path": "verify-recife.py",
+      "bytes": 1652,
+      "sha256": "57e934db958526f36768d59527e0696e77c6c8eb8ba6ab5a32b0c64d7e620b4e",
+      "gz": 891
+    }
+  ]
+}

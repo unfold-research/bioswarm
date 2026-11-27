@@ -1,0 +1,751 @@
+{
+  "study": "t1-central-haiku",
+  "configHash": "e92998b1fc9ba95553cfdb639ca3b51b0a40d7c0449dbd2a2fec4666db188499",
+  "status": "complete",
+  "wavesRun": 5,
+  "byWorld": {
+    "stable": {
+      "fields": 30,
+      "correct": 1,
+      "recounts": 2.7333333333333334,
+      "decisions": 1.3666666666666667
+    },
+    "local": {
+      "fields": 30,
+      "correct": 0.4,
+      "recounts": 5,
+      "decisions": 2.433333333333333
+    },
+    "scatter": {
+      "fields": 30,
+      "correct": 0.3333333333333333,
+      "recounts": 7.466666666666667,
+      "decisions": 3.2666666666666666
+    }
+  },
+  "decisionCalls": 212,
+  "invalid": 0,
+  "perField": [
+    {
+      "seed": 51001,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51002,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51003,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51004,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51005,
+      "world": "local",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51006,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51007,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51008,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51009,
+      "world": "scatter",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 0
+    },
+    {
+      "seed": 51010,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51011,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51012,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51013,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51014,
+      "world": "local",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51015,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 0
+    },
+    {
+      "seed": 51016,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51017,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51018,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51019,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51020,
+      "world": "local",
+      "decisions": 5,
+      "rounds": 5,
+      "recounts": 10,
+      "correct": 1
+    },
+    {
+      "seed": 51021,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51022,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51023,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51024,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51025,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51026,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51027,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51028,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51029,
+      "world": "local",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 0
+    },
+    {
+      "seed": 51030,
+      "world": "scatter",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 0
+    },
+    {
+      "seed": 51031,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51032,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51033,
+      "world": "scatter",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 0
+    },
+    {
+      "seed": 51034,
+      "world": "stable",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 1
+    },
+    {
+      "seed": 51035,
+      "world": "local",
+      "decisions": 4,
+      "rounds": 4,
+      "recounts": 8,
+      "correct": 1
+    },
+    {
+      "seed": 51036,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 0
+    },
+    {
+      "seed": 51037,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51038,
+      "world": "local",
+      "decisions": 5,
+      "rounds": 5,
+      "recounts": 10,
+      "correct": 1
+    },
+    {
+      "seed": 51039,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51040,
+      "world": "stable",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 1
+    },
+    {
+      "seed": 51041,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51042,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51043,
+      "world": "stable",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 1
+    },
+    {
+      "seed": 51044,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51045,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51046,
+      "world": "stable",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 1
+    },
+    {
+      "seed": 51047,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51048,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51049,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51050,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51051,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51052,
+      "world": "stable",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 1
+    },
+    {
+      "seed": 51053,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51054,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51055,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51056,
+      "world": "local",
+      "decisions": 4,
+      "rounds": 4,
+      "recounts": 8,
+      "correct": 1
+    },
+    {
+      "seed": 51057,
+      "world": "scatter",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 1
+    },
+    {
+      "seed": 51058,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51059,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51060,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 0
+    },
+    {
+      "seed": 51061,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51062,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51063,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 1
+    },
+    {
+      "seed": 51064,
+      "world": "stable",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 1
+    },
+    {
+      "seed": 51065,
+      "world": "local",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 1
+    },
+    {
+      "seed": 51066,
+      "world": "scatter",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 0
+    },
+    {
+      "seed": 51067,
+      "world": "stable",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 1
+    },
+    {
+      "seed": 51068,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51069,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51070,
+      "world": "stable",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 1
+    },
+    {
+      "seed": 51071,
+      "world": "local",
+      "decisions": 4,
+      "rounds": 4,
+      "recounts": 8,
+      "correct": 1
+    },
+    {
+      "seed": 51072,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 0
+    },
+    {
+      "seed": 51073,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51074,
+      "world": "local",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51075,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51076,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51077,
+      "world": "local",
+      "decisions": 5,
+      "rounds": 5,
+      "recounts": 10,
+      "correct": 1
+    },
+    {
+      "seed": 51078,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51079,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51080,
+      "world": "local",
+      "decisions": 5,
+      "rounds": 5,
+      "recounts": 10,
+      "correct": 1
+    },
+    {
+      "seed": 51081,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 0
+    },
+    {
+      "seed": 51082,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51083,
+      "world": "local",
+      "decisions": 3,
+      "rounds": 3,
+      "recounts": 6,
+      "correct": 1
+    },
+    {
+      "seed": 51084,
+      "world": "scatter",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 0
+    },
+    {
+      "seed": 51085,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51086,
+      "world": "local",
+      "decisions": 2,
+      "rounds": 2,
+      "recounts": 4,
+      "correct": 0
+    },
+    {
+      "seed": 51087,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 5,
+      "recounts": 10,
+      "correct": 1
+    },
+    {
+      "seed": 51088,
+      "world": "stable",
+      "decisions": 1,
+      "rounds": 1,
+      "recounts": 2,
+      "correct": 1
+    },
+    {
+      "seed": 51089,
+      "world": "local",
+      "decisions": 4,
+      "rounds": 4,
+      "recounts": 8,
+      "correct": 1
+    },
+    {
+      "seed": 51090,
+      "world": "scatter",
+      "decisions": 5,
+      "rounds": 6,
+      "recounts": 12,
+      "correct": 0
+    }
+  ],
+  "finishedAt": "2026-11-12T00:54:06.128Z"
+}

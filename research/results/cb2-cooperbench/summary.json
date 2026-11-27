@@ -1,0 +1,373 @@
+{
+  "pairs": 50,
+  "tasks": 20,
+  "arms": {
+    "solo": {
+      "pairs": 50,
+      "both": 29,
+      "share": 0.58,
+      "feature1": 37,
+      "feature2": 33,
+      "mergeConflicts": null,
+      "failures": 21,
+      "failuresWithConflict": null,
+      "passedDespiteConflict": null,
+      "cleanMergeBoth": null,
+      "cleanMerge": null,
+      "steps": 758,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "agentSeconds": 6437,
+      "agentStatus": {
+        "Submitted": 49,
+        "LimitsExceeded": 1
+      },
+      "noResult": []
+    },
+    "none": {
+      "pairs": 50,
+      "both": 8,
+      "share": 0.16,
+      "feature1": 13,
+      "feature2": 10,
+      "mergeConflicts": 34,
+      "failures": 42,
+      "failuresWithConflict": 34,
+      "passedDespiteConflict": 0,
+      "cleanMergeBoth": 8,
+      "cleanMerge": 16,
+      "steps": 1100,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "agentSeconds": 6973,
+      "agentStatus": {
+        "Submitted": 100
+      },
+      "noResult": []
+    },
+    "messages": {
+      "pairs": 50,
+      "both": 10,
+      "share": 0.2,
+      "feature1": 15,
+      "feature2": 15,
+      "mergeConflicts": 28,
+      "failures": 40,
+      "failuresWithConflict": 28,
+      "passedDespiteConflict": 0,
+      "cleanMergeBoth": 10,
+      "cleanMerge": 22,
+      "steps": 1396,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "agentSeconds": 7394,
+      "agentStatus": {
+        "Submitted": 100
+      },
+      "noResult": []
+    },
+    "field": {
+      "pairs": 50,
+      "both": 19,
+      "share": 0.38,
+      "feature1": 23,
+      "feature2": 22,
+      "mergeConflicts": 23,
+      "failures": 31,
+      "failuresWithConflict": 21,
+      "passedDespiteConflict": 2,
+      "cleanMergeBoth": 17,
+      "cleanMerge": 25,
+      "steps": 1548,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "agentSeconds": 20090,
+      "agentStatus": {
+        "Submitted": 95,
+        "LimitsExceeded": 1
+      },
+      "noResult": [
+        "dottxt_ai_outlines_task/1655/6_7",
+        "dottxt_ai_outlines_task/1706/4_6"
+      ]
+    }
+  },
+  "tests": {
+    "H1": {
+      "a": "field",
+      "b": "messages",
+      "diff": 0.18,
+      "byTask": [
+        0.071,
+        0.318
+      ],
+      "byPair": [
+        0.08,
+        0.3
+      ],
+      "aOnly": 9,
+      "bOnly": 0
+    },
+    "H2": {
+      "a": "messages",
+      "b": "none",
+      "diff": 0.04,
+      "byTask": [
+        0,
+        0.116
+      ],
+      "byPair": [
+        -0.06,
+        0.14
+      ],
+      "aOnly": 4,
+      "bOnly": 2
+    },
+    "H3": {
+      "a": "field",
+      "b": "none",
+      "diff": 0.22,
+      "byTask": [
+        0.104,
+        0.366
+      ],
+      "byPair": [
+        0.12,
+        0.34
+      ],
+      "aOnly": 11,
+      "bOnly": 0
+    },
+    "H4": {
+      "a": "field",
+      "b": "solo",
+      "diff": -0.2,
+      "byTask": [
+        -0.37,
+        0
+      ],
+      "byPair": [
+        -0.36,
+        -0.04
+      ],
+      "aOnly": 4,
+      "bOnly": 14
+    }
+  },
+  "verdicts": {
+    "H1": "supported",
+    "H2": "supported",
+    "H3": "supported",
+    "H4": "supported"
+  },
+  "bestCoop": "field",
+  "extra": {
+    "fieldMinusSolo": {
+      "a": "field",
+      "b": "solo",
+      "diff": -0.2,
+      "byTask": [
+        -0.365,
+        0
+      ],
+      "byPair": [
+        -0.36,
+        -0.04
+      ],
+      "aOnly": 4,
+      "bOnly": 14
+    },
+    "messagesMinusSolo": {
+      "a": "messages",
+      "b": "solo",
+      "diff": -0.38,
+      "byTask": [
+        -0.525,
+        -0.235
+      ],
+      "byPair": [
+        -0.52,
+        -0.24
+      ],
+      "aOnly": 1,
+      "bOnly": 20
+    },
+    "noneMinusSolo": {
+      "a": "none",
+      "b": "solo",
+      "diff": -0.42,
+      "byTask": [
+        -0.566,
+        -0.275
+      ],
+      "byPair": [
+        -0.56,
+        -0.28
+      ],
+      "aOnly": 1,
+      "bOnly": 22
+    }
+  },
+  "failedTwice": [
+    {
+      "arm": "field",
+      "pair": "dottxt_ai_outlines_task/1655/6_7"
+    },
+    {
+      "arm": "field",
+      "pair": "dottxt_ai_outlines_task/1706/4_6"
+    }
+  ],
+  "sensitivity": {
+    "pairs": 48,
+    "both": {
+      "solo": 28,
+      "none": 8,
+      "messages": 10,
+      "field": 19
+    },
+    "H1": {
+      "a": "field",
+      "b": "messages",
+      "diff": 0.188,
+      "byTask": [
+        0.073,
+        0.32
+      ],
+      "byPair": [
+        0.083,
+        0.313
+      ],
+      "aOnly": 9,
+      "bOnly": 0
+    },
+    "H3": {
+      "a": "field",
+      "b": "none",
+      "diff": 0.229,
+      "byTask": [
+        0.109,
+        0.38
+      ],
+      "byPair": [
+        0.104,
+        0.354
+      ],
+      "aOnly": 11,
+      "bOnly": 0
+    },
+    "H4": {
+      "a": "field",
+      "b": "solo",
+      "diff": -0.187,
+      "byTask": [
+        -0.346,
+        0
+      ],
+      "byPair": [
+        -0.333,
+        -0.042
+      ],
+      "aOnly": 4,
+      "bOnly": 13
+    },
+    "fieldMinusSolo": {
+      "a": "field",
+      "b": "solo",
+      "diff": -0.187,
+      "byTask": [
+        -0.344,
+        0
+      ],
+      "byPair": [
+        -0.333,
+        -0.021
+      ],
+      "aOnly": 4,
+      "bOnly": 13
+    }
+  },
+  "perRepo": {
+    "dottxt_ai_outlines_task": {
+      "solo": 3,
+      "none": 1,
+      "messages": 1,
+      "field": 1,
+      "pairs": 4
+    },
+    "dspy_task": {
+      "solo": 1,
+      "none": 0,
+      "messages": 0,
+      "field": 0,
+      "pairs": 2
+    },
+    "go_chi_task": {
+      "solo": 1,
+      "none": 0,
+      "messages": 1,
+      "field": 1,
+      "pairs": 2
+    },
+    "huggingface_datasets_task": {
+      "solo": 1,
+      "none": 0,
+      "messages": 1,
+      "field": 1,
+      "pairs": 2
+    },
+    "llama_index_task": {
+      "solo": 0,
+      "none": 0,
+      "messages": 0,
+      "field": 0,
+      "pairs": 2
+    },
+    "openai_tiktoken_task": {
+      "solo": 2,
+      "none": 0,
+      "messages": 0,
+      "field": 1,
+      "pairs": 3
+    },
+    "pallets_click_task": {
+      "solo": 7,
+      "none": 1,
+      "messages": 1,
+      "field": 3,
+      "pairs": 11
+    },
+    "pallets_jinja_task": {
+      "solo": 9,
+      "none": 6,
+      "messages": 6,
+      "field": 7,
+      "pairs": 12
+    },
+    "pillow_task": {
+      "solo": 1,
+      "none": 0,
+      "messages": 0,
+      "field": 2,
+      "pairs": 6
+    },
+    "samuelcolvin_dirty_equals_task": {
+      "solo": 1,
+      "none": 0,
+      "messages": 0,
+      "field": 1,
+      "pairs": 2
+    },
+    "typst_task": {
+      "solo": 3,
+      "none": 0,
+      "messages": 0,
+      "field": 2,
+      "pairs": 4
+    }
+  }
+}

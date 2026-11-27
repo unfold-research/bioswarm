@@ -1,0 +1,845 @@
+{
+ "about": "Single source of truth for LI hypothesis verdicts. registered = the verdict of the preregistered rule as computed by the study verdict script; posthoc = any later reading (strict check, review), shown separately. scripts/verdicts.mjs derives each page status from registered and fails CI on drift.",
+ "statusOf": {
+  "supported": "preliminary-support",
+  "refuted": "preliminary-refuted",
+  "inconclusive": "inconclusive",
+  "supported-degenerate": "inconclusive",
+  "pending": "registered",
+  "aborted": "inconclusive"
+ },
+ "hypotheses": [
+  {
+   "id": "H-LI1",
+   "study": "LI1",
+   "registered": "refuted",
+   "review": "docs/reviews/LI-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI2",
+   "study": "LI1",
+   "registered": "refuted",
+   "review": "docs/reviews/LI-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI3",
+   "study": "LI1",
+   "registered": "refuted",
+   "review": "docs/reviews/LI-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI4",
+   "study": "LI1",
+   "registered": "supported",
+   "review": "docs/reviews/LI-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI5",
+   "study": "LI2",
+   "registered": "supported-degenerate",
+   "review": "docs/reviews/LI-REVIEW-2026-11-17.md",
+   "posthoc": "refuted in substance: the two domains disagree (LI2 vs LI3)"
+  },
+  {
+   "id": "H-LI6",
+   "study": "LI2",
+   "registered": "refuted",
+   "review": "docs/reviews/LI-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI7",
+   "study": "LI2",
+   "registered": "refuted",
+   "review": "docs/reviews/LI-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI8",
+   "study": "LI4",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-LI9",
+   "study": "LI4",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI10",
+   "study": "LI4",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-LI11",
+   "study": "LI5",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI12",
+   "study": "LI5",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-LI13",
+   "study": "LI5",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI14",
+   "study": "LI6",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI15",
+   "study": "LI6",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI16",
+   "study": "LI6",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI17",
+   "study": "LI7",
+   "registered": "supported",
+   "review": "docs/reviews/LI7-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI18",
+   "study": "LI7",
+   "registered": "supported",
+   "review": "docs/reviews/LI7-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI19",
+   "study": "LI7",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI7-REVIEW-2026-11-17.md",
+   "posthoc": "supported under the strict check adopted after the LI7 review: 17 to 0 directed edges (p < 0.0001); as registered sync 3 to inhibit 0 (p = 0.25)"
+  },
+  {
+   "id": "H-LI20",
+   "study": "LI7",
+   "registered": "supported",
+   "review": "docs/reviews/LI7-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI21",
+   "study": "LI7",
+   "registered": "supported",
+   "review": "docs/reviews/LI7-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI22",
+   "study": "LI8",
+   "registered": "refuted",
+   "review": "docs/reviews/LI8-REVIEW-2026-11-17.md",
+   "posthoc": "refuted as registered, premise not met: one agent solved every case on its first call, so 12 modules were never past its capacity (LI8 review)"
+  },
+  {
+   "id": "H-LI23",
+   "study": "LI8",
+   "registered": "supported",
+   "review": "docs/reviews/LI8-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI24",
+   "study": "LI8",
+   "registered": "supported",
+   "review": "docs/reviews/LI8-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI25",
+   "study": "LI9",
+   "registered": "refuted",
+   "basis": "strict check (scoring) / registered check (feedback)",
+   "review": "docs/reviews/LI9-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI26",
+   "study": "LI9",
+   "registered": "refuted",
+   "basis": "strict check (scoring) / registered check (feedback)",
+   "review": "docs/reviews/LI9-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI27",
+   "study": "LI9",
+   "registered": "supported",
+   "review": "docs/reviews/LI9-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI28",
+   "study": "LI10",
+   "registered": "refuted",
+   "review": "docs/reviews/LI10-REVIEW-2026-11-17.md",
+   "posthoc": "under the check the agents saw during the run: router 16, manager 15 of 16; the strict scoring was not fed back (LI10 review)",
+   "basis": "strict check (scoring) / registered check (feedback)"
+  },
+  {
+   "id": "H-LI29",
+   "study": "LI10",
+   "registered": "supported",
+   "review": "docs/reviews/LI10-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI30",
+   "study": "LI10",
+   "registered": "refuted",
+   "review": "docs/reviews/LI10-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI31",
+   "study": "LI10",
+   "registered": "refuted",
+   "review": "docs/reviews/LI10-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI32",
+   "study": "LI11",
+   "registered": "supported",
+   "review": "docs/reviews/LI11-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI33",
+   "study": "LI11",
+   "registered": "supported",
+   "review": "docs/reviews/LI11-REVIEW-2026-11-17.md",
+   "posthoc": "not supported as worded: the trace was written by the harness, word for word what the strict check scores (LI11 review, BLOCKER)",
+   "basis": "strict check (scoring) / registered check (feedback)"
+  },
+  {
+   "id": "H-LI34",
+   "study": "LI11",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI11-REVIEW-2026-11-17.md",
+   "basis": "strict check (scoring) / registered check (feedback)"
+  },
+  {
+   "id": "H-LI35",
+   "study": "LI11",
+   "registered": "supported",
+   "review": "docs/reviews/LI11-REVIEW-2026-11-17.md",
+   "posthoc": "partly mechanical: callers never woken and an oracle trace (LI11 review)"
+  },
+  {
+   "id": "H-LI36",
+   "study": "LI12",
+   "registered": "refuted",
+   "review": "docs/reviews/LI12-REVIEW-2026-11-17.md",
+   "basis": "strict check (feedback and scoring)"
+  },
+  {
+   "id": "H-LI37",
+   "study": "LI12",
+   "registered": "refuted",
+   "review": "docs/reviews/LI12-REVIEW-2026-11-17.md",
+   "basis": "strict check (feedback and scoring)",
+   "posthoc": "invalid: the trace-parser bug dropped about 55% of agent traces; all 7 cases the manager won come from dropped traces; where a trace was delivered the check was resolved 211 of 211 (LI12 review)"
+  },
+  {
+   "id": "H-LI38",
+   "study": "LI12",
+   "registered": "supported",
+   "review": "docs/reviews/LI12-REVIEW-2026-11-17.md",
+   "basis": "strict check (feedback and scoring)",
+   "posthoc": "a lower bound: stig was in practice a mix of stig and polarity (LI12 review)"
+  },
+  {
+   "id": "H-LI39",
+   "study": "LI12",
+   "registered": "refuted",
+   "review": "docs/reviews/LI12-REVIEW-2026-11-17.md",
+   "basis": "strict check (feedback and scoring)",
+   "posthoc": "invalid: trace-parser bug (LI12 review)"
+  },
+  {
+   "id": "H-LI40",
+   "study": "LI12",
+   "registered": "refuted",
+   "review": "docs/reviews/LI12-REVIEW-2026-11-17.md",
+   "basis": "strict check (feedback and scoring)",
+   "posthoc": "invalid: trace-parser bug (LI12 review)"
+  },
+  {
+   "id": "H-LI41",
+   "study": "LI13",
+   "registered": "refuted",
+   "review": "docs/reviews/LI13-REVIEW-2026-11-17.md",
+   "posthoc": "the design retried lost manager plans without spending act rounds and did not score time, so the manager single point of failure was not tested (LI13 review)"
+  },
+  {
+   "id": "H-LI42",
+   "study": "LI13",
+   "registered": "refuted",
+   "review": "docs/reviews/LI13-REVIEW-2026-11-17.md"
+  },
+  {
+   "id": "H-LI43",
+   "study": "LI13",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI13-REVIEW-2026-11-17.md",
+   "posthoc": "stig solved 16 of 16 but passed the hold-out in 2 of 16; every hold-out failure was fixed before a trace arrived (LI13 review)"
+  },
+  {
+   "id": "H-LI44",
+   "study": "LI14",
+   "registered": "refuted",
+   "review": "docs/reviews/LI14-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI45",
+   "study": "LI14",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI14-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI46",
+   "study": "LI14",
+   "registered": "refuted",
+   "review": "docs/reviews/LI14-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI47",
+   "study": "LI15",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI15-REVIEW-2026-11-18.md",
+   "posthoc": "most of the field advantage came from market teams stalling after their ant message budget ran out; ownership never blocked an edit (LI15 review)"
+  },
+  {
+   "id": "H-LI48",
+   "study": "LI15",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI15-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI49",
+   "study": "LI15",
+   "registered": "refuted",
+   "review": "docs/reviews/LI15-REVIEW-2026-11-18.md",
+   "posthoc": "on total tokens (cached input included) the market used less in 10 of 12 pairs (LI15 review)"
+  },
+  {
+   "id": "H-LI50",
+   "study": "LI16",
+   "registered": "supported",
+   "review": "docs/reviews/LI16-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI51",
+   "study": "LI16",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI16-REVIEW-2026-11-18.md",
+   "posthoc": "a tie: 15 against 15 with zero failures among cases both solved (LI16 review)"
+  },
+  {
+   "id": "H-LI52",
+   "study": "LI16",
+   "registered": "supported",
+   "review": "docs/reviews/LI16-REVIEW-2026-11-18.md",
+   "posthoc": "registered 16 to 0 counted manager plan waves; with act waves only 10 to 1, p = 0.012, Holm 0.023, still supported (LI16 review)"
+  },
+  {
+   "id": "H-LI53",
+   "study": "LI16",
+   "registered": "supported",
+   "review": "docs/reviews/LI16-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI54",
+   "study": "LI17",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI17-REVIEW-2026-11-18.md",
+   "posthoc": "ceiling: every arm 16 of 16 (LI17 review)"
+  },
+  {
+   "id": "H-LI55",
+   "study": "LI17",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI17-REVIEW-2026-11-18.md",
+   "posthoc": "ceiling (LI17 review)"
+  },
+  {
+   "id": "H-LI56",
+   "study": "LI18",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI18-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI57",
+   "study": "LI18",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI18-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI58",
+   "study": "LI19",
+   "registered": "supported",
+   "review": "docs/reviews/LI19-REVIEW-2026-11-18.md",
+   "posthoc": "a design result: the equal wave budget gave the manager at most 3 act rounds of 6 and 21 of 62 plans were truncated (2.1 act rounds per case); at equal act rounds mixed (0/16, 9/3, 6/0); LI24 is the control (LI19 review)"
+  },
+  {
+   "id": "H-LI59",
+   "study": "LI19",
+   "registered": "supported",
+   "review": "docs/reviews/LI19-REVIEW-2026-11-18.md",
+   "posthoc": "follows from H-LI58 (an unsolved arm fails fresh inputs on its leftover checks); same equal-wave-budget design and plan truncation; LI24 is the control (LI19 review)"
+  },
+  {
+   "id": "H-LI60",
+   "study": "LI19",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI19-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI61",
+   "study": "LI21",
+   "registered": "aborted",
+   "review": "docs/reviews/LI21-REVIEW-2026-11-18.md",
+   "posthoc": "aborted at the study cap after wave 1; no verdict interpretable (LI21 review)"
+  },
+  {
+   "id": "H-LI62",
+   "study": "LI21",
+   "registered": "aborted",
+   "review": "docs/reviews/LI21-REVIEW-2026-11-18.md",
+   "posthoc": "aborted at the study cap after wave 1; no verdict interpretable (LI21 review)"
+  },
+  {
+   "id": "H-LI63",
+   "study": "LI21",
+   "registered": "aborted",
+   "review": "docs/reviews/LI21-REVIEW-2026-11-18.md",
+   "posthoc": "aborted at the study cap after wave 1; no verdict interpretable (LI21 review)"
+  },
+  {
+   "id": "H-LI64",
+   "study": "LI22",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI22-REVIEW-2026-11-18.md",
+   "posthoc": "manipulation not engaged: evaporation removed no trace that was read, so the arms ran the same mechanism (LI22 review)"
+  },
+  {
+   "id": "H-LI65",
+   "study": "LI22",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI22-REVIEW-2026-11-18.md",
+   "posthoc": "manipulation not engaged: evap3 cannot differ from the control by construction (LI22 review)"
+  },
+  {
+   "id": "H-LI66",
+   "study": "LI23",
+   "registered": "supported",
+   "review": "docs/reviews/LI23-REVIEW-2026-11-18.md",
+   "posthoc": "a design result: 8 waves gave the manager at most 4 act rounds, plus lost and truncated plans; with act rounds matched the manager is ahead 13 to 2 (exploratory); LI24 is the control (LI23 review)"
+  },
+  {
+   "id": "H-LI67",
+   "study": "LI23",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI23-REVIEW-2026-11-18.md",
+   "posthoc": "on fresh-input failures stigwait is better in 12 cases and worse in 0 (p about 0.0005, not registered) (LI23 review)"
+  },
+  {
+   "id": "H-LI68",
+   "study": "LI20",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI20-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI69",
+   "study": "LI20",
+   "registered": "refuted",
+   "review": "docs/reviews/LI20-REVIEW-2026-11-18.md"
+  },
+  {
+   "id": "H-LI70",
+   "study": "LI20",
+   "registered": "refuted",
+   "review": "docs/reviews/LI20-REVIEW-2026-11-18.md",
+   "posthoc": "on total tokens (cached input included) as registered the market used fewer in 13 of 16 pairs, 3 to 13, p = 0.021 (LI20 review)"
+  },
+  {
+   "id": "H-LI71",
+   "study": "LI24",
+   "registered": "supported",
+   "review": "docs/reviews/LI24-REVIEW-2026-11-18.md",
+   "posthoc": "the equal-act-rounds control held only at 80 modules, where it is 5 to 0, p = 0.0625 (inconclusive); at 120 thinking-truncated plans (23 of 59) and a hidden wave-13 limit starved the manager (24207 never acted); remaining manager failures are symmetric collisions, LI26 tie-break confound (LI24 review)"
+  },
+  {
+   "id": "H-LI72",
+   "study": "LI24",
+   "registered": "supported",
+   "review": "docs/reviews/LI24-REVIEW-2026-11-18.md",
+   "posthoc": "wavesToSolve counts the manager plan waves, so part of the gap is by design; at 120 modules the manager was also short of act rounds (LI24 review)"
+  },
+  {
+   "id": "H-LI73",
+   "study": "LI24",
+   "registered": "supported",
+   "review": "docs/reviews/LI24-REVIEW-2026-11-18.md",
+   "posthoc": "per case 436k against 552k output tokens (1.27x), not the 2.9x tokensPerSolved; 24207 alone spent 624k on plans that never assigned work (LI24 review)"
+  },
+  {
+   "id": "H-LI74",
+   "study": "LI26",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI26-REVIEW-2026-11-18.md",
+   "posthoc": "the gap is a symmetric-edge collision explained by the harness one-side tie-break, not by traces; tokens about 1.2x per case, not 2.4x; LI27 tests it (LI26 review)"
+  },
+  {
+   "id": "H-LI75",
+   "study": "LI26",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI26-REVIEW-2026-11-18.md",
+   "posthoc": "same tie-break confound as H-LI74 (LI26 review)"
+  },
+  {
+   "id": "H-LI76",
+   "study": "LI27",
+   "registered": "aborted",
+   "review": "docs/reviews/LI27-REVIEW-2026-11-19.md",
+   "posthoc": "LI27 incomplete: k80 stopped at the study cap at wave 6, so the registered 24-case test was never run; post hoc at k160 only 0 to 12, p = 0.0005 (refuted direction): without a tie-break both sides swap formats every wave and solve 0 of 12 (LI27 review)"
+  },
+  {
+   "id": "H-LI77",
+   "study": "LI27",
+   "registered": "aborted",
+   "review": "docs/reviews/LI27-REVIEW-2026-11-19.md",
+   "posthoc": "LI27 incomplete: k80 stopped at the study cap at wave 6, so the registered 24-case test was never run; post hoc at k160 only 12 to 0, Holm p = 0.001: the tie-break is what lets waiting solve format pairs (LI27 review)"
+  },
+  {
+   "id": "H-LI78",
+   "study": "LI27",
+   "registered": "aborted",
+   "review": "docs/reviews/LI27-REVIEW-2026-11-19.md",
+   "posthoc": "LI27 incomplete: k80 stopped at the study cap at wave 6, so the registered 24-case test was never run; post hoc at k160 only 10 to 2, Holm p = 0.039; median 454k against 529k output tokens per case, both solving 12 and 11 of 12 (LI27 review)"
+  },
+  {
+   "id": "H-LI79",
+   "study": "LI28R",
+   "registered": "supported",
+   "review": "docs/reviews/LI28R-REVIEW-2026-11-19.md",
+   "posthoc": "stigwait advantage rests on the one-side tie-break plus the trace on directed checks; chat swaps formats on symmetric checks; there is no polarity arm (LI28R review)"
+  },
+  {
+   "id": "H-LI80",
+   "study": "LI28R",
+   "registered": "supported",
+   "review": "docs/reviews/LI28R-REVIEW-2026-11-19.md",
+   "posthoc": "none solved (threshold 0 and chat 0 of 12), only fewer failing checks than chat; threshold is a coin flip on symmetric checks and sync without a channel on directed ones (LI28R review)"
+  },
+  {
+   "id": "H-LI81",
+   "study": "LI28R",
+   "registered": "supported",
+   "review": "docs/reviews/LI28R-REVIEW-2026-11-19.md",
+   "posthoc": "none solved (inhibit 0 and chat 0 of 12), only fewer failing checks than chat; inhibition hands directed checks to the caller half the time (LI28R review)"
+  },
+  {
+   "id": "H-LI82",
+   "study": "LI28R",
+   "registered": "supported",
+   "review": "docs/reviews/LI28R-REVIEW-2026-11-19.md",
+   "posthoc": "stigwait advantage rests on the one-side tie-break plus the trace on directed checks; there is no polarity arm (LI28R review)"
+  },
+  {
+   "id": "H-LI83",
+   "study": "LI28R",
+   "registered": "supported",
+   "review": "docs/reviews/LI28R-REVIEW-2026-11-19.md",
+   "posthoc": "368k against 928k output tokens per case; partly because stigwait stops spending once it solves (LI28R review)"
+  },
+  {
+   "id": "H-LI84",
+   "study": "LI29",
+   "registered": "inconclusive",
+   "review": "docs/reviews/LI29-REVIEW-2026-11-19.md",
+   "posthoc": "both hold-out losses come from test inputs too weak to catch them (empty tags, triple letters); the only unsolved run is a market stall at the 200-message cap (LI29 review)"
+  },
+  {
+   "id": "H-LI85",
+   "study": "LI29",
+   "registered": "refuted",
+   "review": "docs/reviews/LI29-REVIEW-2026-11-19.md",
+   "posthoc": "not significant (2 to 6, p = 0.29); one field win is a 39-min runtime hang in the market run (LI29 review)"
+  },
+  {
+   "id": "H-LI86",
+   "study": "LI29",
+   "registered": "refuted",
+   "review": "docs/reviews/LI29-REVIEW-2026-11-19.md",
+   "posthoc": "not significant (1 to 7, p = 0.070, Holm 0.14); the field used about 1.5x tokens and cost and more tool calls in 8 of 8 (LI29 review)"
+  },
+  {
+   "id": "H-LI87",
+   "study": "LI30",
+   "registered": "refuted",
+   "review": "docs/reviews/LI30-REVIEW-2026-11-19.md",
+   "posthoc": "manager 4 of 12 is mostly task density (twice the checks per module of LI27-k160), not fairness; low effort made plans worse; managerSlack was never used; stigwait_both swaps formats every wave (LI30 review)"
+  },
+  {
+   "id": "H-LI88",
+   "study": "LI30",
+   "registered": "supported",
+   "review": "docs/reviews/LI30-REVIEW-2026-11-19.md",
+   "posthoc": "close to automatic: without a tie-break both sides swap formats every wave and the check failed after 5,736 of 5,737 double changes (LI30 review)"
+  },
+  {
+   "id": "H-LI89",
+   "study": "LI30",
+   "registered": "supported",
+   "review": "docs/reviews/LI30-REVIEW-2026-11-19.md",
+   "posthoc": "against a handicapped manager: 4 of 12 is mostly task density vs LI27-k160, low effort made plans worse, managerSlack unused; its leftover failures are the same format swap on symmetric checks (LI30 review)"
+  },
+  {
+   "id": "H-LI90",
+   "study": "LI31",
+   "registered": "inconclusive",
+   "review": [
+    "docs/reviews/LI31-REVIEW-2026-11-19.md",
+    "docs/reviews/LI31-REVIEW-LUNA-2026-11-19.md"
+   ],
+   "posthoc": "the metric mostly counted first implementations (313 of 525 events) at file level; with first writes removed claim is lower in 7 of 8 (p = 0.07, exploratory); announcements in 5 of 8 claim teams; the parent named the side to fix in both arms (LI31 reviews)"
+  },
+  {
+   "id": "H-LI91",
+   "study": "LI31",
+   "registered": "inconclusive",
+   "review": [
+    "docs/reviews/LI31-REVIEW-2026-11-19.md",
+    "docs/reviews/LI31-REVIEW-LUNA-2026-11-19.md"
+   ],
+   "posthoc": "near ceiling: claim 8 of 8, nopeer 7 of 8 on fresh inputs; the parent arbitrated in both arms (LI31 reviews)"
+  },
+  {
+   "id": "H-LI92",
+   "study": "LI31",
+   "registered": "inconclusive",
+   "review": [
+    "docs/reviews/LI31-REVIEW-2026-11-19.md",
+    "docs/reviews/LI31-REVIEW-LUNA-2026-11-19.md"
+   ],
+   "posthoc": "5 to 3; one nopeer run capped by a 39-min parent turn; the parent arbitrated in both arms (LI31 reviews)"
+  },
+  {
+   "id": "H-LI93",
+   "study": "LI31",
+   "registered": "inconclusive",
+   "review": [
+    "docs/reviews/LI31-REVIEW-2026-11-19.md",
+    "docs/reviews/LI31-REVIEW-LUNA-2026-11-19.md"
+   ],
+   "posthoc": "claim 8 of 8 against market 4 of 8 on fresh inputs; market's losses are partly weak tests (empty tags), partly unresolved format sniffing and one directed check; does not isolate the announcement (LI31 reviews)"
+  },
+  {
+   "id": "H-LI94",
+   "study": "LI32",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI95",
+   "study": "LI32",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI96",
+   "study": "LI32",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI97",
+   "study": "LI32",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-LI98",
+   "study": "LI33",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI99",
+   "study": "LI33",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI100",
+   "study": "LI33",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-LI101",
+   "study": "LI33",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI102",
+   "study": "LI34",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI103",
+   "study": "LI34",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI104",
+   "study": "LI34",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI105",
+   "study": "LI35",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI106",
+   "study": "LI35",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI107",
+   "study": "LI35",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI108",
+   "study": "LI36",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI109",
+   "study": "LI36",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI110",
+   "study": "LI36",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI111",
+   "study": "LI37",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI112",
+   "study": "LI37",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI113",
+   "study": "LI37",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI114",
+   "study": "LI37",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI115",
+   "study": "LI38",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI116",
+   "study": "LI38",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI117",
+   "study": "LI38",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI118",
+   "study": "LI38",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI119",
+   "study": "LI39",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI120",
+   "study": "LI39",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI121",
+   "study": "LI39",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI122",
+   "study": "LI39",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI123",
+   "study": "LI41",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI124",
+   "study": "LI41",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI125",
+   "study": "LI41",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI126",
+   "study": "LI41",
+   "registered": "supported"
+  },
+  {
+   "id": "H-G23",
+   "study": "GN1",
+   "registered": "supported"
+  },
+  {
+   "id": "H-G24",
+   "study": "GN1",
+   "registered": "supported"
+  },
+  {
+   "id": "H-G25",
+   "study": "GN1",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-G26",
+   "study": "GN1",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-G27",
+   "study": "GN1",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI127",
+   "study": "LI42",
+   "registered": "supported"
+  },
+  {
+   "id": "H-LI128",
+   "study": "LI42",
+   "registered": "refuted"
+  },
+  {
+   "id": "H-LI129",
+   "study": "LI42",
+   "registered": "inconclusive"
+  },
+  {
+   "id": "H-LI130",
+   "study": "LI42",
+   "registered": "supported"
+  }
+ ]
+}

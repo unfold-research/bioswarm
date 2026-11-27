@@ -1,0 +1,32 @@
+{
+  "sync": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "inhibit": {
+    "solvedInRun": 5,
+    "passHoldout": 3,
+    "failing": [
+      "k5s7001 D:M3.traceLabel>M2.stampSlug",
+      "k5s7003 D:M4.stampTerm>M5.foldTitle"
+    ]
+  },
+  "chat": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "routed": {
+    "solvedInRun": 12,
+    "passHoldout": 11,
+    "failing": [
+      "k5s7007 D:M2.scoreNote>M4.gradeSku"
+    ]
+  },
+  "solo": {
+    "solvedInRun": 12,
+    "passHoldout": 12,
+    "failing": []
+  }
+}

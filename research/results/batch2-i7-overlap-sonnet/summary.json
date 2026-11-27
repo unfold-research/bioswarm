@@ -1,0 +1,55 @@
+{
+  "study": "i7-overlap-sonnet",
+  "configHash": "90128aecbcc8fbe0e4aaac4c0e7e0e00f178d3012e73631a2a6062f4d6c5b3d8",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "solo": {
+      "effect": 16,
+      "escalated": 0,
+      "effectOnZero": 6,
+      "casesOnZero": 6,
+      "effectOffZero": 10,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "broad": {
+      "effect": 16,
+      "escalated": 0,
+      "effectOnZero": 6,
+      "casesOnZero": 6,
+      "effectOffZero": 10,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "narrow": {
+      "effect": 9,
+      "escalated": 6,
+      "effectOnZero": 0,
+      "casesOnZero": 6,
+      "effectOffZero": 9,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "disjoint": {
+      "effect": 16,
+      "escalated": 0,
+      "effectOnZero": 6,
+      "casesOnZero": 6,
+      "effectOffZero": 10,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    }
+  },
+  "tests": {
+    "P1": "refuted",
+    "P2": "supported",
+    "P3": "supported",
+    "P4": "supported"
+  },
+  "finishedAt": "2026-11-11T13:09:40.263Z"
+}

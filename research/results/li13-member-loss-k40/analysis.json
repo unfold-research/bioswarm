@@ -1,0 +1,281 @@
+{
+  "arms": {
+    "routed": {
+      "solved": 7,
+      "of": 8,
+      "finalTotal": {
+        "sum": 1,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 1,
+        "symmetric": 0
+      },
+      "meanOut": 188378,
+      "calls": 594,
+      "trunc": 0,
+      "messages": 843,
+      "meanTrajectory": [
+        69.5,
+        26,
+        14.13,
+        6.75,
+        3.25,
+        1.25,
+        0.75,
+        0.25,
+        0.13,
+        0.13,
+        0.13,
+        0.13
+      ]
+    },
+    "manager": {
+      "solved": 7,
+      "of": 8,
+      "finalTotal": {
+        "sum": 1,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 1
+      },
+      "meanOut": 142902,
+      "calls": 431,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        69.5,
+        69.5,
+        34.63,
+        29.75,
+        22.25,
+        16.5,
+        7.63,
+        6,
+        1.88,
+        1.38,
+        0.5,
+        0.13
+      ]
+    },
+    "oracle": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 88135,
+      "calls": 287,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        69.5,
+        12.75,
+        3.25,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "stig": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 138883,
+      "calls": 485,
+      "trunc": 0,
+      "messages": 392,
+      "meanTrajectory": [
+        69.5,
+        22.13,
+        6.75,
+        2.25,
+        0.75,
+        0.5,
+        0.13,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "edgeTests": {
+    "routed_vs_manager_symmetric": {
+      "routedOnly": 1,
+      "managerOnly": 0,
+      "both": 239,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_manager_directed": {
+      "routedOnly": 0,
+      "managerOnly": 1,
+      "both": 315,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_manager_all": {
+      "routedOnly": 1,
+      "managerOnly": 1,
+      "both": 554,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_manager_symmetric": {
+      "stigOnly": 1,
+      "managerOnly": 0,
+      "both": 239,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_manager_directed": {
+      "stigOnly": 0,
+      "managerOnly": 0,
+      "both": 316,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_manager_all": {
+      "stigOnly": 1,
+      "managerOnly": 0,
+      "both": 555,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_oracle_symmetric": {
+      "stigOnly": 0,
+      "oracleOnly": 0,
+      "both": 240,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_oracle_directed": {
+      "stigOnly": 0,
+      "oracleOnly": 0,
+      "both": 316,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_oracle_all": {
+      "stigOnly": 0,
+      "oracleOnly": 0,
+      "both": 556,
+      "neither": 0,
+      "p": 1
+    },
+    "oracle_vs_manager_symmetric": {
+      "oracleOnly": 1,
+      "managerOnly": 0,
+      "both": 239,
+      "neither": 0,
+      "p": 1
+    },
+    "oracle_vs_manager_directed": {
+      "oracleOnly": 0,
+      "managerOnly": 0,
+      "both": 316,
+      "neither": 0,
+      "p": 1
+    },
+    "oracle_vs_manager_all": {
+      "oracleOnly": 1,
+      "managerOnly": 0,
+      "both": 555,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_routed_symmetric": {
+      "stigOnly": 0,
+      "routedOnly": 0,
+      "both": 240,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_routed_directed": {
+      "stigOnly": 1,
+      "routedOnly": 0,
+      "both": 315,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_routed_all": {
+      "stigOnly": 1,
+      "routedOnly": 0,
+      "both": 555,
+      "neither": 0,
+      "p": 1
+    }
+  },
+  "signTests": {
+    "routed_vs_manager": {
+      "lowerIn": 1,
+      "higherIn": 1,
+      "p": 1
+    },
+    "stig_vs_manager": {
+      "lowerIn": 1,
+      "higherIn": 0,
+      "p": 1
+    },
+    "stig_vs_oracle": {
+      "lowerIn": 0,
+      "higherIn": 0,
+      "p": 1
+    },
+    "oracle_vs_manager": {
+      "lowerIn": 1,
+      "higherIn": 0,
+      "p": 1
+    },
+    "stig_vs_routed": {
+      "lowerIn": 1,
+      "higherIn": 0,
+      "p": 1
+    }
+  },
+  "oscillation": {
+    "routed": {
+      "bothSidesChanged": 170,
+      "stillFailingAfter": 12
+    },
+    "manager": {
+      "bothSidesChanged": 179,
+      "stillFailingAfter": 156
+    },
+    "oracle": {
+      "bothSidesChanged": 138,
+      "stillFailingAfter": 6
+    },
+    "stig": {
+      "bothSidesChanged": 147,
+      "stillFailingAfter": 6
+    }
+  },
+  "verdict": {}
+}

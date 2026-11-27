@@ -1,0 +1,26 @@
+{
+  "out": "li12-polarity-trace-k80",
+  "model": "claude-haiku-5-5",
+  "k": 80,
+  "cases": 8,
+  "seed0": 12800,
+  "shape": {
+    "local": 2,
+    "directed": 80,
+    "symmetric": 60,
+    "tests": 8,
+    "shown": 3
+  },
+  "memberMax": 8000,
+  "managerMax": 32000,
+  "effort": null,
+  "rounds": 8,
+  "strictFeedback": true,
+  "arms": [
+    "routed",
+    "manager",
+    "polarity",
+    "oracle",
+    "stig"
+  ]
+}

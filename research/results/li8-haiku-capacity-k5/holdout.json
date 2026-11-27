@@ -1,0 +1,27 @@
+{
+  "sync": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "inhibit": {
+    "solvedInRun": 6,
+    "passHoldout": 6,
+    "failing": []
+  },
+  "chat": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "routed": {
+    "solvedInRun": 10,
+    "passHoldout": 10,
+    "failing": []
+  },
+  "solo": {
+    "solvedInRun": 10,
+    "passHoldout": 10,
+    "failing": []
+  }
+}

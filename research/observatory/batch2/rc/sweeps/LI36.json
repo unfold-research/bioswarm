@@ -1,0 +1,52 @@
+{
+ "id": "LI36",
+ "prereg": "tasks/LI36-MANAGER-ROUNDS-PREREG.md",
+ "base": {
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 96000,
+  "rounds": 12,
+  "strictFeedback": true,
+  "managerSlack": true
+ },
+ "sizes": [
+  {
+   "k": 120,
+   "seed0": 36200,
+   "cases": 12,
+   "cap": 16,
+   "directed": 240,
+   "symmetric": 80,
+   "tests": 16
+  }
+ ],
+ "arms": [
+  "stigwait",
+  "manager"
+ ],
+ "hypotheses": [
+  {
+   "id": "H-LI108",
+   "primary": true,
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "final",
+   "title": "With twelve act rounds for both arms at 120 modules, waiting for the trace still ends with fewer failing checks than a manager"
+  },
+  {
+   "id": "H-LI109",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "holdoutFailing",
+   "title": "With twelve act rounds, waiting for the trace leaves fewer checks failing on fresh inputs than a manager"
+  },
+  {
+   "id": "H-LI110",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "tokens",
+   "title": "With twelve act rounds, waiting for the trace uses fewer tokens per case than a manager"
+  }
+ ]
+}

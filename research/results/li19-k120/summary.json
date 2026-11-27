@@ -1,0 +1,22 @@
+{
+  "configHash": "bb0d45983976f4d53825f4d48d1761c5b96c8b354c9cb10724d99c2fe28d51d6",
+  "finishedAt": "2026-11-18T04:07:11.738Z",
+  "arms": {
+    "stigwait": {
+      "solved": 8,
+      "of": 8
+    },
+    "manager": {
+      "solved": 0,
+      "of": 8
+    },
+    "routed": {
+      "solved": 7,
+      "of": 8
+    },
+    "oracle": {
+      "solved": 8,
+      "of": 8
+    }
+  }
+}

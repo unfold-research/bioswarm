@@ -1,0 +1,25 @@
+{
+  "out": "li7-pilot",
+  "model": "claude-sonnet-5-5",
+  "k": 5,
+  "cases": 2,
+  "seed0": 7900,
+  "shape": {
+    "local": 2,
+    "directed": 5,
+    "symmetric": 4,
+    "tests": 6,
+    "shown": 3
+  },
+  "memberMax": 5000,
+  "soloMax": 16000,
+  "effort": "low",
+  "rounds": 2,
+  "arms": [
+    "sync",
+    "inhibit",
+    "chat",
+    "routed",
+    "solo"
+  ]
+}

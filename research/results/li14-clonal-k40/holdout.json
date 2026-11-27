@@ -1,0 +1,65 @@
+{
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 2,
+    "failing": [
+      "k40s14401 D:M16.shapeTitle>M8.scanCode",
+      "k40s14401 D:M14.scanSeed>M10.gaugeRef",
+      "k40s14402 D:M19.brandRef>M3.tuneSlug",
+      "k40s14402 D:M12.scoreHandle>M26.stampSlug",
+      "k40s14403 D:M29.brandWord>M13.tuneSeed",
+      "k40s14404 D:M37.gradeKey>M26.gradeCode",
+      "k40s14406 D:M7.stampSku>M32.brandWord",
+      "k40s14407 D:M18.weighLabel>M36.weighSku"
+    ],
+    "perCase": {
+      "k40s14400": 0,
+      "k40s14401": 2,
+      "k40s14402": 2,
+      "k40s14403": 1,
+      "k40s14404": 1,
+      "k40s14405": 0,
+      "k40s14406": 1,
+      "k40s14407": 1
+    }
+  },
+  "clonal": {
+    "solvedInRun": 8,
+    "passHoldout": 2,
+    "failing": [
+      "k40s14401 D:M14.scanSeed>M10.gaugeRef",
+      "k40s14402 D:M12.scanCode>M38.labelNote",
+      "k40s14402 D:M19.brandRef>M3.tuneSlug",
+      "k40s14402 D:M12.scoreHandle>M26.stampSlug",
+      "k40s14403 D:M29.brandWord>M13.tuneSeed",
+      "k40s14404 D:M37.gradeKey>M26.gradeCode",
+      "k40s14406 D:M7.stampSku>M32.brandWord",
+      "k40s14407 D:M18.weighLabel>M36.weighSku"
+    ],
+    "perCase": {
+      "k40s14400": 0,
+      "k40s14401": 1,
+      "k40s14402": 3,
+      "k40s14403": 1,
+      "k40s14404": 1,
+      "k40s14405": 0,
+      "k40s14406": 1,
+      "k40s14407": 1
+    }
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s14400": 0,
+      "k40s14401": 0,
+      "k40s14402": 0,
+      "k40s14403": 0,
+      "k40s14404": 0,
+      "k40s14405": 0,
+      "k40s14406": 0,
+      "k40s14407": 0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# BSH1 · Hermes connector acceptance pilot
+
+Registered before paid traffic. The owner authorized [US$ redacted] total, including incidents, and appointed the operator acting Research Leader for this pilot in parallel with the regular Leader on 2026-11-24. The protocol is approved in that capacity.
+
+Use the merged connector from f756031 on benchhost, Hermes 2bd378ed, OpenAI gpt-6-luna via the internal LiteLLM gateway, flex, up to 512 completion tokens per turn. Fixed Brazilian freight case: seven volumes at 375 cents each. Expected invoice: 2625 cents. Manager first (dispatch, manager, invoice), then stigwait (dispatch, invoice). No tools. No model fallback. Never retry an upstream request. Stop on a transport failure or missing accounting and retain the uncertain reserve. Count a wrong invoice as a task failure. Never use this single familiar case for a comparative efficacy claim.
+
+Reserve [US$ redacted] once under bsh1-hermes before sending. Cap outbound requests at five and bound each input body to 64 KiB. Record request time, requested and returned model and tier, cache and output usage, per-arm exact match and wall time including harness startup. Return null for metadata absent from the response. Charge measured usage for completed replies and retain reservations for uncertain calls. Export raw records privately to R2 and publish only the manifest and aggregate results inside the lab. The engineering gate is a complete auditable pair within cap. The research endpoints are descriptive only.
+
+## Recovery run BSH1-R1 (registered before new calls)
+
+The internal gateway logged an OpenAI InternalServerError for the invoice at 14:37:56 UTC and a provider request ID. The owner authorized continuation; the acting Leader approves a fresh paired run using the original unused reservation, still capped at [US$ redacted] across both runs. Preserve the stopped original. Hold [US$ redacted] for the uncertain request (the original payload limit was 64 KiB and completions were capped at 512). Record this as a conservative allowance separate from estimated delivered usage.
+
+Run the original manager-first case from the start, without reusing any answers. For each of five logical turns, retry identical bytes on HTTP 408/429/500/502/503/504 up to two times, with backoff. Cap the entire recovery at fifteen HTTP attempts. Bound request bodies to 64 KiB and output to 512 tokens: even fifteen allowances of [US$ redacted] each fit inside the shared cap. Retain time spent retrying in end-to-end latency. Preserve each attempt and distinguish provider usage from unpriced errors. Score each invoice independently and report the relative measurements only for this case. This amendment applies only to R1.

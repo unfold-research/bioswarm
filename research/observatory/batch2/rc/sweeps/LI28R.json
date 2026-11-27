@@ -1,0 +1,68 @@
+{
+ "id": "LI28R",
+ "prereg": "tasks/LI28R-NATURE-BREADTH-RERUN-PREREG.md",
+ "base": {
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 48000,
+  "rounds": 6,
+  "strictFeedback": true
+ },
+ "sizes": [
+  {
+   "k": 80,
+   "seed0": 28900,
+   "cases": 12,
+   "cap": 16,
+   "directed": 160,
+   "symmetric": 80,
+   "tests": 16
+  }
+ ],
+ "arms": [
+  "stigwait",
+  "chat",
+  "threshold",
+  "inhibit",
+  "sync"
+ ],
+ "hypotheses": [
+  {
+   "id": "H-LI79",
+   "primary": true,
+   "a": "stigwait",
+   "b": "chat",
+   "metric": "final",
+   "title": "On harder tasks, waiting for the trace ends with fewer failing checks than a leaderless group chat"
+  },
+  {
+   "id": "H-LI80",
+   "a": "threshold",
+   "b": "chat",
+   "metric": "final",
+   "title": "On harder tasks, response thresholds end with fewer failing checks than a group chat"
+  },
+  {
+   "id": "H-LI81",
+   "a": "inhibit",
+   "b": "chat",
+   "metric": "final",
+   "title": "On harder tasks, lateral inhibition ends with fewer failing checks than a group chat"
+  },
+  {
+   "id": "H-LI82",
+   "a": "stigwait",
+   "b": "threshold",
+   "metric": "final",
+   "title": "On harder tasks, waiting for the trace ends with fewer failing checks than response thresholds"
+  },
+  {
+   "id": "H-LI83",
+   "a": "stigwait",
+   "b": "chat",
+   "metric": "tokens",
+   "title": "On harder tasks, waiting for the trace uses fewer tokens than a group chat"
+  }
+ ]
+}

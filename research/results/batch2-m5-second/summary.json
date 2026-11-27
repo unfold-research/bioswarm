@@ -1,0 +1,92 @@
+{
+  "study": "m5-second",
+  "configHash": "36d63f2ac75e21b35b60b2b212f888bb076fdc17358e38a7a5d0fab21118a3af",
+  "status": "complete",
+  "wavesRun": 2,
+  "byLevel": {
+    "12": {
+      "single": 0.7666666666666667,
+      "same": 0.7666666666666667,
+      "r1": 0.8,
+      "r2": 0.6666666666666666,
+      "retrySame": 0.7666666666666667,
+      "retryReword": 0.7666666666666667,
+      "retryTold": 0.7333333333333333,
+      "voteDiverse3": 0.7666666666666667,
+      "accepted": 0.8333333333333334
+    },
+    "24": {
+      "single": 0.6,
+      "same": 0.6,
+      "r1": 0.5,
+      "r2": 0.26666666666666666,
+      "retrySame": 0.6,
+      "retryReword": 0.5,
+      "retryTold": 0.36666666666666664,
+      "voteDiverse3": 0.6,
+      "accepted": 0.4666666666666667
+    },
+    "48": {
+      "single": 0.06666666666666667,
+      "same": 0.06666666666666667,
+      "r1": 0.2,
+      "r2": 0.06666666666666667,
+      "retrySame": 0.06666666666666667,
+      "retryReword": 0.13333333333333333,
+      "retryTold": 0.1,
+      "voteDiverse3": 0.1,
+      "accepted": 0.13333333333333333
+    }
+  },
+  "analysisLevels": [
+    12,
+    24
+  ],
+  "pooled": {
+    "tasks": 60,
+    "single": 0.6833333333333333,
+    "same": 0.6833333333333333,
+    "r1": 0.65,
+    "r2": 0.4666666666666667,
+    "retrySame": 0.6833333333333333,
+    "retryReword": 0.6333333333333333,
+    "retryTold": 0.55,
+    "voteDiverse3": 0.6833333333333333,
+    "accepted": 0.65
+  },
+  "retryRewordMinusRetrySame": {
+    "diff": -0.05,
+    "ci95": [
+      -0.15,
+      0.05
+    ]
+  },
+  "retryToldMinusRetrySame": {
+    "diff": -0.13333333333333333,
+    "ci95": [
+      -0.26666666666666666,
+      -0.016666666666666666
+    ]
+  },
+  "voteDiverse3MinusSingle": {
+    "diff": 0,
+    "ci95": [
+      -0.06666666666666667,
+      0.06666666666666667
+    ]
+  },
+  "verifier": {
+    "specificity": 0.6744186046511628,
+    "correctAnswers": 43,
+    "sensitivity": 0.6956521739130435,
+    "wrongAnswers": 46
+  },
+  "toldRepeatedRejected": 3,
+  "told": 89,
+  "tests": {
+    "P1": "not supported",
+    "P2": "refuted",
+    "P3": "not supported"
+  },
+  "finishedAt": "2026-11-11T13:13:47.881Z"
+}

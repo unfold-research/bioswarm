@@ -1,0 +1,57 @@
+{
+  "stigwait": {
+    "solvedInRun": 7,
+    "passHoldout": 7,
+    "failing": [],
+    "perCase": {
+      "k80s23800": 0,
+      "k80s23801": 1,
+      "k80s23802": 0,
+      "k80s23803": 0,
+      "k80s23804": 0,
+      "k80s23805": 0,
+      "k80s23806": 0,
+      "k80s23807": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": [],
+    "perCase": {
+      "k80s23800": 4,
+      "k80s23801": 10,
+      "k80s23802": 15,
+      "k80s23803": 24,
+      "k80s23804": 3,
+      "k80s23805": 22,
+      "k80s23806": 3,
+      "k80s23807": 19
+    }
+  },
+  "routed": {
+    "solvedInRun": 6,
+    "passHoldout": 2,
+    "failing": [
+      "k80s23801 D:M9.scanHint>M63.gaugeSeed",
+      "k80s23801 D:M70.gradeTitle>M3.siftRef",
+      "k80s23801 D:M49.traceTitle>M53.labelSlug",
+      "k80s23801 D:M2.rankHint>M74.mintToken",
+      "k80s23803 D:M44.scoreKey>M43.packTitle",
+      "k80s23805 D:M65.siftKey>M71.tallyNote",
+      "k80s23807 D:M70.tuneLabel>M9.siftWord",
+      "k80s23807 D:M15.stampSlug>M9.siftToken",
+      "k80s23807 D:M18.weighKey>M55.tagToken"
+    ],
+    "perCase": {
+      "k80s23800": 0,
+      "k80s23801": 4,
+      "k80s23802": 0,
+      "k80s23803": 1,
+      "k80s23804": 3,
+      "k80s23805": 1,
+      "k80s23806": 3,
+      "k80s23807": 3
+    }
+  }
+}

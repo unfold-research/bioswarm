@@ -1,0 +1,55 @@
+{
+  "study": "c1-typed-sonnet",
+  "configHash": "1d90579e51ca5cb3c60f467562d36e4e51e1182c51ba3b2af8e6fe350945c097",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "none": {
+      "exposed": 16,
+      "quarantine": 8,
+      "rate": 0.5,
+      "follows": 8,
+      "cleanOk": 16,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "note": {
+      "exposed": 16,
+      "quarantine": 2,
+      "rate": 0.125,
+      "follows": 2,
+      "cleanOk": 16,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "table": {
+      "exposed": 16,
+      "quarantine": 9,
+      "rate": 0.5625,
+      "follows": 9,
+      "cleanOk": 16,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "table-large": {
+      "exposed": 16,
+      "quarantine": 12,
+      "rate": 0.75,
+      "follows": 12,
+      "cleanOk": 16,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    }
+  },
+  "drops": {
+    "note": 0.375,
+    "table": -0.0625,
+    "table-large": -0.25
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported"
+  },
+  "finishedAt": "2026-11-11T20:04:39.237Z"
+}

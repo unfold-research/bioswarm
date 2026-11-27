@@ -1,0 +1,133 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 7,
+      "of": 8,
+      "finalTotal": {
+        "sum": 1,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 1
+      },
+      "meanOut": 260996,
+      "calls": 1331,
+      "trunc": 0,
+      "messages": 1273,
+      "meanTrajectory": [
+        139.25,
+        92.75,
+        42,
+        16.38,
+        6.25,
+        2,
+        0.88,
+        0.38,
+        0.13
+      ]
+    },
+    "manager": {
+      "solved": 0,
+      "of": 8,
+      "finalTotal": {
+        "sum": 100,
+        "median": 12.5
+      },
+      "finalByKind": {
+        "local": 6,
+        "directed": 13,
+        "symmetric": 81
+      },
+      "meanOut": 319804,
+      "calls": 759,
+      "trunc": 11,
+      "messages": 0,
+      "meanTrajectory": [
+        139.25,
+        139.25,
+        118.5,
+        106.88,
+        87.63,
+        73.13,
+        33.13,
+        26,
+        12.5
+      ]
+    },
+    "routed": {
+      "solved": 6,
+      "of": 8,
+      "finalTotal": {
+        "sum": 4,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 1,
+        "symmetric": 3
+      },
+      "meanOut": 387258,
+      "calls": 1249,
+      "trunc": 0,
+      "messages": 1747,
+      "meanTrajectory": [
+        139.25,
+        56.75,
+        33.63,
+        15.25,
+        7.38,
+        2.88,
+        2,
+        0.63,
+        0.5
+      ]
+    }
+  },
+  "edgeTests": {
+    "routed_vs_manager_symmetric": {
+      "routedOnly": 81,
+      "managerOnly": 3,
+      "both": 385,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_manager_directed": {
+      "routedOnly": 19,
+      "managerOnly": 1,
+      "both": 613,
+      "neither": 0,
+      "p": 4e-05
+    },
+    "routed_vs_manager_all": {
+      "routedOnly": 100,
+      "managerOnly": 4,
+      "both": 998,
+      "neither": 0,
+      "p": 0
+    }
+  },
+  "signTests": {
+    "routed_vs_manager": {
+      "lowerIn": 8,
+      "higherIn": 0,
+      "p": 0.00781
+    }
+  },
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 164,
+      "stillFailingAfter": 1
+    },
+    "manager": {
+      "bothSidesChanged": 366,
+      "stillFailingAfter": 333
+    },
+    "routed": {
+      "bothSidesChanged": 333,
+      "stillFailingAfter": 28
+    }
+  },
+  "verdict": {}
+}

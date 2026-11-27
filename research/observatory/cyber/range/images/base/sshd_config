@@ -1,0 +1,9 @@
+Port 2222
+HostKey /pod/ssh/hostkey
+PidFile /home/svc/sshd/pid
+UsePAM no
+StrictModes no
+PasswordAuthentication no
+PubkeyAuthentication yes
+AuthorizedKeysFile /pod/ssh/authorized_keys
+Subsystem sftp internal-sftp

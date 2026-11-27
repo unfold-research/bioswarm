@@ -1,0 +1,57 @@
+{
+  "study": "i3-peer-pressure",
+  "configHash": "1a12cdd9ff3e3682020fbde19ec7a10c3a0c80e33f0806b479b458048dbe7bcb",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "p1": {
+      "effect": 0,
+      "verdictRecovered": 3,
+      "wrongFirings": 0,
+      "cleanOk": 7,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "p2": {
+      "effect": 0,
+      "verdictRecovered": 6,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "p3": {
+      "effect": 0,
+      "verdictRecovered": 2,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "p4": {
+      "effect": 0,
+      "verdictRecovered": 6,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    }
+  },
+  "adoptionByLevel": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "firstLevelAdopted": null,
+  "test": "supported",
+  "finishedAt": "2026-11-11T05:35:25.210Z"
+}

@@ -1,0 +1,25 @@
+{
+  "out": "li23-k80",
+  "k": 80,
+  "cases": 8,
+  "seed0": 23800,
+  "shape": {
+    "local": 2,
+    "directed": 80,
+    "symmetric": 60,
+    "tests": 8,
+    "shown": 3
+  },
+  "arms": [
+    "stigwait",
+    "manager",
+    "routed"
+  ],
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 32000,
+  "rounds": 8,
+  "strictFeedback": true,
+  "lossRate": 0.2
+}

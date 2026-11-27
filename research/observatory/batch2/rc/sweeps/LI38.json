@@ -1,0 +1,62 @@
+{
+ "id": "LI38",
+ "prereg": "tasks/LI38-LATENCY-SCALE-PREREG.md",
+ "base": {
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 128000,
+  "rounds": 12,
+  "strictFeedback": true,
+  "managerSlack": true
+ },
+ "sizes": [
+  {
+   "k": 160,
+   "seed0": 38400,
+   "cases": 12,
+   "cap": 14,
+   "directed": 320,
+   "symmetric": 80,
+   "tests": 16
+  }
+ ],
+ "arms": [
+  "stigwait",
+  "manager"
+ ],
+ "hypotheses": [
+  {
+   "id": "H-LI115",
+   "primary": true,
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "wavesToSolve",
+   "title": "At 160 modules with twelve act rounds each, waiting for the trace reaches zero failing checks in fewer waves than a manager"
+  },
+  {
+   "id": "H-LI116",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "final",
+   "title": "At 160 modules with twelve act rounds each, waiting for the trace ends with fewer failing checks than a manager"
+  },
+  {
+   "id": "H-LI117",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "holdoutFailing",
+   "title": "At 160 modules with twelve act rounds each, waiting for the trace leaves fewer checks failing on fresh inputs than a manager"
+  },
+  {
+   "id": "H-LI118",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "tokens",
+   "title": "At 160 modules with twelve act rounds each, waiting for the trace uses fewer output tokens per case than a manager"
+  }
+ ],
+ "bench": {
+  "reportNote": "160 modules is not a new size: it is the largest size already tested in LI26, LI27 and LI33. What changes from those studies is LI36's directed-edge density (320 directed and 80 symmetric edges) and the 12 act rounds per arm."
+ }
+}

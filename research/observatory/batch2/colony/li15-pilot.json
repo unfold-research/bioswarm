@@ -1,0 +1,2 @@
+{ "out": "li15-colony-pilot", "k": 12, "seed0": 15900, "cases": 1, "arms": ["market", "field"], "model": "openai-codex/gpt-6-luna",
+  "shape": { "local": 2, "directed": 12, "symmetric": 10, "tests": 8, "shown": 3 }, "capMinutes": 40, "quietMs": 120000, "parallel": 2, "permission": "standard", "removeAfter": false }

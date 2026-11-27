@@ -1,0 +1,4001 @@
+{
+  "configHash": "8d9007a6cfbf354bb2cb418495a0600661f1d7a0eb43c7e36fbda5842f4465fc",
+  "batchId": "msgbatch_01ERqdXfUM6Yq8wyMqvDdGLA",
+  "gate": "diagnostic-only",
+  "caseClusters": 24,
+  "modelResponses": 48,
+  "byFormat": {
+    "TEXT": {
+      "outputs": 24,
+      "valid": 24,
+      "exactClaims": 24,
+      "citationSupported": 24,
+      "evidenceDecisionCorrect": 23,
+      "hiddenTruthCorrect": 11,
+      "falseCertainty": 0,
+      "exactAttribution": 24
+    },
+    "STRUCTURED": {
+      "outputs": 24,
+      "valid": 24,
+      "exactClaims": 24,
+      "citationSupported": 24,
+      "evidenceDecisionCorrect": 24,
+      "hiddenTruthCorrect": 12,
+      "falseCertainty": 0,
+      "exactAttribution": 24
+    },
+    "DETERMINISTIC": {
+      "outputs": 24,
+      "valid": 24,
+      "exactClaims": 24,
+      "citationSupported": 24,
+      "evidenceDecisionCorrect": 24,
+      "hiddenTruthCorrect": 12,
+      "falseCertainty": 0,
+      "exactAttribution": 24
+    }
+  },
+  "perArchetype": {
+    "0": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    },
+    "1": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    },
+    "2": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 2,
+        "hiddenTruthCorrect": 2,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    },
+    "3": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    },
+    "4": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    },
+    "5": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    },
+    "6": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 3,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    },
+    "7": {
+      "TEXT": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "STRUCTURED": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      },
+      "DETERMINISTIC": {
+        "outputs": 3,
+        "valid": 3,
+        "exactClaims": 3,
+        "citationSupported": 3,
+        "evidenceDecisionCorrect": 3,
+        "hiddenTruthCorrect": 0,
+        "falseCertainty": 0,
+        "exactAttribution": 3
+      }
+    }
+  },
+  "pairedCaseResults": [
+    {
+      "caseId": "case-1001",
+      "seed": 1001,
+      "archetype": 0,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1001",
+      "seed": 1001,
+      "archetype": 0,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1002",
+      "seed": 1002,
+      "archetype": 0,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1002",
+      "seed": 1002,
+      "archetype": 0,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1003",
+      "seed": 1003,
+      "archetype": 0,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1003",
+      "seed": 1003,
+      "archetype": 0,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1004",
+      "seed": 1004,
+      "archetype": 1,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1004",
+      "seed": 1004,
+      "archetype": 1,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1005",
+      "seed": 1005,
+      "archetype": 1,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1005",
+      "seed": 1005,
+      "archetype": 1,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1006",
+      "seed": 1006,
+      "archetype": 1,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1006",
+      "seed": 1006,
+      "archetype": 1,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "malicious",
+        "expectedEvidenceVerdict": "malicious",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1007",
+      "seed": 1007,
+      "archetype": 2,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1007",
+      "seed": 1007,
+      "archetype": 2,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1008",
+      "seed": 1008,
+      "archetype": 2,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": false,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1008",
+      "seed": 1008,
+      "archetype": 2,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1009",
+      "seed": 1009,
+      "archetype": 2,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1009",
+      "seed": 1009,
+      "archetype": 2,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1010",
+      "seed": 1010,
+      "archetype": 3,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1010",
+      "seed": 1010,
+      "archetype": 3,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1011",
+      "seed": 1011,
+      "archetype": 3,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1011",
+      "seed": 1011,
+      "archetype": 3,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1012",
+      "seed": 1012,
+      "archetype": 3,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1012",
+      "seed": 1012,
+      "archetype": 3,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 2,
+        "expectedClaims": 2,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "missing",
+            "values": []
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1013",
+      "seed": 1013,
+      "archetype": 4,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1013",
+      "seed": 1013,
+      "archetype": 4,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1014",
+      "seed": 1014,
+      "archetype": 4,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1014",
+      "seed": 1014,
+      "archetype": 4,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1015",
+      "seed": 1015,
+      "archetype": 4,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1015",
+      "seed": 1015,
+      "archetype": 4,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1016",
+      "seed": 1016,
+      "archetype": 5,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1016",
+      "seed": 1016,
+      "archetype": 5,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1017",
+      "seed": 1017,
+      "archetype": 5,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1017",
+      "seed": 1017,
+      "archetype": 5,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1018",
+      "seed": 1018,
+      "archetype": 5,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1018",
+      "seed": 1018,
+      "archetype": 5,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 4,
+        "expectedClaims": 4,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1019",
+      "seed": 1019,
+      "archetype": 6,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1019",
+      "seed": 1019,
+      "archetype": 6,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1020",
+      "seed": 1020,
+      "archetype": 6,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1020",
+      "seed": 1020,
+      "archetype": 6,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1021",
+      "seed": 1021,
+      "archetype": 6,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1021",
+      "seed": 1021,
+      "archetype": 6,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "benign",
+        "expectedEvidenceVerdict": "benign",
+        "verdictCorrect": true,
+        "truthCorrect": true,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 3,
+        "expectedClaims": 3,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              0
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1022",
+      "seed": 1022,
+      "archetype": 7,
+      "repeat": 0,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1022",
+      "seed": 1022,
+      "archetype": 7,
+      "repeat": 0,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1023",
+      "seed": 1023,
+      "archetype": 7,
+      "repeat": 1,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1023",
+      "seed": 1023,
+      "archetype": 7,
+      "repeat": 1,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1024",
+      "seed": 1024,
+      "archetype": 7,
+      "repeat": 2,
+      "format": "TEXT",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    },
+    {
+      "caseId": "case-1024",
+      "seed": 1024,
+      "archetype": 7,
+      "repeat": 2,
+      "format": "STRUCTURED",
+      "deterministic": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "model": {
+        "valid": true,
+        "verdict": "unsure",
+        "expectedEvidenceVerdict": "unsure",
+        "verdictCorrect": true,
+        "truthCorrect": false,
+        "completeClaims": true,
+        "allCitationsSupported": true,
+        "exactClaims": true,
+        "emittedClaims": 5,
+        "expectedClaims": 5,
+        "unsupportedOrMisattachedCitations": 0,
+        "missingOrExtraClaims": false,
+        "indicatorStates": [
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "conflict",
+            "values": [
+              0,
+              1
+            ]
+          },
+          {
+            "state": "unanimous",
+            "values": [
+              1
+            ]
+          }
+        ]
+      },
+      "resultType": "succeeded",
+      "stopReason": "end_turn"
+    }
+  ],
+  "limits": [
+    "24 case clusters across eight authored archetypes are an instrument screen, not a powered or diverse benchmark.",
+    "The deterministic aggregator uses only supplied records and does not know hidden truth or source reliability.",
+    "This one-step input-format test does not measure contamination, propagation, defence efficacy, topology, or production transfer.",
+    "List-price estimate from returned token usage; it is not an invoice and the model alias does not freeze provider weights."
+  ]
+}

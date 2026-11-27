@@ -1,0 +1,51 @@
+{
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 7,
+    "failing": [
+      "k80s18806 D:M6.markSku>M62.gradeHandle"
+    ],
+    "perCase": {
+      "k80s18800": 0,
+      "k80s18801": 0,
+      "k80s18802": 0,
+      "k80s18803": 0,
+      "k80s18804": 0,
+      "k80s18805": 0,
+      "k80s18806": 1,
+      "k80s18807": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k80s18800": 0,
+      "k80s18801": 0,
+      "k80s18802": 0,
+      "k80s18803": 0,
+      "k80s18804": 0,
+      "k80s18805": 0,
+      "k80s18806": 0,
+      "k80s18807": 0
+    }
+  },
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 7,
+    "failing": [
+      "k80s18806 D:M16.weighToken>M53.shapeAlias"
+    ],
+    "perCase": {
+      "k80s18800": 0,
+      "k80s18801": 0,
+      "k80s18802": 0,
+      "k80s18803": 0,
+      "k80s18804": 0,
+      "k80s18805": 0,
+      "k80s18806": 1,
+      "k80s18807": 0
+    }
+  }
+}

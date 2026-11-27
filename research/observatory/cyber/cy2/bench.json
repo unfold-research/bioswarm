@@ -1,0 +1,52 @@
+{
+  "study": "CY2",
+  "kind": "script",
+  "prereg": "tasks/CY2-PREREG.md",
+  "out": "results/cy2",
+  "run": "observatory/cyber/cy2/drive.mjs",
+  "analyze": "observatory/cyber/cy2/analyze2.mjs",
+  "episodes": "results/cy2/episodes",
+  "expected": 240,
+  "paid": true,
+  "waveMax": 30,
+  "workers": 3,
+  "image": "cage4:8c3c50c",
+  "arms": [
+    "code-react",
+    "code-cd10",
+    "llm-plain",
+    "llm-doctrine"
+  ],
+  "paidArms": [
+    "llm-plain",
+    "llm-doctrine"
+  ],
+  "reds": [
+    "fsm",
+    "discovery"
+  ],
+  "seeds": [
+    74001,
+    74030
+  ],
+  "pilot": {
+    "arms": [
+      "llm-plain",
+      "llm-doctrine"
+    ],
+    "red": "fsm",
+    "seeds": [
+      74101,
+      74102
+    ],
+    "minValid": 0.95,
+    "name": "pilot2",
+    "dir": "pilot2"
+  },
+  "review": [
+    "observatory/cyber/cy2",
+    "observatory/cyber/cy1b",
+    "results/cy1b/REPORT.md"
+  ],
+  "notes": "reds: fsm = FiniteStateRedAgent, discovery = DiscoveryFSRed. Owner approval of 2026-11-20: hard cap [US$ redacted] Pilot 1 (results/cy2/pilot, ledger cy2-pilot) failed on the instrument; pilot 2 approved by the owner on 2026-11-20 (prereg amendment)."
+}

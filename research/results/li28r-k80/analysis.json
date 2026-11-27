@@ -1,0 +1,243 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 12,
+      "of": 12,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 368277,
+      "calls": 2123,
+      "trunc": 0,
+      "messages": 3801,
+      "meanTrajectory": [
+        239.25,
+        159.5,
+        27.83,
+        0.92,
+        0.08,
+        0,
+        0
+      ]
+    },
+    "chat": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 942,
+        "median": 79
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 1,
+        "symmetric": 941
+      },
+      "meanOut": 928014,
+      "calls": 5245,
+      "trunc": 14,
+      "messages": 5894,
+      "meanTrajectory": [
+        239.25,
+        139.17,
+        91.83,
+        80.75,
+        78.67,
+        78.33,
+        78.5
+      ]
+    },
+    "threshold": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 275,
+        "median": 20.5
+      },
+      "finalByKind": {
+        "local": 60,
+        "directed": 96,
+        "symmetric": 119
+      },
+      "meanOut": 801617,
+      "calls": 3687,
+      "trunc": 22,
+      "messages": 0,
+      "meanTrajectory": [
+        239.25,
+        118,
+        73.33,
+        49.08,
+        34.67,
+        26.42,
+        22.92
+      ]
+    },
+    "inhibit": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 439,
+        "median": 35.5
+      },
+      "finalByKind": {
+        "local": 76,
+        "directed": 301,
+        "symmetric": 62
+      },
+      "meanOut": 678428,
+      "calls": 3343,
+      "trunc": 10,
+      "messages": 0,
+      "meanTrajectory": [
+        239.25,
+        105.25,
+        99.5,
+        69,
+        55.17,
+        42.75,
+        36.58
+      ]
+    },
+    "sync": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 1089,
+        "median": 91
+      },
+      "finalByKind": {
+        "local": 51,
+        "directed": 104,
+        "symmetric": 934
+      },
+      "meanOut": 1023576,
+      "calls": 5404,
+      "trunc": 18,
+      "messages": 0,
+      "meanTrajectory": [
+        239.25,
+        151.08,
+        116.83,
+        103.33,
+        95.92,
+        93.5,
+        90.75
+      ]
+    }
+  },
+  "edgeTests": {
+    "inhibit_vs_sync_symmetric": {
+      "inhibitOnly": 871,
+      "syncOnly": 0,
+      "both": 24,
+      "neither": 63,
+      "p": 0
+    },
+    "inhibit_vs_sync_directed": {
+      "inhibitOnly": 59,
+      "syncOnly": 278,
+      "both": 1471,
+      "neither": 96,
+      "p": 0
+    },
+    "inhibit_vs_sync_all": {
+      "inhibitOnly": 930,
+      "syncOnly": 278,
+      "both": 1495,
+      "neither": 159,
+      "p": 0
+    },
+    "chat_vs_sync_symmetric": {
+      "chatOnly": 12,
+      "syncOnly": 19,
+      "both": 5,
+      "neither": 922,
+      "p": 0.28104
+    },
+    "chat_vs_sync_directed": {
+      "chatOnly": 155,
+      "syncOnly": 1,
+      "both": 1748,
+      "neither": 0,
+      "p": 0
+    },
+    "chat_vs_sync_all": {
+      "chatOnly": 167,
+      "syncOnly": 20,
+      "both": 1753,
+      "neither": 922,
+      "p": 0
+    },
+    "inhibit_vs_chat_symmetric": {
+      "inhibitOnly": 879,
+      "chatOnly": 1,
+      "both": 16,
+      "neither": 62,
+      "p": 0
+    },
+    "inhibit_vs_chat_directed": {
+      "inhibitOnly": 0,
+      "chatOnly": 373,
+      "both": 1530,
+      "neither": 1,
+      "p": 0
+    },
+    "inhibit_vs_chat_all": {
+      "inhibitOnly": 879,
+      "chatOnly": 374,
+      "both": 1546,
+      "neither": 63,
+      "p": null
+    }
+  },
+  "signTests": {
+    "inhibit_vs_sync": {
+      "lowerIn": 12,
+      "higherIn": 0,
+      "p": 0.00049
+    },
+    "chat_vs_sync": {
+      "lowerIn": 12,
+      "higherIn": 0,
+      "p": 0.00049
+    },
+    "inhibit_vs_chat": {
+      "lowerIn": 12,
+      "higherIn": 0,
+      "p": 0.00049
+    }
+  },
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 492,
+      "stillFailingAfter": 9
+    },
+    "chat": {
+      "bothSidesChanged": 5583,
+      "stillFailingAfter": 5580
+    },
+    "threshold": {
+      "bothSidesChanged": 1971,
+      "stillFailingAfter": 1087
+    },
+    "inhibit": {
+      "bothSidesChanged": 997,
+      "stillFailingAfter": 17
+    },
+    "sync": {
+      "bothSidesChanged": 5580,
+      "stillFailingAfter": 5575
+    }
+  },
+  "verdict": {
+    "H-LI17 inhibit resolves more symmetric edges than sync": "supported",
+    "H-LI18 chat resolves more directed edges than sync": "supported",
+    "H-LI19 inhibit resolves fewer directed edges than sync": "supported"
+  }
+}

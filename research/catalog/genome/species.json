@@ -1,0 +1,567 @@
+{
+  "version": "G1-2026-11-13",
+  "note": "Unit of analysis: one collective system, usually one species. realm follows research/nature: seen = visible to the eye, unseen = microbial or cellular. 'beyond' analogies from physics and engineering are excluded. group is the taxon block used for the sensitivity analysis. role 'counter' marks the team-hunter counter-model of nat-teams-not-swarms. nick is a Portuguese codename for human identification, chosen from a behaviour the system is known for; nickWhy says which.",
+  "species": [
+    {
+      "id": "apis-mellifera",
+      "nick": "Dançarina",
+      "nickWhy": "dança do requebrado: recrutamento proporcional à qualidade",
+      "name": "Apis mellifera",
+      "common": "Western honey bee",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": [
+        "nat-waggle-dance-recruitment",
+        "nat-quorum-nest-bees",
+        "nat-stop-signal-cross-inhibition"
+      ]
+    },
+    {
+      "id": "apis-cerana",
+      "nick": "Fornalha",
+      "nickWhy": "bola de calor que cozinha vespas invasoras",
+      "name": "Apis cerana",
+      "common": "Asian honey bee (heat-balling of hornets)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "bombus-terrestris",
+      "nick": "Mamangava",
+      "nickWhy": "nome popular brasileiro das mamangabas",
+      "name": "Bombus terrestris",
+      "common": "Buff-tailed bumblebee",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "tetragonisca-angustula",
+      "nick": "Jataí",
+      "nickWhy": "abelha sem ferrão com soldados de guarda",
+      "name": "Tetragonisca angustula",
+      "common": "Jataí stingless bee (soldier guards)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "polistes-dominula",
+      "nick": "Papeleira",
+      "nickWhy": "ninho de papel e hierarquia de dominância",
+      "name": "Polistes dominula",
+      "common": "European paper wasp",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "vespula-vulgaris",
+      "nick": "Ferrão",
+      "nickWhy": "defesa em massa por ferroadas",
+      "name": "Vespula vulgaris",
+      "common": "Common wasp",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "atta-cephalotes",
+      "nick": "Saúva",
+      "nickWhy": "cortadeira com castas e jardim de fungo",
+      "name": "Atta cephalotes",
+      "common": "Leafcutter ant",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "eciton-burchellii",
+      "nick": "Correição",
+      "nickWhy": "ataques em coluna e pontes vivas",
+      "name": "Eciton burchellii",
+      "common": "Army ant",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": [
+        "nat-army-ant-living-bridges"
+      ]
+    },
+    {
+      "id": "solenopsis-invicta",
+      "nick": "Jangada",
+      "nickWhy": "jangadas de corpos nas enchentes",
+      "name": "Solenopsis invicta",
+      "common": "Red imported fire ant (rafts)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "temnothorax-albipennis",
+      "nick": "Mudança",
+      "nickWhy": "escolha de ninho por quórum",
+      "name": "Temnothorax albipennis",
+      "common": "Rock ant (nest emigration)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": [
+        "nat-speed-accuracy-quorum",
+        "nat-inactive-reserve"
+      ]
+    },
+    {
+      "id": "pogonomyrmex-barbatus",
+      "nick": "Colheita",
+      "nickWhy": "forrageio regulado por taxa de encontros",
+      "name": "Pogonomyrmex barbatus",
+      "common": "Red harvester ant",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": [
+        "nat-interaction-rate-foraging"
+      ]
+    },
+    {
+      "id": "lasius-niger",
+      "nick": "Trilha",
+      "nickWhy": "trilha de feromônio que evapora",
+      "name": "Lasius niger",
+      "common": "Black garden ant",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": [
+        "nat-pheromone-evaporation-aco"
+      ]
+    },
+    {
+      "id": "lasius-neglectus",
+      "nick": "Enfermeira",
+      "nickWhy": "limpeza e quarentena de doentes",
+      "name": "Lasius neglectus",
+      "common": "Invasive garden ant (social immunity)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "linepithema-humile",
+      "nick": "Império",
+      "nickWhy": "supercolônias de milhares de ninhos",
+      "name": "Linepithema humile",
+      "common": "Argentine ant (supercolonies)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "oecophylla-smaragdina",
+      "nick": "Tecelã",
+      "nickWhy": "costura folhas em correntes de operárias",
+      "name": "Oecophylla smaragdina",
+      "common": "Weaver ant (chains, nests of leaves)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "acromyrmex-echinatior",
+      "nick": "Jardineira",
+      "nickWhy": "higiene do jardim de fungo",
+      "name": "Acromyrmex echinatior",
+      "common": "Leafcutter ant (fungus garden hygiene)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "cataglyphis-fortis",
+      "nick": "Bússola",
+      "nickWhy": "navegação solitária (controle)",
+      "name": "Cataglyphis fortis",
+      "common": "Desert ant (solitary navigation; control)",
+      "realm": "seen",
+      "group": "hymenoptera",
+      "cards": []
+    },
+    {
+      "id": "macrotermes-michaelseni",
+      "nick": "Cupinzeiro",
+      "nickWhy": "montículo que regula ar e temperatura",
+      "name": "Macrotermes michaelseni",
+      "common": "Mound-building termite",
+      "realm": "seen",
+      "group": "termite",
+      "cards": [
+        "nat-stigmergy"
+      ]
+    },
+    {
+      "id": "schistocerca-gregaria",
+      "nick": "Praga",
+      "nickWhy": "virada solitária-gregária por densidade",
+      "name": "Schistocerca gregaria",
+      "common": "Desert locust",
+      "realm": "seen",
+      "group": "other-insect",
+      "cards": [
+        "nat-locust-marching-transition"
+      ]
+    },
+    {
+      "id": "pteroptyx-malaccae",
+      "nick": "Pisca",
+      "nickWhy": "piscar sincronizado sem maestro",
+      "name": "Pteroptyx malaccae",
+      "common": "Synchronous firefly",
+      "realm": "seen",
+      "group": "other-insect",
+      "cards": [
+        "nat-firefly-synchrony"
+      ]
+    },
+    {
+      "id": "anelosimus-eximius",
+      "nick": "Teia",
+      "nickWhy": "aranha social de teia comunal",
+      "name": "Anelosimus eximius",
+      "common": "Social spider",
+      "realm": "seen",
+      "group": "arachnid",
+      "cards": []
+    },
+    {
+      "id": "euphausia-superba",
+      "nick": "Nuvem",
+      "nickWhy": "enxames de krill com milhões",
+      "name": "Euphausia superba",
+      "common": "Antarctic krill",
+      "realm": "seen",
+      "group": "crustacean",
+      "cards": []
+    },
+    {
+      "id": "clupea-harengus",
+      "nick": "Onda",
+      "nickWhy": "cardumes que fogem em onda",
+      "name": "Clupea harengus",
+      "common": "Atlantic herring",
+      "realm": "seen",
+      "group": "fish",
+      "cards": []
+    },
+    {
+      "id": "sardinops-sagax",
+      "nick": "Isca",
+      "nickWhy": "bola de isca sob ataque",
+      "name": "Sardinops sagax",
+      "common": "Pacific sardine (bait ball)",
+      "realm": "seen",
+      "group": "fish",
+      "cards": []
+    },
+    {
+      "id": "notemigonus-crysoleucas",
+      "nick": "Sombra",
+      "nickWhy": "cardume que acha a sombra junto",
+      "name": "Notemigonus crysoleucas",
+      "common": "Golden shiner (collective gradient tracking)",
+      "realm": "seen",
+      "group": "fish",
+      "cards": []
+    },
+    {
+      "id": "sturnus-vulgaris",
+      "nick": "Revoada",
+      "nickWhy": "murmuração de estorninhos",
+      "name": "Sturnus vulgaris",
+      "common": "European starling (murmurations)",
+      "realm": "seen",
+      "group": "bird",
+      "cards": [
+        "nat-topological-neighbors",
+        "nat-scale-free-correlation"
+      ]
+    },
+    {
+      "id": "columba-livia",
+      "nick": "Regresso",
+      "nickWhy": "volta para casa de longe, com hierarquia de voo",
+      "name": "Columba livia",
+      "common": "Homing pigeon (flock hierarchy)",
+      "realm": "seen",
+      "group": "bird",
+      "cards": []
+    },
+    {
+      "id": "geronticus-eremita",
+      "nick": "Flecha",
+      "nickWhy": "formação em V com revezamento",
+      "name": "Geronticus eremita",
+      "common": "Northern bald ibis (V formation)",
+      "realm": "seen",
+      "group": "bird",
+      "cards": [
+        "nat-v-formation-flight"
+      ]
+    },
+    {
+      "id": "aptenodytes-forsteri",
+      "nick": "Abraço",
+      "nickWhy": "roda de aquecimento que gira",
+      "name": "Aptenodytes forsteri",
+      "common": "Emperor penguin (huddle)",
+      "realm": "seen",
+      "group": "bird",
+      "cards": [
+        "nat-penguin-huddle"
+      ]
+    },
+    {
+      "id": "parus-major",
+      "nick": "Alarido",
+      "nickWhy": "chamados de alarme e assédio a predadores",
+      "name": "Parus major",
+      "common": "Great tit (mobbing, alarm calls)",
+      "realm": "seen",
+      "group": "bird",
+      "cards": []
+    },
+    {
+      "id": "papio-anubis",
+      "nick": "Caravana",
+      "nickWhy": "decisão de rumo do grupo em marcha",
+      "name": "Papio anubis",
+      "common": "Olive baboon (collective movement)",
+      "realm": "seen",
+      "group": "mammal",
+      "cards": []
+    },
+    {
+      "id": "suricata-suricatta",
+      "nick": "Vigia",
+      "nickWhy": "sentinela que se reveza",
+      "name": "Suricata suricatta",
+      "common": "Meerkat (sentinels)",
+      "realm": "seen",
+      "group": "mammal",
+      "cards": []
+    },
+    {
+      "id": "heterocephalus-glaber",
+      "nick": "Rainha",
+      "nickWhy": "mamífero eussocial com rainha",
+      "name": "Heterocephalus glaber",
+      "common": "Naked mole-rat",
+      "realm": "seen",
+      "group": "mammal",
+      "cards": []
+    },
+    {
+      "id": "connochaetes-taurinus",
+      "nick": "Travessia",
+      "nickWhy": "migração em manada",
+      "name": "Connochaetes taurinus",
+      "common": "Blue wildebeest (migration herds)",
+      "realm": "seen",
+      "group": "mammal",
+      "cards": []
+    },
+    {
+      "id": "desmodus-rotundus",
+      "nick": "Partilha",
+      "nickWhy": "doação de sangue entre parceiros",
+      "name": "Desmodus rotundus",
+      "common": "Vampire bat (food sharing)",
+      "realm": "seen",
+      "group": "mammal",
+      "cards": []
+    },
+    {
+      "id": "canis-lupus",
+      "nick": "Matilha",
+      "nickWhy": "caça em equipe com papéis",
+      "name": "Canis lupus",
+      "common": "Grey wolf (pack hunting)",
+      "realm": "seen",
+      "group": "mammal",
+      "role": "counter",
+      "cards": [
+        "nat-teams-not-swarms"
+      ]
+    },
+    {
+      "id": "panthera-leo",
+      "nick": "Juba",
+      "nickWhy": "caça cooperativa do bando",
+      "name": "Panthera leo",
+      "common": "Lion (cooperative hunting)",
+      "realm": "seen",
+      "group": "mammal",
+      "role": "counter",
+      "cards": [
+        "nat-teams-not-swarms"
+      ]
+    },
+    {
+      "id": "tursiops-truncatus",
+      "nick": "Cerco",
+      "nickWhy": "cerco cooperativo de cardumes",
+      "name": "Tursiops truncatus",
+      "common": "Bottlenose dolphin (cooperative foraging)",
+      "realm": "seen",
+      "group": "mammal",
+      "role": "counter",
+      "cards": [
+        "nat-teams-not-swarms"
+      ]
+    },
+    {
+      "id": "vibrio-fischeri",
+      "nick": "Lanterna",
+      "nickWhy": "luz ligada por quórum",
+      "name": "Aliivibrio fischeri",
+      "common": "Bioluminescent quorum-sensing bacterium",
+      "realm": "unseen",
+      "group": "bacteria",
+      "cards": [
+        "nat-bacterial-quorum-sensing"
+      ]
+    },
+    {
+      "id": "pseudomonas-aeruginosa",
+      "nick": "Trapaça",
+      "nickWhy": "bens públicos e trapaceiros",
+      "name": "Pseudomonas aeruginosa",
+      "common": "Quorum sensing, public goods and cheaters",
+      "realm": "unseen",
+      "group": "bacteria",
+      "cards": []
+    },
+    {
+      "id": "myxococcus-xanthus",
+      "nick": "Alcateia",
+      "nickWhy": "a 'matilha bacteriana' que caça em grupo",
+      "name": "Myxococcus xanthus",
+      "common": "Predatory myxobacterium",
+      "realm": "unseen",
+      "group": "bacteria",
+      "cards": [
+        "nat-myxococcus-group-predation"
+      ]
+    },
+    {
+      "id": "bacillus-subtilis",
+      "nick": "Muralha",
+      "nickWhy": "biofilme com sinal elétrico",
+      "name": "Bacillus subtilis",
+      "common": "Biofilm former (electrical signalling, division of labour)",
+      "realm": "unseen",
+      "group": "bacteria",
+      "cards": []
+    },
+    {
+      "id": "escherichia-coli",
+      "nick": "Tombo",
+      "nickWhy": "corre-e-tomba atrás do gradiente",
+      "name": "Escherichia coli",
+      "common": "Chemotaxis and swarming",
+      "realm": "unseen",
+      "group": "bacteria",
+      "cards": [
+        "nat-ecoli-run-and-tumble"
+      ]
+    },
+    {
+      "id": "proteus-mirabilis",
+      "nick": "Fronteira",
+      "nickWhy": "linhas de Dienes entre colônias",
+      "name": "Proteus mirabilis",
+      "common": "Swarming bacterium (Dienes boundaries)",
+      "realm": "unseen",
+      "group": "bacteria",
+      "cards": []
+    },
+    {
+      "id": "paenibacillus-vortex",
+      "nick": "Redemoinho",
+      "nickWhy": "vórtices de bactérias em enxame",
+      "name": "Paenibacillus vortex",
+      "common": "Vortex-forming swarming bacterium",
+      "realm": "unseen",
+      "group": "bacteria",
+      "cards": []
+    },
+    {
+      "id": "dictyostelium-discoideum",
+      "nick": "Lesma",
+      "nickWhy": "agregação em lesma e corpo de frutificação",
+      "name": "Dictyostelium discoideum",
+      "common": "Social amoeba",
+      "realm": "unseen",
+      "group": "amoeba",
+      "cards": [
+        "nat-dictyostelium-aggregation"
+      ]
+    },
+    {
+      "id": "physarum-polycephalum",
+      "nick": "Rede",
+      "nickWhy": "rede que engrossa com o fluxo",
+      "name": "Physarum polycephalum",
+      "common": "Slime mould network",
+      "realm": "unseen",
+      "group": "slime-mould",
+      "cards": [
+        "nat-physarum-network"
+      ]
+    },
+    {
+      "id": "volvox-carteri",
+      "nick": "Esfera",
+      "nickWhy": "colônia com germe e soma",
+      "name": "Volvox carteri",
+      "common": "Colonial alga (germ-soma split)",
+      "realm": "unseen",
+      "group": "alga",
+      "cards": []
+    },
+    {
+      "id": "neutrophils",
+      "nick": "Rastilho",
+      "nickWhy": "enxame de neutrófilos por sinal em relé",
+      "name": "Homo sapiens neutrophils",
+      "common": "Neutrophil swarming",
+      "realm": "unseen",
+      "group": "immune-cells",
+      "cards": [
+        "nat-neutrophil-swarming",
+        "nat-wound-healing-resolution"
+      ]
+    },
+    {
+      "id": "t-lymphocytes",
+      "nick": "Clone",
+      "nickWhy": "expansão clonal e memória",
+      "name": "Homo sapiens T lymphocytes",
+      "common": "Adaptive immune response (clonal selection)",
+      "realm": "unseen",
+      "group": "immune-cells",
+      "cards": [
+        "nat-clonal-expansion-contraction",
+        "nat-danger-theory"
+      ]
+    },
+    {
+      "id": "mycorrhizal-network",
+      "nick": "Micélio",
+      "nickWhy": "rede comum de micorrizas",
+      "name": "Arbuscular mycorrhizal fungi (Rhizophagus irregularis)",
+      "common": "Common mycorrhizal network",
+      "realm": "unseen",
+      "group": "fungus",
+      "cards": []
+    }
+  ]
+}

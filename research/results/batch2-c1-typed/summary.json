@@ -1,0 +1,55 @@
+{
+  "study": "c1-typed",
+  "configHash": "fc8820d1c5d5f33aad239f4f050fcd8781f25ac69a1a6c0da7bbe49a8b24e378",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "none": {
+      "exposed": 32,
+      "quarantine": 9,
+      "rate": 0.28125,
+      "follows": 5,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "note": {
+      "exposed": 32,
+      "quarantine": 12,
+      "rate": 0.375,
+      "follows": 12,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "table": {
+      "exposed": 32,
+      "quarantine": 23,
+      "rate": 0.71875,
+      "follows": 20,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "table-large": {
+      "exposed": 32,
+      "quarantine": 28,
+      "rate": 0.875,
+      "follows": 17,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    }
+  },
+  "drops": {
+    "note": -0.09375,
+    "table": -0.4375,
+    "table-large": -0.59375
+  },
+  "tests": {
+    "P1": "inconclusive",
+    "P2": "inconclusive",
+    "P3": "inconclusive"
+  },
+  "finishedAt": "2026-11-11T20:05:45.865Z"
+}

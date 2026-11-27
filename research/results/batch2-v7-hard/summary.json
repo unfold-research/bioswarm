@@ -1,0 +1,46 @@
+{
+  "study": "v7-hard",
+  "configHash": "21b0327845189029e8a947ec57b6f9a9645876282623e36a22dbcaf4e08c8ee2",
+  "status": "complete",
+  "wavesRun": 2,
+  "byLevel": {
+    "96": {
+      "deep": 1,
+      "deepvote3": 1,
+      "select3": 1,
+      "any3": 1
+    },
+    "144": {
+      "deep": 0.6,
+      "deepvote3": 0.5666666666666667,
+      "select3": 0.6666666666666666,
+      "any3": 0.7
+    },
+    "168": {
+      "deep": 0.3333333333333333,
+      "deepvote3": 0.3333333333333333,
+      "select3": 0.3333333333333333,
+      "any3": 0.4666666666666667
+    }
+  },
+  "overall": {
+    "deep": 0.6444444444444445,
+    "deepvote3": 0.6333333333333333,
+    "select3": 0.6666666666666666,
+    "any3": 0.7222222222222222
+  },
+  "samplesDiffer": 0.28888888888888886,
+  "verifier": {
+    "correctAnswers": 65,
+    "accepted": 47,
+    "wrongAnswers": 53,
+    "rejected": 43
+  },
+  "truncated": 0,
+  "tests": {
+    "P1": "not supported",
+    "P2": "not supported",
+    "P3": "not supported"
+  },
+  "finishedAt": "2026-11-11T14:46:11.327Z"
+}

@@ -1,0 +1,55 @@
+{
+  "study": "i5-rivals-sonnet",
+  "configHash": "8ec8180068de993c9bbdf22285ed703833323d68318af97ba9a21a269920d401",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "solo": {
+      "effect": 16,
+      "rivalWon": 0,
+      "other": 0,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "rival": {
+      "effect": 4,
+      "rivalWon": 11,
+      "other": 1,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "rival-first": {
+      "effect": 4,
+      "rivalWon": 12,
+      "other": 0,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "priority": {
+      "effect": 16,
+      "rivalWon": 0,
+      "other": 0,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "priority-rev": {
+      "effect": 3,
+      "rivalWon": 13,
+      "other": 0,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P3": "not supported",
+    "P4": "supported"
+  },
+  "finishedAt": "2026-11-11T12:40:35.832Z"
+}

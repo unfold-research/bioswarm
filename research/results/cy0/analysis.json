@@ -1,0 +1,266 @@
+{
+  "arms": {
+    "sleep": {
+      "episodes": 50,
+      "reward": {
+        "mean": -6435.1,
+        "median": -6505.0,
+        "min": -9535.0,
+        "max": -4023.0
+      },
+      "green_fail": {
+        "mean": 2117.5,
+        "median": 2080,
+        "min": 1447,
+        "max": 3248
+      },
+      "red_impact": {
+        "mean": 17.6,
+        "median": 18,
+        "min": 11,
+        "max": 24
+      },
+      "episodes_with_red_impact": 50,
+      "red_hosts_max": {
+        "mean": 68.8,
+        "median": 70,
+        "min": 55,
+        "max": 83
+      },
+      "red_root_hosts_max": {
+        "mean": 53.3,
+        "median": 53,
+        "min": 44,
+        "max": 63
+      },
+      "first_impact_step": {
+        "mean": 57.9,
+        "median": 54,
+        "min": 9,
+        "max": 144
+      },
+      "messages_sent": {
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "actions_per_episode": {
+        "Sleep": 2495.0,
+        "Restore": 0.0,
+        "Analyse": 0.0
+      },
+      "wall_s": {
+        "mean": 17.7,
+        "median": 18.07,
+        "min": 11.48,
+        "max": 22.78
+      },
+      "steps": {
+        "mean": 499,
+        "median": 499,
+        "min": 499,
+        "max": 499
+      }
+    },
+    "react": {
+      "episodes": 50,
+      "reward": {
+        "mean": -1803.8,
+        "median": -1773.0,
+        "min": -4331.0,
+        "max": -508.0
+      },
+      "green_fail": {
+        "mean": 871.6,
+        "median": 847,
+        "min": 462,
+        "max": 1602
+      },
+      "red_impact": {
+        "mean": 25,
+        "median": 25,
+        "min": 4,
+        "max": 54
+      },
+      "episodes_with_red_impact": 50,
+      "red_hosts_max": {
+        "mean": 41.5,
+        "median": 42,
+        "min": 27,
+        "max": 52
+      },
+      "red_root_hosts_max": {
+        "mean": 21.2,
+        "median": 21,
+        "min": 12,
+        "max": 31
+      },
+      "first_impact_step": {
+        "mean": 65.1,
+        "median": 58,
+        "min": 9,
+        "max": 164
+      },
+      "messages_sent": {
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "actions_per_episode": {
+        "Sleep": 2359.9,
+        "Restore": 135.1,
+        "Analyse": 0.0
+      },
+      "wall_s": {
+        "mean": 16.5,
+        "median": 16.62,
+        "min": 11.24,
+        "max": 25.2
+      },
+      "steps": {
+        "mean": 499,
+        "median": 499,
+        "min": 499,
+        "max": 499
+      }
+    },
+    "react-msg": {
+      "episodes": 50,
+      "reward": {
+        "mean": -2495.8,
+        "median": -2340.0,
+        "min": -5966.0,
+        "max": -689.0
+      },
+      "green_fail": {
+        "mean": 1049.4,
+        "median": 1046,
+        "min": 396,
+        "max": 1991
+      },
+      "red_impact": {
+        "mean": 31.5,
+        "median": 30,
+        "min": 13,
+        "max": 58
+      },
+      "episodes_with_red_impact": 50,
+      "red_hosts_max": {
+        "mean": 45.8,
+        "median": 45,
+        "min": 37,
+        "max": 57
+      },
+      "red_root_hosts_max": {
+        "mean": 25.9,
+        "median": 26,
+        "min": 16,
+        "max": 37
+      },
+      "first_impact_step": {
+        "mean": 64.8,
+        "median": 61,
+        "min": 9,
+        "max": 199
+      },
+      "messages_sent": {
+        "mean": 128.0,
+        "median": 128,
+        "min": 102,
+        "max": 150
+      },
+      "actions_per_episode": {
+        "Sleep": 1919.9,
+        "Restore": 128.0,
+        "Analyse": 447.2
+      },
+      "wall_s": {
+        "mean": 16.6,
+        "median": 16.85,
+        "min": 11.03,
+        "max": 23.14
+      },
+      "steps": {
+        "mean": 499,
+        "median": 499,
+        "min": 499,
+        "max": 499
+      }
+    }
+  },
+  "reproducibility": [
+    {
+      "arm": "sleep",
+      "seed": 70002,
+      "same_trajectory": true,
+      "reward": [
+        -5521.0,
+        -5521.0
+      ]
+    },
+    {
+      "arm": "sleep",
+      "seed": 70001,
+      "same_trajectory": true,
+      "reward": [
+        -7034.0,
+        -7034.0
+      ]
+    },
+    {
+      "arm": "react",
+      "seed": 70001,
+      "same_trajectory": true,
+      "reward": [
+        -2003.0,
+        -2003.0
+      ]
+    },
+    {
+      "arm": "react",
+      "seed": 70002,
+      "same_trajectory": true,
+      "reward": [
+        -1986.0,
+        -1986.0
+      ]
+    },
+    {
+      "arm": "react-msg",
+      "seed": 70002,
+      "same_trajectory": true,
+      "reward": [
+        -3253.0,
+        -3253.0
+      ]
+    },
+    {
+      "arm": "react-msg",
+      "seed": 70001,
+      "same_trajectory": true,
+      "reward": [
+        -2936.0,
+        -2936.0
+      ]
+    }
+  ],
+  "paired_reward": {
+    "react_vs_sleep": {
+      "seeds": 50,
+      "better": 50,
+      "worse": 0
+    },
+    "react-msg_vs_sleep": {
+      "seeds": 50,
+      "better": 50,
+      "worse": 0
+    },
+    "react-msg_vs_react": {
+      "seeds": 50,
+      "better": 11,
+      "worse": 39
+    }
+  }
+}

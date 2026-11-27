@@ -1,0 +1,28 @@
+{
+  "out": "li42-pilot",
+  "k": 160,
+  "cases": 1,
+  "seed0": 42390,
+  "shape": {
+    "local": 2,
+    "directed": 320,
+    "symmetric": 80,
+    "tests": 16,
+    "shown": 3
+  },
+  "arms": [
+    "stigwait",
+    "manager"
+  ],
+  "provider": "openai-litellm",
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "memberMax": 8000,
+  "managerMax": 128000,
+  "rounds": 12,
+  "strictFeedback": true,
+  "managerSlack": true,
+  "pilot": true,
+  "transport": "batch",
+  "transportFallback": "flex"
+}

@@ -1,0 +1,1753 @@
+{
+ "version": "G1",
+ "generated": "2026-11-13T14:48:08.156Z",
+ "coverage": {
+  "systems": 51,
+  "codedBoth": 51,
+  "failures": {
+   "A": [],
+   "B": []
+  }
+ },
+ "cells": {
+  "P": 544,
+  "A": 138,
+  "U": 959,
+  "C": 348
+ },
+ "reliability": {
+  "kappa": 0.6870724310600184,
+  "agreeRate": 0.8250377073906485,
+  "kappaByTrait": {
+   "SIG-01": 0.755004003202562,
+   "SIG-02": 0.614962251201098,
+   "SIG-03": 0.3878116343490305,
+   "SIG-04": 0.5176268271711092,
+   "SIG-05": 0.5292307692307692,
+   "SIG-06": 0.6639824304538798,
+   "FLD-01": 0.4943342776203966,
+   "FLD-02": 0.6950672645739912,
+   "FLD-03": 0.8393700787401573,
+   "FLD-04": 0.6035335689045936,
+   "ACT-01": 0.36814159292035403,
+   "ACT-02": 0.7391304347826086,
+   "ACT-03": 0.6709677419354839,
+   "ACT-04": 0.433333333333333,
+   "ACT-05": 0.5584415584415584,
+   "ACT-06": 0.4555160142348756,
+   "DEC-01": 0.6313253012048192,
+   "DEC-02": 0.4742268041237109,
+   "DEC-03": 0.5386934673366832,
+   "DEC-04": 0.669902912621359,
+   "DEC-05": 1,
+   "DOL-01": 0.7081545064377683,
+   "DOL-02": 0.6543438077634011,
+   "DOL-03": 0.7935222672064778,
+   "DOL-04": 0.5558194774346793,
+   "DOL-05": 0.4618249534450652,
+   "DOL-06": 0.6375968992248061,
+   "REG-01": 0.782608695652174,
+   "REG-02": 0.6730769230769228,
+   "REG-03": 0.5984251968503937,
+   "REG-04": 0.5630841121495327,
+   "REG-05": 0.6082949308755762,
+   "DEF-01": 0.6748633879781422,
+   "DEF-02": 0.6562763268744733,
+   "DEF-03": 0.620817843866171,
+   "DEF-04": 0.5310344827586206,
+   "DEF-05": 0.43956043956043955,
+   "DEF-06": 0.6764472640761301,
+   "DEF-07": 0.47781569965870285
+  }
+ },
+ "citations": {
+  "uniqueRefs": 731,
+  "citations": 1495,
+  "byStatus": {
+   "verified": 1413,
+   "not-found": 77,
+   "doi-other-work": 1,
+   "unchecked": 4
+  },
+  "withDoi": {
+   "n": 522,
+   "verified": 497
+  },
+  "byCoder": {
+   "A": {
+    "verified": 817,
+    "not-found": 41,
+    "doi-other-work": 1,
+    "unchecked": 2
+   },
+   "B": {
+    "verified": 596,
+    "not-found": 36,
+    "unchecked": 2
+   }
+  }
+ },
+ "hypotheses": {
+  "H-G01": {
+   "kappa": 0.6870724310600184,
+   "agreeRate": 0.8250377073906485,
+   "doiShare": 0.9521072796934866,
+   "verdict": "supported"
+  },
+  "H-G02": {
+   "trait": "DEC-01",
+   "table": [
+    [
+     2,
+     0
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "n": 7,
+   "rateIn": 1,
+   "rateOut": 1,
+   "p": 1,
+   "absentCells": 0,
+   "noPower": true,
+   "sensitivityMedianP": 1,
+   "verdict": "refuted"
+  },
+  "H-G03": {
+   "trait": "DEF-03",
+   "table": [
+    [
+     4,
+     0
+    ],
+    [
+     6,
+     0
+    ]
+   ],
+   "n": 10,
+   "rateIn": 1,
+   "rateOut": 1,
+   "p": 0.9999999999999982,
+   "absentCells": 0,
+   "noPower": true,
+   "sensitivityMedianP": 1,
+   "verdict": "refuted"
+  },
+  "H-G05": {
+   "trait": "DOL-04",
+   "table": [
+    [
+     8,
+     1
+    ],
+    [
+     2,
+     28
+    ]
+   ],
+   "n": 39,
+   "rateIn": 0.8888888888888888,
+   "rateOut": 0.06666666666666667,
+   "p": 0.0000062053143047849885,
+   "absentCells": 29,
+   "noPower": false,
+   "sensitivityMedianP": 0.09090909090909105,
+   "verdict": "supported"
+  },
+  "H-G04": {
+   "DOL-01": {
+    "table": [
+     [
+      20,
+      7
+     ],
+     [
+      2,
+      13
+     ]
+    ],
+    "n": 42,
+    "rateIn": 0.7407407407407407,
+    "rateOut": 0.13333333333333333,
+    "p": 0.0001902795386069542,
+    "absentCells": 20,
+    "noPower": false,
+    "sensitivityMedianP": 0.1212121212121215
+   },
+   "ACT-04": {
+    "table": [
+     [
+      3,
+      0
+     ],
+     [
+      2,
+      0
+     ]
+    ],
+    "n": 5,
+    "rateIn": 1,
+    "rateOut": 1,
+    "p": 1,
+    "absentCells": 0,
+    "noPower": true,
+    "sensitivityMedianP": 1
+   },
+   "verdict": "refuted"
+  },
+  "H-G06": {
+   "trait": "FLD-02",
+   "within": "FLD-01 = P",
+   "systems": 26,
+   "table": [
+    [
+     11,
+     0
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "n": 11,
+   "rateIn": 1,
+   "rateOut": null,
+   "p": 1,
+   "absentCells": 0,
+   "noPower": true,
+   "sensitivityMedianP": 1,
+   "verdict": "untestable"
+  },
+  "H-G07": {
+   "unseenInsects": 0.2694695547238173,
+   "unseenVertebrates": 0.1361381268149976,
+   "difference": 0.1333314279088197,
+   "permutationP": 0.00009999000099990002,
+   "verdict": "supported"
+  }
+ },
+ "prevalence": {
+  "SIG-01": {
+   "P": 29,
+   "A": 0,
+   "U": 16,
+   "C": 6,
+   "seenP": 22,
+   "unseenP": 7
+  },
+  "SIG-02": {
+   "P": 22,
+   "A": 2,
+   "U": 16,
+   "C": 11,
+   "seenP": 10,
+   "unseenP": 12
+  },
+  "SIG-03": {
+   "P": 6,
+   "A": 1,
+   "U": 31,
+   "C": 13,
+   "seenP": 4,
+   "unseenP": 2
+  },
+  "SIG-04": {
+   "P": 11,
+   "A": 0,
+   "U": 29,
+   "C": 11,
+   "seenP": 11,
+   "unseenP": 0
+  },
+  "SIG-05": {
+   "P": 8,
+   "A": 0,
+   "U": 34,
+   "C": 9,
+   "seenP": 3,
+   "unseenP": 5
+  },
+  "SIG-06": {
+   "P": 24,
+   "A": 1,
+   "U": 17,
+   "C": 9,
+   "seenP": 14,
+   "unseenP": 10
+  },
+  "FLD-01": {
+   "P": 26,
+   "A": 2,
+   "U": 9,
+   "C": 14,
+   "seenP": 18,
+   "unseenP": 8
+  },
+  "FLD-02": {
+   "P": 13,
+   "A": 2,
+   "U": 28,
+   "C": 8,
+   "seenP": 8,
+   "unseenP": 5
+  },
+  "FLD-03": {
+   "P": 31,
+   "A": 15,
+   "U": 1,
+   "C": 4,
+   "seenP": 21,
+   "unseenP": 10
+  },
+  "FLD-04": {
+   "P": 26,
+   "A": 1,
+   "U": 13,
+   "C": 11,
+   "seenP": 22,
+   "unseenP": 4
+  },
+  "ACT-01": {
+   "P": 8,
+   "A": 0,
+   "U": 29,
+   "C": 14,
+   "seenP": 3,
+   "unseenP": 5
+  },
+  "ACT-02": {
+   "P": 14,
+   "A": 0,
+   "U": 31,
+   "C": 6,
+   "seenP": 4,
+   "unseenP": 10
+  },
+  "ACT-03": {
+   "P": 25,
+   "A": 2,
+   "U": 15,
+   "C": 9,
+   "seenP": 16,
+   "unseenP": 9
+  },
+  "ACT-04": {
+   "P": 5,
+   "A": 0,
+   "U": 37,
+   "C": 9,
+   "seenP": 4,
+   "unseenP": 1
+  },
+  "ACT-05": {
+   "P": 6,
+   "A": 1,
+   "U": 36,
+   "C": 8,
+   "seenP": 2,
+   "unseenP": 4
+  },
+  "ACT-06": {
+   "P": 10,
+   "A": 2,
+   "U": 24,
+   "C": 15,
+   "seenP": 6,
+   "unseenP": 4
+  },
+  "DEC-01": {
+   "P": 7,
+   "A": 0,
+   "U": 38,
+   "C": 6,
+   "seenP": 3,
+   "unseenP": 4
+  },
+  "DEC-02": {
+   "P": 2,
+   "A": 0,
+   "U": 45,
+   "C": 4,
+   "seenP": 1,
+   "unseenP": 1
+  },
+  "DEC-03": {
+   "P": 8,
+   "A": 0,
+   "U": 34,
+   "C": 9,
+   "seenP": 5,
+   "unseenP": 3
+  },
+  "DEC-04": {
+   "P": 5,
+   "A": 0,
+   "U": 42,
+   "C": 4,
+   "seenP": 5,
+   "unseenP": 0
+  },
+  "DEC-05": {
+   "P": 3,
+   "A": 0,
+   "U": 48,
+   "C": 0,
+   "seenP": 2,
+   "unseenP": 1
+  },
+  "DOL-01": {
+   "P": 22,
+   "A": 20,
+   "U": 1,
+   "C": 8,
+   "seenP": 13,
+   "unseenP": 9
+  },
+  "DOL-02": {
+   "P": 14,
+   "A": 7,
+   "U": 19,
+   "C": 11,
+   "seenP": 12,
+   "unseenP": 2
+  },
+  "DOL-03": {
+   "P": 27,
+   "A": 15,
+   "U": 3,
+   "C": 6,
+   "seenP": 23,
+   "unseenP": 4
+  },
+  "DOL-04": {
+   "P": 10,
+   "A": 29,
+   "U": 1,
+   "C": 11,
+   "seenP": 10,
+   "unseenP": 0
+  },
+  "DOL-05": {
+   "P": 9,
+   "A": 7,
+   "U": 18,
+   "C": 17,
+   "seenP": 6,
+   "unseenP": 3
+  },
+  "DOL-06": {
+   "P": 14,
+   "A": 23,
+   "U": 3,
+   "C": 11,
+   "seenP": 6,
+   "unseenP": 8
+  },
+  "REG-01": {
+   "P": 15,
+   "A": 0,
+   "U": 31,
+   "C": 5,
+   "seenP": 10,
+   "unseenP": 5
+  },
+  "REG-02": {
+   "P": 5,
+   "A": 0,
+   "U": 42,
+   "C": 4,
+   "seenP": 1,
+   "unseenP": 4
+  },
+  "REG-03": {
+   "P": 5,
+   "A": 0,
+   "U": 40,
+   "C": 6,
+   "seenP": 5,
+   "unseenP": 0
+  },
+  "REG-04": {
+   "P": 14,
+   "A": 0,
+   "U": 26,
+   "C": 11,
+   "seenP": 8,
+   "unseenP": 6
+  },
+  "REG-05": {
+   "P": 25,
+   "A": 1,
+   "U": 15,
+   "C": 10,
+   "seenP": 19,
+   "unseenP": 6
+  },
+  "DEF-01": {
+   "P": 33,
+   "A": 0,
+   "U": 11,
+   "C": 7,
+   "seenP": 23,
+   "unseenP": 10
+  },
+  "DEF-02": {
+   "P": 11,
+   "A": 1,
+   "U": 31,
+   "C": 8,
+   "seenP": 7,
+   "unseenP": 4
+  },
+  "DEF-03": {
+   "P": 10,
+   "A": 0,
+   "U": 33,
+   "C": 8,
+   "seenP": 8,
+   "unseenP": 2
+  },
+  "DEF-04": {
+   "P": 12,
+   "A": 1,
+   "U": 26,
+   "C": 12,
+   "seenP": 11,
+   "unseenP": 1
+  },
+  "DEF-05": {
+   "P": 7,
+   "A": 5,
+   "U": 23,
+   "C": 16,
+   "seenP": 2,
+   "unseenP": 5
+  },
+  "DEF-06": {
+   "P": 16,
+   "A": 0,
+   "U": 27,
+   "C": 8,
+   "seenP": 12,
+   "unseenP": 4
+  },
+  "DEF-07": {
+   "P": 6,
+   "A": 0,
+   "U": 36,
+   "C": 9,
+   "seenP": 5,
+   "unseenP": 1
+  }
+ },
+ "cooccurrence": [
+  {
+   "x": "FLD-03",
+   "y": "DOL-02",
+   "n": 20,
+   "phi": 0.8921425711997711,
+   "both": 13
+  },
+  {
+   "x": "DOL-02",
+   "y": "DOL-03",
+   "n": 19,
+   "phi": 0.879664438186246,
+   "both": 13
+  },
+  {
+   "x": "FLD-01",
+   "y": "FLD-03",
+   "n": 25,
+   "phi": 0.7985494095046906,
+   "both": 22
+  },
+  {
+   "x": "SIG-02",
+   "y": "FLD-03",
+   "n": 21,
+   "phi": 0.7947194142390263,
+   "both": 18
+  },
+  {
+   "x": "SIG-02",
+   "y": "DOL-04",
+   "n": 20,
+   "phi": -0.7934920476158722,
+   "both": 1
+  },
+  {
+   "x": "SIG-02",
+   "y": "DOL-01",
+   "n": 19,
+   "phi": 0.7921180343813395,
+   "both": 16
+  },
+  {
+   "x": "FLD-03",
+   "y": "DOL-03",
+   "n": 39,
+   "phi": 0.7750576015460308,
+   "both": 24
+  },
+  {
+   "x": "FLD-03",
+   "y": "DOL-01",
+   "n": 38,
+   "phi": 0.7637626158259734,
+   "both": 19
+  },
+  {
+   "x": "FLD-03",
+   "y": "DOL-05",
+   "n": 15,
+   "phi": 0.7637626158259733,
+   "both": 6
+  },
+  {
+   "x": "DOL-01",
+   "y": "DOL-05",
+   "n": 15,
+   "phi": 0.7637626158259733,
+   "both": 6
+  },
+  {
+   "x": "DOL-01",
+   "y": "DOL-06",
+   "n": 31,
+   "phi": 0.7360328571092236,
+   "both": 10
+  },
+  {
+   "x": "DOL-01",
+   "y": "DOL-02",
+   "n": 19,
+   "phi": 0.6746010525388914,
+   "both": 10
+  },
+  {
+   "x": "DOL-01",
+   "y": "DOL-03",
+   "n": 34,
+   "phi": 0.6600444454986877,
+   "both": 17
+  },
+  {
+   "x": "FLD-01",
+   "y": "DOL-03",
+   "n": 24,
+   "phi": 0.5877538136452587,
+   "both": 19
+  },
+  {
+   "x": "FLD-01",
+   "y": "DOL-01",
+   "n": 21,
+   "phi": 0.5129891760425771,
+   "both": 15
+  },
+  {
+   "x": "SIG-02",
+   "y": "DOL-06",
+   "n": 18,
+   "phi": 0.5,
+   "both": 12
+  },
+  {
+   "x": "DOL-04",
+   "y": "DOL-06",
+   "n": 28,
+   "phi": -0.5,
+   "both": 0
+  },
+  {
+   "x": "FLD-03",
+   "y": "DOL-06",
+   "n": 33,
+   "phi": 0.476910483238266,
+   "both": 10
+  },
+  {
+   "x": "ACT-03",
+   "y": "DOL-04",
+   "n": 25,
+   "phi": -0.46770717334674267,
+   "both": 3
+  },
+  {
+   "x": "SIG-02",
+   "y": "DOL-03",
+   "n": 20,
+   "phi": 0.45425676257949793,
+   "both": 13
+  },
+  {
+   "x": "ACT-03",
+   "y": "DOL-06",
+   "n": 19,
+   "phi": 0.40219983326992187,
+   "both": 11
+  },
+  {
+   "x": "FLD-04",
+   "y": "DOL-06",
+   "n": 21,
+   "phi": -0.4,
+   "both": 4
+  },
+  {
+   "x": "ACT-03",
+   "y": "DOL-01",
+   "n": 19,
+   "phi": 0.3944053188733077,
+   "both": 14
+  },
+  {
+   "x": "DOL-01",
+   "y": "DOL-04",
+   "n": 33,
+   "phi": -0.3758196498417308,
+   "both": 2
+  },
+  {
+   "x": "FLD-01",
+   "y": "DOL-06",
+   "n": 19,
+   "phi": 0.3615507630310936,
+   "both": 10
+  },
+  {
+   "x": "DOL-02",
+   "y": "DOL-06",
+   "n": 17,
+   "phi": 0.27774602993176545,
+   "both": 4
+  },
+  {
+   "x": "FLD-04",
+   "y": "DOL-03",
+   "n": 24,
+   "phi": 0.26919095102908275,
+   "both": 15
+  },
+  {
+   "x": "SIG-06",
+   "y": "DOL-03",
+   "n": 17,
+   "phi": -0.26516504294495535,
+   "both": 7
+  },
+  {
+   "x": "DOL-06",
+   "y": "REG-05",
+   "n": 21,
+   "phi": -0.25819888974716115,
+   "both": 8
+  },
+  {
+   "x": "DOL-01",
+   "y": "REG-05",
+   "n": 19,
+   "phi": -0.24845199749997662,
+   "both": 8
+  },
+  {
+   "x": "SIG-06",
+   "y": "FLD-03",
+   "n": 20,
+   "phi": -0.22941573387056174,
+   "both": 9
+  },
+  {
+   "x": "DOL-02",
+   "y": "DOL-04",
+   "n": 15,
+   "phi": 0.2,
+   "both": 4
+  },
+  {
+   "x": "SIG-06",
+   "y": "DOL-06",
+   "n": 21,
+   "phi": 0.19364916731037085,
+   "both": 9
+  },
+  {
+   "x": "ACT-03",
+   "y": "DOL-03",
+   "n": 25,
+   "phi": -0.18389242812245682,
+   "both": 16
+  },
+  {
+   "x": "FLD-04",
+   "y": "DOL-04",
+   "n": 24,
+   "phi": 0.17622684421256035,
+   "both": 10
+  },
+  {
+   "x": "DOL-03",
+   "y": "REG-05",
+   "n": 24,
+   "phi": -0.17622684421256035,
+   "both": 13
+  },
+  {
+   "x": "FLD-03",
+   "y": "DOL-04",
+   "n": 36,
+   "phi": -0.17407765595569782,
+   "both": 5
+  },
+  {
+   "x": "FLD-03",
+   "y": "REG-05",
+   "n": 23,
+   "phi": -0.1556997888323046,
+   "both": 14
+  },
+  {
+   "x": "FLD-03",
+   "y": "FLD-04",
+   "n": 25,
+   "phi": -0.15309310892394862,
+   "both": 15
+  },
+  {
+   "x": "DOL-03",
+   "y": "DOL-06",
+   "n": 31,
+   "phi": 0.13853982225763495,
+   "both": 8
+  }
+ ],
+ "backlog": [
+  {
+   "id": "DEF-01",
+   "name": "Member recognition",
+   "P": 33,
+   "flags": [
+    {
+     "f": "shepherd_guards",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "FLD-03",
+   "name": "Persistent shared structure",
+   "P": 31,
+   "flags": [
+    {
+     "f": "living_bridges",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "SIG-01",
+   "name": "Contact signalling",
+   "P": 29,
+   "flags": [
+    {
+     "f": "acceptance_coupled_launch",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DOL-03",
+   "name": "Reproductive division",
+   "P": 27,
+   "flags": [],
+   "tested": false
+  },
+  {
+   "id": "FLD-01",
+   "name": "Stigmergic deposit",
+   "P": 26,
+   "flags": [
+    {
+     "f": "stigmergy_board",
+     "status": "positive-eng"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "FLD-04",
+   "name": "Individual learning and memory",
+   "P": 26,
+   "flags": [],
+   "tested": false
+  },
+  {
+   "id": "ACT-03",
+   "name": "Positive-feedback recruitment",
+   "P": 25,
+   "flags": [
+    {
+     "f": "relay_recruit_selflimit",
+     "status": "untested"
+    },
+    {
+     "f": "clonal_expansion",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "REG-05",
+   "name": "Elastic group size",
+   "P": 25,
+   "flags": [
+    {
+     "f": "predator_prey_damping",
+     "status": "positive-eng"
+    },
+    {
+     "f": "microtubule_provisional",
+     "status": "untested"
+    },
+    {
+     "f": "clonal_expansion",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "SIG-06",
+   "name": "Local neighbour coupling",
+   "P": 24,
+   "flags": [
+    {
+     "f": "topological_neighbours",
+     "status": "sim-support"
+    },
+    {
+     "f": "locust_phase_switch",
+     "status": "null-llm"
+    },
+    {
+     "f": "scale_free_correlation",
+     "status": "untested"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "SIG-02",
+   "name": "Broadcast chemical signal",
+   "P": 22,
+   "flags": [
+    {
+     "f": "quorum_sensing_activation",
+     "status": "null-llm"
+    },
+    {
+     "f": "dicty_aggregation",
+     "status": "untested"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DOL-01",
+   "name": "Morphological castes",
+   "P": 22,
+   "flags": [
+    {
+     "f": "split_by_size",
+     "status": "positive-eng"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DEF-06",
+   "name": "Structural repair and redundancy",
+   "P": 16,
+   "flags": [
+    {
+     "f": "living_bridges",
+     "status": "untested"
+    },
+    {
+     "f": "inactive_reserve",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "REG-01",
+   "name": "Collective homeostasis",
+   "P": 15,
+   "flags": [
+    {
+     "f": "homeostatic_escalation",
+     "status": "positive-eng"
+    },
+    {
+     "f": "stellar_backpressure",
+     "status": "untested"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "ACT-02",
+   "name": "Density-triggered collective switch",
+   "P": 14,
+   "flags": [
+    {
+     "f": "quorum_sensing_activation",
+     "status": "null-llm"
+    },
+    {
+     "f": "locust_phase_switch",
+     "status": "null-llm"
+    },
+    {
+     "f": "dicty_aggregation",
+     "status": "untested"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DOL-02",
+   "name": "Temporal polyethism",
+   "P": 14,
+   "flags": [],
+   "tested": false
+  },
+  {
+   "id": "DOL-06",
+   "name": "Self-assembled bodies",
+   "P": 14,
+   "flags": [
+    {
+     "f": "living_bridges",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "REG-04",
+   "name": "Synchronisation",
+   "P": 14,
+   "flags": [
+    {
+     "f": "firefly_sync",
+     "status": "untested"
+    },
+    {
+     "f": "circadian_cadence",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "FLD-02",
+   "name": "Signal decay",
+   "P": 13,
+   "flags": [
+    {
+     "f": "pheromone_evaporation",
+     "status": "null-llm"
+    },
+    {
+     "f": "physarum_edges",
+     "status": "untested"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DEF-04",
+   "name": "Scaled collective defence",
+   "P": 12,
+   "flags": [
+    {
+     "f": "danger_signal_escalation",
+     "status": "untested"
+    },
+    {
+     "f": "relay_recruit_selflimit",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "SIG-04",
+   "name": "Alarm signal",
+   "P": 11,
+   "flags": [
+    {
+     "f": "danger_signal_escalation",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "DEF-02",
+   "name": "Cheater control",
+   "P": 11,
+   "flags": [
+    {
+     "f": "dicty_aggregation",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "ACT-06",
+   "name": "Minimum group size for payoff",
+   "P": 10,
+   "flags": [
+    {
+     "f": "group_threshold_payoff",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "DOL-04",
+   "name": "Persistent leader or dominance hierarchy",
+   "P": 10,
+   "flags": [],
+   "tested": false
+  },
+  {
+   "id": "DEF-03",
+   "name": "Social immunity and quarantine",
+   "P": 10,
+   "flags": [],
+   "tested": false
+  },
+  {
+   "id": "DOL-05",
+   "name": "Task partitioning with handoff",
+   "P": 9,
+   "flags": [
+    {
+     "f": "lagrange_handoff",
+     "status": "untested"
+    },
+    {
+     "f": "split_by_size",
+     "status": "positive-eng"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "SIG-05",
+   "name": "Inhibitory or stop signal",
+   "P": 8,
+   "flags": [
+    {
+     "f": "cross_inhibition",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "ACT-01",
+   "name": "Response-threshold variation",
+   "P": 8,
+   "flags": [
+    {
+     "f": "response_threshold",
+     "status": "positive-eng"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DEC-03",
+   "name": "Independent parallel exploration",
+   "P": 8,
+   "flags": [
+    {
+     "f": "independent_then_aggregate",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "DEC-01",
+   "name": "Quorum decision",
+   "P": 7,
+   "flags": [
+    {
+     "f": "quorum_stop",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DEF-05",
+   "name": "Sacrificial defence",
+   "P": 7,
+   "flags": [],
+   "tested": false
+  },
+  {
+   "id": "SIG-03",
+   "name": "Quality-graded recruitment signal",
+   "P": 6,
+   "flags": [
+    {
+     "f": "proportional_allocation",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "ACT-05",
+   "name": "Self-limiting recruitment",
+   "P": 6,
+   "flags": [
+    {
+     "f": "relay_recruit_selflimit",
+     "status": "untested"
+    },
+    {
+     "f": "predator_prey_damping",
+     "status": "positive-eng"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DEF-07",
+   "name": "Sentinel or vigilance sharing",
+   "P": 6,
+   "flags": [
+    {
+     "f": "shepherd_guards",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "ACT-04",
+   "name": "Inactive reserve",
+   "P": 5,
+   "flags": [
+    {
+     "f": "inactive_reserve",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DEC-04",
+   "name": "Informed-minority guidance",
+   "P": 5,
+   "flags": [
+    {
+     "f": "informed_leaders",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "REG-02",
+   "name": "Active termination",
+   "P": 5,
+   "flags": [
+    {
+     "f": "wound_resolution",
+     "status": "positive-eng"
+    },
+    {
+     "f": "cluster_dissolution",
+     "status": "untested"
+    },
+    {
+     "f": "clonal_expansion",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "REG-03",
+   "name": "Rotation of costly positions",
+   "P": 5,
+   "flags": [
+    {
+     "f": "v_formation_rotation",
+     "status": "untested"
+    }
+   ],
+   "tested": false
+  },
+  {
+   "id": "DEC-05",
+   "name": "Tunable speed-accuracy trade-off",
+   "P": 3,
+   "flags": [
+    {
+     "f": "quorum_stop",
+     "status": "null-llm"
+    },
+    {
+     "f": "correlation_stop",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  },
+  {
+   "id": "DEC-02",
+   "name": "Cross-inhibition between options",
+   "P": 2,
+   "flags": [
+    {
+     "f": "cross_inhibition",
+     "status": "null-llm"
+    }
+   ],
+   "tested": true
+  }
+ ],
+ "speciesOrder": [
+  "clupea-harengus",
+  "notemigonus-crysoleucas",
+  "columba-livia",
+  "pteroptyx-malaccae",
+  "sturnus-vulgaris",
+  "euphausia-superba",
+  "sardinops-sagax",
+  "aptenodytes-forsteri",
+  "schistocerca-gregaria",
+  "geronticus-eremita",
+  "paenibacillus-vortex",
+  "volvox-carteri",
+  "myxococcus-xanthus",
+  "proteus-mirabilis",
+  "neutrophils",
+  "vibrio-fischeri",
+  "pseudomonas-aeruginosa",
+  "cataglyphis-fortis",
+  "tetragonisca-angustula",
+  "lasius-neglectus",
+  "acromyrmex-echinatior",
+  "macrotermes-michaelseni",
+  "anelosimus-eximius",
+  "mycorrhizal-network",
+  "temnothorax-albipennis",
+  "lasius-niger",
+  "bombus-terrestris",
+  "polistes-dominula",
+  "heterocephalus-glaber",
+  "apis-cerana",
+  "vespula-vulgaris",
+  "linepithema-humile",
+  "oecophylla-smaragdina",
+  "atta-cephalotes",
+  "solenopsis-invicta",
+  "pogonomyrmex-barbatus",
+  "canis-lupus",
+  "physarum-polycephalum",
+  "dictyostelium-discoideum",
+  "apis-mellifera",
+  "t-lymphocytes",
+  "bacillus-subtilis",
+  "eciton-burchellii",
+  "escherichia-coli",
+  "connochaetes-taurinus",
+  "suricata-suricatta",
+  "parus-major",
+  "papio-anubis",
+  "panthera-leo",
+  "desmodus-rotundus",
+  "tursiops-truncatus"
+ ],
+ "speciesGroups": {
+  "apis-mellifera": 0,
+  "apis-cerana": 0,
+  "bombus-terrestris": 0,
+  "tetragonisca-angustula": 0,
+  "polistes-dominula": 0,
+  "vespula-vulgaris": 0,
+  "atta-cephalotes": 0,
+  "eciton-burchellii": 0,
+  "solenopsis-invicta": 0,
+  "temnothorax-albipennis": 0,
+  "pogonomyrmex-barbatus": 0,
+  "lasius-niger": 0,
+  "lasius-neglectus": 0,
+  "linepithema-humile": 0,
+  "oecophylla-smaragdina": 0,
+  "acromyrmex-echinatior": 0,
+  "cataglyphis-fortis": 0,
+  "macrotermes-michaelseni": 0,
+  "schistocerca-gregaria": 1,
+  "pteroptyx-malaccae": 1,
+  "anelosimus-eximius": 0,
+  "euphausia-superba": 1,
+  "clupea-harengus": 2,
+  "sardinops-sagax": 1,
+  "notemigonus-crysoleucas": 2,
+  "sturnus-vulgaris": 1,
+  "columba-livia": 2,
+  "geronticus-eremita": 1,
+  "aptenodytes-forsteri": 1,
+  "parus-major": 3,
+  "papio-anubis": 3,
+  "suricata-suricatta": 3,
+  "heterocephalus-glaber": 0,
+  "connochaetes-taurinus": 4,
+  "desmodus-rotundus": 3,
+  "canis-lupus": 0,
+  "panthera-leo": 3,
+  "tursiops-truncatus": 3,
+  "vibrio-fischeri": 5,
+  "pseudomonas-aeruginosa": 5,
+  "myxococcus-xanthus": 5,
+  "bacillus-subtilis": 0,
+  "escherichia-coli": 0,
+  "proteus-mirabilis": 5,
+  "paenibacillus-vortex": 5,
+  "dictyostelium-discoideum": 0,
+  "physarum-polycephalum": 0,
+  "volvox-carteri": 5,
+  "neutrophils": 5,
+  "t-lymphocytes": 0,
+  "mycorrhizal-network": 0
+ },
+ "traitOrder": [
+  "REG-03",
+  "SIG-05",
+  "REG-02",
+  "ACT-05",
+  "DEF-05",
+  "DEC-01",
+  "ACT-01",
+  "ACT-02",
+  "DEC-04",
+  "DEC-05",
+  "SIG-03",
+  "DEC-03",
+  "ACT-04",
+  "DEC-02",
+  "SIG-06",
+  "REG-04",
+  "DEF-02",
+  "FLD-04",
+  "DOL-04",
+  "DOL-05",
+  "DOL-02",
+  "DEF-07",
+  "DEF-03",
+  "SIG-04",
+  "DEF-04",
+  "ACT-06",
+  "DOL-06",
+  "REG-05",
+  "FLD-02",
+  "SIG-02",
+  "DOL-01",
+  "FLD-01",
+  "ACT-03",
+  "FLD-03",
+  "DOL-03",
+  "SIG-01",
+  "DEF-01",
+  "REG-01",
+  "DEF-06"
+ ],
+ "primitives": {
+  "apis-mellifera": {
+   "deposit": 5,
+   "recognition_inhibition": 8,
+   "decay": 4,
+   "threshold": 7,
+   "quorum": 3
+  },
+  "apis-cerana": {
+   "deposit": 4,
+   "recognition_inhibition": 4,
+   "threshold": 4,
+   "quorum": 1,
+   "decay": 1
+  },
+  "bombus-terrestris": {
+   "deposit": 4,
+   "recognition_inhibition": 3,
+   "decay": 2,
+   "threshold": 4
+  },
+  "tetragonisca-angustula": {
+   "deposit": 1,
+   "recognition_inhibition": 1
+  },
+  "polistes-dominula": {
+   "recognition_inhibition": 3,
+   "deposit": 2,
+   "threshold": 1
+  },
+  "vespula-vulgaris": {
+   "deposit": 2,
+   "recognition_inhibition": 4,
+   "threshold": 2
+  },
+  "atta-cephalotes": {
+   "deposit": 5,
+   "recognition_inhibition": 4,
+   "decay": 1,
+   "threshold": 2
+  },
+  "eciton-burchellii": {
+   "deposit": 2,
+   "decay": 2,
+   "threshold": 3,
+   "quorum": 1,
+   "recognition_inhibition": 1
+  },
+  "solenopsis-invicta": {
+   "deposit": 4,
+   "decay": 1,
+   "threshold": 3,
+   "recognition_inhibition": 3
+  },
+  "temnothorax-albipennis": {
+   "deposit": 4,
+   "threshold": 5,
+   "quorum": 3,
+   "decay": 1
+  },
+  "pogonomyrmex-barbatus": {
+   "deposit": 4,
+   "recognition_inhibition": 2,
+   "threshold": 3,
+   "decay": 1
+  },
+  "lasius-niger": {
+   "deposit": 4,
+   "decay": 3,
+   "threshold": 2,
+   "recognition_inhibition": 3
+  },
+  "lasius-neglectus": {
+   "deposit": 1,
+   "recognition_inhibition": 2
+  },
+  "linepithema-humile": {
+   "deposit": 3,
+   "decay": 2,
+   "threshold": 3,
+   "recognition_inhibition": 2
+  },
+  "oecophylla-smaragdina": {
+   "deposit": 4,
+   "recognition_inhibition": 3,
+   "threshold": 3,
+   "quorum": 1,
+   "decay": 1
+  },
+  "acromyrmex-echinatior": {
+   "deposit": 3,
+   "recognition_inhibition": 2
+  },
+  "cataglyphis-fortis": {
+   "deposit": 1
+  },
+  "macrotermes-michaelseni": {
+   "deposit": 3,
+   "threshold": 2
+  },
+  "schistocerca-gregaria": {
+   "deposit": 2,
+   "quorum": 1,
+   "threshold": 2
+  },
+  "pteroptyx-malaccae": {},
+  "anelosimus-eximius": {
+   "deposit": 2,
+   "quorum": 1,
+   "threshold": 1,
+   "decay": 1
+  },
+  "euphausia-superba": {
+   "threshold": 1,
+   "decay": 1
+  },
+  "clupea-harengus": {
+   "quorum": 1,
+   "threshold": 3,
+   "deposit": 1,
+   "decay": 1
+  },
+  "sardinops-sagax": {},
+  "notemigonus-crysoleucas": {},
+  "sturnus-vulgaris": {
+   "threshold": 1,
+   "decay": 1
+  },
+  "columba-livia": {},
+  "geronticus-eremita": {},
+  "aptenodytes-forsteri": {
+   "threshold": 2,
+   "decay": 1
+  },
+  "parus-major": {
+   "recognition_inhibition": 3,
+   "deposit": 1,
+   "threshold": 3,
+   "decay": 1
+  },
+  "papio-anubis": {
+   "recognition_inhibition": 4,
+   "threshold": 1
+  },
+  "suricata-suricatta": {
+   "recognition_inhibition": 3,
+   "deposit": 1,
+   "quorum": 1,
+   "threshold": 1
+  },
+  "heterocephalus-glaber": {
+   "deposit": 3,
+   "threshold": 3,
+   "recognition_inhibition": 2
+  },
+  "connochaetes-taurinus": {
+   "recognition_inhibition": 2,
+   "threshold": 1,
+   "decay": 1
+  },
+  "desmodus-rotundus": {
+   "recognition_inhibition": 2
+  },
+  "canis-lupus": {
+   "recognition_inhibition": 2,
+   "deposit": 2,
+   "decay": 2,
+   "quorum": 1,
+   "threshold": 1
+  },
+  "panthera-leo": {
+   "deposit": 1,
+   "quorum": 1,
+   "threshold": 2,
+   "decay": 1,
+   "recognition_inhibition": 2
+  },
+  "tursiops-truncatus": {
+   "threshold": 1,
+   "decay": 1,
+   "recognition_inhibition": 1
+  },
+  "vibrio-fischeri": {
+   "deposit": 3,
+   "threshold": 4,
+   "quorum": 2,
+   "decay": 1,
+   "recognition_inhibition": 1
+  },
+  "pseudomonas-aeruginosa": {
+   "deposit": 4,
+   "decay": 3,
+   "quorum": 3,
+   "threshold": 2,
+   "recognition_inhibition": 3
+  },
+  "myxococcus-xanthus": {
+   "deposit": 4,
+   "quorum": 3,
+   "threshold": 2,
+   "recognition_inhibition": 1
+  },
+  "bacillus-subtilis": {
+   "deposit": 4,
+   "recognition_inhibition": 2,
+   "threshold": 5,
+   "quorum": 1,
+   "decay": 2
+  },
+  "escherichia-coli": {
+   "deposit": 4,
+   "decay": 2,
+   "threshold": 4,
+   "quorum": 2,
+   "recognition_inhibition": 1
+  },
+  "proteus-mirabilis": {
+   "deposit": 3,
+   "quorum": 1,
+   "threshold": 1,
+   "recognition_inhibition": 1
+  },
+  "paenibacillus-vortex": {
+   "deposit": 2,
+   "quorum": 1,
+   "threshold": 1
+  },
+  "dictyostelium-discoideum": {
+   "deposit": 3,
+   "recognition_inhibition": 5,
+   "decay": 2,
+   "threshold": 4,
+   "quorum": 1
+  },
+  "physarum-polycephalum": {
+   "deposit": 5,
+   "recognition_inhibition": 2,
+   "decay": 2,
+   "threshold": 3,
+   "quorum": 1
+  },
+  "volvox-carteri": {
+   "deposit": 2,
+   "quorum": 1,
+   "threshold": 1,
+   "recognition_inhibition": 1
+  },
+  "neutrophils": {
+   "deposit": 3,
+   "recognition_inhibition": 2,
+   "threshold": 2,
+   "decay": 3
+  },
+  "t-lymphocytes": {
+   "deposit": 3,
+   "recognition_inhibition": 6,
+   "decay": 4,
+   "threshold": 7,
+   "quorum": 3
+  },
+  "mycorrhizal-network": {
+   "deposit": 1,
+   "threshold": 1,
+   "recognition_inhibition": 2
+  }
+ }
+}

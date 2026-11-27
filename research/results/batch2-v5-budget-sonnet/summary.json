@@ -1,0 +1,31 @@
+{
+  "study": "v5-budget-sonnet",
+  "configHash": "6fba021e32dddec9e49d516e7dc323e4972555d818728c8b242278d85918d989",
+  "status": "complete",
+  "wavesRun": 1,
+  "overall": {
+    "direct": 0.7,
+    "w60": 1,
+    "w150": 1
+  },
+  "byLevel": {
+    "48": {
+      "direct": 0.8,
+      "w60": 1,
+      "w150": 1
+    },
+    "96": {
+      "direct": 0.7,
+      "w60": 1,
+      "w150": 1
+    },
+    "144": {
+      "direct": 0.6,
+      "w60": 1,
+      "w150": 1
+    }
+  },
+  "truncated": 0,
+  "note": "Preregistered tests: node observatory/batch2/v5-budget/analyze.mjs",
+  "finishedAt": "2026-11-11T14:13:38.670Z"
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "seed": 2011,
+    "arm": "A",
+    "startedAt": "2026-11-26T01:30:23.071Z",
+    "endedAt": "2026-11-26T01:35:03.434Z",
+    "revision": "51e374fc07c3a36d361b1d994fed54cf28053132",
+    "end": "complete",
+    "comparable": true,
+    "incident": null,
+    "participants": 3,
+    "waves": 4,
+    "observedWallSeconds": 274.639,
+    "agentHours": 0.15185166666666666,
+    "observedOpportunities": {
+      "dispute": 2,
+      "directed": 2
+    },
+    "tokens": {
+      "input": 95736,
+      "cacheRead": 940672,
+      "cacheWrite": 0,
+      "output": 17624
+    },
+    "modelResponses": 66,
+    "provider": {
+      "http429": 0,
+      "retries": 0
+    },
+    "errors": {
+      "turnsFailed": 0,
+      "providerErrors": 0,
+      "wrongModel": 0
+    },
+    "acceptance": {
+      "balances": true,
+      "exceptions": true,
+      "memoTotals": true
+    },
+    "review": "pending",
+    "messagesAccepted": 27,
+    "messagesRefused": 0,
+    "receiptSha256": "ba424ac9cbab0fed3da2cce4f6430ac725000b9424c56397ee6adcbd5976e3cd",
+    "ciJobs": [
+      0,
+      0
+    ],
+    "rootUsedPct": [
+      67.974,
+      67.975
+    ],
+    "loadAverage": [
+      [
+        0.71,
+        1.24,
+        1.41
+      ],
+      [
+        0.21,
+        0.58,
+        1.07
+      ]
+    ]
+  },
+  {
+    "seed": 2027,
+    "arm": "A",
+    "startedAt": "2026-11-26T01:36:06.268Z",
+    "endedAt": "2026-11-26T01:40:05.088Z",
+    "revision": "51e374fc07c3a36d361b1d994fed54cf28053132",
+    "end": "complete",
+    "comparable": true,
+    "incident": null,
+    "participants": 3,
+    "waves": 3,
+    "observedWallSeconds": 233.045,
+    "agentHours": 0.12480222222222222,
+    "observedOpportunities": {
+      "dispute": 2,
+      "directed": 2
+    },
+    "tokens": {
+      "input": 60626,
+      "cacheRead": 419840,
+      "cacheWrite": 0,
+      "output": 15145
+    },
+    "modelResponses": 64,
+    "provider": {
+      "http429": 0,
+      "retries": 0
+    },
+    "errors": {
+      "turnsFailed": 0,
+      "providerErrors": 0,
+      "wrongModel": 0
+    },
+    "acceptance": {
+      "balances": true,
+      "exceptions": true,
+      "memoTotals": true
+    },
+    "review": "pending",
+    "messagesAccepted": 23,
+    "messagesRefused": 0,
+    "receiptSha256": "2feab38166676bbf58e0a8edb985814ae90a722c5f1d0e68f06cfed45b29f9fd",
+    "ciJobs": [
+      0,
+      1
+    ],
+    "rootUsedPct": [
+      67.975,
+      68.071
+    ],
+    "loadAverage": [
+      [
+        0.28,
+        0.53,
+        1.02
+      ],
+      [
+        1.94,
+        1.02,
+        1.09
+      ]
+    ]
+  },
+  {
+    "seed": 2039,
+    "arm": "A",
+    "startedAt": "2026-11-26T01:41:24.717Z",
+    "endedAt": "2026-11-26T01:44:53.972Z",
+    "revision": "51e374fc07c3a36d361b1d994fed54cf28053132",
+    "end": "complete",
+    "comparable": true,
+    "incident": null,
+    "participants": 3,
+    "waves": 4,
+    "observedWallSeconds": 204.29,
+    "agentHours": 0.1201425,
+    "observedOpportunities": {
+      "dispute": 2,
+      "directed": 2
+    },
+    "tokens": {
+      "input": 137569,
+      "cacheRead": 1665920,
+      "cacheWrite": 0,
+      "output": 12645
+    },
+    "modelResponses": 72,
+    "provider": {
+      "http429": 0,
+      "retries": 0
+    },
+    "errors": {
+      "turnsFailed": 0,
+      "providerErrors": 0,
+      "wrongModel": 0
+    },
+    "acceptance": {
+      "balances": true,
+      "exceptions": true,
+      "memoTotals": true
+    },
+    "review": "pending",
+    "messagesAccepted": 22,
+    "messagesRefused": 0,
+    "receiptSha256": "d3b04be9f04ca9dba21a1e39b4c07a360bd40e31c72936b6d2b11bad1853eccc",
+    "ciJobs": [
+      1,
+      1
+    ],
+    "rootUsedPct": [
+      68.072,
+      68.206
+    ],
+    "loadAverage": [
+      [
+        1.63,
+        1.17,
+        1.14
+      ],
+      [
+        1.64,
+        1.35,
+        1.21
+      ]
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "A": {
+    "unix": {
+      "workerIdentity": true,
+      "taskRead": true,
+      "absolute": true,
+      "relative": true,
+      "symlink": true
+    },
+    "pi": {
+      "taskRead": true,
+      "absolute": true,
+      "relative": true,
+      "symlink": true
+    },
+    "pass": true
+  },
+  "B": {
+    "unix": {
+      "workerIdentity": true,
+      "taskRead": true,
+      "absolute": true,
+      "relative": true,
+      "symlink": true
+    },
+    "pi": {
+      "taskRead": true,
+      "absolute": true,
+      "relative": true,
+      "symlink": true,
+      "remotePolicy": true
+    },
+    "pass": true
+  },
+  "C": {
+    "unix": {
+      "workerIdentity": true,
+      "taskRead": true,
+      "absolute": true,
+      "relative": true,
+      "symlink": true
+    },
+    "pi": {
+      "taskRead": true,
+      "absolute": true,
+      "relative": true,
+      "symlink": true,
+      "remotePolicy": true
+    },
+    "pass": true
+  },
+  "pass": true
+}

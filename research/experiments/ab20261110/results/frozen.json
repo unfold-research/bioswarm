@@ -1,0 +1,13 @@
+{
+  "digest": "eb2857e1c4b7e1332173053d2a93de68069b060e828b1b4ea3c2b6d4563ada8d",
+  "sources": {
+    "protocol.mjs": "bdd59defa3903d0eadfc9bd8317e81289618fdca1dd29ff375713fc0e6ceb4ee",
+    "protocol.test.mjs": "5320aed20bd03911b4474282eeb6d97e5d90738095e13a037ab43b7f842fc6bf",
+    "run.mjs": "340108e9995e9f2191b8029edc3d273f1e7b854c4d9c2c8f1d78d51cac4a5b10",
+    "PREREG.txt": "514e8cefb9dc6502c867247069c0391323c97b308ca6e1849d99059af829947e"
+  },
+  "created": "2026-11-10T03:12:27.631Z",
+  "A": 192,
+  "B": 768,
+  "probe": 1
+}

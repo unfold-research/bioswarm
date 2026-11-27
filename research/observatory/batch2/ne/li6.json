@@ -1,0 +1,3 @@
+{ "out": "li6-mixed-geometry-routing", "domain": "sched2", "model": "claude-haiku-5-5", "sizes": [96, 192], "perSize": 12, "seed0": 6000, "deg": 1.6, "regionSize": 12,
+  "memberMax": 12000, "centralMax": 32000, "effort": null, "rounds": 8, "patchCap": 40,
+  "arms": ["sync", "inhibit", "chat", "routed", "routedsilent"] }

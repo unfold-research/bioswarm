@@ -1,0 +1,25 @@
+{
+  "out": "li10-scale-k80",
+  "model": "claude-haiku-5-5",
+  "k": 80,
+  "cases": 8,
+  "seed0": 10800,
+  "shape": {
+    "local": 2,
+    "directed": 80,
+    "symmetric": 60,
+    "tests": 8,
+    "shown": 3
+  },
+  "memberMax": 8000,
+  "managerMax": 32000,
+  "soloMax": 64000,
+  "effort": null,
+  "rounds": 8,
+  "arms": [
+    "routed",
+    "manager",
+    "chat",
+    "solo"
+  ]
+}

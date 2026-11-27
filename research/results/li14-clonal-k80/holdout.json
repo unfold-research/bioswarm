@@ -1,0 +1,75 @@
+{
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 1,
+    "failing": [
+      "k80s14800 D:M49.probeHint>M80.gradeHandle",
+      "k80s14801 D:M6.brandTerm>M50.foldSlug",
+      "k80s14801 D:M56.gaugeHint>M63.brandHint",
+      "k80s14801 D:M29.siftHandle>M49.gaugeRef",
+      "k80s14801 D:M3.gradeHandle>M57.traceTitle",
+      "k80s14802 D:M51.labelRef>M9.shapeAlias",
+      "k80s14804 D:M6.probeHandle>M44.packWord",
+      "k80s14805 D:M56.traceNote>M51.rankTerm",
+      "k80s14805 D:M66.shapeRef>M68.scanToken",
+      "k80s14806 D:M77.markAlias>M47.tallyCode",
+      "k80s14807 D:M10.rankSeed>M76.tuneName"
+    ],
+    "perCase": {
+      "k80s14800": 1,
+      "k80s14801": 4,
+      "k80s14802": 1,
+      "k80s14803": 0,
+      "k80s14804": 1,
+      "k80s14805": 2,
+      "k80s14806": 1,
+      "k80s14807": 1
+    }
+  },
+  "clonal": {
+    "solvedInRun": 8,
+    "passHoldout": 1,
+    "failing": [
+      "k80s14800 D:M49.probeHint>M80.gradeHandle",
+      "k80s14801 D:M71.siftSlug>M48.shapeLabel",
+      "k80s14801 D:M6.brandTerm>M50.foldSlug",
+      "k80s14801 D:M2.scanAlias>M18.siftLabel",
+      "k80s14801 D:M56.gaugeHint>M63.brandHint",
+      "k80s14801 D:M29.siftHandle>M49.gaugeRef",
+      "k80s14801 D:M3.gradeHandle>M57.traceTitle",
+      "k80s14802 D:M69.packToken>M58.gradeHint",
+      "k80s14802 D:M51.labelRef>M9.shapeAlias",
+      "k80s14804 D:M6.probeHandle>M44.packWord",
+      "k80s14804 D:M63.siftHandle>M44.foldWord",
+      "k80s14804 D:M21.gaugeName>M50.scanCode",
+      "k80s14805 D:M66.shapeRef>M68.scanToken",
+      "k80s14806 D:M77.markAlias>M47.tallyCode",
+      "k80s14807 D:M10.rankSeed>M76.tuneName"
+    ],
+    "perCase": {
+      "k80s14800": 1,
+      "k80s14801": 6,
+      "k80s14802": 2,
+      "k80s14803": 0,
+      "k80s14804": 3,
+      "k80s14805": 1,
+      "k80s14806": 1,
+      "k80s14807": 1
+    }
+  },
+  "manager": {
+    "solvedInRun": 4,
+    "passHoldout": 4,
+    "failing": [],
+    "perCase": {
+      "k80s14800": 0,
+      "k80s14801": 0,
+      "k80s14802": 4,
+      "k80s14803": 2,
+      "k80s14804": 0,
+      "k80s14805": 9,
+      "k80s14806": 1,
+      "k80s14807": 0
+    }
+  }
+}

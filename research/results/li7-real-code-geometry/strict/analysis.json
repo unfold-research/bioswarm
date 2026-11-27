@@ -1,0 +1,334 @@
+{
+  "arms": {
+    "sync": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 50,
+        "median": 4.5
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 7,
+        "symmetric": 43
+      },
+      "meanOut": 16741,
+      "calls": 274,
+      "trunc": 3,
+      "messages": 0,
+      "meanTrajectory": [
+        8.75,
+        6.17,
+        4.83,
+        4.25,
+        4.17,
+        4.17
+      ]
+    },
+    "inhibit": {
+      "solved": 3,
+      "of": 12,
+      "finalTotal": {
+        "sum": 25,
+        "median": 2
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 24,
+        "symmetric": 1
+      },
+      "meanOut": 8875,
+      "calls": 105,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        8.75,
+        3.17,
+        3.33,
+        2.75,
+        2.67,
+        2.08
+      ]
+    },
+    "chat": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 40,
+        "median": 4
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 40
+      },
+      "meanOut": 15736,
+      "calls": 269,
+      "trunc": 5,
+      "messages": 167,
+      "meanTrajectory": [
+        8.75,
+        5.75,
+        3.83,
+        3.67,
+        3.75,
+        3.33
+      ]
+    },
+    "routed": {
+      "solved": 12,
+      "of": 12,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 8171,
+      "calls": 102,
+      "trunc": 0,
+      "messages": 138,
+      "meanTrajectory": [
+        8.75,
+        2.92,
+        1.08,
+        0,
+        0,
+        0
+      ]
+    },
+    "solo": {
+      "solved": 12,
+      "of": 12,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 2272,
+      "calls": 13,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        0.08,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "edgeTests": {
+    "inhibit_vs_sync_symmetric": {
+      "inhibitOnly": 43,
+      "syncOnly": 1,
+      "both": 2,
+      "neither": 0,
+      "p": 0
+    },
+    "inhibit_vs_sync_directed": {
+      "inhibitOnly": 0,
+      "syncOnly": 17,
+      "both": 35,
+      "neither": 7,
+      "p": 2e-05
+    },
+    "inhibit_vs_sync_all": {
+      "inhibitOnly": 43,
+      "syncOnly": 18,
+      "both": 37,
+      "neither": 7,
+      "p": 0.00187
+    },
+    "chat_vs_sync_symmetric": {
+      "chatOnly": 6,
+      "syncOnly": 3,
+      "both": 0,
+      "neither": 37,
+      "p": 0.50781
+    },
+    "chat_vs_sync_directed": {
+      "chatOnly": 7,
+      "syncOnly": 0,
+      "both": 52,
+      "neither": 0,
+      "p": 0.01563
+    },
+    "chat_vs_sync_all": {
+      "chatOnly": 13,
+      "syncOnly": 3,
+      "both": 52,
+      "neither": 37,
+      "p": 0.02127
+    },
+    "routed_vs_sync_symmetric": {
+      "routedOnly": 43,
+      "syncOnly": 0,
+      "both": 3,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_sync_directed": {
+      "routedOnly": 7,
+      "syncOnly": 0,
+      "both": 52,
+      "neither": 0,
+      "p": 0.01563
+    },
+    "routed_vs_sync_all": {
+      "routedOnly": 50,
+      "syncOnly": 0,
+      "both": 55,
+      "neither": 0,
+      "p": 0
+    },
+    "inhibit_vs_chat_symmetric": {
+      "inhibitOnly": 39,
+      "chatOnly": 0,
+      "both": 6,
+      "neither": 1,
+      "p": 0
+    },
+    "inhibit_vs_chat_directed": {
+      "inhibitOnly": 0,
+      "chatOnly": 24,
+      "both": 35,
+      "neither": 0,
+      "p": 0
+    },
+    "inhibit_vs_chat_all": {
+      "inhibitOnly": 39,
+      "chatOnly": 24,
+      "both": 41,
+      "neither": 1,
+      "p": 0.07693
+    },
+    "routed_vs_chat_symmetric": {
+      "routedOnly": 40,
+      "chatOnly": 0,
+      "both": 6,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_chat_directed": {
+      "routedOnly": 0,
+      "chatOnly": 0,
+      "both": 59,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_chat_all": {
+      "routedOnly": 40,
+      "chatOnly": 0,
+      "both": 65,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_inhibit_symmetric": {
+      "routedOnly": 1,
+      "inhibitOnly": 0,
+      "both": 45,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_inhibit_directed": {
+      "routedOnly": 24,
+      "inhibitOnly": 0,
+      "both": 35,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_inhibit_all": {
+      "routedOnly": 25,
+      "inhibitOnly": 0,
+      "both": 80,
+      "neither": 0,
+      "p": 0
+    }
+  },
+  "signTests": {
+    "inhibit_vs_sync": {
+      "lowerIn": 11,
+      "higherIn": 0,
+      "p": 0.00098
+    },
+    "chat_vs_sync": {
+      "lowerIn": 9,
+      "higherIn": 1,
+      "p": 0.02148
+    },
+    "routed_vs_sync": {
+      "lowerIn": 12,
+      "higherIn": 0,
+      "p": 0.00049
+    },
+    "inhibit_vs_chat": {
+      "lowerIn": 7,
+      "higherIn": 1,
+      "p": 0.07031
+    },
+    "routed_vs_chat": {
+      "lowerIn": 12,
+      "higherIn": 0,
+      "p": 0.00049
+    },
+    "routed_vs_inhibit": {
+      "lowerIn": 9,
+      "higherIn": 0,
+      "p": 0.00391
+    },
+    "solo_vs_sync": {
+      "lowerIn": 12,
+      "higherIn": 0,
+      "p": 0.00049
+    },
+    "solo_vs_inhibit": {
+      "lowerIn": 9,
+      "higherIn": 0,
+      "p": 0.00391
+    },
+    "solo_vs_chat": {
+      "lowerIn": 12,
+      "higherIn": 0,
+      "p": 0.00049
+    },
+    "solo_vs_routed": {
+      "lowerIn": 0,
+      "higherIn": 0,
+      "p": 1
+    }
+  },
+  "oscillation": {
+    "sync": {
+      "bothSidesChanged": 219,
+      "stillFailingAfter": 219
+    },
+    "inhibit": {
+      "bothSidesChanged": 22,
+      "stillFailingAfter": 0
+    },
+    "chat": {
+      "bothSidesChanged": 220,
+      "stillFailingAfter": 220
+    },
+    "routed": {
+      "bothSidesChanged": 51,
+      "stillFailingAfter": 22
+    }
+  },
+  "verdict": {
+    "H-LI17 inhibit resolves more symmetric edges than sync": "supported",
+    "H-LI18 chat resolves more directed edges than sync": "supported",
+    "H-LI19 inhibit resolves fewer directed edges than sync": "supported",
+    "H-LI20 the router resolves more cross-module edges than inhibit and no fewer than chat": "supported",
+    "H-LI21 one agent solves at least as many cases as the best swarm arm": "supported"
+  }
+}

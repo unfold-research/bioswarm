@@ -1,0 +1,162 @@
+{
+  "collectionsPerScenario": 2000,
+  "seedsFrom": 900001,
+  "scenarios": {
+    "local": {
+      "sweep": {
+        "edited": 0.5185,
+        "ci95": [
+          0.4965874466967267,
+          0.5403416225527501
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.5485,
+        "poisonReread": 0
+      },
+      "alarm": {
+        "edited": 0.6675,
+        "ci95": [
+          0.6465493095595934,
+          0.6878084795910749
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.8565,
+        "poisonReread": 0
+      },
+      "hedge": {
+        "edited": 0.6035,
+        "ci95": [
+          0.5818827783052317,
+          0.6247203929013007
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.6775,
+        "poisonReread": 0
+      },
+      "adapt": {
+        "edited": 0.6495,
+        "ci95": [
+          0.6283208793214338,
+          0.6701059235324464
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.804,
+        "poisonReread": 0
+      },
+      "probe": {
+        "edited": 1,
+        "ci95": [
+          0.9980829526885622,
+          1
+        ],
+        "stable": 1,
+        "editedPartsReread": 2.686,
+        "poisonReread": 0
+      }
+    },
+    "scatter": {
+      "sweep": {
+        "edited": 0.5035,
+        "ci95": [
+          0.4816017762467663,
+          0.5253848044220535
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.5065,
+        "poisonReread": 0
+      },
+      "alarm": {
+        "edited": 0.312,
+        "ci95": [
+          0.29207160011526356,
+          0.33264920967383704
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.2105,
+        "poisonReread": 0
+      },
+      "hedge": {
+        "edited": 0.3845,
+        "ci95": [
+          0.36342031655588974,
+          0.40602252137305245
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.32,
+        "poisonReread": 0
+      },
+      "adapt": {
+        "edited": 0.3265,
+        "ci95": [
+          0.3062981240696284,
+          0.3473670913474405
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.2515,
+        "poisonReread": 0
+      },
+      "probe": {
+        "edited": 0.2915,
+        "ci95": [
+          0.2719978644632159,
+          0.3118015442656536
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.193,
+        "poisonReread": 0
+      }
+    },
+    "poison": {
+      "sweep": {
+        "edited": 0.4205,
+        "ci95": [
+          0.39903831640808307,
+          0.4422664941144355
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.5485,
+        "poisonReread": 0.5005
+      },
+      "alarm": {
+        "edited": 0.2055,
+        "ci95": [
+          0.18836387623636028,
+          0.22376526463007654
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.5435,
+        "poisonReread": 0.0215
+      },
+      "hedge": {
+        "edited": 0.174,
+        "ci95": [
+          0.1580142295776361,
+          0.19123568526942125
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.6065,
+        "poisonReread": 0.03
+      },
+      "adapt": {
+        "edited": 0.1845,
+        "ci95": [
+          0.16811058597106437,
+          0.20209907088245282
+        ],
+        "stable": 1,
+        "editedPartsReread": 1.5105,
+        "poisonReread": 0.021
+      },
+      "probe": {
+        "edited": 0.394,
+        "ci95": [
+          0.37280780616905757,
+          0.4155986078609673
+        ],
+        "stable": 1,
+        "editedPartsReread": 2.18,
+        "poisonReread": 0
+      }
+    }
+  }
+}

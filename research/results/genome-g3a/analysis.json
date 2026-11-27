@@ -1,0 +1,894 @@
+{
+ "cells": {
+  "maintain|0|independent": {
+   "mean": 0.5015,
+   "half": 0.0049,
+   "n": 200
+  },
+  "maintain|0|schedule": {
+   "mean": 0.6169,
+   "half": 0.0034,
+   "n": 200
+  },
+  "maintain|0|orchestrator": {
+   "mean": 0.5147,
+   "half": 0.0088,
+   "n": 200
+  },
+  "maintain|0|board": {
+   "mean": 0.5063,
+   "half": 0.0051,
+   "n": 200
+  },
+  "maintain|0|colony": {
+   "mean": 0.2338,
+   "half": 0.0043,
+   "n": 200
+  },
+  "maintain|0|flock": {
+   "mean": 0.394,
+   "half": 0.0056,
+   "n": 200
+  },
+  "maintain|0|school": {
+   "mean": 0.4172,
+   "half": 0.0065,
+   "n": 200
+  },
+  "maintain|0|team": {
+   "mean": 0.3126,
+   "half": 0.0036,
+   "n": 200
+  },
+  "maintain|0|chemical": {
+   "mean": 0.2477,
+   "half": 0.0049,
+   "n": 200
+  },
+  "maintain|0|orchestrator+def": {
+   "mean": 0.5095,
+   "half": 0.0086,
+   "n": 200
+  },
+  "maintain|0|board+def": {
+   "mean": 0.5089,
+   "half": 0.0047,
+   "n": 200
+  },
+  "maintain|0|colony+def": {
+   "mean": 0.2356,
+   "half": 0.0043,
+   "n": 200
+  },
+  "maintain|0|flock+def": {
+   "mean": 0.3925,
+   "half": 0.0051,
+   "n": 200
+  },
+  "maintain|0|school+def": {
+   "mean": 0.4193,
+   "half": 0.0069,
+   "n": 200
+  },
+  "maintain|0|team+def": {
+   "mean": 0.3126,
+   "half": 0.0036,
+   "n": 200
+  },
+  "maintain|0|chemical+def": {
+   "mean": 0.2476,
+   "half": 0.0059,
+   "n": 200
+  },
+  "maintain|0|task-hybrid": {
+   "mean": 0.5108,
+   "half": 0.0092,
+   "n": 200
+  },
+  "maintain|0|general-hybrid": {
+   "mean": 0.5102,
+   "half": 0.0094,
+   "n": 200
+  },
+  "maintain|0.2|independent": {
+   "mean": 0.4238,
+   "half": 0.0043,
+   "n": 200
+  },
+  "maintain|0.2|schedule": {
+   "mean": 0.5065,
+   "half": 0.004,
+   "n": 200
+  },
+  "maintain|0.2|orchestrator": {
+   "mean": 0.3974,
+   "half": 0.0041,
+   "n": 200
+  },
+  "maintain|0.2|board": {
+   "mean": 0.2789,
+   "half": 0.0048,
+   "n": 200
+  },
+  "maintain|0.2|colony": {
+   "mean": 0.196,
+   "half": 0.0049,
+   "n": 200
+  },
+  "maintain|0.2|flock": {
+   "mean": 0.3446,
+   "half": 0.005,
+   "n": 200
+  },
+  "maintain|0.2|school": {
+   "mean": 0.3638,
+   "half": 0.0055,
+   "n": 200
+  },
+  "maintain|0.2|team": {
+   "mean": 0.2402,
+   "half": 0.003,
+   "n": 200
+  },
+  "maintain|0.2|chemical": {
+   "mean": 0.2208,
+   "half": 0.0056,
+   "n": 200
+  },
+  "maintain|0.2|orchestrator+def": {
+   "mean": 0.3962,
+   "half": 0.006,
+   "n": 200
+  },
+  "maintain|0.2|board+def": {
+   "mean": 0.4257,
+   "half": 0.0045,
+   "n": 200
+  },
+  "maintain|0.2|colony+def": {
+   "mean": 0.1453,
+   "half": 0.005,
+   "n": 200
+  },
+  "maintain|0.2|flock+def": {
+   "mean": 0.3436,
+   "half": 0.0051,
+   "n": 200
+  },
+  "maintain|0.2|school+def": {
+   "mean": 0.371,
+   "half": 0.006,
+   "n": 200
+  },
+  "maintain|0.2|team+def": {
+   "mean": 0.2402,
+   "half": 0.003,
+   "n": 200
+  },
+  "maintain|0.2|chemical+def": {
+   "mean": 0.1502,
+   "half": 0.0056,
+   "n": 200
+  },
+  "maintain|0.2|task-hybrid": {
+   "mean": 0.4238,
+   "half": 0.0043,
+   "n": 200
+  },
+  "maintain|0.2|general-hybrid": {
+   "mean": 0.401,
+   "half": 0.0072,
+   "n": 200
+  },
+  "track|0|independent": {
+   "mean": 0.2314,
+   "half": 0.0112,
+   "n": 200
+  },
+  "track|0|schedule": {
+   "mean": 0.0439,
+   "half": 0.0006,
+   "n": 200
+  },
+  "track|0|orchestrator": {
+   "mean": 0.7673,
+   "half": 0.0097,
+   "n": 200
+  },
+  "track|0|board": {
+   "mean": 0.3667,
+   "half": 0.0127,
+   "n": 200
+  },
+  "track|0|colony": {
+   "mean": 0.3649,
+   "half": 0.014,
+   "n": 200
+  },
+  "track|0|flock": {
+   "mean": 0.4935,
+   "half": 0.0137,
+   "n": 200
+  },
+  "track|0|school": {
+   "mean": 0.644,
+   "half": 0.01,
+   "n": 200
+  },
+  "track|0|team": {
+   "mean": 0.7954,
+   "half": 0.0076,
+   "n": 200
+  },
+  "track|0|chemical": {
+   "mean": 0.6399,
+   "half": 0.0119,
+   "n": 200
+  },
+  "track|0|orchestrator+def": {
+   "mean": 0.7985,
+   "half": 0.0079,
+   "n": 200
+  },
+  "track|0|board+def": {
+   "mean": 0.3757,
+   "half": 0.0133,
+   "n": 200
+  },
+  "track|0|colony+def": {
+   "mean": 0.337,
+   "half": 0.0136,
+   "n": 200
+  },
+  "track|0|flock+def": {
+   "mean": 0.4797,
+   "half": 0.0131,
+   "n": 200
+  },
+  "track|0|school+def": {
+   "mean": 0.6407,
+   "half": 0.0097,
+   "n": 200
+  },
+  "track|0|team+def": {
+   "mean": 0.7954,
+   "half": 0.0076,
+   "n": 200
+  },
+  "track|0|chemical+def": {
+   "mean": 0.628,
+   "half": 0.012,
+   "n": 200
+  },
+  "track|0|task-hybrid": {
+   "mean": 0.8376,
+   "half": 0.0051,
+   "n": 200
+  },
+  "track|0|general-hybrid": {
+   "mean": 0.8346,
+   "half": 0.0051,
+   "n": 200
+  },
+  "track|0.2|independent": {
+   "mean": 0.2436,
+   "half": 0.0117,
+   "n": 200
+  },
+  "track|0.2|schedule": {
+   "mean": 0.0437,
+   "half": 0.0006,
+   "n": 200
+  },
+  "track|0.2|orchestrator": {
+   "mean": 0.0537,
+   "half": 0.0084,
+   "n": 200
+  },
+  "track|0.2|board": {
+   "mean": 0.1598,
+   "half": 0.0124,
+   "n": 200
+  },
+  "track|0.2|colony": {
+   "mean": 0.3523,
+   "half": 0.0141,
+   "n": 200
+  },
+  "track|0.2|flock": {
+   "mean": 0.4779,
+   "half": 0.0126,
+   "n": 200
+  },
+  "track|0.2|school": {
+   "mean": 0.6285,
+   "half": 0.0106,
+   "n": 200
+  },
+  "track|0.2|team": {
+   "mean": 0.6451,
+   "half": 0.0134,
+   "n": 200
+  },
+  "track|0.2|chemical": {
+   "mean": 0.4625,
+   "half": 0.0221,
+   "n": 200
+  },
+  "track|0.2|orchestrator+def": {
+   "mean": 0.6386,
+   "half": 0.0152,
+   "n": 200
+  },
+  "track|0.2|board+def": {
+   "mean": 0.3397,
+   "half": 0.0144,
+   "n": 200
+  },
+  "track|0.2|colony+def": {
+   "mean": 0.3341,
+   "half": 0.0137,
+   "n": 200
+  },
+  "track|0.2|flock+def": {
+   "mean": 0.471,
+   "half": 0.0136,
+   "n": 200
+  },
+  "track|0.2|school+def": {
+   "mean": 0.6351,
+   "half": 0.0104,
+   "n": 200
+  },
+  "track|0.2|team+def": {
+   "mean": 0.6451,
+   "half": 0.0134,
+   "n": 200
+  },
+  "track|0.2|chemical+def": {
+   "mean": 0.612,
+   "half": 0.0118,
+   "n": 200
+  },
+  "track|0.2|task-hybrid": {
+   "mean": 0.7191,
+   "half": 0.0109,
+   "n": 200
+  },
+  "track|0.2|general-hybrid": {
+   "mean": 0.5839,
+   "half": 0.0246,
+   "n": 200
+  },
+  "mass|0|independent": {
+   "mean": 0.0322,
+   "half": 0.0036,
+   "n": 200
+  },
+  "mass|0|schedule": {
+   "mean": 0,
+   "half": 0,
+   "n": 200
+  },
+  "mass|0|orchestrator": {
+   "mean": 0.5592,
+   "half": 0.0136,
+   "n": 200
+  },
+  "mass|0|board": {
+   "mean": 0.286,
+   "half": 0.0099,
+   "n": 200
+  },
+  "mass|0|colony": {
+   "mean": 0.2224,
+   "half": 0.0082,
+   "n": 200
+  },
+  "mass|0|flock": {
+   "mean": 0.0824,
+   "half": 0.0063,
+   "n": 200
+  },
+  "mass|0|school": {
+   "mean": 0.0804,
+   "half": 0.0063,
+   "n": 200
+  },
+  "mass|0|team": {
+   "mean": 0.2012,
+   "half": 0.0084,
+   "n": 200
+  },
+  "mass|0|chemical": {
+   "mean": 0.2876,
+   "half": 0.0082,
+   "n": 200
+  },
+  "mass|0|orchestrator+def": {
+   "mean": 0.5349,
+   "half": 0.0132,
+   "n": 200
+  },
+  "mass|0|board+def": {
+   "mean": 0.281,
+   "half": 0.0103,
+   "n": 200
+  },
+  "mass|0|colony+def": {
+   "mean": 0.2168,
+   "half": 0.008,
+   "n": 200
+  },
+  "mass|0|flock+def": {
+   "mean": 0.0759,
+   "half": 0.0062,
+   "n": 200
+  },
+  "mass|0|school+def": {
+   "mean": 0.0761,
+   "half": 0.006,
+   "n": 200
+  },
+  "mass|0|team+def": {
+   "mean": 0.2012,
+   "half": 0.0084,
+   "n": 200
+  },
+  "mass|0|chemical+def": {
+   "mean": 0.2855,
+   "half": 0.0085,
+   "n": 200
+  },
+  "mass|0|task-hybrid": {
+   "mean": 0.5303,
+   "half": 0.013,
+   "n": 200
+  },
+  "mass|0|general-hybrid": {
+   "mean": 0.5403,
+   "half": 0.0139,
+   "n": 200
+  },
+  "mass|0.2|independent": {
+   "mean": 0.0154,
+   "half": 0.003,
+   "n": 200
+  },
+  "mass|0.2|schedule": {
+   "mean": 0,
+   "half": 0,
+   "n": 200
+  },
+  "mass|0.2|orchestrator": {
+   "mean": 0.107,
+   "half": 0.0066,
+   "n": 200
+  },
+  "mass|0.2|board": {
+   "mean": 0.1054,
+   "half": 0.0074,
+   "n": 200
+  },
+  "mass|0.2|colony": {
+   "mean": 0.1841,
+   "half": 0.008,
+   "n": 200
+  },
+  "mass|0.2|flock": {
+   "mean": 0.0477,
+   "half": 0.0051,
+   "n": 200
+  },
+  "mass|0.2|school": {
+   "mean": 0.0434,
+   "half": 0.0049,
+   "n": 200
+  },
+  "mass|0.2|team": {
+   "mean": 0.0941,
+   "half": 0.006,
+   "n": 200
+  },
+  "mass|0.2|chemical": {
+   "mean": 0.2344,
+   "half": 0.0091,
+   "n": 200
+  },
+  "mass|0.2|orchestrator+def": {
+   "mean": 0.3813,
+   "half": 0.0114,
+   "n": 200
+  },
+  "mass|0.2|board+def": {
+   "mean": 0.1611,
+   "half": 0.0084,
+   "n": 200
+  },
+  "mass|0.2|colony+def": {
+   "mean": 0.128,
+   "half": 0.0075,
+   "n": 200
+  },
+  "mass|0.2|flock+def": {
+   "mean": 0.0477,
+   "half": 0.0049,
+   "n": 200
+  },
+  "mass|0.2|school+def": {
+   "mean": 0.0462,
+   "half": 0.005,
+   "n": 200
+  },
+  "mass|0.2|team+def": {
+   "mean": 0.0941,
+   "half": 0.006,
+   "n": 200
+  },
+  "mass|0.2|chemical+def": {
+   "mean": 0.1168,
+   "half": 0.0078,
+   "n": 200
+  },
+  "mass|0.2|task-hybrid": {
+   "mean": 0.4521,
+   "half": 0.0105,
+   "n": 200
+  },
+  "mass|0.2|general-hybrid": {
+   "mean": 0.4543,
+   "half": 0.0111,
+   "n": 200
+  },
+  "pipeline|0|independent": {
+   "mean": 0.6992,
+   "half": 0.0038,
+   "n": 200
+  },
+  "pipeline|0|schedule": {
+   "mean": 0.219,
+   "half": 0.0033,
+   "n": 200
+  },
+  "pipeline|0|orchestrator": {
+   "mean": 0.5841,
+   "half": 0.0105,
+   "n": 200
+  },
+  "pipeline|0|board": {
+   "mean": 0.6543,
+   "half": 0.0042,
+   "n": 200
+  },
+  "pipeline|0|colony": {
+   "mean": 0.1704,
+   "half": 0.0029,
+   "n": 200
+  },
+  "pipeline|0|flock": {
+   "mean": 0.3198,
+   "half": 0.0039,
+   "n": 200
+  },
+  "pipeline|0|school": {
+   "mean": 0.5363,
+   "half": 0.0052,
+   "n": 200
+  },
+  "pipeline|0|team": {
+   "mean": 0.4164,
+   "half": 0.0059,
+   "n": 200
+  },
+  "pipeline|0|chemical": {
+   "mean": 0.1659,
+   "half": 0.0031,
+   "n": 200
+  },
+  "pipeline|0|orchestrator+def": {
+   "mean": 0.5169,
+   "half": 0.0123,
+   "n": 200
+  },
+  "pipeline|0|board+def": {
+   "mean": 0.6581,
+   "half": 0.0042,
+   "n": 200
+  },
+  "pipeline|0|colony+def": {
+   "mean": 0.1802,
+   "half": 0.003,
+   "n": 200
+  },
+  "pipeline|0|flock+def": {
+   "mean": 0.317,
+   "half": 0.0039,
+   "n": 200
+  },
+  "pipeline|0|school+def": {
+   "mean": 0.5356,
+   "half": 0.005,
+   "n": 200
+  },
+  "pipeline|0|team+def": {
+   "mean": 0.4164,
+   "half": 0.0059,
+   "n": 200
+  },
+  "pipeline|0|chemical+def": {
+   "mean": 0.1632,
+   "half": 0.0029,
+   "n": 200
+  },
+  "pipeline|0|task-hybrid": {
+   "mean": 0.7116,
+   "half": 0.0042,
+   "n": 200
+  },
+  "pipeline|0|general-hybrid": {
+   "mean": 0.5775,
+   "half": 0.01,
+   "n": 200
+  },
+  "pipeline|0.2|independent": {
+   "mean": 0.6142,
+   "half": 0.004,
+   "n": 200
+  },
+  "pipeline|0.2|schedule": {
+   "mean": 0.1119,
+   "half": 0.0027,
+   "n": 200
+  },
+  "pipeline|0.2|orchestrator": {
+   "mean": 0.5071,
+   "half": 0.0046,
+   "n": 200
+  },
+  "pipeline|0.2|board": {
+   "mean": 0.3218,
+   "half": 0.0061,
+   "n": 200
+  },
+  "pipeline|0.2|colony": {
+   "mean": 0.1764,
+   "half": 0.0046,
+   "n": 200
+  },
+  "pipeline|0.2|flock": {
+   "mean": 0.2553,
+   "half": 0.0034,
+   "n": 200
+  },
+  "pipeline|0.2|school": {
+   "mean": 0.4648,
+   "half": 0.0048,
+   "n": 200
+  },
+  "pipeline|0.2|team": {
+   "mean": 0.2196,
+   "half": 0.0054,
+   "n": 200
+  },
+  "pipeline|0.2|chemical": {
+   "mean": 0.1735,
+   "half": 0.0037,
+   "n": 200
+  },
+  "pipeline|0.2|orchestrator+def": {
+   "mean": 0.3196,
+   "half": 0.0087,
+   "n": 200
+  },
+  "pipeline|0.2|board+def": {
+   "mean": 0.5726,
+   "half": 0.0038,
+   "n": 200
+  },
+  "pipeline|0.2|colony+def": {
+   "mean": 0.1079,
+   "half": 0.0041,
+   "n": 200
+  },
+  "pipeline|0.2|flock+def": {
+   "mean": 0.2544,
+   "half": 0.0035,
+   "n": 200
+  },
+  "pipeline|0.2|school+def": {
+   "mean": 0.4648,
+   "half": 0.0046,
+   "n": 200
+  },
+  "pipeline|0.2|team+def": {
+   "mean": 0.2196,
+   "half": 0.0054,
+   "n": 200
+  },
+  "pipeline|0.2|chemical+def": {
+   "mean": 0.0986,
+   "half": 0.0037,
+   "n": 200
+  },
+  "pipeline|0.2|task-hybrid": {
+   "mean": 0.6101,
+   "half": 0.0042,
+   "n": 200
+  },
+  "pipeline|0.2|general-hybrid": {
+   "mean": 0.4894,
+   "half": 0.006,
+   "n": 200
+  },
+  "maintain-scattered|0|independent": {
+   "mean": 0.5641,
+   "half": 0.0027,
+   "n": 200
+  },
+  "maintain-scattered|0|schedule": {
+   "mean": 0.6203,
+   "half": 0.0031,
+   "n": 200
+  },
+  "maintain-scattered|0|orchestrator": {
+   "mean": 0.4508,
+   "half": 0.0121,
+   "n": 200
+  },
+  "maintain-scattered|0|board": {
+   "mean": 0.5683,
+   "half": 0.0032,
+   "n": 200
+  },
+  "maintain-scattered|0|colony": {
+   "mean": 0.3183,
+   "half": 0.0041,
+   "n": 200
+  },
+  "maintain-scattered|0|flock": {
+   "mean": 0.4693,
+   "half": 0.0036,
+   "n": 200
+  },
+  "maintain-scattered|0|school": {
+   "mean": 0.5049,
+   "half": 0.0037,
+   "n": 200
+  },
+  "maintain-scattered|0|team": {
+   "mean": 0.3149,
+   "half": 0.003,
+   "n": 200
+  },
+  "maintain-scattered|0|chemical": {
+   "mean": 0.352,
+   "half": 0.0054,
+   "n": 200
+  },
+  "maintain-scattered|0|orchestrator+def": {
+   "mean": 0.4652,
+   "half": 0.0124,
+   "n": 200
+  },
+  "maintain-scattered|0|board+def": {
+   "mean": 0.5664,
+   "half": 0.0029,
+   "n": 200
+  },
+  "maintain-scattered|0|colony+def": {
+   "mean": 0.3162,
+   "half": 0.0038,
+   "n": 200
+  },
+  "maintain-scattered|0|flock+def": {
+   "mean": 0.473,
+   "half": 0.0034,
+   "n": 200
+  },
+  "maintain-scattered|0|school+def": {
+   "mean": 0.5063,
+   "half": 0.0036,
+   "n": 200
+  },
+  "maintain-scattered|0|team+def": {
+   "mean": 0.3149,
+   "half": 0.003,
+   "n": 200
+  },
+  "maintain-scattered|0|chemical+def": {
+   "mean": 0.3546,
+   "half": 0.0047,
+   "n": 200
+  },
+  "maintain-scattered|0|general-hybrid": {
+   "mean": 0.4587,
+   "half": 0.0123,
+   "n": 200
+  },
+  "maintain-scattered|0.2|independent": {
+   "mean": 0.4855,
+   "half": 0.0032,
+   "n": 200
+  },
+  "maintain-scattered|0.2|schedule": {
+   "mean": 0.5078,
+   "half": 0.0029,
+   "n": 200
+  },
+  "maintain-scattered|0.2|orchestrator": {
+   "mean": 0.3624,
+   "half": 0.0046,
+   "n": 200
+  },
+  "maintain-scattered|0.2|board": {
+   "mean": 0.339,
+   "half": 0.0042,
+   "n": 200
+  },
+  "maintain-scattered|0.2|colony": {
+   "mean": 0.2261,
+   "half": 0.0044,
+   "n": 200
+  },
+  "maintain-scattered|0.2|flock": {
+   "mean": 0.4147,
+   "half": 0.0032,
+   "n": 200
+  },
+  "maintain-scattered|0.2|school": {
+   "mean": 0.4453,
+   "half": 0.0038,
+   "n": 200
+  },
+  "maintain-scattered|0.2|team": {
+   "mean": 0.2471,
+   "half": 0.0027,
+   "n": 200
+  },
+  "maintain-scattered|0.2|chemical": {
+   "mean": 0.2442,
+   "half": 0.0035,
+   "n": 200
+  },
+  "maintain-scattered|0.2|orchestrator+def": {
+   "mean": 0.3523,
+   "half": 0.0089,
+   "n": 200
+  },
+  "maintain-scattered|0.2|board+def": {
+   "mean": 0.4846,
+   "half": 0.0032,
+   "n": 200
+  },
+  "maintain-scattered|0.2|colony+def": {
+   "mean": 0.195,
+   "half": 0.0059,
+   "n": 200
+  },
+  "maintain-scattered|0.2|flock+def": {
+   "mean": 0.4162,
+   "half": 0.0032,
+   "n": 200
+  },
+  "maintain-scattered|0.2|school+def": {
+   "mean": 0.4457,
+   "half": 0.0035,
+   "n": 200
+  },
+  "maintain-scattered|0.2|team+def": {
+   "mean": 0.2471,
+   "half": 0.0027,
+   "n": 200
+  },
+  "maintain-scattered|0.2|chemical+def": {
+   "mean": 0.1806,
+   "half": 0.0058,
+   "n": 200
+  },
+  "maintain-scattered|0.2|general-hybrid": {
+   "mean": 0.347,
+   "half": 0.0095,
+   "n": 200
+  }
+ }
+}

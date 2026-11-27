@@ -1,0 +1,6 @@
+# LAB-005 — Flag batch 2: look for a bio-specific effect (cap [US$ redacted] Haiku 5.5)
+Owner: Norevia Lab. See OVERNIGHT-2026-11-09.md.
+Goal: so far every positive result is explained by a non-bio engineering control. Test untested flags from `norevia/research/FLAGS.md` whose mechanism has no obvious engineering equivalent, each paired with its closest non-bio control, at the LAB-004 micro-task scale (N up to 1,000, tiny contexts).
+Candidates (pick ≥ 5 by expected information): `predator_prey_damping`, `firefly_sync`, `physarum_edges`, `acceptance_coupled_launch`, `proportional_allocation`, `neutrophil relay_recruit_selflimit`, `danger_signal_escalation`, `quorum_sensing_activation`, `topological_neighbours` (real LLM, not only sim), `correlation_stop`.
+Design: reuse LAB-004 environment and harness; pre-register; one flag at a time vs (a) its closest engineering control and (b) the best baseline (uncapped central orchestrator — fix LAB-004's capped-orchestrator artefact); ≥ 3 repetitions at the N where the flag should matter. Primary: accepted tasks per US$ with false success separate.
+Deliverable: report with a verdict per flag ("bio-specific effect", "engineering-equivalent", "null"), update only the status cells in FLAGS.md (with backup), ledger ≤ 35.

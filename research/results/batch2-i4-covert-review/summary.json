@@ -1,0 +1,60 @@
+{
+  "study": "i4-covert-review",
+  "configHash": "4d3bf50411ece75b77da417c11310754a1609f7ef29447c91b8e56fe8889a779",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "review",
+  "arms": {
+    "none": {
+      "follows": 8,
+      "formal": 8,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "native": {
+      "follows": 16,
+      "formal": 16,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "peer": {
+      "follows": 8,
+      "formal": 0,
+      "covert": 8,
+      "resolved": 1,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "irrelevant": {
+      "follows": 4,
+      "formal": 0,
+      "covert": 4,
+      "resolved": 1,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "warned": {
+      "follows": 8,
+      "formal": 0,
+      "covert": 8,
+      "resolved": 3,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    }
+  },
+  "finishedAt": "2026-11-11T12:40:49.090Z"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "LI42",
+  "prereg": "tasks/LI42-SECOND-FAMILY-PREREG.md",
+  "base": {
+    "provider": "openai-litellm",
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "memberMax": 8000,
+    "managerMax": 128000,
+    "rounds": 12,
+    "strictFeedback": true,
+    "managerSlack": true
+  },
+  "pilot": {
+    "seed": 42390,
+    "cap": 1.5,
+    "rounds": 12,
+    "stopIfNoArmSolves": true,
+    "marginDecision": {
+      "approvedBy": "owner via Research Leader",
+      "at": "2026-11-23",
+      "source": "tasks/LI42-SECOND-FAMILY-PREREG.md ## Amendment 4",
+      "text": "(B) <= [US$ redacted] -> proceed even when (A) > the study cap (10.5); (B) > 9.0 and (A) > 10.5 -> final stop for the Research Leader; (B) > 10.5 -> stop under rule (a)"
+    }
+  },
+  "sizes": [
+    {
+      "k": 160,
+      "seed0": 42400,
+      "cases": 12,
+      "cap": 10.5,
+      "directed": 320,
+      "symmetric": 80,
+      "tests": 16
+    }
+  ],
+  "arms": [
+    "stigwait",
+    "manager"
+  ],
+  "hypotheses": [
+    {
+      "id": "H-LI127",
+      "primary": true,
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "wavesToSolve",
+      "title": "With gpt-6-luna at 160 modules, waiting for the trace reaches zero failing checks in fewer waves than a manager"
+    },
+    {
+      "id": "H-LI128",
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "final",
+      "title": "With gpt-6-luna at 160 modules, waiting for the trace ends with fewer failing checks than a manager"
+    },
+    {
+      "id": "H-LI129",
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "holdoutFailing",
+      "title": "With gpt-6-luna at 160 modules, waiting for the trace leaves fewer checks failing on fresh inputs than a manager"
+    },
+    {
+      "id": "H-LI130",
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "tokens",
+      "title": "With gpt-6-luna at 160 modules, waiting for the trace uses fewer output tokens per case than a manager"
+    }
+  ],
+  "bench": {
+    "reviewModel": "anthropic/claude-sonnet-5-5",
+    "reproModel": "anthropic/claude-sonnet-5-5",
+    "reproCheck": true,
+    "reviewCap": 2,
+    "reportNote": "LI42 is LI41 with the model changed to gpt-6-luna (OpenAI, via LiteLLM batch, reasoning_effort medium): same instrument, size, density, rounds and limits; seeds 42400 to 42411. H-LI127 to H-LI130 are LI41's H-LI123 to H-LI126 with the model changed. Report LI38, LI41 and LI42 side by side, descriptive only, with no pooled test across families. (1) With 12 cases H-LI127 is supported only at 10 to 2 or better; 9 to 3 (p = 0.146) is inconclusive, not partial transfer. (2) A cap stop makes the run incomplete: no verdicts, no cases cut, resume only with the owner's approval through the Research Leader. (3) Report every distinct returned model string first; more than one means the cell stays preliminary on this run. (4) The comparison with LI38/LI41 is the direction of each effect only; no absolute value (waves, checks, tokens, cost, reasoning tokens) is compared across families. State the transport used (batch or flex synchronous, plan B) and the effort and model strings found in the export. (5) The pilot (seed 42390) is excluded from all verdicts. (6) Scope: two families, one model each, synthetic coupled code tasks; nothing beyond them. (7) Pilot floor rule (Research Leader, 2026-11-23): if neither arm solved the pilot case within 12 rounds, the study does not run before the Research Leader reviews the pilot. Pricing assumption (Bancada, accepted by Coordination Research 2026-11-23): the gateway table gives no batch price for gpt-6-luna prompts above 272k tokens, so the runner prices that band at the flex rate ([US$ redacted] in / 0.375 out per Mtok); state this assumption in the report and whether any request crossed 272k. Amendment 1 (2026-11-23, Research Leader at the owner's request, before the study's wave 1, no study data seen): the pilot's wave 0 ran on batch; from the pilot's wave 1 on and for the whole study the transport is synchronous flex, same model, effort, prompts, limits, waves and price, chosen for speed (batch took about 2 h per wave), not because batch failed. State this amendment in the design paragraph, and that the pilot mixed both transports, which does not affect any verdict since the pilot is excluded. Amendment 2 (2026-11-23, Research Leader under the owner's standing urgency, before the pilot's wave 1, decided from progress counts only, for speed): the pilot's wave 0 is the requests completed on batch (results kept) plus the unfinished remainder sent on synchronous flex within wave 0 with the same bodies, same model, effort, prompts, limits and price, transport recorded per request; the batch was either cancelled (if a gateway cancel returns the partial output) or left to expire. State this amendment, the path taken (cancel or expiry), and that the pilot's wave 0 mixed both transports, which does not affect any verdict since the pilot is excluded. Amendment 3 (2026-11-23, Research Leader, before any resend, no content read): in the pilot's wave 0, 15 requests came back as OpenAI HTTP 500 errors inside the cancelled batch (request_counts showed 0 failed); transport-class errors inside a batch (5xx, 429, timeout) count as batch failure per request and were resent on flex with the same body; other errors are not retried and follow the stop rules. The pilot's first wave 1 (108 of 140 sent, 86 returned, none applied, content never read) was discarded and redone from the complete wave 0 state; its replies are kept on disk as a deviation and its cost counts against the pilot cap. Invariant for pilot and study: no wave advances unless every member has a response delivered by the API; otherwise hard stop (the model's own output in a delivered response is data, handled by the LI41 instrument unchanged). State all of this; the pilot is excluded from all verdicts. Network path (2026-11-23, Research Leader, after the pilot's invariant hard stop at 19:44 UTC; no amendment, transport unchanged): in the redo of the pilot's wave 1, 136 of 137 flex requests were delivered; the manager's plan request got HTTP 524 eight times through the public LiteLLM endpoint, which sits behind Cloudflare and cuts synchronous requests at about 100 s. From then on the bench reaches the same LiteLLM (same version and model config, confirmed and recorded in run-provenance.json), same key, model, flex tier, bodies and price, over the internal WireGuard route instead of the public endpoint. Only the plan request was resent, with the same body (a transport-class error under Amendment 3). The route is fixed for the whole study before its wave 1, with no fallback mid-run. State this change, its reason and timing, and whether the eight cut calls were billed upstream; the pilot is excluded from all verdicts. Clarification of stop rule (a) (2026-11-23, Research Leader, from cost accounting only, before the pilot's resume): the [US$ redacted] pilot cap counts every pilot cost, including the discarded first wave 1 ([US$ redacted]) and the conservative charge for the 8 HTTP 524 cut calls ([US$ redacted] upstream billing unknown); rule (a)'s projection to the study uses only the pilot waves actually applied, leaving out those two named incident entries. Show both projections (applied waves only, used by the gate; and with the incidents) and the pilot cap total, and say plainly if the two projections fall on opposite sides of [US$ redacted] Amendment 4 (2026-11-23, owner via the Research Leader, before the pilot's restart and any gate outcome, from cost accounting only): caps reallocated within the [US$ redacted] total to pilot [US$ redacted] study [US$ redacted] review [US$ redacted] because the pilot incidents already used [US$ redacted] of the [US$ redacted] pilot cap. Rule (a) and the margin check use [US$ redacted] Pre-committed margin decision: proceed if projection (B) <= [US$ redacted] even when (A) > 10.5; if (B) > 9.0 and (A) > 10.5, final stop and back to the Research Leader. Earlier mentions of 1 + 11 + 2 and [US$ redacted] read as 1.5 + 10.5 + 2 and [US$ redacted] State this amendment, both projections, the pilot cap total and which margin branch applied."
+  }
+}

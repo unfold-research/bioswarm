@@ -1,0 +1,179 @@
+{
+  "arms": {
+    "routed": {
+      "solved": 7,
+      "of": 10,
+      "finalTotal": {
+        "sum": 3,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 3,
+        "symmetric": 0
+      },
+      "meanOut": 54767,
+      "calls": 200,
+      "trunc": 0,
+      "messages": 315,
+      "meanTrajectory": [
+        22.2,
+        5.6,
+        3.1,
+        0.8,
+        0.4,
+        0.5,
+        0.3
+      ]
+    },
+    "chat": {
+      "solved": 0,
+      "of": 10,
+      "finalTotal": {
+        "sum": 101,
+        "median": 10
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 1,
+        "symmetric": 100
+      },
+      "meanOut": 109492,
+      "calls": 650,
+      "trunc": 0,
+      "messages": 605,
+      "meanTrajectory": [
+        22.2,
+        14.6,
+        11.2,
+        10.3,
+        10.1,
+        10.1,
+        10.1
+      ]
+    },
+    "manager": {
+      "solved": 9,
+      "of": 10,
+      "finalTotal": {
+        "sum": 1,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 1,
+        "symmetric": 0
+      },
+      "meanOut": 42404,
+      "calls": 175,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        22.2,
+        22.2,
+        4.6,
+        4.6,
+        0.9,
+        0.9,
+        0.1
+      ]
+    }
+  },
+  "edgeTests": {
+    "routed_vs_chat_symmetric": {
+      "routedOnly": 100,
+      "chatOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_chat_directed": {
+      "routedOnly": 0,
+      "chatOnly": 2,
+      "both": 117,
+      "neither": 1,
+      "p": 0.5
+    },
+    "routed_vs_chat_all": {
+      "routedOnly": 100,
+      "chatOnly": 2,
+      "both": 117,
+      "neither": 1,
+      "p": 0
+    },
+    "routed_vs_manager_symmetric": {
+      "routedOnly": 0,
+      "managerOnly": 0,
+      "both": 100,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_manager_directed": {
+      "routedOnly": 0,
+      "managerOnly": 2,
+      "both": 117,
+      "neither": 1,
+      "p": 0.5
+    },
+    "routed_vs_manager_all": {
+      "routedOnly": 0,
+      "managerOnly": 2,
+      "both": 217,
+      "neither": 1,
+      "p": 0.5
+    },
+    "manager_vs_chat_symmetric": {
+      "managerOnly": 100,
+      "chatOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "p": 0
+    },
+    "manager_vs_chat_directed": {
+      "managerOnly": 0,
+      "chatOnly": 0,
+      "both": 119,
+      "neither": 1,
+      "p": 1
+    },
+    "manager_vs_chat_all": {
+      "managerOnly": 100,
+      "chatOnly": 0,
+      "both": 119,
+      "neither": 1,
+      "p": 0
+    }
+  },
+  "signTests": {
+    "routed_vs_chat": {
+      "lowerIn": 10,
+      "higherIn": 0,
+      "p": 0.00195
+    },
+    "routed_vs_manager": {
+      "lowerIn": 0,
+      "higherIn": 2,
+      "p": 0.5
+    },
+    "manager_vs_chat": {
+      "lowerIn": 10,
+      "higherIn": 0,
+      "p": 0.00195
+    }
+  },
+  "oscillation": {
+    "routed": {
+      "bothSidesChanged": 89,
+      "stillFailingAfter": 20
+    },
+    "chat": {
+      "bothSidesChanged": 600,
+      "stillFailingAfter": 600
+    },
+    "manager": {
+      "bothSidesChanged": 90,
+      "stillFailingAfter": 48
+    }
+  },
+  "verdict": {}
+}

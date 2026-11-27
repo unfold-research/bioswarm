@@ -1,0 +1,77 @@
+{
+  "stigwait": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k80s16800": 0,
+      "k80s16801": 0,
+      "k80s16802": 0,
+      "k80s16803": 0,
+      "k80s16804": 0,
+      "k80s16805": 0,
+      "k80s16806": 0,
+      "k80s16807": 0
+    }
+  },
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 2,
+    "failing": [
+      "k80s16800 D:M13.probeToken>M23.rankLabel",
+      "k80s16801 D:M46.siftTitle>M76.tallyToken",
+      "k80s16803 D:M6.markTerm>M54.scoreHint",
+      "k80s16803 D:M26.traceToken>M76.probeName",
+      "k80s16804 D:M37.siftWord>M17.tallyToken",
+      "k80s16804 D:M36.probeLabel>M10.markLabel",
+      "k80s16804 D:M54.brandName>M60.siftAlias",
+      "k80s16804 D:M16.siftSeed>M44.markNote",
+      "k80s16805 D:M47.foldWord>M34.stampWord",
+      "k80s16805 D:M74.probeAlias>M5.shapeName",
+      "k80s16805 D:M59.scoreAlias>M33.tagSku",
+      "k80s16806 D:M34.markNote>M50.scanTerm",
+      "k80s16806 D:M7.traceName>M43.markSku",
+      "k80s16806 D:M3.siftTerm>M54.probeHint"
+    ],
+    "perCase": {
+      "k80s16800": 1,
+      "k80s16801": 1,
+      "k80s16802": 0,
+      "k80s16803": 2,
+      "k80s16804": 4,
+      "k80s16805": 3,
+      "k80s16806": 3,
+      "k80s16807": 0
+    }
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k80s16800": 0,
+      "k80s16801": 0,
+      "k80s16802": 0,
+      "k80s16803": 0,
+      "k80s16804": 0,
+      "k80s16805": 0,
+      "k80s16806": 0,
+      "k80s16807": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 7,
+    "passHoldout": 7,
+    "failing": [],
+    "perCase": {
+      "k80s16800": 0,
+      "k80s16801": 1,
+      "k80s16802": 0,
+      "k80s16803": 0,
+      "k80s16804": 0,
+      "k80s16805": 0,
+      "k80s16806": 0,
+      "k80s16807": 0
+    }
+  }
+}

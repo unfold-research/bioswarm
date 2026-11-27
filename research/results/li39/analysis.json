@@ -1,0 +1,97 @@
+{
+ "study": "LI39",
+ "prereg": "tasks/LI39-SECOND-FAMILY-COLONY-PREREG.md",
+ "generatedBy": "observatory/batch2/colony/analyze-li39.mjs",
+ "out": "li39-colony-wait-k160",
+ "cases": 12,
+ "capMinutes": 180,
+ "model": "openai-codex/gpt-6-luna",
+ "colony": "e9b45f4b8f02323088881cb8f9eb7777032acd32",
+ "rule": "per seed: exact sign test, ties dropped; supported if wait wins in more cases with p<0.05, refuted if market does, else inconclusive; Holm across the secondaries; a run that never reaches the all-pass scores cap+1 minutes and two such runs of a seed are a tie",
+ "hypotheses": [
+  {
+   "id": "H-LI119",
+   "primary": true,
+   "metric": "minutesToFirstAllPass",
+   "title": "wait reaches the first all-pass in fewer minutes than market",
+   "a": "wait",
+   "b": "market",
+   "pairs": 12,
+   "wins": 7,
+   "losses": 3,
+   "ties": 2,
+   "p": 0.34375,
+   "verdict": "inconclusive"
+  },
+  {
+   "id": "H-LI120",
+   "metric": "finalFailing",
+   "title": "wait ends with fewer failing checks than market",
+   "a": "wait",
+   "b": "market",
+   "pairs": 12,
+   "wins": 6,
+   "losses": 1,
+   "ties": 5,
+   "p": 0.125,
+   "verdict": "inconclusive",
+   "pHolm": 0.375
+  },
+  {
+   "id": "H-LI121",
+   "metric": "holdoutFailing",
+   "title": "wait leaves fewer checks failing on fresh inputs than market",
+   "a": "wait",
+   "b": "market",
+   "pairs": 12,
+   "wins": 6,
+   "losses": 2,
+   "ties": 4,
+   "p": 0.2890625,
+   "verdict": "inconclusive",
+   "pHolm": 0.375
+  },
+  {
+   "id": "H-LI122",
+   "metric": "totalTokens",
+   "title": "wait uses fewer total tokens per run than market",
+   "a": "wait",
+   "b": "market",
+   "pairs": 12,
+   "wins": 3,
+   "losses": 9,
+   "ties": 0,
+   "p": 0.14599609375,
+   "verdict": "inconclusive",
+   "pHolm": 0.375
+  }
+ ],
+ "arms": [
+  {
+   "arm": "wait",
+   "runs": 12,
+   "solved": 10,
+   "capped": 0,
+   "neverAllPass": 2,
+   "medianWallMin": 33.61935,
+   "medianFirstAllPassMin": 26.743208333333335,
+   "medianTokens": 1565601,
+   "medianFinalFailing": 0,
+   "traces": 1329,
+   "antMessages": 1932
+  },
+  {
+   "arm": "market",
+   "runs": 12,
+   "solved": 5,
+   "capped": 3,
+   "neverAllPass": 7,
+   "medianWallMin": 34.991816666666665,
+   "medianFirstAllPassMin": 181,
+   "medianTokens": 1254676.5,
+   "medianFinalFailing": 25,
+   "traces": 0,
+   "antMessages": 1932
+  }
+ ]
+}

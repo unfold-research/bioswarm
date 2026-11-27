@@ -1,0 +1,44 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          submodules: recursive
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - name: SDK and plugin
+        run: npm test
+      - name: Benchmark harness
+        run: |
+          node --test bench/*.test.mjs
+          node bench/run.mjs plan
+          node bench/phase1b/run.mjs map
+          node bench/phase1b/run.mjs manifest
+          PHASE1B_CASE=v2r node bench/phase1b/run.mjs manifest
+  research:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: research
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22
+      - run: node sims/run-all.mjs
+      - run: node --test research/theory/model.test.mjs
+      - run: node --test
+        working-directory: research/allocator
+      - run: node scripts/verdicts.mjs
+      - run: node scripts/hypotheses-index.mjs --check

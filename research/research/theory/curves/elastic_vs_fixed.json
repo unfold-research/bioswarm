@@ -1,0 +1,99 @@
+{
+  "id": "th-curve-elastic-vs-fixed",
+  "generatedBy": "research/theory/model.mjs",
+  "evidence": "hypothesis",
+  "description": "Mixture 50% easy (p=.9), 30% medium (.5), 20% hard (.15); verifier s=.9, f=.05; fixed parallel vs elastic sequential (§7.3).",
+  "mix": [
+    {
+      "w": 0.5,
+      "p": 0.9
+    },
+    {
+      "w": 0.3,
+      "p": 0.5
+    },
+    {
+      "w": 0.2,
+      "p": 0.15
+    }
+  ],
+  "rows": [
+    {
+      "Nmax": 1,
+      "fixed": {
+        "pTrue": 0.567,
+        "pFalse": 0.0185
+      },
+      "elastic": {
+        "pTrue": 0.567,
+        "pFalse": 0.0185
+      }
+    },
+    {
+      "Nmax": 2,
+      "fixed": {
+        "pTrue": 0.735,
+        "pFalse": 0.0299
+      },
+      "elastic": {
+        "pTrue": 0.735,
+        "pFalse": 0.0299
+      }
+    },
+    {
+      "Nmax": 3,
+      "fixed": {
+        "pTrue": 0.8043,
+        "pFalse": 0.0378
+      },
+      "elastic": {
+        "pTrue": 0.8043,
+        "pFalse": 0.0378
+      }
+    },
+    {
+      "Nmax": 4,
+      "fixed": {
+        "pTrue": 0.8415,
+        "pFalse": 0.0436
+      },
+      "elastic": {
+        "pTrue": 0.8415,
+        "pFalse": 0.0436
+      }
+    },
+    {
+      "Nmax": 6,
+      "fixed": {
+        "pTrue": 0.8802,
+        "pFalse": 0.0516
+      },
+      "elastic": {
+        "pTrue": 0.8802,
+        "pFalse": 0.0516
+      }
+    },
+    {
+      "Nmax": 8,
+      "fixed": {
+        "pTrue": 0.8998,
+        "pFalse": 0.0566
+      },
+      "elastic": {
+        "pTrue": 0.8998,
+        "pFalse": 0.0566
+      }
+    },
+    {
+      "Nmax": 12,
+      "fixed": {
+        "pTrue": 0.9185,
+        "pFalse": 0.0621
+      },
+      "elastic": {
+        "pTrue": 0.9185,
+        "pFalse": 0.0621
+      }
+    }
+  ]
+}

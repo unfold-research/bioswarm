@@ -1,0 +1,11 @@
+# All R0 ranges run under this slice, so both ranges together never exceed 2.5 of benchhost's 4 CPUs (TM-002 E1: resource
+# caps). Install (benchhost, user <operator>): copy to ~/.config/systemd/user/, `systemctl --user daemon-reload`,
+# `systemctl --user start r0-range.slice`. Every range container runs with --cgroup-parent=r0-range.slice and its own
+# per-container caps (--cpus 0.25 --memory 256m --pids-limit 256).
+[Unit]
+Description=R0 container range (all ranges share this slice)
+
+[Slice]
+CPUQuota=250%
+MemoryMax=4G
+TasksMax=2048

@@ -1,0 +1,66 @@
+{
+  "stigwait": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s16400": 0,
+      "k40s16401": 0,
+      "k40s16402": 0,
+      "k40s16403": 0,
+      "k40s16404": 0,
+      "k40s16405": 0,
+      "k40s16406": 0,
+      "k40s16407": 0
+    }
+  },
+  "stig": {
+    "solvedInRun": 8,
+    "passHoldout": 5,
+    "failing": [
+      "k40s16401 D:M14.gradeTerm>M39.shapeSeed",
+      "k40s16404 D:M37.traceSku>M18.shapeWord",
+      "k40s16406 D:M29.weighSku>M39.gaugeHandle"
+    ],
+    "perCase": {
+      "k40s16400": 0,
+      "k40s16401": 1,
+      "k40s16402": 0,
+      "k40s16403": 0,
+      "k40s16404": 1,
+      "k40s16405": 0,
+      "k40s16406": 1,
+      "k40s16407": 0
+    }
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s16400": 0,
+      "k40s16401": 0,
+      "k40s16402": 0,
+      "k40s16403": 0,
+      "k40s16404": 0,
+      "k40s16405": 0,
+      "k40s16406": 0,
+      "k40s16407": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s16400": 0,
+      "k40s16401": 0,
+      "k40s16402": 0,
+      "k40s16403": 0,
+      "k40s16404": 0,
+      "k40s16405": 0,
+      "k40s16406": 0,
+      "k40s16407": 0
+    }
+  }
+}

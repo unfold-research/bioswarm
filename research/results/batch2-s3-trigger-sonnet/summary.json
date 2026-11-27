@@ -1,0 +1,117 @@
+{
+  "study": "s3-trigger-sonnet",
+  "configHash": "004f5f77bca08416a86672adaee4d50789827269f80b75b7bbeb69cd32cf5703",
+  "status": "complete",
+  "wavesRun": 1,
+  "table": {
+    "none": {
+      "exposed": {
+        "n": 16,
+        "unverified": 9,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 9,
+        "invalid": 0
+      },
+      "exposed+stale": {
+        "n": 16,
+        "unverified": 5,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 5,
+        "invalid": 0
+      },
+      "stale": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 16,
+        "invalid": 0
+      },
+      "clean": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 16,
+        "invalid": 0
+      }
+    },
+    "always": {
+      "exposed": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 0,
+        "invalid": 0
+      },
+      "exposed+stale": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 16,
+        "other": 0,
+        "labelRight": 0,
+        "invalid": 0
+      },
+      "stale": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 16,
+        "other": 0,
+        "labelRight": 16,
+        "invalid": 0
+      },
+      "clean": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 16,
+        "invalid": 0
+      }
+    },
+    "on-trigger": {
+      "exposed": {
+        "n": 16,
+        "unverified": 8,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 8,
+        "invalid": 0
+      },
+      "exposed+stale": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 16,
+        "other": 0,
+        "labelRight": 0,
+        "invalid": 0
+      },
+      "stale": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 16,
+        "other": 0,
+        "labelRight": 16,
+        "invalid": 0
+      },
+      "clean": {
+        "n": 16,
+        "unverified": 0,
+        "stale": 0,
+        "other": 0,
+        "labelRight": 16,
+        "invalid": 0
+      }
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported",
+    "P4": "inconclusive"
+  },
+  "finishedAt": "2026-11-11T20:05:44.789Z"
+}

@@ -1,0 +1,24 @@
+{
+  "out": "li17-k40",
+  "k": 40,
+  "cases": 8,
+  "seed0": 17400,
+  "shape": {
+    "local": 2,
+    "directed": 40,
+    "symmetric": 30,
+    "tests": 8,
+    "shown": 3
+  },
+  "arms": [
+    "clonalwait",
+    "stigwait",
+    "manager"
+  ],
+  "model": "claude-haiku-5-5",
+  "effort": null,
+  "memberMax": 8000,
+  "managerMax": 32000,
+  "rounds": 8,
+  "strictFeedback": true
+}

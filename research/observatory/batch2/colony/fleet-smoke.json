@@ -1,0 +1,3 @@
+{ "out": "colony-fleet-smoke2", "k": 4, "seed0": 16200, "cases": 2, "arms": ["market", "field"], "model": "openai-codex/gpt-6-luna",
+  "shape": { "local": 2, "directed": 4, "symmetric": 3, "tests": 6, "shown": 3 }, "capMinutes": 25, "quietMs": 90000, "permission": "standard",
+  "endpoints": "/srv/bench/endpoints.json", "perEndpoint": 2, "removeAfter": false }

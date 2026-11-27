@@ -1,0 +1,35 @@
+{
+  "model": "gpt-6-luna",
+  "effort": "medium",
+  "promptHash": "318a7b7f51d251f51c8418c9fb38574e6229e57c64ac7af49f2fc4e71e425467",
+  "controlHash": "e9f13465877e32cb7c692a09351f96fb0c1a050263a72c0248b7b0fa1d9f8a7e",
+  "auth": "openai-subscription",
+  "validMemos": 8,
+  "totalItems": 64,
+  "correctItems": 64,
+  "passed": true,
+  "receiptHashes": [
+    "43d8b31c9ccb467d5dede9b25a1668def4fb77182ab9d95ee1c80c74f78717e2",
+    "9c0e78eb47fff5e6aaf9fec195cb281cdbbd0e761836e1a0277acc9ba1225163",
+    "5b56412ac50d1f06d1e8d4815e60628eabf5c11890dd0eb2b66d18c1b1d6781e",
+    "fbdb6dec6fea8d5cfa97dbc14eeaea3a5d656b00a8ab9e660ec86b4a80df4dbe",
+    "1976cad0e1d79a1fc6504cbf41416d725d63880976afc2d98e4b01db91a8f282",
+    "8329ba8d75cc4265b81f19bf746a81b4c4690b52f3e143346088249609a5a264",
+    "9709a3200d51b8a8179763ca5ff5143708b2aef21c40b5721f751415cd37f3d7",
+    "c43ca9c31c2b2debe97bb869bd8cea21dc70b7c19bf10a5c80b65eae18e62b05"
+  ],
+  "calls": 8,
+  "technicalRetries": 0,
+  "http429": 0,
+  "durationMs": 63790,
+  "tokens": {
+    "input": 4450,
+    "output": 1013,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "returnedModels": [],
+  "returnedEfforts": [],
+  "workerRevision": "bbef64ba71e6e6944586d61bb5e2bade7dc6496f",
+  "privateAggregateSha256": "43907d6590df56f238dd0109310fe4c4c8a46c9bb36cc7d7184537ed87c93ced"
+}

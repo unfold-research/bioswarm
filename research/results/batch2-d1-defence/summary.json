@@ -1,0 +1,186 @@
+{
+  "study": "d1-defence",
+  "configHash": "1e615ce135703f12338acd43b2651b624baaca5d8a7ccc0008f36ba1ef2d253a",
+  "status": "complete",
+  "wavesRun": 1,
+  "table": {
+    "rule": {
+      "clean": {
+        "correct": 8,
+        "wrong": 0,
+        "abstained": 0,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "lone-false": {
+        "correct": 0,
+        "wrong": 0,
+        "abstained": 8,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "sybil": {
+        "correct": 0,
+        "wrong": 0,
+        "abstained": 8,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-true": {
+        "correct": 3,
+        "wrong": 0,
+        "abstained": 5,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-false": {
+        "correct": 0,
+        "wrong": 4,
+        "abstained": 4,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      }
+    },
+    "allowlist": {
+      "clean": {
+        "correct": 8,
+        "wrong": 0,
+        "abstained": 0,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "lone-false": {
+        "correct": 6,
+        "wrong": 1,
+        "abstained": 1,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "sybil": {
+        "correct": 5,
+        "wrong": 0,
+        "abstained": 3,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-true": {
+        "correct": 2,
+        "wrong": 0,
+        "abstained": 6,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-false": {
+        "correct": 1,
+        "wrong": 1,
+        "abstained": 6,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      }
+    },
+    "instinct": {
+      "clean": {
+        "correct": 8,
+        "wrong": 0,
+        "abstained": 0,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "lone-false": {
+        "correct": 7,
+        "wrong": 0,
+        "abstained": 1,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "sybil": {
+        "correct": 7,
+        "wrong": 0,
+        "abstained": 1,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-true": {
+        "correct": 0,
+        "wrong": 1,
+        "abstained": 7,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-false": {
+        "correct": 1,
+        "wrong": 0,
+        "abstained": 7,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      }
+    },
+    "quorum": {
+      "clean": {
+        "correct": 8,
+        "wrong": 0,
+        "abstained": 0,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "lone-false": {
+        "correct": 7,
+        "wrong": 0,
+        "abstained": 1,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "sybil": {
+        "correct": 7,
+        "wrong": 0,
+        "abstained": 1,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-true": {
+        "correct": 0,
+        "wrong": 0,
+        "abstained": 8,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      },
+      "novel-false": {
+        "correct": 1,
+        "wrong": 0,
+        "abstained": 7,
+        "invalid": 0,
+        "quarantinedVerified": 0
+      }
+    }
+  },
+  "totals": {
+    "rule": {
+      "correct": 11,
+      "wrong": 4,
+      "abstained": 25
+    },
+    "allowlist": {
+      "correct": 22,
+      "wrong": 2,
+      "abstained": 16
+    },
+    "instinct": {
+      "correct": 23,
+      "wrong": 1,
+      "abstained": 16
+    },
+    "quorum": {
+      "correct": 23,
+      "wrong": 0,
+      "abstained": 17
+    }
+  },
+  "tests": {
+    "P1": "not supported",
+    "P2": "not supported",
+    "P3": "not supported",
+    "P4": "not supported",
+    "P5": "supported"
+  },
+  "finishedAt": "2026-11-11T06:11:58.417Z"
+}

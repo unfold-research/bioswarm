@@ -1,0 +1,26 @@
+{
+  "configHash": "e0e17671ae6417c23d5a9013c5bdf9975f8de2754f4b3503814a786fe88c9a70",
+  "finishedAt": "2026-11-17T21:04:45.414Z",
+  "arms": {
+    "routed": {
+      "solved": 8,
+      "of": 8
+    },
+    "manager": {
+      "solved": 8,
+      "of": 8
+    },
+    "polarity": {
+      "solved": 0,
+      "of": 8
+    },
+    "oracle": {
+      "solved": 8,
+      "of": 8
+    },
+    "stig": {
+      "solved": 4,
+      "of": 8
+    }
+  }
+}

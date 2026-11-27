@@ -1,0 +1,23 @@
+{
+  "name": "bioswarm",
+  "private": true,
+  "type": "module",
+  "description": "BioSwarm: bio-inspired coordination for teams of AI agents, and the open research behind it. Protocol, SDK, benchmark harness and the Unfold Research lab record.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "npm test --workspaces --if-present",
+    "prepare": "node -e \"try{require('child_process').execSync('git rev-parse --git-dir',{stdio:'ignore'});require('child_process').execSync('git config core.hooksPath .githooks')}catch{}\"",
+    "leak-check": "node scripts/leak-check.mjs"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/unfold-research/bioswarm#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unfold-research/bioswarm.git"
+  }
+}

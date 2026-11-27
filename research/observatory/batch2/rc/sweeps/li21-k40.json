@@ -1,0 +1,23 @@
+{
+  "out": "li21-k40",
+  "k": 40,
+  "cases": 8,
+  "seed0": 21400,
+  "shape": {
+    "local": 2,
+    "directed": 40,
+    "symmetric": 30,
+    "tests": 8,
+    "shown": 3
+  },
+  "arms": [
+    "stigwait",
+    "manager"
+  ],
+  "model": "claude-sonnet-5-5",
+  "effort": "low",
+  "memberMax": 6000,
+  "managerMax": 24000,
+  "rounds": 8,
+  "strictFeedback": true
+}

@@ -1,0 +1,14 @@
+{
+  "configHash": "d523b653f8a6b21235733a8312404dba34199eea55ebbd545e9b019134f5d9a8",
+  "finishedAt": "2026-11-18T03:30:35.509Z",
+  "arms": {
+    "stigwait": {
+      "solved": 0,
+      "of": 8
+    },
+    "manager": {
+      "solved": 0,
+      "of": 8
+    }
+  }
+}

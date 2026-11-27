@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: cumulative cap includes prior and pending; duplicate identity cannot reserve twice
+ok 1 - cumulative cap includes prior and pending; duplicate identity cannot reserve twice
+  ---
+  duration_ms: 1.005665
+  type: 'test'
+  ...
+# Subtest: concurrent reservations are serialized; release changes only owned commitment
+ok 2 - concurrent reservations are serialized; release changes only owned commitment
+  ---
+  duration_ms: 53.304085
+  type: 'test'
+  ...
+# Subtest: 960 planned calls, unique identities, delivery regression on serialized payload
+ok 3 - 960 planned calls, unique identities, delivery regression on serialized payload
+  ---
+  duration_ms: 8.289575
+  type: 'test'
+  ...
+# Subtest: paired manipulations do not change truth or authority facts
+ok 4 - paired manipulations do not change truth or authority facts
+  ---
+  duration_ms: 2.298045
+  type: 'test'
+  ...
+# Subtest: manual fixtures: conflicts, partial evidence, zero overrides missing, positive
+ok 5 - manual fixtures: conflicts, partial evidence, zero overrides missing, positive
+  ---
+  duration_ms: 0.388506
+  type: 'test'
+  ...
+# Subtest: independent oracle and all clean cases survive roundtrip
+ok 6 - independent oracle and all clean cases survive roundtrip
+  ---
+  duration_ms: 7.182738
+  type: 'test'
+  ...
+# Subtest: schema and scorer reject missing, fake, mismatched, duplicate citations and omitted claims
+ok 7 - schema and scorer reject missing, fake, mismatched, duplicate citations and omitted claims
+  ---
+  duration_ms: 0.940347
+  type: 'test'
+  ...
+# Subtest: susceptible, resistant and marker-only controls are distinguishable; lineage required
+ok 8 - susceptible, resistant and marker-only controls are distinguishable; lineage required
+  ---
+  duration_ms: 44.646617
+  type: 'test'
+  ...
+# Subtest: reservation denies model/tool/oversized payload; output ceiling included
+ok 9 - reservation denies model/tool/oversized payload; output ceiling included
+  ---
+  duration_ms: 0.878545
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 135.037081

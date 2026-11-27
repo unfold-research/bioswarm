@@ -1,0 +1,175 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "state.json",
+      "bytes": 9261326,
+      "sha256": "ca0c7dd72e3ff29cb0a0b5a7396cf7bd8e9ed5520bfc961cb2ba625b80e1c0a2",
+      "gz": 488326
+    },
+    {
+      "path": "wave-0-p0.requests.jsonl",
+      "bytes": 838312,
+      "sha256": "f7fe1fdff17d7b9ccc542abe0a2442efe55c44b4254407b84704f6ced0f06d05",
+      "gz": 47132
+    },
+    {
+      "path": "wave-0-p0.results.jsonl",
+      "bytes": 1580305,
+      "sha256": "42263b7eadbe4341f2da401107677003ad1cb63d492729f14ef94fc462478021",
+      "gz": 966170
+    },
+    {
+      "path": "wave-1-p0.requests.jsonl",
+      "bytes": 7768205,
+      "sha256": "f9d6765dfd183de0370347efb87f2c605b0af0b5d7de4e1f1c14c2011e0836e8",
+      "gz": 916448
+    },
+    {
+      "path": "wave-1-p0.results.jsonl",
+      "bytes": 7784155,
+      "sha256": "da91ed060bbb552ad51ea51e7b77087a423d10170c41d80d4a2aa10460ef4b90",
+      "gz": 4960647
+    },
+    {
+      "path": "wave-10-p0.requests.jsonl",
+      "bytes": 57980,
+      "sha256": "627ce09688d2331ae87ec93cdd960fb35978a6e1f08b9d7243f66539ec9c25ff",
+      "gz": 8299
+    },
+    {
+      "path": "wave-10-p0.results.jsonl",
+      "bytes": 36142,
+      "sha256": "6a1f49f1d76df5472520000ac924d863561f70801e7bc930d6054ae9e5b42440",
+      "gz": 19254
+    },
+    {
+      "path": "wave-11-p0.requests.jsonl",
+      "bytes": 66767,
+      "sha256": "d926107dc0899acdb245888ebbfb92966981419c3bb2059d759771d24c5afe02",
+      "gz": 6535
+    },
+    {
+      "path": "wave-11-p0.results.jsonl",
+      "bytes": 6249,
+      "sha256": "09eaafb546f4681d6745c78e52c806a1fcd601049a58669a5cd633e5b0ad4d46",
+      "gz": 4522
+    },
+    {
+      "path": "wave-12-p0.requests.jsonl",
+      "bytes": 10694,
+      "sha256": "1b1f8e244ac4bbe4d71bf19274954eeae21e094fc2c6c234e22865f5bda73485",
+      "gz": 3362
+    },
+    {
+      "path": "wave-12-p0.results.jsonl",
+      "bytes": 6585,
+      "sha256": "a3d40ec4acdbaac25fca74523c74d6654ad916b52ca1455172c8db5a4e961ebf",
+      "gz": 4135
+    },
+    {
+      "path": "wave-2-p0.requests.jsonl",
+      "bytes": 4223780,
+      "sha256": "9d2268c5b5def3f5508cc2c2eaa54740947087f53b2ac5a82d6a391b1f4b0dd4",
+      "gz": 497726
+    },
+    {
+      "path": "wave-2-p0.results.jsonl",
+      "bytes": 4073301,
+      "sha256": "bd11b4e1255a0e57b3af26c1e056f651ad3725973d9e6d138ef0b633696b6593",
+      "gz": 2545477
+    },
+    {
+      "path": "wave-3-p0.requests.jsonl",
+      "bytes": 1981789,
+      "sha256": "4a612729b7b56acbc550f04b7867b0a576b851029eb36b736948bf0e9978a88d",
+      "gz": 209736
+    },
+    {
+      "path": "wave-3-p0.results.jsonl",
+      "bytes": 1725614,
+      "sha256": "f4afc6b0ce8d56106e32b656a35f358027fe8fdcff1ca5cb90cd265473bfc6a5",
+      "gz": 1090059
+    },
+    {
+      "path": "wave-4-p0.requests.jsonl",
+      "bytes": 1556825,
+      "sha256": "075598a46e4e45dbb8ff519d08758095fd0edc7fb47a7efc6a515958757b02d0",
+      "gz": 180562
+    },
+    {
+      "path": "wave-4-p0.results.jsonl",
+      "bytes": 1292997,
+      "sha256": "6e2f93357e826fd77448f2efb02dc0de75e29a74a69ac18fbbfe2944ad70be23",
+      "gz": 763910
+    },
+    {
+      "path": "wave-5-p0.requests.jsonl",
+      "bytes": 1013780,
+      "sha256": "f351d7a97913fb5681de4905eec860034788b1b2f5746bcca604cdfa880c3184",
+      "gz": 101920
+    },
+    {
+      "path": "wave-5-p0.results.jsonl",
+      "bytes": 707113,
+      "sha256": "b51d2b25e89ab81b7ac6c05b1d527b05f73ee45c21b1b0f194dd949f3006dc73",
+      "gz": 453613
+    },
+    {
+      "path": "wave-6-p0.requests.jsonl",
+      "bytes": 877919,
+      "sha256": "8f1d92d9a52cbdd88919e3fc1c7087fffdafb823690fc3bc082c1dec095bd137",
+      "gz": 97577
+    },
+    {
+      "path": "wave-6-p0.results.jsonl",
+      "bytes": 827046,
+      "sha256": "6e5df6ab91b99fbddd105739ea3c33a3e61ff39ad2c044580672f804a790c6cd",
+      "gz": 499038
+    },
+    {
+      "path": "wave-7-p0.requests.jsonl",
+      "bytes": 663981,
+      "sha256": "e1eeb0c2f1cfbaac2f64f47f3fd24106da5d2b783cdb1388b392940dac5a7fed",
+      "gz": 68875
+    },
+    {
+      "path": "wave-7-p0.results.jsonl",
+      "bytes": 527502,
+      "sha256": "5f338ddd202bab95ddfaf4ad570ad2c979b2e6b3af72b5233ea99942044653b1",
+      "gz": 345136
+    },
+    {
+      "path": "wave-8-p0.requests.jsonl",
+      "bytes": 480453,
+      "sha256": "ac1f9402e8e5cf20d5188237f2db47c3f18c0eae1978c8c92559221555bd4bcd",
+      "gz": 55720
+    },
+    {
+      "path": "wave-8-p0.results.jsonl",
+      "bytes": 523107,
+      "sha256": "9d19877ea282ae4fb88a231bbc9a17c14b934fbc5f66abd41b46a77ca9fec9c1",
+      "gz": 324973
+    },
+    {
+      "path": "wave-9-p0.requests.jsonl",
+      "bytes": 266972,
+      "sha256": "a1282914a968ea8d79d54b1911cee88c46806900494ab81388c65679f585e71c",
+      "gz": 22297
+    },
+    {
+      "path": "wave-9-p0.results.jsonl",
+      "bytes": 14267,
+      "sha256": "a4e9a5233724a878e089cf30c1ee93f36a288eb578ab495b63afaedd7a4e6508",
+      "gz": 7962
+    }
+  ],
+  "archives": [
+    {
+      "name": "li12-polarity-trace-k40-raw.tar.gz",
+      "origin": "github release data-li12-polarity-trace-k40",
+      "bytes": 14246383,
+      "sha256": "f3792dd2178afb1810ca99e6d8f0618e52d966683d1d01fcb483b72c6e13ff31"
+    }
+  ]
+}

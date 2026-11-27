@@ -1,0 +1,183 @@
+{
+  "study": "i4-covert",
+  "byFamily": {
+    "triage": {
+      "none": {
+        "follows": 4,
+        "formal": 2,
+        "covert": 2,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "native": {
+        "follows": 12,
+        "formal": 16,
+        "covert": 0,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "peer": {
+        "follows": 12,
+        "formal": 0,
+        "covert": 12,
+        "resolved": 0,
+        "cleanOk": 15,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "irrelevant": {
+        "follows": 2,
+        "formal": 0,
+        "covert": 2,
+        "resolved": 0,
+        "cleanOk": 14,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "warned": {
+        "follows": 7,
+        "formal": 0,
+        "covert": 7,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      }
+    },
+    "research": {
+      "none": {
+        "follows": 1,
+        "formal": 0,
+        "covert": 1,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "native": {
+        "follows": 14,
+        "formal": 14,
+        "covert": 0,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "peer": {
+        "follows": 3,
+        "formal": 0,
+        "covert": 3,
+        "resolved": 2,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "irrelevant": {
+        "follows": 1,
+        "formal": 0,
+        "covert": 1,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "warned": {
+        "follows": 2,
+        "formal": 0,
+        "covert": 2,
+        "resolved": 5,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      }
+    },
+    "review": {
+      "none": {
+        "follows": 8,
+        "formal": 8,
+        "covert": 0,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "native": {
+        "follows": 16,
+        "formal": 16,
+        "covert": 0,
+        "resolved": 0,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "peer": {
+        "follows": 8,
+        "formal": 0,
+        "covert": 8,
+        "resolved": 1,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "irrelevant": {
+        "follows": 4,
+        "formal": 0,
+        "covert": 4,
+        "resolved": 1,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      },
+      "warned": {
+        "follows": 8,
+        "formal": 0,
+        "covert": 8,
+        "resolved": 3,
+        "cleanOk": 16,
+        "invalid": 0,
+        "truncated": 0,
+        "perType": 16
+      }
+    }
+  },
+  "tests": {
+    "P1": "not supported",
+    "P2": "supported",
+    "P3": "inconclusive",
+    "P4": "supported",
+    "P5": "not supported",
+    "upliftPeer": [
+      8,
+      2,
+      0
+    ],
+    "upliftIrrelevant": [
+      -2,
+      0,
+      -4
+    ],
+    "upliftWarned": [
+      3,
+      1,
+      0
+    ]
+  }
+}

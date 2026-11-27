@@ -1,0 +1,347 @@
+{
+  "revision": "bbef64ba71e6e6944586d61bb5e2bade7dc6496f",
+  "collectedAt": "2026-11-26T08:30:40.744Z",
+  "integrity": true,
+  "facts": {
+    "i": true,
+    "ii": true,
+    "iii": true,
+    "iv": true
+  },
+  "manifestAccess": {
+    "A": {
+      "unix": {
+        "workerIdentity": true,
+        "taskRead": true,
+        "absolute": true,
+        "relative": true,
+        "symlink": true
+      },
+      "pi": {
+        "taskRead": true,
+        "absolute": true,
+        "relative": true,
+        "symlink": true
+      },
+      "pass": true
+    },
+    "B": {
+      "unix": {
+        "workerIdentity": true,
+        "taskRead": true,
+        "absolute": true,
+        "relative": true,
+        "symlink": true
+      },
+      "pi": {
+        "taskRead": true,
+        "absolute": true,
+        "relative": true,
+        "symlink": true,
+        "remotePolicy": true
+      },
+      "pass": true
+    },
+    "C": {
+      "unix": {
+        "workerIdentity": true,
+        "taskRead": true,
+        "absolute": true,
+        "relative": true,
+        "symlink": true
+      },
+      "pi": {
+        "taskRead": true,
+        "absolute": true,
+        "relative": true,
+        "symlink": true,
+        "remotePolicy": true
+      },
+      "pass": true
+    },
+    "pass": true
+  },
+  "activations": [
+    {
+      "seed": 4019,
+      "case": "v2",
+      "arm": "A",
+      "revision": "bbef64ba71e6e6944586d61bb5e2bade7dc6496f",
+      "run": "6b526c77-47c9-4b6c-b799-ea74a0e4f4cf",
+      "startedAt": "2026-11-26T08:11:05.934Z",
+      "endedAt": "2026-11-26T08:17:20.481Z",
+      "end": "complete",
+      "incident": null,
+      "dispatched": true,
+      "comparable": true,
+      "totalSeconds": 374.547,
+      "observedWallSeconds": 321.701,
+      "modelResponses": 110,
+      "waves": 4,
+      "participants": 3,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "tokens": {
+        "input": 115296,
+        "cacheRead": 1457408,
+        "cacheWrite": 0,
+        "output": 23595
+      },
+      "preflightCall": {
+        "at": "2026-11-26T08:11:07.282Z",
+        "durationMs": 2480,
+        "responses": 1,
+        "tokens": {
+          "input": 401,
+          "output": 5,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "errors": 0,
+        "errorCodes": [],
+        "http429": 0,
+        "retries": 0,
+        "wrongModel": 0
+      },
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "effort": {
+        "configured": "medium",
+        "effective": "medium",
+        "returnedByProvider": null
+      },
+      "errors": {
+        "turnsFailed": 0,
+        "providerErrors": 0,
+        "wrongModel": 0
+      },
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "deterministicAccepted": true,
+      "launch": {
+        "startUTC": "2026-11-26T08:11:04Z",
+        "rootPercent": 69.7,
+        "concurrentStudies": 0,
+        "ciStart": 0,
+        "ciEnd": 0
+      },
+      "messages": {
+        "lia": {
+          "accepted": 12,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 9,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 10,
+          "refused": 0
+        }
+      },
+      "map": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "sha256": "2ac4d3d963daf2d0ae4c2b5ec47e2740b47c5d817679266aeb2932d0be048d22"
+    },
+    {
+      "seed": 4051,
+      "case": "v2",
+      "arm": "A",
+      "revision": "bbef64ba71e6e6944586d61bb5e2bade7dc6496f",
+      "run": "a6af9270-dbd1-4c13-9106-cce0017c8477",
+      "startedAt": "2026-11-26T08:17:23.605Z",
+      "endedAt": "2026-11-26T08:24:35.012Z",
+      "end": "complete",
+      "incident": null,
+      "dispatched": true,
+      "comparable": true,
+      "totalSeconds": 431.407,
+      "observedWallSeconds": 385.712,
+      "modelResponses": 101,
+      "waves": 4,
+      "participants": 3,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "tokens": {
+        "input": 98082,
+        "cacheRead": 1328000,
+        "cacheWrite": 0,
+        "output": 23710
+      },
+      "preflightCall": {
+        "at": "2026-11-26T08:17:24.911Z",
+        "durationMs": 1339,
+        "responses": 1,
+        "tokens": {
+          "input": 400,
+          "output": 5,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "errors": 0,
+        "errorCodes": [],
+        "http429": 0,
+        "retries": 0,
+        "wrongModel": 0
+      },
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "effort": {
+        "configured": "medium",
+        "effective": "medium",
+        "returnedByProvider": null
+      },
+      "errors": {
+        "turnsFailed": 0,
+        "providerErrors": 0,
+        "wrongModel": 0
+      },
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "deterministicAccepted": true,
+      "launch": {
+        "startUTC": "2026-11-26T08:17:22Z",
+        "rootPercent": 69.7,
+        "concurrentStudies": 0,
+        "ciStart": 0,
+        "ciEnd": 0
+      },
+      "messages": {
+        "lia": {
+          "accepted": 13,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 8,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 11,
+          "refused": 0
+        }
+      },
+      "map": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "sha256": "69ddc265d2863ad3457737dee9104740c4306c484d6fdfcd91607cd10fe12375"
+    },
+    {
+      "seed": 4073,
+      "case": "v2",
+      "arm": "A",
+      "revision": "bbef64ba71e6e6944586d61bb5e2bade7dc6496f",
+      "run": "a76c0d9b-8748-4612-aaa0-e5b3a8d75b9b",
+      "startedAt": "2026-11-26T08:24:37.886Z",
+      "endedAt": "2026-11-26T08:30:39.424Z",
+      "end": "complete",
+      "incident": null,
+      "dispatched": true,
+      "comparable": true,
+      "totalSeconds": 361.538,
+      "observedWallSeconds": 321.328,
+      "modelResponses": 75,
+      "waves": 3,
+      "participants": 3,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 6
+      },
+      "tokens": {
+        "input": 107053,
+        "cacheRead": 736128,
+        "cacheWrite": 0,
+        "output": 18290
+      },
+      "preflightCall": {
+        "at": "2026-11-26T08:24:39.068Z",
+        "durationMs": 1385,
+        "responses": 1,
+        "tokens": {
+          "input": 401,
+          "output": 5,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "errors": 0,
+        "errorCodes": [],
+        "http429": 0,
+        "retries": 0,
+        "wrongModel": 0
+      },
+      "provider": {
+        "http429": 0,
+        "retries": 1
+      },
+      "effort": {
+        "configured": "medium",
+        "effective": "medium",
+        "returnedByProvider": null
+      },
+      "errors": {
+        "turnsFailed": 0,
+        "providerErrors": 1,
+        "wrongModel": 0
+      },
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "deterministicAccepted": true,
+      "launch": {
+        "startUTC": "2026-11-26T08:24:36Z",
+        "rootPercent": 69.7,
+        "concurrentStudies": 0,
+        "ciStart": 0,
+        "ciEnd": 0
+      },
+      "messages": {
+        "lia": {
+          "accepted": 9,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 4,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 7,
+          "refused": 0
+        }
+      },
+      "map": {
+        "dispute": 5,
+        "directed": 6
+      },
+      "sha256": "089777b979060caba3e2734b1a30ac889f7f8a1336d1cb2cce0a819637d65f14"
+    }
+  ],
+  "hold": [],
+  "gate": {
+    "pass": false,
+    "medianObservedWallSeconds": 321.701,
+    "reasons": [
+      "median observed wall 321.701 s is below 1800 s"
+    ]
+  },
+  "sampleRecords": 0,
+  "activeMarker": false,
+  "sequenceExit": "Fim da sequência, código 0"
+}

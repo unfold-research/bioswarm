@@ -1,0 +1,95 @@
+{
+  "tasks": 30,
+  "table": [
+    {
+      "regime": "sweep",
+      "stable": 1,
+      "edited": 1,
+      "editedPartReread": 1,
+      "partsCovered": 6,
+      "readsExact": 0.8407407407407408,
+      "readCalls": 540
+    },
+    {
+      "regime": "deep",
+      "stable": 1,
+      "edited": 1,
+      "editedPartReread": 1,
+      "partsCovered": 6,
+      "readsExact": 0.6148148148148148,
+      "readCalls": 270
+    },
+    {
+      "regime": "stig-decay",
+      "stable": 1,
+      "edited": 0.5666666666666667,
+      "editedPartReread": 0.6,
+      "partsCovered": 5.933333333333334,
+      "readsExact": 0.8462962962962963,
+      "readCalls": 540
+    },
+    {
+      "regime": "stig-nodecay",
+      "stable": 1,
+      "edited": 0.6,
+      "editedPartReread": 0.7,
+      "partsCovered": 5.933333333333334,
+      "readsExact": 0.8407407407407408,
+      "readCalls": 540
+    },
+    {
+      "regime": "router",
+      "stable": 1,
+      "edited": 1,
+      "editedPartReread": 1,
+      "partsCovered": 6,
+      "readsExact": 0.8351851851851851,
+      "readCalls": 540
+    }
+  ],
+  "edited": {
+    "stigDecayMinusStigNodecay": {
+      "diff": -0.03333333333333333,
+      "ci95": [
+        -0.26666666666666666,
+        0.16666666666666666
+      ]
+    },
+    "sweepMinusStigDecay": {
+      "diff": 0.43333333333333335,
+      "ci95": [
+        0.26666666666666666,
+        0.6
+      ]
+    },
+    "routerMinusSweep": {
+      "diff": 0,
+      "ci95": [
+        0,
+        0
+      ]
+    },
+    "deepMinusSweep": {
+      "diff": 0,
+      "ci95": [
+        0,
+        0
+      ]
+    }
+  },
+  "stable": {
+    "sweepMinusStigDecay": {
+      "diff": 0,
+      "ci95": [
+        0,
+        0
+      ]
+    }
+  },
+  "tests": {
+    "P1": "not supported",
+    "P2": "supported",
+    "P3": "not supported",
+    "P4": "not supported"
+  }
+}

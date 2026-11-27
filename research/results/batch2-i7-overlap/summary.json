@@ -1,0 +1,55 @@
+{
+  "study": "i7-overlap",
+  "configHash": "672330ed06a46b3144d89746c9a92a077ea011cadca1ef1f87b8047210a020f1",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "solo": {
+      "effect": 13,
+      "escalated": 0,
+      "effectOnZero": 6,
+      "casesOnZero": 6,
+      "effectOffZero": 7,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "broad": {
+      "effect": 0,
+      "escalated": 15,
+      "effectOnZero": 0,
+      "casesOnZero": 6,
+      "effectOffZero": 0,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "narrow": {
+      "effect": 6,
+      "escalated": 8,
+      "effectOnZero": 0,
+      "casesOnZero": 6,
+      "effectOffZero": 6,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "disjoint": {
+      "effect": 4,
+      "escalated": 12,
+      "effectOnZero": 1,
+      "casesOnZero": 6,
+      "effectOffZero": 3,
+      "casesOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "not supported",
+    "P4": "supported"
+  },
+  "finishedAt": "2026-11-11T13:10:38.156Z"
+}

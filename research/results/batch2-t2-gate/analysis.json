@@ -1,0 +1,262 @@
+{
+  "decision": {
+    "pooled": {
+      "16": 0.05,
+      "64": 0.03333333333333333,
+      "256": 0,
+      "1024": 0.016666666666666666
+    },
+    "small": null,
+    "middle": null,
+    "large": null,
+    "verdict": "not-at-ceiling: the instrument is revised, T2 does not proceed"
+  },
+  "bySize": [
+    {
+      "M": 16,
+      "right": 3,
+      "n": 60,
+      "truncated": 0
+    },
+    {
+      "M": 64,
+      "right": 2,
+      "n": 60,
+      "truncated": 0
+    },
+    {
+      "M": 256,
+      "right": 0,
+      "n": 60,
+      "truncated": 0
+    },
+    {
+      "M": 1024,
+      "right": 1,
+      "n": 60,
+      "truncated": 0
+    }
+  ],
+  "cells": [
+    {
+      "task": "I-02",
+      "M": 16,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 3.6666666666666665,
+      "inputTokens": 2087,
+      "outputTokens": 595
+    },
+    {
+      "task": "I-02",
+      "M": 64,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 62.666666666666664,
+      "inputTokens": 7254,
+      "outputTokens": 355
+    },
+    {
+      "task": "I-02",
+      "M": 256,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 966.5833333333334,
+      "inputTokens": 27934,
+      "outputTokens": 93
+    },
+    {
+      "task": "I-02",
+      "M": 1024,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 8989.416666666666,
+      "inputTokens": 110682,
+      "outputTokens": 95
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 42.666666666666664,
+      "inputTokens": 1456,
+      "outputTokens": 1180
+    },
+    {
+      "task": "I-05",
+      "M": 64,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 175.91666666666666,
+      "inputTokens": 4721,
+      "outputTokens": 266
+    },
+    {
+      "task": "I-05",
+      "M": 256,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 496.3333333333333,
+      "inputTokens": 17783,
+      "outputTokens": 99
+    },
+    {
+      "task": "I-05",
+      "M": 1024,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 1530.25,
+      "inputTokens": 70057,
+      "outputTokens": 115
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 99.33333333333333,
+      "inputTokens": 1128,
+      "outputTokens": 1803
+    },
+    {
+      "task": "I-06",
+      "M": 64,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 120.08333333333333,
+      "inputTokens": 3432,
+      "outputTokens": 169
+    },
+    {
+      "task": "I-06",
+      "M": 256,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 125.91666666666667,
+      "inputTokens": 12648,
+      "outputTokens": 85
+    },
+    {
+      "task": "I-06",
+      "M": 1024,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 119.91666666666667,
+      "inputTokens": 49537,
+      "outputTokens": 85
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 17,
+      "inputTokens": 1351,
+      "outputTokens": 116
+    },
+    {
+      "task": "III-22",
+      "M": 64,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 11.166666666666666,
+      "inputTokens": 4137,
+      "outputTokens": 94
+    },
+    {
+      "task": "III-22",
+      "M": 256,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 4.25,
+      "inputTokens": 15279,
+      "outputTokens": 109
+    },
+    {
+      "task": "III-22",
+      "M": 1024,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 2.75,
+      "inputTokens": 59868,
+      "outputTokens": 110
+    },
+    {
+      "task": "III-26",
+      "M": 16,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 46.5,
+      "inputTokens": 1486,
+      "outputTokens": 327
+    },
+    {
+      "task": "III-26",
+      "M": 64,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 94.5,
+      "inputTokens": 4750,
+      "outputTokens": 130
+    },
+    {
+      "task": "III-26",
+      "M": 256,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 118.75,
+      "inputTokens": 23457,
+      "outputTokens": 164
+    },
+    {
+      "task": "III-26",
+      "M": 1024,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "meanAbsError": 33,
+      "inputTokens": 98783,
+      "outputTokens": 187
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+ "out": "li37-colony-claim-k80",
+ "k": 80,
+ "seed0": 37800,
+ "cases": 12,
+ "arms": [
+  "claim",
+  "nopeer",
+  "market"
+ ],
+ "model": "openai-codex/gpt-6-luna",
+ "armSpecs": {
+  "market": {
+   "field": false,
+   "antLimits": {
+    "cycle": 200,
+    "pair": 60
+   }
+  },
+  "nopeer": {
+   "field": "wait",
+   "antLimits": {
+    "cycle": 200,
+    "pair": 60,
+    "peer": false
+   },
+   "instructions": "Este \u00e9 um estudo autom\u00e1tico: ningu\u00e9m vai responder perguntas. N\u00e3o pergunte nada \u00e0 pessoa; decida e conclua. Se uma formiga n\u00e3o responder, siga com o que voc\u00ea tem e termine quando os testes passarem. N\u00e3o decida quem muda nos pares de formato (uma fun\u00e7\u00e3o codifica, outra decodifica): as formigas resolvem isso entre si pelo campo."
+  },
+  "claim": {
+   "field": "claim",
+   "antLimits": {
+    "cycle": 200,
+    "pair": 60,
+    "peer": false
+   },
+   "instructions": "Este \u00e9 um estudo autom\u00e1tico: ningu\u00e9m vai responder perguntas. N\u00e3o pergunte nada \u00e0 pessoa; decida e conclua. Se uma formiga n\u00e3o responder, siga com o que voc\u00ea tem e termine quando os testes passarem. N\u00e3o decida quem muda nos pares de formato (uma fun\u00e7\u00e3o codifica, outra decodifica): as formigas resolvem isso entre si pelo campo."
+  }
+ },
+ "instructions": "Este \u00e9 um estudo autom\u00e1tico: ningu\u00e9m vai responder perguntas. N\u00e3o pergunte nada \u00e0 pessoa; decida e conclua. Se uma formiga n\u00e3o responder, siga com o que voc\u00ea tem e termine quando os testes passarem.",
+ "colonyCommit": "ffa0d13",
+ "timeline": true,
+ "shape": {
+  "local": 2,
+  "directed": 80,
+  "symmetric": 60,
+  "tests": 8,
+  "shown": 3
+ },
+ "capMinutes": 90,
+ "quietMs": 180000,
+ "endpoints": "/srv/bench/endpoints.json",
+ "perEndpoint": 2,
+ "permission": "standard",
+ "removeAfter": true
+}

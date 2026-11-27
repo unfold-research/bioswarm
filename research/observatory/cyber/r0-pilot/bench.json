@@ -1,0 +1,75 @@
+{
+ "study": "r0-pilot",
+ "kind": "script",
+ "prereg": "tasks/R0-PILOT-PREREG.md",
+ "run": "observatory/cyber/range/drive.mjs",
+ "out": "results/r0-pilot",
+ "episodes": "results/r0-pilot/episodes",
+ "analyze": "observatory/cyber/range/analyze-r0.mjs",
+ "expected": 42,
+ "paid": false,
+ "arms": [
+  "sleep",
+  "react",
+  "disinfect-cd10"
+ ],
+ "steps": 300,
+ "stepMs": 2000,
+ "baselineSeeds": [
+  76101,
+  76102,
+  76103,
+  76104,
+  76105,
+  76106,
+  76107,
+  76108,
+  76109,
+  76110
+ ],
+ "timingSeeds": [
+  76201,
+  76202,
+  76203,
+  76204,
+  76205
+ ],
+ "pilotSeeds": [
+  76001,
+  76002,
+  76003
+ ],
+ "repeats": 3,
+ "instrument": {
+  "decision": "Cyber Research, 2026-11-22 (does not change the prereg, a7eb14a)",
+  "sensorLateMs": 1500,
+  "sensorLateRule": "a step whose sensor read takes more than 1.5 s (benchhost stall), or where a host's stream replies late, is marked sensor-late; late hosts are reported as sensor-late, never down, so no Restore or other action is triggered by a false down; sensor-late steps are excluded from time-to-detect and the delay is not charged to the defender",
+  "availability": "availability and green success come from the range's services and the canary, not from the sensor",
+  "maxSensorLateFrac": 0.05,
+  "invalidRule": "an episode with more than 5% sensor-late steps is invalid and is rerun with the same seed (at most 3 attempts); each invalid attempt is kept as <name>.invalid<k>.json and logged in deviations.jsonl, never dropped",
+  "maxLoad1": 2,
+  "loadRule": "the 1-minute load is recorded per step; an episode does not start while it is above 2 (the driver waits up to 30 min, then exits for a bench retry)"
+ },
+ "knownLimits": [
+  "a connect-and-close with no pause inside one segment (no router crossing) is detected 8 of 10 times by the 100 ms socket poll (measured in sensors-selftest.mjs); connections across segments are read from the router's conntrack"
+ ],
+ "review": [
+  "observatory/cyber/range/README.md",
+  "observatory/cyber/range/net.mjs",
+  "observatory/cyber/range/hosts.mjs",
+  "observatory/cyber/range/range.mjs",
+  "observatory/cyber/range/canary.mjs",
+  "observatory/cyber/range/sensors.mjs",
+  "observatory/cyber/range/mediator.mjs",
+  "observatory/cyber/range/episode.mjs",
+  "observatory/cyber/range/drive.mjs",
+  "observatory/cyber/range/analyze-r0.mjs",
+  "observatory/cyber/range/green",
+  "observatory/cyber/range/images",
+  "observatory/cyber/range/systemd"
+ ],
+ "notes": "R0 instrument pilot of the first container range (tasks/R0-PILOT-PREREG.md). 42 episodes: 10 baseline (seeds 76101-76110, green only, arm sleep, no blue action; their sensor keys are frozen), 5 timing (76201-76205, green only, action durations; keys never enter the lists), 27 pilot (3 arms x seeds 76001-76003 x 3 repeats). Step 2 s; becomes 3 s and the pilot repeats once only if overruns exceed 2% (prereg gate 5). Free: no model calls, no ledger. The scripted red chain lives under observatory/cyber/range/red/ and is deliberately NOT in `review`, so the review copy leaves it out (prereg 'Rules and limits'); the reviewer sees red's logs and stages only.",
+ "bench": {
+  "reportNote": "Pre-data deviation, 2026-11-23 (Cyber Research, before any episode): rule 4 (1-minute load <= 2) is checked before the range comes up and again at step 0 after the start canary; because bringing up the range itself lifts the load above 2, the driver waits up to 10 minutes for it to settle before step 0. A range that does not settle goes down with the full leftovers check, is not an episode or a harness failure, is logged in deviations.jsonl with its load curve, and the same seed is retried; 3 consecutive aborts or 3 on one seed stop the queue. Every record carries settleWaitS and load1AtStep0. The threshold is unchanged. Pre-data deviation, 2026-11-23 (Cyber Research, before any pilot episode): the exclusive scheduling rule (c) (no other bench study in its run stage) is replaced as the default by a measured rule: before each pilot episode the 15-minute load must be <= 1.0 from any source (study, CI, build), on top of rule 4; pauses and resumes are in deviations.jsonl; every pilot record carries the bench studies running at its start and end and its median and maximum load. Circuit breaker: a pilot episode that closes with overrun > 1% while another study was running switches the rest of the pilot back to rule (c); that episode stands. An idle diagnostic episode (seed 76901, outside the study data, never analysed) runs before the pilot; if its overrun exceeds 2% the pilot does not start. All 10 baseline episodes (76101-76110) are kept and none is rerun: the baseline only feeds the allow-lists, gate item 5 applies to pilot episodes, and discarding baseline episodes after seeing their overrun would be data-driven; the remaining baseline and timing episodes run without the load rule, as before. The report gives a descriptive table of the overrun rate and median load of every baseline episode. Pre-data deviations, 2026-11-23 (Cyber Research, before any pilot episode; the prereg is unchanged): (1) green's actions are launched asynchronously at the same point of the step order (after red, before the sensor read) and the step clock no longer waits for them; each result is logged with the step it was launched in, under the same 20 s timeout, and its cause is attributed with the red impacts known at launch; every step records the number of green actions in flight (greenInFlight) and red's synchronous exec time (redMs); red keeps its order red -> sensor. (2) Flow keys are canonical: when one side of a flow uses a declared TCP service port of its host (sshd 2222 on every host, web 8080, db 5432), the key is client -> server:service-port, in the router's conntrack and in the socket reader; a flow with no service port on either side keeps its key. The allow-lists were refrozen from the recorded baseline observations (the baseline was not rerun) with the same function: recorded keys that cannot be canonicalised (no source port) dropped out, 101 in all (ws1 35, ws2 33, ws3 33; db, files, router and web 0); v1 hash f0df4e70215cd3d511ddb39fbcb234c360836ecccf3997b626ebf1c072a44f24 (frozen.json, frozen-lists.json, kept), v2 hash 50c7387d8ec56a34b98978be4b701ef8de8c9648a2d381d425da76482dc452fd (frozen-v2.json, frozen-lists-v2.json), which the pilot uses. The idle diagnostic is rerun as v3 (seed 76901) on the v2 lists with the same two criteria. Pre-data deviations, 2026-11-23 (Cyber Research, before any pilot episode; the prereg is unchanged): (3) green opens no network probe to find the cause of a failed action (its former check to web:2222 appeared as wsN|web|2222, a key in no list, and made false cues in steps with red or blue active; it is not added to the lists, since ssh from a workstation to web is lateral movement); the cause now comes from harness state only and maps to the same four causes: blue_restore if a host of the action was down by a mediator Restore while the action was in flight, blue_block if its segment pair was blocked at the router in that time, red_impact if red had impacted the target service when the action was launched, other otherwise; green success is defined as before by the action itself. (4) The red diagnostic (seed 76902, red on, arm sleep, outside the study data, never analysed) is a step of the flow after the idle diagnostic v3 has passed and before timing, under the same 15-minute load gate, rule 4 and image check; if its step overrun exceeds 2% the queue stops before timing and the pilot, reporting red's exec time per step (median, p95, max). Pre-data deviation, 2026-11-23 (Cyber Research, before the pilot block; the prereg is unchanged): (5) a blue Restore recreates a host's service container from the clean image, so a restored workstation lost green's SFTP key and its later SFTP actions failed; green's key is now re-placed in the same step right after the Restore of a workstation, by a harness exec carrying the token (one bash process, builtins only, excluded from the lists and cues like the mediator's own execs), and every re-placement is in stepLog and the record (host, step, ms, ok); if it fails, the later SFTP actions from that workstation count as other and the failure is reported. Server Restores need no re-placement: the svc authorized_keys and host key sit on the pod volume, which a Restore keeps, and web's page and the files share directory come from the image (a Restore empties the share; green reads back only the file it has just written). Pre-data deviations, 2026-11-23/24 (Cyber Research, after idle diagnostic v3 and before the pilot; the prereg is unchanged; motivated by the instrument, not the data): (6) the step order becomes red -> sensor -> green (green launches after the sensor read, results attributed to the launch step), and each workstation has at most one green action in flight: a due action on a busy workstation is deferred once to the next step and dropped if the workstation is still busy then; planned, executed, deferred and dropped actions are reported per arm, and more than 5% deferred plus dropped of the planned actions in a baseline episode or in the idle diagnostic is a final stop. (7) The process reader's error lines (an executable link it cannot read) never become keys; they are counted per host and step and reported per arm. A limit of the instrument: the non-dumpable sshd session processes on files are invisible to the sensor, and a red shell under one appears with parent '?'. Every process carrying the harness token, and every descendant of one, is left out of the lists and cues. (8) The 10 baseline episodes (seeds 76101-76110) were run again with the fixed harness and the allow-lists frozen again as v3 (frozen-lists-v3.json, frozen-v3.json); the first baseline's records and the v1 and v2 lists are kept, moved unchanged, in results/r0-pilot/archive-baseline-v2/ (sha256 recorded in baseline-redo-v3.json); the timing episodes stand, as they use neither green nor the sensors. Idle diagnostic v4 (seed 76901) gates the pilot on overrun <= 2%, sensor-late <= 5%, no key outside the v3 lists and deferred plus dropped <= 5%. (9) The r0 images were deleted by a host-wide cleanup and rebuilt from the same Dockerfiles with the label unfold.study=r0 (debian:12-slim pulled fresh); the new image reference is archive/r0-images/r0-193a3af2eb24.json (tar sha256 65ebe881d0e781553ed2794ee9d3d4a4bab5e978733aa3f74f60a6466e681cfd), and the 55cd240 reference is kept in archive/r0-images/superseded/."
+ }
+}

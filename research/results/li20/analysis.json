@@ -1,0 +1,40 @@
+{
+  "pairs": 16,
+  "field": {
+    "solved": 16,
+    "holdout": 16,
+    "of": 16,
+    "capped": 0,
+    "traces": 391
+  },
+  "market": {
+    "solved": 14,
+    "holdout": 13,
+    "of": 16,
+    "capped": 0,
+    "traces": 0
+  },
+  "H-LI68 (primary) the waiting field leaves fewer checks failing on fresh inputs": {
+    "fieldBetter": 3,
+    "marketBetter": 0,
+    "p": 0.25,
+    "verdict": "inconclusive"
+  },
+  "H-LI69 the waiting field finishes sooner": {
+    "fieldBetter": 5,
+    "marketBetter": 11,
+    "p": 0.210113525390625,
+    "verdict": "refuted",
+    "pHolm": 0.42022705078125
+  },
+  "H-LI70 the waiting field uses fewer tokens (cached input included)": {
+    "fieldBetter": 6,
+    "marketBetter": 10,
+    "p": 0.454498291015625,
+    "verdict": "refuted"
+  },
+  "stalls": {
+    "fieldwait": 0,
+    "market": 0
+  }
+}

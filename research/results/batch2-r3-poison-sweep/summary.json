@@ -1,0 +1,1228 @@
+{
+  "study": "r3-poison-sweep",
+  "configHash": "346acce159e1864830fd19378e9988c024cd51029aca3433368fdfd44b1c7f26",
+  "status": "complete",
+  "wavesRun": 1,
+  "scenario": "poison",
+  "regime": "sweep",
+  "accuracy": {
+    "stable": 1,
+    "edited": 0.38333333333333336
+  },
+  "editedPartsReread": 1.35,
+  "distinctPartsReread": 6,
+  "poisonReread": 0.48333333333333334,
+  "readsNextToPoison": 1,
+  "alarmsPerCollection": {
+    "stable": 0.48333333333333334,
+    "edited": 1.8333333333333333
+  },
+  "readCalls": 1440,
+  "readsExact": 0.9840277777777777,
+  "invalidReads": 0,
+  "unusableAssignments": 0,
+  "assignCalls": 0,
+  "perTask": [
+    {
+      "seed": 30001,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30001,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30002,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30002,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30003,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30003,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30004,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30004,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30005,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30005,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 1
+    },
+    {
+      "seed": 30006,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30006,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30007,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30007,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30008,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30008,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30009,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30009,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30010,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30010,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30011,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30011,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 2
+    },
+    {
+      "seed": 30012,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30012,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 2
+    },
+    {
+      "seed": 30013,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30013,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30014,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30014,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30015,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30015,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30016,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30016,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 4
+    },
+    {
+      "seed": 30017,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30017,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 2
+    },
+    {
+      "seed": 30018,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30018,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30019,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30019,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 3
+    },
+    {
+      "seed": 30020,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30020,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30021,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30021,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30022,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30022,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30023,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30023,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30024,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30024,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30025,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30025,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 2
+    },
+    {
+      "seed": 30026,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30026,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 4
+    },
+    {
+      "seed": 30027,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30027,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30028,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30028,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30029,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30029,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30030,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30030,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30031,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30031,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30032,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30032,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30033,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30033,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 2
+    },
+    {
+      "seed": 30034,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30034,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30035,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30035,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 2
+    },
+    {
+      "seed": 30036,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30036,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30037,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30037,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30038,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30038,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 1
+    },
+    {
+      "seed": 30039,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30039,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 4
+    },
+    {
+      "seed": 30040,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30040,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30041,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30041,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30042,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30042,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 4
+    },
+    {
+      "seed": 30043,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30043,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30044,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30044,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30045,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30045,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30046,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30046,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30047,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30047,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30048,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30048,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 4
+    },
+    {
+      "seed": 30049,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30049,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30050,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30050,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30051,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30051,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 2
+    },
+    {
+      "seed": 30052,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 1
+    },
+    {
+      "seed": 30052,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30053,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30053,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30054,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30054,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30055,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30055,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 3
+    },
+    {
+      "seed": 30056,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30056,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30057,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30057,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 1,
+      "alarms": 0
+    },
+    {
+      "seed": 30058,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30058,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 3
+    },
+    {
+      "seed": 30059,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30059,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 0,
+      "readsNextToPoison": 0,
+      "alarms": 0
+    },
+    {
+      "seed": 30060,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    },
+    {
+      "seed": 30060,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "poisonReread": 1,
+      "readsNextToPoison": 2,
+      "alarms": 1
+    }
+  ],
+  "finishedAt": "2026-11-11T21:53:31.864Z"
+}

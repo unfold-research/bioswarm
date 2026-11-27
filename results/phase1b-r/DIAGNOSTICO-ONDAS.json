@@ -1,0 +1,779 @@
+{
+  "revision": "75c5bc4fb066c39be11d3299dfa29df003b12110",
+  "totals": {
+    "B": {
+      "waves": 26,
+      "wall": 2421.292,
+      "agentSeconds": 5131.222,
+      "recordedTurns": 75
+    },
+    "C": {
+      "waves": 19,
+      "wall": 2684.6189999999997,
+      "agentSeconds": 5711.482,
+      "recordedTurns": 57
+    }
+  },
+  "rows": [
+    {
+      "seed": 3109,
+      "wave": 1,
+      "spanMs": 150314,
+      "perAgent": {
+        "lia": {
+          "activeMs": 136236,
+          "barrierMs": 14078,
+          "dispatchSkewMs": 0,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 1689,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        },
+        "rui": {
+          "activeMs": 118368,
+          "barrierMs": 31944,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 1,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 150310,
+          "barrierMs": 0,
+          "dispatchSkewMs": 4,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 3278,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        }
+      }
+    },
+    {
+      "seed": 3109,
+      "wave": 2,
+      "spanMs": 211013,
+      "perAgent": {
+        "lia": {
+          "activeMs": 211013,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 10897,
+          "nextTool": 1,
+          "ownWaitMin": 1,
+          "ownWaitMax": 1
+        },
+        "rui": {
+          "activeMs": 39472,
+          "barrierMs": 171540,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 64411,
+          "barrierMs": 146601,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3109,
+      "wave": 3,
+      "spanMs": 69445,
+      "perAgent": {
+        "lia": {
+          "activeMs": 69445,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 65348,
+          "barrierMs": 4096,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 55465,
+          "barrierMs": 13978,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3163,
+      "wave": 1,
+      "spanMs": 140887,
+      "perAgent": {
+        "lia": {
+          "activeMs": 140887,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 2155,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        },
+        "rui": {
+          "activeMs": 108821,
+          "barrierMs": 32065,
+          "dispatchSkewMs": 1,
+          "waits": 1,
+          "yields": 1,
+          "untilNextToolMs": 5951,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        },
+        "teo": {
+          "activeMs": 137370,
+          "barrierMs": 3514,
+          "dispatchSkewMs": 3,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 4866,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3163,
+      "wave": 2,
+      "spanMs": 199087,
+      "perAgent": {
+        "lia": {
+          "activeMs": 199087,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 40180,
+          "barrierMs": 158907,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 43080,
+          "barrierMs": 156007,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3163,
+      "wave": 3,
+      "spanMs": 44410,
+      "perAgent": {
+        "lia": {
+          "activeMs": 31083,
+          "barrierMs": 13327,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 32347,
+          "barrierMs": 12061,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 44407,
+          "barrierMs": 0,
+          "dispatchSkewMs": 3,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3217,
+      "wave": 1,
+      "spanMs": 187618,
+      "perAgent": {
+        "lia": {
+          "activeMs": 187618,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 3660,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        },
+        "rui": {
+          "activeMs": 130089,
+          "barrierMs": 57527,
+          "dispatchSkewMs": 2,
+          "waits": 1,
+          "yields": 1,
+          "untilNextToolMs": 5541,
+          "nextTool": 1,
+          "ownWaitMin": 1,
+          "ownWaitMax": 1
+        },
+        "teo": {
+          "activeMs": 176354,
+          "barrierMs": 11261,
+          "dispatchSkewMs": 3,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 4805,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3217,
+      "wave": 2,
+      "spanMs": 165090,
+      "perAgent": {
+        "lia": {
+          "activeMs": 165090,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 54692,
+          "barrierMs": 110397,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 52141,
+          "barrierMs": 112948,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3217,
+      "wave": 3,
+      "spanMs": 106955,
+      "perAgent": {
+        "lia": {
+          "activeMs": 106955,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 42221,
+          "barrierMs": 64733,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 31561,
+          "barrierMs": 75392,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3217,
+      "wave": 4,
+      "spanMs": 132609,
+      "perAgent": {
+        "lia": {
+          "activeMs": 132609,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 74818,
+          "barrierMs": 57791,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 106249,
+          "barrierMs": 26359,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3271,
+      "wave": 1,
+      "spanMs": 184542,
+      "perAgent": {
+        "lia": {
+          "activeMs": 169199,
+          "barrierMs": 15343,
+          "dispatchSkewMs": 0,
+          "waits": 1,
+          "yields": 1,
+          "untilNextToolMs": 5262,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        },
+        "rui": {
+          "activeMs": 130369,
+          "barrierMs": 54172,
+          "dispatchSkewMs": 1,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 5765,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        },
+        "teo": {
+          "activeMs": 184539,
+          "barrierMs": 0,
+          "dispatchSkewMs": 3,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 8013,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3271,
+      "wave": 2,
+      "spanMs": 120322,
+      "perAgent": {
+        "lia": {
+          "activeMs": 120322,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 99905,
+          "barrierMs": 20417,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 48186,
+          "barrierMs": 72136,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3271,
+      "wave": 3,
+      "spanMs": 48693,
+      "perAgent": {
+        "lia": {
+          "activeMs": 35674,
+          "barrierMs": 13019,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 28559,
+          "barrierMs": 20132,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 48691,
+          "barrierMs": 0,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3323,
+      "wave": 1,
+      "spanMs": 171577,
+      "perAgent": {
+        "lia": {
+          "activeMs": 171577,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 2,
+          "yields": 0,
+          "untilNextToolMs": 7231,
+          "nextTool": 2,
+          "ownWaitMin": 0,
+          "ownWaitMax": 2
+        },
+        "rui": {
+          "activeMs": 133549,
+          "barrierMs": 38025,
+          "dispatchSkewMs": 3,
+          "waits": 1,
+          "yields": 1,
+          "untilNextToolMs": 7363,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 145151,
+          "barrierMs": 26419,
+          "dispatchSkewMs": 7,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 1844,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        }
+      }
+    },
+    {
+      "seed": 3323,
+      "wave": 2,
+      "spanMs": 122413,
+      "perAgent": {
+        "lia": {
+          "activeMs": 122413,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 34584,
+          "barrierMs": 87828,
+          "dispatchSkewMs": 1,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 70080,
+          "barrierMs": 52332,
+          "dispatchSkewMs": 1,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 5155,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 1
+        }
+      }
+    },
+    {
+      "seed": 3323,
+      "wave": 3,
+      "spanMs": 210111,
+      "perAgent": {
+        "lia": {
+          "activeMs": 210111,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 84325,
+          "barrierMs": 125784,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 23019,
+          "barrierMs": 187090,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3371,
+      "wave": 1,
+      "spanMs": 201481,
+      "perAgent": {
+        "lia": {
+          "activeMs": 201481,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 2,
+          "yields": 0,
+          "untilNextToolMs": 17363,
+          "nextTool": 2,
+          "ownWaitMin": 0,
+          "ownWaitMax": 2
+        },
+        "rui": {
+          "activeMs": 111500,
+          "barrierMs": 89979,
+          "dispatchSkewMs": 2,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 3976,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 131534,
+          "barrierMs": 69943,
+          "dispatchSkewMs": 4,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 1668,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3371,
+      "wave": 2,
+      "spanMs": 177735,
+      "perAgent": {
+        "lia": {
+          "activeMs": 177735,
+          "barrierMs": 0,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 76469,
+          "barrierMs": 101266,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 97125,
+          "barrierMs": 80609,
+          "dispatchSkewMs": 1,
+          "waits": 1,
+          "yields": 0,
+          "untilNextToolMs": 4226,
+          "nextTool": 1,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    },
+    {
+      "seed": 3371,
+      "wave": 3,
+      "spanMs": 39332,
+      "perAgent": {
+        "lia": {
+          "activeMs": 29574,
+          "barrierMs": 9758,
+          "dispatchSkewMs": 0,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "rui": {
+          "activeMs": 39330,
+          "barrierMs": 0,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        },
+        "teo": {
+          "activeMs": 35734,
+          "barrierMs": 3596,
+          "dispatchSkewMs": 2,
+          "waits": 0,
+          "yields": 0,
+          "untilNextToolMs": 0,
+          "nextTool": 0,
+          "ownWaitMin": 0,
+          "ownWaitMax": 0
+        }
+      }
+    }
+  ]
+}

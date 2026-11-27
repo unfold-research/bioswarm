@@ -1,0 +1,60 @@
+{
+  "study": "i4-covert-triage",
+  "configHash": "13f9bffe6ac4e381c2a6dd5914493db2676c316f8a7908a43544f91627e69a90",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "triage",
+  "arms": {
+    "none": {
+      "follows": 4,
+      "formal": 2,
+      "covert": 2,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "native": {
+      "follows": 12,
+      "formal": 16,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "peer": {
+      "follows": 12,
+      "formal": 0,
+      "covert": 12,
+      "resolved": 0,
+      "cleanOk": 15,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "irrelevant": {
+      "follows": 2,
+      "formal": 0,
+      "covert": 2,
+      "resolved": 0,
+      "cleanOk": 14,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "warned": {
+      "follows": 7,
+      "formal": 0,
+      "covert": 7,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    }
+  },
+  "finishedAt": "2026-11-11T12:40:45.121Z"
+}

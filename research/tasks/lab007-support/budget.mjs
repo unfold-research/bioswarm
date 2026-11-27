@@ -1,0 +1,18 @@
+// LAB-007 budget model — NO model calls. Table prices from the claude-api skill (cached 2026-10-06). Token profile = design estimates, to be replaced by pilot measurements.
+const PRICE = { 'haiku-5.5': { in: 0.10, out: 0.50, think: 0 }, 'sonnet-5.5': { in: 2, out: 10, think: 400 }, 'opus-5.5': { in: 4, out: 20, think: 500 }, 'fable-5.1': { in: 10, out: 50, think: 600 } };   // $/M tokens; think = assumed extra output tokens per call at low effort (thinking cannot be fully disabled on these)
+const N = 24, R = 5;                      // agents, rounds; 1 case per agent per round
+const BASE_IN = 350 + 750;                // system + case evidence
+const ARM = { NOSHARE: { ctx: 0, calls: 1.0, out: 220 }, FIXED: { ctx: 1800, calls: 1.0, out: 220 }, ISO: { ctx: 700, calls: 1.25, out: 200 }, IMM: { ctx: 700, calls: 1.10, out: 230 }, 'IMM-noreorg': { ctx: 700, calls: 1.10, out: 230 }, 'IMM-blanket': { ctx: 700, calls: 1.10, out: 230 }, ALLOC: { ctx: 300, calls: 1.30, out: 220 } };
+const perRun = (arm, model, n = N, r = R) => { const a = ARM[arm], p = PRICE[model]; const calls = n * r * a.calls; const cin = BASE_IN + a.ctx, cout = a.out + p.think; return { calls, usd: calls * (cin * p.in + cout * p.out) / 1e6 }; };
+const plan = (name, rows) => { let tot = 0, calls = 0; const lines = rows.map(([model, cells, arms, seeds, n = N, r = R]) => { const runs = cells * arms.length * seeds; const u = arms.reduce((s, a) => s + perRun(a, model, n, r).usd, 0) * cells * seeds; const c = arms.reduce((s, a) => s + perRun(a, model, n, r).calls, 0) * cells * seeds; tot += u; calls += c; return `  ${model.padEnd(11)} cells ${cells} × arms ${arms.length} × seeds ${seeds} (N=${n}, R=${r}) = ${String(runs).padStart(4)} runs, ${String(Math.round(c)).padStart(6)} calls, $${u.toFixed(2)}`; });
+  console.log(`\n${name}\n${lines.join('\n')}\n  → table cost $${tot.toFixed(2)} | +25% contingency $${(tot * 1.25).toFixed(2)} | counted (×1.5 safety, the unit of previous caps) $${(tot * 1.25 * 1.5).toFixed(2)} | calls ${Math.round(calls)}`); return tot; };
+const ALL7 = Object.keys(ARM), CORE6 = ['FIXED', 'ISO', 'IMM', 'IMM-noreorg', 'IMM-blanket', 'ALLOC'], FOUR = ['FIXED', 'ISO', 'IMM', 'ALLOC'], THREE = ['FIXED', 'ISO', 'IMM'];
+console.log('per-run cost (24 agents × 5 rounds), table price:'); for (const m of Object.keys(PRICE)) console.log('  ' + m.padEnd(11) + ALL7.map((a) => `${a} $${perRun(a, m).usd.toFixed(3)}`).join(' · '));
+
+const pilot = plan('PILOT-1 (poison calibration on FIXED + NOSHARE, generator and metric checks; Haiku, N=24, R=5)', [['haiku-5.5', 3, ['FIXED', 'NOSHARE'], 6]]);
+const pilotS = plan('PILOT-2 (measure real token profile and thinking overhead on Sonnet 5.5, N=12, R=4)', [['sonnet-5.5', 2, ['FIXED', 'IMM'], 2, 12, 4]]);
+const A = plan('TIER A — minimum (Haiku only): 6 scenario cells × 6 arms × 6 seeds', [['haiku-5.5', 6, CORE6, 6]]);
+const B = plan('TIER B — recommended: Haiku core (8 cells × 7 arms × 10 seeds) + Sonnet 5.5 replication at N=12, R=4 (3 cells × 3 arms × 4 seeds)', [['haiku-5.5', 8, ALL7, 10], ['sonnet-5.5', 3, THREE, 4, 12, 4]]);
+const C = plan('TIER C — extended: B + Opus 5.5 (2 cells × 3 arms × 2 seeds, N=12, R=4) + Fable 5.1 spot check (1 cell × 2 arms × 2 seeds, N=12, R=4)', [['haiku-5.5', 8, ALL7, 10], ['sonnet-5.5', 3, THREE, 4, 12, 4], ['opus-5.5', 2, THREE, 2, 12, 4], ['fable-5.1', 1, ['FIXED', 'IMM'], 2, 12, 4]]);
+const k = 1.25 * 1.5; const f = (x) => '$' + (x * k).toFixed(1);
+console.log('\nSUMMARY in counted units (table × 1.25 contingency × 1.5 safety): pilot-1 ' + f(pilot) + ', pilot-2 ' + f(pilotS) + ' | A ' + f(A) + ' | B ' + f(B) + ' | C ' + f(C) + ' | with pilots: A ' + f(A + pilot) + ', B ' + f(B + pilot + pilotS) + ', C ' + f(C + pilot + pilotS));

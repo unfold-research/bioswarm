@@ -1,0 +1,22 @@
+{
+  "configHash": "4bc2116c1d5bc2f7a955276a9b81510c505033ca3d678ac7919dd170a9bfb1a6",
+  "finishedAt": "2026-11-17T22:55:08.975Z",
+  "arms": {
+    "routed": {
+      "solved": 7,
+      "of": 8
+    },
+    "manager": {
+      "solved": 7,
+      "of": 8
+    },
+    "oracle": {
+      "solved": 8,
+      "of": 8
+    },
+    "stig": {
+      "solved": 8,
+      "of": 8
+    }
+  }
+}

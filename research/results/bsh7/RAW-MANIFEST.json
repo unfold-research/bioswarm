@@ -1,0 +1,875 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "measurement.tar.gz",
+      "bytes": 9562,
+      "sha256": "8add98d1ace8e2bf40a831efa34776f41121644b4a8e28dae90f2be6d527c2f1",
+      "gz": 9544
+    },
+    {
+      "path": "s201a-fixed-1-direct.tar.gz",
+      "bytes": 2907,
+      "sha256": "bb4060fe8f0a3512af2362d405babde369994de04f74e966cc8c67583ffdf421",
+      "gz": 2930
+    },
+    {
+      "path": "s201a-fixed-1-manager.tar.gz",
+      "bytes": 3914,
+      "sha256": "db65288d8f39f10d1fac116dff3e22636fbbe24ab0b37f3657ba76e1ef542664",
+      "gz": 3937
+    },
+    {
+      "path": "s201a-fixed-1-unfold.tar.gz",
+      "bytes": 2985,
+      "sha256": "18b8d4dfe0388ed3bf6572ee73ae6e63fbe24e72ea5a4936e17f64f65c4b8b11",
+      "gz": 3008
+    },
+    {
+      "path": "s201a-fixed-2-direct.tar.gz",
+      "bytes": 2911,
+      "sha256": "783a38ef5ea466af85fe5cc0bc309ac53ec59d0388918335e6d0850a50e6fb6a",
+      "gz": 2934
+    },
+    {
+      "path": "s201a-fixed-2-manager.tar.gz",
+      "bytes": 3503,
+      "sha256": "603e13ed7dc2854a7dc72e80e3d4a29ab5c23750a64dcf450d08e7f53b998697",
+      "gz": 3526
+    },
+    {
+      "path": "s201a-fixed-2-unfold.tar.gz",
+      "bytes": 2987,
+      "sha256": "0828441ae55b568731375b64cd11892990d736e5d4d621feb8bd1bdccbc8bdb5",
+      "gz": 3010
+    },
+    {
+      "path": "s201a-live-1-direct.tar.gz",
+      "bytes": 3435,
+      "sha256": "e448e7a3617b1923dc474bbbf741c07b301be1904e73cf4333fea5cc5d1fe25e",
+      "gz": 3458
+    },
+    {
+      "path": "s201a-live-1-manager.tar.gz",
+      "bytes": 4044,
+      "sha256": "7c7e7b7d11d05c60385e5d88ea60edfe8b02422dc3407a39ec50e978a34a1ef4",
+      "gz": 4067
+    },
+    {
+      "path": "s201a-live-1-unfold.tar.gz",
+      "bytes": 3424,
+      "sha256": "75100823d680307a2fb42c436b8b5bc39f1c88f9dc89ca2bfcc657f4004dde2a",
+      "gz": 3447
+    },
+    {
+      "path": "s201a-live-2-direct.tar.gz",
+      "bytes": 3345,
+      "sha256": "f4fcbdc67fccd7c4b11bd54674c1bb76f6d7a262fee5456644b9ff1f180b2d55",
+      "gz": 3368
+    },
+    {
+      "path": "s201a-live-2-manager.tar.gz",
+      "bytes": 3865,
+      "sha256": "f246004ec5400e67bb1a3f996de8e53b41f45691b280a5e007bc40233d97af75",
+      "gz": 3888
+    },
+    {
+      "path": "s201a-live-2-unfold.tar.gz",
+      "bytes": 3441,
+      "sha256": "f7e9f68a00616176c1508f9092b52f7215b1e1a709a6e05f661216dc0329e213",
+      "gz": 3464
+    },
+    {
+      "path": "s201p-fixed-1-direct.tar.gz",
+      "bytes": 2910,
+      "sha256": "d340e3c0f4b0d43c81f6c5e09228786582e4661e57930bc2d8f75adc6b89ffca",
+      "gz": 2933
+    },
+    {
+      "path": "s201p-fixed-1-manager.tar.gz",
+      "bytes": 3552,
+      "sha256": "964792c194ba7d7dba426f2691a3fb3d29ec4e8b81e88c9fa9f5ad3c46e46c27",
+      "gz": 3575
+    },
+    {
+      "path": "s201p-fixed-1-unfold.tar.gz",
+      "bytes": 2982,
+      "sha256": "da054e39cb13f571011aa737e13374b0eaf531b767bb905e903d3725a80e673b",
+      "gz": 3005
+    },
+    {
+      "path": "s201p-fixed-2-direct.tar.gz",
+      "bytes": 2924,
+      "sha256": "1c9c1ab27fef7d7a9722b8346d0d3b95a04d2439ae4a6cf6fe53041d685b30ad",
+      "gz": 2947
+    },
+    {
+      "path": "s201p-fixed-2-manager.tar.gz",
+      "bytes": 3473,
+      "sha256": "b373bd562edc40d893243d2d59a4dd86c4c780959a3ff6cd03b0d2ef353d24a4",
+      "gz": 3496
+    },
+    {
+      "path": "s201p-fixed-2-unfold.tar.gz",
+      "bytes": 2985,
+      "sha256": "8eda30fd80c516eae51a657757b7f8407808bf6e22a0ba2c629a5fba6f26ee28",
+      "gz": 3008
+    },
+    {
+      "path": "s201p-live-1-direct.tar.gz",
+      "bytes": 2906,
+      "sha256": "594737dceaa892874bf2b31a3acfda153031029578efc25a4cf909562625b34d",
+      "gz": 2929
+    },
+    {
+      "path": "s201p-live-1-manager.tar.gz",
+      "bytes": 3479,
+      "sha256": "bda5ac26c4644d995f7091b68b5f0debc6dbcba853be2408b094120a58c88cd3",
+      "gz": 3502
+    },
+    {
+      "path": "s201p-live-1-unfold.tar.gz",
+      "bytes": 2964,
+      "sha256": "2c2cee861c9b1e2c0028c12fef3bd4a70f38176e494df188e2456a3b2bd99e7d",
+      "gz": 2987
+    },
+    {
+      "path": "s201p-live-2-direct.tar.gz",
+      "bytes": 2881,
+      "sha256": "37a2b5cb12551ea755a00bf3031c920c6e68e379ad621f9adf3471228c79b879",
+      "gz": 2904
+    },
+    {
+      "path": "s201p-live-2-manager.tar.gz",
+      "bytes": 3485,
+      "sha256": "291738e42796e2d9464fba5bd545e7c7ae864f0133a79f689f952da74f5ac058",
+      "gz": 3508
+    },
+    {
+      "path": "s201p-live-2-unfold.tar.gz",
+      "bytes": 2980,
+      "sha256": "eb85e6fe4343424894e2c0f8a1364a86b294934933603e78cc24250095ca605a",
+      "gz": 3003
+    },
+    {
+      "path": "s202a-fixed-1-direct.tar.gz",
+      "bytes": 2957,
+      "sha256": "61d3f54c2d538ab28cee79d11304419d4eb322176284ee6b1af8535ba3a6802f",
+      "gz": 2980
+    },
+    {
+      "path": "s202a-fixed-1-manager.tar.gz",
+      "bytes": 3520,
+      "sha256": "1452782adb0a7dfcfb2f5ef82188a905abe68de2ae451cddbac7b7dd8da1b7de",
+      "gz": 3543
+    },
+    {
+      "path": "s202a-fixed-1-unfold.tar.gz",
+      "bytes": 3078,
+      "sha256": "53a17433d599c80fb385297dc4bc284403d215a8964fe0924205b25b87b43d9d",
+      "gz": 3101
+    },
+    {
+      "path": "s202a-fixed-2-direct.tar.gz",
+      "bytes": 2958,
+      "sha256": "bc562f0c8b2ab011a9abb1bccbaa92d54ac6a0b503c25a9b7e702f3b745d4490",
+      "gz": 2981
+    },
+    {
+      "path": "s202a-fixed-2-manager.tar.gz",
+      "bytes": 3513,
+      "sha256": "3e68ff6e1e3941daea54f8626a78a47e0e094083a9a94d3dfdb40e989b1acd7d",
+      "gz": 3536
+    },
+    {
+      "path": "s202a-fixed-2-unfold.tar.gz",
+      "bytes": 3085,
+      "sha256": "7a8a3365dbd52ec40a81000d4cd79b2e0a7549c7e3661850f1c5cbe07f2f8020",
+      "gz": 3108
+    },
+    {
+      "path": "s202a-live-1-direct.tar.gz",
+      "bytes": 3370,
+      "sha256": "92a3c53ee5375efc98e71ea6eb2100d9fc98927a7c9d89f8144758da9dc1fd42",
+      "gz": 3393
+    },
+    {
+      "path": "s202a-live-1-manager.tar.gz",
+      "bytes": 3935,
+      "sha256": "d1ba6c80ba79ace459dcf74fe6bf5208aec08137c4582c63daea4a248e143339",
+      "gz": 3958
+    },
+    {
+      "path": "s202a-live-1-unfold.tar.gz",
+      "bytes": 3474,
+      "sha256": "267013913659241c020cbd372003838145abb24dba581e3e294139798f219ca0",
+      "gz": 3497
+    },
+    {
+      "path": "s202a-live-2-direct.tar.gz",
+      "bytes": 3368,
+      "sha256": "d526ddc2a118a90f31083c97a5d9cd7e87c3db63df5e69a93638d072bc306a1f",
+      "gz": 3391
+    },
+    {
+      "path": "s202a-live-2-manager.tar.gz",
+      "bytes": 3873,
+      "sha256": "8ddb8388480e4a09e4fa08e6ff8c95420fb72f2d0b51ae4460f6493b41fb509c",
+      "gz": 3896
+    },
+    {
+      "path": "s202a-live-2-unfold.tar.gz",
+      "bytes": 3476,
+      "sha256": "e6b1b6ba5cee634d0673980516b792fc27f4f42ad59fc254b97a2f8ca54fac22",
+      "gz": 3499
+    },
+    {
+      "path": "s202p-fixed-1-direct.tar.gz",
+      "bytes": 2948,
+      "sha256": "725e0ed8a6fac935e0b9341fd99cdce5f133abf409ec73bd07bc2ae1915e77be",
+      "gz": 2971
+    },
+    {
+      "path": "s202p-fixed-1-manager.tar.gz",
+      "bytes": 3541,
+      "sha256": "c73e058eb500d1bebfdc9ad8f2b8a3a9ca0aebc98af0d3bb04389c13d0b6fbb5",
+      "gz": 3564
+    },
+    {
+      "path": "s202p-fixed-1-unfold.tar.gz",
+      "bytes": 3050,
+      "sha256": "5a23451f05a83e9f1a99cb53d81fbabb11da0e6220d5f320c69c177f5e238e82",
+      "gz": 3073
+    },
+    {
+      "path": "s202p-fixed-2-direct.tar.gz",
+      "bytes": 2933,
+      "sha256": "06f83a6a0210bf4df3a729763a8e6a52e3a174050cbf73e9e6d989a9a3c06a63",
+      "gz": 2956
+    },
+    {
+      "path": "s202p-fixed-2-manager.tar.gz",
+      "bytes": 3570,
+      "sha256": "dc488d69d331031a74812a37516728c645a731f6083fcf9abc6122da4be8b417",
+      "gz": 3593
+    },
+    {
+      "path": "s202p-fixed-2-unfold.tar.gz",
+      "bytes": 3064,
+      "sha256": "524b8d47eddf812125059cf2549663ce94f327a1f0a4d943b6af89370a121a84",
+      "gz": 3087
+    },
+    {
+      "path": "s202p-live-1-direct.tar.gz",
+      "bytes": 2932,
+      "sha256": "f39e4b6ba54c5e9849c0de6ad8041874243945dc37244dd515c9ec1ff869d958",
+      "gz": 2955
+    },
+    {
+      "path": "s202p-live-1-manager.tar.gz",
+      "bytes": 3554,
+      "sha256": "ac2c0529ce03843fc0123fd7ddc945bebbd172425f69ada3f13e369da00d2d50",
+      "gz": 3577
+    },
+    {
+      "path": "s202p-live-1-unfold.tar.gz",
+      "bytes": 3065,
+      "sha256": "1cd76a81c4b9ee9024c642922d290dc0754b8d0d5fd7e1a9e8a7ff43cb2fe361",
+      "gz": 3088
+    },
+    {
+      "path": "s202p-live-2-direct.tar.gz",
+      "bytes": 3013,
+      "sha256": "a25cb91a76f929281a96ddcd212b8f9cc67b28e1a7ebdfa2402dd508f3923038",
+      "gz": 3036
+    },
+    {
+      "path": "s202p-live-2-manager.tar.gz",
+      "bytes": 3523,
+      "sha256": "2d4c31ea38363c98f2b13ef84dcf29f733f6aacbdd5d3b83fa158d4f770cffae",
+      "gz": 3546
+    },
+    {
+      "path": "s202p-live-2-unfold.tar.gz",
+      "bytes": 3045,
+      "sha256": "e6754ffe75ddb03283ae81733b88c19796e2865ace60f7ab736f3339cd306b52",
+      "gz": 3068
+    },
+    {
+      "path": "s203a-fixed-1-direct.tar.gz",
+      "bytes": 2968,
+      "sha256": "aef0afa4c9311891a4d416e7192d3ab42e97f1135db68e16758b2b5862fa172e",
+      "gz": 2991
+    },
+    {
+      "path": "s203a-fixed-1-manager.tar.gz",
+      "bytes": 3475,
+      "sha256": "bc42e3f7c4bf60745ccbe5b1bb88af74c237e5e0aedaf9382a709670fe16ca48",
+      "gz": 3498
+    },
+    {
+      "path": "s203a-fixed-1-unfold.tar.gz",
+      "bytes": 3111,
+      "sha256": "8f2ed58b5b68d6a6f0cb893a15eb9861b4bdf1999d779a128e04a0f9c476079f",
+      "gz": 3134
+    },
+    {
+      "path": "s203a-fixed-2-direct.tar.gz",
+      "bytes": 2964,
+      "sha256": "2bee5b27a26a2c77a0bc90273d627e18c52c69972205b04af3d1b1ca85356418",
+      "gz": 2987
+    },
+    {
+      "path": "s203a-fixed-2-manager.tar.gz",
+      "bytes": 4027,
+      "sha256": "b53d527c91aa77170612380c513d8c61dfd0e6bf7eabdc92ff0e33dda0f7c195",
+      "gz": 4050
+    },
+    {
+      "path": "s203a-fixed-2-unfold.tar.gz",
+      "bytes": 4060,
+      "sha256": "9a60a4e4d53b82dd264affe7d28a0a8a472389d9a94fe094faefb05c3216603c",
+      "gz": 4083
+    },
+    {
+      "path": "s203a-live-1-direct.tar.gz",
+      "bytes": 3388,
+      "sha256": "99fc7beaf25c568add0a17febfdd8f332855f93d612b303dfe2bc6b4d7cb18ab",
+      "gz": 3411
+    },
+    {
+      "path": "s203a-live-1-manager.tar.gz",
+      "bytes": 4345,
+      "sha256": "6aa09ef97ebe1175c521f47027abfe75c90485d1e7980082eac4e4822140a70c",
+      "gz": 4358
+    },
+    {
+      "path": "s203a-live-1-unfold.tar.gz",
+      "bytes": 3484,
+      "sha256": "4b6a403c94c5c046da8380496e3e21cbb834d4defb0c671a85b344a9f3201ee1",
+      "gz": 3507
+    },
+    {
+      "path": "s203a-live-2-direct.tar.gz",
+      "bytes": 3487,
+      "sha256": "73c5e753b098a464e0d8ff6f5060554d2933f14967ca020817bf807c5d9a8dfb",
+      "gz": 3510
+    },
+    {
+      "path": "s203a-live-2-manager.tar.gz",
+      "bytes": 4033,
+      "sha256": "215d588a7c35aa3b640c9ce63256737e69be6c318ada75cad8807b9c22bc3021",
+      "gz": 4056
+    },
+    {
+      "path": "s203a-live-2-unfold.tar.gz",
+      "bytes": 3458,
+      "sha256": "5a859130fc817258e4ce8c26d65a5cef7fb4ed9ee123173599b3409640444671",
+      "gz": 3481
+    },
+    {
+      "path": "s203p-fixed-1-direct.tar.gz",
+      "bytes": 2937,
+      "sha256": "7fd7958c32fdb06bbdbace67a25a8edf07c7746a28d9c6c0764a53f95fb2447b",
+      "gz": 2960
+    },
+    {
+      "path": "s203p-fixed-1-manager.tar.gz",
+      "bytes": 3531,
+      "sha256": "ec80d300d0ebbfe89cba740974052b1cfa470718969dc6470d0ed4ac67ecba23",
+      "gz": 3554
+    },
+    {
+      "path": "s203p-fixed-1-unfold.tar.gz",
+      "bytes": 3088,
+      "sha256": "e6db216140082d1882765f9ff7cb374509ceddc7806afaadda6067b7f6609d12",
+      "gz": 3111
+    },
+    {
+      "path": "s203p-fixed-2-direct.tar.gz",
+      "bytes": 2954,
+      "sha256": "74d70f702f40a9c1676aef56e82e8953c91860a6a05bb0f276f4b70cf5c2b4ba",
+      "gz": 2977
+    },
+    {
+      "path": "s203p-fixed-2-manager.tar.gz",
+      "bytes": 4529,
+      "sha256": "f2cb17e48fcf5706d94f8989c9aac1a549402f1d557356f35fc5468890abce4f",
+      "gz": 4552
+    },
+    {
+      "path": "s203p-fixed-2-unfold.tar.gz",
+      "bytes": 3092,
+      "sha256": "9cd1875d2bd7187d4cc28dbbb3358585491c07777b69fba1e72ecc48feaa1bf9",
+      "gz": 3115
+    },
+    {
+      "path": "s203p-live-1-direct.tar.gz",
+      "bytes": 2945,
+      "sha256": "c0a5939e101e57bca8a9c8e7f41e89ab70c505e68136de13369d29c4027c4096",
+      "gz": 2968
+    },
+    {
+      "path": "s203p-live-1-manager.tar.gz",
+      "bytes": 3537,
+      "sha256": "1f6abfeda3b653e4d67b934d16c8c4efebe1d741b6fe0ca2e720906ac8582add",
+      "gz": 3560
+    },
+    {
+      "path": "s203p-live-1-unfold.tar.gz",
+      "bytes": 3070,
+      "sha256": "4dfeb56470a3e18f8435aa23d0f4535c20034eb12089c08c16e9e33bd7e4460a",
+      "gz": 3093
+    },
+    {
+      "path": "s203p-live-2-direct.tar.gz",
+      "bytes": 2943,
+      "sha256": "cb024a6a40f92f9f26cf0250822c6bb592045d8d3fce929056cca978dc1ad405",
+      "gz": 2966
+    },
+    {
+      "path": "s203p-live-2-manager.tar.gz",
+      "bytes": 3533,
+      "sha256": "674eb0bf95cb6700a7b4b71485b3a41edec6ef772eca0d6f1d6213957fd446f2",
+      "gz": 3556
+    },
+    {
+      "path": "s203p-live-2-unfold.tar.gz",
+      "bytes": 3073,
+      "sha256": "4961da0bcf436bfa28d11878c662a51f94ec2b02338aaaa566026fa78d90c7f2",
+      "gz": 3096
+    },
+    {
+      "path": "s204a-fixed-1-direct.tar.gz",
+      "bytes": 2898,
+      "sha256": "940759c0c1a87e20539308d4ab9601f18bff464d65f7ef9e4773b142012fc5f1",
+      "gz": 2921
+    },
+    {
+      "path": "s204a-fixed-1-manager.tar.gz",
+      "bytes": 3455,
+      "sha256": "69eb44ff9c9f7575130e46ce2fe5a056c19301c6d827902c2887138e5d25c14f",
+      "gz": 3478
+    },
+    {
+      "path": "s204a-fixed-1-unfold.tar.gz",
+      "bytes": 2998,
+      "sha256": "84cb346ca3eb5636ab56fcf7d51b966d29ec801183cd6017e52381164e448769",
+      "gz": 3021
+    },
+    {
+      "path": "s204a-fixed-2-direct.tar.gz",
+      "bytes": 3340,
+      "sha256": "be3bec8cb516001d5ebb249bb0098614b9af034c249d4c8ad9ce639bade63efe",
+      "gz": 3363
+    },
+    {
+      "path": "s204a-fixed-2-manager.tar.gz",
+      "bytes": 3482,
+      "sha256": "7525296f953fada0002ef4cf5ac08f5a5c9ef707febc4ad68227392e73ae1454",
+      "gz": 3505
+    },
+    {
+      "path": "s204a-fixed-2-unfold.tar.gz",
+      "bytes": 3005,
+      "sha256": "4f21ad57cd454cd34f39d20cc271093ae560d4f73be81f7cfeb1ab854b9d905d",
+      "gz": 3028
+    },
+    {
+      "path": "s204a-live-1-direct.tar.gz",
+      "bytes": 3338,
+      "sha256": "38ae4852cfa9c68e7c595fbc3080a85f5a1a38717fa4b8b7a2462b3210a2e801",
+      "gz": 3361
+    },
+    {
+      "path": "s204a-live-1-manager.tar.gz",
+      "bytes": 3862,
+      "sha256": "7aa3451d93c47f5a816549bd2fb51f755ea90cd08af5033f16d04506554d0f56",
+      "gz": 3885
+    },
+    {
+      "path": "s204a-live-1-unfold.tar.gz",
+      "bytes": 3439,
+      "sha256": "03301958b39cdd34e9b90d07ad1a9ba4c5e3363a73e44b6f4faef6ac7a618920",
+      "gz": 3462
+    },
+    {
+      "path": "s204a-live-2-direct.tar.gz",
+      "bytes": 3342,
+      "sha256": "ed280292b2723b244c7aeea2369c46e058ee532c540dbda8c08c318d7d5edb15",
+      "gz": 3365
+    },
+    {
+      "path": "s204a-live-2-manager.tar.gz",
+      "bytes": 3892,
+      "sha256": "31a36314fda9f0a23c52c8f5b035f61318b7ddb2141b6ffcc0225a1fa725c552",
+      "gz": 3915
+    },
+    {
+      "path": "s204a-live-2-unfold.tar.gz",
+      "bytes": 3427,
+      "sha256": "bee1b3b296b56942fc872abaf63036adb9f4ff4cd6755ed34be0d64344f66404",
+      "gz": 3450
+    },
+    {
+      "path": "s204p-fixed-1-direct.tar.gz",
+      "bytes": 2922,
+      "sha256": "4407f350648d290eae883624f3e75989c8f0ae03deda82237db4ad3d770882de",
+      "gz": 2945
+    },
+    {
+      "path": "s204p-fixed-1-manager.tar.gz",
+      "bytes": 3528,
+      "sha256": "94415b34c650535910724a3a94ef8ceb8a48088a255dfaed69418e61097f3aaa",
+      "gz": 3551
+    },
+    {
+      "path": "s204p-fixed-1-unfold.tar.gz",
+      "bytes": 2986,
+      "sha256": "97e0a55fc2c63f80cbdb9dea089dd1cbdf0393d1fe6a2db37a53e8b2a297ad01",
+      "gz": 3009
+    },
+    {
+      "path": "s204p-fixed-2-direct.tar.gz",
+      "bytes": 2904,
+      "sha256": "c3fe495f92d7e60a66901d737c2e9e1c044dc9ffb82d54cfa3e316d71b4c165a",
+      "gz": 2927
+    },
+    {
+      "path": "s204p-fixed-2-manager.tar.gz",
+      "bytes": 3501,
+      "sha256": "2a752e5f4dae0fb963fea220afeb619513a84289a461a509a4b3bdf7ee2d4328",
+      "gz": 3524
+    },
+    {
+      "path": "s204p-fixed-2-unfold.tar.gz",
+      "bytes": 2986,
+      "sha256": "93940620357bbfa6cb77fece21d3d3172eb34fc9510af484d0c28a6bd5248bfb",
+      "gz": 3009
+    },
+    {
+      "path": "s204p-live-1-direct.tar.gz",
+      "bytes": 2905,
+      "sha256": "fe0052ed61b3a88a3fa10a644a6fd6d6becf21daa56d1c510b66b46b31f0777f",
+      "gz": 2928
+    },
+    {
+      "path": "s204p-live-1-manager.tar.gz",
+      "bytes": 3473,
+      "sha256": "fe4cb0a83640be2b1be0335634615520742986a9fdb73ecabc0383071e4a3140",
+      "gz": 3496
+    },
+    {
+      "path": "s204p-live-1-unfold.tar.gz",
+      "bytes": 2973,
+      "sha256": "e67182a921cc68b8193daad2b1d0b45c4a57d6adb8a15a3508e7317a688cf7f6",
+      "gz": 2996
+    },
+    {
+      "path": "s204p-live-2-direct.tar.gz",
+      "bytes": 2892,
+      "sha256": "c5ae2abf8bde86f591c311ac14a682cd84461559e0a772a95fcad5630f38df5c",
+      "gz": 2915
+    },
+    {
+      "path": "s204p-live-2-manager.tar.gz",
+      "bytes": 3465,
+      "sha256": "c98aca82e1c5fb1e2bbbbf984f7a4168efbee65e5e96c801bf03523926c8a070",
+      "gz": 3488
+    },
+    {
+      "path": "s204p-live-2-unfold.tar.gz",
+      "bytes": 2980,
+      "sha256": "463f61d00296c7e34b5c3ff0a3b891ef6ef52f30779e208ccd2316da6ed44722",
+      "gz": 3003
+    },
+    {
+      "path": "s205a-fixed-1-direct.tar.gz",
+      "bytes": 2934,
+      "sha256": "87d20b3d8bbed63dc6c4cdc411801e76f66385865e12caa96333cdcb1a00cddc",
+      "gz": 2957
+    },
+    {
+      "path": "s205a-fixed-1-manager.tar.gz",
+      "bytes": 3703,
+      "sha256": "ef4e674d03768dbde0558c5be58efb5d7ba4b3d30e7d47b800268f8e05f70a91",
+      "gz": 3726
+    },
+    {
+      "path": "s205a-fixed-1-unfold.tar.gz",
+      "bytes": 3079,
+      "sha256": "f53a2972f25343f0aea927ae525cc9b83b6d9aeffa6a46bb2f5ef53f225aa5d2",
+      "gz": 3102
+    },
+    {
+      "path": "s205a-fixed-2-direct.tar.gz",
+      "bytes": 2942,
+      "sha256": "4109d250ff1fa7fb4cf0c9165197e8f141a264458668850b4e7aabe1b796c338",
+      "gz": 2965
+    },
+    {
+      "path": "s205a-fixed-2-manager.tar.gz",
+      "bytes": 3490,
+      "sha256": "3f759eaacd58714e9451dae829d1355a027779c0f1929fea0b78bb4fb3704219",
+      "gz": 3513
+    },
+    {
+      "path": "s205a-fixed-2-unfold.tar.gz",
+      "bytes": 3077,
+      "sha256": "7a94dc97705f99d0432b11c77af8707e3aa883773aa72908717e3f78e7f51c9d",
+      "gz": 3100
+    },
+    {
+      "path": "s205a-live-1-direct.tar.gz",
+      "bytes": 3374,
+      "sha256": "c2bbc6a49543efc3e7c72eca188bbcb4c31ae0c883199f0a9545ba03ebad9ce1",
+      "gz": 3397
+    },
+    {
+      "path": "s205a-live-1-manager.tar.gz",
+      "bytes": 3896,
+      "sha256": "db8d34495d13ca9b828383573e478c134566f17e52a72ce671fdf44227692fa4",
+      "gz": 3919
+    },
+    {
+      "path": "s205a-live-1-unfold.tar.gz",
+      "bytes": 3458,
+      "sha256": "1648e043d10d31e1fa4bedac050ec0e3d7bd885de524b3347b07ed5371fb8e6c",
+      "gz": 3481
+    },
+    {
+      "path": "s205a-live-2-direct.tar.gz",
+      "bytes": 3358,
+      "sha256": "cf2815f0a93bc84e2f3dfb471619711ba92d8849a4797fa788f359066bca8fdc",
+      "gz": 3381
+    },
+    {
+      "path": "s205a-live-2-manager.tar.gz",
+      "bytes": 3921,
+      "sha256": "42bb425a3ab6b5ff01f41ca68057e639e0024224309b370918642929b8df887f",
+      "gz": 3944
+    },
+    {
+      "path": "s205a-live-2-unfold.tar.gz",
+      "bytes": 3434,
+      "sha256": "55c62ea077ef2b74a5683a370178a242a1f9a9dd0bbdfa02d920b5019916d1b6",
+      "gz": 3457
+    },
+    {
+      "path": "s205p-fixed-1-direct.tar.gz",
+      "bytes": 2922,
+      "sha256": "051b675a3d1a126a134ce81671384c96f216a9aca11b878aa1185beca0d4c172",
+      "gz": 2945
+    },
+    {
+      "path": "s205p-fixed-1-manager.tar.gz",
+      "bytes": 3522,
+      "sha256": "1e87ab30a1203a741f793747ff316a428fc76658d1fedbb19ea014cc1429da65",
+      "gz": 3545
+    },
+    {
+      "path": "s205p-fixed-1-unfold.tar.gz",
+      "bytes": 3075,
+      "sha256": "b033d86cbbb59925ec1fd61eba44fe17d051b295b101f163b0b740ac17445152",
+      "gz": 3098
+    },
+    {
+      "path": "s205p-fixed-2-direct.tar.gz",
+      "bytes": 2947,
+      "sha256": "fc4e5288f8f45e26f0e407cb5917a2d7006f6a673380092043fb2de3a835853a",
+      "gz": 2970
+    },
+    {
+      "path": "s205p-fixed-2-manager.tar.gz",
+      "bytes": 3631,
+      "sha256": "50113f2186f005091cf3209e3caa8cdb1a6061472ad1bf845de21336733feb2e",
+      "gz": 3654
+    },
+    {
+      "path": "s205p-fixed-2-unfold.tar.gz",
+      "bytes": 3054,
+      "sha256": "25eaee71a6ec71b5f234bc62a49da8f9a13e2dbf15cdf99cda416bb3ae4c0b06",
+      "gz": 3077
+    },
+    {
+      "path": "s205p-live-1-direct.tar.gz",
+      "bytes": 2915,
+      "sha256": "df8705bca99e29cfb6afcdbe70698b5699e236fc1b449d9eead1b5b7a028246c",
+      "gz": 2938
+    },
+    {
+      "path": "s205p-live-1-manager.tar.gz",
+      "bytes": 3492,
+      "sha256": "e2488ac0c9084a90b6ec322d7e75448ce8bd24de4957e55635bcd8bda664e51d",
+      "gz": 3515
+    },
+    {
+      "path": "s205p-live-1-unfold.tar.gz",
+      "bytes": 3056,
+      "sha256": "784c25925b0cada689be2b309b61fdfe1b97292c0a5ff5d76f1daccd8867487d",
+      "gz": 3079
+    },
+    {
+      "path": "s205p-live-2-direct.tar.gz",
+      "bytes": 2926,
+      "sha256": "c328dda635c7b5aa96122a573ffca294d529d876798b72cb8210b94f382d5913",
+      "gz": 2949
+    },
+    {
+      "path": "s205p-live-2-manager.tar.gz",
+      "bytes": 3485,
+      "sha256": "651497a6afda4a583f92d0d42c249539fa419f5d3b2fc9767a6af502d816a6d7",
+      "gz": 3508
+    },
+    {
+      "path": "s205p-live-2-unfold.tar.gz",
+      "bytes": 3063,
+      "sha256": "d46ff01d543f5371c0e2e243a892fd530f666af0c70671f2f6a886811cc73cbc",
+      "gz": 3086
+    },
+    {
+      "path": "s206a-fixed-1-direct.tar.gz",
+      "bytes": 3057,
+      "sha256": "0b0cbc7869b152b37c7a5976a0528a93aa9921d8b51219f88fd88163a5c5764f",
+      "gz": 3080
+    },
+    {
+      "path": "s206a-fixed-1-manager.tar.gz",
+      "bytes": 4109,
+      "sha256": "5656b5c26d398011daa46dae25cbf8aa61ecc2b238e9e78c4e6c2bb15db1b987",
+      "gz": 4132
+    },
+    {
+      "path": "s206a-fixed-1-unfold.tar.gz",
+      "bytes": 3094,
+      "sha256": "9846f6eddb8eda5266807892ffde64fd15262fcc98c08c5b5b9e03e66fd6e9f5",
+      "gz": 3117
+    },
+    {
+      "path": "s206a-fixed-2-direct.tar.gz",
+      "bytes": 3373,
+      "sha256": "9bd3cc0c17f11034dc6cc7f1ad86e8dda1a2f03d13e98dd4f160e7894c8f5cec",
+      "gz": 3396
+    },
+    {
+      "path": "s206a-fixed-2-manager.tar.gz",
+      "bytes": 3509,
+      "sha256": "4b971725eb2628eb9fe34dbe775d24911af2666b7f2c758f69e4a90993a731d5",
+      "gz": 3532
+    },
+    {
+      "path": "s206a-fixed-2-unfold.tar.gz",
+      "bytes": 3090,
+      "sha256": "a4a1c2645406be00b181842702dd3b41985f7197ea9a42c64bc546a0d87bdd93",
+      "gz": 3113
+    },
+    {
+      "path": "s206a-live-1-direct.tar.gz",
+      "bytes": 3381,
+      "sha256": "736a86cc4ed5a40fbe2d9a3c3df686ed8c9de19df227d8bec74b35ca330324e4",
+      "gz": 3404
+    },
+    {
+      "path": "s206a-live-1-manager.tar.gz",
+      "bytes": 3934,
+      "sha256": "509699db54869336ab1f23c8ef2827744a46e938557a32eade4ed464b45e671d",
+      "gz": 3957
+    },
+    {
+      "path": "s206a-live-1-unfold.tar.gz",
+      "bytes": 3966,
+      "sha256": "c7de01f0095d5c2865e2d9bda1e5c6d19a2dbf34f83bc6e6ba6b4d46153a07c7",
+      "gz": 3989
+    },
+    {
+      "path": "s206a-live-2-direct.tar.gz",
+      "bytes": 3369,
+      "sha256": "a3ce9ab2c568ee06a9335dc0b09ec71f9dd47ea87f4af44188f081386c1eb171",
+      "gz": 3392
+    },
+    {
+      "path": "s206a-live-2-manager.tar.gz",
+      "bytes": 4299,
+      "sha256": "bcded2ef7d969eca75a99c90b7eb8fa6bfaef5bb59f42628d90c1f0f9411a7e9",
+      "gz": 4303
+    },
+    {
+      "path": "s206a-live-2-unfold.tar.gz",
+      "bytes": 3481,
+      "sha256": "ac4bbce9eec9b283886a09c456c3fc4d069e8f8ea1a0dea0978c138cf7483ee4",
+      "gz": 3504
+    },
+    {
+      "path": "s206p-fixed-1-direct.tar.gz",
+      "bytes": 2952,
+      "sha256": "95fc0161be61840a90d241130c09af92a2516fd266dcaeb338f65c0cd3ab6b65",
+      "gz": 2975
+    },
+    {
+      "path": "s206p-fixed-1-manager.tar.gz",
+      "bytes": 3528,
+      "sha256": "17263ad65575c05f2ad5dc84bbc85c5b42a1ca95c0c034a3e736d88ff4ac2368",
+      "gz": 3551
+    },
+    {
+      "path": "s206p-fixed-1-unfold.tar.gz",
+      "bytes": 3076,
+      "sha256": "c8e6f81572060b591ff6449d06d29b979dd461ae5f19bff46297a78d73742719",
+      "gz": 3099
+    },
+    {
+      "path": "s206p-fixed-2-direct.tar.gz",
+      "bytes": 2962,
+      "sha256": "75f1ffe8d3fd7846a046efdc25755f05322d6bf66c89ba260caf53902fa63501",
+      "gz": 2985
+    },
+    {
+      "path": "s206p-fixed-2-manager.tar.gz",
+      "bytes": 3530,
+      "sha256": "36c585a4eb6dc63c8ada1151e23bd7436de382c7c0dbf2802fc9413b2f86aef9",
+      "gz": 3553
+    },
+    {
+      "path": "s206p-fixed-2-unfold.tar.gz",
+      "bytes": 3461,
+      "sha256": "13870061228469d96949238b69fc3fa68450d4f38f164ec1645bad30d308b247",
+      "gz": 3484
+    },
+    {
+      "path": "s206p-live-1-direct.tar.gz",
+      "bytes": 3368,
+      "sha256": "9f889b389bf75ac6c2c5cfb00e7368d79062bd88f58b5e473a8f8cb73edfc359",
+      "gz": 3391
+    },
+    {
+      "path": "s206p-live-1-manager.tar.gz",
+      "bytes": 3623,
+      "sha256": "5155f9068b754d3b26015e8f3f29ae7e9314f98cbc6a5901e9c5b665b2a5c94e",
+      "gz": 3646
+    },
+    {
+      "path": "s206p-live-1-unfold.tar.gz",
+      "bytes": 3068,
+      "sha256": "b2f6e060bce836da96e5d7a9656399cd320685af59a5229716a94c55f0d86911",
+      "gz": 3091
+    },
+    {
+      "path": "s206p-live-2-direct.tar.gz",
+      "bytes": 2927,
+      "sha256": "44af3707fa782b5f2e02c72e4efdd0f3f12a366cd73132b3588937bc4f0d1ec0",
+      "gz": 2950
+    },
+    {
+      "path": "s206p-live-2-manager.tar.gz",
+      "bytes": 3530,
+      "sha256": "6dc520a8d6e073a4cd61603cbaf285abba7753d43fd4fb6d9e775577556b9fbc",
+      "gz": 3553
+    },
+    {
+      "path": "s206p-live-2-unfold.tar.gz",
+      "bytes": 3076,
+      "sha256": "76ac18c80fbca817df53bc8e3cb8026e81858c15652e5ab0fb888a85d2a81188",
+      "gz": 3099
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "collections": 60,
+  "table": [
+    {
+      "regime": "told",
+      "study": "d4b-told",
+      "stable": 1,
+      "edited": 0.6333333333333333,
+      "editedPartsReread": 1.75
+    },
+    {
+      "regime": "wide",
+      "study": "d4b-wide",
+      "stable": 1,
+      "edited": 0.48333333333333334,
+      "editedPartsReread": 1.3333333333333333
+    },
+    {
+      "regime": "draw",
+      "study": "d4b-draw",
+      "stable": 1,
+      "edited": 0.5,
+      "editedPartsReread": 1.4333333333333333
+    },
+    {
+      "regime": "marks",
+      "study": "d4-marks",
+      "stable": 1,
+      "edited": 0.5833333333333334,
+      "editedPartsReread": 1.5166666666666666
+    },
+    {
+      "regime": "alarm",
+      "study": "r2b-alarm",
+      "stable": 1,
+      "edited": 0.7,
+      "editedPartsReread": 1.8333333333333333
+    },
+    {
+      "regime": "router",
+      "study": "r2b-router",
+      "stable": 1,
+      "edited": 0.75,
+      "editedPartsReread": 2.1666666666666665
+    },
+    {
+      "regime": "sweep",
+      "study": "r2b-sweep",
+      "stable": 1,
+      "edited": 0.48333333333333334,
+      "editedPartsReread": 1.4
+    }
+  ],
+  "choices": {
+    "told": {
+      "total": 720,
+      "unusable": 2,
+      "elsewhere": 0.6138888888888889,
+      "toAlreadyRecounted": 0.006944444444444444,
+      "withAChangedPartInView": 97,
+      "ofThoseToAFreshNeighbourOfIt": 0.8041237113402062
+    },
+    "wide": {
+      "total": 720,
+      "unusable": 0,
+      "elsewhere": 0.005555555555555556,
+      "toAlreadyRecounted": 0.001388888888888889,
+      "withAChangedPartInView": 85,
+      "ofThoseToAFreshNeighbourOfIt": 0.9411764705882353
+    },
+    "draw": {
+      "total": 720,
+      "unusable": 1,
+      "elsewhere": 0.1,
+      "toAlreadyRecounted": 0,
+      "withAChangedPartInView": 67,
+      "ofThoseToAFreshNeighbourOfIt": 0.8955223880597015
+    },
+    "marks": {
+      "total": 720,
+      "unusable": 1,
+      "elsewhere": 0.004166666666666667,
+      "toAlreadyRecounted": 0,
+      "withAChangedPartInView": 77,
+      "ofThoseToAFreshNeighbourOfIt": 0.8961038961038961
+    }
+  },
+  "diffs": {
+    "toldMinusMarks": {
+      "diff": 0.05,
+      "ci95": [
+        -0.13333333333333333,
+        0.23333333333333334
+      ]
+    },
+    "wideMinusMarks": {
+      "diff": -0.1,
+      "ci95": [
+        -0.2,
+        0
+      ]
+    },
+    "drawMinusMarks": {
+      "diff": -0.08333333333333333,
+      "ci95": [
+        -0.23333333333333334,
+        0.05
+      ]
+    },
+    "toldMinusAlarmRule": {
+      "diff": -0.06666666666666667,
+      "ci95": [
+        -0.23333333333333334,
+        0.11666666666666667
+      ]
+    },
+    "wideMinusAlarmRule": {
+      "diff": -0.21666666666666667,
+      "ci95": [
+        -0.36666666666666664,
+        -0.05
+      ]
+    },
+    "drawMinusAlarmRule": {
+      "diff": -0.2,
+      "ci95": [
+        -0.36666666666666664,
+        -0.03333333333333333
+      ]
+    }
+  },
+  "tests": {
+    "P1": "not supported",
+    "P2": "not supported",
+    "P3": "not supported",
+    "P4": "supported"
+  }
+}

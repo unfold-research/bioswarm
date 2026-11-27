@@ -1,0 +1,15 @@
+{
+  "study": "v4-diverse-sonnet",
+  "configHash": "ac5b8829527f3f836033b4c10952ffcf3c9ac1a233009301092055ca9bfc5116",
+  "status": "complete",
+  "wavesRun": 1,
+  "tasks": 90,
+  "correct": 67,
+  "byLevel": {
+    "48": 26,
+    "96": 20,
+    "144": 21
+  },
+  "truncated": 0,
+  "finishedAt": "2026-11-11T13:40:37.975Z"
+}

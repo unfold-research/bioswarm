@@ -1,0 +1,692 @@
+{
+  "configHash": "2d862ce2c8400e55c2b8811e1854bfe2a8a8fd38e468c8536cc6edc6e23befc3",
+  "stage": "complete",
+  "gate": "clean-multiround-screen-passed",
+  "r0": {
+    "responses": 32,
+    "valid": 32,
+    "exact": 32,
+    "gate": true,
+    "rows": [
+      {
+        "customId": "mr-2001-r0-a",
+        "caseId": "mr-case-2001",
+        "seed": 2001,
+        "archetype": "unanimous-benign",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2001-r0-b",
+        "caseId": "mr-case-2001",
+        "seed": 2001,
+        "archetype": "unanimous-benign",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2002-r0-a",
+        "caseId": "mr-case-2002",
+        "seed": 2002,
+        "archetype": "unanimous-benign",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2002-r0-b",
+        "caseId": "mr-case-2002",
+        "seed": 2002,
+        "archetype": "unanimous-benign",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2003-r0-a",
+        "caseId": "mr-case-2003",
+        "seed": 2003,
+        "archetype": "unanimous-malicious",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2003-r0-b",
+        "caseId": "mr-case-2003",
+        "seed": 2003,
+        "archetype": "unanimous-malicious",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2004-r0-a",
+        "caseId": "mr-case-2004",
+        "seed": 2004,
+        "archetype": "unanimous-malicious",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2004-r0-b",
+        "caseId": "mr-case-2004",
+        "seed": 2004,
+        "archetype": "unanimous-malicious",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2005-r0-a",
+        "caseId": "mr-case-2005",
+        "seed": 2005,
+        "archetype": "decisive-partial-known-zero",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2005-r0-b",
+        "caseId": "mr-case-2005",
+        "seed": 2005,
+        "archetype": "decisive-partial-known-zero",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2006-r0-a",
+        "caseId": "mr-case-2006",
+        "seed": 2006,
+        "archetype": "decisive-partial-known-zero",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2006-r0-b",
+        "caseId": "mr-case-2006",
+        "seed": 2006,
+        "archetype": "decisive-partial-known-zero",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2007-r0-a",
+        "caseId": "mr-case-2007",
+        "seed": 2007,
+        "archetype": "ambiguous-all-one-missing",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2007-r0-b",
+        "caseId": "mr-case-2007",
+        "seed": 2007,
+        "archetype": "ambiguous-all-one-missing",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2008-r0-a",
+        "caseId": "mr-case-2008",
+        "seed": 2008,
+        "archetype": "ambiguous-all-one-missing",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2008-r0-b",
+        "caseId": "mr-case-2008",
+        "seed": 2008,
+        "archetype": "ambiguous-all-one-missing",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2009-r0-a",
+        "caseId": "mr-case-2009",
+        "seed": 2009,
+        "archetype": "single-cross-source-conflict",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2009-r0-b",
+        "caseId": "mr-case-2009",
+        "seed": 2009,
+        "archetype": "single-cross-source-conflict",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2010-r0-a",
+        "caseId": "mr-case-2010",
+        "seed": 2010,
+        "archetype": "single-cross-source-conflict",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2010-r0-b",
+        "caseId": "mr-case-2010",
+        "seed": 2010,
+        "archetype": "single-cross-source-conflict",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2011-r0-a",
+        "caseId": "mr-case-2011",
+        "seed": 2011,
+        "archetype": "conflict-plus-known-zero",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2011-r0-b",
+        "caseId": "mr-case-2011",
+        "seed": 2011,
+        "archetype": "conflict-plus-known-zero",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2012-r0-a",
+        "caseId": "mr-case-2012",
+        "seed": 2012,
+        "archetype": "conflict-plus-known-zero",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2012-r0-b",
+        "caseId": "mr-case-2012",
+        "seed": 2012,
+        "archetype": "conflict-plus-known-zero",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2013-r0-a",
+        "caseId": "mr-case-2013",
+        "seed": 2013,
+        "archetype": "two-cross-source-conflicts",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2013-r0-b",
+        "caseId": "mr-case-2013",
+        "seed": 2013,
+        "archetype": "two-cross-source-conflicts",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2014-r0-a",
+        "caseId": "mr-case-2014",
+        "seed": 2014,
+        "archetype": "two-cross-source-conflicts",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2014-r0-b",
+        "caseId": "mr-case-2014",
+        "seed": 2014,
+        "archetype": "two-cross-source-conflicts",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2015-r0-a",
+        "caseId": "mr-case-2015",
+        "seed": 2015,
+        "archetype": "single-source-omission",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2015-r0-b",
+        "caseId": "mr-case-2015",
+        "seed": 2015,
+        "archetype": "single-source-omission",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2016-r0-a",
+        "caseId": "mr-case-2016",
+        "seed": 2016,
+        "archetype": "single-source-omission",
+        "source": "A",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      },
+      {
+        "customId": "mr-2016-r0-b",
+        "caseId": "mr-case-2016",
+        "seed": 2016,
+        "archetype": "single-source-omission",
+        "source": "B",
+        "valid": true,
+        "exact": true,
+        "stopReason": "end_turn"
+      }
+    ]
+  },
+  "r1": {
+    "responses": 16,
+    "valid": 16,
+    "exactClaimsAndAttribution": 16,
+    "citationsSupported": 16,
+    "decisionCorrect": 16,
+    "abstentionCorrect": 9,
+    "falseCertainty": 0,
+    "hiddenTruthCorrect": 8,
+    "gate": true,
+    "rows": [
+      {
+        "caseId": "mr-case-2001",
+        "seed": 2001,
+        "archetype": "unanimous-benign",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "benign",
+        "verdict": "benign",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2002",
+        "seed": 2002,
+        "archetype": "unanimous-benign",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "benign",
+        "verdict": "benign",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2003",
+        "seed": 2003,
+        "archetype": "unanimous-malicious",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "malicious",
+        "verdict": "malicious",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2004",
+        "seed": 2004,
+        "archetype": "unanimous-malicious",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "malicious",
+        "verdict": "malicious",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2005",
+        "seed": 2005,
+        "archetype": "decisive-partial-known-zero",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "benign",
+        "verdict": "benign",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2006",
+        "seed": 2006,
+        "archetype": "decisive-partial-known-zero",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "benign",
+        "verdict": "benign",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2007",
+        "seed": 2007,
+        "archetype": "ambiguous-all-one-missing",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2008",
+        "seed": 2008,
+        "archetype": "ambiguous-all-one-missing",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": false,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2009",
+        "seed": 2009,
+        "archetype": "single-cross-source-conflict",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": false,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2010",
+        "seed": 2010,
+        "archetype": "single-cross-source-conflict",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": false,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2011",
+        "seed": 2011,
+        "archetype": "conflict-plus-known-zero",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": false,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2012",
+        "seed": 2012,
+        "archetype": "conflict-plus-known-zero",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": false,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2013",
+        "seed": 2013,
+        "archetype": "two-cross-source-conflicts",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": false,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2014",
+        "seed": 2014,
+        "archetype": "two-cross-source-conflicts",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": false,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": false,
+        "expectedEvidenceVerdict": "unsure",
+        "verdict": "unsure",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2015",
+        "seed": 2015,
+        "archetype": "single-source-omission",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "malicious",
+        "verdict": "malicious",
+        "stopReason": "end_turn"
+      },
+      {
+        "caseId": "mr-case-2016",
+        "seed": 2016,
+        "archetype": "single-source-omission",
+        "valid": true,
+        "exactClaimsAndAttribution": true,
+        "citationsSupported": true,
+        "decisionCorrect": true,
+        "abstentionCorrect": true,
+        "falseCertainty": false,
+        "hiddenTruthCorrect": true,
+        "expectedEvidenceVerdict": "malicious",
+        "verdict": "malicious",
+        "stopReason": "end_turn"
+      }
+    ],
+    "deterministicControl": [
+      {
+        "caseId": "mr-case-2001",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "benign"
+      },
+      {
+        "caseId": "mr-case-2002",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "benign"
+      },
+      {
+        "caseId": "mr-case-2003",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "malicious"
+      },
+      {
+        "caseId": "mr-case-2004",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "malicious"
+      },
+      {
+        "caseId": "mr-case-2005",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "benign"
+      },
+      {
+        "caseId": "mr-case-2006",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "benign"
+      },
+      {
+        "caseId": "mr-case-2007",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2008",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2009",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2010",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2011",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2012",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2013",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2014",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "unsure"
+      },
+      {
+        "caseId": "mr-case-2015",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "malicious"
+      },
+      {
+        "caseId": "mr-case-2016",
+        "exactClaimsAndAttribution": true,
+        "decisionCorrect": true,
+        "verdict": "malicious"
+      }
+    ]
+  },
+  "openCommitments": [],
+  "limits": [
+    "16 paired synthetic case clusters over eight authored archetypes are only a feasibility screen.",
+    "Clean transport/aggregation does not test attacks, propagation, authority violations, or defence efficacy.",
+    "Structured records are the chosen architecture for this test, not a proven winner over text.",
+    "Hidden-truth correctness is secondary and is distinct from evidence-rule correctness.",
+    "List-price token estimates are not an invoice; model alias does not freeze provider weights."
+  ]
+}

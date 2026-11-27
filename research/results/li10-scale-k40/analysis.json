@@ -1,0 +1,272 @@
+{
+  "arms": {
+    "routed": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 184107,
+      "calls": 552,
+      "trunc": 1,
+      "messages": 805,
+      "meanTrajectory": [
+        69.63,
+        16.88,
+        12,
+        2.25,
+        0.38,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "manager": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 156086,
+      "calls": 535,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        69.63,
+        69.63,
+        24.5,
+        24.5,
+        9.5,
+        9.5,
+        2.63,
+        2.63,
+        0.75,
+        0.75,
+        0.13,
+        0.13,
+        0
+      ]
+    },
+    "chat": {
+      "solved": 0,
+      "of": 8,
+      "finalTotal": {
+        "sum": 234,
+        "median": 29.5
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 234
+      },
+      "meanOut": 397649,
+      "calls": 2059,
+      "trunc": 3,
+      "messages": 1794,
+      "meanTrajectory": [
+        69.63,
+        45,
+        31.88,
+        30,
+        29.25,
+        29.13,
+        29.13,
+        29.13,
+        29.25,
+        29.25,
+        29.25,
+        29.25,
+        29.25
+      ]
+    },
+    "solo": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 39746,
+      "calls": 10,
+      "trunc": 0,
+      "messages": 0,
+      "meanTrajectory": [
+        0.63,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "edgeTests": {
+    "routed_vs_chat_symmetric": {
+      "routedOnly": 234,
+      "chatOnly": 0,
+      "both": 3,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_chat_directed": {
+      "routedOnly": 0,
+      "chatOnly": 0,
+      "both": 318,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_chat_all": {
+      "routedOnly": 234,
+      "chatOnly": 0,
+      "both": 321,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_manager_symmetric": {
+      "routedOnly": 0,
+      "managerOnly": 0,
+      "both": 237,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_manager_directed": {
+      "routedOnly": 0,
+      "managerOnly": 0,
+      "both": 318,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_manager_all": {
+      "routedOnly": 0,
+      "managerOnly": 0,
+      "both": 555,
+      "neither": 0,
+      "p": 1
+    },
+    "manager_vs_chat_symmetric": {
+      "managerOnly": 234,
+      "chatOnly": 0,
+      "both": 3,
+      "neither": 0,
+      "p": 0
+    },
+    "manager_vs_chat_directed": {
+      "managerOnly": 0,
+      "chatOnly": 0,
+      "both": 318,
+      "neither": 0,
+      "p": 1
+    },
+    "manager_vs_chat_all": {
+      "managerOnly": 234,
+      "chatOnly": 0,
+      "both": 321,
+      "neither": 0,
+      "p": 0
+    },
+    "routed_vs_solo_symmetric": {
+      "routedOnly": 0,
+      "soloOnly": 0,
+      "both": 237,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_solo_directed": {
+      "routedOnly": 0,
+      "soloOnly": 0,
+      "both": 318,
+      "neither": 0,
+      "p": 1
+    },
+    "routed_vs_solo_all": {
+      "routedOnly": 0,
+      "soloOnly": 0,
+      "both": 555,
+      "neither": 0,
+      "p": 1
+    }
+  },
+  "signTests": {
+    "routed_vs_chat": {
+      "lowerIn": 8,
+      "higherIn": 0,
+      "p": 0.00781
+    },
+    "routed_vs_manager": {
+      "lowerIn": 0,
+      "higherIn": 0,
+      "p": 1
+    },
+    "manager_vs_chat": {
+      "lowerIn": 8,
+      "higherIn": 0,
+      "p": 0.00781
+    },
+    "routed_vs_solo": {
+      "lowerIn": 0,
+      "higherIn": 0,
+      "p": 1
+    },
+    "solo_vs_routed": {
+      "lowerIn": 0,
+      "higherIn": 0,
+      "p": 1
+    },
+    "solo_vs_manager": {
+      "lowerIn": 0,
+      "higherIn": 0,
+      "p": 1
+    },
+    "solo_vs_chat": {
+      "lowerIn": 8,
+      "higherIn": 0,
+      "p": 0.00781
+    }
+  },
+  "oscillation": {
+    "routed": {
+      "bothSidesChanged": 214,
+      "stillFailingAfter": 18
+    },
+    "manager": {
+      "bothSidesChanged": 334,
+      "stillFailingAfter": 256
+    },
+    "chat": {
+      "bothSidesChanged": 1854,
+      "stillFailingAfter": 1853
+    }
+  },
+  "verdict": {
+    "H-LI21 one agent solves at least as many cases as the best swarm arm": "supported"
+  }
+}

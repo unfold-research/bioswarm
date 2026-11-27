@@ -1,0 +1,35 @@
+{
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 2,
+    "failing": [
+      "k80s11800 D:M22.mintCode>M67.mintToken",
+      "k80s11801 D:M49.scanName>M56.brandRef",
+      "k80s11803 D:M13.shapeRef>M36.traceAlias",
+      "k80s11804 D:M79.scanSlug>M39.tallyHandle",
+      "k80s11804 D:M49.traceHint>M24.tagLabel",
+      "k80s11805 D:M70.gaugeAlias>M16.tagTitle",
+      "k80s11805 D:M1.mintSlug>M21.tagSlug",
+      "k80s11807 D:M11.scanLabel>M73.siftRef",
+      "k80s11807 D:M23.rankRef>M80.tagNote",
+      "k80s11807 D:M37.brandSeed>M19.scoreName"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 6,
+    "passHoldout": 5,
+    "failing": [
+      "k80s11804 D:M79.scanSlug>M39.tallyHandle"
+    ]
+  },
+  "threshold": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "pheromone": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  }
+}

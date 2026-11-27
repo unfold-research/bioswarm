@@ -1,0 +1,42 @@
+{
+  "study": "t2-map-reduce-k4",
+  "configHash": "08a47f472d3b3e7cf1bd73a0de78aa6b6a6c049413e58976816c205be841ae95",
+  "status": "complete",
+  "wavesRun": 2,
+  "regime": "reduce",
+  "k": 4,
+  "runs": 144,
+  "table": {
+    "I-01": {
+      "8": {
+        "n": 24,
+        "right": 23
+      },
+      "16": {
+        "n": 24,
+        "right": 24
+      }
+    },
+    "I-05": {
+      "8": {
+        "n": 24,
+        "right": 17
+      },
+      "16": {
+        "n": 24,
+        "right": 10
+      }
+    },
+    "I-06": {
+      "8": {
+        "n": 24,
+        "right": 18
+      },
+      "16": {
+        "n": 24,
+        "right": 10
+      }
+    }
+  },
+  "finishedAt": "2026-11-12T08:13:32.607Z"
+}

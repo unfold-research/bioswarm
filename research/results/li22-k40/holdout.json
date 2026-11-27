@@ -1,0 +1,47 @@
+{
+  "stigwait": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s22400": 0,
+      "k40s22401": 0,
+      "k40s22402": 0,
+      "k40s22403": 0,
+      "k40s22404": 0,
+      "k40s22405": 0,
+      "k40s22406": 0,
+      "k40s22407": 0
+    }
+  },
+  "stigwait_evap1": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s22400": 0,
+      "k40s22401": 0,
+      "k40s22402": 0,
+      "k40s22403": 0,
+      "k40s22404": 0,
+      "k40s22405": 0,
+      "k40s22406": 0,
+      "k40s22407": 0
+    }
+  },
+  "stigwait_evap3": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s22400": 0,
+      "k40s22401": 0,
+      "k40s22402": 0,
+      "k40s22403": 0,
+      "k40s22404": 0,
+      "k40s22405": 0,
+      "k40s22406": 0,
+      "k40s22407": 0
+    }
+  }
+}

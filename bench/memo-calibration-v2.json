@@ -1,0 +1,131 @@
+{
+  "referencia": {
+    "grossCents": 863214,
+    "refundCents": 18734,
+    "paidCents": 850482,
+    "differenceCents": 6002,
+    "exceptions": 17
+  },
+  "cases": [
+    {
+      "uuid": "1fb6fd72-a821-411b-be88-9ffb3a4c448e",
+      "case": "íntegro",
+      "memorando": "O bruto anual atingiu 863214 centavos. Créditos no ano: 18734 centavos. Os repasses recebidos somaram 850482 centavos. A diferença anual, recebido menos esperado, ficou em +6002 centavos. Foram 17 exceções. Depositos ausentes: pedir o identificador da liquidação e rastrear a transferência pelo número do pedido. Acima do esperado: identificar o repasse excedente e conferir se houve duplicação no lote. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "09307d06-e4a5-42f5-a256-63bd72946c94",
+      "case": "unidade explícita",
+      "memorando": "O bruto anual atingiu 863214 centavos. Créditos no ano: R$ 187,34. Os repasses recebidos somaram 850482 centavos. A diferença anual, recebido menos esperado, ficou em +6002 centavos. Foram 17 exceções. Depositos ausentes: pedir o identificador da liquidação e rastrear a transferência pelo número do pedido. Acima do esperado: identificar o repasse excedente e conferir se houve duplicação no lote. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "3dcfe97d-232b-49e6-bba5-d24d26b1bbd7",
+      "case": "associações invertidas",
+      "memorando": "O bruto anual atingiu 850482 centavos. Créditos no ano: 18734 centavos. Os repasses recebidos somaram 863214 centavos. A diferença anual, recebido menos esperado, ficou em +6002 centavos. Foram 17 exceções. Depositos ausentes: pedir o identificador da liquidação e rastrear a transferência pelo número do pedido. Acima do esperado: identificar o repasse excedente e conferir se houve duplicação no lote. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": false,
+        "refundCents": true,
+        "paidCents": false,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "37a9b9d1-a42e-4c8d-9c7f-8a64e9ded9bc",
+      "case": "sentido trocado",
+      "memorando": "O bruto anual atingiu 863214 centavos. Créditos no ano: 18734 centavos. Os repasses recebidos somaram 850482 centavos. A diferença anual, recebido menos esperado, ficou em -6002 centavos. Foram 17 exceções. Depositos ausentes: pedir o identificador da liquidação e rastrear a transferência pelo número do pedido. Acima do esperado: identificar o repasse excedente e conferir se houve duplicação no lote. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": false,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "150fa7dc-84ca-49d8-96be-572216ecd902",
+      "case": "contagem ausente",
+      "memorando": "O bruto anual atingiu 863214 centavos. Créditos no ano: 18734 centavos. Os repasses recebidos somaram 850482 centavos. A diferença anual, recebido menos esperado, ficou em +6002 centavos. Depositos ausentes: pedir o identificador da liquidação e rastrear a transferência pelo número do pedido. Acima do esperado: identificar o repasse excedente e conferir se houve duplicação no lote. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": false,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "9f9f315b-852d-4915-812f-5d48d19ee0f9",
+      "case": "ausência de ação",
+      "memorando": "O bruto anual atingiu 863214 centavos. Créditos no ano: 18734 centavos. Os repasses recebidos somaram 850482 centavos. A diferença anual, recebido menos esperado, ficou em +6002 centavos. Foram 17 exceções. Acima do esperado: identificar o repasse excedente e conferir se houve duplicação no lote. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": false,
+        "over": true,
+        "under": true
+      }
+    },
+    {
+      "uuid": "1c9f7d76-a838-450f-afee-daa7cc212cb7",
+      "case": "ação imprecisa",
+      "memorando": "O bruto anual atingiu 863214 centavos. Créditos no ano: 18734 centavos. Os repasses recebidos somaram 850482 centavos. A diferença anual, recebido menos esperado, ficou em +6002 centavos. Foram 17 exceções. Depositos ausentes: pedir o identificador da liquidação e rastrear a transferência pelo número do pedido. Acima do esperado: tomar as medidas cabíveis. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": true,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": false,
+        "under": true
+      }
+    },
+    {
+      "uuid": "80c84613-f617-4a0b-927c-bed0600d3768",
+      "case": "unidade errada",
+      "memorando": "O bruto anual atingiu R$ 863,214. Créditos no ano: 18734 centavos. Os repasses recebidos somaram 850482 centavos. A diferença anual, recebido menos esperado, ficou em +6002 centavos. Foram 17 exceções. Depositos ausentes: pedir o identificador da liquidação e rastrear a transferência pelo número do pedido. Acima do esperado: identificar o repasse excedente e conferir se houve duplicação no lote. Abaixo do esperado: reconciliar cada crédito com o valor contratado e solicitar ao adquirente o complemento faltante. Fim do campo de fechamento.",
+      "expected": {
+        "grossCents": false,
+        "refundCents": true,
+        "paidCents": true,
+        "differenceCents": true,
+        "exceptions": true,
+        "missing": true,
+        "over": true,
+        "under": true
+      }
+    }
+  ]
+}

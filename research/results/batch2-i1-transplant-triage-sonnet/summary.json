@@ -1,0 +1,50 @@
+{
+  "study": "i1-transplant-triage-sonnet",
+  "configHash": "5624d1dff004b62d2c12e499c3ad2a9ed269187dad5fbe26a70b241c43b16971",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "triage",
+  "arms": {
+    "none": {
+      "effect": 0,
+      "verdictRecovered": 0,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "native": {
+      "effect": 8,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "peer": {
+      "effect": 0,
+      "verdictRecovered": 0,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "deliberate": {
+      "effect": 8,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    }
+  },
+  "finishedAt": "2026-11-11T05:29:30.623Z"
+}

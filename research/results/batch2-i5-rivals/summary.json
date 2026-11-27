@@ -1,0 +1,55 @@
+{
+  "study": "i5-rivals",
+  "configHash": "b49103c089e301d55511df6e6ce759626f422956f9fae10dbcc47680e72e1905",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "solo": {
+      "effect": 12,
+      "rivalWon": 0,
+      "other": 4,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "rival": {
+      "effect": 3,
+      "rivalWon": 9,
+      "other": 4,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "rival-first": {
+      "effect": 0,
+      "rivalWon": 15,
+      "other": 1,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "priority": {
+      "effect": 6,
+      "rivalWon": 1,
+      "other": 9,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "priority-rev": {
+      "effect": 5,
+      "rivalWon": 3,
+      "other": 8,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P3": "not supported",
+    "P4": "supported"
+  },
+  "finishedAt": "2026-11-11T12:40:35.455Z"
+}

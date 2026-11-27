@@ -1,0 +1,1882 @@
+{
+ "hypotheses": {
+  "H-G08": {
+   "rows": [
+    {
+     "task": "maintain",
+     "home": "colony",
+     "winner": "school",
+     "homeScore": 0.23383744461570316,
+     "winnerScore": 0.5206272025638077,
+     "ok": false
+    },
+    {
+     "task": "track",
+     "home": "flock",
+     "winner": "team",
+     "homeScore": 0.49349097222222205,
+     "winnerScore": 0.7954231884057973,
+     "ok": false
+    },
+    {
+     "task": "mass",
+     "home": "chemical",
+     "winner": "chemical",
+     "homeScore": 0.28755189537610004,
+     "winnerScore": 0.28755189537610004,
+     "ok": true
+    },
+    {
+     "task": "pipeline",
+     "home": "team",
+     "winner": "school",
+     "homeScore": 0.4164371823121318,
+     "winnerScore": 0.609108838165305,
+     "ok": false
+    }
+   ],
+   "holds": 1,
+   "verdict": "refuted"
+  },
+  "H-G09": {
+   "rows": [
+    {
+     "archetype": "colony",
+     "gaps": {
+      "maintain": 0.38310090889750287,
+      "track": 0.43056763285024163,
+      "mass": 0.3368707518967158,
+      "pipeline": 0.5288340216498408
+     }
+    },
+    {
+     "archetype": "flock",
+     "gaps": {
+      "maintain": 0.22289570029702171,
+      "track": 0.30193221618357524,
+      "mass": 0.476841713515332,
+      "pipeline": 0.37936013241456024
+     }
+    },
+    {
+     "archetype": "school",
+     "gaps": {
+      "maintain": 0.09631115094939835,
+      "track": 0.15141624396135245,
+      "mass": 0.38775559878962285,
+      "pipeline": 0.09009064588817517
+     }
+    },
+    {
+     "archetype": "team",
+     "gaps": {
+      "maintain": 0.3043801685393817,
+      "track": 0,
+      "mass": 0.35806047979194255,
+      "pipeline": 0.2827623017413484
+     }
+    },
+    {
+     "archetype": "chemical",
+     "gaps": {
+      "maintain": 0.3692076824771225,
+      "track": 0.15554193840579722,
+      "mass": 0.2716761100619771,
+      "pipeline": 0.5333030101691484
+     }
+    }
+   ],
+   "universal": [],
+   "bestPerTask": {
+    "maintain": "schedule",
+    "track": "team",
+    "mass": "orchestrator",
+    "pipeline": "independent"
+   },
+   "verdict": "supported"
+  },
+  "H-G10": {
+   "rows": [
+    {
+     "task": "maintain",
+     "orchestrator": 0.5146864937752792,
+     "bestArchetype": "school",
+     "score": 0.5206272025638077,
+     "ok": true
+    },
+    {
+     "task": "track",
+     "orchestrator": 0.7672565217391306,
+     "bestArchetype": "team",
+     "score": 0.7954231884057973,
+     "ok": false
+    },
+    {
+     "task": "mass",
+     "orchestrator": 0.5592280054380772,
+     "bestArchetype": "chemical",
+     "score": 0.28755189537610004,
+     "ok": true
+    },
+    {
+     "task": "pipeline",
+     "orchestrator": 0.5841214454109359,
+     "bestArchetype": "school",
+     "score": 0.609108838165305,
+     "ok": false
+    }
+   ],
+   "holds": 2,
+   "verdict": "refuted"
+  },
+  "H-G11": {
+   "readersLoss": 0.1583112993224549,
+   "independentLoss": 0.04184695254923754,
+   "byRegime": {
+    "orchestrator": 0.3400006820272353,
+    "board": 0.2368331598854165,
+    "colony": 0.020634737904904582,
+    "chemical": 0.06243567529851948,
+    "team": 0.13165224149619864,
+    "independent": 0.04184695254923754,
+    "schedule": 0.05443038481173955,
+    "flock": 0.04107466873468946,
+    "school": 0.057279926525079405
+   },
+   "verdict": "supported"
+  },
+  "H-G12": {
+   "bestArchetypeUnderThreat": "school",
+   "rows": [
+    {
+     "regime": "orchestrator",
+     "lost": 0.3400006820272353,
+     "recovered": 0.16759907466665194,
+     "share": 0.4929374660878669,
+     "flags": 70.36125,
+     "falseFlags": 15.653749999999999,
+     "ok": false
+    },
+    {
+     "regime": "board",
+     "lost": 0.2368331598854165,
+     "recovered": 0.15829418455821434,
+     "share": 0.6683784679256887,
+     "flags": 47.15125,
+     "falseFlags": 1.09125,
+     "ok": true
+    },
+    {
+     "regime": "school",
+     "lost": 0.057279926525079405,
+     "recovered": 0.004830416997891551,
+     "share": 0.08433001386230139,
+     "flags": 0,
+     "falseFlags": 0,
+     "ok": false
+    }
+   ],
+   "verdict": "refuted"
+  },
+  "H-G13": {
+   "rows": [
+    {
+     "task": "maintain",
+     "threat": 0,
+     "bestPreset": "schedule",
+     "preset": 0.616938353513206,
+     "hybrid": 0.5107716872237136,
+     "diff": -0.10616666628949245,
+     "separable": true,
+     "flags": [
+      "DOL-04",
+      "SIG-01"
+     ],
+     "ok": false
+    },
+    {
+     "task": "maintain",
+     "threat": 0.2,
+     "bestPreset": "schedule",
+     "preset": 0.5065202654499578,
+     "hybrid": 0.5773803378749368,
+     "diff": 0.07086007242497905,
+     "separable": true,
+     "flags": [
+      "DEC-04",
+      "FLD-04",
+      "SIG-04"
+     ],
+     "ok": true
+    },
+    {
+     "task": "track",
+     "threat": 0,
+     "bestPreset": "team",
+     "preset": 0.7954231884057973,
+     "hybrid": 0.8375999999999999,
+     "diff": 0.04217681159420261,
+     "separable": true,
+     "flags": [
+      "DEC-04",
+      "DEF-01",
+      "DEF-04",
+      "DOL-04",
+      "FLD-04",
+      "SIG-01",
+      "SIG-04"
+     ],
+     "ok": true
+    },
+    {
+     "task": "track",
+     "threat": 0.2,
+     "bestPreset": "team",
+     "preset": 0.645113888888889,
+     "hybrid": 0.71914537037037,
+     "diff": 0.07403148148148098,
+     "separable": true,
+     "flags": [
+      "DEC-04",
+      "DEF-01",
+      "DEF-04",
+      "DOL-04",
+      "REG-05",
+      "SIG-01",
+      "SIG-04"
+     ],
+     "ok": true
+    },
+    {
+     "task": "mass",
+     "threat": 0,
+     "bestPreset": "orchestrator",
+     "preset": 0.5592280054380772,
+     "hybrid": 0.5303116704075836,
+     "diff": -0.028916335030493512,
+     "separable": true,
+     "flags": [
+      "ACT-02",
+      "DOL-04"
+     ],
+     "ok": false
+    },
+    {
+     "task": "mass",
+     "threat": 0.2,
+     "bestPreset": "chemical",
+     "preset": 0.23443375615744813,
+     "hybrid": 0.4521425585761105,
+     "diff": 0.2177088024186624,
+     "separable": true,
+     "flags": [
+      "ACT-02",
+      "ACT-03",
+      "DEF-01",
+      "DOL-01",
+      "DOL-04",
+      "FLD-01",
+      "SIG-02"
+     ],
+     "ok": true
+    },
+    {
+     "task": "pipeline",
+     "threat": 0,
+     "bestPreset": "independent",
+     "preset": 0.6991994840534802,
+     "hybrid": 0.8230030976086767,
+     "diff": 0.12380361355519653,
+     "separable": true,
+     "flags": [
+      "DEC-04",
+      "DEF-04"
+     ],
+     "ok": true
+    },
+    {
+     "task": "pipeline",
+     "threat": 0.2,
+     "bestPreset": "independent",
+     "preset": 0.6142032886215416,
+     "hybrid": 0.7391669954110447,
+     "diff": 0.12496370678950308,
+     "separable": true,
+     "flags": [
+      "DEC-04"
+     ],
+     "ok": true
+    }
+   ],
+   "perThreat": [
+    2,
+    4
+   ],
+   "verdict": "supported"
+  },
+  "H-G14": {
+   "flags": [
+    "DEC-04",
+    "FLD-04",
+    "SIG-06"
+   ],
+   "start": "school",
+   "rows": [
+    {
+     "task": "maintain",
+     "threat": 0,
+     "best": "schedule",
+     "bestScore": 0.616938353513206,
+     "general": 0.5206272025638077,
+     "gap": 0.09631115094939835,
+     "ok": false
+    },
+    {
+     "task": "maintain",
+     "threat": 0.2,
+     "best": "task-hybrid",
+     "bestScore": 0.5773803378749368,
+     "general": 0.46019460461997164,
+     "gap": 0.11718573325496517,
+     "ok": false
+    },
+    {
+     "task": "track",
+     "threat": 0,
+     "best": "task-hybrid",
+     "bestScore": 0.8375999999999999,
+     "general": 0.6440069444444448,
+     "gap": 0.19359305555555506,
+     "ok": false
+    },
+    {
+     "task": "track",
+     "threat": 0.2,
+     "best": "task-hybrid",
+     "bestScore": 0.71914537037037,
+     "general": 0.6284649122807008,
+     "gap": 0.09068045808966918,
+     "ok": false
+    },
+    {
+     "task": "mass",
+     "threat": 0,
+     "best": "orchestrator",
+     "bestScore": 0.5592280054380772,
+     "general": 0.1714724066484543,
+     "gap": 0.38775559878962285,
+     "ok": false
+    },
+    {
+     "task": "mass",
+     "threat": 0.2,
+     "best": "task-hybrid",
+     "bestScore": 0.4521425585761105,
+     "general": 0.09443646973391907,
+     "gap": 0.35770608884219146,
+     "ok": false
+    },
+    {
+     "task": "pipeline",
+     "threat": 0,
+     "best": "task-hybrid",
+     "bestScore": 0.8230030976086767,
+     "general": 0.609108838165305,
+     "gap": 0.2138942594433717,
+     "ok": false
+    },
+    {
+     "task": "pipeline",
+     "threat": 0.2,
+     "best": "task-hybrid",
+     "bestScore": 0.7391669954110447,
+     "general": 0.5329996990871028,
+     "gap": 0.20616729632394193,
+     "ok": false
+    }
+   ],
+   "holds": 0,
+   "verdict": "refuted"
+  }
+ },
+ "table": {
+  "maintain|0": {
+   "independent": {
+    "mean": 0.5015,
+    "half": 0.0049,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.6169,
+    "half": 0.0034,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.5147,
+    "half": 0.0088,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.5063,
+    "half": 0.0051,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.2338,
+    "half": 0.0043,
+    "actions": 0.408
+   },
+   "flock": {
+    "mean": 0.394,
+    "half": 0.0056,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.5206,
+    "half": 0.0067,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.3126,
+    "half": 0.0036,
+    "actions": 0.396
+   },
+   "chemical": {
+    "mean": 0.2477,
+    "half": 0.0049,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.5095,
+    "half": 0.0086,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.5089,
+    "half": 0.0047,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.2356,
+    "half": 0.0043,
+    "actions": 0.407
+   },
+   "flock+def": {
+    "mean": 0.3925,
+    "half": 0.0051,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.5325,
+    "half": 0.0068,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.3126,
+    "half": 0.0036,
+    "actions": 0.396
+   },
+   "chemical+def": {
+    "mean": 0.2476,
+    "half": 0.0059,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.5108,
+    "half": 0.0092,
+    "actions": 0.958
+   },
+   "general-hybrid": {
+    "mean": 0.5206,
+    "half": 0.0067,
+    "actions": 1
+   }
+  },
+  "maintain|0.2": {
+   "independent": {
+    "mean": 0.4238,
+    "half": 0.0043,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.5065,
+    "half": 0.004,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.3974,
+    "half": 0.0041,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.2789,
+    "half": 0.0048,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.196,
+    "half": 0.0049,
+    "actions": 0.787
+   },
+   "flock": {
+    "mean": 0.3446,
+    "half": 0.005,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.4602,
+    "half": 0.0067,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.2402,
+    "half": 0.003,
+    "actions": 0.523
+   },
+   "chemical": {
+    "mean": 0.2208,
+    "half": 0.0056,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.3962,
+    "half": 0.006,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.4257,
+    "half": 0.0045,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.1453,
+    "half": 0.005,
+    "actions": 0.844
+   },
+   "flock+def": {
+    "mean": 0.3436,
+    "half": 0.0051,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.4634,
+    "half": 0.0066,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.2402,
+    "half": 0.003,
+    "actions": 0.523
+   },
+   "chemical+def": {
+    "mean": 0.1502,
+    "half": 0.0056,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.5774,
+    "half": 0.0064,
+    "actions": 1
+   },
+   "general-hybrid": {
+    "mean": 0.4602,
+    "half": 0.0067,
+    "actions": 1
+   }
+  },
+  "maintain-scattered|0": {
+   "independent": {
+    "mean": 0.5641,
+    "half": 0.0027,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.6203,
+    "half": 0.0031,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.4508,
+    "half": 0.0121,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.5683,
+    "half": 0.0032,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.3183,
+    "half": 0.0041,
+    "actions": 0.418
+   },
+   "flock": {
+    "mean": 0.4693,
+    "half": 0.0036,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.6194,
+    "half": 0.0039,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.3149,
+    "half": 0.003,
+    "actions": 0.404
+   },
+   "chemical": {
+    "mean": 0.352,
+    "half": 0.0054,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.4652,
+    "half": 0.0124,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.5664,
+    "half": 0.0029,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.3162,
+    "half": 0.0038,
+    "actions": 0.418
+   },
+   "flock+def": {
+    "mean": 0.473,
+    "half": 0.0034,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.6207,
+    "half": 0.0036,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.3149,
+    "half": 0.003,
+    "actions": 0.404
+   },
+   "chemical+def": {
+    "mean": 0.3546,
+    "half": 0.0047,
+    "actions": 1
+   },
+   "general-hybrid": {
+    "mean": 0.6194,
+    "half": 0.0039,
+    "actions": 1
+   }
+  },
+  "maintain-scattered|0.2": {
+   "independent": {
+    "mean": 0.4855,
+    "half": 0.0032,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.5078,
+    "half": 0.0029,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.3624,
+    "half": 0.0046,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.339,
+    "half": 0.0042,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.2261,
+    "half": 0.0044,
+    "actions": 0.791
+   },
+   "flock": {
+    "mean": 0.4147,
+    "half": 0.0032,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.5512,
+    "half": 0.0036,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.2471,
+    "half": 0.0027,
+    "actions": 0.53
+   },
+   "chemical": {
+    "mean": 0.2442,
+    "half": 0.0035,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.3523,
+    "half": 0.0089,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.4846,
+    "half": 0.0032,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.195,
+    "half": 0.0059,
+    "actions": 0.821
+   },
+   "flock+def": {
+    "mean": 0.4162,
+    "half": 0.0032,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.5522,
+    "half": 0.0039,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.2471,
+    "half": 0.0027,
+    "actions": 0.53
+   },
+   "chemical+def": {
+    "mean": 0.1806,
+    "half": 0.0058,
+    "actions": 1
+   },
+   "general-hybrid": {
+    "mean": 0.5512,
+    "half": 0.0036,
+    "actions": 1
+   }
+  },
+  "track|0": {
+   "independent": {
+    "mean": 0.2314,
+    "half": 0.0112,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.0439,
+    "half": 0.0006,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.7673,
+    "half": 0.0097,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.3667,
+    "half": 0.0127,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.3649,
+    "half": 0.014,
+    "actions": 1
+   },
+   "flock": {
+    "mean": 0.4935,
+    "half": 0.0137,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.644,
+    "half": 0.01,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.7954,
+    "half": 0.0076,
+    "actions": 0.958
+   },
+   "chemical": {
+    "mean": 0.6399,
+    "half": 0.0119,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.7985,
+    "half": 0.0079,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.3757,
+    "half": 0.0133,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.337,
+    "half": 0.0136,
+    "actions": 1
+   },
+   "flock+def": {
+    "mean": 0.4797,
+    "half": 0.0131,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.6407,
+    "half": 0.0097,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.7954,
+    "half": 0.0076,
+    "actions": 0.958
+   },
+   "chemical+def": {
+    "mean": 0.628,
+    "half": 0.012,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.8376,
+    "half": 0.0051,
+    "actions": 0.958
+   },
+   "general-hybrid": {
+    "mean": 0.644,
+    "half": 0.01,
+    "actions": 1
+   }
+  },
+  "track|0.2": {
+   "independent": {
+    "mean": 0.2436,
+    "half": 0.0117,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.0437,
+    "half": 0.0006,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.0537,
+    "half": 0.0084,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.1598,
+    "half": 0.0124,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.3523,
+    "half": 0.0141,
+    "actions": 1
+   },
+   "flock": {
+    "mean": 0.4779,
+    "half": 0.0126,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.6285,
+    "half": 0.0106,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.6451,
+    "half": 0.0134,
+    "actions": 0.958
+   },
+   "chemical": {
+    "mean": 0.4625,
+    "half": 0.0221,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.6386,
+    "half": 0.0152,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.3397,
+    "half": 0.0144,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.3341,
+    "half": 0.0137,
+    "actions": 1
+   },
+   "flock+def": {
+    "mean": 0.471,
+    "half": 0.0136,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.6351,
+    "half": 0.0104,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.6451,
+    "half": 0.0134,
+    "actions": 0.958
+   },
+   "chemical+def": {
+    "mean": 0.612,
+    "half": 0.0118,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.7191,
+    "half": 0.0109,
+    "actions": 0.958
+   },
+   "general-hybrid": {
+    "mean": 0.6285,
+    "half": 0.0106,
+    "actions": 1
+   }
+  },
+  "mass|0": {
+   "independent": {
+    "mean": 0.0322,
+    "half": 0.0036,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0,
+    "half": 0,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.5592,
+    "half": 0.0136,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.286,
+    "half": 0.0099,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.2224,
+    "half": 0.0082,
+    "actions": 0.49
+   },
+   "flock": {
+    "mean": 0.0824,
+    "half": 0.0063,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.1715,
+    "half": 0.009,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.2012,
+    "half": 0.0084,
+    "actions": 0.383
+   },
+   "chemical": {
+    "mean": 0.2876,
+    "half": 0.0082,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.5349,
+    "half": 0.0132,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.281,
+    "half": 0.0103,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.2168,
+    "half": 0.008,
+    "actions": 0.488
+   },
+   "flock+def": {
+    "mean": 0.0759,
+    "half": 0.0062,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.17,
+    "half": 0.0088,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.2012,
+    "half": 0.0084,
+    "actions": 0.383
+   },
+   "chemical+def": {
+    "mean": 0.2855,
+    "half": 0.0085,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.5303,
+    "half": 0.013,
+    "actions": 0.958
+   },
+   "general-hybrid": {
+    "mean": 0.1715,
+    "half": 0.009,
+    "actions": 1
+   }
+  },
+  "mass|0.2": {
+   "independent": {
+    "mean": 0.0154,
+    "half": 0.003,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0,
+    "half": 0,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.107,
+    "half": 0.0066,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.1054,
+    "half": 0.0074,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.1841,
+    "half": 0.008,
+    "actions": 0.876
+   },
+   "flock": {
+    "mean": 0.0477,
+    "half": 0.0051,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.0944,
+    "half": 0.0076,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.0941,
+    "half": 0.006,
+    "actions": 0.507
+   },
+   "chemical": {
+    "mean": 0.2344,
+    "half": 0.0091,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.3813,
+    "half": 0.0114,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.1611,
+    "half": 0.0084,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.128,
+    "half": 0.0075,
+    "actions": 0.888
+   },
+   "flock+def": {
+    "mean": 0.0477,
+    "half": 0.0049,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.105,
+    "half": 0.0076,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.0941,
+    "half": 0.006,
+    "actions": 0.507
+   },
+   "chemical+def": {
+    "mean": 0.1168,
+    "half": 0.0078,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.4521,
+    "half": 0.0105,
+    "actions": 0.958
+   },
+   "general-hybrid": {
+    "mean": 0.0944,
+    "half": 0.0076,
+    "actions": 1
+   }
+  },
+  "pipeline|0": {
+   "independent": {
+    "mean": 0.6992,
+    "half": 0.0038,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.219,
+    "half": 0.0033,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.5841,
+    "half": 0.0105,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.6543,
+    "half": 0.0042,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.1704,
+    "half": 0.0029,
+    "actions": 0.551
+   },
+   "flock": {
+    "mean": 0.3198,
+    "half": 0.0039,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.6091,
+    "half": 0.006,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.4164,
+    "half": 0.0059,
+    "actions": 0.439
+   },
+   "chemical": {
+    "mean": 0.1659,
+    "half": 0.0031,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.5169,
+    "half": 0.0123,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.6581,
+    "half": 0.0042,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.1802,
+    "half": 0.003,
+    "actions": 0.541
+   },
+   "flock+def": {
+    "mean": 0.317,
+    "half": 0.0039,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.6025,
+    "half": 0.0053,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.4164,
+    "half": 0.0059,
+    "actions": 0.439
+   },
+   "chemical+def": {
+    "mean": 0.1632,
+    "half": 0.0029,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.823,
+    "half": 0.0041,
+    "actions": 1
+   },
+   "general-hybrid": {
+    "mean": 0.6091,
+    "half": 0.006,
+    "actions": 1
+   }
+  },
+  "pipeline|0.2": {
+   "independent": {
+    "mean": 0.6142,
+    "half": 0.004,
+    "actions": 1
+   },
+   "schedule": {
+    "mean": 0.1119,
+    "half": 0.0027,
+    "actions": 1
+   },
+   "orchestrator": {
+    "mean": 0.5071,
+    "half": 0.0046,
+    "actions": 0.958
+   },
+   "board": {
+    "mean": 0.3218,
+    "half": 0.0061,
+    "actions": 1
+   },
+   "colony": {
+    "mean": 0.1764,
+    "half": 0.0046,
+    "actions": 0.826
+   },
+   "flock": {
+    "mean": 0.2553,
+    "half": 0.0034,
+    "actions": 1
+   },
+   "school": {
+    "mean": 0.533,
+    "half": 0.0052,
+    "actions": 1
+   },
+   "team": {
+    "mean": 0.2196,
+    "half": 0.0054,
+    "actions": 0.548
+   },
+   "chemical": {
+    "mean": 0.1735,
+    "half": 0.0037,
+    "actions": 1
+   },
+   "orchestrator+def": {
+    "mean": 0.3196,
+    "half": 0.0087,
+    "actions": 0.958
+   },
+   "board+def": {
+    "mean": 0.5726,
+    "half": 0.0038,
+    "actions": 1
+   },
+   "colony+def": {
+    "mean": 0.1079,
+    "half": 0.0041,
+    "actions": 0.871
+   },
+   "flock+def": {
+    "mean": 0.2544,
+    "half": 0.0035,
+    "actions": 1
+   },
+   "school+def": {
+    "mean": 0.5319,
+    "half": 0.0057,
+    "actions": 1
+   },
+   "team+def": {
+    "mean": 0.2196,
+    "half": 0.0054,
+    "actions": 0.548
+   },
+   "chemical+def": {
+    "mean": 0.0986,
+    "half": 0.0037,
+    "actions": 1
+   },
+   "task-hybrid": {
+    "mean": 0.7392,
+    "half": 0.0045,
+    "actions": 1
+   },
+   "general-hybrid": {
+    "mean": 0.533,
+    "half": 0.0052,
+    "actions": 1
+   }
+  }
+ },
+ "scattered": {
+  "independent": {
+   "local": 0.5014545242141092,
+   "scattered": 0.5640541998696766
+  },
+  "schedule": {
+   "local": 0.616938353513206,
+   "scattered": 0.6203057740367826
+  },
+  "orchestrator": {
+   "local": 0.5146864937752792,
+   "scattered": 0.45081963739427544
+  },
+  "board": {
+   "local": 0.5063124235979255,
+   "scattered": 0.568282702944987
+  },
+  "colony": {
+   "local": 0.23383744461570316,
+   "scattered": 0.3183002521880862
+  },
+  "flock": {
+   "local": 0.3940426532161843,
+   "scattered": 0.4692912374124699
+  },
+  "school": {
+   "local": 0.5206272025638077,
+   "scattered": 0.6194466177320134
+  },
+  "team": {
+   "local": 0.3125581849738243,
+   "scattered": 0.31494568404165674
+  },
+  "chemical": {
+   "local": 0.24773067103608354,
+   "scattered": 0.3520145335346478
+  },
+  "general-hybrid": {
+   "local": 0.5206272025638077,
+   "scattered": 0.6194466177320134
+  }
+ },
+ "flagEffect": {
+  "SIG-01": {
+   "maintain|0": -0.005357977077061149,
+   "maintain|0.2": -0.01995717348449777,
+   "track|0": 0.033481249999999935,
+   "track|0.2": -0.06625877192982457,
+   "mass|0": 0.09577452627705768,
+   "mass|0.2": 0.04644152469095048,
+   "pipeline|0": -0.012176728325466124,
+   "pipeline|0.2": -0.04626719063494
+  },
+  "SIG-02": {
+   "maintain|0": 0.0009714048858068258,
+   "maintain|0.2": -0.2717675932195428,
+   "track|0": 0.0013645833333333357,
+   "track|0.2": -0.01896754385964905,
+   "mass|0": -0.001684240687461317,
+   "mass|0.2": 0.09891069808940271,
+   "pipeline|0": 0.0023737902843072867,
+   "pipeline|0.2": -0.38550782164134456
+  },
+  "SIG-04": {
+   "maintain|0": 0.0028757833180450554,
+   "maintain|0.2": -0.002004941725397502,
+   "track|0": 0.00991736111111105,
+   "track|0.2": -0.0032307017543860284,
+   "mass|0": 0.0030338377501406485,
+   "mass|0.2": -0.0011871547929125405,
+   "pipeline|0": 0.003323944236868215,
+   "pipeline|0.2": 0.006386210176438145
+  },
+  "SIG-06": {
+   "maintain|0": -0.10597721515087993,
+   "maintain|0.2": -0.07699308629312501,
+   "track|0": 0.2521243055555552,
+   "track|0.2": 0.22694122807017506,
+   "mass|0": 0.042388561208238126,
+   "mass|0.2": 0.03854223691785552,
+   "pipeline|0": -0.37810046771359085,
+   "pipeline|0.2": -0.3547225543381503
+  },
+  "FLD-01": {
+   "maintain|0": 0.0012325036911209342,
+   "maintain|0.2": -0.12440651968125538,
+   "track|0": 0.12859513888888882,
+   "track|0.2": -0.08140263157894742,
+   "mass|0": 0.2592652579773814,
+   "mass|0.2": 0.09830588447772846,
+   "pipeline|0": -0.043452295241385164,
+   "pipeline|0.2": -0.2562555646111064
+  },
+  "FLD-02": {
+   "maintain|0": 0.003635423924748027,
+   "maintain|0.2": 0.0009066652586948165,
+   "track|0": -0.001049305555555602,
+   "track|0.2": -0.002876315789473727,
+   "mass|0": -0.00006339819844099204,
+   "mass|0.2": -0.00293865339861607,
+   "pipeline|0": 0.0017966132773599153,
+   "pipeline|0.2": 0.00018921094616308753
+  },
+  "FLD-03": {
+   "maintain|0": -0.17835178723231682,
+   "maintain|0.2": -0.24842080564722394,
+   "track|0": 0.010790972222222056,
+   "track|0.2": -0.007664035087719373,
+   "mass|0": 0.22173339686536794,
+   "mass|0.2": 0.08878103193765761,
+   "pipeline|0": -0.4542373715834177,
+   "pipeline|0.2": -0.4484341600204193
+  },
+  "FLD-04": {
+   "maintain|0": -0.007483862870264535,
+   "maintain|0.2": 0.00193314112522891,
+   "track|0": 0.005556250000000013,
+   "track|0.2": 0.004513157894736802,
+   "mass|0": 0.008996933940548638,
+   "mass|0.2": -0.0010372883797757897,
+   "pipeline|0": 0.0013983981237650767,
+   "pipeline|0.2": -0.0014218449370788644
+  },
+  "ACT-01": {
+   "maintain|0": 0.0017409399276651083,
+   "maintain|0.2": -0.001324056691801745,
+   "track|0": 0.01324097222222223,
+   "track|0.2": 0.0031236842105261398,
+   "mass|0": 0.0008337301018676233,
+   "mass|0.2": -0.0002668875988114036,
+   "pipeline|0": 0.0019401589068910319,
+   "pipeline|0.2": -0.0006804643368478747
+  },
+  "ACT-02": {
+   "maintain|0": -0.00567472768894528,
+   "maintain|0.2": -0.003401789963030033,
+   "track|0": -0.006317361111111169,
+   "track|0.2": -0.009107894736842148,
+   "mass|0": -0.002222985168710768,
+   "mass|0.2": -0.000839431296645432,
+   "pipeline|0": 0.007608591280531596,
+   "pipeline|0.2": 0.0016497581952462648
+  },
+  "ACT-03": {
+   "maintain|0": -0.005149103644302433,
+   "maintain|0.2": 0.0002965945142743287,
+   "track|0": -0.01095625,
+   "track|0.2": -0.00782017543859645,
+   "mass|0": -0.0016553045713335428,
+   "mass|0.2": 0.0007397497873579094,
+   "pipeline|0": 0.0001509458625220672,
+   "pipeline|0.2": -0.0036159740277104113
+  },
+  "ACT-05": {
+   "maintain|0": -0.0032079755406793087,
+   "maintain|0.2": -0.002981328998545918,
+   "track|0": 0.00019652777777778851,
+   "track|0.2": -0.008606140350877256,
+   "mass|0": 0.0013098900134261293,
+   "mass|0.2": -0.0009461617607090279,
+   "pipeline|0": 0.002975361534096943,
+   "pipeline|0.2": 0.0018227056900997907
+  },
+  "DEC-03": {
+   "maintain|0": -0.017411280824956077,
+   "maintain|0.2": -0.006716453325116667,
+   "track|0": 0.01624652777777777,
+   "track|0.2": -0.01850964912280717,
+   "mass|0": -0.0005873608401201352,
+   "mass|0.2": 0.0009395652564449172,
+   "pipeline|0": -0.06254526185805376,
+   "pipeline|0.2": -0.06905083560313896
+  },
+  "DEC-04": {
+   "maintain|0": 0.16112420963674645,
+   "maintain|0.2": 0.16440478054857266,
+   "track|0": 0.10847430555555557,
+   "track|0.2": 0.10639561403508754,
+   "mass|0": 0.06869058496237687,
+   "mass|0.2": 0.03209349174824042,
+   "pipeline|0": 0.11834578019308517,
+   "pipeline|0.2": 0.12619882552449668
+  },
+  "DOL-01": {
+   "maintain|0": -0.05920451662999393,
+   "maintain|0.2": -0.053759213307835174,
+   "track|0": 0.026322916666666724,
+   "track|0.2": 0.007678070175438562,
+   "mass|0": 0.002027559163943801,
+   "mass|0.2": 0.0019129905879763653,
+   "pipeline|0": -0.1165716412946769,
+   "pipeline|0.2": -0.11195324076061519
+  },
+  "DOL-04": {
+   "maintain|0": 0.016702801562109904,
+   "maintain|0.2": -0.027938662459344565,
+   "track|0": 0.5314675422705313,
+   "track|0.2": -0.1898314814814816,
+   "mass|0": 0.5165447195266116,
+   "mass|0.2": 0.08666904923023676,
+   "pipeline|0": -0.1189098140377779,
+   "pipeline|0.2": -0.10986231664471013
+  },
+  "DEF-01": {
+   "maintain|0": -0.009802022306991898,
+   "maintain|0.2": 0.001569953969342841,
+   "track|0": -0.0019034722222222578,
+   "track|0.2": -0.005121929824561361,
+   "mass|0": 0.005959353273586869,
+   "mass|0.2": -0.0029199184082696495,
+   "pipeline|0": 0.0013706734360861006,
+   "pipeline|0.2": 0.003418383994020724
+  },
+  "DEF-04": {
+   "maintain|0": -0.0028806834012277127,
+   "maintain|0.2": -0.004513243915961085,
+   "track|0": 0.009884027777777804,
+   "track|0.2": -0.00280263157894739,
+   "mass|0": 0.0024716617037289085,
+   "mass|0.2": -0.0015582731509326524,
+   "pipeline|0": 0.007702303259949583,
+   "pipeline|0.2": -0.003037528717221738
+  },
+  "REG-05": {
+   "maintain|0": -0.21298229265588714,
+   "maintain|0.2": -0.18424545719458962,
+   "track|0": 0.010349305555555438,
+   "track|0.2": 0.003213157894736862,
+   "mass|0": -0.029747326148213113,
+   "mass|0.2": -0.014909389444481029,
+   "pipeline|0": -0.24728139394168425,
+   "pipeline|0.2": -0.23120031754743603
+  }
+ },
+ "selection": {
+  "task": {
+   "maintain|0": {
+    "start": "orchestrator",
+    "flags": [
+     "DOL-04",
+     "SIG-01"
+    ],
+    "train": 0.5279261435357431,
+    "path": [
+     {
+      "flags": [
+       "DOL-04"
+      ],
+      "train": 0.5210125584755573
+     },
+     {
+      "flags": [
+       "DOL-04",
+       "SIG-01"
+      ],
+      "toggled": "SIG-01",
+      "train": 0.5279261435357431
+     }
+    ]
+   },
+   "maintain|0.2": {
+    "start": "school",
+    "flags": [
+     "DEC-04",
+     "FLD-04",
+     "SIG-04"
+    ],
+    "train": 0.5871221082068953,
+    "path": [
+     {
+      "flags": [
+       "DEC-04",
+       "FLD-04",
+       "SIG-06"
+      ],
+      "train": 0.47600876090742233
+     },
+     {
+      "flags": [
+       "DEC-04",
+       "FLD-04"
+      ],
+      "toggled": "SIG-06",
+      "train": 0.5741245941790223
+     },
+     {
+      "flags": [
+       "DEC-04",
+       "FLD-04",
+       "SIG-04"
+      ],
+      "toggled": "SIG-04",
+      "train": 0.5871221082068953
+     }
+    ]
+   },
+   "track|0": {
+    "start": "team",
+    "flags": [
+     "DEC-04",
+     "DEF-01",
+     "DEF-04",
+     "DOL-04",
+     "FLD-04",
+     "SIG-01",
+     "SIG-04"
+    ],
+    "train": 0.8497826086956524,
+    "path": [
+     {
+      "flags": [
+       "DEF-01",
+       "DEF-04",
+       "DOL-04",
+       "FLD-04",
+       "REG-05",
+       "SIG-01",
+       "SIG-04"
+      ],
+      "train": 0.7977608695652176
+     },
+     {
+      "flags": [
+       "DEC-04",
+       "DEF-01",
+       "DEF-04",
+       "DOL-04",
+       "FLD-04",
+       "REG-05",
+       "SIG-01",
+       "SIG-04"
+      ],
+      "toggled": "DEC-04",
+      "train": 0.8370942028985509
+     },
+     {
+      "flags": [
+       "DEC-04",
+       "DEF-01",
+       "DEF-04",
+       "DOL-04",
+       "FLD-04",
+       "SIG-01",
+       "SIG-04"
+      ],
+      "toggled": "REG-05",
+      "train": 0.8497826086956524
+     }
+    ]
+   },
+   "track|0.2": {
+    "start": "team",
+    "flags": [
+     "DEC-04",
+     "DEF-01",
+     "DEF-04",
+     "DOL-04",
+     "REG-05",
+     "SIG-01",
+     "SIG-04"
+    ],
+    "train": 0.7436944444444442,
+    "path": [
+     {
+      "flags": [
+       "DEF-01",
+       "DEF-04",
+       "DOL-04",
+       "FLD-04",
+       "REG-05",
+       "SIG-01",
+       "SIG-04"
+      ],
+      "train": 0.6553333333333331
+     },
+     {
+      "flags": [
+       "DEC-04",
+       "DEF-01",
+       "DEF-04",
+       "DOL-04",
+       "FLD-04",
+       "REG-05",
+       "SIG-01",
+       "SIG-04"
+      ],
+      "toggled": "DEC-04",
+      "train": 0.7210972222222223
+     },
+     {
+      "flags": [
+       "DEC-04",
+       "DEF-01",
+       "DEF-04",
+       "DOL-04",
+       "REG-05",
+       "SIG-01",
+       "SIG-04"
+      ],
+      "toggled": "FLD-04",
+      "train": 0.7436944444444442
+     }
+    ]
+   },
+   "mass|0": {
+    "start": "orchestrator",
+    "flags": [
+     "ACT-02",
+     "DOL-04"
+    ],
+    "train": 0.5627900027122479,
+    "path": [
+     {
+      "flags": [
+       "DOL-04"
+      ],
+      "train": 0.5510856013300807
+     },
+     {
+      "flags": [
+       "ACT-02",
+       "DOL-04"
+      ],
+      "toggled": "ACT-02",
+      "train": 0.5627900027122479
+     }
+    ]
+   },
+   "mass|0.2": {
+    "start": "chemical",
+    "flags": [
+     "ACT-02",
+     "ACT-03",
+     "DEF-01",
+     "DOL-01",
+     "DOL-04",
+     "FLD-01",
+     "SIG-02"
+    ],
+    "train": 0.48135171862502224,
+    "path": [
+     {
+      "flags": [
+       "ACT-02",
+       "ACT-03",
+       "DEF-01",
+       "DOL-01",
+       "FLD-01",
+       "FLD-03",
+       "SIG-02",
+       "SIG-06"
+      ],
+      "train": 0.2289780167523873
+     },
+     {
+      "flags": [
+       "ACT-02",
+       "ACT-03",
+       "DEF-01",
+       "DOL-01",
+       "DOL-04",
+       "FLD-01",
+       "FLD-03",
+       "SIG-02",
+       "SIG-06"
+      ],
+      "toggled": "DOL-04",
+      "train": 0.3676430193584781
+     },
+     {
+      "flags": [
+       "ACT-02",
+       "ACT-03",
+       "DEF-01",
+       "DOL-01",
+       "DOL-04",
+       "FLD-01",
+       "FLD-03",
+       "SIG-02"
+      ],
+      "toggled": "SIG-06",
+      "train": 0.44844755023056254
+     },
+     {
+      "flags": [
+       "ACT-02",
+       "ACT-03",
+       "DEF-01",
+       "DOL-01",
+       "DOL-04",
+       "FLD-01",
+       "SIG-02"
+      ],
+      "toggled": "FLD-03",
+      "train": 0.48135171862502224
+     }
+    ]
+   },
+   "pipeline|0": {
+    "start": "independent",
+    "flags": [
+     "DEC-04",
+     "DEF-04"
+    ],
+    "train": 0.8197810341810655,
+    "path": [
+     {
+      "flags": [],
+      "train": 0.7093855470558996
+     },
+     {
+      "flags": [
+       "DEC-04"
+      ],
+      "toggled": "DEC-04",
+      "train": 0.808318889905933
+     },
+     {
+      "flags": [
+       "DEC-04",
+       "DEF-04"
+      ],
+      "toggled": "DEF-04",
+      "train": 0.8197810341810655
+     }
+    ]
+   },
+   "pipeline|0.2": {
+    "start": "independent",
+    "flags": [
+     "DEC-04"
+    ],
+    "train": 0.7432809019669693,
+    "path": [
+     {
+      "flags": [],
+      "train": 0.6086400304674463
+     },
+     {
+      "flags": [
+       "DEC-04"
+      ],
+      "toggled": "DEC-04",
+      "train": 0.7432809019669693
+     }
+    ]
+   }
+  },
+  "general": {
+   "start": "school",
+   "flags": [
+    "DEC-04",
+    "FLD-04",
+    "SIG-06"
+   ],
+   "train": 0.4600247760599686,
+   "path": [
+    {
+     "flags": [
+      "DEC-04",
+      "FLD-04",
+      "SIG-06"
+     ],
+     "train": 0.4600247760599686
+    }
+   ]
+  }
+ }
+}

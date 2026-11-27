@@ -1,0 +1,60 @@
+{
+  "study": "i1-transplant-research",
+  "configHash": "5cc08182e0ee97f274f025dfbe9ac93dedf5bf16c2e123af2f0a42b1084f1bf1",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "research",
+  "arms": {
+    "none": {
+      "effect": 0,
+      "verdictRecovered": 0,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "native": {
+      "effect": 8,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "transplant": {
+      "effect": 8,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "peer": {
+      "effect": 0,
+      "verdictRecovered": 1,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "deliberate": {
+      "effect": 6,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    }
+  },
+  "finishedAt": "2026-11-11T06:12:07.829Z"
+}

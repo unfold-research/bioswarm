@@ -1,0 +1,117 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 12,
+      "of": 12,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 453252,
+      "calls": 3428,
+      "trunc": 1,
+      "messages": 3822,
+      "meanTrajectory": [
+        241.5,
+        160.33,
+        24.92,
+        1,
+        0.17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "stigwait_both": {
+      "solved": 0,
+      "of": 12,
+      "finalTotal": {
+        "sum": 947,
+        "median": 79
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 947
+      },
+      "meanOut": 895583,
+      "calls": 8341,
+      "trunc": 1,
+      "messages": 3821,
+      "meanTrajectory": [
+        241.5,
+        238.5,
+        81.25,
+        79,
+        78.92,
+        78.92,
+        78.92,
+        78.92,
+        78.92,
+        78.92,
+        78.92,
+        78.92,
+        78.92
+      ]
+    },
+    "manager": {
+      "solved": 11,
+      "of": 12,
+      "finalTotal": {
+        "sum": 3,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 3
+      },
+      "meanOut": 514734,
+      "calls": 2530,
+      "trunc": 1,
+      "messages": 0,
+      "meanTrajectory": [
+        241.5,
+        241.5,
+        70.25,
+        70.25,
+        25.67,
+        25.67,
+        9.33,
+        9.33,
+        3.25,
+        3.25,
+        0.67,
+        0.67,
+        0.25
+      ]
+    }
+  },
+  "edgeTests": {},
+  "signTests": {},
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 296,
+      "stillFailingAfter": 4
+    },
+    "stigwait_both": {
+      "bothSidesChanged": 5684,
+      "stillFailingAfter": 5678
+    },
+    "manager": {
+      "bothSidesChanged": 1038,
+      "stillFailingAfter": 1020
+    }
+  },
+  "verdict": {}
+}

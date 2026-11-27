@@ -1,0 +1,824 @@
+{
+ "protocol": "results/phase1b/PREREG.md",
+ "seeds": {
+  "1103": {
+   "role": "sample",
+   "inputs": {
+    "orders.csv": "98d5874daee34f0df7f93831262427f7ebf5c2658f821822c82525fc38f6b2ac",
+    "refunds.csv": "58f40c159e51526840e3d3efef70d9d66de54fee6d78279ece690a83b0b00394",
+    "payouts.csv": "67aab56c821c0262046028d87781f16eac7973acc308b0fbbc6a6b48d173f833",
+    "orders.notes.md": "0f98a5729a237d7e0429e161aa4663b894e622110f1882d8a3b799eefeeee921",
+    "refunds.notes.md": "d64d5d94a33a6deab52827fef31b71ec4ed169f1dd9bdcef1c2fa95dc60bb65a",
+    "payouts.notes.md": "b4cfa825fb179377e829cef634b14d6f7d4b8fec72abc3f29f51ed2552808d5e"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "orders.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "refunds.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 3
+   }
+  },
+  "1151": {
+   "role": "sample",
+   "inputs": {
+    "orders.csv": "f1ac5046a3a5463c92e48064ee98b0e2ee8bf8732bd210a3d4e478c7f7339a86",
+    "refunds.csv": "673e0c2c86569b4ea2872f285dadc9e7523b1a16a09cf3e2a0258846575aac05",
+    "payouts.csv": "27bfd027f2508339e8d5e28d7b4601b4584e952da73b52467495486a6fc8eb22",
+    "orders.notes.md": "5157985b668b7722a1abbf53a8848e9c584ca7cab7bdeb396100f85576bfe90f",
+    "refunds.notes.md": "d64d5d94a33a6deab52827fef31b71ec4ed169f1dd9bdcef1c2fa95dc60bb65a",
+    "payouts.notes.md": "a5d490f282af4d089d3f5f0dbe6c356b16ff46b4f9b34af588be68922d20e6ff"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "own",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "refunds.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 2
+   }
+  },
+  "1201": {
+   "role": "sample",
+   "inputs": {
+    "orders.csv": "d4d119a93212cb6db05b0900b472e37fa62cecd08be5b2ca04c1305e01706110",
+    "refunds.csv": "d8d6dbaf419e2ae2141a526bf97e7e32fb59f6c3f7cff6e724a434b1d9d2a0c4",
+    "payouts.csv": "a450eefa81bac77452f48e3e3b38e7d5bcdb5c1b913409404420b0d4f32f96db",
+    "orders.notes.md": "0f98a5729a237d7e0429e161aa4663b894e622110f1882d8a3b799eefeeee921",
+    "refunds.notes.md": "f956878bd418e9f8434ca237186f7864882f9b2728092b977b967bc0b0b154d1",
+    "payouts.notes.md": "617c47ea2d54a70ab931ee89feecf83941f174ccfcb09e8157a13628935b88c2"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "orders.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "own",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 2
+   }
+  },
+  "1259": {
+   "role": "sample",
+   "inputs": {
+    "orders.csv": "d3989f5fa68637c8f719592c78a2215e1592f3464f40f18ade2e3dfb11ef7223",
+    "refunds.csv": "7764dc3101a25fe56eda182976909938c005023eb283a07031cfe2bd80a4daf9",
+    "payouts.csv": "4306d8297b6dde83e4b305b09a8b43ca7057ec73cce4eccba017e3d8fb13f19f",
+    "orders.notes.md": "0f98a5729a237d7e0429e161aa4663b894e622110f1882d8a3b799eefeeee921",
+    "refunds.notes.md": "d64d5d94a33a6deab52827fef31b71ec4ed169f1dd9bdcef1c2fa95dc60bb65a",
+    "payouts.notes.md": "2382550f9cb2668452a3f951aedd438c7b9f72b365162d3dd0740b705e5e30f4"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "orders.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "refunds.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 3
+   }
+  },
+  "1301": {
+   "role": "sample",
+   "inputs": {
+    "orders.csv": "621ed941ceda25a4c4eb951746aee4084d7dacae16df5e60002ead0eeb3b5d82",
+    "refunds.csv": "fcac5c800b0e59b4b8cdd05762460d81054a68e3331f445231a5f354384eed43",
+    "payouts.csv": "601d9a29cdb659a248dfe10af943690da1cf1cdb312e08e26a7a940887edcd65",
+    "orders.notes.md": "0f98a5729a237d7e0429e161aa4663b894e622110f1882d8a3b799eefeeee921",
+    "refunds.notes.md": "d64d5d94a33a6deab52827fef31b71ec4ed169f1dd9bdcef1c2fa95dc60bb65a",
+    "payouts.notes.md": "ed34f8a5cff41f9116b6b5ffafe7a961d412f98cd467261ff6d6023be62c4c71"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "orders.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "refunds.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 3
+   }
+  },
+  "1361": {
+   "role": "sample",
+   "inputs": {
+    "orders.csv": "d23e9d077b52a527b2b120fb4c1707dce8e62e31d7b506d28948c27914cbd902",
+    "refunds.csv": "8105ae11121fbcdf6ee6821c021e760943e3fcfcff809cbe33657b05af728ff6",
+    "payouts.csv": "1eef036744581de462dcf63dd388e540173517c60ee8f792e5cf652d90d85c53",
+    "orders.notes.md": "0f98a5729a237d7e0429e161aa4663b894e622110f1882d8a3b799eefeeee921",
+    "refunds.notes.md": "f956878bd418e9f8434ca237186f7864882f9b2728092b977b967bc0b0b154d1",
+    "payouts.notes.md": "ed34f8a5cff41f9116b6b5ffafe7a961d412f98cd467261ff6d6023be62c4c71"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "orders.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "own",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 2
+   }
+  },
+  "2011": {
+   "role": "calibration",
+   "inputs": {
+    "orders.csv": "23c4813bc9decf302fdbaabf796d27cf3768db95506addc577dcae7a7b5861be",
+    "refunds.csv": "bc3920cd15a433b380f02015634e8d28f7dbc71b660d834fa2bf31dadb6e9586",
+    "payouts.csv": "0c02332a5cb644af9728a29bd3925d88eaf5cc711157d2c77dbf7d33c37c684d",
+    "orders.notes.md": "0f98a5729a237d7e0429e161aa4663b894e622110f1882d8a3b799eefeeee921",
+    "refunds.notes.md": "f956878bd418e9f8434ca237186f7864882f9b2728092b977b967bc0b0b154d1",
+    "payouts.notes.md": "a5d490f282af4d089d3f5f0dbe6c356b16ff46b4f9b34af588be68922d20e6ff"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "orders.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "own",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 2
+   }
+  },
+  "2027": {
+   "role": "calibration",
+   "inputs": {
+    "orders.csv": "8ebe1219b815c8f1fcfe8c6b097f65610ee668b6807031644ba0476217d08a52",
+    "refunds.csv": "9a21b49acc382a9a7588e016009e2e759d8a136213957809f4c33a8f07b3c893",
+    "payouts.csv": "b38dda64645dd43c04fd5cab75b1725e3a9255e0bf13525b1aaa129c403d7c81",
+    "orders.notes.md": "5157985b668b7722a1abbf53a8848e9c584ca7cab7bdeb396100f85576bfe90f",
+    "refunds.notes.md": "d64d5d94a33a6deab52827fef31b71ec4ed169f1dd9bdcef1c2fa95dc60bb65a",
+    "payouts.notes.md": "34e0a499404f65e657e1aa14b914fe6a6c99a204148e19c7e746d6011c03d3c3"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "directed",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "payouts.notes.md",
+      "holder": "teo"
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "own",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "refunds.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "rui"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 2
+   }
+  },
+  "2039": {
+   "role": "calibration",
+   "inputs": {
+    "orders.csv": "328b8303b2787472c3b3b3f6efbb649017c0ce728c17fd40ad5e12f6a465f3d9",
+    "refunds.csv": "652fe0cb75d1934b7bc30f79843217900fe5a263b943d2357b02c9c12070b410",
+    "payouts.csv": "a8e62630939cabc209206422146b6e89fa25e65159c689be94d823a5cede3e1c",
+    "orders.notes.md": "0f98a5729a237d7e0429e161aa4663b894e622110f1882d8a3b799eefeeee921",
+    "refunds.notes.md": "d64d5d94a33a6deab52827fef31b71ec4ed169f1dd9bdcef1c2fa95dc60bb65a",
+    "payouts.notes.md": "af2781dba20eeb8e13eb593e1a12eadfaa17f54beab38a486afc142f7a5944b7"
+   },
+   "map": [
+    {
+     "id": "orders",
+     "place": "orders.mjs",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "refunds",
+     "place": "refunds.mjs",
+     "class": "directed",
+     "owners": [
+      "rui"
+     ],
+     "requirement": {
+      "source": "orders.notes.md",
+      "holder": "lia"
+     }
+    },
+    {
+     "id": "payouts",
+     "place": "payouts.mjs",
+     "class": "directed",
+     "owners": [
+      "teo"
+     ],
+     "requirement": {
+      "source": "refunds.notes.md",
+      "holder": "rui"
+     }
+    },
+    {
+     "id": "balances",
+     "place": "balances.mjs",
+     "class": "dispute",
+     "owners": [
+      "rui",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "exceptions",
+     "place": "exceptions.mjs",
+     "class": "dispute",
+     "owners": [
+      "lia",
+      "teo"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    },
+    {
+     "id": "memo",
+     "place": "close.md",
+     "class": "own",
+     "owners": [
+      "lia"
+     ],
+     "requirement": {
+      "source": "brief",
+      "holder": null
+     }
+    }
+   ],
+   "totals": {
+    "dispute": 2,
+    "directed": 2
+   }
+  }
+ }
+}

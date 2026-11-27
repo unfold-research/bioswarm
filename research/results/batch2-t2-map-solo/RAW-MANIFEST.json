@@ -1,0 +1,11 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "wave-0.results.jsonl",
+      "bytes": 2455896,
+      "sha256": "5aa63b87b5ee8eb162a4657f0ca19c8c7a66412b70a67a32f582c7f66636d625",
+      "gz": 1710786
+    }
+  ]
+}

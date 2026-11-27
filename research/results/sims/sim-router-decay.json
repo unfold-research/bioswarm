@@ -1,0 +1,279 @@
+{
+ "id": "sim-router-decay",
+ "version": "1.0.0",
+ "title": "Router reinforced by acceptances: decay vs history lock-in",
+ "seed": 20261107,
+ "hypothesis": {
+  "statement": "A router whose weights are cumulative means of acceptances readapts after an abrupt change in a time proportional to its whole history; with exponential decay (EWMA rate lambda) the time is fixed by lambda and independent of the history, at the price of a stationary loss that grows with lambda.",
+  "predictions": [
+   {
+    "id": "P1",
+    "text": "Single estimate, history T0 = 500: the number of tasks until the past weighs less than 10% is within 5% (or 2 tasks) of 4,500 without decay and of 230, 45, 22 and 11 with lambda = 0.01, 0.05, 0.1 and 0.2."
+   },
+   {
+    "id": "P2",
+    "text": "Two-route router: the median switch time without decay grows at least 3x when the history goes from T0 = 500 to T0 = 2,000, while with lambda = 0.05 it changes by less than 25%."
+   },
+   {
+    "id": "P3",
+    "text": "Two-route router, T0 = 500: the median switch time without decay is at least 3x that of lambda = 0.05."
+   },
+   {
+    "id": "P4",
+    "text": "Stationary regime (no change, 20,000 tasks): the acceptance rate with lambda <= 0.05 is within 5% (relative) of the router without decay, and the loss with lambda = 0.2 is larger than with lambda = 0.01 (disjoint 95% CIs)."
+   }
+  ]
+ },
+ "params": {
+  "seed": 20261107,
+  "p_good": 0.8,
+  "p_bad": 0.4,
+  "lambdas": [
+   0.01,
+   0.05,
+   0.1,
+   0.2
+  ],
+  "estimate": {
+   "T0": 500,
+   "runs": 4000,
+   "horizon": 6000
+  },
+  "router": {
+   "epsilon": 0.1,
+   "T0": [
+    500,
+    2000
+   ],
+   "runs": 400,
+   "horizon": 30000,
+   "hold": 100
+  },
+  "stationary": {
+   "runs": 400,
+   "tasks": 20000
+  },
+  "rules": "Estimate: T0 observations at p_good, then an abrupt change to p_bad; t90 = first task after the change at which the run-averaged estimate has covered 90% of the distance to the new value. Router: two routes, epsilon-greedy (explore uniformly with probability epsilon); cumulative policy keeps per-route mean with a prior of 1 acceptance in 2 trials; EWMA policy starts at 0.5 and updates only the chosen route. History: T0 tasks with route A at p_good and B at p_bad; then they swap. Switch time = first task after the swap from which the estimate of B stays above the estimate of A for `hold` consecutive tasks; censored at the horizon."
+ },
+ "results": {
+  "estimate": {
+   "cumulative": {
+    "t90": 4497,
+    "theory": 4500
+   },
+   "ewma-0.01": {
+    "t90": 228,
+    "theory": 230
+   },
+   "ewma-0.05": {
+    "t90": 45,
+    "theory": 45
+   },
+   "ewma-0.1": {
+    "t90": 23,
+    "theory": 22
+   },
+   "ewma-0.2": {
+    "t90": 11,
+    "theory": 11
+   }
+  },
+  "router": {
+   "500": {
+    "cumulative": {
+     "median": 522,
+     "mean": {
+      "mean": 545.675,
+      "lo": 527.84962,
+      "hi": 563.50038,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.01": {
+     "median": 142.5,
+     "mean": {
+      "mean": 147.0225,
+      "lo": 143.46139,
+      "hi": 150.58361,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.05": {
+     "median": 34,
+     "mean": {
+      "mean": 39.0325,
+      "lo": 36.77274,
+      "hi": 41.29226,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.1": {
+     "median": 21,
+     "mean": {
+      "mean": 27.3425,
+      "lo": 25.06465,
+      "hi": 29.62035,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.2": {
+     "median": 23,
+     "mean": {
+      "mean": 49.3,
+      "lo": 43.47263,
+      "hi": 55.12737,
+      "n": 400
+     },
+     "censored": 0
+    }
+   },
+   "2000": {
+    "cumulative": {
+     "median": 2050.5,
+     "mean": {
+      "mean": 2073.91,
+      "lo": 2038.55418,
+      "hi": 2109.26582,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.01": {
+     "median": 175.5,
+     "mean": {
+      "mean": 183.755,
+      "lo": 178.75375,
+      "hi": 188.75625,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.05": {
+     "median": 37,
+     "mean": {
+      "mean": 44.3075,
+      "lo": 41.79122,
+      "hi": 46.82378,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.1": {
+     "median": 22,
+     "mean": {
+      "mean": 28.4675,
+      "lo": 26.11713,
+      "hi": 30.81787,
+      "n": 400
+     },
+     "censored": 0
+    },
+    "ewma-0.2": {
+     "median": 20,
+     "mean": {
+      "mean": 48.1525,
+      "lo": 41.90721,
+      "hi": 54.39779,
+      "n": 400
+     },
+     "censored": 0
+    }
+   }
+  },
+  "stationary": {
+   "cumulative": {
+    "mean": 0.77983,
+    "lo": 0.77953,
+    "hi": 0.78013,
+    "n": 400,
+    "loss": 0,
+    "loss_lo": -0.00038,
+    "loss_hi": 0.00038
+   },
+   "ewma-0.01": {
+    "mean": 0.78007,
+    "lo": 0.77979,
+    "hi": 0.78035,
+    "n": 400,
+    "loss": -0.00031,
+    "loss_lo": -0.00067,
+    "loss_hi": 0.00005
+   },
+   "ewma-0.05": {
+    "mean": 0.7798,
+    "lo": 0.77951,
+    "hi": 0.78008,
+    "n": 400,
+    "loss": 0.00004,
+    "loss_lo": -0.00033,
+    "loss_hi": 0.0004
+   },
+   "ewma-0.1": {
+    "mean": 0.77888,
+    "lo": 0.77858,
+    "hi": 0.77917,
+    "n": 400,
+    "loss": 0.00122,
+    "loss_lo": 0.00084,
+    "loss_hi": 0.0016
+   },
+   "ewma-0.2": {
+    "mean": 0.77262,
+    "lo": 0.77232,
+    "hi": 0.77293,
+    "n": 400,
+    "loss": 0.00924,
+    "loss_lo": 0.00885,
+    "loss_hi": 0.00963
+   }
+  }
+ },
+ "tests": [
+  {
+   "id": "P1",
+   "verdict": "supported",
+   "detail": "cumulative: 4497 vs 4500; ewma-0.01: 228 vs 230; ewma-0.05: 45 vs 45; ewma-0.1: 23 vs 22; ewma-0.2: 11 vs 11"
+  },
+  {
+   "id": "P2",
+   "verdict": "supported",
+   "detail": "cumulative 522 -> 2050.5 (x3.93); ewma-0.05 34 -> 37 (x1.09)"
+  },
+  {
+   "id": "P3",
+   "verdict": "supported",
+   "detail": "T0=500: cumulative 522 vs ewma-0.05 34 (x15.35)"
+  },
+  {
+   "id": "P4",
+   "verdict": "supported",
+   "detail": "ewma-0.01: loss -0.03%; ewma-0.05: loss 0.00%; ewma-0.1: loss 0.12%; ewma-0.2: loss 0.92%"
+  }
+ ],
+ "headline": [
+  "estimate cumulative: past weighs under 10% after 4497 tasks (formula 4500)",
+  "estimate ewma-0.01: past weighs under 10% after 228 tasks (formula 230)",
+  "estimate ewma-0.05: past weighs under 10% after 45 tasks (formula 45)",
+  "estimate ewma-0.1: past weighs under 10% after 23 tasks (formula 22)",
+  "estimate ewma-0.2: past weighs under 10% after 11 tasks (formula 11)",
+  "router T0=500 cumulative: median switch 522 tasks, 0 of 400 runs never switched",
+  "router T0=500 ewma-0.01: median switch 142.5 tasks, 0 of 400 runs never switched",
+  "router T0=500 ewma-0.05: median switch 34 tasks, 0 of 400 runs never switched",
+  "router T0=500 ewma-0.1: median switch 21 tasks, 0 of 400 runs never switched",
+  "router T0=500 ewma-0.2: median switch 23 tasks, 0 of 400 runs never switched",
+  "router T0=2000 cumulative: median switch 2050.5 tasks, 0 of 400 runs never switched",
+  "router T0=2000 ewma-0.01: median switch 175.5 tasks, 0 of 400 runs never switched",
+  "router T0=2000 ewma-0.05: median switch 37 tasks, 0 of 400 runs never switched",
+  "router T0=2000 ewma-0.1: median switch 22 tasks, 0 of 400 runs never switched",
+  "router T0=2000 ewma-0.2: median switch 20 tasks, 0 of 400 runs never switched",
+  "stationary cumulative: acceptance 77.98% (loss vs no decay 0.00%)",
+  "stationary ewma-0.01: acceptance 78.01% (loss vs no decay -0.03%)",
+  "stationary ewma-0.05: acceptance 77.98% (loss vs no decay 0.00%)",
+  "stationary ewma-0.1: acceptance 77.89% (loss vs no decay 0.12%)",
+  "stationary ewma-0.2: acceptance 77.26% (loss vs no decay 0.92%)"
+ ]
+}

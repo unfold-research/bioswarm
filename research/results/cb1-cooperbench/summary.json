@@ -1,0 +1,392 @@
+[
+  {
+    "run": "cb1-solo",
+    "repo": "dottxt_ai_outlines_task",
+    "task": 1655,
+    "features": [
+      7,
+      10
+    ],
+    "seconds": 50,
+    "steps": 12,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 12,
+        "patchLines": 18,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo",
+    "repo": "dspy_task",
+    "task": 8394,
+    "features": [
+      3,
+      4
+    ],
+    "seconds": 400,
+    "steps": 14,
+    "agents": [
+      {
+        "status": "Error",
+        "steps": 14,
+        "patchLines": 0,
+        "error": "litellm.BadRequestError: AnthropicException - {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.1.content.3: Invalid `signature` in `thinking` block. The block is bound to a "
+      }
+    ],
+    "feature1": false,
+    "feature2": false,
+    "bothPassed": false,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo",
+    "repo": "openai_tiktoken_task",
+    "task": 0,
+    "features": [
+      6,
+      8
+    ],
+    "seconds": 46,
+    "steps": 7,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 7,
+        "patchLines": 91,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo",
+    "repo": "pallets_click_task",
+    "task": 2800,
+    "features": [
+      1,
+      7
+    ],
+    "seconds": 72,
+    "steps": 19,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 19,
+        "patchLines": 259,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo",
+    "repo": "pallets_jinja_task",
+    "task": 1559,
+    "features": [
+      4,
+      8
+    ],
+    "seconds": 350,
+    "steps": 7,
+    "agents": [
+      {
+        "status": "Error",
+        "steps": 7,
+        "patchLines": 0,
+        "error": "litellm.BadRequestError: AnthropicException - {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages.1.content.1: Invalid `signature` in `thinking` block. The block is bound to a "
+      }
+    ],
+    "feature1": false,
+    "feature2": false,
+    "bothPassed": false,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo-nocompact",
+    "repo": "dottxt_ai_outlines_task",
+    "task": 1655,
+    "features": [
+      7,
+      10
+    ],
+    "seconds": 26,
+    "steps": 5,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 5,
+        "patchLines": 19,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo-nocompact",
+    "repo": "dspy_task",
+    "task": 8394,
+    "features": [
+      3,
+      4
+    ],
+    "seconds": 183,
+    "steps": 15,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 15,
+        "patchLines": 282,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo-nocompact",
+    "repo": "openai_tiktoken_task",
+    "task": 0,
+    "features": [
+      6,
+      8
+    ],
+    "seconds": 46,
+    "steps": 9,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 9,
+        "patchLines": 79,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo-nocompact",
+    "repo": "pallets_click_task",
+    "task": 2800,
+    "features": [
+      1,
+      7
+    ],
+    "seconds": 63,
+    "steps": 12,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 12,
+        "patchLines": 157,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-solo-nocompact",
+    "repo": "pallets_jinja_task",
+    "task": 1559,
+    "features": [
+      4,
+      8
+    ],
+    "seconds": 132,
+    "steps": 14,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 14,
+        "patchLines": 495,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": null,
+    "messages": null
+  },
+  {
+    "run": "cb1-coop",
+    "repo": "dottxt_ai_outlines_task",
+    "task": 1655,
+    "features": [
+      7,
+      10
+    ],
+    "seconds": 76,
+    "steps": 22,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 11,
+        "patchLines": 15,
+        "error": ""
+      },
+      {
+        "status": "Submitted",
+        "steps": 11,
+        "patchLines": 33,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": "clean",
+    "messages": 3
+  },
+  {
+    "run": "cb1-coop",
+    "repo": "dspy_task",
+    "task": 8394,
+    "features": [
+      3,
+      4
+    ],
+    "seconds": 188,
+    "steps": 30,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 12,
+        "patchLines": 143,
+        "error": ""
+      },
+      {
+        "status": "Submitted",
+        "steps": 18,
+        "patchLines": 152,
+        "error": ""
+      }
+    ],
+    "feature1": false,
+    "feature2": false,
+    "bothPassed": false,
+    "merge": "conflicts",
+    "messages": 5
+  },
+  {
+    "run": "cb1-coop",
+    "repo": "openai_tiktoken_task",
+    "task": 0,
+    "features": [
+      6,
+      8
+    ],
+    "seconds": 103,
+    "steps": 25,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 13,
+        "patchLines": 53,
+        "error": ""
+      },
+      {
+        "status": "Submitted",
+        "steps": 12,
+        "patchLines": 58,
+        "error": ""
+      }
+    ],
+    "feature1": false,
+    "feature2": false,
+    "bothPassed": false,
+    "merge": "conflicts",
+    "messages": 4
+  },
+  {
+    "run": "cb1-coop",
+    "repo": "pallets_click_task",
+    "task": 2800,
+    "features": [
+      1,
+      7
+    ],
+    "seconds": 50,
+    "steps": 21,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 6,
+        "patchLines": 86,
+        "error": ""
+      },
+      {
+        "status": "Submitted",
+        "steps": 15,
+        "patchLines": 113,
+        "error": ""
+      }
+    ],
+    "feature1": false,
+    "feature2": false,
+    "bothPassed": false,
+    "merge": "conflicts",
+    "messages": 3
+  },
+  {
+    "run": "cb1-coop",
+    "repo": "pallets_jinja_task",
+    "task": 1559,
+    "features": [
+      4,
+      8
+    ],
+    "seconds": 150,
+    "steps": 37,
+    "agents": [
+      {
+        "status": "Submitted",
+        "steps": 17,
+        "patchLines": 329,
+        "error": ""
+      },
+      {
+        "status": "Submitted",
+        "steps": 20,
+        "patchLines": 153,
+        "error": ""
+      }
+    ],
+    "feature1": true,
+    "feature2": true,
+    "bothPassed": true,
+    "merge": "clean",
+    "messages": 10
+  }
+]

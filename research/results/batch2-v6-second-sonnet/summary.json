@@ -1,0 +1,25 @@
+{
+  "study": "v6-second-sonnet",
+  "configHash": "1b3bae34e0438d948477734b714a8c101b8162acc5d2f6139bbd098d258d58f0",
+  "status": "complete",
+  "wavesRun": 1,
+  "direct": {
+    "correct": 87,
+    "of": 90,
+    "byLevel": {
+      "24": 30,
+      "48": 30,
+      "96": 27
+    }
+  },
+  "w60": {
+    "correct": 90,
+    "of": 90,
+    "byLevel": {
+      "24": 30,
+      "48": 30,
+      "96": 30
+    }
+  },
+  "finishedAt": "2026-11-11T14:24:43.899Z"
+}

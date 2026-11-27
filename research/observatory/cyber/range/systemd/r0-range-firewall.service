@@ -1,0 +1,15 @@
+# R0 second containment layer (range/systemd/r0-range-firewall.sh). Install (root): copy the script to
+# /usr/local/sbin/r0-range-firewall and this unit to /etc/systemd/system/, then `systemctl enable --now r0-range-firewall`.
+[Unit]
+Description=R0 range egress drop rules (DOCKER-USER and INPUT)
+After=docker.service
+Requires=docker.service
+PartOf=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/sbin/r0-range-firewall apply
+
+[Install]
+WantedBy=multi-user.target docker.service

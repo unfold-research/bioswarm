@@ -1,0 +1,30 @@
+{
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 5,
+    "failing": [
+      "k40s11401 D:M9.shapeSlug>M24.traceTerm",
+      "k40s11401 D:M3.mintTitle>M21.brandHint",
+      "k40s11405 D:M4.scoreRef>M33.scoreTerm",
+      "k40s11407 D:M10.scanTerm>M35.tallyWord",
+      "k40s11407 D:M6.gaugeTitle>M16.shapeName"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "threshold": {
+    "solvedInRun": 1,
+    "passHoldout": 0,
+    "failing": [
+      "k40s11400 D:M36.brandHandle>M1.probeHint"
+    ]
+  },
+  "pheromone": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  }
+}

@@ -1,0 +1,512 @@
+{
+ "study": "GN-S3",
+ "prereg": "tasks/GN-S3-PREREG.md",
+ "generatedBy": "observatory/cyber/gn-s3/analyze-gn-s3.mjs",
+ "episodes": 360,
+ "expected": 360,
+ "missing": [],
+ "arms": [
+  "code-alarm",
+  "code-cd10",
+  "code-cd10-qa",
+  "code-react",
+  "code-scaled",
+  "code-sentinel"
+ ],
+ "reds": {
+  "fsm": "FiniteStateRedAgent",
+  "discovery": "DiscoveryFSRed"
+ },
+ "rule": "per red: sign test on paired seeds by reward; a mechanism passes with wins >= 22 of 30 AND mean red Impacts <= 1.1x code-cd10 AND mean blue-attributed green failures <= code-cd10; DEF-07 must pass against both code-cd10 and code-cd10-qa; opposite direction (code-cd10 wins >= 22) = the trait hurts; supported under both reds, red-dependent under one",
+ "cosignedByCyber": [
+  "H-GN-S3b",
+  "H-GN-S3c"
+ ],
+ "hypotheses": [
+  {
+   "id": "H-GN-S3a",
+   "trait": "SIG-04",
+   "mechanism": "code-alarm",
+   "verdict": "hurts under one red",
+   "perRed": [
+    {
+     "red": "fsm",
+     "vsCd10": {
+      "red": "fsm",
+      "a": "code-alarm",
+      "b": "code-cd10",
+      "pairs": 30,
+      "wins": 12,
+      "losses": 18,
+      "ties": 0,
+      "pOneSided": 0.8998,
+      "threshold": 22,
+      "meanRedImpactA": 18.9667,
+      "meanRedImpactB": 15.2333,
+      "impactGuardOk": false,
+      "meanGreenBlueA": 2.8667,
+      "meanGreenBlueB": 3.1,
+      "greenGuardOk": true,
+      "result": "not passed"
+     },
+     "hurts": false,
+     "pass": false
+    },
+    {
+     "red": "discovery",
+     "vsCd10": {
+      "red": "discovery",
+      "a": "code-alarm",
+      "b": "code-cd10",
+      "pairs": 30,
+      "wins": 6,
+      "losses": 23,
+      "ties": 1,
+      "pOneSided": 0.9997,
+      "threshold": 22,
+      "meanRedImpactA": 0,
+      "meanRedImpactB": 0,
+      "impactGuardOk": true,
+      "meanGreenBlueA": 0,
+      "meanGreenBlueB": 0,
+      "greenGuardOk": true,
+      "result": "not passed"
+     },
+     "hurts": true,
+     "pass": false
+    }
+   ]
+  },
+  {
+   "id": "H-GN-S3b",
+   "trait": "DEF-04",
+   "mechanism": "code-scaled",
+   "verdict": "not supported",
+   "perRed": [
+    {
+     "red": "fsm",
+     "vsCd10": {
+      "red": "fsm",
+      "a": "code-scaled",
+      "b": "code-cd10",
+      "pairs": 30,
+      "wins": 10,
+      "losses": 13,
+      "ties": 7,
+      "pOneSided": 0.7976,
+      "threshold": 22,
+      "meanRedImpactA": 18.5667,
+      "meanRedImpactB": 15.2333,
+      "impactGuardOk": false,
+      "meanGreenBlueA": 2.9,
+      "meanGreenBlueB": 3.1,
+      "greenGuardOk": true,
+      "result": "not passed"
+     },
+     "hurts": false,
+     "pass": false
+    },
+    {
+     "red": "discovery",
+     "vsCd10": {
+      "red": "discovery",
+      "a": "code-scaled",
+      "b": "code-cd10",
+      "pairs": 30,
+      "wins": 8,
+      "losses": 20,
+      "ties": 2,
+      "pOneSided": 0.9937,
+      "threshold": 22,
+      "meanRedImpactA": 0.1667,
+      "meanRedImpactB": 0,
+      "impactGuardOk": false,
+      "meanGreenBlueA": 0,
+      "meanGreenBlueB": 0,
+      "greenGuardOk": true,
+      "result": "not passed"
+     },
+     "hurts": false,
+     "pass": false
+    }
+   ]
+  },
+  {
+   "id": "H-GN-S3c",
+   "trait": "DEF-07",
+   "mechanism": "code-sentinel",
+   "alsoBeat": "code-cd10-qa",
+   "verdict": "not supported",
+   "perRed": [
+    {
+     "red": "fsm",
+     "vsCd10": {
+      "red": "fsm",
+      "a": "code-sentinel",
+      "b": "code-cd10",
+      "pairs": 30,
+      "wins": 10,
+      "losses": 20,
+      "ties": 0,
+      "pOneSided": 0.9786,
+      "threshold": 22,
+      "meanRedImpactA": 20.8,
+      "meanRedImpactB": 15.2333,
+      "impactGuardOk": false,
+      "meanGreenBlueA": 4.0667,
+      "meanGreenBlueB": 3.1,
+      "greenGuardOk": false,
+      "result": "not passed"
+     },
+     "vsControl": {
+      "red": "fsm",
+      "a": "code-sentinel",
+      "b": "code-cd10-qa",
+      "pairs": 30,
+      "wins": 0,
+      "losses": 0,
+      "ties": 30,
+      "pOneSided": 1,
+      "threshold": 22,
+      "meanRedImpactA": 20.8,
+      "meanRedImpactB": 20.8,
+      "impactGuardOk": true,
+      "meanGreenBlueA": 4.0667,
+      "meanGreenBlueB": 4.0667,
+      "greenGuardOk": true,
+      "result": "not passed"
+     },
+     "hurts": false,
+     "pass": false
+    },
+    {
+     "red": "discovery",
+     "vsCd10": {
+      "red": "discovery",
+      "a": "code-sentinel",
+      "b": "code-cd10",
+      "pairs": 30,
+      "wins": 14,
+      "losses": 16,
+      "ties": 0,
+      "pOneSided": 0.7077,
+      "threshold": 22,
+      "meanRedImpactA": 0.0333,
+      "meanRedImpactB": 0,
+      "impactGuardOk": false,
+      "meanGreenBlueA": 0,
+      "meanGreenBlueB": 0,
+      "greenGuardOk": true,
+      "result": "not passed"
+     },
+     "vsControl": {
+      "red": "discovery",
+      "a": "code-sentinel",
+      "b": "code-cd10-qa",
+      "pairs": 30,
+      "wins": 0,
+      "losses": 0,
+      "ties": 30,
+      "pOneSided": 1,
+      "threshold": 22,
+      "meanRedImpactA": 0.0333,
+      "meanRedImpactB": 0.0333,
+      "impactGuardOk": true,
+      "meanGreenBlueA": 0,
+      "meanGreenBlueB": 0,
+      "greenGuardOk": true,
+      "result": "not passed"
+     },
+     "hurts": false,
+     "pass": false
+    }
+   ]
+  }
+ ],
+ "armStats": {
+  "fsm": {
+   "code-alarm": {
+    "arm": "code-alarm",
+    "red": "fsm",
+    "episodes": 30,
+    "reward": {
+     "mean": -1510.7667,
+     "median": -1383,
+     "min": -3392,
+     "max": -420
+    },
+    "greenFailBlue": 2.8667,
+    "greenFailRed": 755.2,
+    "redImpact": 18.9667,
+    "firstImpactStep": 58.2333,
+    "redHostsMax": 39.1,
+    "redRootHostsMax": 18.8667,
+    "cueSteps": 220.5333,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2281.3667,
+     "Restore": 213.6333
+    }
+   },
+   "code-cd10": {
+    "arm": "code-cd10",
+    "red": "fsm",
+    "episodes": 30,
+    "reward": {
+     "mean": -1218.6,
+     "median": -1187,
+     "min": -2209,
+     "max": -403
+    },
+    "greenFailBlue": 3.1,
+    "greenFailRed": 684.1667,
+    "redImpact": 15.2333,
+    "firstImpactStep": 72.6333,
+    "redHostsMax": 39.1667,
+    "redRootHostsMax": 17.4333,
+    "cueSteps": 214.7333,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2294.3,
+     "Restore": 200.7
+    }
+   },
+   "code-cd10-qa": {
+    "arm": "code-cd10-qa",
+    "red": "fsm",
+    "episodes": 30,
+    "reward": {
+     "mean": -1557.9,
+     "median": -1374.5,
+     "min": -3319,
+     "max": -618
+    },
+    "greenFailBlue": 4.0667,
+    "greenFailRed": 764.4,
+    "redImpact": 20.8,
+    "firstImpactStep": 78.6667,
+    "redHostsMax": 41.9667,
+    "redRootHostsMax": 20.5,
+    "cueSteps": 213.1667,
+    "sentinelSteps": 457.2667,
+    "actionsPerEpisode": {
+     "Analyse": 457.2667,
+     "Sleep": 1838.1,
+     "Restore": 199.6333
+    }
+   },
+   "code-react": {
+    "arm": "code-react",
+    "red": "fsm",
+    "episodes": 30,
+    "reward": {
+     "mean": -1797.4333,
+     "median": -1896.5,
+     "min": -3710,
+     "max": -409
+    },
+    "greenFailBlue": 1.8333,
+    "greenFailRed": 816.7667,
+    "redImpact": 24.7,
+    "firstImpactStep": 71.6667,
+    "redHostsMax": 41.6667,
+    "redRootHostsMax": 20.5667,
+    "cueSteps": 138.0333,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2359.4667,
+     "Restore": 135.5333
+    }
+   },
+   "code-scaled": {
+    "arm": "code-scaled",
+    "red": "fsm",
+    "episodes": 30,
+    "reward": {
+     "mean": -1352.3667,
+     "median": -1182,
+     "min": -2676,
+     "max": -566
+    },
+    "greenFailBlue": 2.9,
+    "greenFailRed": 716.6,
+    "redImpact": 18.5667,
+    "firstImpactStep": 62.3667,
+    "redHostsMax": 40.2333,
+    "redRootHostsMax": 18.1,
+    "cueSteps": 216.1667,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2292.1667,
+     "Restore": 202.8333
+    }
+   },
+   "code-sentinel": {
+    "arm": "code-sentinel",
+    "red": "fsm",
+    "episodes": 30,
+    "reward": {
+     "mean": -1557.9,
+     "median": -1374.5,
+     "min": -3319,
+     "max": -618
+    },
+    "greenFailBlue": 4.0667,
+    "greenFailRed": 764.4,
+    "redImpact": 20.8,
+    "firstImpactStep": 78.6667,
+    "redHostsMax": 41.9667,
+    "redRootHostsMax": 20.5,
+    "cueSteps": 213.1667,
+    "sentinelSteps": 457.2667,
+    "actionsPerEpisode": {
+     "Analyse": 457.2667,
+     "Sleep": 1838.1,
+     "Restore": 199.6333
+    }
+   }
+  },
+  "discovery": {
+   "code-alarm": {
+    "arm": "code-alarm",
+    "red": "discovery",
+    "episodes": 30,
+    "reward": {
+     "mean": -305.8,
+     "median": -304.5,
+     "min": -421,
+     "max": -208
+    },
+    "greenFailBlue": 0,
+    "greenFailRed": 240.9,
+    "redImpact": 0,
+    "firstImpactStep": null,
+    "redHostsMax": 39.7667,
+    "redRootHostsMax": 20.4,
+    "cueSteps": 262.6667,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2243.5333,
+     "Restore": 251.4667
+    }
+   },
+   "code-cd10": {
+    "arm": "code-cd10",
+    "red": "discovery",
+    "episodes": 30,
+    "reward": {
+     "mean": -288.6,
+     "median": -283.5,
+     "min": -376,
+     "max": -196
+    },
+    "greenFailBlue": 0,
+    "greenFailRed": 228.2,
+    "redImpact": 0,
+    "firstImpactStep": null,
+    "redHostsMax": 40.2667,
+    "redRootHostsMax": 20.3333,
+    "cueSteps": 254.5667,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2264.1,
+     "Restore": 230.9
+    }
+   },
+   "code-cd10-qa": {
+    "arm": "code-cd10-qa",
+    "red": "discovery",
+    "episodes": 30,
+    "reward": {
+     "mean": -284.2333,
+     "median": -276.5,
+     "min": -381,
+     "max": -168
+    },
+    "greenFailBlue": 0,
+    "greenFailRed": 235.6667,
+    "redImpact": 0.0333,
+    "firstImpactStep": 209,
+    "redHostsMax": 42.6333,
+    "redRootHostsMax": 22.6333,
+    "cueSteps": 253.2333,
+    "sentinelSteps": 449.5667,
+    "actionsPerEpisode": {
+     "Analyse": 449.5667,
+     "Sleep": 1816.4,
+     "Restore": 229.0333
+    }
+   },
+   "code-react": {
+    "arm": "code-react",
+    "red": "discovery",
+    "episodes": 30,
+    "reward": {
+     "mean": -237.9,
+     "median": -187,
+     "min": -606,
+     "max": -130
+    },
+    "greenFailBlue": 0.0667,
+    "greenFailRed": 235.3667,
+    "redImpact": 1.1667,
+    "firstImpactStep": 290.625,
+    "redHostsMax": 44.7667,
+    "redRootHostsMax": 24.6,
+    "cueSteps": 158.4,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2339.4,
+     "Restore": 155.6
+    }
+   },
+   "code-scaled": {
+    "arm": "code-scaled",
+    "red": "discovery",
+    "episodes": 30,
+    "reward": {
+     "mean": -304.9667,
+     "median": -292,
+     "min": -566,
+     "max": -208
+    },
+    "greenFailBlue": 0,
+    "greenFailRed": 244.9667,
+    "redImpact": 0.1667,
+    "firstImpactStep": 83,
+    "redHostsMax": 40.6333,
+    "redRootHostsMax": 20.4333,
+    "cueSteps": 268.4,
+    "sentinelSteps": 0,
+    "actionsPerEpisode": {
+     "Sleep": 2253.3667,
+     "Restore": 241.6333
+    }
+   },
+   "code-sentinel": {
+    "arm": "code-sentinel",
+    "red": "discovery",
+    "episodes": 30,
+    "reward": {
+     "mean": -284.2333,
+     "median": -276.5,
+     "min": -381,
+     "max": -168
+    },
+    "greenFailBlue": 0,
+    "greenFailRed": 235.6667,
+    "redImpact": 0.0333,
+    "firstImpactStep": 209,
+    "redHostsMax": 42.6333,
+    "redRootHostsMax": 22.6333,
+    "cueSteps": 253.2333,
+    "sentinelSteps": 449.5667,
+    "actionsPerEpisode": {
+     "Analyse": 449.5667,
+     "Sleep": 1816.4,
+     "Restore": 229.0333
+    }
+   }
+  }
+ }
+}

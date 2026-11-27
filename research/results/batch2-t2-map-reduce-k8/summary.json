@@ -1,0 +1,30 @@
+{
+  "study": "t2-map-reduce-k8",
+  "configHash": "21b9af028c06e4c3b7e94249303f0fc2b7f046d51742ceb8a50bb7d13e0132d0",
+  "status": "complete",
+  "wavesRun": 2,
+  "regime": "reduce",
+  "k": 8,
+  "runs": 72,
+  "table": {
+    "I-01": {
+      "16": {
+        "n": 24,
+        "right": 24
+      }
+    },
+    "I-05": {
+      "16": {
+        "n": 24,
+        "right": 14
+      }
+    },
+    "I-06": {
+      "16": {
+        "n": 24,
+        "right": 8
+      }
+    }
+  },
+  "finishedAt": "2026-11-12T08:13:21.713Z"
+}

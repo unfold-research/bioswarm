@@ -1,0 +1,93 @@
+{
+  "arms": {
+    "stigwait": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 125273,
+      "calls": 600,
+      "trunc": 1,
+      "messages": 638,
+      "meanTrajectory": [
+        69.88,
+        40.75,
+        7.75,
+        0.5,
+        0
+      ]
+    },
+    "stigwait_evap1": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 125554,
+      "calls": 600,
+      "trunc": 1,
+      "messages": 637,
+      "meanTrajectory": [
+        69.88,
+        41.13,
+        8,
+        0.25,
+        0
+      ]
+    },
+    "stigwait_evap3": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 125116,
+      "calls": 589,
+      "trunc": 1,
+      "messages": 636,
+      "meanTrajectory": [
+        69.88,
+        40.75,
+        6.75,
+        0,
+        0
+      ]
+    }
+  },
+  "edgeTests": {},
+  "signTests": {},
+  "oscillation": {
+    "stigwait": {
+      "bothSidesChanged": 96,
+      "stillFailingAfter": 4
+    },
+    "stigwait_evap1": {
+      "bothSidesChanged": 97,
+      "stillFailingAfter": 5
+    },
+    "stigwait_evap3": {
+      "bothSidesChanged": 95,
+      "stillFailingAfter": 4
+    }
+  },
+  "verdict": {}
+}

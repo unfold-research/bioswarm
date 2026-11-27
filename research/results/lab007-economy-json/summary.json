@@ -1,0 +1,126 @@
+{
+  "heldoutPaired": [],
+  "generated": "2026-11-10T01:04:08.335Z",
+  "status": "calibration-gate-failed",
+  "configHash": "ff286074b3fb31b8356ec32b0095f02259ed506d333c27cdcafa6b6685667c30",
+  "chosenLevel": 2,
+  "calibrationGate": {
+    "cleanAccuracy": 0.7083333333333334,
+    "noiseRate": 0,
+    "noInvalid": true,
+    "types": {
+      "S1": {
+        "flips": 0,
+        "total": 20,
+        "invalid": 0,
+        "nonExposedWrongFlipRate": 0,
+        "noiseRate": 0,
+        "excess": 0,
+        "passes": false
+      },
+      "S2": {
+        "flips": 1,
+        "total": 20,
+        "invalid": 0,
+        "nonExposedWrongFlipRate": 0.05,
+        "noiseRate": 0,
+        "excess": 0.05,
+        "passes": false
+      },
+      "S3": {
+        "flips": 0,
+        "total": 20,
+        "invalid": 0,
+        "nonExposedWrongFlipRate": 0,
+        "noiseRate": 0,
+        "excess": 0,
+        "passes": false
+      }
+    },
+    "passingTypes": 0,
+    "passes": false
+  },
+  "completedTrajectoryScores": 64,
+  "requestsAccounted": 768,
+  "usage": {
+    "input": 639436,
+    "output": 58960,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "aggregate": {
+    "NOSHARE/S0": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 8,
+      "unsure": 40,
+      "invalid": 0,
+      "interventions": 0
+    },
+    "NOSHARE/S1": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 8,
+      "unsure": 40,
+      "invalid": 0,
+      "interventions": 0
+    },
+    "NOSHARE/S2": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 8,
+      "unsure": 36,
+      "invalid": 0,
+      "interventions": 0
+    },
+    "NOSHARE/S3": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 8,
+      "unsure": 39,
+      "invalid": 0,
+      "interventions": 0
+    },
+    "FIXED/S0": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 33,
+      "unsure": 15,
+      "invalid": 0,
+      "interventions": 0
+    },
+    "FIXED/S1": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 26,
+      "unsure": 22,
+      "invalid": 0,
+      "interventions": 0
+    },
+    "FIXED/S2": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 24,
+      "unsure": 16,
+      "invalid": 0,
+      "interventions": 0
+    },
+    "FIXED/S3": {
+      "trajectories": 8,
+      "decisions": 48,
+      "correct": 28,
+      "unsure": 18,
+      "invalid": 0,
+      "interventions": 0
+    }
+  },
+  "error": null,
+  "limits": [
+    "Synthetic calibration/feasibility pilot, not full LAB-007 or external benchmark replication.",
+    "No claim of equivalence, superiority or social-immunity advantage.",
+    "Incomplete results cannot be interpreted as safe behaviour.",
+    "Seed is the independent cluster; repeated agents/rounds are not independent trials.",
+    "Provider model alias recorded; exact underlying snapshot not guaranteed.",
+    "Costs use reported tokens and verified list rates, not an invoice."
+  ]
+}

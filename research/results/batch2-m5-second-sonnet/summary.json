@@ -1,0 +1,14 @@
+{
+  "study": "m5-second-sonnet",
+  "configHash": "5af717a09a449f67d0f921d27f98d050eb4e6621d6d06390974d5b0745cbcd99",
+  "status": "complete",
+  "wavesRun": 1,
+  "tasks": 90,
+  "correct": 86,
+  "byLevel": {
+    "12": 30,
+    "24": 30,
+    "48": 26
+  },
+  "finishedAt": "2026-11-11T13:09:42.911Z"
+}

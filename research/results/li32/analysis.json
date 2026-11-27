@@ -1,0 +1,444 @@
+{
+ "arms": {
+  "claim": {
+   "runs": 12,
+   "solved": 12,
+   "holdout": 12,
+   "capped": 0,
+   "bilateral": 42,
+   "regressions": 55,
+   "announced": 278,
+   "medianWallMin": 12.1,
+   "tokensTotal": 156258451
+  },
+  "nopeer": {
+   "runs": 12,
+   "solved": 12,
+   "holdout": 12,
+   "capped": 0,
+   "bilateral": 116,
+   "regressions": 79,
+   "announced": 0,
+   "medianWallMin": 9.8,
+   "tokensTotal": 111400288
+  },
+  "market": {
+   "runs": 12,
+   "solved": 12,
+   "holdout": 12,
+   "capped": 0,
+   "bilateral": 109,
+   "regressions": 58,
+   "announced": 0,
+   "medianWallMin": 9.3,
+   "tokensTotal": 102491988
+  }
+ },
+ "hypotheses": [
+  {
+   "id": "H-LI94",
+   "title": "announcing who adapts lowers bilateral adaptation of cross-ant format pairs (both functions changed within 60 s while the pair fails)",
+   "a": "claim",
+   "b": "nopeer",
+   "aBetter": 10,
+   "bBetter": 1,
+   "p": 0.01171875,
+   "verdict": "supported"
+  },
+  {
+   "id": "H-LI95",
+   "title": "the announcing field leaves fewer checks failing on fresh inputs than the default team",
+   "a": "claim",
+   "b": "market",
+   "aBetter": 0,
+   "bBetter": 0,
+   "p": 1,
+   "pHolm": 1,
+   "verdict": "inconclusive"
+  },
+  {
+   "id": "H-LI96",
+   "title": "announcing who adapts lowers regressions of cross-ant format pairs",
+   "a": "claim",
+   "b": "nopeer",
+   "aBetter": 7,
+   "bBetter": 3,
+   "p": 0.34375,
+   "pHolm": 0.6875,
+   "verdict": "inconclusive"
+  },
+  {
+   "id": "H-LI97",
+   "title": "announcing who adapts finishes sooner",
+   "a": "claim",
+   "b": "nopeer",
+   "aBetter": 3,
+   "bBetter": 9,
+   "p": 0.14599609375,
+   "pHolm": 0.43798828125,
+   "verdict": "refuted"
+  }
+ ],
+ "perRun": [
+  {
+   "arm": "claim",
+   "seed": 32400,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 1,
+   "regressions": 1,
+   "announced": 26,
+   "wallMin": 16.4
+  },
+  {
+   "arm": "claim",
+   "seed": 32401,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 5,
+   "regressions": 4,
+   "announced": 16,
+   "wallMin": 23.1
+  },
+  {
+   "arm": "claim",
+   "seed": 32402,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 1,
+   "regressions": 0,
+   "announced": 11,
+   "wallMin": 10.7
+  },
+  {
+   "arm": "claim",
+   "seed": 32403,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 1,
+   "regressions": 5,
+   "announced": 26,
+   "wallMin": 9.7
+  },
+  {
+   "arm": "claim",
+   "seed": 32404,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 4,
+   "regressions": 3,
+   "announced": 15,
+   "wallMin": 9
+  },
+  {
+   "arm": "claim",
+   "seed": 32405,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 4,
+   "regressions": 7,
+   "announced": 10,
+   "wallMin": 8.5
+  },
+  {
+   "arm": "claim",
+   "seed": 32406,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 0,
+   "regressions": 2,
+   "announced": 0,
+   "wallMin": 9
+  },
+  {
+   "arm": "claim",
+   "seed": 32407,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 8,
+   "regressions": 5,
+   "announced": 53,
+   "wallMin": 13.4
+  },
+  {
+   "arm": "claim",
+   "seed": 32408,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 5,
+   "regressions": 5,
+   "announced": 17,
+   "wallMin": 12.1
+  },
+  {
+   "arm": "claim",
+   "seed": 32409,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 3,
+   "regressions": 9,
+   "announced": 43,
+   "wallMin": 13.3
+  },
+  {
+   "arm": "claim",
+   "seed": 32410,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 2,
+   "regressions": 7,
+   "announced": 39,
+   "wallMin": 13.5
+  },
+  {
+   "arm": "claim",
+   "seed": 32411,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 8,
+   "regressions": 7,
+   "announced": 22,
+   "wallMin": 10.8
+  },
+  {
+   "arm": "market",
+   "seed": 32400,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 6,
+   "regressions": 6,
+   "announced": 0,
+   "wallMin": 14.3
+  },
+  {
+   "arm": "market",
+   "seed": 32401,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 5,
+   "regressions": 4,
+   "announced": 0,
+   "wallMin": 8.5
+  },
+  {
+   "arm": "market",
+   "seed": 32402,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 10,
+   "regressions": 1,
+   "announced": 0,
+   "wallMin": 9.1
+  },
+  {
+   "arm": "market",
+   "seed": 32403,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 11,
+   "regressions": 5,
+   "announced": 0,
+   "wallMin": 9.3
+  },
+  {
+   "arm": "market",
+   "seed": 32404,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 13,
+   "regressions": 3,
+   "announced": 0,
+   "wallMin": 9.7
+  },
+  {
+   "arm": "market",
+   "seed": 32405,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 13,
+   "regressions": 7,
+   "announced": 0,
+   "wallMin": 8.4
+  },
+  {
+   "arm": "market",
+   "seed": 32406,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 4,
+   "regressions": 0,
+   "announced": 0,
+   "wallMin": 9.5
+  },
+  {
+   "arm": "market",
+   "seed": 32407,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 29,
+   "regressions": 13,
+   "announced": 0,
+   "wallMin": 10.8
+  },
+  {
+   "arm": "market",
+   "seed": 32408,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 2,
+   "regressions": 4,
+   "announced": 0,
+   "wallMin": 9
+  },
+  {
+   "arm": "market",
+   "seed": 32409,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 4,
+   "regressions": 1,
+   "announced": 0,
+   "wallMin": 8.4
+  },
+  {
+   "arm": "market",
+   "seed": 32410,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 7,
+   "regressions": 7,
+   "announced": 0,
+   "wallMin": 9.1
+  },
+  {
+   "arm": "market",
+   "seed": 32411,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 5,
+   "regressions": 7,
+   "announced": 0,
+   "wallMin": 11
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32400,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 2,
+   "regressions": 3,
+   "announced": 0,
+   "wallMin": 14.3
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32401,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 5,
+   "regressions": 5,
+   "announced": 0,
+   "wallMin": 14.2
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32402,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 7,
+   "regressions": 5,
+   "announced": 0,
+   "wallMin": 8.2
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32403,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 8,
+   "regressions": 12,
+   "announced": 0,
+   "wallMin": 10.6
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32404,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 23,
+   "regressions": 18,
+   "announced": 0,
+   "wallMin": 8.4
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32405,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 1,
+   "regressions": 8,
+   "announced": 0,
+   "wallMin": 8.3
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32406,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 8,
+   "regressions": 2,
+   "announced": 0,
+   "wallMin": 9.8
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32407,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 14,
+   "regressions": 7,
+   "announced": 0,
+   "wallMin": 13.9
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32408,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 12,
+   "regressions": 4,
+   "announced": 0,
+   "wallMin": 8.2
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32409,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 21,
+   "regressions": 5,
+   "announced": 0,
+   "wallMin": 12.1
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32410,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 5,
+   "regressions": 3,
+   "announced": 0,
+   "wallMin": 9.7
+  },
+  {
+   "arm": "nopeer",
+   "seed": 32411,
+   "solved": true,
+   "holdoutFailing": 0,
+   "bilateral": 10,
+   "regressions": 7,
+   "announced": 0,
+   "wallMin": 8.9
+  }
+ ]
+}

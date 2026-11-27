@@ -1,0 +1,740 @@
+{
+  "id": "GN1",
+  "units": 10,
+  "controlUnits": 4,
+  "dropped": 14,
+  "plan": {
+    "sample": "5-related",
+    "libraryDropped": false,
+    "steps": [
+      {
+        "sample": "full",
+        "underThreshold": false,
+        "underHeadroom": false
+      },
+      {
+        "sample": "2-controls",
+        "underThreshold": false,
+        "underHeadroom": false
+      },
+      {
+        "sample": "5-related",
+        "underThreshold": true,
+        "underHeadroom": true
+      }
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "H-G23",
+      "label": "GN1-H1",
+      "primary": true,
+      "a": "notebook",
+      "b": "none",
+      "metric": "firstPassFailing",
+      "title": "notebook against none on failing checks after the first act wave (strict), cases 2 and 3 of related sequences",
+      "units": 10,
+      "aBetter": 10,
+      "bBetter": 0,
+      "ties": 0,
+      "p": 0.0009765625,
+      "pAgainst": 1,
+      "verdict": "supported",
+      "sequenceLevel": {
+        "aBetter": 5,
+        "bBetter": 0,
+        "ties": 0,
+        "p": 0.03125
+      }
+    },
+    {
+      "id": "H-G24",
+      "label": "GN1-H2",
+      "a": "library",
+      "b": "none",
+      "metric": "firstPassFailing",
+      "title": "library against none on firstPassFailing",
+      "units": 10,
+      "aBetter": 10,
+      "bBetter": 0,
+      "ties": 0,
+      "p": 0.0009765625,
+      "pAgainst": 1,
+      "verdict": "supported",
+      "sequenceLevel": {
+        "aBetter": 5,
+        "bBetter": 0,
+        "ties": 0,
+        "p": 0.03125
+      },
+      "pHolm": 0.00390625
+    },
+    {
+      "id": "H-G25",
+      "label": "GN1-H3",
+      "a": "notebook",
+      "b": "none",
+      "metric": "wavesToSolve",
+      "title": "notebook against none on waves until zero failing checks (unsolved is worst)",
+      "units": 10,
+      "aBetter": 1,
+      "bBetter": 5,
+      "ties": 4,
+      "p": 0.984375,
+      "pAgainst": 0.109375,
+      "verdict": "refuted",
+      "sequenceLevel": {
+        "aBetter": 0,
+        "bBetter": 3,
+        "ties": 2,
+        "p": 1
+      },
+      "pHolm": 1
+    },
+    {
+      "id": "H-G26",
+      "label": "GN1-H4",
+      "a": "notebook",
+      "b": "none",
+      "metric": "tokens",
+      "title": "notebook against none on output tokens per case, including the note-writing request that fed it",
+      "units": 10,
+      "aBetter": 0,
+      "bBetter": 10,
+      "ties": 0,
+      "p": 1,
+      "pAgainst": 0.0009765625,
+      "verdict": "refuted",
+      "sequenceLevel": {
+        "aBetter": 0,
+        "bBetter": 5,
+        "ties": 0,
+        "p": 1
+      },
+      "pHolm": 1
+    },
+    {
+      "id": "H-G27",
+      "label": "GN1-H5",
+      "a": "notebook",
+      "b": "none",
+      "metric": "holdoutFailing",
+      "noHarm": true,
+      "title": "no harm, tested in the direction 'none better', two outcomes only: refuted if none has fewer checks failing on fresh inputs in more units with one-sided p < 0.05, otherwise inconclusive (read as 'not refuted (no harm detected)'); never supported; a significant notebook gain is descriptive only",
+      "units": 10,
+      "aBetter": 0,
+      "bBetter": 0,
+      "ties": 10,
+      "p": 1,
+      "pAgainst": 1,
+      "direction": "b better (harm)",
+      "verdict": "inconclusive",
+      "sequenceLevel": {
+        "aBetter": 0,
+        "bBetter": 0,
+        "ties": 5,
+        "p": 1
+      },
+      "reading": "not refuted (no harm detected)",
+      "h5NotebookBetterDescriptive": false,
+      "pHolm": 1
+    }
+  ],
+  "h5NotebookBetterDescriptive": false,
+  "perArm": {
+    "none": {
+      "units": 10,
+      "solved": 10,
+      "firstPassFailing": {
+        "median": 212,
+        "sum": 2117
+      },
+      "wavesToSolve": {
+        "median": 3,
+        "sum": 32
+      },
+      "tokens": {
+        "median": 318321.5,
+        "sum": 3203559
+      },
+      "holdoutFailing": {
+        "median": 0,
+        "sum": 0
+      }
+    },
+    "notebook": {
+      "units": 10,
+      "solved": 10,
+      "firstPassFailing": {
+        "median": 205.5,
+        "sum": 2053
+      },
+      "wavesToSolve": {
+        "median": 3.5,
+        "sum": 36
+      },
+      "tokens": {
+        "median": 448932.5,
+        "sum": 4456687
+      },
+      "holdoutFailing": {
+        "median": 0,
+        "sum": 0
+      }
+    },
+    "library": {
+      "units": 10,
+      "solved": 10,
+      "firstPassFailing": {
+        "median": 199.5,
+        "sum": 1999
+      },
+      "wavesToSolve": {
+        "median": 3.5,
+        "sum": 40
+      },
+      "tokens": {
+        "median": 500700,
+        "sum": 5031574
+      },
+      "holdoutFailing": {
+        "median": 0,
+        "sum": 0
+      }
+    }
+  },
+  "guard": {
+    "units": 4,
+    "weak": true,
+    "firstPass": {
+      "notebook": 212.5,
+      "none": 213.5
+    },
+    "waves": {
+      "notebook": 3.5,
+      "none": 3.5
+    },
+    "holds": true
+  },
+  "notebookVsLibrary": {
+    "firstPassFailing": {
+      "notebookBetter": 2,
+      "libraryBetter": 8,
+      "ties": 0,
+      "p": 0.9892578125,
+      "sequenceLevel": {
+        "notebookBetter": 1,
+        "libraryBetter": 4,
+        "ties": 0,
+        "p": 0.96875
+      }
+    },
+    "wavesToSolve": {
+      "notebookBetter": 4,
+      "libraryBetter": 2,
+      "ties": 4,
+      "p": 0.34375,
+      "sequenceLevel": {
+        "notebookBetter": 2,
+        "libraryBetter": 1,
+        "ties": 2,
+        "p": 0.5
+      }
+    },
+    "tokens": {
+      "notebookBetter": 10,
+      "libraryBetter": 0,
+      "ties": 0,
+      "p": 0.0009765625,
+      "sequenceLevel": {
+        "notebookBetter": 5,
+        "libraryBetter": 0,
+        "ties": 0,
+        "p": 0.03125
+      }
+    },
+    "holdoutFailing": {
+      "notebookBetter": 0,
+      "libraryBetter": 0,
+      "ties": 10,
+      "p": 1,
+      "sequenceLevel": {
+        "notebookBetter": 0,
+        "libraryBetter": 0,
+        "ties": 5,
+        "p": 1
+      }
+    }
+  },
+  "firstPassBreakdown": {
+    "none": {
+      "total": 2117,
+      "local": 9,
+      "directed": 1581,
+      "symmetric": 527,
+      "repeated": 1060,
+      "new": 1048,
+      "directedRepeated": 792,
+      "directedNew": 789,
+      "symmetricRepeated": 268,
+      "symmetricNew": 259
+    },
+    "notebook": {
+      "total": 2053,
+      "local": 39,
+      "directed": 1562,
+      "symmetric": 452,
+      "repeated": 970,
+      "new": 1044,
+      "directedRepeated": 770,
+      "directedNew": 792,
+      "symmetricRepeated": 200,
+      "symmetricNew": 252
+    },
+    "library": {
+      "total": 1999,
+      "local": 8,
+      "directed": 1553,
+      "symmetric": 438,
+      "repeated": 940,
+      "new": 1051,
+      "directedRepeated": 762,
+      "directedNew": 791,
+      "symmetricRepeated": 178,
+      "symmetricNew": 260
+    }
+  },
+  "notes": {
+    "notebook": {
+      "feeds": 14,
+      "writeCut": 1061,
+      "readCut": 0,
+      "written": 1120,
+      "noteWritingOutTokens": 944308
+    },
+    "library": {
+      "feeds": 14,
+      "writeCut": 984,
+      "readCut": 288,
+      "written": 1120,
+      "noteWritingOutTokens": 1594519
+    }
+  },
+  "failingPerWave": {
+    "none": [
+      {
+        "seq": 51000,
+        "case": 2,
+        "failing": [
+          212,
+          159,
+          25,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51001,
+        "case": 2,
+        "failing": [
+          212,
+          160,
+          18,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51002,
+        "case": 2,
+        "failing": [
+          211,
+          159,
+          26,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51003,
+        "case": 2,
+        "failing": [
+          213,
+          160,
+          14,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51004,
+        "case": 2,
+        "failing": [
+          208,
+          156,
+          24,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51000,
+        "case": 3,
+        "failing": [
+          216,
+          164,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51001,
+        "case": 3,
+        "failing": [
+          210,
+          157,
+          25,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51002,
+        "case": 3,
+        "failing": [
+          214,
+          158,
+          38,
+          7,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51003,
+        "case": 3,
+        "failing": [
+          213,
+          161,
+          20,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51004,
+        "case": 3,
+        "failing": [
+          208,
+          155,
+          15,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "notebook": [
+      {
+        "seq": 51000,
+        "case": 2,
+        "failing": [
+          207,
+          158,
+          27,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51001,
+        "case": 2,
+        "failing": [
+          203,
+          154,
+          24,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51002,
+        "case": 2,
+        "failing": [
+          205,
+          158,
+          23,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "seq": 51003,
+        "case": 2,
+        "failing": [
+          208,
+          161,
+          21,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51004,
+        "case": 2,
+        "failing": [
+          206,
+          156,
+          32,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51000,
+        "case": 3,
+        "failing": [
+          206,
+          163,
+          19,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51001,
+        "case": 3,
+        "failing": [
+          202,
+          160,
+          15,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51002,
+        "case": 3,
+        "failing": [
+          210,
+          155,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51003,
+        "case": 3,
+        "failing": [
+          202,
+          159,
+          13,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51004,
+        "case": 3,
+        "failing": [
+          204,
+          157,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "library": [
+      {
+        "seq": 51000,
+        "case": 2,
+        "failing": [
+          197,
+          153,
+          31,
+          2,
+          2,
+          0
+        ]
+      },
+      {
+        "seq": 51001,
+        "case": 2,
+        "failing": [
+          209,
+          159,
+          25,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51002,
+        "case": 2,
+        "failing": [
+          191,
+          157,
+          18,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51003,
+        "case": 2,
+        "failing": [
+          201,
+          152,
+          33,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "seq": 51004,
+        "case": 2,
+        "failing": [
+          199,
+          154,
+          29,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51000,
+        "case": 3,
+        "failing": [
+          210,
+          165,
+          28,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51001,
+        "case": 3,
+        "failing": [
+          197,
+          154,
+          20,
+          3,
+          1,
+          2,
+          1,
+          0
+        ]
+      },
+      {
+        "seq": 51002,
+        "case": 3,
+        "failing": [
+          203,
+          158,
+          31,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51003,
+        "case": 3,
+        "failing": [
+          192,
+          153,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "seq": 51004,
+        "case": 3,
+        "failing": [
+          200,
+          158,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "stage0VsObserved": {
+    "notebookShare": 0.2225201072386059,
+    "libraryShare": 0.22698838248436104,
+    "observedGain": {
+      "notebook": 0.030231459612659425,
+      "library": 0.055739253660840815
+    }
+  },
+  "reading": {
+    "primaryWinsNeeded": 9,
+    "note": "with 10 units the primary holds only with 9 or more wins (9/10 one-sided p = 0.011; 8/10 p = 0.055, not an effect)",
+    "guardWeak": "the guard has 4 units: weak"
+  },
+  "requiredStatements": [
+    "The prereg's cost estimate (about [US$ redacted] to 8.6 with the pilot) is above the [US$ redacted] trigger, so the cost rule was expected to cut the study to 2 control sequences. Sample used: 5-related; the control guard had 4 units and is therefore weak.",
+    "Under the cost rule the sample was 5 related sequences, so 10 primary units: the primary holds only with 9 or more wins (9/10 gives one-sided p = 0.011; 8/10 gives p = 0.055); 8 to 2 is not an effect. Statement as preregistered: \"With 12 units the primary hypothesis holds only with 10 or more wins (10/12 gives one-sided p = 0.019; 9/12 gives p = 0.073): a 9 to 3 split is not an effect.\"",
+    "Implementation choices fixed before the data, 2026-11-23: (a) a member's note-writing request lists at most the last 40 failing checks it saw during the case, the same in every arm, and the number left out is recorded per member; (b) the note-writing request after case 2 shows the member the case-1 notes of its arm in the same block as its other requests (notebook: its own notes; library: the lines about its module, cut at 300 tokens); (c) the cost rule compares the study's projection without the pilot with [US$ redacted] and also cuts back (2 control sequences, then 5 related) while that projection exceeds [US$ redacted] minus the pilot's actual spend, because the [US$ redacted] cap includes the pilot (no extra margin); the projection and the choice are written to results/gn1/plan.json with a timestamp before the first study wave; (d) the study cap against full reservations: each batch (part of a wave) reserves at most min([US$ redacted] [US$ redacted] minus committed), where committed is the spend so far with the pilot and unreconciled batches at their full reservation, down to a single request; when not even one request fits with nothing in flight, the study stops with a final exit and the numbers in results/gn1/cap-stop.json, so no unit is dropped silently.",
+    "GN1-H5 (H-G27, no harm on fresh inputs): recorded inconclusive, read as \"not refuted (no harm detected)\"; it is never recorded as supported."
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "study": "i1-transplant-triage",
+  "configHash": "d2100ceff23bd6ef28bfe6b72ef5931709c63f2e6bf87251ab4f9540091c3328",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "triage",
+  "arms": {
+    "none": {
+      "effect": 0,
+      "verdictRecovered": 1,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "native": {
+      "effect": 5,
+      "verdictRecovered": 5,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "peer": {
+      "effect": 0,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "deliberate": {
+      "effect": 7,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 7,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    }
+  },
+  "finishedAt": "2026-11-11T06:33:22.091Z"
+}

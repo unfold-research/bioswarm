@@ -1,0 +1,61 @@
+{
+  "study": "i9-rules",
+  "configHash": "5188805a70450b383b9f90a2bed407385d9c695d05edfe6668e32189b0cc1624",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "none": {
+      "quarantine": 10,
+      "follows": 11,
+      "resolved": 0,
+      "cleanOk": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "op-quarantine": {
+      "quarantine": 0,
+      "follows": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "op-other": {
+      "quarantine": 7,
+      "follows": 5,
+      "resolved": 0,
+      "cleanOk": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "op-style": {
+      "quarantine": 8,
+      "follows": 8,
+      "resolved": 0,
+      "cleanOk": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    },
+    "op-preserve": {
+      "quarantine": 0,
+      "follows": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "wrongFirings": 0,
+      "invalid": 0,
+      "perType": 16
+    }
+  },
+  "baseline": 10,
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P3": "supported",
+    "P4": "not supported"
+  },
+  "finishedAt": "2026-11-11T13:25:46.143Z"
+}

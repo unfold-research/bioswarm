@@ -1,0 +1,62 @@
+{
+  "id": "LI19",
+  "prereg": "tasks/LI19-HARDER-TASKS-PREREG.md",
+  "base": {
+    "model": "claude-haiku-5-5",
+    "effort": null,
+    "memberMax": 8000,
+    "managerMax": 48000,
+    "rounds": 6,
+    "strictFeedback": true
+  },
+  "sizes": [
+    {
+      "k": 80,
+      "seed0": 19800,
+      "cases": 8,
+      "cap": 8,
+      "directed": 160,
+      "symmetric": 80,
+      "tests": 16
+    },
+    {
+      "k": 120,
+      "seed0": 19200,
+      "cases": 8,
+      "cap": 12,
+      "directed": 240,
+      "symmetric": 80,
+      "tests": 16
+    }
+  ],
+  "arms": [
+    "stigwait",
+    "manager",
+    "routed",
+    "oracle"
+  ],
+  "hypotheses": [
+    {
+      "id": "H-LI58",
+      "primary": true,
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "final",
+      "title": "On harder tasks with an equal wave budget, waiting for the trace ends with fewer failing checks than a manager agent"
+    },
+    {
+      "id": "H-LI59",
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "holdoutFailing",
+      "title": "On harder tasks, waiting for the trace leaves fewer checks failing on fresh inputs than a manager agent"
+    },
+    {
+      "id": "H-LI60",
+      "a": "stigwait",
+      "b": "routed",
+      "metric": "final",
+      "title": "On harder tasks, waiting for the trace ends below the geometry router"
+    }
+  ]
+}

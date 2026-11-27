@@ -1,0 +1,63 @@
+{
+  "id": "LI41",
+  "prereg": "tasks/LI41-REPLICATION-PREREG.md",
+  "base": {
+    "model": "claude-haiku-5-5",
+    "effort": null,
+    "memberMax": 8000,
+    "managerMax": 128000,
+    "rounds": 12,
+    "strictFeedback": true,
+    "managerSlack": true
+  },
+  "sizes": [
+    {
+      "k": 160,
+      "seed0": 41400,
+      "cases": 12,
+      "cap": 10,
+      "directed": 320,
+      "symmetric": 80,
+      "tests": 16
+    }
+  ],
+  "arms": [
+    "stigwait",
+    "manager"
+  ],
+  "hypotheses": [
+    {
+      "id": "H-LI123",
+      "primary": true,
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "wavesToSolve",
+      "title": "On fresh seeds at 160 modules, waiting for the trace reaches zero failing checks in fewer waves than a manager"
+    },
+    {
+      "id": "H-LI124",
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "final",
+      "title": "On fresh seeds at 160 modules, waiting for the trace ends with fewer failing checks than a manager"
+    },
+    {
+      "id": "H-LI125",
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "holdoutFailing",
+      "title": "On fresh seeds at 160 modules, waiting for the trace leaves fewer checks failing on fresh inputs than a manager"
+    },
+    {
+      "id": "H-LI126",
+      "a": "stigwait",
+      "b": "manager",
+      "metric": "tokens",
+      "title": "On fresh seeds at 160 modules, waiting for the trace uses fewer output tokens per case than a manager"
+    }
+  ],
+  "bench": {
+    "reproCheck": true,
+    "reportNote": "LI41 is a replication of LI38 on fresh seeds (41400 to 41411): same instrument, model, size, density, rounds and limits; only the seeds and the cap ([US$ redacted]) differ. H-LI123 to H-LI126 are LI38's H-LI115 to H-LI118 unchanged. Report LI38 and LI41 side by side, and the pooled 24 cases as descriptive only. Required by the Research Leader at approval (2026-11-22): (1) With 12 cases, H-LI123 is supported only if stigwait is better in at least 10 (exact sign test: 10 to 2 gives p = 0.039, 9 to 3 gives p = 0.146). Say this explicitly; a 9 to 3 split is not a partial replication. (2) If the runner's cap check stopped a wave, the run is incomplete: no verdicts, no cases cut, and a resume needs the owner's approval through the Research Leader. (3) LI41 closes only the replication half of CONVENTIONS rule 5 (fresh seeds). No sentence may suggest transfer across model families: one family (Haiku 5.5) was tested."
+  }
+}

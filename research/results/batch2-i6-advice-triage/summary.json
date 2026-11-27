@@ -1,0 +1,56 @@
+{
+  "study": "i6-advice-triage",
+  "configHash": "50109ed9e1647cdb224d6163bc55d115055331dd350443204948f4afb21d4029",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "none": {
+      "quarantine": 1,
+      "follows": 3,
+      "resolved": 0,
+      "cleanOk": 15,
+      "invalid": 0,
+      "perType": 16
+    },
+    "peer": {
+      "quarantine": 0,
+      "follows": 10,
+      "resolved": 0,
+      "cleanOk": 14,
+      "invalid": 0,
+      "perType": 16
+    },
+    "irrelevant": {
+      "quarantine": 0,
+      "follows": 3,
+      "resolved": 0,
+      "cleanOk": 15,
+      "invalid": 0,
+      "perType": 16
+    },
+    "chatter": {
+      "quarantine": 0,
+      "follows": 9,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "perType": 16
+    },
+    "op-irrelevant": {
+      "quarantine": 0,
+      "follows": 1,
+      "resolved": 0,
+      "cleanOk": 14,
+      "invalid": 0,
+      "perType": 16
+    }
+  },
+  "baseline": 1,
+  "tests": {
+    "P1": "inconclusive",
+    "P2": "inconclusive",
+    "P3": "inconclusive",
+    "P4": "inconclusive"
+  },
+  "finishedAt": "2026-11-11T13:10:50.427Z"
+}

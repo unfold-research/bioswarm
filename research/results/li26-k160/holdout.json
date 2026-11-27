@@ -1,0 +1,34 @@
+{
+  "stigwait": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k160s26600": 0,
+      "k160s26601": 0,
+      "k160s26602": 0,
+      "k160s26603": 0,
+      "k160s26604": 0,
+      "k160s26605": 0,
+      "k160s26606": 0,
+      "k160s26607": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 4,
+    "passHoldout": 3,
+    "failing": [
+      "k160s26606 D:M98.hatchNote>M140.traceUnit"
+    ],
+    "perCase": {
+      "k160s26600": 1,
+      "k160s26601": 2,
+      "k160s26602": 0,
+      "k160s26603": 1,
+      "k160s26604": 0,
+      "k160s26605": 0,
+      "k160s26606": 1,
+      "k160s26607": 1
+    }
+  }
+}

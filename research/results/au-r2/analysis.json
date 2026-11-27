@@ -1,0 +1,2780 @@
+{
+  "id": "AU-R2",
+  "label": "exploratory reanalysis, not a registered test",
+  "generatedBy": "observatory/autonomy/au-r2/thinking.mjs",
+  "dirs": [
+    "li24-k80",
+    "li24-k120",
+    "li26-k160",
+    "li27-k80",
+    "li27-k160",
+    "li33-k80",
+    "li33-k160",
+    "li34-k80",
+    "li34-k120",
+    "li35-k40",
+    "li36-k120",
+    "li38-k160"
+  ],
+  "skipped": {
+    "LI37": "Colony study, no batch wave files and no thinking split"
+  },
+  "studies": {
+    "li24-k80": {
+      "study": "LI24",
+      "k": 80,
+      "cases": 8,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 48000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 3678
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 640,
+        "member|claude-haiku-5-5|default|8000": 2989,
+        "plan|claude-haiku-5-5|default|48000": 49
+      },
+      "holdout": true
+    },
+    "li24-k120": {
+      "study": "LI24",
+      "k": 120,
+      "cases": 8,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 48000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 4457
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 960,
+        "member|claude-haiku-5-5|default|8000": 3438,
+        "plan|claude-haiku-5-5|default|48000": 59
+      },
+      "holdout": true
+    },
+    "li26-k160": {
+      "study": "LI26",
+      "k": 160,
+      "cases": 8,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 64000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 5466
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 1280,
+        "member|claude-haiku-5-5|default|8000": 4141,
+        "plan|claude-haiku-5-5|default|64000": 45
+      },
+      "holdout": true
+    },
+    "li27-k80": {
+      "study": "LI27",
+      "k": 80,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "stigwait_both",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 64000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 9080
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 960,
+        "member|claude-haiku-5-5|default|8000": 8084,
+        "plan|claude-haiku-5-5|default|64000": 36
+      },
+      "holdout": false
+    },
+    "li27-k160": {
+      "study": "LI27",
+      "k": 160,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "stigwait_both",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 64000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 16219
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 1920,
+        "member|claude-haiku-5-5|default|8000": 14236,
+        "plan|claude-haiku-5-5|default|64000": 63
+      },
+      "holdout": true
+    },
+    "li33-k80": {
+      "study": "LI33",
+      "k": 80,
+      "cases": 16,
+      "arms": [
+        "stigwait",
+        "polarity",
+        "oracle",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 64000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 12217
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 1280,
+        "member|claude-haiku-5-5|default|8000": 10844,
+        "plan|claude-haiku-5-5|default|64000": 93
+      },
+      "holdout": true
+    },
+    "li33-k160": {
+      "study": "LI33",
+      "k": 160,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "polarity",
+        "oracle",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 64000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 13097
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 1920,
+        "member|claude-haiku-5-5|default|8000": 11115,
+        "plan|claude-haiku-5-5|default|64000": 62
+      },
+      "holdout": true
+    },
+    "li34-k80": {
+      "study": "LI34",
+      "k": 80,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 96000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 5696
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 960,
+        "member|claude-haiku-5-5|default|8000": 4667,
+        "plan|claude-haiku-5-5|default|96000": 69
+      },
+      "holdout": true
+    },
+    "li34-k120": {
+      "study": "LI34",
+      "k": 120,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 96000,
+      "rounds": 6,
+      "modelsInResults": {
+        "claude-haiku-5-5": 7383
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 1440,
+        "member|claude-haiku-5-5|default|8000": 5876,
+        "plan|claude-haiku-5-5|default|96000": 67
+      },
+      "holdout": true
+    },
+    "li35-k40": {
+      "study": "LI35",
+      "k": 40,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-sonnet-5-5",
+      "effort": "low",
+      "managerEffort": "low",
+      "memberMax": 6000,
+      "managerMax": 24000,
+      "rounds": 8,
+      "modelsInResults": {
+        "claude-sonnet-5-5": 2412
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-sonnet-5-5|low|6000": 480,
+        "member|claude-sonnet-5-5|low|6000": 1863,
+        "plan|claude-sonnet-5-5|low|24000": 69
+      },
+      "holdout": true
+    },
+    "li36-k120": {
+      "study": "LI36",
+      "k": 120,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 96000,
+      "rounds": 12,
+      "modelsInResults": {
+        "claude-haiku-5-5": 7243
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 1440,
+        "member|claude-haiku-5-5|default|8000": 5734,
+        "plan|claude-haiku-5-5|default|96000": 69
+      },
+      "holdout": true
+    },
+    "li38-k160": {
+      "study": "LI38",
+      "k": 160,
+      "cases": 12,
+      "arms": [
+        "stigwait",
+        "manager"
+      ],
+      "model": "claude-haiku-5-5",
+      "effort": "default",
+      "managerEffort": "default",
+      "memberMax": 8000,
+      "managerMax": 128000,
+      "rounds": 12,
+      "modelsInResults": {
+        "claude-haiku-5-5": 9104
+      },
+      "requestsByRoleModelEffortMax": {
+        "start|claude-haiku-5-5|default|8000": 1920,
+        "member|claude-haiku-5-5|default|8000": 7116,
+        "plan|claude-haiku-5-5|default|128000": 68
+      },
+      "holdout": true
+    }
+  },
+  "replies": {
+    "total": 96052,
+    "failedOrMissing": 0
+  },
+  "thinkingByRole": {
+    "li24-k80": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 640,
+        "meanOut": 1507,
+        "meanThinking": 1119,
+        "medianThinking": 1092.5,
+        "thinkingShare": 0.7427,
+        "zeroThinking": 1,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0031,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 1437,
+        "meanOut": 1396,
+        "meanThinking": 836,
+        "medianThinking": 780,
+        "thinkingShare": 0.5994,
+        "zeroThinking": 96,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3473,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 49,
+        "meanOut": 14495,
+        "meanThinking": 11682,
+        "medianThinking": 7694,
+        "thinkingShare": 0.806,
+        "zeroThinking": 0,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.932,
+        "modulePassRate": null,
+        "planImprovedRate": 0.9796
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 1552,
+        "meanOut": 1436,
+        "meanThinking": 912,
+        "medianThinking": 780,
+        "thinkingShare": 0.6353,
+        "zeroThinking": 7,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.1675,
+        "planImprovedRate": null
+      }
+    ],
+    "li24-k120": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 960,
+        "meanOut": 1345,
+        "meanThinking": 990,
+        "medianThinking": 967,
+        "thinkingShare": 0.7358,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 2085,
+        "meanOut": 1301,
+        "meanThinking": 778,
+        "medianThinking": 732,
+        "thinkingShare": 0.5978,
+        "zeroThinking": 157,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.9905,
+        "modulePassRate": 0.3751,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 59,
+        "meanOut": 27415,
+        "meanThinking": 25100,
+        "medianThinking": 24629,
+        "thinkingShare": 0.9156,
+        "zeroThinking": 0,
+        "truncated": 23,
+        "truncatedThinkingShare": 0.9716,
+        "modulePassRate": null,
+        "planImprovedRate": 0.6071
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 1353,
+        "meanOut": 1498,
+        "meanThinking": 996,
+        "medianThinking": 890,
+        "thinkingShare": 0.665,
+        "zeroThinking": 7,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3052,
+        "planImprovedRate": null
+      }
+    ],
+    "li26-k160": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 1280,
+        "meanOut": 1140,
+        "meanThinking": 847,
+        "medianThinking": 841,
+        "thinkingShare": 0.7427,
+        "zeroThinking": 35,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0445,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 2323,
+        "meanOut": 947,
+        "meanThinking": 580,
+        "medianThinking": 509,
+        "thinkingShare": 0.6123,
+        "zeroThinking": 251,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.4438,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 45,
+        "meanOut": 15569,
+        "meanThinking": 12240,
+        "medianThinking": 5675,
+        "thinkingShare": 0.7862,
+        "zeroThinking": 1,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.8832,
+        "modulePassRate": null,
+        "planImprovedRate": 0.9556
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 1818,
+        "meanOut": 1239,
+        "meanThinking": 832,
+        "medianThinking": 721,
+        "thinkingShare": 0.6715,
+        "zeroThinking": 22,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.9826,
+        "modulePassRate": 0.324,
+        "planImprovedRate": null
+      }
+    ],
+    "li27-k80": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 960,
+        "meanOut": 1491,
+        "meanThinking": 1108,
+        "medianThinking": 1090.5,
+        "thinkingShare": 0.7426,
+        "zeroThinking": 1,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0021,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait_both",
+        "role": "member",
+        "replies": 4419,
+        "meanOut": 1437,
+        "meanThinking": 882,
+        "medianThinking": 791,
+        "thinkingShare": 0.6142,
+        "zeroThinking": 29,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0267,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 2135,
+        "meanOut": 1393,
+        "meanThinking": 828,
+        "medianThinking": 793,
+        "thinkingShare": 0.5944,
+        "zeroThinking": 155,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3583,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 36,
+        "meanOut": 23111,
+        "meanThinking": 18477,
+        "medianThinking": 11592.5,
+        "thinkingShare": 0.7995,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": null,
+        "planImprovedRate": 1
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 1530,
+        "meanOut": 1676,
+        "meanThinking": 1163,
+        "medianThinking": 1052.5,
+        "thinkingShare": 0.6936,
+        "zeroThinking": 0,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.9801,
+        "modulePassRate": 0.119,
+        "planImprovedRate": null
+      }
+    ],
+    "li27-k160": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 1920,
+        "meanOut": 1155,
+        "meanThinking": 863,
+        "medianThinking": 851,
+        "thinkingShare": 0.7473,
+        "zeroThinking": 53,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.9543,
+        "modulePassRate": 0.0458,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 3428,
+        "meanOut": 940,
+        "meanThinking": 576,
+        "medianThinking": 498.5,
+        "thinkingShare": 0.6125,
+        "zeroThinking": 367,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.4673,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait_both",
+        "role": "member",
+        "replies": 8341,
+        "meanOut": 1023,
+        "meanThinking": 634,
+        "medianThinking": 562,
+        "thinkingShare": 0.6199,
+        "zeroThinking": 194,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0751,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 63,
+        "meanOut": 13445,
+        "meanThinking": 10562,
+        "medianThinking": 5978,
+        "thinkingShare": 0.7855,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": null,
+        "planImprovedRate": 1
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 2467,
+        "meanOut": 1262,
+        "meanThinking": 854,
+        "medianThinking": 751,
+        "thinkingShare": 0.6769,
+        "zeroThinking": 12,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3571,
+        "planImprovedRate": null
+      }
+    ],
+    "li33-k80": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 1280,
+        "meanOut": 1494,
+        "meanThinking": 1109,
+        "medianThinking": 1085,
+        "thinkingShare": 0.7423,
+        "zeroThinking": 0,
+        "truncated": 1,
+        "truncatedThinkingShare": 1,
+        "modulePassRate": 0.0008,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 2890,
+        "meanOut": 1384,
+        "meanThinking": 826,
+        "medianThinking": 780,
+        "thinkingShare": 0.5971,
+        "zeroThinking": 171,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.9889,
+        "modulePassRate": 0.3467,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "polarity",
+        "role": "member",
+        "replies": 3546,
+        "meanOut": 2781,
+        "meanThinking": 2271,
+        "medianThinking": 1793,
+        "thinkingShare": 0.8164,
+        "zeroThinking": 0,
+        "truncated": 59,
+        "truncatedThinkingShare": 0.987,
+        "modulePassRate": 0.1489,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "oracle",
+        "role": "member",
+        "replies": 1258,
+        "meanOut": 1456,
+        "meanThinking": 977,
+        "medianThinking": 959,
+        "thinkingShare": 0.6713,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.9285,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 93,
+        "meanOut": 16071,
+        "meanThinking": 12866,
+        "medianThinking": 6557,
+        "thinkingShare": 0.8006,
+        "zeroThinking": 0,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.8966,
+        "modulePassRate": null,
+        "planImprovedRate": 0.9892
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 3150,
+        "meanOut": 1484,
+        "meanThinking": 957,
+        "medianThinking": 798,
+        "thinkingShare": 0.645,
+        "zeroThinking": 23,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.9788,
+        "modulePassRate": 0.1737,
+        "planImprovedRate": null
+      }
+    ],
+    "li33-k160": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 1920,
+        "meanOut": 1127,
+        "meanThinking": 838,
+        "medianThinking": 836.5,
+        "thinkingShare": 0.7433,
+        "zeroThinking": 60,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0531,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 3445,
+        "meanOut": 934,
+        "meanThinking": 569,
+        "medianThinking": 506,
+        "thinkingShare": 0.6094,
+        "zeroThinking": 392,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.4485,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "polarity",
+        "role": "member",
+        "replies": 3505,
+        "meanOut": 2116,
+        "meanThinking": 1723,
+        "medianThinking": 1280,
+        "thinkingShare": 0.8141,
+        "zeroThinking": 0,
+        "truncated": 28,
+        "truncatedThinkingShare": 0.9867,
+        "modulePassRate": 0.2608,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "oracle",
+        "role": "member",
+        "replies": 1508,
+        "meanOut": 1074,
+        "meanThinking": 711,
+        "medianThinking": 657.5,
+        "thinkingShare": 0.6623,
+        "zeroThinking": 3,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.9662,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 62,
+        "meanOut": 16474,
+        "meanThinking": 13351,
+        "medianThinking": 6825.5,
+        "thinkingShare": 0.8104,
+        "zeroThinking": 0,
+        "truncated": 1,
+        "truncatedThinkingShare": 0.9842,
+        "modulePassRate": null,
+        "planImprovedRate": 0.9839
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 2657,
+        "meanOut": 1231,
+        "meanThinking": 832,
+        "medianThinking": 738,
+        "thinkingShare": 0.6764,
+        "zeroThinking": 11,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3406,
+        "planImprovedRate": null
+      }
+    ],
+    "li34-k80": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 960,
+        "meanOut": 1496,
+        "meanThinking": 1107,
+        "medianThinking": 1096.5,
+        "thinkingShare": 0.7402,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 2126,
+        "meanOut": 1388,
+        "meanThinking": 822,
+        "medianThinking": 773,
+        "thinkingShare": 0.5925,
+        "zeroThinking": 139,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3692,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 69,
+        "meanOut": 16454,
+        "meanThinking": 13082,
+        "medianThinking": 6973,
+        "thinkingShare": 0.7951,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": null,
+        "planImprovedRate": 1
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 2541,
+        "meanOut": 1499,
+        "meanThinking": 968,
+        "medianThinking": 804,
+        "thinkingShare": 0.6458,
+        "zeroThinking": 9,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.168,
+        "planImprovedRate": null
+      }
+    ],
+    "li34-k120": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 1440,
+        "meanOut": 1349,
+        "meanThinking": 997,
+        "medianThinking": 963,
+        "thinkingShare": 0.7391,
+        "zeroThinking": 5,
+        "truncated": 3,
+        "truncatedThinkingShare": 0.994,
+        "modulePassRate": 0.0049,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 3142,
+        "meanOut": 1283,
+        "meanThinking": 764,
+        "medianThinking": 721,
+        "thinkingShare": 0.5956,
+        "zeroThinking": 223,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3701,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 67,
+        "meanOut": 18420,
+        "meanThinking": 15109,
+        "medianThinking": 7964,
+        "thinkingShare": 0.8203,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": null,
+        "planImprovedRate": 0.9851
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 2734,
+        "meanOut": 1457,
+        "meanThinking": 959,
+        "medianThinking": 825,
+        "thinkingShare": 0.6581,
+        "zeroThinking": 7,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.2454,
+        "planImprovedRate": null
+      }
+    ],
+    "li35-k40": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 480,
+        "meanOut": 361,
+        "meanThinking": 19,
+        "medianThinking": 0,
+        "thinkingShare": 0.0539,
+        "zeroThinking": 464,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0417,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 872,
+        "meanOut": 441,
+        "meanThinking": 51,
+        "medianThinking": 0,
+        "thinkingShare": 0.1149,
+        "zeroThinking": 804,
+        "truncated": 5,
+        "truncatedThinkingShare": 0.9998,
+        "modulePassRate": 0.4587,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 69,
+        "meanOut": 1662,
+        "meanThinking": 240,
+        "medianThinking": 0,
+        "thinkingShare": 0.1444,
+        "zeroThinking": 57,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": null,
+        "planImprovedRate": 0.9565
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 991,
+        "meanOut": 579,
+        "meanThinking": 139,
+        "medianThinking": 0,
+        "thinkingShare": 0.2392,
+        "zeroThinking": 577,
+        "truncated": 5,
+        "truncatedThinkingShare": 0.9998,
+        "modulePassRate": 0.2452,
+        "planImprovedRate": null
+      }
+    ],
+    "li36-k120": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 1440,
+        "meanOut": 1340,
+        "meanThinking": 986,
+        "medianThinking": 962.5,
+        "thinkingShare": 0.7358,
+        "zeroThinking": 6,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0076,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 3102,
+        "meanOut": 1299,
+        "meanThinking": 772,
+        "medianThinking": 723.5,
+        "thinkingShare": 0.5942,
+        "zeroThinking": 247,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.373,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 69,
+        "meanOut": 18306,
+        "meanThinking": 15172,
+        "medianThinking": 7142,
+        "thinkingShare": 0.8288,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": null,
+        "planImprovedRate": 0.971
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 2632,
+        "meanOut": 1457,
+        "meanThinking": 959,
+        "medianThinking": 844,
+        "thinkingShare": 0.6587,
+        "zeroThinking": 17,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.2781,
+        "planImprovedRate": null
+      }
+    ],
+    "li38-k160": [
+      {
+        "arm": "start",
+        "role": "start",
+        "replies": 1920,
+        "meanOut": 1256,
+        "meanThinking": 923,
+        "medianThinking": 912,
+        "thinkingShare": 0.7347,
+        "zeroThinking": 6,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.0047,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "stigwait",
+        "role": "member",
+        "replies": 4039,
+        "meanOut": 1228,
+        "meanThinking": 729,
+        "medianThinking": 669,
+        "thinkingShare": 0.5938,
+        "zeroThinking": 379,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.4028,
+        "planImprovedRate": null
+      },
+      {
+        "arm": "manager",
+        "role": "plan",
+        "replies": 68,
+        "meanOut": 18706,
+        "meanThinking": 15349,
+        "medianThinking": 6078.5,
+        "thinkingShare": 0.8205,
+        "zeroThinking": 0,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": null,
+        "planImprovedRate": 0.9853
+      },
+      {
+        "arm": "manager",
+        "role": "member",
+        "replies": 3077,
+        "meanOut": 1456,
+        "meanThinking": 978,
+        "medianThinking": 842,
+        "thinkingShare": 0.6719,
+        "zeroThinking": 12,
+        "truncated": 0,
+        "truncatedThinkingShare": null,
+        "modulePassRate": 0.3474,
+        "planImprovedRate": null
+      }
+    ]
+  },
+  "e2": {
+    "reply": {
+      "note": "truncated replies excluded here (reported in truncation); LI35 (Sonnet, low effort) reported separately",
+      "memberModule": {
+        "labelled": 78148,
+        "failing": 54703,
+        "passing": 23445,
+        "pooled": {
+          "failShare": 0.6748,
+          "passShare": 0.6069,
+          "failMeanThinking": 985,
+          "passMeanThinking": 714,
+          "mannWhitneyShare": {
+            "n1": 54703,
+            "n2": 23445,
+            "auc": 0.587,
+            "z": 38.5875,
+            "p": 0
+          }
+        },
+        "stratified": {
+          "strata": 138,
+          "weightedDiffShare": 0.0647,
+          "weightedDiffThinkingTokens": 395,
+          "failThinksMore": 125,
+          "failThinksLess": 13,
+          "signTestP": 0
+        },
+        "perStudy": {
+          "LI24": {
+            "strata": 28,
+            "failThinksMore": 26,
+            "weightedDiffShare": 0.0631,
+            "weightedDiffThinkingTokens": 326
+          },
+          "LI26": {
+            "strata": 12,
+            "failThinksMore": 11,
+            "weightedDiffShare": 0.054,
+            "weightedDiffThinkingTokens": 287
+          },
+          "LI27": {
+            "strata": 18,
+            "failThinksMore": 16,
+            "weightedDiffShare": 0.0602,
+            "weightedDiffThinkingTokens": 345
+          },
+          "LI33": {
+            "strata": 42,
+            "failThinksMore": 38,
+            "weightedDiffShare": 0.0748,
+            "weightedDiffThinkingTokens": 555
+          },
+          "LI34": {
+            "strata": 19,
+            "failThinksMore": 17,
+            "weightedDiffShare": 0.0681,
+            "weightedDiffThinkingTokens": 326
+          },
+          "LI36": {
+            "strata": 9,
+            "failThinksMore": 8,
+            "weightedDiffShare": 0.0567,
+            "weightedDiffThinkingTokens": 304
+          },
+          "LI38": {
+            "strata": 10,
+            "failThinksMore": 9,
+            "weightedDiffShare": 0.0561,
+            "weightedDiffThinkingTokens": 353
+          }
+        }
+      },
+      "startModule": {
+        "labelled": 14715,
+        "failing": 14436,
+        "passing": 279,
+        "pooled": {
+          "failShare": 0.7411,
+          "passShare": 0.5749,
+          "failMeanThinking": 975,
+          "passMeanThinking": 247,
+          "mannWhitneyShare": {
+            "n1": 14436,
+            "n2": 279,
+            "auc": 0.8241,
+            "z": 18.5726,
+            "p": 0
+          }
+        },
+        "stratified": {
+          "strata": 6,
+          "weightedDiffShare": 0.4384,
+          "weightedDiffThinkingTokens": 641,
+          "failThinksMore": 6,
+          "failThinksLess": 0,
+          "signTestP": 0.0313
+        },
+        "perStudy": {
+          "LI26": {
+            "strata": 1,
+            "failThinksMore": 1,
+            "weightedDiffShare": 0.4405,
+            "weightedDiffThinkingTokens": 620
+          },
+          "LI27": {
+            "strata": 1,
+            "failThinksMore": 1,
+            "weightedDiffShare": 0.4455,
+            "weightedDiffThinkingTokens": 625
+          },
+          "LI33": {
+            "strata": 1,
+            "failThinksMore": 1,
+            "weightedDiffShare": 0.4383,
+            "weightedDiffThinkingTokens": 668
+          },
+          "LI34": {
+            "strata": 1,
+            "failThinksMore": 1,
+            "weightedDiffShare": 0.4315,
+            "weightedDiffThinkingTokens": 379
+          },
+          "LI36": {
+            "strata": 1,
+            "failThinksMore": 1,
+            "weightedDiffShare": 0.3249,
+            "weightedDiffThinkingTokens": 698
+          },
+          "LI38": {
+            "strata": 1,
+            "failThinksMore": 1,
+            "weightedDiffShare": 0.504,
+            "weightedDiffThinkingTokens": 772
+          }
+        }
+      },
+      "planImproved": {
+        "labelled": 639,
+        "failing": 5,
+        "passing": 634,
+        "pooled": {
+          "failShare": 0.8836,
+          "passShare": 0.8049,
+          "failMeanThinking": 4801,
+          "passMeanThinking": 13508,
+          "mannWhitneyShare": {
+            "n1": 5,
+            "n2": 634,
+            "auc": 0.6558,
+            "z": 1.2014,
+            "p": 0.2296
+          }
+        },
+        "stratified": {
+          "strata": 0,
+          "weightedDiffShare": null,
+          "weightedDiffThinkingTokens": null,
+          "failThinksMore": 0,
+          "failThinksLess": 0,
+          "signTestP": 1
+        },
+        "perStudy": {}
+      },
+      "memberCaseSolved": {
+        "labelled": 78148,
+        "failing": 29338,
+        "passing": 48810,
+        "pooled": {
+          "failShare": 0.6984,
+          "passShare": 0.6272,
+          "failMeanThinking": 1082,
+          "passMeanThinking": 796,
+          "mannWhitneyShare": {
+            "n1": 29338,
+            "n2": 48810,
+            "auc": 0.5958,
+            "z": 44.9399,
+            "p": 0
+          }
+        },
+        "stratified": {
+          "strata": 55,
+          "weightedDiffShare": 0.015,
+          "weightedDiffThinkingTokens": 48,
+          "failThinksMore": 41,
+          "failThinksLess": 14,
+          "signTestP": 0.0004
+        },
+        "perStudy": {
+          "LI24": {
+            "strata": 13,
+            "failThinksMore": 11,
+            "weightedDiffShare": 0.0915,
+            "weightedDiffThinkingTokens": 323
+          },
+          "LI26": {
+            "strata": 5,
+            "failThinksMore": 4,
+            "weightedDiffShare": 0.0193,
+            "weightedDiffThinkingTokens": 50
+          },
+          "LI27": {
+            "strata": 10,
+            "failThinksMore": 8,
+            "weightedDiffShare": 0.0085,
+            "weightedDiffThinkingTokens": 12
+          },
+          "LI33": {
+            "strata": 12,
+            "failThinksMore": 7,
+            "weightedDiffShare": 0.0021,
+            "weightedDiffThinkingTokens": -17
+          },
+          "LI34": {
+            "strata": 15,
+            "failThinksMore": 11,
+            "weightedDiffShare": 0.0001,
+            "weightedDiffThinkingTokens": 11
+          }
+        }
+      },
+      "li35Member": {
+        "labelled": 1853,
+        "failing": 1212,
+        "passing": 641,
+        "pooled": {
+          "failShare": 0.1563,
+          "passShare": 0.0936,
+          "failMeanThinking": 77,
+          "passMeanThinking": 44,
+          "mannWhitneyShare": {
+            "n1": 1212,
+            "n2": 641,
+            "auc": 0.5526,
+            "z": 4.8744,
+            "p": 0
+          }
+        },
+        "stratified": {
+          "strata": 9,
+          "weightedDiffShare": 0.0197,
+          "weightedDiffThinkingTokens": 19,
+          "failThinksMore": 8,
+          "failThinksLess": 1,
+          "signTestP": 0.0391
+        },
+        "perStudy": {
+          "LI35": {
+            "strata": 9,
+            "failThinksMore": 8,
+            "weightedDiffShare": 0.0197,
+            "weightedDiffThinkingTokens": 19
+          }
+        }
+      }
+    },
+    "caseLevel": [
+      {
+        "dir": "li24-k80",
+        "arm": "stigwait",
+        "solved": 8,
+        "unsolved": 0,
+        "solvedShare": 0.5993,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li24-k80",
+        "arm": "manager",
+        "solved": 3,
+        "unsolved": 5,
+        "solvedShare": 0.6812,
+        "unsolvedShare": 0.6735
+      },
+      {
+        "dir": "li24-k120",
+        "arm": "stigwait",
+        "solved": 8,
+        "unsolved": 0,
+        "solvedShare": 0.5977,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li24-k120",
+        "arm": "manager",
+        "solved": 4,
+        "unsolved": 4,
+        "solvedShare": 0.7019,
+        "unsolvedShare": 0.8166
+      },
+      {
+        "dir": "li26-k160",
+        "arm": "stigwait",
+        "solved": 8,
+        "unsolved": 0,
+        "solvedShare": 0.6122,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li26-k160",
+        "arm": "manager",
+        "solved": 4,
+        "unsolved": 4,
+        "solvedShare": 0.7019,
+        "unsolvedShare": 0.6948
+      },
+      {
+        "dir": "li27-k80",
+        "arm": "stigwait",
+        "solved": 11,
+        "unsolved": 1,
+        "solvedShare": 0.5936,
+        "unsolvedShare": 0.6009
+      },
+      {
+        "dir": "li27-k80",
+        "arm": "stigwait_both",
+        "solved": 0,
+        "unsolved": 12,
+        "solvedShare": null,
+        "unsolvedShare": 0.6142
+      },
+      {
+        "dir": "li27-k80",
+        "arm": "manager",
+        "solved": 0,
+        "unsolved": 12,
+        "solvedShare": null,
+        "unsolvedShare": 0.7187
+      },
+      {
+        "dir": "li27-k160",
+        "arm": "stigwait",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.6124,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li27-k160",
+        "arm": "stigwait_both",
+        "solved": 0,
+        "unsolved": 12,
+        "solvedShare": null,
+        "unsolvedShare": 0.62
+      },
+      {
+        "dir": "li27-k160",
+        "arm": "manager",
+        "solved": 11,
+        "unsolved": 1,
+        "solvedShare": 0.6993,
+        "unsolvedShare": 0.7052
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "stigwait",
+        "solved": 16,
+        "unsolved": 0,
+        "solvedShare": 0.5969,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "polarity",
+        "solved": 0,
+        "unsolved": 16,
+        "solvedShare": null,
+        "unsolvedShare": 0.8155
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "oracle",
+        "solved": 16,
+        "unsolved": 0,
+        "solvedShare": 0.6712,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "manager",
+        "solved": 9,
+        "unsolved": 7,
+        "solvedShare": 0.6938,
+        "unsolvedShare": 0.6694
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "stigwait",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.6093,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "polarity",
+        "solved": 0,
+        "unsolved": 12,
+        "solvedShare": null,
+        "unsolvedShare": 0.8137
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "oracle",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.6624,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "manager",
+        "solved": 11,
+        "unsolved": 1,
+        "solvedShare": 0.7079,
+        "unsolvedShare": 0.7087
+      },
+      {
+        "dir": "li34-k80",
+        "arm": "stigwait",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.5925,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li34-k80",
+        "arm": "manager",
+        "solved": 6,
+        "unsolved": 6,
+        "solvedShare": 0.6775,
+        "unsolvedShare": 0.6829
+      },
+      {
+        "dir": "li34-k120",
+        "arm": "stigwait",
+        "solved": 11,
+        "unsolved": 1,
+        "solvedShare": 0.595,
+        "unsolvedShare": 0.6029
+      },
+      {
+        "dir": "li34-k120",
+        "arm": "manager",
+        "solved": 5,
+        "unsolved": 7,
+        "solvedShare": 0.7073,
+        "unsolvedShare": 0.6892
+      },
+      {
+        "dir": "li35-k40",
+        "arm": "stigwait",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.1,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li35-k40",
+        "arm": "manager",
+        "solved": 11,
+        "unsolved": 1,
+        "solvedShare": 0.2255,
+        "unsolvedShare": 0.1696
+      },
+      {
+        "dir": "li36-k120",
+        "arm": "stigwait",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.5941,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li36-k120",
+        "arm": "manager",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.701,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li38-k160",
+        "arm": "stigwait",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.5938,
+        "unsolvedShare": null
+      },
+      {
+        "dir": "li38-k160",
+        "arm": "manager",
+        "solved": 12,
+        "unsolved": 0,
+        "solvedShare": 0.7042,
+        "unsolvedShare": null
+      }
+    ],
+    "caseLevelSummary": {
+      "comparisons": 11,
+      "unsolvedThinksMore": 6
+    },
+    "armLevel": [
+      {
+        "dir": "li24-k80",
+        "arm": "stigwait",
+        "solved": 8,
+        "of": 8,
+        "thinkingShare": 0.5994,
+        "truncated": 0
+      },
+      {
+        "dir": "li24-k80",
+        "arm": "manager",
+        "solved": 3,
+        "of": 8,
+        "thinkingShare": 0.6765,
+        "truncated": 1
+      },
+      {
+        "dir": "li24-k120",
+        "arm": "stigwait",
+        "solved": 8,
+        "of": 8,
+        "thinkingShare": 0.5978,
+        "truncated": 1
+      },
+      {
+        "dir": "li24-k120",
+        "arm": "manager",
+        "solved": 4,
+        "of": 8,
+        "thinkingShare": 0.7762,
+        "truncated": 23
+      },
+      {
+        "dir": "li26-k160",
+        "arm": "stigwait",
+        "solved": 8,
+        "of": 8,
+        "thinkingShare": 0.6123,
+        "truncated": 0
+      },
+      {
+        "dir": "li26-k160",
+        "arm": "manager",
+        "solved": 4,
+        "of": 8,
+        "thinkingShare": 0.6987,
+        "truncated": 2
+      },
+      {
+        "dir": "li27-k80",
+        "arm": "stigwait",
+        "solved": 11,
+        "of": 12,
+        "thinkingShare": 0.5944,
+        "truncated": 0
+      },
+      {
+        "dir": "li27-k80",
+        "arm": "stigwait_both",
+        "solved": 0,
+        "of": 12,
+        "thinkingShare": 0.6142,
+        "truncated": 0
+      },
+      {
+        "dir": "li27-k80",
+        "arm": "manager",
+        "solved": 0,
+        "of": 12,
+        "thinkingShare": 0.7196,
+        "truncated": 1
+      },
+      {
+        "dir": "li27-k160",
+        "arm": "stigwait",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.6125,
+        "truncated": 0
+      },
+      {
+        "dir": "li27-k160",
+        "arm": "stigwait_both",
+        "solved": 0,
+        "of": 12,
+        "thinkingShare": 0.6199,
+        "truncated": 0
+      },
+      {
+        "dir": "li27-k160",
+        "arm": "manager",
+        "solved": 11,
+        "of": 12,
+        "thinkingShare": 0.7002,
+        "truncated": 0
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "stigwait",
+        "solved": 16,
+        "of": 16,
+        "thinkingShare": 0.5971,
+        "truncated": 1
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "polarity",
+        "solved": 0,
+        "of": 16,
+        "thinkingShare": 0.8164,
+        "truncated": 59
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "oracle",
+        "solved": 16,
+        "of": 16,
+        "thinkingShare": 0.6713,
+        "truncated": 0
+      },
+      {
+        "dir": "li33-k80",
+        "arm": "manager",
+        "solved": 9,
+        "of": 16,
+        "thinkingShare": 0.6827,
+        "truncated": 2
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "stigwait",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.6094,
+        "truncated": 0
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "polarity",
+        "solved": 0,
+        "of": 12,
+        "thinkingShare": 0.8141,
+        "truncated": 28
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "oracle",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.6623,
+        "truncated": 0
+      },
+      {
+        "dir": "li33-k160",
+        "arm": "manager",
+        "solved": 11,
+        "of": 12,
+        "thinkingShare": 0.7083,
+        "truncated": 1
+      },
+      {
+        "dir": "li34-k80",
+        "arm": "stigwait",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.5925,
+        "truncated": 0
+      },
+      {
+        "dir": "li34-k80",
+        "arm": "manager",
+        "solved": 6,
+        "of": 12,
+        "thinkingShare": 0.68,
+        "truncated": 0
+      },
+      {
+        "dir": "li34-k120",
+        "arm": "stigwait",
+        "solved": 11,
+        "of": 12,
+        "thinkingShare": 0.5956,
+        "truncated": 0
+      },
+      {
+        "dir": "li34-k120",
+        "arm": "manager",
+        "solved": 5,
+        "of": 12,
+        "thinkingShare": 0.6965,
+        "truncated": 0
+      },
+      {
+        "dir": "li35-k40",
+        "arm": "stigwait",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.1149,
+        "truncated": 5
+      },
+      {
+        "dir": "li35-k40",
+        "arm": "manager",
+        "solved": 11,
+        "of": 12,
+        "thinkingShare": 0.2235,
+        "truncated": 5
+      },
+      {
+        "dir": "li36-k120",
+        "arm": "stigwait",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.5942,
+        "truncated": 0
+      },
+      {
+        "dir": "li36-k120",
+        "arm": "manager",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.7009,
+        "truncated": 0
+      },
+      {
+        "dir": "li38-k160",
+        "arm": "stigwait",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.5938,
+        "truncated": 0
+      },
+      {
+        "dir": "li38-k160",
+        "arm": "manager",
+        "solved": 12,
+        "of": 12,
+        "thinkingShare": 0.7047,
+        "truncated": 0
+      }
+    ],
+    "armLevelCorrSolvedVsShare": -0.5533
+  },
+  "truncation": [
+    {
+      "study": "LI24",
+      "role": "start",
+      "replies": 1600,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.7387,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI24",
+      "role": "member",
+      "replies": 6427,
+      "truncated": 1,
+      "rate": 0.0002,
+      "truncatedThinkingShare": 0.9905,
+      "notTruncatedThinkingShare": 0.6223,
+      "truncatedModulePass": 0
+    },
+    {
+      "study": "LI24",
+      "role": "plan",
+      "replies": 108,
+      "truncated": 24,
+      "rate": 0.2222,
+      "truncatedThinkingShare": 0.97,
+      "notTruncatedThinkingShare": 0.7961,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI26",
+      "role": "start",
+      "replies": 1280,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.7427,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI26",
+      "role": "member",
+      "replies": 4141,
+      "truncated": 1,
+      "rate": 0.0002,
+      "truncatedThinkingShare": 0.9826,
+      "notTruncatedThinkingShare": 0.6416,
+      "truncatedModulePass": 0
+    },
+    {
+      "study": "LI26",
+      "role": "plan",
+      "replies": 45,
+      "truncated": 1,
+      "rate": 0.0222,
+      "truncatedThinkingShare": 0.8832,
+      "notTruncatedThinkingShare": 0.7764,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI27",
+      "role": "start",
+      "replies": 2880,
+      "truncated": 1,
+      "rate": 0.0003,
+      "truncatedThinkingShare": 0.9543,
+      "notTruncatedThinkingShare": 0.745,
+      "truncatedModulePass": 0
+    },
+    {
+      "study": "LI27",
+      "role": "member",
+      "replies": 22320,
+      "truncated": 1,
+      "rate": 0,
+      "truncatedThinkingShare": 0.9801,
+      "notTruncatedThinkingShare": 0.6284,
+      "truncatedModulePass": 0
+    },
+    {
+      "study": "LI27",
+      "role": "plan",
+      "replies": 99,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.7924,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI33",
+      "role": "start",
+      "replies": 3200,
+      "truncated": 1,
+      "rate": 0.0003,
+      "truncatedThinkingShare": 1,
+      "notTruncatedThinkingShare": 0.7423,
+      "truncatedModulePass": 0
+    },
+    {
+      "study": "LI33",
+      "role": "member",
+      "replies": 21959,
+      "truncated": 89,
+      "rate": 0.0041,
+      "truncatedThinkingShare": 0.9869,
+      "notTruncatedThinkingShare": 0.7182,
+      "truncatedModulePass": 0
+    },
+    {
+      "study": "LI33",
+      "role": "plan",
+      "replies": 155,
+      "truncated": 2,
+      "rate": 0.0129,
+      "truncatedThinkingShare": 0.9404,
+      "notTruncatedThinkingShare": 0.7973,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI34",
+      "role": "start",
+      "replies": 2400,
+      "truncated": 3,
+      "rate": 0.0013,
+      "truncatedThinkingShare": 0.994,
+      "notTruncatedThinkingShare": 0.7378,
+      "truncatedModulePass": 0
+    },
+    {
+      "study": "LI34",
+      "role": "member",
+      "replies": 10543,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.6248,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI34",
+      "role": "plan",
+      "replies": 136,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.8082,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI35",
+      "role": "start",
+      "replies": 480,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.0539,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI35",
+      "role": "member",
+      "replies": 1863,
+      "truncated": 10,
+      "rate": 0.0054,
+      "truncatedThinkingShare": 0.9998,
+      "notTruncatedThinkingShare": 0.1353,
+      "truncatedModulePass": 0.2
+    },
+    {
+      "study": "LI35",
+      "role": "plan",
+      "replies": 69,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.1444,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI36",
+      "role": "start",
+      "replies": 1440,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.7358,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI36",
+      "role": "member",
+      "replies": 5734,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.6256,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI36",
+      "role": "plan",
+      "replies": 69,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.8288,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI38",
+      "role": "start",
+      "replies": 1920,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.7347,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI38",
+      "role": "member",
+      "replies": 7116,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.6309,
+      "truncatedModulePass": null
+    },
+    {
+      "study": "LI38",
+      "role": "plan",
+      "replies": 68,
+      "truncated": 0,
+      "rate": 0,
+      "truncatedThinkingShare": null,
+      "notTruncatedThinkingShare": 0.8205,
+      "truncatedModulePass": null
+    }
+  ],
+  "li35": {
+    "economyModelLabel": "claude-haiku-5-5",
+    "sweepModel": "claude-sonnet-5-5",
+    "sweepEffort": "low",
+    "modelsInResults": {
+      "claude-sonnet-5-5": 2412
+    },
+    "requestEfforts": {
+      "start|claude-sonnet-5-5|low|6000": 480,
+      "member|claude-sonnet-5-5|low|6000": 1863,
+      "plan|claude-sonnet-5-5|low|24000": 69
+    },
+    "thinkingShareByArm": {
+      "start": 0.0539,
+      "stigwait": 0.1149,
+      "manager": 0.2235
+    },
+    "zeroThinkingReplies": 1902,
+    "replies": 2412
+  },
+  "au1": {
+    "design": "AU1 pilot as planned: Haiku 5.5, LI34 80-module shape, strict check, stigwait, 6 cases per effort arm (low, medium, default), each with its own start wave",
+    "multipliers": {
+      "note": "minimal detectable difference = multiplier x SD (t-based, power 0.8)",
+      "independentAlpha05": 1.7939,
+      "independentAlpha025Holm": 2.0281,
+      "pairedAlpha05": 1.4248,
+      "pairedAlpha025Holm": 1.6668
+    },
+    "sources": {
+      "li34-k80": {
+        "cases": 12,
+        "solved": 12,
+        "freshPass": 12,
+        "freshKnown": 12,
+        "actRounds": {
+          "n": 12,
+          "mean": 3.3333,
+          "sd": 0.4924,
+          "cv": 0.1477,
+          "min": 3,
+          "max": 4,
+          "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+        },
+        "outPerCase": {
+          "n": 12,
+          "mean": 365540.1667,
+          "sd": 13602.6764,
+          "cv": 0.0372,
+          "min": 340008,
+          "max": 381428,
+          "unit": "output tokens per case, arm + start"
+        },
+        "logOut": {
+          "n": 12,
+          "mean": 12.8085,
+          "sd": 0.0376,
+          "cv": 0.0029,
+          "min": 12.7367,
+          "max": 12.8517,
+          "unit": "ln output tokens"
+        },
+        "memberThinkPerCase": {
+          "n": 12,
+          "mean": 145678.25,
+          "sd": 7590.5621,
+          "cv": 0.0521,
+          "min": 134274,
+          "max": 155525,
+          "unit": "member thinking tokens per case"
+        },
+        "holdoutFailing": {
+          "n": 12,
+          "mean": 0,
+          "sd": 0,
+          "cv": null,
+          "min": 0,
+          "max": 0,
+          "unit": "fresh-input failing checks per case"
+        }
+      },
+      "li34-k120": {
+        "cases": 12,
+        "solved": 11,
+        "freshPass": 11,
+        "freshKnown": 12,
+        "actRounds": {
+          "n": 12,
+          "mean": 4.0833,
+          "sd": 1.1645,
+          "cv": 0.2852,
+          "min": 3,
+          "max": 7,
+          "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+        },
+        "outPerCase": {
+          "n": 12,
+          "mean": 497956.8333,
+          "sd": 11578.4469,
+          "cv": 0.0233,
+          "min": 481105,
+          "max": 517459,
+          "unit": "output tokens per case, arm + start"
+        },
+        "logOut": {
+          "n": 12,
+          "mean": 13.118,
+          "sd": 0.0232,
+          "cv": 0.0018,
+          "min": 13.0838,
+          "max": 13.1567,
+          "unit": "ln output tokens"
+        },
+        "memberThinkPerCase": {
+          "n": 12,
+          "mean": 200170.3333,
+          "sd": 6151.4026,
+          "cv": 0.0307,
+          "min": 191236,
+          "max": 210952,
+          "unit": "member thinking tokens per case"
+        },
+        "holdoutFailing": {
+          "n": 12,
+          "mean": 0.0833,
+          "sd": 0.2887,
+          "cv": 3.4641,
+          "min": 0,
+          "max": 1,
+          "unit": "fresh-input failing checks per case"
+        }
+      },
+      "li33-k80": {
+        "cases": 16,
+        "solved": 16,
+        "freshPass": 16,
+        "freshKnown": 16,
+        "actRounds": {
+          "n": 16,
+          "mean": 3.625,
+          "sd": 0.5,
+          "cv": 0.1379,
+          "min": 3,
+          "max": 4,
+          "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+        },
+        "outPerCase": {
+          "n": 16,
+          "mean": 369432.5,
+          "sd": 15578.2082,
+          "cv": 0.0422,
+          "min": 350683,
+          "max": 407787,
+          "unit": "output tokens per case, arm + start"
+        },
+        "logOut": {
+          "n": 16,
+          "mean": 12.8189,
+          "sd": 0.0415,
+          "cv": 0.0032,
+          "min": 12.7676,
+          "max": 12.9185,
+          "unit": "ln output tokens"
+        },
+        "memberThinkPerCase": {
+          "n": 16,
+          "mean": 149240.9375,
+          "sd": 9298.4675,
+          "cv": 0.0623,
+          "min": 136185,
+          "max": 170075,
+          "unit": "member thinking tokens per case"
+        },
+        "holdoutFailing": {
+          "n": 16,
+          "mean": 0,
+          "sd": 0,
+          "cv": null,
+          "min": 0,
+          "max": 0,
+          "unit": "fresh-input failing checks per case"
+        }
+      },
+      "li27-k80": {
+        "cases": 12,
+        "solved": 11,
+        "freshPass": 0,
+        "freshKnown": 0,
+        "actRounds": {
+          "n": 12,
+          "mean": 3.8333,
+          "sd": 1.1934,
+          "cv": 0.3113,
+          "min": 3,
+          "max": 7,
+          "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+        },
+        "outPerCase": {
+          "n": 12,
+          "mean": 367200.75,
+          "sd": 8965.1894,
+          "cv": 0.0244,
+          "min": 343699,
+          "max": 378268,
+          "unit": "output tokens per case, arm + start"
+        },
+        "logOut": {
+          "n": 12,
+          "mean": 12.8134,
+          "sd": 0.0248,
+          "cv": 0.0019,
+          "min": 12.7475,
+          "max": 12.8434,
+          "unit": "ln output tokens"
+        },
+        "memberThinkPerCase": {
+          "n": 12,
+          "mean": 147331.5,
+          "sd": 6216.8064,
+          "cv": 0.0422,
+          "min": 132902,
+          "max": 155679,
+          "unit": "member thinking tokens per case"
+        },
+        "holdoutFailing": {
+          "n": 0,
+          "mean": null,
+          "sd": null,
+          "cv": null,
+          "min": null,
+          "max": null,
+          "unit": "fresh-input failing checks per case"
+        }
+      },
+      "li24-k80": {
+        "cases": 8,
+        "solved": 8,
+        "freshPass": 8,
+        "freshKnown": 8,
+        "actRounds": {
+          "n": 8,
+          "mean": 3.625,
+          "sd": 0.9161,
+          "cv": 0.2527,
+          "min": 3,
+          "max": 5,
+          "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+        },
+        "outPerCase": {
+          "n": 8,
+          "mean": 371206.375,
+          "sd": 6965.3773,
+          "cv": 0.0188,
+          "min": 361630,
+          "max": 381027,
+          "unit": "output tokens per case, arm + start"
+        },
+        "logOut": {
+          "n": 8,
+          "mean": 12.8244,
+          "sd": 0.0188,
+          "cv": 0.0015,
+          "min": 12.7984,
+          "max": 12.8506,
+          "unit": "ln output tokens"
+        },
+        "memberThinkPerCase": {
+          "n": 8,
+          "mean": 150250.5,
+          "sd": 4876.1722,
+          "cv": 0.0325,
+          "min": 143391,
+          "max": 158619,
+          "unit": "member thinking tokens per case"
+        },
+        "holdoutFailing": {
+          "n": 8,
+          "mean": 0,
+          "sd": 0,
+          "cv": null,
+          "min": 0,
+          "max": 0,
+          "unit": "fresh-input failing checks per case"
+        }
+      },
+      "li36-k120": {
+        "cases": 12,
+        "solved": 12,
+        "freshPass": 12,
+        "freshKnown": 12,
+        "actRounds": {
+          "n": 12,
+          "mean": 3.75,
+          "sd": 0.6216,
+          "cv": 0.1658,
+          "min": 3,
+          "max": 5,
+          "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+        },
+        "outPerCase": {
+          "n": 12,
+          "mean": 496492.5833,
+          "sd": 9807.9665,
+          "cv": 0.0198,
+          "min": 469620,
+          "max": 506393,
+          "unit": "output tokens per case, arm + start"
+        },
+        "logOut": {
+          "n": 12,
+          "mean": 13.1151,
+          "sd": 0.0201,
+          "cv": 0.0015,
+          "min": 13.0597,
+          "max": 13.1351,
+          "unit": "ln output tokens"
+        },
+        "memberThinkPerCase": {
+          "n": 12,
+          "mean": 199458,
+          "sd": 5964.7411,
+          "cv": 0.0299,
+          "min": 182923,
+          "max": 206457,
+          "unit": "member thinking tokens per case"
+        },
+        "holdoutFailing": {
+          "n": 12,
+          "mean": 0,
+          "sd": 0,
+          "cv": null,
+          "min": 0,
+          "max": 0,
+          "unit": "fresh-input failing checks per case"
+        }
+      },
+      "li38-k160": {
+        "cases": 12,
+        "solved": 12,
+        "freshPass": 12,
+        "freshKnown": 12,
+        "actRounds": {
+          "n": 12,
+          "mean": 3.25,
+          "sd": 0.4523,
+          "cv": 0.1392,
+          "min": 3,
+          "max": 4,
+          "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+        },
+        "outPerCase": {
+          "n": 12,
+          "mean": 614254.4167,
+          "sd": 6745.72,
+          "cv": 0.011,
+          "min": 607264,
+          "max": 626753,
+          "unit": "output tokens per case, arm + start"
+        },
+        "logOut": {
+          "n": 12,
+          "mean": 13.3281,
+          "sd": 0.0109,
+          "cv": 0.0008,
+          "min": 13.3167,
+          "max": 13.3483,
+          "unit": "ln output tokens"
+        },
+        "memberThinkPerCase": {
+          "n": 12,
+          "mean": 245374.5833,
+          "sd": 4545.367,
+          "cv": 0.0185,
+          "min": 238519,
+          "max": 252766,
+          "unit": "member thinking tokens per case"
+        },
+        "holdoutFailing": {
+          "n": 12,
+          "mean": 0,
+          "sd": 0,
+          "cv": null,
+          "min": 0,
+          "max": 0,
+          "unit": "fresh-input failing checks per case"
+        }
+      }
+    },
+    "pooled80Stigwait": {
+      "cases": 48,
+      "solved": 47,
+      "freshPass": 36,
+      "freshKnown": 36,
+      "actRounds": {
+        "n": 48,
+        "mean": 3.6042,
+        "sd": 0.792,
+        "cv": 0.2197,
+        "min": 3,
+        "max": 7,
+        "unit": "act rounds to zero failing checks (unsolved counted as rounds + 1)"
+      },
+      "outPerCase": {
+        "n": 48,
+        "mean": 368197.125,
+        "sd": 12284.5648,
+        "cv": 0.0334,
+        "min": 340008,
+        "max": 407787,
+        "unit": "output tokens per case, arm + start"
+      },
+      "logOut": {
+        "n": 48,
+        "mean": 12.8158,
+        "sd": 0.0333,
+        "cv": 0.0026,
+        "min": 12.7367,
+        "max": 12.9185,
+        "unit": "ln output tokens"
+      },
+      "memberThinkPerCase": {
+        "n": 48,
+        "mean": 148041.1667,
+        "sd": 7519.3435,
+        "cv": 0.0508,
+        "min": 132902,
+        "max": 170075,
+        "unit": "member thinking tokens per case"
+      },
+      "holdoutFailing": {
+        "n": 36,
+        "mean": 0,
+        "sd": 0,
+        "cv": null,
+        "min": 0,
+        "max": 0,
+        "unit": "fresh-input failing checks per case"
+      }
+    },
+    "pairedCorrelationProxy": {
+      "li27-k80 stigwait~stigwait_both": {
+        "logOut": {
+          "n": 12,
+          "r": 0.8184
+        }
+      },
+      "li27-k160 stigwait~stigwait_both": {
+        "logOut": {
+          "n": 12,
+          "r": 0.1114
+        }
+      },
+      "li33-k80 stigwait~oracle": {
+        "logOut": {
+          "n": 16,
+          "r": 0.8161
+        }
+      }
+    },
+    "mdd": {
+      "actRounds": {
+        "unit": "act rounds",
+        "sd": 0.792,
+        "independent": 1.4208,
+        "independentHolm": 1.6063,
+        "relToMean": 0.4262,
+        "relToMeanHolm": 0.4819
+      },
+      "outPerCase": {
+        "unit": "output tokens per case",
+        "sd": 13602.6764,
+        "independent": 24402.3967,
+        "independentHolm": 27588.0003,
+        "relToMean": 0.0668,
+        "relToMeanHolm": 0.0755
+      },
+      "logOut": {
+        "unit": "ln output tokens",
+        "sd": 0.0376,
+        "independent": 0.0675,
+        "independentHolm": 0.0763,
+        "ratioIndependent": 0.9348,
+        "ratioIndependentHolm": 0.9266,
+        "ratioPairedHolmAtMinRho": 0.9627,
+        "rhoMin": 0.8161
+      },
+      "solvedBinary": [
+        {
+          "p1": 1,
+          "p2At80Power": 0.13,
+          "minSignificantContrast": "6/6 vs 1/6"
+        },
+        {
+          "p1": 0.9583,
+          "p2At80Power": 0.0883,
+          "minSignificantContrast": "6/6 vs 1/6"
+        },
+        {
+          "p1": 0.9,
+          "p2At80Power": 0.03,
+          "minSignificantContrast": "6/6 vs 1/6"
+        }
+      ],
+      "casesPerArmForSolvedDrop": [
+        {
+          "p1": 0.9792,
+          "p2": 0.5,
+          "nPerArmAt80Power": 14
+        },
+        {
+          "p1": 0.9792,
+          "p2": 0.67,
+          "nPerArmAt80Power": 24
+        },
+        {
+          "p1": 0.9792,
+          "p2": 0.75,
+          "nPerArmAt80Power": 38
+        },
+        {
+          "p1": 0.9792,
+          "p2": 0.8,
+          "nPerArmAt80Power": 53
+        }
+      ],
+      "sdInflationAllowedFor30PctOutputCut": 4.6772,
+      "freshPassBinary": "same as solved: every solved stigwait case at 80 modules also passed fresh inputs, so the fresh-input pass has the same (near-zero) variance"
+    }
+  },
+  "memberThinkingVsSuccess": {
+    "stigwait80": {
+      "replies": 8588,
+      "passRateByThinkingQuartile": [
+        {
+          "quartile": 1,
+          "n": 2140,
+          "passRate": 0.4093
+        },
+        {
+          "quartile": 2,
+          "n": 2136,
+          "passRate": 0.3787
+        },
+        {
+          "quartile": 3,
+          "n": 2139,
+          "passRate": 0.3408
+        },
+        {
+          "quartile": 4,
+          "n": 2132,
+          "passRate": 0.2824
+        }
+      ],
+      "stratifiedAucThinkingForPass": 0.38,
+      "byWave": {
+        "1": {
+          "n": 3626,
+          "auc": 0.4843
+        },
+        "2": {
+          "n": 3780,
+          "auc": 0.3787
+        },
+        "3": {
+          "n": 1141,
+          "auc": 0.3305
+        }
+      }
+    },
+    "stigwaitAllHaikuDefault": {
+      "replies": 30152,
+      "passRateByThinkingQuartile": [
+        {
+          "quartile": 1,
+          "n": 7518,
+          "passRate": 0.4509
+        },
+        {
+          "quartile": 2,
+          "n": 7505,
+          "passRate": 0.4288
+        },
+        {
+          "quartile": 3,
+          "n": 7516,
+          "passRate": 0.3968
+        },
+        {
+          "quartile": 4,
+          "n": 7495,
+          "passRate": 0.3029
+        }
+      ],
+      "stratifiedAucThinkingForPass": 0.3663,
+      "byWave": {
+        "1": {
+          "n": 12913,
+          "auc": 0.5873
+        },
+        "2": {
+          "n": 13853,
+          "auc": 0.348
+        },
+        "3": {
+          "n": 3268,
+          "auc": 0.2611
+        }
+      }
+    },
+    "allMembersHaikuDefault": {
+      "replies": 78240,
+      "passRateByThinkingQuartile": [
+        {
+          "quartile": 1,
+          "n": 19551,
+          "passRate": 0.4339
+        },
+        {
+          "quartile": 2,
+          "n": 19512,
+          "passRate": 0.3669
+        },
+        {
+          "quartile": 3,
+          "n": 19531,
+          "passRate": 0.259
+        },
+        {
+          "quartile": 4,
+          "n": 19485,
+          "passRate": 0.1364
+        }
+      ],
+      "stratifiedAucThinkingForPass": 0.2991,
+      "byWave": {
+        "1": {
+          "n": 20885,
+          "auc": 0.5135
+        },
+        "2": {
+          "n": 28836,
+          "auc": 0.258
+        },
+        "3": {
+          "n": 6788,
+          "auc": 0.1917
+        },
+        "4": {
+          "n": 9835,
+          "auc": 0.3041
+        },
+        "5": {
+          "n": 3192,
+          "auc": 0.2308
+        },
+        "6": {
+          "n": 5386,
+          "auc": 0.2472
+        },
+        "7": {
+          "n": 172,
+          "auc": 0.2468
+        },
+        "8": {
+          "n": 1713,
+          "auc": 0.2504
+        },
+        "9": {
+          "n": 92,
+          "auc": 0.3267
+        },
+        "10": {
+          "n": 864,
+          "auc": 0.2342
+        },
+        "12": {
+          "n": 276,
+          "auc": 0.2305
+        }
+      }
+    },
+    "caseLevel80": {
+      "n": 48,
+      "rMemberThinkVsActRounds": 0.2453
+    }
+  }
+}

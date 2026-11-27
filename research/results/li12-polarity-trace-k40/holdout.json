@@ -1,0 +1,40 @@
+{
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 6,
+    "failing": [
+      "k40s12405 D:M5.stampLabel>M10.weighSeed",
+      "k40s12406 D:M15.foldTitle>M36.gaugeToken",
+      "k40s12406 D:M19.packSku>M38.mintLabel",
+      "k40s12406 D:M23.rankSlug>M26.gaugeCode"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "polarity": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "oracle": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": []
+  },
+  "stig": {
+    "solvedInRun": 4,
+    "passHoldout": 0,
+    "failing": [
+      "k40s12403 D:M37.packCode>M23.gaugeCode",
+      "k40s12403 D:M25.labelSeed>M28.tallyName",
+      "k40s12405 D:M5.stampLabel>M10.weighSeed",
+      "k40s12405 D:M11.scanAlias>M14.tuneNote",
+      "k40s12406 D:M15.foldTitle>M36.gaugeToken",
+      "k40s12406 D:M19.packSku>M38.mintLabel",
+      "k40s12407 D:M12.labelWord>M32.scoreRef"
+    ]
+  }
+}

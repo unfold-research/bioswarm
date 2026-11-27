@@ -1,0 +1,35 @@
+{
+  "routed": {
+    "solvedInRun": 8,
+    "passHoldout": 1,
+    "failing": [
+      "k80s10800 D:M7.rankRef>M78.stampName",
+      "k80s10802 D:M44.tuneSeed>M6.siftTerm",
+      "k80s10802 D:M54.siftAlias>M25.probeAlias",
+      "k80s10803 D:M9.brandWord>M20.mintSeed",
+      "k80s10804 D:M57.gradeSeed>M12.mintSku",
+      "k80s10805 D:M72.traceSeed>M75.shapeLabel",
+      "k80s10806 D:M36.siftSku>M18.tallyRef",
+      "k80s10806 D:M38.tagTerm>M60.markRef",
+      "k80s10806 D:M74.labelTerm>M32.weighSku",
+      "k80s10807 D:M34.gaugeToken>M50.scoreHandle",
+      "k80s10807 D:M28.brandToken>M10.tagCode",
+      "k80s10807 D:M73.labelWord>M3.siftNote"
+    ]
+  },
+  "manager": {
+    "solvedInRun": 7,
+    "passHoldout": 7,
+    "failing": []
+  },
+  "chat": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": []
+  },
+  "solo": {
+    "solvedInRun": 6,
+    "passHoldout": 6,
+    "failing": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "out": "li39-colony-wait-k160",
+  "k": 160,
+  "seed0": 39400,
+  "cases": 12,
+  "arms": [
+    "wait",
+    "market"
+  ],
+  "model": "openai-codex/gpt-6-luna",
+  "armSpecs": {
+    "wait": {
+      "field": "wait",
+      "antLimits": {
+        "cycle": 200,
+        "pair": 60,
+        "peer": false
+      },
+      "instructions": "Este é um estudo automático: ninguém vai responder perguntas. Não pergunte nada à pessoa; decida e conclua. Se uma formiga não responder, siga com o que você tem e termine quando os testes passarem. Não decida quem muda nos pares de formato (uma função codifica, outra decodifica): as formigas resolvem isso entre si pelo campo."
+    },
+    "market": {
+      "field": false,
+      "antLimits": {
+        "cycle": 200,
+        "pair": 60
+      }
+    }
+  },
+  "instructions": "Este é um estudo automático: ninguém vai responder perguntas. Não pergunte nada à pessoa; decida e conclua. Se uma formiga não responder, siga com o que você tem e termine quando os testes passarem.",
+  "timeline": true,
+  "shape": {
+    "local": 2,
+    "directed": 320,
+    "symmetric": 80,
+    "tests": 16,
+    "shown": 3
+  },
+  "capMinutes": 180,
+  "quietMs": 180000,
+  "endpoints": "/srv/bench/endpoints.json",
+  "perEndpoint": 2,
+  "permission": "standard",
+  "removeAfter": true,
+  "prereg": "tasks/LI39-SECOND-FAMILY-COLONY-PREREG.md",
+  "pairing": {
+    "mode": "simultaneous",
+    "fallback": "back-to-back, even seed starts with wait, odd with market",
+    "logConcurrency": true
+  },
+  "bench": {
+    "reviewModel": "anthropic/claude-sonnet-5-5",
+    "analyze": "observatory/batch2/colony/analyze-li39.mjs",
+    "reportNote": "Second model family for the latency cell (LI38). The arms differ in channel, ownership and runtime, not only in waiting; read with LI38. Tokens are confounded with stalls: read H-LI122 beside solved and capped counts.",
+    "colony": "e9b45f4b8f02323088881cb8f9eb7777032acd32",
+    "reproCheck": true
+  },
+  "colonyCommit": "e9b45f4b8f02323088881cb8f9eb7777032acd32"
+}

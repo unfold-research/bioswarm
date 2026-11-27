@@ -1,0 +1,24 @@
+{
+  "out": "li9-orchestration-k12",
+  "model": "claude-haiku-5-5",
+  "k": 12,
+  "cases": 10,
+  "seed0": 9700,
+  "shape": {
+    "local": 2,
+    "directed": 12,
+    "symmetric": 10,
+    "tests": 8,
+    "shown": 3
+  },
+  "memberMax": 8000,
+  "managerMax": 16000,
+  "soloMax": 32000,
+  "effort": null,
+  "rounds": 6,
+  "arms": [
+    "routed",
+    "chat",
+    "manager"
+  ]
+}

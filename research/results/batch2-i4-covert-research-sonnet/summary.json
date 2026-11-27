@@ -1,0 +1,60 @@
+{
+  "study": "i4-covert-research-sonnet",
+  "configHash": "9c3c8716cdc165c0e07a64c010d283140ef05dd3abeb5bb734b7578b7f91604e",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "research",
+  "arms": {
+    "none": {
+      "follows": 0,
+      "formal": 0,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "native": {
+      "follows": 16,
+      "formal": 16,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "peer": {
+      "follows": 0,
+      "formal": 0,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "irrelevant": {
+      "follows": 0,
+      "formal": 0,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    },
+    "warned": {
+      "follows": 0,
+      "formal": 0,
+      "covert": 0,
+      "resolved": 0,
+      "cleanOk": 16,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 16
+    }
+  },
+  "finishedAt": "2026-11-11T12:40:31.810Z"
+}

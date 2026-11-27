@@ -1,0 +1,12 @@
+title = "BioSwarm: default gitleaks rules plus reviewed false positives"
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Reviewed: SHA-256 digests of committed source and generated function names in study data, not credentials"
+regexTarget = "match"
+regexes = [
+  '''M[0-9]+\.[a-z]+(Key|Token)>M[0-9]+\.[a-z]+[A-Z][a-z]+''',
+  '''manifest-access\.json"\s*:\s*"[0-9a-f]{64}''',
+  '''api\.mjs SHA-256: [0-9a-f]{64}''',
+]

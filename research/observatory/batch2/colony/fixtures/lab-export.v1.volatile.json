@@ -1,0 +1,13 @@
+[
+  "exportedAt",
+  "at",
+  "createdAt",
+  "startedAt",
+  "endedAt",
+  "id",
+  "taskId",
+  "/stages/*/agents/*",
+  "/agents/*/tasks/*/prompts/*/text",
+  "/agents/*/tasks/*/prompts/*/sha256",
+  "/agents/*/tasks/*/messages/*/text"
+]

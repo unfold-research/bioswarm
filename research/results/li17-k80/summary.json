@@ -1,0 +1,18 @@
+{
+  "configHash": "f1b2fb13c24d9e28ff4a62010c0d6eea138b671abe18dbbaa24efc46c5e2cf78",
+  "finishedAt": "2026-11-18T01:46:33.375Z",
+  "arms": {
+    "clonalwait": {
+      "solved": 8,
+      "of": 8
+    },
+    "stigwait": {
+      "solved": 8,
+      "of": 8
+    },
+    "manager": {
+      "solved": 8,
+      "of": 8
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "study": "t2r-more",
+  "configHash": "a2d34def9ceac70bee34118f1aae24b139252418128957d8d9dc1572bf4e1433",
+  "status": "complete",
+  "wavesRun": 1,
+  "attempts": [
+    4,
+    5
+  ],
+  "rightByAttempt": {
+    "4": 256,
+    "5": 253
+  },
+  "instances": 288,
+  "judgeRepeat": null,
+  "finishedAt": "2026-11-12T13:01:09.603Z"
+}

@@ -1,0 +1,407 @@
+{
+ "id": "sim-branching",
+ "version": "1.0.0",
+ "title": "Subtask generation as a branching process: critical cleanup ratio",
+ "seed": 20261107,
+ "hypothesis": {
+  "statement": "When every executed job spawns m children on average and a fraction d is cancelled before running, work per root job is 1/(1 - m(1-d)) below m_ef = m(1-d) = 1 and unbounded at or above it; the transition is abrupt, the minimum cleanup is d* = 1 - 1/m, and a hard depth limit bounds the work at a cost that grows geometrically with the depth.",
+  "predictions": [
+   {
+    "id": "P1",
+    "text": "Subcritical, no cleanup: for m = 0.8, 0.9 and 0.95 the mean number of executed jobs per root is within 3% of 1/(1-m) (5, 10, 20) and no root reaches the 20,000-job cap."
+   },
+   {
+    "id": "P2",
+    "text": "Abrupt threshold: the fraction of roots that reach the cap is < 0.1% for m_ef in {0.8, 0.9, 0.95} and > 5% for m_ef in {1.05, 1.2, 1.5}."
+   },
+   {
+    "id": "P3",
+    "text": "Critical cleanup: with m = 1.5, cleanup d = 0.30 (m_ef = 1.05) still has > 5% of roots reaching the cap, while d = 0.40 (m_ef = 0.9) has < 0.1% and a mean of executed jobs per root within 3% of 10."
+   },
+   {
+    "id": "P4",
+    "text": "Backlog after arrivals stop (service capacity 50 jobs/step, 5 roots/step for 200 steps): the backlog is empty 1,000 steps later in >= 99% of runs for m_ef in {0.8, 0.95}, and is larger than at the stop in >= 90% of runs for m_ef in {1.05, 1.2}."
+   },
+   {
+    "id": "P5",
+    "text": "Depth limit: with m = 1.5 and no cleanup, a maximum depth D bounds the mean executed jobs per root within 3% of (m^(D+1) - 1)/(m - 1) for D in {3, 5, 8} (8.1, 20.8, 74.9)."
+   }
+  ]
+ },
+ "params": {
+  "seed": 20261107,
+  "roots": 200000,
+  "cap": 20000,
+  "m_ef_grid": [
+   0.8,
+   0.9,
+   0.95,
+   1.05,
+   1.2,
+   1.5
+  ],
+  "cleanup": {
+   "m": 1.5,
+   "d": [
+    0,
+    0.2,
+    0.3,
+    0.3334,
+    0.4,
+    0.5
+   ]
+  },
+  "depth": {
+   "m": 1.5,
+   "D": [
+    3,
+    5,
+    8
+   ]
+  },
+  "backlog": {
+   "runs": 500,
+   "capacity": 50,
+   "arrivals": 5,
+   "arrival_steps": 200,
+   "after_steps": 1000,
+   "m_ef": [
+    0.8,
+    0.95,
+    1.05,
+    1.2
+   ]
+  },
+  "rules": "Children per executed job ~ Poisson(m); each child is cancelled independently with probability d before running, so executed children ~ Poisson(m(1-d)). A generation of n jobs spawns Poisson(n*m_ef) executed children (lib Poisson: exact below mean 30, rounded normal approximation above). Backlog model: per step, Poisson(arrivals) roots arrive while t < arrival_steps; min(capacity, backlog) jobs run and spawn Poisson(run*m_ef) executed children."
+ },
+ "results": {
+  "no_cleanup": [
+   {
+    "m_ef": 0.8,
+    "jobs": {
+     "mean": 4.973,
+     "lo": 4.9298,
+     "hi": 5.0162,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 5
+   },
+   {
+    "m_ef": 0.9,
+    "jobs": {
+     "mean": 9.941,
+     "lo": 9.8105,
+     "hi": 10.0714,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 10
+   },
+   {
+    "m_ef": 0.95,
+    "jobs": {
+     "mean": 19.8911,
+     "lo": 19.5115,
+     "hi": 20.2707,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 20
+   },
+   {
+    "m_ef": 1.05,
+    "jobs": {
+     "mean": 1859.2451,
+     "lo": 1833.933,
+     "hi": 1884.5572,
+     "n": 200000
+    },
+    "capped": 18403,
+    "capped_frac": 0.092,
+    "roots": 200000,
+    "theory": null
+   },
+   {
+    "m_ef": 1.2,
+    "jobs": {
+     "mean": 6286.0659,
+     "lo": 6245.3926,
+     "hi": 6326.7393,
+     "n": 200000
+    },
+    "capped": 62822,
+    "capped_frac": 0.3141,
+    "roots": 200000,
+    "theory": null
+   },
+   {
+    "m_ef": 1.5,
+    "jobs": {
+     "mean": 11664.2113,
+     "lo": 11621.0011,
+     "hi": 11707.4214,
+     "n": 200000
+    },
+    "capped": 116631,
+    "capped_frac": 0.5832,
+    "roots": 200000,
+    "theory": null
+   }
+  ],
+  "cleanup": [
+   {
+    "d": 0,
+    "m_ef": 1.5,
+    "jobs": {
+     "mean": 11664.8154,
+     "lo": 11621.6057,
+     "hi": 11708.025,
+     "n": 200000
+    },
+    "capped": 116637,
+    "capped_frac": 0.5832,
+    "roots": 200000,
+    "theory": null
+   },
+   {
+    "d": 0.2,
+    "m_ef": 1.2,
+    "jobs": {
+     "mean": 6263.1145,
+     "lo": 6222.4818,
+     "hi": 6303.7472,
+     "n": 200000
+    },
+    "capped": 62592,
+    "capped_frac": 0.313,
+    "roots": 200000,
+    "theory": null
+   },
+   {
+    "d": 0.3,
+    "m_ef": 1.05,
+    "jobs": {
+     "mean": 1900.4926,
+     "lo": 1874.9303,
+     "hi": 1926.0548,
+     "n": 200000
+    },
+    "capped": 18811,
+    "capped_frac": 0.0941,
+    "roots": 200000,
+    "theory": null
+   },
+   {
+    "d": 0.3334,
+    "m_ef": 0.9999,
+    "jobs": {
+     "mean": 221.6776,
+     "lo": 214.1739,
+     "hi": 229.1813,
+     "n": 200000
+    },
+    "capped": 1116,
+    "capped_frac": 0.0056,
+    "roots": 200000,
+    "theory": 10000
+   },
+   {
+    "d": 0.4,
+    "m_ef": 0.9,
+    "jobs": {
+     "mean": 9.9221,
+     "lo": 9.7912,
+     "hi": 10.0531,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 10
+   },
+   {
+    "d": 0.5,
+    "m_ef": 0.75,
+    "jobs": {
+     "mean": 3.9942,
+     "lo": 3.9641,
+     "hi": 4.0242,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 4
+   }
+  ],
+  "depth": [
+   {
+    "D": 3,
+    "m_ef": 1.5,
+    "jobs": {
+     "mean": 8.1388,
+     "lo": 8.1074,
+     "hi": 8.1702,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 8.125
+   },
+   {
+    "D": 5,
+    "m_ef": 1.5,
+    "jobs": {
+     "mean": 20.8101,
+     "lo": 20.7099,
+     "hi": 20.9103,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 20.7813
+   },
+   {
+    "D": 8,
+    "m_ef": 1.5,
+    "jobs": {
+     "mean": 74.8629,
+     "lo": 74.4433,
+     "hi": 75.2825,
+     "n": 200000
+    },
+    "capped": 0,
+    "capped_frac": 0,
+    "roots": 200000,
+    "theory": 74.8867
+   }
+  ],
+  "backlog": [
+   {
+    "m_ef": 0.8,
+    "at_stop": {
+     "mean": 20.816,
+     "lo": 20.1296,
+     "hi": 21.5024,
+     "n": 500
+    },
+    "at_end": {
+     "mean": 0,
+     "lo": 0,
+     "hi": 0,
+     "n": 500
+    },
+    "empty_frac": 1,
+    "grew_frac": 0
+   },
+   {
+    "m_ef": 0.95,
+    "at_stop": {
+     "mean": 520.742,
+     "lo": 512.3477,
+     "hi": 529.1363,
+     "n": 500
+    },
+    "at_end": {
+     "mean": 0,
+     "lo": 0,
+     "hi": 0,
+     "n": 500
+    },
+    "empty_frac": 1,
+    "grew_frac": 0
+   },
+   {
+    "m_ef": 1.05,
+    "at_stop": {
+     "mean": 1486.538,
+     "lo": 1476.5109,
+     "hi": 1496.5651,
+     "n": 500
+    },
+    "at_end": {
+     "mean": 3988.174,
+     "lo": 3965.9632,
+     "hi": 4010.3848,
+     "n": 500
+    },
+    "empty_frac": 0,
+    "grew_frac": 1
+   },
+   {
+    "m_ef": 1.2,
+    "at_stop": {
+     "mean": 2963.814,
+     "lo": 2953.6831,
+     "hi": 2973.9449,
+     "n": 500
+    },
+    "at_end": {
+     "mean": 12948.688,
+     "lo": 12924.9293,
+     "hi": 12972.4467,
+     "n": 500
+    },
+    "empty_frac": 0,
+    "grew_frac": 1
+   }
+  ]
+ },
+ "tests": [
+  {
+   "id": "P1",
+   "verdict": "supported",
+   "detail": "m=0.8: 4.97 [95% CI 4.93–5.02] vs 5, capped 0; m=0.9: 9.94 [95% CI 9.81–10.07] vs 10, capped 0; m=0.95: 19.89 [95% CI 19.51–20.27] vs 20, capped 0"
+  },
+  {
+   "id": "P2",
+   "verdict": "supported",
+   "detail": "m_ef=0.8: 0.00%; m_ef=0.9: 0.00%; m_ef=0.95: 0.00%; m_ef=1.05: 9.20%; m_ef=1.2: 31.41%; m_ef=1.5: 58.32%"
+  },
+  {
+   "id": "P3",
+   "verdict": "supported",
+   "detail": "d=0.30: 9.41% capped; d=0.40: 0.00% capped, jobs 9.92 [95% CI 9.79–10.05]"
+  },
+  {
+   "id": "P4",
+   "verdict": "supported",
+   "detail": "m_ef=0.8: empty 100.0%, grew 0.0%; m_ef=0.95: empty 100.0%, grew 0.0%; m_ef=1.05: empty 0.0%, grew 100.0%; m_ef=1.2: empty 0.0%, grew 100.0%"
+  },
+  {
+   "id": "P5",
+   "verdict": "supported",
+   "detail": "D=3: 8.14 [95% CI 8.11–8.17] vs 8.13; D=5: 20.81 [95% CI 20.71–20.91] vs 20.78; D=8: 74.86 [95% CI 74.44–75.28] vs 74.89"
+  }
+ ],
+ "headline": [
+  "no cleanup m=0.8: 4.97 [95% CI 4.93–5.02] executed jobs per root (theory 5), 0.00% of roots diverge",
+  "no cleanup m=0.9: 9.94 [95% CI 9.81–10.07] executed jobs per root (theory 10), 0.00% of roots diverge",
+  "no cleanup m=0.95: 19.89 [95% CI 19.51–20.27] executed jobs per root (theory 20), 0.00% of roots diverge",
+  "no cleanup m=1.05: 9.2% of roots diverge (reach 20000 jobs)",
+  "no cleanup m=1.2: 31.4% of roots diverge (reach 20000 jobs)",
+  "no cleanup m=1.5: 58.3% of roots diverge (reach 20000 jobs)",
+  "m=1.5 cleanup d=0: m_ef 1.50, 58.3% of roots diverge",
+  "m=1.5 cleanup d=0.2: m_ef 1.20, 31.3% of roots diverge",
+  "m=1.5 cleanup d=0.3: m_ef 1.05, 9.4% of roots diverge",
+  "m=1.5 cleanup d=0.3334: m_ef 1.00, 0.6% of roots diverge",
+  "m=1.5 cleanup d=0.4: m_ef 0.90, 0.0% of roots diverge",
+  "m=1.5 cleanup d=0.5: m_ef 0.75, 0.0% of roots diverge",
+  "backlog m_ef=0.8: 21 jobs when arrivals stop, 0 after 1000 more steps",
+  "backlog m_ef=0.95: 521 jobs when arrivals stop, 0 after 1000 more steps",
+  "backlog m_ef=1.05: 1487 jobs when arrivals stop, 3988 after 1000 more steps",
+  "backlog m_ef=1.2: 2964 jobs when arrivals stop, 12949 after 1000 more steps",
+  "m=1.5 depth limit D=3: 8.14 [95% CI 8.11–8.17] executed jobs per root (theory 8.13)",
+  "m=1.5 depth limit D=5: 20.81 [95% CI 20.71–20.91] executed jobs per root (theory 20.78)",
+  "m=1.5 depth limit D=8: 74.86 [95% CI 74.44–75.28] executed jobs per root (theory 74.89)"
+ ]
+}

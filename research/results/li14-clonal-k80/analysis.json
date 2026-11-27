@@ -1,0 +1,212 @@
+{
+  "arms": {
+    "stig": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 283988,
+      "calls": 945,
+      "trunc": 1,
+      "messages": 819,
+      "meanTrajectory": [
+        140.75,
+        25.63,
+        6.88,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "clonal": {
+      "solved": 8,
+      "of": 8,
+      "finalTotal": {
+        "sum": 0,
+        "median": 0
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 0
+      },
+      "meanOut": 565348,
+      "calls": 1963,
+      "trunc": 6,
+      "messages": 791,
+      "meanTrajectory": [
+        140.75,
+        21.88,
+        2.88,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "manager": {
+      "solved": 4,
+      "of": 8,
+      "finalTotal": {
+        "sum": 16,
+        "median": 0.5
+      },
+      "finalByKind": {
+        "local": 0,
+        "directed": 0,
+        "symmetric": 16
+      },
+      "meanOut": 395904,
+      "calls": 1337,
+      "trunc": 9,
+      "messages": 0,
+      "meanTrajectory": [
+        140.75,
+        140.75,
+        109.75,
+        80.13,
+        53.25,
+        31.38,
+        23.25,
+        15.63,
+        14.13,
+        10.88,
+        9.88,
+        8,
+        7.63,
+        5.25,
+        4.88,
+        4,
+        3.5,
+        2
+      ]
+    }
+  },
+  "edgeTests": {
+    "stig_vs_manager_symmetric": {
+      "stigOnly": 16,
+      "managerOnly": 0,
+      "both": 457,
+      "neither": 0,
+      "p": 3e-05
+    },
+    "stig_vs_manager_directed": {
+      "stigOnly": 0,
+      "managerOnly": 0,
+      "both": 638,
+      "neither": 0,
+      "p": 1
+    },
+    "stig_vs_manager_all": {
+      "stigOnly": 16,
+      "managerOnly": 0,
+      "both": 1095,
+      "neither": 0,
+      "p": 3e-05
+    },
+    "clonal_vs_stig_symmetric": {
+      "clonalOnly": 0,
+      "stigOnly": 0,
+      "both": 473,
+      "neither": 0,
+      "p": 1
+    },
+    "clonal_vs_stig_directed": {
+      "clonalOnly": 0,
+      "stigOnly": 0,
+      "both": 638,
+      "neither": 0,
+      "p": 1
+    },
+    "clonal_vs_stig_all": {
+      "clonalOnly": 0,
+      "stigOnly": 0,
+      "both": 1111,
+      "neither": 0,
+      "p": 1
+    },
+    "clonal_vs_manager_symmetric": {
+      "clonalOnly": 16,
+      "managerOnly": 0,
+      "both": 457,
+      "neither": 0,
+      "p": 3e-05
+    },
+    "clonal_vs_manager_directed": {
+      "clonalOnly": 0,
+      "managerOnly": 0,
+      "both": 638,
+      "neither": 0,
+      "p": 1
+    },
+    "clonal_vs_manager_all": {
+      "clonalOnly": 16,
+      "managerOnly": 0,
+      "both": 1095,
+      "neither": 0,
+      "p": 3e-05
+    }
+  },
+  "signTests": {
+    "stig_vs_manager": {
+      "lowerIn": 4,
+      "higherIn": 0,
+      "p": 0.125
+    },
+    "clonal_vs_stig": {
+      "lowerIn": 0,
+      "higherIn": 0,
+      "p": 1
+    },
+    "clonal_vs_manager": {
+      "lowerIn": 4,
+      "higherIn": 0,
+      "p": 0.125
+    }
+  },
+  "oscillation": {
+    "stig": {
+      "bothSidesChanged": 356,
+      "stillFailingAfter": 12
+    },
+    "clonal": {
+      "bothSidesChanged": 351,
+      "stillFailingAfter": 12
+    },
+    "manager": {
+      "bothSidesChanged": 938,
+      "stillFailingAfter": 867
+    }
+  },
+  "verdict": {}
+}

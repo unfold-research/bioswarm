@@ -1,0 +1,11 @@
+{
+  "name": "@unfold/bioswarm",
+  "version": "0.1.0",
+  "description": "BioSwarm SDK: drive bio-inspired agent coordination remotely through the BioSwarm Control API.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "src/index.js",
+  "files": ["src"],
+  "bioswarm": { "protocol": "bioswarm.v1" },
+  "scripts": { "test": "node --test test/sdk.test.mjs" }
+}

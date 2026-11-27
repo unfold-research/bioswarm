@@ -1,0 +1,6 @@
+{ "id": "LI22", "prereg": "tasks/LI22-EVAPORATION-PREREG.md", "base": { "model": "claude-haiku-5-5", "effort": null, "memberMax": 8000, "managerMax": 32000, "rounds": 8, "strictFeedback": true },
+  "sizes": [{ "k": 40, "seed0": 22400, "cases": 8, "cap": 4 }],
+  "arms": ["stigwait", "stigwait_evap1", "stigwait_evap3"],
+  "hypotheses": [
+   { "id": "H-LI64", "primary": true, "a": "stigwait", "b": "stigwait_evap1", "metric": "final", "title": "Persistent traces end with fewer failing checks than traces that evaporate after one wave" },
+   { "id": "H-LI65", "a": "stigwait_evap3", "b": "stigwait_evap1", "metric": "final", "title": "Traces lasting three waves end below traces lasting one" } ] }

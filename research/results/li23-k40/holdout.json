@@ -1,0 +1,52 @@
+{
+  "stigwait": {
+    "solvedInRun": 8,
+    "passHoldout": 8,
+    "failing": [],
+    "perCase": {
+      "k40s23400": 0,
+      "k40s23401": 0,
+      "k40s23402": 0,
+      "k40s23403": 0,
+      "k40s23404": 0,
+      "k40s23405": 0,
+      "k40s23406": 0,
+      "k40s23407": 0
+    }
+  },
+  "manager": {
+    "solvedInRun": 0,
+    "passHoldout": 0,
+    "failing": [],
+    "perCase": {
+      "k40s23400": 1,
+      "k40s23401": 4,
+      "k40s23402": 4,
+      "k40s23403": 4,
+      "k40s23404": 8,
+      "k40s23405": 5,
+      "k40s23406": 6,
+      "k40s23407": 8
+    }
+  },
+  "routed": {
+    "solvedInRun": 6,
+    "passHoldout": 2,
+    "failing": [
+      "k40s23400 D:M1.siftName>M35.stampTitle",
+      "k40s23403 D:M26.tuneHandle>M39.traceNote",
+      "k40s23405 D:M37.rankSku>M36.gaugeSlug",
+      "k40s23406 D:M18.labelName>M1.mintTerm"
+    ],
+    "perCase": {
+      "k40s23400": 1,
+      "k40s23401": 3,
+      "k40s23402": 0,
+      "k40s23403": 1,
+      "k40s23404": 1,
+      "k40s23405": 1,
+      "k40s23406": 1,
+      "k40s23407": 0
+    }
+  }
+}

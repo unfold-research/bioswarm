@@ -1,0 +1,60 @@
+{
+  "study": "i1-transplant-review-sonnet",
+  "configHash": "de19e3fb287f8e1245fb0554c438230d2f33e9ab9385b5042a5c735ad45afc47",
+  "status": "complete",
+  "wavesRun": 1,
+  "family": "review",
+  "arms": {
+    "none": {
+      "effect": 3,
+      "verdictRecovered": 3,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "native": {
+      "effect": 8,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "transplant": {
+      "effect": 8,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "peer": {
+      "effect": 0,
+      "verdictRecovered": 0,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    },
+    "deliberate": {
+      "effect": 8,
+      "verdictRecovered": 8,
+      "wrongFirings": 0,
+      "cleanOk": 8,
+      "genuineOk": 8,
+      "invalid": 0,
+      "truncated": 0,
+      "perType": 8
+    }
+  },
+  "finishedAt": "2026-11-11T05:30:17.987Z"
+}

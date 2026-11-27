@@ -1,0 +1,325 @@
+{
+  "decision": {
+    "pooled": {
+      "1": 0.7916666666666666,
+      "2": 0.6458333333333334,
+      "4": 0.4583333333333333,
+      "8": 0.375,
+      "16": 0.2708333333333333
+    },
+    "small": null,
+    "middle": null,
+    "large": null,
+    "verdict": "not-at-ceiling: one agent of this kind is not at ceiling even on one shard; the single-agent arm is revised"
+  },
+  "expectations": {
+    "P1": {
+      "rightOf36At16": 1,
+      "holds": true
+    },
+    "P2": {
+      "globalMaxBySize": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "holds": true
+    },
+    "P3": {
+      "declaredEstimateBySize": [
+        0,
+        0,
+        1,
+        11,
+        11
+      ],
+      "holds": true
+    }
+  },
+  "bySize": [
+    {
+      "M": 1,
+      "right": 38,
+      "n": 48,
+      "share": 0.792,
+      "declaredEstimate": 0,
+      "outputTokens": 151
+    },
+    {
+      "M": 2,
+      "right": 31,
+      "n": 48,
+      "share": 0.646,
+      "declaredEstimate": 0,
+      "outputTokens": 271
+    },
+    {
+      "M": 4,
+      "right": 22,
+      "n": 48,
+      "share": 0.458,
+      "declaredEstimate": 1,
+      "outputTokens": 482
+    },
+    {
+      "M": 8,
+      "right": 18,
+      "n": 48,
+      "share": 0.375,
+      "declaredEstimate": 11,
+      "outputTokens": 737
+    },
+    {
+      "M": 16,
+      "right": 13,
+      "n": 48,
+      "share": 0.271,
+      "declaredEstimate": 11,
+      "outputTokens": 886
+    }
+  ],
+  "cells": [
+    {
+      "task": "I-01",
+      "M": 1,
+      "n": 12,
+      "right": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 412,
+      "outputTokens": 93
+    },
+    {
+      "task": "I-01",
+      "M": 2,
+      "n": 12,
+      "right": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 473,
+      "outputTokens": 103
+    },
+    {
+      "task": "I-01",
+      "M": 4,
+      "n": 12,
+      "right": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 589,
+      "outputTokens": 76
+    },
+    {
+      "task": "I-01",
+      "M": 8,
+      "n": 12,
+      "right": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 820,
+      "outputTokens": 110
+    },
+    {
+      "task": "I-01",
+      "M": 16,
+      "n": 12,
+      "right": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 1282,
+      "outputTokens": 136
+    },
+    {
+      "task": "I-05",
+      "M": 1,
+      "n": 12,
+      "right": 12,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0,
+      "inputTokens": 435,
+      "outputTokens": 218
+    },
+    {
+      "task": "I-05",
+      "M": 2,
+      "n": 12,
+      "right": 9,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 0.3333333333333333,
+      "inputTokens": 503,
+      "outputTokens": 259
+    },
+    {
+      "task": "I-05",
+      "M": 4,
+      "n": 12,
+      "right": 5,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 1.1666666666666667,
+      "inputTokens": 639,
+      "outputTokens": 595
+    },
+    {
+      "task": "I-05",
+      "M": 8,
+      "n": 12,
+      "right": 3,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 2.6666666666666665,
+      "inputTokens": 911,
+      "outputTokens": 1035
+    },
+    {
+      "task": "I-05",
+      "M": 16,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 2,
+      "meanAbsError": 38.333333333333336,
+      "inputTokens": 1456,
+      "outputTokens": 1338
+    },
+    {
+      "task": "I-06",
+      "M": 1,
+      "n": 12,
+      "right": 5,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 12.333333333333334,
+      "inputTokens": 408,
+      "outputTokens": 156
+    },
+    {
+      "task": "I-06",
+      "M": 2,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 31.5,
+      "inputTokens": 456,
+      "outputTokens": 334
+    },
+    {
+      "task": "I-06",
+      "M": 4,
+      "n": 12,
+      "right": 2,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 39,
+      "inputTokens": 552,
+      "outputTokens": 571
+    },
+    {
+      "task": "I-06",
+      "M": 8,
+      "n": 12,
+      "right": 2,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 50,
+      "inputTokens": 744,
+      "outputTokens": 1047
+    },
+    {
+      "task": "I-06",
+      "M": 16,
+      "n": 12,
+      "right": 0,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 79.66666666666667,
+      "inputTokens": 1128,
+      "outputTokens": 1957
+    },
+    {
+      "task": "III-22",
+      "M": 1,
+      "n": 12,
+      "right": 9,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 7.75,
+      "inputTokens": 481,
+      "outputTokens": 138
+    },
+    {
+      "task": "III-22",
+      "M": 2,
+      "n": 12,
+      "right": 10,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 0,
+      "meanAbsError": 2.0833333333333335,
+      "inputTokens": 539,
+      "outputTokens": 387
+    },
+    {
+      "task": "III-22",
+      "M": 4,
+      "n": 12,
+      "right": 3,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 1,
+      "meanAbsError": 105.08333333333333,
+      "inputTokens": 655,
+      "outputTokens": 687
+    },
+    {
+      "task": "III-22",
+      "M": 8,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 11,
+      "meanAbsError": 12.833333333333334,
+      "inputTokens": 887,
+      "outputTokens": 754
+    },
+    {
+      "task": "III-22",
+      "M": 16,
+      "n": 12,
+      "right": 1,
+      "truncated": 0,
+      "invalid": 0,
+      "declaredEstimate": 9,
+      "meanAbsError": 18.416666666666668,
+      "inputTokens": 1351,
+      "outputTokens": 113
+    }
+  ]
+}

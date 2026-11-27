@@ -1,0 +1,66 @@
+{
+  "study": "i8-merge-sonnet",
+  "configHash": "cf1f1e89cbc8f21d714734f25d2eb4b643b4ed104dca13ab0a9f1c62df29e7d8",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "solo": {
+      "effect": 16,
+      "escalated": 0,
+      "branchCorrect": 10,
+      "casesOnZero": 6,
+      "escalatedOnZero": 0,
+      "effectOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "rival": {
+      "effect": 2,
+      "escalated": 14,
+      "branchCorrect": 6,
+      "casesOnZero": 6,
+      "escalatedOnZero": 5,
+      "effectOffZero": 1,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "merged": {
+      "effect": 16,
+      "escalated": 0,
+      "branchCorrect": 10,
+      "casesOnZero": 6,
+      "escalatedOnZero": 0,
+      "effectOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "refused": {
+      "effect": 16,
+      "escalated": 0,
+      "branchCorrect": 10,
+      "casesOnZero": 6,
+      "escalatedOnZero": 0,
+      "effectOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    },
+    "branch": {
+      "effect": 10,
+      "escalated": 6,
+      "branchCorrect": 16,
+      "casesOnZero": 6,
+      "escalatedOnZero": 6,
+      "effectOffZero": 10,
+      "wrongFirings": 0,
+      "invalid": 0
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported",
+    "P4": "supported",
+    "P5": "supported"
+  },
+  "finishedAt": "2026-11-11T13:25:47.260Z"
+}

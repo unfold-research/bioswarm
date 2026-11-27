@@ -1,0 +1,991 @@
+{
+  "study": "d4-marks",
+  "configHash": "2bf89cb4bcbd1cb3e63a20738595ea849a71cfbfd7776a372dbdce67ab5ba7ad",
+  "status": "complete",
+  "wavesRun": 7,
+  "variant": "marks",
+  "accuracy": {
+    "stable": 1,
+    "edited": 0.5833333333333334
+  },
+  "editedPartsReread": 1.5166666666666666,
+  "distinctPartsReread": 5.866666666666666,
+  "alarmsPerCollection": {
+    "stable": 0,
+    "edited": 1.6
+  },
+  "choices": {
+    "total": 720,
+    "unusable": 1,
+    "elsewhere": 0.004166666666666667,
+    "toAlreadyRecounted": 0,
+    "withAChangedPartInView": 77,
+    "ofThoseToAFreshNeighbourOfIt": 0.8961038961038961
+  },
+  "readCalls": 1440,
+  "chooseCalls": 720,
+  "readsExact": 0.9881944444444445,
+  "perTask": [
+    {
+      "seed": 28001,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28001,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28002,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28002,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28003,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28003,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28004,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28004,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28005,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28005,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28006,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28006,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 4,
+      "alarms": 3
+    },
+    {
+      "seed": 28007,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28007,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28008,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28008,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28009,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28009,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28010,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28010,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28011,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28011,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28012,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28012,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 5,
+      "alarms": 0
+    },
+    {
+      "seed": 28013,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28013,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28014,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28014,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28015,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28015,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28016,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28016,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28017,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28017,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28018,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28018,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28019,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28019,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28020,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28020,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28021,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28021,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28022,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28022,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28023,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28023,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28024,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28024,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 5,
+      "alarms": 0
+    },
+    {
+      "seed": 28025,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28025,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28026,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28026,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28027,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28027,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 4,
+      "alarms": 3
+    },
+    {
+      "seed": 28028,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28028,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28029,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28029,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28030,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28030,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28031,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 5,
+      "alarms": 0
+    },
+    {
+      "seed": 28031,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28032,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28032,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28033,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28033,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28034,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28034,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28035,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28035,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28036,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28036,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28037,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28037,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28038,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28038,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28039,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28039,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28040,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28040,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28041,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 5,
+      "alarms": 0
+    },
+    {
+      "seed": 28041,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 5,
+      "alarms": 4
+    },
+    {
+      "seed": 28042,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28042,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28043,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28043,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28044,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28044,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28045,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28045,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 4,
+      "alarms": 3
+    },
+    {
+      "seed": 28046,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28046,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28047,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28047,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28048,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28048,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28049,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28049,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28050,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28050,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28051,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28051,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28052,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28052,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28053,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28053,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 2
+    },
+    {
+      "seed": 28054,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28054,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 4,
+      "alarms": 3
+    },
+    {
+      "seed": 28055,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 5,
+      "alarms": 0
+    },
+    {
+      "seed": 28055,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28056,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28056,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28057,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28057,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28058,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 2,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28058,
+      "cond": 1,
+      "correct": 1,
+      "editedPartsReread": 3,
+      "distinctPartsReread": 6,
+      "alarms": 3
+    },
+    {
+      "seed": 28059,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 4,
+      "alarms": 0
+    },
+    {
+      "seed": 28059,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    },
+    {
+      "seed": 28060,
+      "cond": 0,
+      "correct": 1,
+      "editedPartsReread": 0,
+      "distinctPartsReread": 6,
+      "alarms": 0
+    },
+    {
+      "seed": 28060,
+      "cond": 1,
+      "correct": 0,
+      "editedPartsReread": 1,
+      "distinctPartsReread": 6,
+      "alarms": 1
+    }
+  ],
+  "finishedAt": "2026-11-11T20:50:19.345Z"
+}

@@ -1,0 +1,664 @@
+{
+  "run": "li39-colony-wait-k160-wait-s39405",
+  "exportedAt": 1795255997534,
+  "agents": [
+    {
+      "id": "agent-1",
+      "name": "wait k160 s39405 li39-colony-wait-k160 1",
+      "model": {
+        "provider": "openai-codex",
+        "model": "gpt-6-luna"
+      },
+      "permission": "standard",
+      "policy": null,
+      "field": "wait",
+      "antLimits": {
+        "cycle": 200,
+        "pair": 60,
+        "peer": false
+      },
+      "fieldTraces": [
+        {
+          "id": "r1",
+          "path": "src/m99.js",
+          "from": "formiga-4",
+          "owner": "formiga-3",
+          "at": 1795254681992,
+          "open": false,
+          "kind": "claim",
+          "seenAt": 1795254867803,
+          "resolvedAt": null,
+          "need": "<placeholder>"
+        },
+        {
+          "id": "r17",
+          "path": "src/m124.js",
+          "from": "formiga-3",
+          "owner": "formiga-4",
+          "at": 1795254726410,
+          "open": false,
+          "kind": "need",
+          "seenAt": null,
+          "resolvedAt": 1795255314627,
+          "need": "<placeholder>"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "task-main",
+          "title": "wait k160 s39405 li39-colony-wait-k160 1",
+          "status": "done",
+          "ant": null,
+          "main": true,
+          "tokens": {
+            "inputTokens": 484696,
+            "cachedInputTokens": 13950848,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 29831,
+            "reasoningOutputTokens": 0,
+            "totalTokens": 14465375
+          },
+          "startedAt": 1795255787319,
+          "endedAt": 1795255793424,
+          "turns": [
+            {
+              "turn": "turn-1",
+              "trigger": "person",
+              "from": null,
+              "status": "done",
+              "durationMs": 31915,
+              "firstEventMs": 565,
+              "tokens": {
+                "inputTokens": 15822,
+                "cachedInputTokens": 35200,
+                "cacheWriteInputTokens": 0,
+                "outputTokens": 1395,
+                "reasoningOutputTokens": 0,
+                "totalTokens": 52417
+              },
+              "provider": "openai-codex",
+              "model": "gpt-6-luna",
+              "at": 1795254233028
+            }
+          ],
+          "calls": [
+            {
+              "tool": "colony_plan",
+              "type": "dynamicToolCall",
+              "status": "completed",
+              "exitCode": null,
+              "durationMs": 4,
+              "outputChars": null,
+              "turn": "turn-1",
+              "at": 1795254203874
+            },
+            {
+              "tool": "commandExecution",
+              "type": "commandExecution",
+              "status": "completed",
+              "exitCode": 0,
+              "durationMs": 35,
+              "outputChars": 690,
+              "turn": "turn-1",
+              "at": 1795254205610
+            }
+          ],
+          "tools": [
+            {
+              "at": 1795254260705,
+              "tool": "ant_send",
+              "input": "<placeholder>",
+              "blocked": null,
+              "endedAt": 1795254260741,
+              "isError": false,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254293454,
+              "tool": "bash",
+              "input": {
+                "command": "node test/run.mjs --json"
+              },
+              "blocked": null,
+              "endedAt": 1795254294597,
+              "isError": true,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254353740,
+              "tool": "bash",
+              "input": {
+                "command": "node test/run.mjs --json"
+              },
+              "blocked": null,
+              "endedAt": 1795254354640,
+              "isError": true,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            }
+          ],
+          "field": [
+            {
+              "at": 1795254760244,
+              "type": "field-read",
+              "kind": "field-read",
+              "task": "task-main",
+              "agent": "agent-1",
+              "project": "project-1",
+              "open": [
+                "r17",
+                "r18",
+                "r19",
+                "r20",
+                "r21",
+                "r22"
+              ],
+              "claims": [
+                "r1",
+                "r2",
+                "r3",
+                "r4",
+                "r5",
+                "r6",
+                "r7",
+                "r8",
+                "r9",
+                "r10",
+                "r11",
+                "r12",
+                "r13",
+                "r14",
+                "r15",
+                "r16"
+              ]
+            }
+          ],
+          "context": {
+            "last": {
+              "window": 272000,
+              "tokens": 135805,
+              "percent": 49.9,
+              "categories": {
+                "systemPrompt": 1631,
+                "tools": 3987,
+                "messages": 87185,
+                "toolCalls": 3020,
+                "toolResults": 24625,
+                "images": 0
+              },
+              "messageCount": 100
+            },
+            "peakPercent": 58.2,
+            "snapshots": 33,
+            "compactions": [
+              {
+                "at": 1795254782500,
+                "reason": "threshold",
+                "tokensBefore": 165134,
+                "tokensAfter": 14015,
+                "failed": false
+              },
+              {
+                "at": 1795255234052,
+                "reason": "threshold",
+                "tokensBefore": 165007,
+                "tokensAfter": 29011,
+                "failed": false
+              }
+            ]
+          },
+          "answer": "<placeholder>",
+          "messages": [
+            {
+              "role": "assistant",
+              "at": null,
+              "text": "<placeholder>"
+            },
+            {
+              "role": "user",
+              "at": 1795254201114,
+              "text": "<placeholder>"
+            }
+          ]
+        },
+        {
+          "id": "task-ant-1",
+          "title": "formiga-2 · <placeholder>",
+          "status": "done",
+          "ant": {
+            "name": "formiga-2",
+            "caste": "worker",
+            "role": "<placeholder>",
+            "parent": "task-main"
+          },
+          "main": false,
+          "tokens": {
+            "inputTokens": 147804,
+            "cachedInputTokens": 9871616,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 25636,
+            "reasoningOutputTokens": 0,
+            "totalTokens": 10045056
+          },
+          "startedAt": 1795255639827,
+          "endedAt": 1795255674019,
+          "turns": [
+            {
+              "turn": "turn-2",
+              "trigger": "ant",
+              "from": "task-main",
+              "status": "done",
+              "durationMs": 90785,
+              "firstEventMs": 501,
+              "tokens": {
+                "inputTokens": 32572,
+                "cachedInputTokens": 257152,
+                "cacheWriteInputTokens": 0,
+                "outputTokens": 3413,
+                "reasoningOutputTokens": 0,
+                "totalTokens": 293137
+              },
+              "provider": "openai-codex",
+              "model": "gpt-6-luna",
+              "at": 1795254308193
+            }
+          ],
+          "calls": [
+            {
+              "tool": "field_read",
+              "type": "dynamicToolCall",
+              "status": "completed",
+              "exitCode": null,
+              "durationMs": 25,
+              "outputChars": null,
+              "turn": "turn-2",
+              "at": 1795254218809
+            },
+            {
+              "tool": "commandExecution",
+              "type": "commandExecution",
+              "status": "completed",
+              "exitCode": 0,
+              "durationMs": 31,
+              "outputChars": 25,
+              "turn": "turn-2",
+              "at": 1795254220137
+            }
+          ],
+          "tools": [
+            {
+              "at": 1795254260437,
+              "tool": "bash",
+              "input": {
+                "command": "<placeholder>"
+              },
+              "blocked": null,
+              "endedAt": 1795254260474,
+              "isError": true,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254289753,
+              "tool": "bash",
+              "input": {
+                "command": "node test/run.mjs --json"
+              },
+              "blocked": null,
+              "endedAt": 1795254290137,
+              "isError": false,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254295186,
+              "tool": "ant_send",
+              "input": "<placeholder>",
+              "blocked": null,
+              "endedAt": 1795254295220,
+              "isError": false,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254351160,
+              "tool": "write",
+              "input": {
+                "path": "/tmp/add.js",
+                "chars": 993,
+                "functions": [
+                  "$"
+                ]
+              },
+              "blocked": "Esse arquivo não é seu <placeholder>"
+            },
+            {
+              "at": 1795255319621,
+              "tool": "edit",
+              "input": {
+                "path": "src/m75.js",
+                "edits": 2,
+                "chars": 379,
+                "functions": [
+                  "hatchUnit",
+                  "pivotFrame"
+                ],
+                "changes": [
+                  {
+                    "old": "<placeholder>",
+                    "new": "<placeholder>"
+                  },
+                  {
+                    "old": "<placeholder>",
+                    "new": "<placeholder>"
+                  }
+                ]
+              },
+              "blocked": null,
+              "endedAt": 1795255319625,
+              "isError": false,
+              "out": "<placeholder>",
+              "path": "src/m75.js",
+              "sha": "574882f7cd20"
+            }
+          ],
+          "field": [
+            {
+              "at": 1795254218786,
+              "type": "field-read",
+              "kind": "field-read",
+              "task": "task-ant-1",
+              "agent": "agent-1",
+              "project": "project-1",
+              "ant": "formiga-2",
+              "caste": "worker",
+              "open": [],
+              "claims": []
+            }
+          ],
+          "context": {
+            "last": {
+              "window": 272000,
+              "tokens": 131601,
+              "percent": 48.4,
+              "categories": {
+                "systemPrompt": 1442,
+                "tools": 3987,
+                "messages": 24892,
+                "toolCalls": 11588,
+                "toolResults": 60542,
+                "images": 0
+              },
+              "messageCount": 258
+            },
+            "peakPercent": 48.4,
+            "snapshots": 11,
+            "compactions": []
+          },
+          "answer": "<placeholder>",
+          "messages": [
+            {
+              "role": "user",
+              "at": 1795254217409,
+              "text": "<placeholder>"
+            },
+            {
+              "role": "user",
+              "at": 1795254827734,
+              "text": "[Rastro no campo de formiga-3, sobre src/m72.js (id r20)] <placeholder>"
+            },
+            {
+              "role": "assistant",
+              "at": 1795255671404,
+              "text": "<placeholder>"
+            }
+          ]
+        },
+        {
+          "id": "task-ant-2",
+          "title": "formiga-1 · <placeholder>",
+          "status": "done",
+          "ant": {
+            "name": "formiga-1",
+            "caste": "worker",
+            "role": "<placeholder>",
+            "parent": "task-main"
+          },
+          "main": false,
+          "tokens": {
+            "inputTokens": 275126,
+            "cachedInputTokens": 9872768,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 23842,
+            "reasoningOutputTokens": 0,
+            "totalTokens": 10171736
+          },
+          "startedAt": 1795255286948,
+          "endedAt": 1795255384636,
+          "turns": [
+            {
+              "turn": "turn-3",
+              "trigger": "ant",
+              "from": "task-main",
+              "status": "done",
+              "durationMs": 51440,
+              "firstEventMs": 418,
+              "tokens": {
+                "inputTokens": 42363,
+                "cachedInputTokens": 197248,
+                "cacheWriteInputTokens": 0,
+                "outputTokens": 1873,
+                "reasoningOutputTokens": 0,
+                "totalTokens": 241484
+              },
+              "provider": "openai-codex",
+              "model": "gpt-6-luna",
+              "at": 1795254263046
+            }
+          ],
+          "calls": [
+            {
+              "tool": "commandExecution",
+              "type": "commandExecution",
+              "status": "completed",
+              "exitCode": 0,
+              "durationMs": 47,
+              "outputChars": 25,
+              "turn": "turn-3",
+              "at": 1795254213128
+            },
+            {
+              "tool": "commandExecution",
+              "type": "commandExecution",
+              "status": "completed",
+              "exitCode": 0,
+              "durationMs": 129,
+              "outputChars": 450331,
+              "turn": "turn-3",
+              "at": 1795254214966
+            }
+          ],
+          "tools": [
+            {
+              "at": 1795254225507,
+              "tool": "bash",
+              "input": {
+                "command": "node test/run.mjs --json"
+              },
+              "blocked": null,
+              "endedAt": 1795254225592,
+              "isError": false,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254245503,
+              "tool": "bash",
+              "input": {
+                "command": "<placeholder>"
+              },
+              "blocked": null,
+              "endedAt": 1795254245893,
+              "isError": true,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254251508,
+              "tool": "ant_send",
+              "input": "<placeholder>",
+              "blocked": null,
+              "endedAt": 1795254251543,
+              "isError": false,
+              "out": "<placeholder>",
+              "path": null,
+              "sha": null
+            },
+            {
+              "at": 1795254817117,
+              "tool": "edit",
+              "input": {
+                "path": "src/m14.js",
+                "edits": 1,
+                "chars": 233,
+                "functions": [
+                  "encodeAccount"
+                ],
+                "changes": [
+                  {
+                    "old": "<placeholder>",
+                    "new": "<placeholder>"
+                  }
+                ]
+              },
+              "blocked": null,
+              "endedAt": 1795254817120,
+              "isError": false,
+              "out": "<placeholder>",
+              "path": "src/m14.js",
+              "sha": "4af2bacfb12d"
+            }
+          ],
+          "field": [
+            {
+              "at": 1795254814854,
+              "type": "field-read",
+              "kind": "field-read",
+              "task": "task-ant-2",
+              "agent": "agent-1",
+              "project": "project-1",
+              "ant": "formiga-1",
+              "caste": "worker",
+              "open": [
+                "r19"
+              ],
+              "claims": []
+            }
+          ],
+          "context": {
+            "last": {
+              "window": 272000,
+              "tokens": 116193,
+              "percent": 42.7,
+              "categories": {
+                "systemPrompt": 1440,
+                "tools": 3987,
+                "messages": 22469,
+                "toolCalls": 10699,
+                "toolResults": 56818,
+                "images": 0
+              },
+              "messageCount": 257
+            },
+            "peakPercent": 42.7,
+            "snapshots": 11,
+            "compactions": []
+          },
+          "answer": "<placeholder>",
+          "messages": [
+            {
+              "role": "user",
+              "at": 1795254211606,
+              "text": "<placeholder>"
+            },
+            {
+              "role": "user",
+              "at": 1795254793539,
+              "text": "[Rastro no campo de formiga-3, sobre src/m14.js (id r19)] <placeholder>"
+            },
+            {
+              "role": "assistant",
+              "at": 1795255382531,
+              "text": "<placeholder>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "calls": 6,
+    "agents": 1,
+    "turns": 3,
+    "tokens": 34682167,
+    "ants": 2,
+    "antMessages": 2,
+    "personTurns": 1
+  },
+  "ants": {
+    "spawns": [
+      {
+        "at": 1795254211598,
+        "by": "task-main",
+        "ant": "task-ant-2",
+        "caste": "worker"
+      },
+      {
+        "at": 1795254217398,
+        "by": "task-main",
+        "ant": "task-ant-1",
+        "caste": "worker"
+      }
+    ],
+    "messages": [
+      {
+        "at": 1795254251509,
+        "from": "task-ant-2",
+        "to": "task-main",
+        "chars": 451,
+        "queued": false
+      },
+      {
+        "at": 1795254260706,
+        "from": "task-main",
+        "to": "task-ant-2",
+        "chars": 217,
+        "queued": true
+      }
+    ],
+    "deliveries": [
+      {
+        "at": 1795254211599,
+        "to": "task-ant-2",
+        "from": "task-main",
+        "waitedMs": 0
+      },
+      {
+        "at": 1795254217399,
+        "to": "task-ant-1",
+        "from": "task-main",
+        "waitedMs": 0
+      }
+    ]
+  }
+}

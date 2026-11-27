@@ -1,0 +1,1182 @@
+{
+  "study": "pd1-plan-haiku",
+  "configHash": "4d6ec583b3abf4da27bd59c350ccfdb57f9c108517065a012ddaf08557d51242",
+  "status": "complete",
+  "wavesRun": 1,
+  "plans": 90,
+  "invalid": 0,
+  "truncated": 0,
+  "perCell": [
+    {
+      "customId": "pd1-none-k0-r0",
+      "domain": null,
+      "k": 0,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r1",
+      "domain": null,
+      "k": 0,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r2",
+      "domain": null,
+      "k": 0,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r3",
+      "domain": null,
+      "k": 0,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r4",
+      "domain": null,
+      "k": 0,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "source",
+        "follow_limit": 1,
+        "probe": "spread_source"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r5",
+      "domain": null,
+      "k": 0,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r6",
+      "domain": null,
+      "k": 0,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r7",
+      "domain": null,
+      "k": 0,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r8",
+      "domain": null,
+      "k": 0,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-none-k0-r9",
+      "domain": null,
+      "k": 0,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r0",
+      "domain": "ring",
+      "k": 1,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r1",
+      "domain": "ring",
+      "k": 1,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r2",
+      "domain": "ring",
+      "k": 1,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r3",
+      "domain": "ring",
+      "k": 1,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r4",
+      "domain": "ring",
+      "k": 1,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r5",
+      "domain": "ring",
+      "k": 1,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r6",
+      "domain": "ring",
+      "k": 1,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r7",
+      "domain": "ring",
+      "k": 1,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r8",
+      "domain": "ring",
+      "k": 1,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k1-r9",
+      "domain": "ring",
+      "k": 1,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r0",
+      "domain": "ring",
+      "k": 4,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r1",
+      "domain": "ring",
+      "k": 4,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r2",
+      "domain": "ring",
+      "k": 4,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r3",
+      "domain": "ring",
+      "k": 4,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r4",
+      "domain": "ring",
+      "k": 4,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r5",
+      "domain": "ring",
+      "k": 4,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r6",
+      "domain": "ring",
+      "k": 4,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r7",
+      "domain": "ring",
+      "k": 4,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r8",
+      "domain": "ring",
+      "k": 4,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-ring-k4-r9",
+      "domain": "ring",
+      "k": 4,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r0",
+      "domain": "source",
+      "k": 1,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "source",
+        "follow_limit": 3,
+        "probe": "spread_source"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r1",
+      "domain": "source",
+      "k": 1,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "source",
+        "follow_limit": 3,
+        "probe": "spread_source"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r2",
+      "domain": "source",
+      "k": 1,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r3",
+      "domain": "source",
+      "k": 1,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "source",
+        "follow_limit": 3,
+        "probe": "spread_source"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r4",
+      "domain": "source",
+      "k": 1,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "source",
+        "follow_limit": 3,
+        "probe": "spread_source"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r5",
+      "domain": "source",
+      "k": 1,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r6",
+      "domain": "source",
+      "k": 1,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r7",
+      "domain": "source",
+      "k": 1,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r8",
+      "domain": "source",
+      "k": 1,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k1-r9",
+      "domain": "source",
+      "k": 1,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "source",
+        "follow_limit": 3,
+        "probe": "spread_source"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r0",
+      "domain": "source",
+      "k": 4,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r1",
+      "domain": "source",
+      "k": 4,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r2",
+      "domain": "source",
+      "k": 4,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r3",
+      "domain": "source",
+      "k": 4,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r4",
+      "domain": "source",
+      "k": 4,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r5",
+      "domain": "source",
+      "k": 4,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r6",
+      "domain": "source",
+      "k": 4,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r7",
+      "domain": "source",
+      "k": 4,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r8",
+      "domain": "source",
+      "k": 4,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-source-k4-r9",
+      "domain": "source",
+      "k": 4,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r0",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r1",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r2",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "shelf",
+        "follow_limit": 3,
+        "probe": "spread_shelf"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r3",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r4",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r5",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r6",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r7",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r8",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k1-r9",
+      "domain": "shelf",
+      "k": 1,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r0",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r1",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r2",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r3",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r4",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r5",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r6",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r7",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r8",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-shelf-k4-r9",
+      "domain": "shelf",
+      "k": 4,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r0",
+      "domain": "batch",
+      "k": 1,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r1",
+      "domain": "batch",
+      "k": 1,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r2",
+      "domain": "batch",
+      "k": 1,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r3",
+      "domain": "batch",
+      "k": 1,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 6,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r4",
+      "domain": "batch",
+      "k": 1,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 2,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r5",
+      "domain": "batch",
+      "k": 1,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 2,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r6",
+      "domain": "batch",
+      "k": 1,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r7",
+      "domain": "batch",
+      "k": 1,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 2,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r8",
+      "domain": "batch",
+      "k": 1,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 2,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k1-r9",
+      "domain": "batch",
+      "k": 1,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 3,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r0",
+      "domain": "batch",
+      "k": 4,
+      "rep": 0,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r1",
+      "domain": "batch",
+      "k": 4,
+      "rep": 1,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 2,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r2",
+      "domain": "batch",
+      "k": 4,
+      "rep": 2,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r3",
+      "domain": "batch",
+      "k": 4,
+      "rep": 3,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "none",
+        "follow_limit": 1,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r4",
+      "domain": "batch",
+      "k": 4,
+      "rep": 4,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "in_order"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r5",
+      "domain": "batch",
+      "k": 4,
+      "rep": 5,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r6",
+      "domain": "batch",
+      "k": 4,
+      "rep": 6,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 3,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r7",
+      "domain": "batch",
+      "k": 4,
+      "rep": 7,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r8",
+      "domain": "batch",
+      "k": 4,
+      "rep": 8,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "batch",
+        "follow_limit": 2,
+        "probe": "spread_batch"
+      }
+    },
+    {
+      "customId": "pd1-batch-k4-r9",
+      "domain": "batch",
+      "k": 4,
+      "rep": 9,
+      "valid": true,
+      "truncated": false,
+      "policy": {
+        "follow": "ring",
+        "follow_limit": 2,
+        "probe": "spread_ring"
+      }
+    }
+  ],
+  "finishedAt": "2026-11-12T06:21:04.087Z"
+}

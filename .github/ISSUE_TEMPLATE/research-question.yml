@@ -1,0 +1,31 @@
+name: Research question
+description: Question a result, report a problem in a study or propose a replication.
+labels: [research]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Which result?
+      description: A belief in FINDINGS.md, a hypothesis (H-…), or a study (LI…, CY…, GN…).
+      placeholder: "Belief 7, H-LI127, results/li42-k160/REPORT.md"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What do you see?
+      description: What looks wrong, missing or overstated, with evidence (data, code, citations).
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What would settle it?
+      description: The study, analysis or data that would confirm or change the result.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Before sending
+      options:
+        - label: This contains no secrets, spending figures or personal data.
+          required: true

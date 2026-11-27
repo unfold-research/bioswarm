@@ -1,0 +1,931 @@
+{
+  "revision": "993b7de2698942531fd9b59f090b23755e2d4184",
+  "hashes": {
+    "runs.jsonl": "825ed5cc647134cc581d806839cafa4325c41ddfb36540a97d7b5842bf69a307",
+    "masked-verdicts.json": "6c68b406a8b5adc95c7810055d76a224079348cd8462b3321a198ea17d90d10c",
+    "facts.json": "e26f9c448e61a905d184408e0a92ad81c7ce761cca06bb361d19f138ae94599b",
+    "integrity.json": "0e2839ac210616abf9e30a112f070292e93f925e78ce40a3311df7f19ab41068",
+    "blindBatchManifest": "7870ff3bbe149c8fda544d6844660a4789ecb443c90c51933178f7cb3d3ff51c",
+    "calibration": "43907d6590df56f238dd0109310fe4c4c8a46c9bb36cc7d7184537ed87c93ced"
+  },
+  "paired": true,
+  "judged": true,
+  "hypotheses": {
+    "R01": "inconclusiva",
+    "R02": "refutada",
+    "R03": "inconclusiva"
+  },
+  "primary": "inconclusiva",
+  "sensitivity": "inconclusiva",
+  "ft1": false,
+  "wins": 0,
+  "faster": 0,
+  "noSlower": 0,
+  "onlyB": 1,
+  "onlyC": 2,
+  "totals": {
+    "B": {
+      "attempts": 4,
+      "accepts": 2,
+      "incidents": 0,
+      "incidental": 0,
+      "withIncidents": 1.1517468,
+      "waves": 15,
+      "postFirstDisputes": 0,
+      "meanTopShare": 0.45203357364057095,
+      "meanPeerBarrierSeconds": 36.50180000000001,
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 0,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 0,
+        "toolErrors": 0
+      },
+      "observedWallSeconds": 1366.665,
+      "totalSeconds": 1584.238,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      }
+    },
+    "C": {
+      "attempts": 4,
+      "accepts": 3,
+      "incidents": 0,
+      "incidental": 0,
+      "withIncidents": 1.142322,
+      "waves": 17,
+      "postFirstDisputes": 3,
+      "meanTopShare": 0.4538496263411785,
+      "meanPeerBarrierSeconds": 42.46714705882353,
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 1,
+        "refusedWrites": 19,
+        "blockedWrites": 1,
+        "writesAfterRefusal": 40,
+        "toolErrors": 0
+      },
+      "observedWallSeconds": 1877.412,
+      "totalSeconds": 2102.617,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      }
+    }
+  },
+  "differences": [
+    {
+      "seed": 5011,
+      "wallBminusC": -16.022000000000048
+    },
+    {
+      "seed": 5023,
+      "wallBminusC": -253.77799999999996
+    },
+    {
+      "seed": 5039,
+      "wallBminusC": -123.50699999999995
+    },
+    {
+      "seed": 5051,
+      "wallBminusC": -117.44
+    }
+  ],
+  "medianWallBminusC": -120.47349999999997,
+  "ledger": {
+    "components": {
+      "workers": 5.7304596000000005,
+      "incidents": 0,
+      "probes": 0.006814000000000001,
+      "facts": 0,
+      "judge": 0.031512
+    },
+    "unknown": [],
+    "spent": 5.768785600000001,
+    "balance": 1.731214399999999,
+    "allowed": true
+  },
+  "judge": {
+    "calls": 8,
+    "packets": 8,
+    "model": "gpt-6-luna",
+    "effort": "medium",
+    "calibration": "64/64"
+  },
+  "sample": [
+    {
+      "seed": 5011,
+      "arm": "B",
+      "waves": 4,
+      "totalSeconds": 466.864,
+      "observedWallSeconds": 412.936,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "rejected",
+      "accepted": false,
+      "criteria": 3,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 80792,
+        "cacheRead": 1557888,
+        "cacheWrite": 0,
+        "output": 26344
+      },
+      "modelResponses": 113,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 20,
+          "failing": 7,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 8,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 8,
+          "failing": 6,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 5,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 20,
+          "failing": 6,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 8,
+          "resolved": 6
+        }
+      },
+      "barrier": {
+        "waves": 4,
+        "meanLoadShare": 0.4976159061019858,
+        "meanIdleOthersSeconds": 52.155875
+      },
+      "rules": {},
+      "marks": {
+        "claim": 2,
+        "taken": 2,
+        "question": 4,
+        "finding": 19,
+        "released": 1
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 0,
+        "directed": 2
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 0,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 0,
+        "toolErrors": 0
+      }
+    },
+    {
+      "seed": 5011,
+      "arm": "C",
+      "waves": 3,
+      "totalSeconds": 478.271,
+      "observedWallSeconds": 428.958,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "accepted",
+      "accepted": true,
+      "criteria": 4,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 118904,
+        "cacheRead": 2036224,
+        "cacheWrite": 0,
+        "output": 26155
+      },
+      "modelResponses": 118,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 15,
+          "failing": 6,
+          "refused": 2,
+          "yielded": 0,
+          "traces": 6,
+          "acceptedWrites": 6,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 6,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 5,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 15,
+          "failing": 6,
+          "refused": 0,
+          "yielded": 1,
+          "traces": 5,
+          "acceptedWrites": 6,
+          "resolved": 5
+        }
+      },
+      "barrier": {
+        "waves": 3,
+        "meanLoadShare": 0.4971520495693114,
+        "meanIdleOthersSeconds": 64.265
+      },
+      "rules": {
+        "wait_for_trace": 2,
+        "yielded_place": 1
+      },
+      "marks": {
+        "taken": 1,
+        "claim": 3,
+        "finding": 20,
+        "released": 1,
+        "question": 4,
+        "requirement": 11,
+        "yielded": 1
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 1,
+        "directed": 1
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 3,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 7,
+        "toolErrors": 0
+      }
+    },
+    {
+      "seed": 5023,
+      "arm": "C",
+      "waves": 6,
+      "totalSeconds": 718.434,
+      "observedWallSeconds": 660.366,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "accepted",
+      "accepted": true,
+      "criteria": 4,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 211824,
+        "cacheRead": 4951040,
+        "cacheWrite": 0,
+        "output": 37483
+      },
+      "modelResponses": 216,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 30,
+          "failing": 6,
+          "refused": 1,
+          "yielded": 0,
+          "traces": 6,
+          "acceptedWrites": 6,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 12,
+          "failing": 7,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 1,
+          "acceptedWrites": 5,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 30,
+          "failing": 9,
+          "refused": 2,
+          "yielded": 2,
+          "traces": 9,
+          "acceptedWrites": 11,
+          "resolved": 5
+        }
+      },
+      "barrier": {
+        "waves": 6,
+        "meanLoadShare": 0.4388778608768049,
+        "meanIdleOthersSeconds": 40.672916666666666
+      },
+      "rules": {
+        "yielded_place": 2,
+        "unassigned_place": 2,
+        "wait_for_trace": 1,
+        "taken_place": 2
+      },
+      "marks": {
+        "claim": 5,
+        "taken": 2,
+        "finding": 35,
+        "yielded": 2,
+        "requirement": 16,
+        "question": 12,
+        "released": 2
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 1,
+        "directed": 1
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 1,
+        "refusedWrites": 6,
+        "blockedWrites": 1,
+        "writesAfterRefusal": 10,
+        "toolErrors": 0
+      }
+    },
+    {
+      "seed": 5023,
+      "arm": "B",
+      "waves": 4,
+      "totalSeconds": 460.32,
+      "observedWallSeconds": 406.588,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "rejected",
+      "accepted": false,
+      "criteria": 3,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 121620,
+        "cacheRead": 2068096,
+        "cacheWrite": 0,
+        "output": 25239
+      },
+      "modelResponses": 127,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 20,
+          "failing": 7,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 7,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 8,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 5,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 20,
+          "failing": 6,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 8,
+          "resolved": 6
+        }
+      },
+      "barrier": {
+        "waves": 4,
+        "meanLoadShare": 0.4678512529928723,
+        "meanIdleOthersSeconds": 41.1305
+      },
+      "rules": {},
+      "marks": {
+        "taken": 1,
+        "claim": 7,
+        "finding": 24,
+        "question": 4
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 0,
+        "directed": 2
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 0,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 0,
+        "toolErrors": 0
+      }
+    },
+    {
+      "seed": 5039,
+      "arm": "B",
+      "waves": 4,
+      "totalSeconds": 336.406,
+      "observedWallSeconds": 271.648,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "accepted",
+      "accepted": true,
+      "criteria": 4,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 95580,
+        "cacheRead": 1549696,
+        "cacheWrite": 0,
+        "output": 22090
+      },
+      "modelResponses": 106,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 20,
+          "failing": 6,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 7,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 8,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 5,
+          "acceptedWrites": 6,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 20,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 5,
+          "resolved": 5
+        }
+      },
+      "barrier": {
+        "waves": 4,
+        "meanLoadShare": 0.3864410601982852,
+        "meanIdleOthersSeconds": 15.265375
+      },
+      "rules": {},
+      "marks": {
+        "claim": 5,
+        "taken": 1,
+        "finding": 20,
+        "requirement": 5
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 0,
+        "directed": 1
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 0,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 0,
+        "toolErrors": 0
+      }
+    },
+    {
+      "seed": 5039,
+      "arm": "C",
+      "waves": 4,
+      "totalSeconds": 455.737,
+      "observedWallSeconds": 395.155,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "rejected",
+      "accepted": false,
+      "criteria": 3,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 127053,
+        "cacheRead": 2219136,
+        "cacheWrite": 0,
+        "output": 27532
+      },
+      "modelResponses": 139,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 20,
+          "failing": 6,
+          "refused": 2,
+          "yielded": 0,
+          "traces": 7,
+          "acceptedWrites": 6,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 8,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 1,
+          "acceptedWrites": 5,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 20,
+          "failing": 5,
+          "refused": 2,
+          "yielded": 1,
+          "traces": 5,
+          "acceptedWrites": 5,
+          "resolved": 5
+        }
+      },
+      "barrier": {
+        "waves": 4,
+        "meanLoadShare": 0.43529973880125117,
+        "meanIdleOthersSeconds": 34.675375
+      },
+      "rules": {
+        "wait_for_trace": 2,
+        "taken_place": 2,
+        "yielded_place": 1
+      },
+      "marks": {
+        "claim": 2,
+        "taken": 3,
+        "finding": 28,
+        "yielded": 1,
+        "requirement": 13,
+        "question": 2,
+        "released": 3
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 0,
+        "directed": 1
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 5,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 12,
+        "toolErrors": 0
+      }
+    },
+    {
+      "seed": 5051,
+      "arm": "C",
+      "waves": 4,
+      "totalSeconds": 450.175,
+      "observedWallSeconds": 392.933,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "accepted",
+      "accepted": true,
+      "criteria": 4,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 95230,
+        "cacheRead": 2282240,
+        "cacheWrite": 0,
+        "output": 26038
+      },
+      "modelResponses": 141,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 20,
+          "failing": 5,
+          "refused": 2,
+          "yielded": 0,
+          "traces": 8,
+          "acceptedWrites": 5,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 8,
+          "failing": 6,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 2,
+          "acceptedWrites": 6,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 20,
+          "failing": 7,
+          "refused": 0,
+          "yielded": 2,
+          "traces": 7,
+          "acceptedWrites": 8,
+          "resolved": 5
+        }
+      },
+      "barrier": {
+        "waves": 4,
+        "meanLoadShare": 0.462380344656566,
+        "meanIdleOthersSeconds": 36.601875
+      },
+      "rules": {
+        "wait_for_trace": 2,
+        "unassigned_place": 1,
+        "yielded_place": 2
+      },
+      "marks": {
+        "claim": 3,
+        "finding": 22,
+        "yielded": 2,
+        "requirement": 17
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 1,
+        "directed": 0
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 5,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 11,
+        "toolErrors": 0
+      }
+    },
+    {
+      "seed": 5051,
+      "arm": "B",
+      "waves": 3,
+      "totalSeconds": 320.648,
+      "observedWallSeconds": 275.493,
+      "end": "complete",
+      "acceptance": {
+        "balances": true,
+        "exceptions": true,
+        "memoTotals": true
+      },
+      "review": "accepted",
+      "accepted": true,
+      "criteria": 4,
+      "provider": {
+        "http429": 0,
+        "retries": 0
+      },
+      "tokens": {
+        "input": 81533,
+        "cacheRead": 947456,
+        "cacheWrite": 0,
+        "output": 19540
+      },
+      "modelResponses": 85,
+      "observedOpportunities": {
+        "dispute": 5,
+        "directed": 5
+      },
+      "classSummary": {
+        "directed": {
+          "checkWaves": 15,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 5,
+          "resolved": 5
+        },
+        "own": {
+          "checkWaves": 6,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 0,
+          "acceptedWrites": 5,
+          "resolved": 2
+        },
+        "dispute": {
+          "checkWaves": 15,
+          "failing": 5,
+          "refused": 0,
+          "yielded": 0,
+          "traces": 1,
+          "acceptedWrites": 5,
+          "resolved": 5
+        }
+      },
+      "barrier": {
+        "waves": 3,
+        "meanLoadShare": 0.4576235758119973,
+        "meanIdleOthersSeconds": 37.77333333333333
+      },
+      "rules": {},
+      "marks": {
+        "claim": 4,
+        "finding": 14,
+        "released": 1,
+        "requirement": 1,
+        "taken": 1,
+        "question": 1
+      },
+      "messages": {
+        "lia": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "rui": {
+          "accepted": 0,
+          "refused": 0
+        },
+        "teo": {
+          "accepted": 0,
+          "refused": 0
+        }
+      },
+      "firstWaveStillFailing": {
+        "dispute": 0,
+        "directed": 0
+      },
+      "toolCounts": {
+        "ambiguousRefusals": 0,
+        "unmatchedDecisions": 0,
+        "refusedWrites": 0,
+        "blockedWrites": 0,
+        "writesAfterRefusal": 0,
+        "toolErrors": 0
+      }
+    }
+  ]
+}

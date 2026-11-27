@@ -1,0 +1,71 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "wave-0.manifest.jsonl",
+      "bytes": 42150,
+      "sha256": "939fb7b4a1c3a013c6b5aa5951fae34a0cb94965481a321c11aa1feaf3fecc33",
+      "gz": 1964
+    },
+    {
+      "path": "wave-0.requests.jsonl",
+      "bytes": 42150,
+      "sha256": "939fb7b4a1c3a013c6b5aa5951fae34a0cb94965481a321c11aa1feaf3fecc33",
+      "gz": 1964
+    },
+    {
+      "path": "wave-0.results.jsonl",
+      "bytes": 26533,
+      "sha256": "f3f4cb80aa9deb1659ceaae7ef88321dc90bfb2582bea9a7fe87e1d831e69b62",
+      "gz": 2568
+    },
+    {
+      "path": "wave-1.requests.jsonl",
+      "bytes": 1142280,
+      "sha256": "0b15d0dcca41a516a1a12e6df6970822d32af9794e9ad0c9d599baf88d3a118a",
+      "gz": 69985
+    },
+    {
+      "path": "wave-1.results.jsonl",
+      "bytes": 222324,
+      "sha256": "e585fb1a34d5451f90f1a4f70c6dafb1d144584e838db0e045fa2bd1a7d10aab",
+      "gz": 30280
+    },
+    {
+      "path": "wave-2.requests.jsonl",
+      "bytes": 63000,
+      "sha256": "fe791727997b18a6a008659da5f50335cf1140f03f7ed4174fdea46467645192",
+      "gz": 4096
+    },
+    {
+      "path": "wave-2.results.jsonl",
+      "bytes": 28875,
+      "sha256": "debc6bd465e9ed884a58fc0b24702e11bef0fca84cc0b7067d02a6ecfbba1afa",
+      "gz": 4206
+    },
+    {
+      "path": "wave-3.requests.jsonl",
+      "bytes": 2286106,
+      "sha256": "16509a25c733781cc71ef116ee1fd3ce05db9412b993edfadf595d392dfd8683",
+      "gz": 124916
+    },
+    {
+      "path": "wave-3.results.jsonl",
+      "bytes": 445464,
+      "sha256": "95aa2fa39a51ab4b49124578f584dbb75dc7237be5aa3493914788fdb75ecccc",
+      "gz": 57328
+    },
+    {
+      "path": "wave-4.requests.jsonl",
+      "bytes": 163080,
+      "sha256": "1bc90e4a02d2651e62300f3469113f519092a2d32ef6a6b85cf88a1758bf126d",
+      "gz": 5639
+    },
+    {
+      "path": "wave-4.results.jsonl",
+      "bytes": 69604,
+      "sha256": "f94d262fd2a80a11eb630bd8444119e8f5b4d2f6d0632ab3eb8be07e26bd5ceb",
+      "gz": 11071
+    }
+  ]
+}

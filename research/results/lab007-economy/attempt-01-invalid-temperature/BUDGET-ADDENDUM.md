@@ -1,0 +1,3 @@
+# Budget reconciliation addendum
+
+A previously running LAB-007 pilot submitted 864 round-0 requests in another process before coordination was effective. Both local schedulers were paused; cancellation of that remote batch was accepted (HTTP 200). Original files were preserved. Its usage, if any, counts against the SAME [US$ redacted] ceiling, not a separate budget. An external reservation is retained in batches.json until the provider reports a final result. The economy process is restarted only after this reconciliation; its original frozen sources and experiment remain unchanged. The already submitted 240-request economy batch is resumed by ID, not resubmitted.

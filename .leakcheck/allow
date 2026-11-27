@@ -1,0 +1,7 @@
+# Reviewed false positives: <path><TAB><sha256 of the trimmed line>. One comment line per group says why.
+# test fixtures: fake SSH keys (cyber range canaries), test IPs, Portuguese verb 'contorna'
+bench/host-bench.test.mjs	4d0b365d65658205e5fc32a3efe5002d0dce8e08380456b55f071c6e76024b2b
+research/docs/reviews/LI20-REVIEW-2026-11-18.md	254fed49fe0ac2c82baff0b478e81925ca9df2fdf99270c16909aa8d5f709065
+research/observatory/cyber/range/green/green.test.mjs	36634ebec7bf459ab178d099725acfa09a4336f800874bf37e1ab2d2f0173004
+research/observatory/cyber/range/green/green.test.mjs	1a81b5a1196504db393cf3e50252e04c74c48bfbdf9d0d2b9d23144e4a194375
+research/observatory/tasks/a12-acl-policy/test/policy.test.mjs	5688c242eaeaed28a235082b0f29487020f98fe527f80a712f390178bc5a8635

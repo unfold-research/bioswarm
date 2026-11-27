@@ -1,0 +1,218 @@
+{
+  "arms": {
+    "patch": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 14.5,
+      "meanOut": 104529,
+      "meanLatency": 96255,
+      "trunc": 6,
+      "meanTrajectory": [
+        104.25,
+        68.08,
+        46.5,
+        37.38,
+        30.63,
+        28.54,
+        25.46,
+        24.88,
+        22.46,
+        21.71,
+        20.08,
+        19.08,
+        18.88,
+        17.75,
+        17.04,
+        16.5,
+        15.54
+      ],
+      "bySize": {
+        "120": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 8,
+          "meanOut": 110035,
+          "meanLatency": 104611,
+          "meanCalls": 24.3
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 20,
+          "meanOut": 99023,
+          "meanLatency": 87899,
+          "meanCalls": 32.3
+        }
+      }
+    },
+    "patch2": {
+      "solved": 0,
+      "of": 24,
+      "medianFinal": 15.5,
+      "meanOut": 104873,
+      "meanLatency": 96925,
+      "trunc": 9,
+      "meanTrajectory": [
+        104.25,
+        66.58,
+        48.54,
+        36.79,
+        32.25,
+        28.54,
+        27.13,
+        25.04,
+        23.33,
+        22.46,
+        21.83,
+        21.96,
+        20.08,
+        19.25,
+        19.08,
+        18.5,
+        18.04
+      ],
+      "bySize": {
+        "120": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 9,
+          "meanOut": 110465,
+          "meanLatency": 105335,
+          "meanCalls": 24
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 26,
+          "meanOut": 99281,
+          "meanLatency": 88515,
+          "meanCalls": 32
+        }
+      }
+    },
+    "central": {
+      "solved": 1,
+      "of": 24,
+      "medianFinal": 16.5,
+      "meanOut": 124371,
+      "meanLatency": 116422,
+      "trunc": 1,
+      "meanTrajectory": [
+        104.25,
+        74,
+        64.21,
+        57.33,
+        51.25,
+        48.13,
+        45.17,
+        40.92,
+        38.04,
+        36.42,
+        35.58,
+        33.04,
+        32.38,
+        31.04,
+        30.71,
+        29.67,
+        27.75
+      ],
+      "bySize": {
+        "120": {
+          "solved": 1,
+          "of": 12,
+          "medianFinal": 7,
+          "meanOut": 145721,
+          "meanLatency": 140591,
+          "meanCalls": 24
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 40,
+          "meanOut": 103020,
+          "meanLatency": 92254,
+          "meanCalls": 32
+        }
+      }
+    }
+  },
+  "paired": {
+    "inhibit_vs_sync": {
+      "inhibitOnly": 0,
+      "syncOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    },
+    "inhibit_vs_random": {
+      "inhibitOnly": 0,
+      "randomOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    },
+    "inhibit_vs_central": {
+      "inhibitOnly": 0,
+      "centralOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    },
+    "patch_vs_central": {
+      "patchOnly": 0,
+      "centralOnly": 1,
+      "both": 0,
+      "neither": 23,
+      "mcnemarP": 1,
+      "finalLowerIn": 14,
+      "finalHigherIn": 8
+    },
+    "patch_vs_inhibit": {
+      "patchOnly": 0,
+      "inhibitOnly": 0,
+      "both": 0,
+      "neither": 0,
+      "mcnemarP": 1,
+      "finalLowerIn": 0,
+      "finalHigherIn": 0
+    }
+  },
+  "finals": {
+    "patch2_vs_patch": {
+      "wins": 7,
+      "losses": 15,
+      "signP": 0.133801
+    },
+    "patch_vs_central": {
+      "wins": 14,
+      "losses": 8,
+      "signP": 0.286279
+    },
+    "patch2_vs_central": {
+      "wins": 13,
+      "losses": 10,
+      "signP": 0.677639
+    },
+    "patch_vs_central_at_240": {
+      "wins": 10,
+      "losses": 1,
+      "signP": 0.011719
+    },
+    "patch2_vs_central_at_240": {
+      "wins": 9,
+      "losses": 3,
+      "signP": 0.145996
+    }
+  },
+  "verdict": {
+    "H-LI8": "refuted",
+    "H-LI9": "supported",
+    "H-LI10": "refuted"
+  }
+}

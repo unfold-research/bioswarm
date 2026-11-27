@@ -1,0 +1,103 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "state.json",
+      "bytes": 19405406,
+      "sha256": "c35661f38259c0b833947e1b2f3822e705865b73dac9b1a65cdb7aff16caca48",
+      "gz": 3447290
+    },
+    {
+      "path": "wave-0-p0.requests.jsonl",
+      "bytes": 3467238,
+      "sha256": "cfc674eaa16260f842759b581884d49159ceedc4bea48d7a0ff3b8a62a12be50",
+      "gz": 208603
+    },
+    {
+      "path": "wave-0-p0.results.jsonl",
+      "bytes": 5466606,
+      "sha256": "57f3decef1e8f90c23b3d8f438c760e486ad7cb424d08678f166575509eaedad",
+      "gz": 3380955
+    },
+    {
+      "path": "wave-1-p0.requests.jsonl",
+      "bytes": 20702799,
+      "sha256": "10c8a175d49621f3208c05ce4837f9c3b0102e5392704be6d6d92a9dd4f19228",
+      "gz": 2850839
+    },
+    {
+      "path": "wave-1-p0.results.jsonl",
+      "bytes": 10812662,
+      "sha256": "8946c056d7da9fb40285d433e2a2600a0553dd795c18dd2756da24de333dccd5",
+      "gz": 6301118
+    },
+    {
+      "path": "wave-2-p0.requests.jsonl",
+      "bytes": 23170090,
+      "sha256": "4d7dae53235c975ac0ab7093a6aaa6fc9f60a764b407e627331e52710c610d9c",
+      "gz": 3372523
+    },
+    {
+      "path": "wave-2-p0.results.jsonl",
+      "bytes": 13418081,
+      "sha256": "7550a969c21cbfc1f60effea639d79c3da77e4df625f1fb8774e7015aba049a4",
+      "gz": 7972041
+    },
+    {
+      "path": "wave-2-p1.requests.jsonl",
+      "bytes": 9337820,
+      "sha256": "3adfc813c49e8a6864229bfe14293aba6e916fb572e3a81cf66952a9ec180de0",
+      "gz": 1459970
+    },
+    {
+      "path": "wave-2-p1.results.jsonl",
+      "bytes": 5469927,
+      "sha256": "c45a3e57bd7b74863417067d524d918ac313500ae2f3fd0aaf283dd26dd3ec72",
+      "gz": 3444739
+    },
+    {
+      "path": "wave-3-p0.requests.jsonl",
+      "bytes": 11302579,
+      "sha256": "3cf36db081ad9a3b68344e304f46c991dffb3f6a915198c519585a024b35e815",
+      "gz": 1279603
+    },
+    {
+      "path": "wave-3-p0.results.jsonl",
+      "bytes": 5520049,
+      "sha256": "39cf2bbe39b1b0d0c6f4d4a5bc6d0d6de11e2825583707d9d2f2d8261b4c39f8",
+      "gz": 3075021
+    },
+    {
+      "path": "wave-4-p0.requests.jsonl",
+      "bytes": 12276344,
+      "sha256": "a17abe61b47ddfd4a4646009ab18201b052c0bd59a1eaf2402af62e07db07366",
+      "gz": 1531001
+    },
+    {
+      "path": "wave-4-p0.results.jsonl",
+      "bytes": 6343840,
+      "sha256": "8c2da5511d55836cc5320ab8ea9b216f9c7f84e35ad720d8c2db7832af28824b",
+      "gz": 3414072
+    },
+    {
+      "path": "wave-5-p0.requests.jsonl",
+      "bytes": 9326436,
+      "sha256": "7a156faa94a2bc9d61743d05b2238d070f3f3976cf0bc3e70f9261051fa7341a",
+      "gz": 1018183
+    },
+    {
+      "path": "wave-5-p0.results.jsonl",
+      "bytes": 4166772,
+      "sha256": "5986bf57ab4d029cbb3b01871b4c84e4d9c91c9e28c2a97fbabace452c6919b9",
+      "gz": 2322789
+    }
+  ],
+  "archives": [
+    {
+      "name": "li27-k80-raw.tar.gz",
+      "origin": "github release data-li27-k80",
+      "bytes": 41798085,
+      "sha256": "bd8beed5e0ebe3aeb57588e3cbb1ab73f16c7421cbd91941f8b4569009551549"
+    }
+  ]
+}

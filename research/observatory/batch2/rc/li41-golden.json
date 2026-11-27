@@ -1,0 +1,41 @@
+{
+ "ci": {
+  "spec": "sweeps/LI41.json",
+  "k": 16,
+  "cases": 3,
+  "seeds": [
+   41400,
+   41401,
+   41402
+  ],
+  "rounds": 2,
+  "runner": "run-rc3.pre-adapter.tmp.mjs",
+  "requests": 244,
+  "files": {
+   "wave-0-p0.requests.jsonl": "e456cfe9791b8fd23bc9c725582532aa1e0ce8dbb436de1cf1ee15238286a89c",
+   "wave-1-p0.requests.jsonl": "7cbcc908c0009035b6bec0960093fb25cfc00a4f06b6a9283ec6c45d8da6cef7",
+   "wave-2-p0.requests.jsonl": "7ee7fb13ed3843683769d425bcd3ade7468bd6f43b9936bcdc52bfbf556d0cd7",
+   "wave-3-p0.requests.jsonl": "797055257d98c4266215d28b14972920d0efab2374dbff51e3fca2ac5bcdcf7d",
+   "wave-4-p0.requests.jsonl": "26551f5794a093c99bf5ad89b8d91e8e281126d1f8df1917cb343178c15277ec"
+  }
+ },
+ "full": {
+  "spec": "sweeps/LI41.json",
+  "k": 160,
+  "cases": 2,
+  "seeds": [
+   41400,
+   41401
+  ],
+  "rounds": 2,
+  "runner": "run-rc3.pre-adapter.tmp.mjs",
+  "requests": 1589,
+  "files": {
+   "wave-0-p0.requests.jsonl": "4920d92eaf7fd94e4b41ffb1ce7c3fab31b5c11bd5f3e21650d5e399db7197a6",
+   "wave-1-p0.requests.jsonl": "a680a475103249540cad7d15b7dba2d0cc6a3a638ec24260d2b0eed349d6e085",
+   "wave-2-p0.requests.jsonl": "8b800cf0be6ac6cb0c56dd816f652a018a2cc735e730c56cd9aa83330a88359c",
+   "wave-3-p0.requests.jsonl": "c4e9ee637bb32c6315f467ea99c7c5d0ee60ba2d87b7aaa45efcdb81a5591514",
+   "wave-4-p0.requests.jsonl": "03806532e5a0009b3a6487240c461230bed8ca86391afcc941a2fbb9b345c111"
+  }
+ }
+}

@@ -1,0 +1,996 @@
+{
+  "predictions": {
+    "P1": {
+      "n": 240,
+      "value": 0.996,
+      "low": 0.988,
+      "high": 1,
+      "verdict": "supported"
+    },
+    "P2": {
+      "n": 144,
+      "value": 0.028,
+      "low": 0.007,
+      "high": 0.056,
+      "verdict": "supported"
+    },
+    "P3": {
+      "n": 144,
+      "value": 0.153,
+      "low": 0.09,
+      "high": 0.215,
+      "verdict": "supported"
+    },
+    "P4": {
+      "n": 288,
+      "value": 0.035,
+      "low": 0.017,
+      "high": 0.056,
+      "verdict": "supported",
+      "attemptsAgree": 2.24,
+      "forLess": true
+    },
+    "P5": {
+      "n": 288,
+      "value": -0.076,
+      "low": -0.108,
+      "high": -0.045,
+      "verdict": "supported"
+    }
+  },
+  "overall": {
+    "one": {
+      "n": 288,
+      "right": 251,
+      "share": 0.872,
+      "none": 1,
+      "attempts": 1,
+      "tokens": 3968
+    },
+    "agree": {
+      "n": 288,
+      "right": 277,
+      "share": 0.962,
+      "none": 2,
+      "attempts": 2.24,
+      "tokens": 9265
+    },
+    "three": {
+      "n": 288,
+      "right": 267,
+      "share": 0.927,
+      "none": 15,
+      "attempts": 3,
+      "tokens": 11913
+    },
+    "five": {
+      "n": 288,
+      "right": 271,
+      "share": 0.941,
+      "none": 6,
+      "attempts": 5,
+      "tokens": 19837
+    },
+    "judge": {
+      "n": 288,
+      "right": 255,
+      "share": 0.885,
+      "none": 0,
+      "attempts": 1.06,
+      "tokens": 5424
+    }
+  },
+  "falling": {
+    "one": {
+      "n": 144,
+      "right": 111,
+      "share": 0.771,
+      "none": 0,
+      "attempts": 1,
+      "tokens": 4468
+    },
+    "agree": {
+      "n": 144,
+      "right": 133,
+      "share": 0.924,
+      "none": 2,
+      "attempts": 2.44,
+      "tokens": 11450
+    },
+    "three": {
+      "n": 144,
+      "right": 124,
+      "share": 0.861,
+      "none": 14,
+      "attempts": 3,
+      "tokens": 13434
+    },
+    "five": {
+      "n": 144,
+      "right": 128,
+      "share": 0.889,
+      "none": 6,
+      "attempts": 5,
+      "tokens": 22372
+    },
+    "judge": {
+      "n": 144,
+      "right": 112,
+      "share": 0.778,
+      "none": 0,
+      "attempts": 1.03,
+      "tokens": 5827
+    }
+  },
+  "controls": {
+    "one": {
+      "n": 144,
+      "right": 140,
+      "share": 0.972,
+      "none": 1,
+      "attempts": 1,
+      "tokens": 3467
+    },
+    "agree": {
+      "n": 144,
+      "right": 144,
+      "share": 1,
+      "none": 0,
+      "attempts": 2.03,
+      "tokens": 7081
+    },
+    "three": {
+      "n": 144,
+      "right": 143,
+      "share": 0.993,
+      "none": 1,
+      "attempts": 3,
+      "tokens": 10393
+    },
+    "five": {
+      "n": 144,
+      "right": 143,
+      "share": 0.993,
+      "none": 0,
+      "attempts": 5,
+      "tokens": 17302
+    },
+    "judge": {
+      "n": 144,
+      "right": 143,
+      "share": 0.993,
+      "none": 0,
+      "attempts": 1.08,
+      "tokens": 5021
+    }
+  },
+  "byTask": {
+    "I-01": {
+      "one": {
+        "n": 72,
+        "right": 72,
+        "share": 1,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 1194
+      },
+      "agree": {
+        "n": 72,
+        "right": 72,
+        "share": 1,
+        "none": 0,
+        "attempts": 2,
+        "tokens": 2390
+      },
+      "three": {
+        "n": 72,
+        "right": 72,
+        "share": 1,
+        "none": 0,
+        "attempts": 3,
+        "tokens": 3583
+      },
+      "five": {
+        "n": 72,
+        "right": 72,
+        "share": 1,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 5990
+      },
+      "judge": {
+        "n": 72,
+        "right": 72,
+        "share": 1,
+        "none": 0,
+        "attempts": 1.01,
+        "tokens": 1962
+      }
+    },
+    "I-05": {
+      "one": {
+        "n": 72,
+        "right": 56,
+        "share": 0.778,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 3337
+      },
+      "agree": {
+        "n": 72,
+        "right": 65,
+        "share": 0.903,
+        "none": 0,
+        "attempts": 2.33,
+        "tokens": 8219
+      },
+      "three": {
+        "n": 72,
+        "right": 61,
+        "share": 0.847,
+        "none": 7,
+        "attempts": 3,
+        "tokens": 10168
+      },
+      "five": {
+        "n": 72,
+        "right": 63,
+        "share": 0.875,
+        "none": 2,
+        "attempts": 5,
+        "tokens": 16910
+      },
+      "judge": {
+        "n": 72,
+        "right": 56,
+        "share": 0.778,
+        "none": 0,
+        "attempts": 1.04,
+        "tokens": 4508
+      }
+    },
+    "I-06": {
+      "one": {
+        "n": 72,
+        "right": 55,
+        "share": 0.764,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 5599
+      },
+      "agree": {
+        "n": 72,
+        "right": 68,
+        "share": 0.944,
+        "none": 2,
+        "attempts": 2.54,
+        "tokens": 14681
+      },
+      "three": {
+        "n": 72,
+        "right": 63,
+        "share": 0.875,
+        "none": 7,
+        "attempts": 3,
+        "tokens": 16700
+      },
+      "five": {
+        "n": 72,
+        "right": 65,
+        "share": 0.903,
+        "none": 4,
+        "attempts": 5,
+        "tokens": 27834
+      },
+      "judge": {
+        "n": 72,
+        "right": 56,
+        "share": 0.778,
+        "none": 0,
+        "attempts": 1.03,
+        "tokens": 7146
+      }
+    },
+    "III-22": {
+      "one": {
+        "n": 72,
+        "right": 68,
+        "share": 0.944,
+        "none": 1,
+        "attempts": 1,
+        "tokens": 5740
+      },
+      "agree": {
+        "n": 72,
+        "right": 72,
+        "share": 1,
+        "none": 0,
+        "attempts": 2.07,
+        "tokens": 11772
+      },
+      "three": {
+        "n": 72,
+        "right": 71,
+        "share": 0.986,
+        "none": 1,
+        "attempts": 3,
+        "tokens": 17202
+      },
+      "five": {
+        "n": 72,
+        "right": 71,
+        "share": 0.986,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 28615
+      },
+      "judge": {
+        "n": 72,
+        "right": 71,
+        "share": 0.986,
+        "none": 0,
+        "attempts": 1.15,
+        "tokens": 8080
+      }
+    }
+  },
+  "bySize": {
+    "4": {
+      "one": {
+        "n": 96,
+        "right": 92,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 2083
+      },
+      "agree": {
+        "n": 96,
+        "right": 94,
+        "share": 0.979,
+        "none": 0,
+        "attempts": 2.1,
+        "tokens": 4424
+      },
+      "three": {
+        "n": 96,
+        "right": 93,
+        "share": 0.969,
+        "none": 1,
+        "attempts": 3,
+        "tokens": 6236
+      },
+      "five": {
+        "n": 96,
+        "right": 93,
+        "share": 0.969,
+        "none": 1,
+        "attempts": 5,
+        "tokens": 10502
+      },
+      "judge": {
+        "n": 96,
+        "right": 92,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 1.03,
+        "tokens": 3229
+      }
+    },
+    "8": {
+      "one": {
+        "n": 96,
+        "right": 84,
+        "share": 0.875,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 3602
+      },
+      "agree": {
+        "n": 96,
+        "right": 93,
+        "share": 0.969,
+        "none": 1,
+        "attempts": 2.22,
+        "tokens": 8090
+      },
+      "three": {
+        "n": 96,
+        "right": 90,
+        "share": 0.938,
+        "none": 5,
+        "attempts": 3,
+        "tokens": 10865
+      },
+      "five": {
+        "n": 96,
+        "right": 91,
+        "share": 0.948,
+        "none": 3,
+        "attempts": 5,
+        "tokens": 18117
+      },
+      "judge": {
+        "n": 96,
+        "right": 86,
+        "share": 0.896,
+        "none": 0,
+        "attempts": 1.06,
+        "tokens": 4984
+      }
+    },
+    "16": {
+      "one": {
+        "n": 96,
+        "right": 75,
+        "share": 0.781,
+        "none": 1,
+        "attempts": 1,
+        "tokens": 6217
+      },
+      "agree": {
+        "n": 96,
+        "right": 90,
+        "share": 0.938,
+        "none": 1,
+        "attempts": 2.39,
+        "tokens": 15282
+      },
+      "three": {
+        "n": 96,
+        "right": 84,
+        "share": 0.875,
+        "none": 9,
+        "attempts": 3,
+        "tokens": 18639
+      },
+      "five": {
+        "n": 96,
+        "right": 87,
+        "share": 0.906,
+        "none": 2,
+        "attempts": 5,
+        "tokens": 30892
+      },
+      "judge": {
+        "n": 96,
+        "right": 77,
+        "share": 0.802,
+        "none": 0,
+        "attempts": 1.08,
+        "tokens": 8059
+      }
+    }
+  },
+  "byCell": {
+    "I-01/4": {
+      "one": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 775
+      },
+      "agree": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 2,
+        "tokens": 1562
+      },
+      "three": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 3,
+        "tokens": 2341
+      },
+      "five": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 3899
+      },
+      "judge": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1.04,
+        "tokens": 1584
+      }
+    },
+    "I-01/8": {
+      "one": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 1057
+      },
+      "agree": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 2,
+        "tokens": 2119
+      },
+      "three": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 3,
+        "tokens": 3184
+      },
+      "five": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 5331
+      },
+      "judge": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 1773
+      }
+    },
+    "I-01/16": {
+      "one": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 1750
+      },
+      "agree": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 2,
+        "tokens": 3490
+      },
+      "three": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 3,
+        "tokens": 5225
+      },
+      "five": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 8738
+      },
+      "judge": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 2529
+      }
+    },
+    "I-05/4": {
+      "one": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 1728
+      },
+      "agree": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 2.08,
+        "tokens": 3588
+      },
+      "three": {
+        "n": 24,
+        "right": 22,
+        "share": 0.917,
+        "none": 1,
+        "attempts": 3,
+        "tokens": 5121
+      },
+      "five": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 8541
+      },
+      "judge": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 1.04,
+        "tokens": 3074
+      }
+    },
+    "I-05/8": {
+      "one": {
+        "n": 24,
+        "right": 18,
+        "share": 0.75,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 2879
+      },
+      "agree": {
+        "n": 24,
+        "right": 22,
+        "share": 0.917,
+        "none": 0,
+        "attempts": 2.33,
+        "tokens": 6838
+      },
+      "three": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 2,
+        "attempts": 3,
+        "tokens": 8836
+      },
+      "five": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 2,
+        "attempts": 5,
+        "tokens": 14768
+      },
+      "judge": {
+        "n": 24,
+        "right": 18,
+        "share": 0.75,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 3665
+      }
+    },
+    "I-05/16": {
+      "one": {
+        "n": 24,
+        "right": 15,
+        "share": 0.625,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 5405
+      },
+      "agree": {
+        "n": 24,
+        "right": 20,
+        "share": 0.833,
+        "none": 0,
+        "attempts": 2.58,
+        "tokens": 14230
+      },
+      "three": {
+        "n": 24,
+        "right": 18,
+        "share": 0.75,
+        "none": 4,
+        "attempts": 3,
+        "tokens": 16546
+      },
+      "five": {
+        "n": 24,
+        "right": 19,
+        "share": 0.792,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 27421
+      },
+      "judge": {
+        "n": 24,
+        "right": 15,
+        "share": 0.625,
+        "none": 0,
+        "attempts": 1.08,
+        "tokens": 6786
+      }
+    },
+    "I-06/4": {
+      "one": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 2954
+      },
+      "agree": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 2.33,
+        "tokens": 6837
+      },
+      "three": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 3,
+        "tokens": 8908
+      },
+      "five": {
+        "n": 24,
+        "right": 22,
+        "share": 0.917,
+        "none": 1,
+        "attempts": 5,
+        "tokens": 15040
+      },
+      "judge": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 3928
+      }
+    },
+    "I-06/8": {
+      "one": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 5182
+      },
+      "agree": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 1,
+        "attempts": 2.38,
+        "tokens": 12001
+      },
+      "three": {
+        "n": 24,
+        "right": 22,
+        "share": 0.917,
+        "none": 2,
+        "attempts": 3,
+        "tokens": 15178
+      },
+      "five": {
+        "n": 24,
+        "right": 22,
+        "share": 0.917,
+        "none": 1,
+        "attempts": 5,
+        "tokens": 25324
+      },
+      "judge": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 6477
+      }
+    },
+    "I-06/16": {
+      "one": {
+        "n": 24,
+        "right": 13,
+        "share": 0.542,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 8663
+      },
+      "agree": {
+        "n": 24,
+        "right": 22,
+        "share": 0.917,
+        "none": 1,
+        "attempts": 2.92,
+        "tokens": 25206
+      },
+      "three": {
+        "n": 24,
+        "right": 18,
+        "share": 0.75,
+        "none": 5,
+        "attempts": 3,
+        "tokens": 26016
+      },
+      "five": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 2,
+        "attempts": 5,
+        "tokens": 43138
+      },
+      "judge": {
+        "n": 24,
+        "right": 14,
+        "share": 0.583,
+        "none": 0,
+        "attempts": 1.08,
+        "tokens": 11033
+      }
+    },
+    "III-22/4": {
+      "one": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 2877
+      },
+      "agree": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 2,
+        "tokens": 5711
+      },
+      "three": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 3,
+        "tokens": 8573
+      },
+      "five": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 14528
+      },
+      "judge": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1.04,
+        "tokens": 4330
+      }
+    },
+    "III-22/8": {
+      "one": {
+        "n": 24,
+        "right": 21,
+        "share": 0.875,
+        "none": 0,
+        "attempts": 1,
+        "tokens": 5291
+      },
+      "agree": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 2.17,
+        "tokens": 11401
+      },
+      "three": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 1,
+        "attempts": 3,
+        "tokens": 16264
+      },
+      "five": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 27046
+      },
+      "judge": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 1.25,
+        "tokens": 8023
+      }
+    },
+    "III-22/16": {
+      "one": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 1,
+        "attempts": 1,
+        "tokens": 9051
+      },
+      "agree": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 2.04,
+        "tokens": 18203
+      },
+      "three": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 3,
+        "tokens": 26768
+      },
+      "five": {
+        "n": 24,
+        "right": 23,
+        "share": 0.958,
+        "none": 0,
+        "attempts": 5,
+        "tokens": 44272
+      },
+      "judge": {
+        "n": 24,
+        "right": 24,
+        "share": 1,
+        "none": 0,
+        "attempts": 1.17,
+        "tokens": 11887
+      }
+    }
+  },
+  "judge": {
+    "repeatRightAttempt": 5,
+    "acceptRightAttempt": 246,
+    "repeatWrongAttempt": 6,
+    "acceptWrongAttempt": 31,
+    "invalid": 0
+  },
+  "stimulus": {
+    "fallingDisagree12": 44,
+    "controlDisagree12": 4,
+    "firstWrongFalling": 33,
+    "firstWrongControl": 4,
+    "firedWhenFirstWrong": 36,
+    "firstWrong": 37
+  },
+  "wrongPairs": 131,
+  "wrongSame": 53,
+  "anyRight": 284,
+  "rightByAttempt": [
+    251,
+    264,
+    260,
+    256,
+    253
+  ]
+}

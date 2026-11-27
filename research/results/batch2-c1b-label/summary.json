@@ -1,0 +1,71 @@
+{
+  "study": "c1b-label",
+  "configHash": "39dc212d62de4e3bc0349d9350f9cdc79b32f2884815e7a43c8feb3a4c972471",
+  "status": "complete",
+  "wavesRun": 1,
+  "arms": {
+    "none": {
+      "exposed": 32,
+      "quarantine": 16,
+      "rate": 0.5,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "sentence": {
+      "exposed": 32,
+      "quarantine": 5,
+      "rate": 0.15625,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "traces-untrusted": {
+      "exposed": 32,
+      "quarantine": 23,
+      "rate": 0.71875,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "state-neutral": {
+      "exposed": 32,
+      "quarantine": 28,
+      "rate": 0.875,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "state-operator": {
+      "exposed": 32,
+      "quarantine": 17,
+      "rate": 0.53125,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    },
+    "traces-sources": {
+      "exposed": 32,
+      "quarantine": 21,
+      "rate": 0.65625,
+      "cleanOk": 32,
+      "quarantineElsewhere": 0,
+      "invalid": 0
+    }
+  },
+  "shifts": {
+    "sentence": -0.34375,
+    "traces-untrusted": 0.21875,
+    "state-neutral": 0.375,
+    "state-operator": 0.03125,
+    "traces-sources": 0.15625
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P3": "supported",
+    "P4": "supported",
+    "P5": "not supported"
+  },
+  "finishedAt": "2026-11-11T20:30:13.564Z"
+}

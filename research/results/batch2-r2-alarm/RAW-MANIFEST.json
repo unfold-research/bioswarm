@@ -1,0 +1,59 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "wave-0.manifest.jsonl",
+      "bytes": 2714730,
+      "sha256": "4718157f10b2644038ab151e5caa40f9e7d3b4d179e7cca546ba2d3da8e96f0b",
+      "gz": 146222
+    },
+    {
+      "path": "wave-0.requests.jsonl",
+      "bytes": 2714730,
+      "sha256": "4718157f10b2644038ab151e5caa40f9e7d3b4d179e7cca546ba2d3da8e96f0b",
+      "gz": 146222
+    },
+    {
+      "path": "wave-0.results.jsonl",
+      "bytes": 841121,
+      "sha256": "544274c846335b4ed05e2fd914aa20787db69292b9618bbb8531cda6d64395e1",
+      "gz": 104090
+    },
+    {
+      "path": "wave-1.requests.jsonl",
+      "bytes": 905584,
+      "sha256": "c9e169cd47632f7100153d32d5a78963e5c5e2446bbc5c9dee567212381bf9c7",
+      "gz": 33137
+    },
+    {
+      "path": "wave-1.results.jsonl",
+      "bytes": 281283,
+      "sha256": "5624539b25e2a3e9cd80c54017094c28cbc11e16524742966611d79fc7e7d369",
+      "gz": 34988
+    },
+    {
+      "path": "wave-2.requests.jsonl",
+      "bytes": 904977,
+      "sha256": "dd1f1ee96fd95018c8da08161fb6262498c82861d6a5867841eba22e11730524",
+      "gz": 39184
+    },
+    {
+      "path": "wave-2.results.jsonl",
+      "bytes": 283428,
+      "sha256": "293bafd51b2cd80671fc30a0f854e4124c496e072652ab318c5eec9954bfa440",
+      "gz": 35290
+    },
+    {
+      "path": "wave-3.requests.jsonl",
+      "bytes": 905151,
+      "sha256": "a14e1ea06bf52e04575d8fb149a5b3ddd516e5a53b26bbf6834ed55c83e69d80",
+      "gz": 42659
+    },
+    {
+      "path": "wave-3.results.jsonl",
+      "bytes": 283468,
+      "sha256": "20f6cc1052b30544276b079d28d79248043935194c6d07e25de2a0c20807dce1",
+      "gz": 35467
+    }
+  ]
+}

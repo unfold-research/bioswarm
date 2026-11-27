@@ -1,0 +1,101 @@
+{
+  "collections": 60,
+  "table": [
+    {
+      "regime": "marks",
+      "study": "d4-marks",
+      "stable": 1,
+      "edited": 0.5833333333333334,
+      "editedPartsReread": 1.5166666666666666
+    },
+    {
+      "regime": "blind",
+      "study": "d4-blind",
+      "stable": 1,
+      "edited": 0.4666666666666667,
+      "editedPartsReread": 1.35
+    },
+    {
+      "regime": "sweep",
+      "study": "r2b-sweep",
+      "stable": 1,
+      "edited": 0.48333333333333334,
+      "editedPartsReread": 1.4
+    },
+    {
+      "regime": "alarm",
+      "study": "r2b-alarm",
+      "stable": 1,
+      "edited": 0.7,
+      "editedPartsReread": 1.8333333333333333
+    },
+    {
+      "regime": "router",
+      "study": "r2b-router",
+      "stable": 1,
+      "edited": 0.75,
+      "editedPartsReread": 2.1666666666666665
+    },
+    {
+      "regime": "random",
+      "study": "r2b-random",
+      "stable": 1,
+      "edited": 0.48333333333333334,
+      "editedPartsReread": 1.4833333333333334
+    }
+  ],
+  "choices": {
+    "marks": {
+      "total": 720,
+      "unusable": 1,
+      "elsewhere": 0.004166666666666667,
+      "toAlreadyRecounted": 0,
+      "withAChangedPartInView": 77,
+      "ofThoseToAFreshNeighbourOfIt": 0.8961038961038961
+    },
+    "blind": {
+      "total": 720,
+      "unusable": 0,
+      "elsewhere": 0,
+      "toAlreadyRecounted": 0,
+      "withAChangedPartInView": 0,
+      "ofThoseToAFreshNeighbourOfIt": null
+    }
+  },
+  "edited": {
+    "marksMinusBlind": {
+      "diff": 0.11666666666666667,
+      "ci95": [
+        0.016666666666666666,
+        0.21666666666666667
+      ]
+    },
+    "marksMinusAlarmRule": {
+      "diff": -0.11666666666666667,
+      "ci95": [
+        -0.26666666666666666,
+        0.03333333333333333
+      ]
+    },
+    "marksMinusSweep": {
+      "diff": 0.1,
+      "ci95": [
+        -0.08333333333333333,
+        0.2833333333333333
+      ]
+    },
+    "marksMinusRouter": {
+      "diff": -0.16666666666666666,
+      "ci95": [
+        -0.31666666666666665,
+        -0.016666666666666666
+      ]
+    }
+  },
+  "tests": {
+    "P1": "supported",
+    "P2": "not supported",
+    "P3": "not supported",
+    "P4": "supported"
+  }
+}

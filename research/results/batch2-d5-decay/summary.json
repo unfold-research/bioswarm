@@ -1,0 +1,142 @@
+{
+  "collections": 150,
+  "table": [
+    {
+      "lambda": 1,
+      "edited": 0.41333333333333333,
+      "stable": 1,
+      "editedHalfCreditForTies": 0.48333333333333334,
+      "tiesEdited": 0.14,
+      "simulatedOnTheseCollections": {
+        "stable": 0.9933333333333333,
+        "edited": 0.38666666666666666,
+        "reread": 0.7,
+        "covered": 5.966666666666667
+      },
+      "simulatedOn3000": {
+        "stable": 0.9946666666666667,
+        "edited": 0.3303333333333333,
+        "reread": 0.6506666666666666,
+        "covered": 5.965333333333334
+      },
+      "readsExact": 0.8629629629629629,
+      "invalid": 0
+    },
+    {
+      "lambda": 0.5,
+      "edited": 0.6733333333333333,
+      "stable": 0.9733333333333334,
+      "editedHalfCreditForTies": 0.6866666666666666,
+      "tiesEdited": 0.02666666666666667,
+      "simulatedOnTheseCollections": {
+        "stable": 0.96,
+        "edited": 0.6733333333333333,
+        "reread": 0.68,
+        "covered": 5.9
+      },
+      "simulatedOn3000": {
+        "stable": 0.9816666666666667,
+        "edited": 0.7,
+        "reread": 0.705,
+        "covered": 5.897333333333333
+      },
+      "readsExact": 0.8592592592592593,
+      "invalid": 0
+    },
+    {
+      "lambda": 0,
+      "edited": 0.7466666666666667,
+      "stable": 0.9533333333333334,
+      "editedHalfCreditForTies": 0.7633333333333333,
+      "tiesEdited": 0.03333333333333333,
+      "simulatedOnTheseCollections": {
+        "stable": 0.9466666666666667,
+        "edited": 0.74,
+        "reread": 0.74,
+        "covered": 5.746666666666667
+      },
+      "simulatedOn3000": {
+        "stable": 0.9483333333333334,
+        "edited": 0.738,
+        "reread": 0.7376666666666667,
+        "covered": 5.691333333333334
+      },
+      "readsExact": 0.8596296296296296,
+      "invalid": 0
+    }
+  ],
+  "diffs": {
+    "l50MinusL100_edited": {
+      "diff": 0.26,
+      "ci95": [
+        0.17333333333333334,
+        0.3466666666666667
+      ]
+    },
+    "l0MinusL100_edited": {
+      "diff": 0.3333333333333333,
+      "ci95": [
+        0.24,
+        0.4266666666666667
+      ]
+    },
+    "l0MinusL100_stable": {
+      "diff": -0.04666666666666667,
+      "ci95": [
+        -0.08666666666666667,
+        -0.013333333333333334
+      ]
+    },
+    "l0MinusL50_edited": {
+      "diff": 0.07333333333333333,
+      "ci95": [
+        0.013333333333333334,
+        0.13333333333333333
+      ]
+    },
+    "l50MinusL100_edited_halfCredit": {
+      "diff": 0.20333333333333334,
+      "ci95": [
+        0.12666666666666668,
+        0.28
+      ]
+    },
+    "l0MinusL100_edited_halfCredit": {
+      "diff": 0.28,
+      "ci95": [
+        0.2,
+        0.36333333333333334
+      ]
+    }
+  },
+  "decomposition": {
+    "note": "edited condition; reads of one arm re-estimated with the weights of another",
+    "readsNoDecay_weightsNoDecay": 0.41333333333333333,
+    "readsNoDecay_weightsDecay": 0.6933333333333334,
+    "readsDecay_weightsNoDecay": 0.3933333333333333,
+    "readsDecay_weightsDecay": 0.6733333333333333,
+    "readsNoDecay_weightsLatestOnly": 0.7,
+    "readsLatestOnly_weightsNoDecay": 0.44,
+    "weightingAlone": {
+      "diff": 0.28,
+      "ci95": [
+        0.21333333333333335,
+        0.35333333333333333
+      ]
+    },
+    "marksAlone": {
+      "diff": -0.02,
+      "ci95": [
+        -0.08666666666666667,
+        0.04666666666666667
+      ]
+    }
+  },
+  "simulatedDiffOnTheseCollections": 0.2866666666666667,
+  "tests": {
+    "P1": "supported",
+    "P2": "supported",
+    "P3": "supported",
+    "P4": "supported"
+  }
+}

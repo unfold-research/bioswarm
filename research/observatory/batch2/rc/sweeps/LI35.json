@@ -1,0 +1,49 @@
+{
+ "id": "LI35",
+ "prereg": "tasks/LI35-SONNET-RERUN-PREREG.md",
+ "base": {
+  "model": "claude-sonnet-5-5",
+  "effort": "low",
+  "memberMax": 6000,
+  "managerMax": 24000,
+  "rounds": 8,
+  "strictFeedback": true,
+  "managerSlack": true
+ },
+ "sizes": [
+  {
+   "k": 40,
+   "seed0": 35400,
+   "cases": 12,
+   "cap": 40
+  }
+ ],
+ "arms": [
+  "stigwait",
+  "manager"
+ ],
+ "hypotheses": [
+  {
+   "id": "H-LI105",
+   "primary": true,
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "holdoutFailing",
+   "title": "With Sonnet, waiting for the trace leaves fewer checks failing on fresh inputs than a manager agent"
+  },
+  {
+   "id": "H-LI106",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "tokens",
+   "title": "With Sonnet, waiting for the trace uses fewer tokens than a manager agent"
+  },
+  {
+   "id": "H-LI107",
+   "a": "stigwait",
+   "b": "manager",
+   "metric": "actRounds",
+   "title": "With Sonnet, waiting for the trace finishes in fewer act rounds than a manager agent"
+  }
+ ]
+}

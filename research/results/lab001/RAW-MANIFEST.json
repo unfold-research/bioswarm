@@ -1,0 +1,11 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "raw.tar.gz",
+      "bytes": 7813113,
+      "sha256": "d0db806a0a9aa1ea6059cdd240fbdcf06fdc4c763d7c99a4a4fd32e6b4a06ba6",
+      "gz": 7744248
+    }
+  ]
+}

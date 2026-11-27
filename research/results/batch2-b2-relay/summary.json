@@ -1,0 +1,143 @@
+{
+  "study": "b2-relay",
+  "configHash": "262f40a8a9e036eb33777e937c8c95e957b1f1d9c1083a74f38e1af9c7277458",
+  "status": "complete",
+  "wavesRun": 4,
+  "byHop": {
+    "0": {
+      "struct": {
+        "n": 48,
+        "valid": 48,
+        "truncated": 0,
+        "exact": 48,
+        "exactCi95": [
+          0.9258998692515198,
+          1
+        ],
+        "citationSupported": 48,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      },
+      "prose": {
+        "n": 48,
+        "valid": 48,
+        "truncated": 0,
+        "exact": 48,
+        "exactCi95": [
+          0.9258998692515198,
+          1
+        ],
+        "citationSupported": 48,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      }
+    },
+    "1": {
+      "struct": {
+        "n": 24,
+        "valid": 24,
+        "truncated": 0,
+        "exact": 24,
+        "exactCi95": [
+          0.862023793448672,
+          0.9999999999999999
+        ],
+        "citationSupported": 24,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      },
+      "prose": {
+        "n": 24,
+        "valid": 24,
+        "truncated": 0,
+        "exact": 24,
+        "exactCi95": [
+          0.862023793448672,
+          0.9999999999999999
+        ],
+        "citationSupported": 24,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      },
+      "paired": {
+        "structOnly": 0,
+        "proseOnly": 0
+      }
+    },
+    "2": {
+      "struct": {
+        "n": 24,
+        "valid": 24,
+        "truncated": 0,
+        "exact": 24,
+        "exactCi95": [
+          0.862023793448672,
+          0.9999999999999999
+        ],
+        "citationSupported": 24,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      },
+      "prose": {
+        "n": 24,
+        "valid": 24,
+        "truncated": 0,
+        "exact": 24,
+        "exactCi95": [
+          0.862023793448672,
+          0.9999999999999999
+        ],
+        "citationSupported": 24,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      },
+      "paired": {
+        "structOnly": 0,
+        "proseOnly": 0
+      }
+    },
+    "3": {
+      "struct": {
+        "n": 24,
+        "valid": 24,
+        "truncated": 0,
+        "exact": 24,
+        "exactCi95": [
+          0.862023793448672,
+          0.9999999999999999
+        ],
+        "citationSupported": 24,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      },
+      "prose": {
+        "n": 24,
+        "valid": 24,
+        "truncated": 0,
+        "exact": 24,
+        "exactCi95": [
+          0.862023793448672,
+          0.9999999999999999
+        ],
+        "citationSupported": 24,
+        "unsupportedClaims": 0,
+        "missingPairs": 0,
+        "missingIds": 0
+      },
+      "paired": {
+        "structOnly": 0,
+        "proseOnly": 0
+      }
+    }
+  },
+  "hypothesis": "H-M01",
+  "verdict": "refuted",
+  "finishedAt": "2026-11-11T04:10:19.908Z"
+}

@@ -1,0 +1,7 @@
+# LI1 pilots (2026-11-17, direct Messages API, Haiku 5.5, outside the batch ledger: about [US$ redacted] estimated)
+
+1. **Extraction (SQ instrument, `observatory/batch2/sq/`).** 120 invoice notes per case, easy and hard templates (multi-step payments, EUR conversion, net-N terms, boundary dates, resolved disputes), chunks of 20 and 60, two identical reads and two shuffled-context reads: 0 errors in 960 record reads. Redundancy against honest reading error has nothing to buy here; the shuffled-quorum idea was dropped before any paid batch.
+2. **Search families (`ne/tasks.mjs`).** Countdown, subset sum, 15-node colouring, CRT, 3x3 grid: with adaptive thinking Haiku solved 113 of 120 attempts. With 400 output tokens most answers were truncated, which showed that Haiku 5.5 thinks by default.
+3. **Scale.** Colouring with one agent: 4/4 at 30 nodes, 2/4 at 60, 1/4 at 120 (one truncated at 32,000 output tokens).
+4. **Swarm loop, 120 nodes, seed 501.** sync 59→63 conflicts over six rounds (oscillation); inhibit 66→18 (min 14); central repair from its own start solved in six rounds (96k output tokens). Territories of 6 with low effort plateaued at 10 to 15 conflicts; stimulus-centred patches reached 5 conflicts at territory 15 default effort after eight rounds.
+5. **240 nodes, seed 502.** Central repair: 552 (truncated start) → 41 conflicts after eight rounds, 103k output tokens. Patches with territory 6, low effort: 150 → 28–35, 41k output tokens.

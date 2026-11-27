@@ -1,0 +1,13 @@
+{
+  "about": "Curated map from genome traits to the registered LI hypotheses that test them on real LLM agents (results/li-verdicts.json is the source of each verdict). List only hypotheses whose preregistered statement is about the trait. scripts/coverage.mjs derives the level from the verdicts, so a verdict change cannot leave this map stale.",
+  "traits": {
+    "FLD-01": { "hypotheses": ["H-LI59", "H-LI71", "H-LI102"], "note": "Waiting for the trace (stigmergy with polarity) against a manager agent: harder tasks, equal act rounds, and a manager at default effort with a large plan budget." },
+    "FLD-02": { "hypotheses": ["H-LI64", "H-LI65"], "note": "Traces that evaporate after one or three waves against persistent traces." },
+    "FLD-03": { "hypotheses": ["H-G24"], "note": "GN1 library arm (Haiku 5.5, 80-module rc, 5 related sequences): a shared team library cut first-pass failures in 10 of 10 units (Holm p = 0.004), but only by 5.6%, with +57% output tokens." },
+    "FLD-04": { "hypotheses": ["H-G23", "H-G25", "H-G26", "H-G27"], "note": "GN1: a per-member notebook cut first-pass failures in 10 of 10 units (p = 0.001), but only by 3% and not on repeated edges, with more waves and +39% output tokens; holdout at floor. Preregistered card: adopt, test more." },
+    "ACT-01": { "hypotheses": ["H-LI32", "H-LI80"], "note": "Random response thresholds break symmetric conflicts; thresholds against a group chat." },
+    "ACT-03": { "hypotheses": ["H-LI44", "H-LI45"], "note": "Clonal selection on top of agent-written stigmergy and against a manager agent." },
+    "SIG-05": { "hypotheses": ["H-LI81"], "note": "Lateral inhibition against a leaderless group chat on harder tasks." },
+    "DOL-04": { "hypotheses": ["H-LI27"], "note": "A manager agent is the leader arm of every LI comparison; this is the registered test of it against leaderless conversation." }
+  }
+}

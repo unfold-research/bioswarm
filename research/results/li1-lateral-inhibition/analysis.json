@@ -1,0 +1,384 @@
+{
+  "arms": {
+    "sync": {
+      "solved": 0,
+      "of": 36,
+      "medianFinal": 56,
+      "meanOut": 204775,
+      "meanLatency": 33327,
+      "trunc": 0,
+      "meanTrajectory": [
+        79.53,
+        88.36,
+        76.06,
+        80.58,
+        72,
+        75.08,
+        69.81,
+        70.42,
+        67.81
+      ],
+      "bySize": {
+        "60": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 26.5,
+          "meanOut": 91484,
+          "meanLatency": 31955,
+          "meanCalls": 35.3
+        },
+        "120": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 56,
+          "meanOut": 179526,
+          "meanLatency": 34163,
+          "meanCalls": 70
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 121,
+          "meanOut": 343314,
+          "meanLatency": 33863,
+          "meanCalls": 143.5
+        }
+      }
+    },
+    "inhibit": {
+      "solved": 0,
+      "of": 36,
+      "medianFinal": 18,
+      "meanOut": 167888,
+      "meanLatency": 31529,
+      "trunc": 0,
+      "meanTrajectory": [
+        79.53,
+        57.64,
+        41.14,
+        34.56,
+        30.78,
+        27.86,
+        25.31,
+        24.22,
+        23.36
+      ],
+      "bySize": {
+        "60": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 5.5,
+          "meanOut": 65529,
+          "meanLatency": 28314,
+          "meanCalls": 26.9
+        },
+        "120": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 18,
+          "meanOut": 141039,
+          "meanLatency": 31280,
+          "meanCalls": 57.8
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 42,
+          "meanOut": 297095,
+          "meanLatency": 34994,
+          "meanCalls": 124.3
+        }
+      }
+    },
+    "random": {
+      "solved": 0,
+      "of": 36,
+      "medianFinal": 18.5,
+      "meanOut": 116946,
+      "meanLatency": 31077,
+      "trunc": 0,
+      "meanTrajectory": [
+        79.53,
+        51.58,
+        40.08,
+        34.25,
+        32.03,
+        30.69,
+        27.31,
+        25.14,
+        23.44
+      ],
+      "bySize": {
+        "60": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 9.5,
+          "meanOut": 51218,
+          "meanLatency": 27433,
+          "meanCalls": 19.3
+        },
+        "120": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 17,
+          "meanOut": 97513,
+          "meanLatency": 31134,
+          "meanCalls": 38.8
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 43.5,
+          "meanOut": 202108,
+          "meanLatency": 34663,
+          "meanCalls": 80.3
+        }
+      }
+    },
+    "patch": {
+      "solved": 2,
+      "of": 36,
+      "medianFinal": 12,
+      "meanOut": 59260,
+      "meanLatency": 53075,
+      "trunc": 23,
+      "meanTrajectory": [
+        79.53,
+        49.64,
+        34.94,
+        29.78,
+        25.22,
+        22.11,
+        20.61,
+        18.5,
+        16.89
+      ],
+      "bySize": {
+        "60": {
+          "solved": 2,
+          "of": 12,
+          "medianFinal": 3.5,
+          "meanOut": 62233,
+          "meanLatency": 59767,
+          "meanCalls": 11.3
+        },
+        "120": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 12,
+          "meanOut": 61376,
+          "meanLatency": 56106,
+          "meanCalls": 16.1
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 38.5,
+          "meanOut": 54172,
+          "meanLatency": 43352,
+          "meanCalls": 24.1
+        }
+      }
+    },
+    "central": {
+      "solved": 7,
+      "of": 36,
+      "medianFinal": 7.5,
+      "meanOut": 58853,
+      "meanLatency": 52788,
+      "trunc": 2,
+      "meanTrajectory": [
+        79.53,
+        53.39,
+        47.03,
+        44.56,
+        42.14,
+        40.11,
+        38.94,
+        36.11,
+        35.36
+      ],
+      "bySize": {
+        "60": {
+          "solved": 7,
+          "of": 12,
+          "medianFinal": 0,
+          "meanOut": 51464,
+          "meanLatency": 49137,
+          "meanCalls": 8.1
+        },
+        "120": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 7.5,
+          "meanOut": 80131,
+          "meanLatency": 75032,
+          "meanCalls": 16
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 98,
+          "meanOut": 44965,
+          "meanLatency": 34196,
+          "meanCalls": 24
+        }
+      }
+    },
+    "solo": {
+      "solved": 13,
+      "of": 36,
+      "medianFinal": 9.5,
+      "meanOut": 66172,
+      "meanLatency": 66172,
+      "trunc": 11,
+      "meanTrajectory": [
+        230.25,
+        168.22,
+        119.58,
+        111.28,
+        62.47,
+        47.22,
+        32.67,
+        32.56,
+        31.61
+      ],
+      "bySize": {
+        "60": {
+          "solved": 12,
+          "of": 12,
+          "medianFinal": 0,
+          "meanOut": 30223,
+          "meanLatency": 30223,
+          "meanCalls": 1.6
+        },
+        "120": {
+          "solved": 1,
+          "of": 12,
+          "medianFinal": 9.5,
+          "meanOut": 88884,
+          "meanLatency": 88884,
+          "meanCalls": 8.9
+        },
+        "240": {
+          "solved": 0,
+          "of": 12,
+          "medianFinal": 41,
+          "meanOut": 79410,
+          "meanLatency": 79410,
+          "meanCalls": 9
+        }
+      }
+    }
+  },
+  "paired": {
+    "inhibit_vs_sync": {
+      "inhibitOnly": 0,
+      "syncOnly": 0,
+      "both": 0,
+      "neither": 36,
+      "mcnemarP": 1,
+      "finalLowerIn": 36,
+      "finalHigherIn": 0
+    },
+    "inhibit_vs_random": {
+      "inhibitOnly": 0,
+      "randomOnly": 0,
+      "both": 0,
+      "neither": 36,
+      "mcnemarP": 1,
+      "finalLowerIn": 20,
+      "finalHigherIn": 15
+    },
+    "inhibit_vs_central": {
+      "inhibitOnly": 0,
+      "centralOnly": 7,
+      "both": 0,
+      "neither": 29,
+      "mcnemarP": 0.0156,
+      "finalLowerIn": 14,
+      "finalHigherIn": 22
+    },
+    "patch_vs_central": {
+      "patchOnly": 1,
+      "centralOnly": 6,
+      "both": 1,
+      "neither": 28,
+      "mcnemarP": 0.125,
+      "finalLowerIn": 18,
+      "finalHigherIn": 16
+    },
+    "patch_vs_inhibit": {
+      "patchOnly": 2,
+      "inhibitOnly": 0,
+      "both": 0,
+      "neither": 34,
+      "mcnemarP": 0.5,
+      "finalLowerIn": 27,
+      "finalHigherIn": 8
+    }
+  },
+  "finals": {
+    "inhibit_vs_sync": {
+      "wins": 36,
+      "losses": 0,
+      "signP": 0
+    },
+    "inhibit_vs_random": {
+      "wins": 20,
+      "losses": 15,
+      "signP": 0.49956
+    },
+    "random_vs_sync": {
+      "wins": 36,
+      "losses": 0,
+      "signP": 0
+    },
+    "patch_vs_inhibit": {
+      "wins": 27,
+      "losses": 8,
+      "signP": 0.001878
+    },
+    "patch_vs_central": {
+      "wins": 18,
+      "losses": 16,
+      "signP": 0.864166
+    },
+    "solo_vs_central": {
+      "wins": 22,
+      "losses": 7,
+      "signP": 0.00813
+    },
+    "sync_vs_central_at_240": {
+      "wins": 3,
+      "losses": 9,
+      "signP": 0.145996
+    },
+    "inhibit_vs_central_at_240": {
+      "wins": 12,
+      "losses": 0,
+      "signP": 0.000488
+    },
+    "random_vs_central_at_240": {
+      "wins": 12,
+      "losses": 0,
+      "signP": 0.000488
+    },
+    "patch_vs_central_at_240": {
+      "wins": 12,
+      "losses": 0,
+      "signP": 0.000488
+    },
+    "solo_vs_central_at_240": {
+      "wins": 11,
+      "losses": 1,
+      "signP": 0.006348
+    }
+  },
+  "verdict": {
+    "H-LI1": "refuted",
+    "H-LI2": "refuted",
+    "H-LI3": "refuted",
+    "H-LI4": "supported"
+  }
+}

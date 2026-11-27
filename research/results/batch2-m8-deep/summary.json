@@ -1,0 +1,65 @@
+{
+  "study": "m8-deep",
+  "configHash": "6d260b9fa08bec8e86b49ea6ac3a3f862c6a4f8579350dfeba9b40c5339dcfb4",
+  "status": "complete",
+  "wavesRun": 2,
+  "byLevel": {
+    "96": {
+      "deep": 0.9666666666666667,
+      "d1": 0.9,
+      "verify40": 0.9666666666666667,
+      "verify150": 0.9666666666666667,
+      "any2": 0.9666666666666667
+    },
+    "144": {
+      "deep": 1,
+      "d1": 0.8666666666666667,
+      "verify40": 1,
+      "verify150": 1,
+      "any2": 1
+    },
+    "192": {
+      "deep": 0.8666666666666667,
+      "d1": 0.8333333333333334,
+      "verify40": 0.9,
+      "verify150": 0.9333333333333333,
+      "any2": 0.9666666666666667
+    }
+  },
+  "overall": {
+    "deep": 0.9444444444444444,
+    "d1": 0.8666666666666667,
+    "verify40": 0.9555555555555556,
+    "verify150": 0.9666666666666667,
+    "any2": 0.9777777777777777
+  },
+  "samplesDiffer": 0.14444444444444443,
+  "verify150MinusVerify40": {
+    "diff": 0.011111111111111112,
+    "ci95": [
+      0,
+      0.03333333333333333
+    ]
+  },
+  "verifier": {
+    "v40": {
+      "correctAnswers": 85,
+      "accepted": 84,
+      "wrongAnswers": 5,
+      "rejected": 2
+    },
+    "v150": {
+      "correctAnswers": 85,
+      "accepted": 85,
+      "wrongAnswers": 5,
+      "rejected": 3
+    }
+  },
+  "truncated": 0,
+  "tests": {
+    "P1": "not supported",
+    "P2": "not supported",
+    "P3": "not supported"
+  },
+  "finishedAt": "2026-11-11T14:18:14.266Z"
+}

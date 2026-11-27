@@ -1,0 +1,91 @@
+{
+  "bucket": "unfold-research-raw",
+  "files": [
+    {
+      "path": "state.json",
+      "bytes": 1432964,
+      "sha256": "5ae325d1389c3e3df3efec5de2184df02817f374f1d65abd6d9a67e7c935bcc8",
+      "gz": 127497
+    },
+    {
+      "path": "wave-0-p0.requests.jsonl",
+      "bytes": 374642,
+      "sha256": "f8de9194b0764b6a3db6fee8fdb87e96db68c10f3cb548c89bba6aa357a6631d",
+      "gz": 21976
+    },
+    {
+      "path": "wave-0-p0.results.jsonl",
+      "bytes": 201597,
+      "sha256": "3fa56a0cdb35cd250b9c0064ad982d80e0f5fdd19d3a766c3bc27b2499395ede",
+      "gz": 41929
+    },
+    {
+      "path": "wave-0-p1.requests.jsonl",
+      "bytes": 377736,
+      "sha256": "fd689b647d93fe3be8ec28cdd248de59e7e30d93ffa66b58066f64470aa4773c",
+      "gz": 22131
+    },
+    {
+      "path": "wave-0-p1.results.jsonl",
+      "bytes": 181763,
+      "sha256": "c33d261ec5cc8374d7778ee0d5c60141b5737a57e0d29bdd4678625d7e651e59",
+      "gz": 23770
+    },
+    {
+      "path": "wave-0-p2.requests.jsonl",
+      "bytes": 89031,
+      "sha256": "1b4ff01cf4126878611bf7e0ae0283440b2d7da9e86459d8fd12a43aeced85d8",
+      "gz": 6637
+    },
+    {
+      "path": "wave-0-p2.results.jsonl",
+      "bytes": 41729,
+      "sha256": "fd461fe8d352e266033c39fe672c3273ff1278726a9bf2cae63f4884fbe71072",
+      "gz": 5808
+    },
+    {
+      "path": "wave-1-p0.requests.jsonl",
+      "bytes": 827576,
+      "sha256": "47fbb227186a4b7ab5b483fe781d22c9da8150f8710a6fdb7ae2242c6e6a3609",
+      "gz": 99946
+    },
+    {
+      "path": "wave-1-p0.results.jsonl",
+      "bytes": 197998,
+      "sha256": "bdf4c9801e34bb73787d24d885ca084ec38d1386cd22fabfed267bc4efbf95f1",
+      "gz": 41920
+    },
+    {
+      "path": "wave-1-p1.requests.jsonl",
+      "bytes": 988439,
+      "sha256": "2da8d5e0685a866f913125a9e12639917b04490c4361a6978b4e8ed45f16ce5a",
+      "gz": 115081
+    },
+    {
+      "path": "wave-1-p1.results.jsonl",
+      "bytes": 200063,
+      "sha256": "1e0bdc47aa106482b7d47fe19f39d009f1dccd054859608b9d728478e821f988",
+      "gz": 42952
+    },
+    {
+      "path": "wave-1-p2.requests.jsonl",
+      "bytes": 446390,
+      "sha256": "e346ef3ec693ab381278d8a4af7149e23e05c53663307660c4945850eb605599",
+      "gz": 56207
+    },
+    {
+      "path": "wave-1-p2.results.jsonl",
+      "bytes": 46744,
+      "sha256": "41e3215f965200fd7dd1d29034d7d62356fcd4d90c3b7a9160046f5348f98f50",
+      "gz": 18137
+    }
+  ],
+  "archives": [
+    {
+      "name": "li21-k40-raw.tar.gz",
+      "origin": "github release data-li21-k40",
+      "bytes": 504127,
+      "sha256": "11ee938b4960e60134415ac524ef0323ebad1ba8603fc61b36400a947757f8f2"
+    }
+  ]
+}
